@@ -3,6 +3,7 @@ import { snacks } from "@/data/snacks"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 
 const PAGE_TITLE = "Best High-Protein Snacks for Keto (Low-Carb, High-Protein)"
 const PAGE_DESCRIPTION =
@@ -70,6 +71,15 @@ export default function BestKetoSnacksPage() {
       />
 
       <div className="container mx-auto px-4 py-12">
+        {/* Breadcrumb */}
+        <Breadcrumbs 
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Guides", href: "/" },
+            { label: "Best for Keto" }
+          ]} 
+        />
+        
         {/* Header Section */}
         <div className="mb-12 max-w-3xl">
           <Badge className="mb-4" variant="secondary">

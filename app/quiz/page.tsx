@@ -12,6 +12,7 @@ import { SnackCard } from "@/components/snacks/snack-card"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, RefreshCw } from "lucide-react"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 
 type Goal = "lose-fat" | "maintain" | "build-muscle"
 type SnackTime = "desk" | "late-night" | "pre-workout" | "on-the-go"
@@ -179,6 +180,14 @@ export default function SnackFinderQuizPage() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10 md:py-12">
+      {/* Breadcrumb */}
+      <Breadcrumbs 
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Snack Finder Quiz" }
+        ]} 
+      />
+      
       {/* Hero Section */}
       <header className="mb-10 text-center">
         <h1 className="font-display mb-4 text-4xl font-extrabold text-gray-900 md:text-5xl">

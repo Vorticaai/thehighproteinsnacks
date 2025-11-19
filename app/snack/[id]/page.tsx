@@ -3,13 +3,14 @@
  * Premium design matching homepage visual hierarchy.
  */
 import Image from "next/image"
-import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import { getAllSnacks } from "@/lib/directory"
 import { buildMetadata, absoluteUrl } from "@/lib/seo"
 import { snacks } from "@/data/snacks"
 import { Star, Check } from "lucide-react"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
+import type { Crumb } from "@/components/layout/breadcrumbs"
 
 type SnackPageProps = {
   params: { id: string }
@@ -69,6 +70,13 @@ export default function SnackPage({ params }: SnackPageProps) {
 
   // Show image if imageUrl exists
   const hasImage = snack.imageUrl && snack.imageUrl.trim().length > 0
+  
+  // Check if we have verified macro data
+  const hasMacros =
+    snack.proteinPerServing != null &&
+    snack.caloriesPerServing != null &&
+    snack.carbsPerServing != null &&
+    snack.fatsPerServing != null
 
   // Determine primary category for breadcrumb
   const primaryCategory = snack.categoryTags[0] || "snacks"
@@ -150,32 +158,29 @@ export default function SnackPage({ params }: SnackPageProps) {
     ],
   }
 
+  // Build breadcrumb items
+  const breadcrumbItems: Crumb[] = [
+    { label: "Home", href: "/" },
+    { 
+      label: primaryCategory.replace("-", " "), 
+      href: `/category/${primaryCategory}` 
+    },
+    { label: snack.name }, // current page, no href
+  ]
+
   return (
     <>
       <main className="min-h-screen bg-white">
         {/* Container - matching homepage max-width */}
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <nav className="mb-6 flex items-center gap-2 text-sm text-gray-600">
-            <Link href="/" className="transition-colors hover:text-gray-900">
-              Home
-            </Link>
-            <span>/</span>
-            <Link
-              href={`/category/${primaryCategory}`}
-              className="capitalize transition-colors hover:text-gray-900"
-            >
-              {primaryCategory.replace("-", " ")}
-            </Link>
-            <span>/</span>
-            <span className="text-gray-900">{snack.name}</span>
-          </nav>
+          <Breadcrumbs items={breadcrumbItems} />
 
           {/* Hero Content Card */}
           <div className="mb-8 overflow-hidden rounded-2xl bg-white shadow-lg">
             {/* Product Image */}
             {hasImage ? (
-              <div className="relative aspect-video w-full overflow-hidden bg-gray-100">
+              <div className="relative aspect-[21/9] w-full overflow-hidden rounded-t-2xl bg-gray-100">
                 <Image
                   src={snack.imageUrl}
                   alt={snack.name}
@@ -186,7 +191,7 @@ export default function SnackPage({ params }: SnackPageProps) {
                 />
               </div>
             ) : (
-              <div className="flex aspect-video w-full items-center justify-center bg-gray-100">
+              <div className="flex aspect-[21/9] w-full items-center justify-center rounded-t-2xl bg-gray-100">
                 <div className="space-y-2 text-center">
                   <p className="text-sm font-semibold text-gray-500">{snack.brand}</p>
                   <p className="px-4 text-lg font-medium text-gray-700">{snack.name}</p>
@@ -220,6 +225,21 @@ export default function SnackPage({ params }: SnackPageProps) {
                   <span className="text-lg font-bold text-gray-900">{snack.rating.toFixed(1)}</span>
                   <span className="text-sm text-gray-500">({snack.reviewCount} reviews)</span>
                 </div>
+              </div>
+              
+              {/* Verified Macros Badge & Disclaimer */}
+              <div className="mb-4 flex flex-wrap items-center gap-3 text-xs">
+                {hasMacros && (
+                  <span className="inline-flex items-center gap-1 rounded-full border border-[#006F6D]/20 bg-[#006F6D]/5 px-2.5 py-1 text-[11px] font-medium text-[#006F6D]">
+                    <svg className="h-3 w-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    Verified macros
+                  </span>
+                )}
+                <span className="text-[11px] text-gray-500">
+                  Nutrition info is based on brand/retailer listings and may change. Always check the package label.
+                </span>
               </div>
 
               {/* Diet Tags */}

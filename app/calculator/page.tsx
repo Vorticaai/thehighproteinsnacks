@@ -6,6 +6,7 @@ import { SnackCard } from "@/components/snacks/snack-card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { buildMetadata } from "@/lib/seo"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 
 type WeightUnit = "kg" | "lbs"
 type Goal = "lose-fat" | "maintain" | "build-muscle"
@@ -57,6 +58,14 @@ export default function CalculatorPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-10 md:py-12">
+      {/* Breadcrumb */}
+      <Breadcrumbs 
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Protein Calculator" }
+        ]} 
+      />
+      
       {/* Header */}
       <div className="mb-8 text-center">
         <h1 className="font-display text-4xl font-bold text-gray-900 md:text-5xl">

@@ -3,6 +3,7 @@ import { snacks } from "@/data/snacks"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Quest Bars vs RXBAR: Which High-Protein Snack Is Better?",
@@ -150,6 +151,15 @@ export default function CompareQuestVsRxbarPage() {
       />
 
       <div className="container mx-auto px-4 py-12">
+        {/* Breadcrumb */}
+        <Breadcrumbs 
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Comparisons", href: "/" },
+            { label: "Quest vs RXBAR" }
+          ]} 
+        />
+        
         {/* Hero Section */}
         <div className="mb-12 max-w-3xl">
           <Badge className="mb-4" variant="secondary">

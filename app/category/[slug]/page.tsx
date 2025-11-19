@@ -9,6 +9,8 @@ import { filterSnacks, getCategoryBySlug } from "@/lib/directory"
 import type { SortOption } from "@/lib/directory"
 import { buildMetadata, absoluteUrl } from "@/lib/seo"
 import type { DietTag } from "@/data/types"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
+import type { Crumb } from "@/components/layout/breadcrumbs"
 const allowedSorts: SortOption[] = [
   "protein-desc",
   "protein-per-dollar",
@@ -68,8 +70,17 @@ export default function CategoryPage({ params, searchParams }: CategoryPageProps
     sort,
   })
 
+  // Build breadcrumb items
+  const breadcrumbItems: Crumb[] = [
+    { label: "Home", href: "/" },
+    { label: category.title }, // current page, no href
+  ]
+
   return (
     <main className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-10">
+      {/* Breadcrumb */}
+      <Breadcrumbs items={breadcrumbItems} />
+      
       <header className="space-y-4">
         <p className="text-sm font-semibold uppercase text-primary">
           {category.primaryKeyword}

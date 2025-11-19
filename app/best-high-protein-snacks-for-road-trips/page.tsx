@@ -3,6 +3,7 @@ import { snacks } from "@/data/snacks"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
+import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -134,6 +135,15 @@ export default function BestRoadTripSnacksPage() {
       />
 
       <div className="container mx-auto px-4 py-12">
+        {/* Breadcrumb */}
+        <Breadcrumbs 
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Guides", href: "/" },
+            { label: "Best for Road Trips" }
+          ]} 
+        />
+        
         {/* Hero Section */}
         <div className="mb-12 max-w-3xl">
           <Badge className="mb-4" variant="secondary">
