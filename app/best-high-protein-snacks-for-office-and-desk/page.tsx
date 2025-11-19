@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { snacks } from "@/data/snacks"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
+import CalculatorCTA from "@/components/shared/calculator-cta"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -397,6 +398,11 @@ export default function BestOfficeSnacksPage() {
               </div>
             </li>
           </ul>
+        </section>
+
+        {/* Calculator CTA */}
+        <section className="mt-12">
+          <CalculatorCTA />
         </section>
       </div>
     </>

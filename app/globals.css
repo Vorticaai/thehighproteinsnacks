@@ -23,6 +23,14 @@
   --input: 214.3 31.8% 91.4%;
   --ring: 12 88% 46%;
   --radius: 1.5rem;
+  
+  /* Brand Theme Colors */
+  --brand-bg: #085E52;
+  --brand-bg-dark: #074B42;
+  --brand-lime: #C6FF47;
+  --brand-text: #FFFFFF;
+  --brand-text-dark: #022E27;
+  --brand-border: rgba(198, 255, 71, 0.3);
 }
 
 .dark {
@@ -59,4 +67,9 @@
 
 .pill {
   @apply rounded-full border border-border bg-white px-3 py-1 text-sm text-muted-foreground;
+}
+
+.brand-cta-button:hover {
+  background-color: #b6ef3c !important;
+  transform: translateY(-1px);
 }

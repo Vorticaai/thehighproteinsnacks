@@ -1,18 +1,15 @@
 /**
  * Snack detail page with macros, benefits, and structured data.
- * Uses Next.js App Router patterns for static generation and SEO.
+ * Premium design matching homepage visual hierarchy.
  */
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
 import { getAllSnacks } from "@/lib/directory"
 import { buildMetadata, absoluteUrl } from "@/lib/seo"
 import { snacks } from "@/data/snacks"
+import { Star, Check } from "lucide-react"
 
 type SnackPageProps = {
   params: { id: string }
@@ -52,6 +49,9 @@ export default function SnackPage({ params }: SnackPageProps) {
     notFound()
   }
 
+  // Show image if imageUrl exists
+  const hasImage = snack.imageUrl && snack.imageUrl.trim().length > 0
+
   // Determine primary category for breadcrumb
   const primaryCategory = snack.categoryTags[0] || "snacks"
 
@@ -88,9 +88,7 @@ export default function SnackPage({ params }: SnackPageProps) {
       price: snack.pricePerUnit.toFixed(2),
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
-      url:
-        snack.buyUrl ||
-        absoluteUrl(`/snack/${snack.id}`),
+      url: snack.buyUrl || absoluteUrl(`/snack/${snack.id}`),
     },
   }
 
@@ -136,265 +134,258 @@ export default function SnackPage({ params }: SnackPageProps) {
 
   return (
     <>
-      <main className="mx-auto flex max-w-5xl flex-col gap-8 px-6 py-10">
-        {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-sm text-muted-foreground">
-          <Link href="/" className="hover:text-foreground">
-            Home
-          </Link>
-          <span>/</span>
-          <Link
-            href={`/category/${primaryCategory}`}
-            className="hover:text-foreground capitalize"
-          >
-            {primaryCategory.replace("-", " ")}
-          </Link>
-          <span>/</span>
-          <span className="text-foreground">{snack.name}</span>
-        </nav>
+      <main className="min-h-screen bg-white">
+        {/* Container - matching homepage max-width */}
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <nav className="mb-6 flex items-center gap-2 text-sm text-gray-600">
+            <Link href="/" className="transition-colors hover:text-gray-900">
+              Home
+            </Link>
+            <span>/</span>
+            <Link
+              href={`/category/${primaryCategory}`}
+              className="capitalize transition-colors hover:text-gray-900"
+            >
+              {primaryCategory.replace("-", " ")}
+            </Link>
+            <span>/</span>
+            <span className="text-gray-900">{snack.name}</span>
+          </nav>
 
-        {/* Hero Image */}
-        <div className="relative h-80 w-full overflow-hidden rounded-3xl">
-          <Image
-            src={snack.imageUrl}
-            alt={snack.name}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-            className="object-cover"
-            priority
-          />
-        </div>
+          {/* Hero Content Card */}
+          <div className="mb-8 overflow-hidden rounded-2xl bg-white shadow-lg">
+            {/* Product Image */}
+            {hasImage ? (
+              <div className="relative aspect-video w-full overflow-hidden bg-gray-100">
+                <Image
+                  src={snack.imageUrl}
+                  alt={snack.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            ) : (
+              <div className="flex aspect-video w-full items-center justify-center bg-gray-100">
+                <div className="space-y-2 text-center">
+                  <p className="text-sm font-semibold text-gray-500">{snack.brand}</p>
+                  <p className="px-4 text-lg font-medium text-gray-700">{snack.name}</p>
+                </div>
+              </div>
+            )}
 
-        {/* Header */}
-        <header className="space-y-4">
-          <Badge variant="secondary" className="rounded-full px-3 py-1">
-            {snack.brand}
-          </Badge>
-          <h1 className="text-4xl font-bold text-gray-900">{snack.name}</h1>
-          <p className="text-lg text-muted-foreground">{snack.description}</p>
-          <div className="flex flex-wrap gap-2">
-            {snack.dietTags.map((tag) => (
-              <Badge key={tag} variant="outline" className="capitalize">
-                {tag.replace("-", " ")}
-              </Badge>
-            ))}
-          </div>
-        </header>
+            {/* Product Info Section */}
+            <div className="p-6 sm:p-8">
+              {/* Brand Badge */}
+              <div className="mb-4 inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm font-semibold text-gray-700">
+                {snack.brand}
+              </div>
 
-        {/* Key Stats Cards */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <StatCard
-            label="Protein"
-            value={`${snack.proteinPerServing}g`}
-            highlight
-          />
-          <StatCard label="Calories" value={`${snack.caloriesPerServing}`} />
-          <StatCard
-            label="Price"
-            value={`$${snack.pricePerUnit.toFixed(2)}`}
-          />
-          <StatCard
-            label="Protein/$"
-            value={`${snack.proteinPerDollar.toFixed(1)}g`}
-          />
-        </div>
+              {/* Title and Rating */}
+              <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">{snack.name}</h1>
+                <div className="flex items-center gap-2">
+                  <Star
+                    className="h-5 w-5 fill-[#0C6C5A] text-[#0C6C5A]"
+                    style={{ fill: "var(--brand-bg)", color: "var(--brand-bg)" }}
+                  />
+                  <span className="text-lg font-bold text-gray-900">{snack.rating.toFixed(1)}</span>
+                  <span className="text-sm text-gray-500">({snack.reviewCount} reviews)</span>
+                </div>
+              </div>
 
-        {/* CTA Button */}
-        {snack.buyUrl && (
-          <div className="flex justify-center">
-            <Button asChild size="lg" className="w-full sm:w-auto">
-              <Link href={snack.buyUrl} target="_blank" rel="noopener noreferrer">
-                Check current price →
-              </Link>
-            </Button>
-          </div>
-        )}
+              {/* Diet Tags */}
+              <div className="mb-4 flex flex-wrap gap-2">
+                {snack.dietTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium capitalize text-gray-700"
+                  >
+                    {tag.replace("-", " ")}
+                  </span>
+                ))}
+              </div>
 
-        <Separator className="my-4" />
-
-        {/* Why this is a great high-protein snack */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-900">
-            Why {snack.name} Is a Great High-Protein Snack
-          </h2>
-          <Card>
-            <CardContent className="pt-6">
-              <p className="mb-4 text-muted-foreground leading-relaxed">
-                {snack.whyGreat}
+              {/* Description */}
+              <p className="mb-6 max-w-3xl text-base leading-relaxed text-gray-600">
+                {snack.description}
               </p>
+
+              {/* CTA Button */}
+              {snack.buyUrl && (
+                <a
+                  href={snack.buyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="brand-cta-button mb-6 inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold shadow-md transition-all"
+                  style={{
+                    backgroundColor: "var(--brand-lime)",
+                    color: "var(--brand-text-dark)",
+                  }}
+                >
+                  Check current price →
+                </a>
+              )}
+
+              {/* Macro Metrics */}
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                <MetricCard
+                  label="Protein"
+                  value={`${snack.proteinPerServing}g`}
+                  sublabel="per serving"
+                />
+                <MetricCard label="Calories" value={`${snack.caloriesPerServing}`} sublabel="per serving" />
+                <MetricCard
+                  label="Price"
+                  value={`$${snack.pricePerUnit.toFixed(2)}`}
+                  sublabel="approx. per serving"
+                />
+                <MetricCard
+                  label="Value"
+                  value={`${Math.round(snack.proteinPerDollar)}g/$1`}
+                  sublabel="higher is better"
+                />
+              </div>
+
+              {/* Pricing Disclaimer */}
+              <p className="mt-3 text-xs text-gray-500">
+                Based on approximate price per serving from Amazon US.
+              </p>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div className="my-8 h-px bg-gray-200" />
+
+          {/* Why This Is Great Section */}
+          <section className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">
+              Why {snack.name} Is a Great High-Protein Snack
+            </h2>
+            <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="mb-5 leading-relaxed text-gray-700">{snack.whyGreat}</p>
               <ul className="space-y-3">
                 {snack.shortBenefits.map((benefit, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
-                      ✓
-                    </span>
-                    <span className="text-muted-foreground">{benefit}</span>
+                    <Check
+                      className="mt-0.5 h-5 w-5 shrink-0 text-[#0C6C5A]"
+                      style={{ color: "var(--brand-bg)" }}
+                    />
+                    <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
               </ul>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Nutrition breakdown & ingredients */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-gray-900">
-            Nutrition Breakdown & Ingredients
-          </h2>
-          <Card>
-            <CardContent className="pt-6 space-y-4">
-              <p className="text-muted-foreground leading-relaxed">
-                {snack.nutritionBreakdown}
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                {snack.ingredientsHighlight}
-              </p>
-            </CardContent>
-          </Card>
-          <div className="grid gap-6 md:grid-cols-2">
-            <Card>
-              <CardHeader>
-                <h3 className="text-lg font-medium">Macros per serving</h3>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <MacroRow label="Protein" value={`${snack.proteinPerServing}g`} />
-                <MacroRow label="Calories" value={`${snack.caloriesPerServing}`} />
-                <MacroRow label="Carbs" value={`${snack.carbsPerServing}g`} />
-                <MacroRow label="Fats" value={`${snack.fatsPerServing}g`} />
-                <MacroRow label="Sugar" value={`${snack.sugarPerServing}g`} />
-                <MacroRow label="Fiber" value={`${snack.fiberPerServing}g`} />
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <h3 className="text-lg font-medium">Serving details</h3>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <DetailRow label="Serving size" value={snack.servingSize} />
-                <DetailRow
-                  label="Rating"
-                  value={`${snack.rating.toFixed(1)} / 5.0 (${snack.reviewCount} reviews)`}
-                />
-                <DetailRow
-                  label="Price per serving"
-                  value={`$${snack.pricePerUnit.toFixed(2)}`}
-                />
-                <DetailRow
-                  label="Protein per dollar"
-                  value={`${snack.proteinPerDollar}g/$`}
-                />
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* When to Enjoy This Snack */}
-        {snack.bestFor && snack.bestFor.length > 0 && (
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              When to Enjoy This Snack
-            </h2>
-            <Card>
-              <CardContent className="pt-6">
-                <p className="mb-4 text-sm text-muted-foreground">
-                  Perfect occasions and times to eat {snack.name}:
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  {snack.bestFor.map((occasion) => (
-                    <Badge key={occasion} variant="secondary" className="text-sm capitalize">
-                      {occasion.replace("-", " ")}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+            </div>
           </section>
-        )}
 
-        {/* FAQs */}
-        {snack.faq && snack.faq.length > 0 && (
-          <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-gray-900">
-              Common Questions About {snack.name}
-            </h2>
-            <div className="space-y-4">
-              {snack.faq.map((item, idx) => (
-                <Card key={idx}>
-                  <CardContent className="pt-6">
-                    <h3 className="mb-3 text-lg font-semibold text-gray-900">
-                      {item.question}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">{item.answer}</p>
-                  </CardContent>
-                </Card>
+          {/* Divider */}
+          <div className="my-8 h-px bg-gray-200" />
+
+          {/* Nutrition Breakdown Section */}
+          <section className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">Nutrition Breakdown & Ingredients</h2>
+            <div className="space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="leading-relaxed text-gray-700">{snack.nutritionBreakdown}</p>
+              <p className="leading-relaxed text-gray-700">{snack.ingredientsHighlight}</p>
+            </div>
+          </section>
+
+          {/* Divider */}
+          <div className="my-8 h-px bg-gray-200" />
+
+          {/* Best Time to Enjoy Section */}
+          <section className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">Best Time to Enjoy</h2>
+            <div className="flex flex-wrap gap-2">
+              {snack.bestFor.map((time) => (
+                <span
+                  key={time}
+                  className="inline-block rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium capitalize text-gray-700"
+                >
+                  {time.replace("-", " ")}
+                </span>
               ))}
             </div>
           </section>
-        )}
+
+          {/* Divider */}
+          <div className="my-8 h-px bg-gray-200" />
+
+          {/* FAQs Section */}
+          <section className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">Common Questions</h2>
+            <div className="space-y-4">
+              {snack.faq.map((faq, idx) => (
+                <div key={idx} className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                  <h3 className="mb-2 text-lg font-semibold text-gray-900">{faq.question}</h3>
+                  <p className="leading-relaxed text-gray-700">{faq.answer}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </main>
 
-      {/* Product Schema JSON-LD */}
+      {/* JSON-LD Schema */}
       <script
         type="application/ld+json"
-        suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
-      {/* FAQ Schema JSON-LD */}
       <script
         type="application/ld+json"
-        suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      {/* Breadcrumb Schema JSON-LD */}
       <script
         type="application/ld+json"
-        suppressHydrationWarning
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     </>
   )
 }
 
-// Helper components
-function StatCard({
+// Metric Card Component - Matching homepage style
+function MetricCard({
   label,
   value,
-  highlight = false,
+  sublabel,
 }: {
   label: string
   value: string
-  highlight?: boolean
+  sublabel?: string
 }) {
+  // PROTEIN and VALUE ($/g) get lime background - these are the priority metrics
+  const isLimeHighlight = label === "Protein" || label === "Value"
+  
   return (
-    <Card className={highlight ? "border-primary" : ""}>
-      <CardContent className="flex flex-col items-center justify-center p-6">
-        <p className="text-sm text-muted-foreground">{label}</p>
-        <p
-          className={`mt-2 text-3xl font-bold ${highlight ? "text-primary" : "text-gray-900"}`}
+    <div 
+      className="flex flex-col items-center justify-center rounded-xl p-4 shadow-sm"
+      style={{
+        backgroundColor: isLimeHighlight ? "#CCFF00" : "#F9FAFB",
+        border: isLimeHighlight ? "none" : "1px solid #e5e7eb"
+      }}
+    >
+      <p 
+        className="text-xs font-semibold uppercase tracking-wide"
+        style={{ color: isLimeHighlight ? "#000" : "#6b7280" }}
+      >
+        {label}
+      </p>
+      <p 
+        className={`mt-2 font-black ${label === "Protein" ? "text-3xl sm:text-4xl" : "text-2xl sm:text-3xl"}`}
+        style={{ color: isLimeHighlight ? "#000" : "#111827" }}
+      >
+        {value}
+      </p>
+      {sublabel && (
+        <p 
+          className="mt-1 text-xs"
+          style={{ color: isLimeHighlight ? "rgba(0,0,0,0.7)" : "#6b7280" }}
         >
-          {value}
+          {sublabel}
         </p>
-      </CardContent>
-    </Card>
-  )
-}
-
-function MacroRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex items-center justify-between rounded-lg bg-gray-50 px-4 py-3">
-      <span className="font-medium text-gray-900">{label}</span>
-      <span className="text-muted-foreground">{value}</span>
+      )}
     </div>
   )
 }
-
-function DetailRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex items-center justify-between">
-      <span className="text-sm text-muted-foreground">{label}</span>
-      <span className="text-sm font-medium text-gray-900">{value}</span>
-    </div>
-  )
-}
-
-

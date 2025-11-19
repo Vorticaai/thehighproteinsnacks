@@ -4,8 +4,6 @@
 import Link from "next/link"
 import { categories } from "@/data/categories"
 import type { Category } from "@/data/types"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { ArrowRight } from "lucide-react"
 
 type CategoryCardProps = {
@@ -14,53 +12,50 @@ type CategoryCardProps = {
 
 export function CategoryGrid() {
   return (
-    <section className="space-y-6">
-      <header>
-        <h2 className="text-2xl font-semibold text-gray-900">Browse categories</h2>
-        <p className="text-muted-foreground">
-          Each angle highlights snacks with specific macros, budgets, or diet tags.
-        </p>
-      </header>
-      <div className="grid gap-6 md:grid-cols-2">
-        {categories.map((category) => (
-          <CategoryCard key={category.id} category={category} />
-        ))}
-      </div>
-    </section>
+    <div className="grid gap-6 md:grid-cols-2">
+      {categories.map((category) => (
+        <CategoryCard key={category.id} category={category} />
+      ))}
+    </div>
   )
 }
 
 export function CategoryCard({ category }: CategoryCardProps) {
   return (
-    <Card className="h-full border-gray-100 shadow-sm transition hover:-translate-y-1 hover:border-primary/40">
-      <CardHeader>
-        <Badge variant="secondary" className="w-fit rounded-full px-3 py-1">
+    <div className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-md">
+      {/* Header */}
+      <div className="mb-4">
+        <span className="inline-block rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-gray-700">
           {category.primaryKeyword}
-        </Badge>
-        <h3 className="text-xl font-semibold">{category.title}</h3>
-        <p className="text-sm text-muted-foreground">{category.description}</p>
-      </CardHeader>
-      <CardContent className="space-y-2 text-sm text-muted-foreground">
-        <p>{category.heroCopy}</p>
-        <div className="flex flex-wrap gap-2">
-          {category.secondaryKeywords.map((keyword) => (
-            <span key={keyword} className="pill bg-gray-50">
-              {keyword}
-            </span>
-          ))}
-        </div>
-      </CardContent>
-      <CardFooter>
-        <Link
-          href={`/category/${category.slug}`}
-          className="inline-flex items-center text-sm font-semibold text-primary hover:underline"
-        >
-          View snacks <ArrowRight className="ml-2 h-4 w-4" />
-        </Link>
-      </CardFooter>
-    </Card>
+        </span>
+      </div>
+
+      {/* Title & Description */}
+      <h3 className="mb-2 font-display text-2xl font-bold text-gray-900">{category.title}</h3>
+      <p className="mb-4 text-sm leading-relaxed text-gray-600">{category.description}</p>
+
+      {/* Hero Copy */}
+      <p className="mb-4 text-sm leading-relaxed text-gray-600">{category.heroCopy}</p>
+
+      {/* Secondary Keywords */}
+      <div className="mb-6 flex flex-wrap gap-2">
+        {category.secondaryKeywords.map((keyword) => (
+          <span
+            key={keyword}
+            className="inline-block rounded-md bg-gray-50 px-3 py-1 text-xs text-gray-700"
+          >
+            {keyword}
+          </span>
+        ))}
+      </div>
+
+      {/* CTA Button */}
+      <Link
+        href={`/category/${category.slug}`}
+        className="inline-flex items-center rounded-full bg-[#CCFF00] px-6 py-3 text-sm font-bold text-black transition-colors hover:bg-[#A3CC00]"
+      >
+        View snacks <ArrowRight className="ml-2 h-4 w-4" />
+      </Link>
+    </div>
   )
 }
-
-
-

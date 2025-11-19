@@ -63,6 +63,7 @@ export type Snack = {
   ingredientsHighlight: string
   shortBenefits: string[]
   faq: SnackFaqItem[]
+  isHero?: boolean
 }
 
 export type Category = {

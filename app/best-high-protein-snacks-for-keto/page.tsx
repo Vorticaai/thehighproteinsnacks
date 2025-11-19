@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { snacks } from "@/data/snacks"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
+import CalculatorCTA from "@/components/shared/calculator-cta"
 
 const PAGE_TITLE = "Best High-Protein Snacks for Keto (Low-Carb, High-Protein)"
 const PAGE_DESCRIPTION =
@@ -140,6 +141,11 @@ export default function BestKetoSnacksPage() {
               find keto snacks that actually support your low-carb lifestyle.
             </p>
           </div>
+        </section>
+
+        {/* Calculator CTA */}
+        <section className="mt-12">
+          <CalculatorCTA />
         </section>
       </div>
     </>
