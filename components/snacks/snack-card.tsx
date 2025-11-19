@@ -20,6 +20,12 @@ export function SnackCard({ snack }: SnackCardProps) {
         {/* Product Image */}
         {hasImage ? (
           <div className="relative h-48 w-full overflow-hidden bg-gray-100">
+            {/* Verified Badge - Hero Products Only */}
+            {snack.isHero && (
+              <span className="absolute left-3 top-3 z-10 inline-block rounded-full bg-[#C6F221] px-2 py-0.5 text-[10px] font-medium text-black shadow-sm">
+                Verified Nutrition
+              </span>
+            )}
             <Image
               src={snack.imageUrl}
               alt={snack.name}

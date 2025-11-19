@@ -185,7 +185,15 @@ export default function SnackPage({ params }: SnackPageProps) {
 
               {/* Title and Rating */}
               <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">{snack.name}</h1>
+                <div>
+                  <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">{snack.name}</h1>
+                  {/* Verified Badge - Hero Products Only */}
+                  {snack.isHero && (
+                    <span className="mt-2 inline-block rounded-full bg-[#C6F221] px-3 py-1 text-xs font-medium text-black shadow-sm">
+                      Verified Nutrition
+                    </span>
+                  )}
+                </div>
                 <div className="flex items-center gap-2">
                   <Star
                     className="h-5 w-5 fill-[#0C6C5A] text-[#0C6C5A]"
