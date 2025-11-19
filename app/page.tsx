@@ -5,9 +5,9 @@ import { ToolsSection } from "@/components/home/tools-section"
 import { buildMetadata } from "@/lib/seo"
 
 export const metadata = buildMetadata({
-  title: "Compare trusted snacks by protein, calories, price, and diet tags",
+  title: "The High Protein Snacks – Reviews, Macros & Comparisons",
   description:
-    "Built for nutrition nerds and shoppers who want simple answers fast. Filter by macros, diet requirements, and value to find the perfect bite for every goal.",
+    "Discover the best high-protein snacks, bars, chips, cereals and more. Honest macro breakdowns, comparisons and links to buy. Browse 40+ curated picks for weight loss, low-carb, keto, and more.",
   path: "/",
 })
 

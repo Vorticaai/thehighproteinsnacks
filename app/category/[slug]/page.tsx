@@ -29,13 +29,13 @@ export function generateMetadata({ params }: CategoryPageProps) {
   const category = getCategoryBySlug(params.slug)
   if (!category) {
     return buildMetadata({
-      title: "Category not found",
-      description: "Browse all snacks by macros and price.",
+      title: "High Protein Snack Category",
+      description: "Browse curated high-protein snacks by category, macros and diet preferences.",
       path: `/category/${params.slug}`,
     })
   }
   return buildMetadata({
-    title: `${category.title} snacks`,
+    title: category.title,
     description: category.description,
     path: `/category/${category.slug}`,
   })

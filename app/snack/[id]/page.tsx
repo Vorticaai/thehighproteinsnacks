@@ -31,13 +31,31 @@ export async function generateMetadata({
   if (!snack) {
     return buildMetadata({
       title: "Snack not found",
-      description: "Explore our latest high-protein picks.",
+      description: "This snack could not be found in our high-protein database.",
       path: `/snack/${params.id}`,
     })
   }
+
+  // Build SEO-optimized title with brand and protein
+  const baseTitle = snack.brand ? `${snack.name} – ${snack.brand}` : snack.name
+  const title = `${baseTitle} (${snack.proteinPerServing}g Protein)`
+
+  // Build comprehensive description
+  const descriptionParts: string[] = []
+  if (snack.brand) {
+    descriptionParts.push(`${snack.brand} high-protein snack review.`)
+  } else {
+    descriptionParts.push("High-protein snack review.")
+  }
+  descriptionParts.push(
+    `Approx. ${snack.proteinPerServing}g protein and ${snack.caloriesPerServing} calories per serving.`
+  )
+  descriptionParts.push("See macros, usage ideas, and where to buy.")
+  const description = descriptionParts.join(" ")
+
   return buildMetadata({
-    title: snack.name,
-    description: snack.description,
+    title,
+    description,
     path: `/snack/${snack.id}`,
     ogImage: snack.imageUrl,
   })
