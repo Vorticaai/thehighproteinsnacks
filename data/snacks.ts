@@ -1604,6 +1604,121 @@ const baseSnacks: Array<
     isHero: false,
   },
   {
+    id: "no-cow-peanut-butter-choc-chip",
+    name: "No Cow Protein Bar Peanut Butter Chocolate Chip",
+    brand: "No Cow",
+    categoryTags: ["vegan", "high-protein", "weight-loss"],
+    dietTags: ["vegan", "dairy-free", "soy-free", "gluten-free"],
+    bestFor: ["on-the-go", "post-workout", "weight-loss"],
+    proteinPerServing: 20,
+    caloriesPerServing: 200,
+    carbsPerServing: 25,
+    fatsPerServing: 7,
+    sugarPerServing: 1,
+    fiberPerServing: 14,
+    servingSize: "1 bar (60g)",
+    pricePerUnit: 2.08,
+    currency: "USD",
+    rating: 4.2,
+    reviewCount: 15800,
+    imageUrl: "/snacks/no-cow-peanut-butter-choc-chip.jpg",
+    buyUrl: "https://www.amazon.com/No-Cow-Protein-Chocolate-Non-GMO/dp/B00U7HH176/",
+    description: "Chewy peanut butter bar delivering 20g of plant protein with just 1g sugar and 14g fiber for maximum satiety.",
+    whyGreat: "Ultra-low sugar and high protein-to-calorie ratio makes it a top vegan pick for healthy weight-loss.",
+    nutritionBreakdown: "20g plant protein, 200 calories, and 14g gut-friendly fiber keeps cravings under control.",
+    ingredientsHighlight: "Pea and rice protein blend sweetened with stevia and monk fruit. No dairy or soy.",
+    shortBenefits: [
+      "20g plant protein",
+      "Only 1g sugar",
+      "High fiber for hunger control",
+      "Peanut butter + chocolate"
+    ],
+    faq: [
+      {
+        question: "Does it taste chalky?",
+        answer: "Texture is firm and chewy—peanut butter fans love it, but it's less dessert-like than whey bars."
+      }
+    ],
+    isHero: false,
+  },
+  {
+    id: "no-cow-chocolate-fudge",
+    name: "No Cow Protein Bar Chocolate Fudge",
+    brand: "No Cow",
+    categoryTags: ["vegan", "high-protein"],
+    dietTags: ["vegan", "dairy-free", "gluten-free"],
+    bestFor: ["post-workout", "low-sugar", "weight-loss"],
+    proteinPerServing: 20,
+    caloriesPerServing: 190,
+    carbsPerServing: 24,
+    fatsPerServing: 5,
+    sugarPerServing: 1,
+    fiberPerServing: 14,
+    servingSize: "1 bar (60g)",
+    pricePerUnit: 2.08,
+    currency: "USD",
+    rating: 4.1,
+    reviewCount: 12100,
+    imageUrl: "/snacks/no-cow-chocolate-fudge.jpg",
+    buyUrl: "https://www.amazon.com/No-Cow-Protein-Chocolate-Brownie/dp/B01K5BEJM",
+    description: "Rich fudge flavor without the sugar crash — designed for clean fuel on a vegan diet.",
+    whyGreat: "One of the highest protein-per-calorie ratios among vegan snacks — ideal during fat-loss phases.",
+    nutritionBreakdown: "20g protein, 190 calories, 14g fiber — ultra-lean and filling.",
+    ingredientsHighlight: "Pea + rice protein blend with real cocoa.",
+    shortBenefits: [
+      "Chocolate fudge taste",
+      "20g protein per bar",
+      "100% dairy-free",
+      "14g fiber for fullness"
+    ],
+    faq: [
+      {
+        question: "Is it easy to digest?",
+        answer: "No Cow uses low-FODMAP ingredients — most users tolerate it well versus whey bars."
+      }
+    ],
+    isHero: false,
+  },
+  {
+    id: "orgain-peanut-butter-protein-bar",
+    name: "Orgain Organic Protein Bar Peanut Butter",
+    brand: "Orgain",
+    categoryTags: ["vegan", "budget"],
+    dietTags: ["vegan", "organic", "gluten-free"],
+    bestFor: ["snack-time", "desk-snack", "busy-lifestyle"],
+    proteinPerServing: 10,
+    caloriesPerServing: 150,
+    carbsPerServing: 19,
+    fatsPerServing: 7,
+    sugarPerServing: 5,
+    fiberPerServing: 3,
+    servingSize: "1 bar (45g)",
+    pricePerUnit: 1.67,
+    currency: "USD",
+    rating: 4.4,
+    reviewCount: 9750,
+    imageUrl: "/snacks/orgain-peanut-butter.jpg",
+    buyUrl: "https://www.amazon.com/Orgain-JustinS%C2%AE-Butter-Protein-Powder/dp/B0CZZ78R8L",
+    description: "A softer-texture bar made with real organic peanut butter and only 150 calories — ideal as a clean snack.",
+    whyGreat: "One of the best-tasting clean vegan bars under $2.",
+    nutritionBreakdown: "Balanced macros ideal for light snacking, not too high in sugar or calories.",
+    ingredientsHighlight: "Organic plant ingredients, natural flavors — no artificial sweeteners.",
+    shortBenefits: [
+      "Certified organic ingredients",
+      "Light 150-calorie option",
+      "Real peanut butter flavor",
+      "Budget-friendly vegan choice"
+    ],
+    faq: [
+      {
+        question: "Is this good post-workout?",
+        answer: "Great snack — but only 10g protein. Pair with yogurt or shake for muscle recovery."
+      }
+    ],
+    isHero: false,
+  },
+
+  {
     id: "lenny-larry-complete-cookie-protein-chocolate-chip",
     name: "Lenny & Larry's Complete Cookie Chocolate Chip",
     brand: "Lenny & Larry's",
@@ -1646,6 +1761,7 @@ const baseSnacks: Array<
     isHero: false,
   },
 ]
+
 
 export const snacks: Snack[] = baseSnacks.map((snack) => ({
   ...snack,

@@ -1,9 +1,9 @@
 import type { Config } from "tailwindcss"
 import animatePlugin from "tailwindcss-animate"
+import typography from "@tailwindcss/typography"
 
-/** 
- * This file configures Tailwind CSS for the High Protein Snacks directory.
- * It includes shadcn/ui design tokens plus project-specific colors and fonts.
+/**
+ * Tailwind CSS config for The High Protein Snacks
  */
 const config: Config = {
   darkMode: ["class"],
@@ -12,6 +12,7 @@ const config: Config = {
     "./components/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
     "./lib/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,mdx}", // Added mdx support
   ],
   theme: {
     extend: {
@@ -71,8 +72,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [animatePlugin],
+  plugins: [
+    animatePlugin,
+    typography, // 👈 This is the correct addition
+  ],
 }
 
 export default config
-

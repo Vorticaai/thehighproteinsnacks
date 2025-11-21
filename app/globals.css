@@ -68,6 +68,21 @@
 .pill {
   @apply rounded-full border border-border bg-white px-3 py-1 text-sm text-muted-foreground;
 }
+/* Clean table typography */
+.prose table {
+  @apply w-full text-sm border border-gray-300;
+}
+.prose th {
+  @apply bg-gray-50 font-semibold text-gray-800 px-3 py-2 border border-gray-300;
+}
+.prose td {
+  @apply text-gray-700 px-3 py-2 border border-gray-200;
+}
+.prose code,
+.prose pre code {
+  @apply bg-transparent text-gray-900 p-0;
+}
+
 
 .brand-cta-button:hover {
   background-color: #b6ef3c !important;

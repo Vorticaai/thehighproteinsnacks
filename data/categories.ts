@@ -122,7 +122,8 @@ export const categories: Category[] = [
     slug: "low-sugar",
     title: "Low-Sugar High-Protein Snacks",
     description:
-      "High-protein snacks with 5g or less sugar per serving. Sweetened with natural alternatives like stevia and allulose to satisfy cravings without blood sugar spikes.",
+    "High-protein snacks with 3g or less sugar per serving. Designed to support blood sugar control, weight loss, and clean energy without the crash.",
+  
     primaryKeyword: "low sugar high protein snacks",
     secondaryKeywords: [
       "protein snacks no sugar",
