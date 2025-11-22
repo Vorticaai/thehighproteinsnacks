@@ -11,7 +11,7 @@ import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 
 import { SnackComparisonTable } from "@/components/snacks/SnackComparisonTable"
 import { BudgetComparisonTable } from "@/components/snacks/BudgetComparisonTable"
-import { getLowSugarSnacks } from "@/lib/getLowSugarSnacks"
+import { getLowSugarSnacks } from "@/lib/snackFilters"
 
 interface GuidePageProps {
   params: { slug: string }

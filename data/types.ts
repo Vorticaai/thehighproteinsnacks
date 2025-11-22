@@ -14,11 +14,13 @@ export type DietTag =
   | "dairy-free"
   | "soy-free"
   | "nut-free"
+  | "organic"
 
 export type CategoryTag =
   | "weight-loss"
   | "budget"
   | "low-calorie"
+  | "high-protein"
   | "vegan"
   | "halal"
   | "keto"

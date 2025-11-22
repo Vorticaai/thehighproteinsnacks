@@ -1,9 +1,9 @@
 // components/guides/SnackComparisonTable.tsx
 import Link from "next/link"
-import type { Snack } from "@/data/types"
+import type { Product } from "@/lib/products"
 
 type Props = {
-  snacks: Snack[]
+  snacks: Product[]
   title?: string
 }
 
@@ -17,7 +17,7 @@ export function SnackComparisonTable({ snacks, title }: Props) {
       )}
 
       <div className="overflow-x-auto">
-        <table className="w-full text-sm border border-gray-300 rounded-xl overflow-hidden">
+        <table className="w-full overflow-hidden rounded-xl border border-gray-300 text-sm">
           <thead>
             <tr className="bg-gray-50 text-left font-semibold text-gray-800">
               <th className="px-3 py-2">Snack</th>
@@ -25,19 +25,17 @@ export function SnackComparisonTable({ snacks, title }: Props) {
               <th className="px-3 py-2">Sugar</th>
               <th className="px-3 py-2">Score</th>
               <th className="px-3 py-2">Calories</th>
-              <th className="px-3 py-2">Rating</th>
               <th className="px-3 py-2 whitespace-nowrap">Price</th>
             </tr>
           </thead>
           <tbody>
             {snacks.map((snack) => {
-              const score = snack.sugarPerServing
-                ? snack.proteinPerServing / snack.sugarPerServing
-                : 0
+              const score =
+                snack.sugarPerServing > 0
+                  ? snack.proteinPerServing / snack.sugarPerServing
+                  : snack.proteinPerServing
 
-              const link = snack.buyUrl
-                ? snack.buyUrl
-                : `/snack/${snack.id}`
+              const link = snack.buyUrl || "#"
 
               return (
                 <tr
@@ -56,11 +54,8 @@ export function SnackComparisonTable({ snacks, title }: Props) {
                   </td>
                   <td className="px-3 py-2">{snack.caloriesPerServing}</td>
                   <td className="px-3 py-2">
-                    {snack.rating ? `${snack.rating.toFixed(1)} ⭐` : "—"}
-                  </td>
-                  <td className="px-3 py-2">
-                    {snack.pricePerUnit
-                      ? `$${snack.pricePerUnit.toFixed(2)}`
+                    {snack.pricePerServing
+                      ? `$${snack.pricePerServing.toFixed(2)}`
                       : "—"}
                   </td>
                 </tr>

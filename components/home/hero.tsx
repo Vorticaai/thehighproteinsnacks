@@ -47,6 +47,14 @@ export default function Hero() {
         {/* Primary CTAs */}
         <div className="mt-6 flex flex-wrap items-center gap-3">
            <Link
+             href="/snacks"
+             className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#0C6C5A] shadow-sm transition-colors hover:bg-white/90"
+           >
+             Browse all snacks
+             <span className="ml-2 text-lg leading-none">→</span>
+           </Link>
+
+           <Link
              href="/category/weight-loss"
              className="inline-flex items-center justify-center rounded-full bg-[#C6F221] px-6 py-3 text-sm font-semibold text-black shadow-sm hover:bg-[#B6E111] transition-colors"
            >

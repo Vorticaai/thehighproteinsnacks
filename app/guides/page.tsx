@@ -2,6 +2,13 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { guides } from "@/data/guides"
 
+const featuredCategoryLinks = [
+  { label: "Weight Loss Snacks", href: "/snacks/weight-loss" },
+  { label: "Low-Sugar Snacks", href: "/snacks/low-sugar" },
+  { label: "Protein Bars", href: "/snacks/protein-bars" },
+  { label: "Keto Snacks", href: "/snacks/keto" },
+]
+
 export const metadata: Metadata = {
   title: "High-Protein Snack Guides | The High Protein Snacks",
   description:
@@ -33,6 +40,17 @@ export default function GuidesPage() {
           Expert advice on choosing the best high-protein snacks for your goals, budget, and
           lifestyle.
         </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          {featuredCategoryLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="inline-flex items-center rounded-full border border-gray-200 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-gray-600 transition hover:border-[#006F6D] hover:text-[#006F6D]"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Guides Grid */}
