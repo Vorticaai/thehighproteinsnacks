@@ -1,32 +1,74 @@
 // app/page.tsx
 import Link from "next/link";
 import type { Metadata } from "next";
-import ProductRow from "@/components/sections/ProductRow";
-import { getAllProducts } from "@/lib/products";
 import { CheckCircle2 } from "lucide-react";
+import { getAllProducts, type Product } from "@/lib/products";
+import { categoryFilters } from "@/lib/categoryFilters";
 import ComparisonsRow from "@/components/sections/ComparisonsRow";
 import GuidesRow from "@/components/sections/GuidesRow";
+import ProductRow from "@/components/sections/ProductRow";
+import ExploreCategoryRow from "@/components/sections/ExploreCategoryRow";
 
 // --- BRAND COLORS (centralized) ---
 const PRIMARY_DARK = "#124942"; // was #0F3D37// softer deep teal
 const ACCENT_LIME  = "#C6FF47"; // lime highlight
 
 export const metadata: Metadata = {
-  title: "The High Protein Snacks Directory – 500+ Tested & Ranked (2025)",
+  title: "The High Protein Snacks Directory",
   description:
-    "Stop eating chalky bars. Independent rankings of 500+ high-protein snacks by protein-per-dollar, taste, and ingredient quality.",
+    "Independent rankings of the cleanest high-protein snacks—compare macros, sugar, and price in one scroll-friendly hub.",
 };
+
+type CategorySlug = keyof typeof categoryFilters;
+
+const defaultSorter = (a: Product, b: Product) =>
+  b.proteinPerServing - a.proteinPerServing;
+
+const sorters: Partial<Record<CategorySlug, (a: Product, b: Product) => number>> =
+  {
+    "best-value": (a, b) => b.proteinPerDollar - a.proteinPerDollar,
+    "low-sugar": (a, b) => {
+      if (a.sugarPerServing === b.sugarPerServing) {
+        return b.proteinPerServing - a.proteinPerServing;
+      }
+      return a.sugarPerServing - b.sugarPerServing;
+    },
+    "weight-loss": (a, b) => {
+      if (a.caloriesPerServing === b.caloriesPerServing) {
+        return b.proteinPerServing - a.proteinPerServing;
+      }
+      return a.caloriesPerServing - b.caloriesPerServing;
+    },
+    keto: (a, b) => {
+      const netA = a.netCarbs ?? Number.POSITIVE_INFINITY;
+      const netB = b.netCarbs ?? Number.POSITIVE_INFINITY;
+      if (netA === netB) {
+        return b.proteinPerServing - a.proteinPerServing;
+      }
+      return netA - netB;
+    },
+  };
+
+function selectProducts(
+  slug: CategorySlug,
+  products: Product[],
+  limit = 10,
+): Product[] {
+  const filterFn = categoryFilters[slug];
+  if (!filterFn) return [];
+  const filtered = products.filter(filterFn);
+  const sorter = sorters[slug] ?? defaultSorter;
+  return filtered.sort(sorter).slice(0, limit);
+}
 
 export default async function HomePage() {
   const products = getAllProducts();
-  const productCount = products.length;
 
-
-  // Best value = highest grams of protein per dollar
-  const bestValue = [...products]
-    .filter((p) => p.pricePerServing > 0 && p.proteinPerServing > 0)
-    .sort((a, b) => b.proteinPerDollar - a.proteinPerDollar)
-    .slice(0, 10);
+  const bestValue = selectProducts("best-value", products);
+  const lowSugar = selectProducts("low-sugar", products);
+  const weightLoss = selectProducts("weight-loss", products);
+  const keto = selectProducts("keto", products);
+  const highProtein = selectProducts("high-protein", products);
 
   return (
     <>
@@ -130,12 +172,35 @@ export default async function HomePage() {
       />
 
       <main className="mx-auto max-w-7xl bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
-        {/* Best Value Row */}
         <ProductRow
-          title="💰 Best Value High-Protein Snacks"
-          subtitle="Highest protein per dollar right now"
+          title="Best Value"
           products={bestValue}
           viewAllHref="/snacks/best-value"
+          cardStyle="modern"
+        />
+
+        <ProductRow
+          title="Low Sugar"
+          products={lowSugar}
+          viewAllHref="/snacks/low-sugar"
+        />
+
+        <ProductRow
+          title="Weight Loss"
+          products={weightLoss}
+          viewAllHref="/snacks/weight-loss"
+        />
+
+        <ProductRow
+          title="Keto"
+          products={keto}
+          viewAllHref="/snacks/keto"
+        />
+
+        <ProductRow
+          title="High Protein"
+          products={highProtein}
+          viewAllHref="/snacks/high-protein"
         />
 
         {/* Popular Comparisons (SEO + conversion) */}
@@ -144,66 +209,7 @@ export default async function HomePage() {
         {/* Nutrition Guides (authority + internal links) */}
         <GuidesRow />
 
-        {/* Categories */}
-        <section className="my-20">
-          <h2 className="mb-10 text-center text-3xl font-black text-gray-900">
-            Explore by Category
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "Weight Loss",
-                desc: "Under 200 calories, designed to keep you full",
-                icon: "⚖️",
-                href: "/snacks/weight-loss",
-              },
-              {
-                title: "Low Sugar",
-                desc: "<2g sugar or less to prevent insulin spikes",
-                icon: "🍬",
-                href: "/snacks/low-sugar",
-              },
-              {
-                title: "Keto Friendly",
-                desc: "High fat, low carb options for ketosis",
-                icon: "🥑",
-                href: "/snacks/keto",
-              },
-              {
-                title: "Protein Bars",
-                desc: "The classics — ranked by taste & texture",
-                icon: "🍫",
-                href: "/snacks/bars",
-              },
-              {
-                title: "Budget Finds",
-                desc: "Highest protein for the lowest cost per gram",
-                icon: "💸",
-                href: "/snacks/best-value",
-              },
-              {
-                title: "Plant Based",
-                desc: "100% vegan complete protein sources",
-                icon: "🌱",
-                href: "/snacks/vegan",
-              },
-            ].map((cat) => (
-              <Link
-                key={cat.title}
-                href={cat.href}
-                className="group block rounded-2xl bg-white p-8 shadow-sm border-2 border-[#C6FF47] hover:-translate-y-1 hover:shadow-lg hover:ring-2 hover:ring-[#C6FF47] transition"
-
-              >
-                <div className="mb-4 text-4xl">{cat.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900">{cat.title}</h3>
-                <p className="mt-2 text-sm text-gray-600">{cat.desc}</p>
-                <span className="mt-6 inline-block font-bold text-[#0B1F1E] group-hover:underline">
-                  View snacks →
-                </span>
-              </Link>
-            ))}
-          </div>
-        </section>
+        <ExploreCategoryRow />
 
         {/* Tools */}
         <section className="my-20 rounded-3xl bg-[#0B1F1E] p-10 text-white">
@@ -216,7 +222,7 @@ export default async function HomePage() {
                 title: "Protein Calculator",
                 desc: "Find your exact daily needs based on goals & activity",
                 cta: "Calculate Now",
-                href: "/tools/protein-calculator",
+                href: "/calculator",
                 highlight: false,
               },
               {

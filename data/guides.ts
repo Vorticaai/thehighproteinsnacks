@@ -16,6 +16,7 @@ export interface Guide {
       heading: string
       subheading?: string
       content: string
+      type?: "comparison"
     }>
   }
 
@@ -90,6 +91,7 @@ export const guides: Guide[] = [
         },
         {
           heading: "Top 7 Products Ranked",
+          type: "comparison",
           content:
             "After analyzing 40+ products, these 7 rank highest: Quest Chocolate Chip Cookie Dough (21g protein, 200 cal, $1.60), Quest Cookies & Cream (21g protein, 190 cal, $1.60), Quest Birthday Cake (20g protein, 180 cal, $1.60), Quest Ranch Chips (19g protein, 140 cal, $2.29), Quest Nacho Cheese Chips (18g protein, 140 cal, $2.30), Built Bar Cookies & Cream (17g protein, 140 cal, $2.90), and Built Bar Strawberry (15g protein, 140 cal, $2.50). All products deliver exceptional protein-per-dollar ratios and meet strict weight-loss criteria.",
         },
@@ -188,6 +190,7 @@ export const guides: Guide[] = [
         },
         {
           heading: "Top 7 Products Ranked by Net Carbs",
+          type: "comparison",
           content:
             "After analyzing all products, these 7 have the lowest net carbs while maintaining optimal keto macros: Quest Cookies & Cream (~9g net carbs, 21g protein, 8g fat), Quest Birthday Cake (~8g net carbs, 20g protein, 7g fat), Quest Chocolate Chunk Cookie (~7g net carbs, 15g protein, 17g fat), IQBAR Peanut Butter Chip (~6g net carbs, 12g protein, 10g fat), IQBAR Chocolate Sea Salt (~6g net carbs, 12g protein, 12g fat), Quest Chocolate Chip Cookie Dough (~5g net carbs, 21g protein, 9g fat), and Quest Peanut Butter Cups (~1g net carbs, 10g protein, 12g fat). All maintain ketosis while providing sustained energy.",
         },
@@ -293,6 +296,7 @@ export const guides: Guide[] = [
         },
         {
           heading: "Budget Comparison Chart",
+          type: "comparison",
           content:
             "Quest Chocolate Chip Cookie Dough: 21g protein, 200 cal, $1.60, 13.1g/$. Quest Cookies & Cream: 21g protein, 190 cal, $1.60, 13.1g/$. Quest Birthday Cake: 20g protein, 180 cal, $1.60, 12.5g/$. KIND Dark Chocolate Nut: 12g protein, 250 cal, $1.50, 8g/$. RXBAR Maple Sea Salt: 12g protein, 220 cal, $1.58, 7.59g/$. RXBAR Coconut Chocolate: 12g protein, 200 cal, $1.58, 7.59g/$. RXBAR Peanut Butter Chocolate: 12g protein, 210 cal, $1.70, 7.06g/$.",
         },
@@ -406,6 +410,7 @@ export const guides: Guide[] = [
  },
         {
           heading: "Quick Comparison: Protein, Calories & Sugar",
+          type: "comparison",
           content: `
 | Snack | Protein | Calories | Sugar |
 | --- | --- | --- | --- |
@@ -513,6 +518,7 @@ export const guides: Guide[] = [
       sections: [
         {
           heading: "Top Picks Under 3g Sugar",
+          type: "comparison",
           content:
             "These 7 snacks are the **best blend of protein density, fiber, and clean energy**, while keeping sugar extremely low. Ideal for: weight-loss phases, low-sugar diets, carb-conscious tracking, or anyone who wants protein without candy disguised as a snack.",
         },
@@ -531,6 +537,7 @@ export const guides: Guide[] = [
   
         {
           heading: "Quick Comparison: Protein, Calories & Sugar",
+          type: "comparison",
           content: `
 | Snack | Protein | Calories | Sugar |
 | --- | --- | --- | --- |

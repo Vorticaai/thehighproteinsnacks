@@ -1,38 +1,22 @@
-/**
- * Reusable breadcrumb navigation component
- * Maintains consistent styling across all pages
- */
-import Link from "next/link"
+import BreadcrumbComponent, {
+  type BreadcrumbItem,
+} from "@/components/nav/Breadcrumbs";
 
 export type Crumb = {
-  label: string
-  href?: string // if omitted, render as plain text (current page)
+  label?: string;
+  name?: string;
+  href?: string;
+};
+
+interface LegacyBreadcrumbProps {
+  items: Crumb[];
 }
 
-interface BreadcrumbsProps {
-  items: Crumb[]
+export function Breadcrumbs({ items }: LegacyBreadcrumbProps) {
+  const normalized: BreadcrumbItem[] = items.map((item) => ({
+    name: item.name ?? item.label ?? "",
+    href: item.href,
+  }));
+
+  return <BreadcrumbComponent items={normalized} />;
 }
-
-export function Breadcrumbs({ items }: BreadcrumbsProps) {
-  return (
-    <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-sm text-gray-600">
-      {items.map((crumb, index) => {
-        const isLast = index === items.length - 1
-
-        return (
-          <span key={index} className="flex items-center gap-2">
-            {crumb.href ? (
-              <Link href={crumb.href} className="transition-colors hover:text-gray-900">
-                {crumb.label}
-              </Link>
-            ) : (
-              <span className="text-gray-900">{crumb.label}</span>
-            )}
-            {!isLast && <span>/</span>}
-          </span>
-        )
-      })}
-    </nav>
-  )
-}
-

@@ -2,6 +2,22 @@ import fs from "fs"
 import path from "path"
 import Papa from "papaparse"
 
+export type ProductFlags = {
+  weightLoss?: boolean
+  highProtein?: boolean
+  lowCarb?: boolean
+  keto?: boolean
+  lowSugar?: boolean
+  glutenFree?: boolean
+  vegan?: boolean
+  plantBased?: boolean
+  dairyFree?: boolean
+  budget?: boolean
+  bars?: boolean
+  chips?: boolean
+  cookies?: boolean
+}
+
 export type Product = {
   id: string
   name: string
@@ -12,21 +28,13 @@ export type Product = {
   fatsPerServing: number
   sugarPerServing: number
   fiberPerServing: number
+  netCarbs?: number
   pricePerServing: number
   buyUrl: string
   imageUrl: string
   proteinPerDollar: number
-  flags: {
-    weightLoss: boolean
-    highProtein: boolean
-    lowCarb: boolean
-    keto: boolean
-    lowSugar: boolean
-    glutenFree: boolean
-    vegan: boolean
-    bars: boolean
-    chips: boolean
-  }
+  type?: string
+  flags: ProductFlags
 }
 
 type RawProductRow = {
@@ -42,6 +50,7 @@ type RawProductRow = {
   pricePerServing: string
   buyUrl: string
   imageFileName: string
+  type?: string
   isWeightLoss: string
   isHighProtein: string
   isLowCarb: string
@@ -51,6 +60,10 @@ type RawProductRow = {
   isVegan: string
   isBars: string
   isChips: string
+  isPlantBased?: string
+  isDairyFree?: string
+  isBudget?: string
+  isCookies?: string
 }
 
 let productCache: Product[] | null = null
@@ -78,6 +91,9 @@ export function getAllProducts(): Product[] {
 function normalizeRow(row: RawProductRow): Product {
   const protein = toNumber(row.proteinPerServing)
   const price = toNumber(row.pricePerServing)
+  const carbs = toNumber(row.carbsPerServing)
+  const fiber = toNumber(row.fiberPerServing)
+  const netCarbs = Math.max(carbs - fiber, 0)
 
   return {
     id: row.ID,
@@ -85,14 +101,16 @@ function normalizeRow(row: RawProductRow): Product {
     brand: row.Brand,
     proteinPerServing: protein,
     caloriesPerServing: toNumber(row.caloriesPerServing),
-    carbsPerServing: toNumber(row.carbsPerServing),
+    carbsPerServing: carbs,
     fatsPerServing: toNumber(row.fatsPerServing),
     sugarPerServing: toNumber(row.sugarPerServing),
-    fiberPerServing: toNumber(row.fiberPerServing),
+    fiberPerServing: fiber,
+    netCarbs,
     pricePerServing: price,
     buyUrl: row.buyUrl?.trim() ?? "",
     imageUrl: buildImagePath(row.imageFileName),
     proteinPerDollar: price > 0 ? Number((protein / price).toFixed(2)) : 0,
+    type: normalizeProductType(row.type),
     flags: {
       weightLoss: toBool(row.isWeightLoss, "isWeightLoss"),
       highProtein: toBool(row.isHighProtein, "isHighProtein"),
@@ -101,8 +119,12 @@ function normalizeRow(row: RawProductRow): Product {
       lowSugar: toBool(row.isLowSugar, "isLowSugar"),
       glutenFree: toBool(row.isGlutenFree, "isGlutenFree"),
       vegan: toBool(row.isVegan, "isVegan"),
+      plantBased: toBool(row.isPlantBased, "isPlantBased"),
+      dairyFree: toBool(row.isDairyFree, "isDairyFree"),
+      budget: toBool(row.isBudget, "isBudget"),
       bars: toBool(row.isBars, "isBars"),
       chips: toBool(row.isChips, "isChips"),
+      cookies: toBool(row.isCookies, "isCookies"),
     },
   }
 }
@@ -125,6 +147,23 @@ function toBool(value: string | undefined, key: string): boolean {
   if (falsy.includes(normalized)) return false
 
   return normalized === key.toLowerCase() || normalized.length > 0
+}
+
+function normalizeProductType(value: string | undefined): string | undefined {
+  if (!value) return undefined
+  const normalized = value.trim().toLowerCase()
+  if (!normalized) return undefined
+
+  const typeMap: Record<string, string> = {
+    bar: "bar",
+    bars: "bar",
+    chip: "chips",
+    chips: "chips",
+    cookie: "cookie",
+    cookies: "cookie",
+  }
+
+  return typeMap[normalized] ?? normalized
 }
 
 function buildImagePath(fileName: string | undefined): string {

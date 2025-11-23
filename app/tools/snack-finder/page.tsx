@@ -431,7 +431,7 @@ export default function SnackFinderQuizPage() {
               Want to explore more options?
             </p>
             <Link
-              href="/category/weight-loss"
+              href="/snacks/weight-loss"
               className="inline-flex items-center rounded-full border-2 border-[#006F6D] bg-transparent px-6 py-3 font-bold text-[#006F6D] hover:bg-[#006F6D] hover:text-white transition-colors"
             >
               Browse all snacks <ArrowRight className="ml-2 h-4 w-4" />

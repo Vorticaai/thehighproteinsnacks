@@ -1,67 +1,67 @@
-/**
- * Generates a complete sitemap for all pages on the site.
- * Includes homepage, categories, products, guides, and comparison pages.
- */
-import type { MetadataRoute } from "next"
-import { categories } from "@/data/categories"
-import { snacks } from "@/data/snacks"
-import { absoluteUrl } from "@/lib/seo"
+import type { MetadataRoute } from "next";
+import { guides } from "@/data/guides";
+import { absoluteUrl } from "@/lib/seo";
+import { getAllProducts } from "@/lib/products";
+import { categorySlugs } from "@/lib/snackFilters";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
+  const today = new Date();
+  const products = getAllProducts();
 
-  // Static guide and comparison pages
-  const staticGuidePaths = [
-    "/calculator",
-    "/quiz",
-    "/best-high-protein-snacks-for-weight-loss",
-    "/best-high-protein-snacks-for-keto",
-    "/best-high-protein-snacks-for-road-trips",
-    "/best-high-protein-snacks-for-office-and-desk",
-    "/compare/quest-bars-vs-rxbars",
-    "/blog/how-to-choose-high-protein-snacks",
-  ]
-
-  // Homepage
-  const staticEntries: MetadataRoute.Sitemap = [
+  const entries: MetadataRoute.Sitemap = [
     {
       url: absoluteUrl("/"),
-      lastModified: now,
+      lastModified: today,
       changeFrequency: "daily",
       priority: 1.0,
     },
-  ]
+    {
+      url: absoluteUrl("/snacks"),
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: absoluteUrl("/guides"),
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+  ];
 
-  // Guide and comparison pages
-  const guideEntries = staticGuidePaths.map((path) => ({
-    url: absoluteUrl(path),
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }))
+  const categorySet = new Set([
+    "best-value",
+    "low-sugar",
+    "weight-loss",
+    ...categorySlugs,
+  ]);
 
-  // Category pages
-  const categoryEntries = categories.map((category) => ({
-    url: absoluteUrl(`/category/${category.slug}`),
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.9,
-  }))
+  categorySet.forEach((slug) => {
+    entries.push({
+      url: absoluteUrl(`/snacks/${slug}`),
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: slug === "best-value" ? 0.85 : 0.8,
+    });
+  });
 
-  // Product pages
-  const productEntries = snacks.map((snack) => ({
-    url: absoluteUrl(`/snack/${snack.id}`),
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }))
+  products.forEach((product) => {
+    entries.push({
+      url: absoluteUrl(`/snacks/${product.id}`),
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    });
+  });
 
-  return [
-    ...staticEntries,
-    ...guideEntries,
-    ...categoryEntries,
-    ...productEntries,
-  ]
+  guides.forEach((guide) => {
+    entries.push({
+      url: absoluteUrl(`/guides/${guide.slug}`),
+      lastModified: today,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+  });
+
+  return entries;
 }
-
-

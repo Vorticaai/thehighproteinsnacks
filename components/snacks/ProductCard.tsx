@@ -2,6 +2,7 @@
 "use client";
 
 import type { Product } from "@/lib/products";
+import Link from "next/link";
 
 // helpers to color the value badge
 const valueClass = (gPerDollar: number) => {
@@ -29,7 +30,12 @@ export default function ProductCard({ product }: Props) {
 
       {/* Title + brand */}
       <h3 className="mb-1 line-clamp-2 text-sm font-semibold text-gray-900">
-        {product.name}
+        <Link
+          href={`/snacks/${product.id}`}
+          className="text-gray-900 transition hover:text-[#006F6D]"
+        >
+          {product.name}
+        </Link>
       </h3>
       <p className="mb-2 text-[11px] uppercase tracking-wide text-gray-500">
         {product.brand}
