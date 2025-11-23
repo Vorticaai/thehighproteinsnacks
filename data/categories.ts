@@ -8,9 +8,9 @@ export const categories: Category[] = [
   {
     id: "cat-weight-loss",
     slug: "weight-loss",
-    title: "Weight Loss High-Protein Snacks",
+    title: "Best for Weight Loss — Top 3 Picks",
     description:
-      "High-protein snacks with fewer than 200 calories per serving, designed to keep you full longer and support fat loss while preserving lean muscle mass.",
+      "High-protein, low-calorie snacks curated to support fat loss while keeping you full.",
     primaryKeyword: "high protein snacks for weight loss",
     secondaryKeywords: [
       "low calorie protein snacks",
@@ -19,8 +19,12 @@ export const categories: Category[] = [
       "best protein snacks for losing weight",
     ],
     heroCopy:
-      "Fuel your weight loss journey with snacks that satisfy hunger without sabotaging your calorie goals.",
+      "Lose weight without feeling hungry — these top picks keep calories low and protein high.",
+    
+    // ⭐ NEW FIELD so homepage can show “Top 3 Picks”
+    showTopThree: true,
   },
+  
   {
     id: "cat-keto",
     slug: "keto",

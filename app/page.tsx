@@ -8,6 +8,8 @@ import ComparisonsRow from "@/components/sections/ComparisonsRow";
 import GuidesRow from "@/components/sections/GuidesRow";
 import ProductRow from "@/components/sections/ProductRow";
 import ExploreCategoryRow from "@/components/sections/ExploreCategoryRow";
+import TopRankingsToday from "@/components/sections/TopRankingsToday";
+
 
 // --- BRAND COLORS (centralized) ---
 const PRIMARY_DARK = "#124942"; // was #0F3D37// softer deep teal
@@ -74,6 +76,8 @@ export default async function HomePage() {
     <>
       {/* HERO */}
 <header style={{ backgroundColor: PRIMARY_DARK }} className="text-white">
+  
+  
   <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
     
     {/* NEW HEADLINE */}
@@ -150,7 +154,7 @@ export default async function HomePage() {
     </div>
   </div>
 </header>
-
+<TopRankingsToday />
 
       {/* JSON-LD: Best Value list (only once) */}
       <script

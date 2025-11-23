@@ -76,5 +76,7 @@ export type Category = {
   primaryKeyword: string
   secondaryKeywords: string[]
   heroCopy: string
+  showTopThree?: boolean   // NEW FIELD
 }
+
 
