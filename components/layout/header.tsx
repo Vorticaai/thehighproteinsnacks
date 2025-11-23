@@ -8,7 +8,7 @@ export function Header() {
     { label: "Home", href: "/" },
     { label: "Calculator", href: "/calculator" },
     { label: "Quiz", href: "/quiz" },
-    { label: "Categories", href: "/category/weight-loss" },
+    { label: "Categories", href: "/snacks/weight-loss" },
     { label: "How We Review", href: "/how-we-review" },
   ]
 

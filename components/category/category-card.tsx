@@ -51,7 +51,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
 
       {/* CTA Button */}
       <Link
-        href={`/category/${category.slug}`}
+        href={`/snacks/${category.slug}`}
         className="inline-flex items-center rounded-full bg-[#CCFF00] px-6 py-3 text-sm font-bold text-black transition-colors hover:bg-[#A3CC00]"
       >
         View snacks <ArrowRight className="ml-2 h-4 w-4" />

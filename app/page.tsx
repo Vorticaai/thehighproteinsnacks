@@ -73,85 +73,84 @@ export default async function HomePage() {
   return (
     <>
       {/* HERO */}
-      <header style={{ backgroundColor: PRIMARY_DARK }} className="text-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          
+<header style={{ backgroundColor: PRIMARY_DARK }} className="text-white">
+  <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
+    
+    {/* NEW HEADLINE */}
+    <h1 className="text-4xl font-black tracking-tight sm:text-6xl">
+      Find the best <span className="text-[#C6FF47]">high-protein snacks</span> for your goals.
+    </h1>
 
-          <h1 className="text-4xl font-black tracking-tight sm:text-6xl">
-            Stop eating <span className="text-[#C6FF47]">chalky</span> bars.
-          </h1>
+    {/* SUBHEAD */}
+    <p className="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-200">
+      Bars, shakes, chips, bites — ranked by what actually matters:
+      <span className="font-semibold text-white"> protein-per-dollar</span>,
+      <span className="font-semibold text-white"> sugar</span>, and
+      <span className="font-semibold text-white"> ingredient quality</span>.
+    </p>
 
-          <p className="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-200">
-  Compare protein, sugar, and price across trusted bars, chips, and shakes —
-  ranked to help you snack smarter.
-</p>
+    
 
+    {/* Trust badges */}
+    <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300">
+      <span className="flex items-center gap-1">
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Tested by real people
+      </span>
+      <span className="flex items-center gap-1">
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Ranked by nutrition
+      </span>
+      <span className="flex items-center gap-1">
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> No sponsored content
+      </span>
+      <span className="flex items-center gap-1">
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Updated constantly
+      </span>
+    </div>
 
+    {/* Primary CTAs */}
+    <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <Link
+        href="/snacks"
+        className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold text-black transition hover:opacity-95"
+        style={{ backgroundColor: ACCENT_LIME }}
+      >
+        Find Your Snack →
+      </Link>
 
-<p className="mx-auto mt-4 max-w-3xl text-lg sm:text-xl text-gray-200">
-  The independent directory of high-protein snacks—ranked by protein-per-dollar,
-  sugar, and ingredient quality.
-</p>
+      <Link
+        href="/tools/snack-finder"
+        className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
+      >
+        Snack Finder Quiz
+      </Link>
+    </div>
 
+    {/* Quick filter chips */}
+    <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
+      <Link
+        href="/snacks/high-protein"
+        className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
+      >
+        High-protein picks
+      </Link>
 
-          {/* Trust badges */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300">
-  <span className="flex items-center gap-1">
-    <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Real nutrition facts
-  </span>
-  <span className="flex items-center gap-1">
-    <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Ranked by protein-per-dollar
-  </span>
-  <span className="flex items-center gap-1">
-    <CheckCircle2 className="h-4 w-4 text-emerald-300" /> No sponsored placements
-  </span>
-  <span className="flex items-center gap-1">
-    <CheckCircle2 className="h-4 w-4 text-emerald-300" /> New snacks added regularly
-  </span>
-</div>
+      <Link
+        href="/snacks/low-sugar"
+        className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
+      >
+        Low-sugar snacks
+      </Link>
 
+      <Link
+        href="/snacks/best-value"
+        className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
+      >
+        Best value (g per $)
+      </Link>
+    </div>
+  </div>
+</header>
 
-        {/* Primary CTAs */}
-<div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-  <Link
-    href="/snacks"
-    className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold text-black transition hover:opacity-95"
-    style={{ backgroundColor: ACCENT_LIME }}
-  >
-    Browse snacks →
-  </Link>
-  <Link
-    href="/tools/snack-finder"
-    className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
-  >
-    Snack Finder Quiz
-  </Link>
-</div>
-
-{/* Quick filter chips */}
-<div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
-  <Link
-    href="/snacks/weight-loss"
-    className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
-  >
-    Weight-loss picks
-  </Link>
-  <Link
-    href="/snacks/low-sugar"
-    className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
-  >
-    Low-sugar snacks
-  </Link>
-  <Link
-    href="/snacks/best-value"
-    className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
-  >
-    Best value (g per $)
-  </Link>
-</div>
-
-        </div>
-      </header>
 
       {/* JSON-LD: Best Value list (only once) */}
       <script

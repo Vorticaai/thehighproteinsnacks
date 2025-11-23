@@ -89,7 +89,7 @@ export function FilterBar({
       }
       const query = params.toString()
       startTransition(() => {
-        router.push(`/category/${slug}${query ? `?${query}` : ""}`)
+        router.push(`/snacks/${slug}${query ? `?${query}` : ""}`)
       })
     },
     [router, searchParams, slug],
@@ -117,7 +117,7 @@ export function FilterBar({
     setMaxCalories("")
     setSelectedDiets([])
     setCurrentSort("protein-desc")
-    startTransition(() => router.push(`/category/${slug}`))
+    startTransition(() => router.push(`/snacks/${slug}`))
   }
 
   return (

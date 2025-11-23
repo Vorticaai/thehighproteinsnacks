@@ -24,20 +24,20 @@ export default function Hero() {
 
          {/* Top filter chips */}
          <div className="mt-6 flex flex-wrap gap-2">
-           <Link
-             href="/category/vegan"
+          <Link
+            href="/snacks/vegan"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Vegan friendly
            </Link>
-           <Link
-             href="/category/weight-loss"
+          <Link
+            href="/snacks/weight-loss"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Under 200 calories
            </Link>
-           <Link
-             href="/category/budget"
+          <Link
+            href="/snacks/budget"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Best protein per dollar
@@ -54,8 +54,8 @@ export default function Hero() {
              <span className="ml-2 text-lg leading-none">→</span>
            </Link>
 
-           <Link
-             href="/category/weight-loss"
+          <Link
+            href="/snacks/weight-loss"
              className="inline-flex items-center justify-center rounded-full bg-[#C6F221] px-6 py-3 text-sm font-semibold text-black shadow-sm hover:bg-[#B6E111] transition-colors"
            >
              View snacks
@@ -79,26 +79,26 @@ export default function Hero() {
 
          {/* Bottom category chips */}
          <div className="mt-6 flex flex-wrap gap-2">
-           <Link
-             href="/category/weight-loss"
+          <Link
+            href="/snacks/weight-loss"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Weight Loss High-Protein Snacks
            </Link>
-           <Link
-             href="/category/keto"
+          <Link
+            href="/snacks/keto"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Keto High-Protein Snacks
            </Link>
-           <Link
-             href="/category/vegan"
+          <Link
+            href="/snacks/vegan"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Vegan High-Protein Snacks
            </Link>
-           <Link
-             href="/category/budget"
+          <Link
+            href="/snacks/budget"
              className="inline-flex items-center rounded-full border border-white/20 bg-white/5 px-4 py-1 text-xs font-medium text-teal-50 hover:bg-white/10 transition-colors"
            >
              Budget-Friendly High-Protein Snacks

@@ -147,7 +147,7 @@ export default function SnackPage({ params }: SnackPageProps) {
         "@type": "ListItem",
         position: 2,
         name: primaryCategory.replace("-", " "),
-        item: absoluteUrl(`/category/${primaryCategory}`),
+        item: absoluteUrl(`/snacks/${primaryCategory}`),
       },
       {
         "@type": "ListItem",
@@ -163,7 +163,7 @@ export default function SnackPage({ params }: SnackPageProps) {
     { label: "Home", href: "/" },
     { 
       label: primaryCategory.replace("-", " "), 
-      href: `/category/${primaryCategory}` 
+      href: `/snacks/${primaryCategory}` 
     },
     { label: snack.name }, // current page, no href
   ]
