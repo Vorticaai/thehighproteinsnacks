@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
-import { snacks } from "@/data/snacks"
+import { getAllProducts } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
 import { Breadcrumbs } from "@/components/layout/breadcrumbs"
+import { weightLossFilter } from "@/lib/categoryFilters"
 
 const PAGE_TITLE = "Best High-Protein Snacks for Weight Loss (Under 200 Calories)"
 const PAGE_DESCRIPTION =
@@ -20,15 +21,9 @@ export const metadata: Metadata = {
 }
 
 function getBestWeightLossSnacks() {
-  const weightLossSnacks = snacks.filter((snack) =>
-    snack.categoryTags?.includes("weight-loss")
-  )
+  const weightLossSnacks = getAllProducts().filter(weightLossFilter)
 
-  const filtered = weightLossSnacks.filter(
-    (snack) => snack.caloriesPerServing <= 200
-  )
-
-  const ranked = [...filtered].sort((a, b) => {
+  const ranked = [...weightLossSnacks].sort((a, b) => {
     const aScore =
       a.proteinPerServing * 4 - a.caloriesPerServing / 10 + (a.rating || 0)
     const bScore =

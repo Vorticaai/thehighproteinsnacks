@@ -3,11 +3,11 @@
  */
 import Image from "next/image"
 import Link from "next/link"
-import type { Snack } from "@/data/types"
+import type { Product } from "@/lib/products"
 import { Star } from "lucide-react"
 
 type SnackCardProps = {
-  snack: Snack
+  snack: Product
 }
 
 export function SnackCard({ snack }: SnackCardProps) {
@@ -57,7 +57,9 @@ export function SnackCard({ snack }: SnackCardProps) {
             <span className="text-xs font-semibold text-gray-600">{snack.brand}</span>
             <div className="flex items-center gap-1 text-sm">
               <Star className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />
-              <span className="font-semibold text-gray-900">{snack.rating.toFixed(1)}</span>
+              <span className="font-semibold text-gray-900">
+                {Number(snack.rating ?? 4.6).toFixed(1)}
+              </span>
             </div>
           </div>
 
@@ -95,7 +97,7 @@ export function SnackCard({ snack }: SnackCardProps) {
 
           {/* Diet Tags */}
           <div className="mt-auto flex flex-wrap gap-1.5">
-            {snack.dietTags.slice(0, 2).map((tag) => (
+            {(snack.dietTags ?? []).slice(0, 2).map((tag) => (
               <span
                 key={tag}
                 className="inline-block rounded-full bg-[#006F6D] px-3 py-1 text-xs font-medium text-white"

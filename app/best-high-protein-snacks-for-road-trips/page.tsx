@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { snacks } from "@/data/snacks"
+import { getAllProducts, type Product } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
@@ -19,17 +19,17 @@ export const metadata: Metadata = {
 }
 
 interface TravelCandidate {
-  snack: (typeof snacks)[0]
+  snack: Product
   score: number
 }
 
 function getTravelFriendlySnacks(): TravelCandidate[] {
   const travelKeywords = ["road-trip", "travel", "on-the-go", "desk-snack"]
 
-  const candidates = snacks.filter((snack) => {
+  const candidates = getAllProducts().filter((snack) => {
     // Must have at least one travel-related tag in bestFor
-    const hasTravelTag = snack.bestFor?.some((tag) =>
-      travelKeywords.includes(tag)
+    const hasTravelTag = (snack.bestFor ?? []).some((tag) =>
+      travelKeywords.includes(tag),
     )
     // Must be in reasonable calorie range for a snack
     const caloriesOk =
@@ -79,7 +79,7 @@ export default function BestRoadTripSnacksPage() {
   }
 
   // Helper to get snack descriptions for road trip context
-  const getTravelNote = (snack: (typeof snacks)[0]): string => {
+const getTravelNote = (snack: Product): string => {
     const notes: Record<string, string> = {
       "quest-choc-chip-cookie-dough":
         "Individually wrapped, doesn't melt, and packs 21g protein. Perfect for keeping in the glove box or backpack. The soft-baked texture means no crumbs everywhere.",

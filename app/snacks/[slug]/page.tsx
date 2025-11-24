@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import ProductCard from "@/components/snacks/ProductCard";
 import { getAllProducts, type Product } from "@/lib/products";
+import { weightLossFilter } from "@/lib/categoryFilters";
 import {
   categorySlugs,
   getCategoryDetails,
@@ -37,7 +38,8 @@ const CATEGORY_PRIORITIES: Array<{
 ];
 
 const FALLBACK_CATEGORY = { label: "All Snacks", slug: "snacks" };
-const CATEGORY_OVERRIDES = new Set(["low-sugar", "weight-loss", "best-value"]);
+const CATEGORY_OVERRIDES = new Set(["best-value"]);
+
 
 function isCategorySlug(slug: string): slug is CategorySlug {
   return categorySlugs.includes(slug as CategorySlug);
@@ -49,7 +51,10 @@ function isDynamicCategorySlug(slug: string): slug is CategorySlug {
 
 function getPrimaryCategory(product: Product) {
   for (const category of CATEGORY_PRIORITIES) {
-    if (product.flags[category.flag]) {
+    if (
+      (category.flag === "weightLoss" && weightLossFilter(product)) ||
+      (category.flag !== "weightLoss" && product.flags[category.flag])
+    ) {
       return category;
     }
   }
@@ -74,7 +79,7 @@ function buildPros(product: Product) {
       `Great value (${product.proteinPerDollar.toFixed(1)}g protein per $1)`,
     );
   }
-  if (product.flags.weightLoss) {
+  if (weightLossFilter(product)) {
     pros.push("Calories stay under typical weight-loss targets");
   }
   if (product.fiberPerServing >= 5) {
@@ -109,7 +114,7 @@ function buildCons(product: Product) {
 
 function buildBestFor(product: Product) {
   const badges = new Set<string>();
-  if (product.flags.weightLoss) badges.add("Weight Loss");
+  if (weightLossFilter(product)) badges.add("Weight Loss");
   if (product.flags.lowSugar) badges.add("Blood Sugar Control");
   if (product.flags.keto) badges.add("Keto / Low Carb");
   if (product.flags.vegan) badges.add("Plant-Based");
@@ -135,7 +140,7 @@ function buildFaqs(product: Product) {
     {
       question: `Is ${product.name} good for weight loss?`,
       answer:
-        product.flags.weightLoss
+        weightLossFilter(product)
           ? "Yes. Its calorie count stays under common deficit targets and the high protein keeps you satisfied between meals."
           : "It can fit a deficit as long as you budget the calories. Pair it with lighter meals if you are in a cut.",
     },
@@ -282,7 +287,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
   const badgeHighlights = [
     `${product.proteinPerServing}g protein`,
     product.flags.lowSugar ? "Low sugar" : null,
-    product.flags.weightLoss ? "Deficit-friendly" : null,
+    weightLossFilter(product) ? "Deficit-friendly" : null,
     product.flags.keto ? "Keto ready" : null,
     product.proteinPerDollar >= 12 ? "Great value" : null,
   ].filter(Boolean) as string[];

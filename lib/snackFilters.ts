@@ -1,5 +1,6 @@
 import type { Product } from "./products"
 import { getAllProducts } from "./products"
+import { weightLossFilter } from "./categoryFilters"
 
 type FlagKey = keyof Product["flags"]
 
@@ -11,22 +12,30 @@ export type CategorySlug =
   | "low-sugar"
   | "gluten-free"
   | "vegan"
+  | "plant-based"
+  | "halal"
   | "protein-bars"
   | "chips"
 
-const slugToFlag: Record<CategorySlug, FlagKey> = {
-  "weight-loss": "weightLoss",
-  "high-protein": "highProtein",
-  "low-carb": "lowCarb",
-  keto: "keto",
-  "low-sugar": "lowSugar",
-  "gluten-free": "glutenFree",
-  vegan: "vegan",
-  "protein-bars": "bars",
-  chips: "chips",
-}
 
-const categoryDetails: Record<
+
+  const slugToFlag: Record<CategorySlug, FlagKey> = {
+    "weight-loss": "weightLoss",
+    "high-protein": "highProtein",
+    "low-carb": "lowCarb",
+    keto: "keto",
+    "low-sugar": "lowSugar",
+    "gluten-free": "glutenFree",
+    vegan: "vegan",
+    "plant-based": "plantBased",
+    halal: "halal",            // ⭐ REQUIRED LINE
+    "protein-bars": "bars",
+    chips: "chips",
+  }
+  
+  
+
+  const categoryDetails: Record<
   CategorySlug,
   {
     title: string
@@ -43,6 +52,7 @@ const categoryDetails: Record<
     seoDescription:
       "Hand-picked low-calorie, high-protein snacks that support fat loss without hunger. Compare macros, sugar, and price per serving.",
   },
+
   "high-protein": {
     title: "High-Protein All-Stars",
     description:
@@ -51,6 +61,7 @@ const categoryDetails: Record<
     seoDescription:
       "Browse snacks that pack 20g+ protein per serving. Perfect for building muscle, curbing hunger, and simplifying macro tracking.",
   },
+
   "low-carb": {
     title: "Low-Carb Protein Snacks",
     description:
@@ -59,6 +70,7 @@ const categoryDetails: Record<
     seoDescription:
       "Low-carb snacks with the macros you need for cutting and carb cycling. Filtered for low net carbs and clean ingredients.",
   },
+
   keto: {
     title: "Keto-Friendly Protein Snacks",
     description:
@@ -67,6 +79,7 @@ const categoryDetails: Record<
     seoDescription:
       "Stay in ketosis with these low-net-carb protein bars, chips, and shakes. Every pick keeps sugar minimal and protein high.",
   },
+
   "low-sugar": {
     title: "Low-Sugar Snacks (≤3g)",
     description:
@@ -75,6 +88,7 @@ const categoryDetails: Record<
     seoDescription:
       "Every snack here has 3 grams of sugar or less. Ideal for blood sugar control, weight loss, and steady energy.",
   },
+
   "gluten-free": {
     title: "Gluten-Free Protein Snacks",
     description:
@@ -83,14 +97,34 @@ const categoryDetails: Record<
     seoDescription:
       "Shop gluten-free protein snacks vetted for celiac safety. Bars, chips, and shakes with great macros.",
   },
+
   vegan: {
-    title: "Vegan & Plant-Based Snacks",
+    title: "Vegan Protein Snacks",
     description:
       "Pea, rice, and nut-based proteins with clean ingredients so you can hit your targets without dairy or whey.",
     seoTitle: "Best Vegan High-Protein Snacks",
     seoDescription:
-      "Plant-based snacks that still deliver 12–20g protein. Perfect for vegans, dairy-free eaters, and anyone needing gentler digestion.",
+      "Plant-based snacks that deliver 12–20g protein. Perfect for vegans, dairy-free eaters, and gentle digestion.",
   },
+
+  "plant-based": {
+    title: "Plant-Based Protein Snacks",
+    description:
+      "Vegan and plant-powered snacks made from pea, rice, and nut proteins — macro-balanced and dairy-free.",
+    seoTitle: "Best Plant-Based High-Protein Snacks",
+    seoDescription:
+      "Top vegan and plant-based protein snacks with clean ingredients and 10–20g protein per serving.",
+  },
+
+  halal: {
+    title: "Halal Protein Snacks",
+    description:
+      "Certified Halal protein snacks with clean ingredients and reliable macros for everyday snacking.",
+    seoTitle: "Best Halal Protein Snacks",
+    seoDescription:
+      "Browse Halal-certified high-protein snacks with trustworthy ingredients, low sugar, and great macros.",
+  },
+
   "protein-bars": {
     title: "Protein Bars Worth Buying",
     description:
@@ -99,22 +133,24 @@ const categoryDetails: Record<
     seoDescription:
       "Discover the best protein bars on the market with verified macros, low sugar, and great taste.",
   },
+
   chips: {
     title: "High-Protein Chips & Crunchy Snacks",
     description:
       "Savory, crunchy, high-protein chips that replace junk food without sacrificing flavor or macros.",
     seoTitle: "High-Protein Chips & Crunchy Snacks",
     seoDescription:
-      "Quest-style chips, puffs, and crisps that deliver protein with bold flavors. Perfect for salty snack cravings.",
+      "Quest-style chips, puffs, and crisps delivering protein with bold flavors. Perfect for salty snack cravings.",
   },
 }
+
 
 function filterByFlag(flag: FlagKey): Product[] {
   return getAllProducts().filter((product) => product.flags[flag])
 }
 
 export function getWeightLossSnacks(): Product[] {
-  return filterByFlag("weightLoss")
+  return getAllProducts().filter(weightLossFilter)
 }
 
 export function getHighProteinSnacks(): Product[] {
@@ -148,17 +184,26 @@ export function getBars(): Product[] {
 export function getChips(): Product[] {
   return filterByFlag("chips")
 }
-
-export const categorySlugs = Object.keys(categoryDetails) as CategorySlug[]
-
-export function getCategoryDetails(slug: CategorySlug) {
-  return categoryDetails[slug]
-}
-
 export function getProductsByCategory(slug: CategorySlug): Product[] {
-  const flag = slugToFlag[slug]
-  if (!flag) return []
-  return filterByFlag(flag)
+  if (slug === "weight-loss") {
+    return getWeightLossSnacks();
+  }
+
+  if (slug === "halal") {
+    return getHalalSnacks();
+  }
+
+  const flag = slugToFlag[slug];
+  if (!flag) return [];
+
+  return filterByFlag(flag);
 }
 
+// ADD THIS ↓↓↓
+export function getHalalSnacks(): Product[] {
+  return getAllProducts().filter((p) =>
+    (p.dietTags ?? []).includes("halal") ||
+    (p.categoryTags ?? []).includes("halal")
+  );
+}
 

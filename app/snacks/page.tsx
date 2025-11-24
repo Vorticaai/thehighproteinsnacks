@@ -3,7 +3,9 @@ import Link from "next/link";
 import Script from "next/script";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { getAllProducts, type Product } from "@/lib/products";
+import { weightLossFilter } from "@/lib/categoryFilters";
 import { absoluteUrl } from "@/lib/seo";
+import { categoryFilters } from "@/lib/categoryFilters";
 
 export const revalidate = 60 * 60 * 6; // 21600 seconds
 
@@ -28,38 +30,46 @@ const categoryCards: CategoryCard[] = [
     title: "Best Value",
     description: "Ranked by protein-per-dollar so you never overpay.",
     slug: "best-value",
-    filter: () => true,
+    filter: categoryFilters["best-value"],
     highlight: true,
   },
   {
     title: "Low Sugar",
     description: "≤2g sugar for stable energy and blood-sugar control.",
     slug: "low-sugar",
-    filter: (product) => product.flags.lowSugar,
+    filter: categoryFilters["low-sugar"],
   },
   {
     title: "Weight Loss",
-    description: "Under 200 calories with 15–20g protein.",
+    description: "Under 200 calories with 5g+ protein.",
     slug: "weight-loss",
-    filter: (product) => product.flags.weightLoss,
+    filter: categoryFilters["weight-loss"],
   },
   {
     title: "Keto Friendly",
-    description: "High fat, low carb picks under 10g net carbs.",
+    description: "Low net carbs — under 10g net carbs.",
     slug: "keto",
-    filter: (product) => product.flags.keto,
+    filter: categoryFilters["keto"],
   },
   {
     title: "Plant-Based",
-    description: "Vegan snacks with complete amino acid profiles.",
+    description: "Vegan and plant-powered protein picks.",
     slug: "vegan",
-    filter: (product) => product.flags.vegan,
+    filter: categoryFilters["vegan"],
   },
   {
     title: "Gluten-Free",
-    description: "Certified GF snacks safe for sensitive guts.",
+    description: "Snacks suitable for gluten-sensitive diets.",
     slug: "gluten-free",
-    filter: (product) => product.flags.glutenFree,
+    filter: categoryFilters["gluten-free"] ?? (() => false),
+  },
+
+  // ⭐ NEW: HALAL CATEGORY
+  {
+    title: "Halal",
+    description: "Certified Halal high-protein snacks.",
+    slug: "halal",
+    filter: categoryFilters["halal"],
   },
 ];
 

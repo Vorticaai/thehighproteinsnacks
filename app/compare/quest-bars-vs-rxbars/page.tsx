@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { snacks } from "@/data/snacks"
+import { getAllProducts, type Product } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
@@ -30,8 +30,8 @@ interface BrandSummary {
 }
 
 function buildBrandSummary(
-  snacksForBrand: typeof snacks,
-  brandName: string
+  snacksForBrand: Product[],
+  brandName: string,
 ): BrandSummary {
   if (snacksForBrand.length === 0) {
     return {
@@ -54,8 +54,9 @@ function buildBrandSummary(
       carbs: acc.carbs + snack.carbsPerServing,
       sugar: acc.sugar + snack.sugarPerServing,
       fiber: acc.fiber + snack.fiberPerServing,
-      rating: acc.rating + snack.rating,
-      price: acc.price + snack.pricePerUnit,
+      rating: acc.rating + (snack.rating ?? 0),
+      price:
+        acc.price + Number(snack.pricePerUnit ?? snack.pricePerServing ?? 0),
     }),
     {
       protein: 0,
@@ -84,11 +85,12 @@ function buildBrandSummary(
 }
 
 export default function CompareQuestVsRxbarPage() {
-  const questSnacks = snacks.filter(
+  const allSnacks = getAllProducts()
+  const questSnacks = allSnacks.filter(
     (snack) => snack.brand === "Quest Nutrition"
   )
 
-  const rxbarSnacks = snacks.filter((snack) => snack.brand === "RXBAR")
+  const rxbarSnacks = allSnacks.filter((snack) => snack.brand === "RXBAR")
 
   const questSummary = buildBrandSummary(questSnacks, "Quest Nutrition")
   const rxbarSummary = buildBrandSummary(rxbarSnacks, "RXBAR")

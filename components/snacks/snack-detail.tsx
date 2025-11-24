@@ -2,7 +2,7 @@
  * Snack detail layout used on /snack/[slug].
  */
 import Link from "next/link"
-import type { Snack } from "@/data/types"
+import type { Product } from "@/lib/products"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/table"
 
 type SnackDetailProps = {
-  snack: Snack
+  snack: Product
 }
 
 export function SnackDetail({ snack }: SnackDetailProps) {
@@ -29,7 +29,7 @@ export function SnackDetail({ snack }: SnackDetailProps) {
         <h1 className="text-3xl font-semibold text-gray-900">{snack.name}</h1>
         <p className="text-lg text-muted-foreground">{snack.description}</p>
         <div className="flex flex-wrap gap-2">
-          {snack.dietTags.map((tag) => (
+          {(snack.dietTags ?? []).map((tag) => (
             <span key={tag} className="pill bg-gray-50 capitalize">
               {tag.replace("-", " ")}
             </span>
@@ -37,7 +37,7 @@ export function SnackDetail({ snack }: SnackDetailProps) {
         </div>
         <Button asChild size="lg">
           <Link href={snack.buyUrl} target="_blank" rel="noreferrer">
-            Buy for ${snack.pricePerUnit.toFixed(2)} →
+            Buy for ${Number(snack.pricePerUnit ?? snack.pricePerServing).toFixed(2)} →
           </Link>
         </Button>
       </header>
@@ -56,14 +56,14 @@ export function SnackDetail({ snack }: SnackDetailProps) {
             <h2 className="text-xl font-semibold">Quick facts</h2>
           </CardHeader>
           <CardContent className="space-y-4 text-sm">
-            <QuickFact label="Serving size" value={snack.servingSize} />
+            <QuickFact label="Serving size" value={snack.servingSize ?? "1 serving"} />
             <QuickFact label="Protein per dollar" value={`${snack.proteinPerDollar.toFixed(1)}g`} />
-            <QuickFact label="Rating" value={`${snack.rating.toFixed(1)} / 5`} />
-            <QuickFact label="Best for" value={snack.bestFor.join(", ")} />
+            <QuickFact label="Rating" value={`${Number(snack.rating ?? 4.6).toFixed(1)} / 5`} />
+            <QuickFact label="Best for" value={(snack.bestFor ?? []).join(", ")} />
             <div className="space-y-2">
               <p className="text-xs uppercase text-muted-foreground">Benefits</p>
               <ul className="list-disc space-y-1 pl-4 text-muted-foreground">
-                {snack.shortBenefits.map((benefit) => (
+                {(snack.shortBenefits ?? []).map((benefit) => (
                   <li key={benefit}>{benefit}</li>
                 ))}
               </ul>
@@ -77,7 +77,7 @@ export function SnackDetail({ snack }: SnackDetailProps) {
           <h2 className="text-xl font-semibold">FAQs</h2>
         </CardHeader>
         <CardContent className="space-y-4">
-          {snack.faq.map((item) => (
+          {(snack.faq ?? []).map((item) => (
             <div key={item.question}>
               <p className="font-medium text-gray-900">{item.question}</p>
               <p className="text-sm text-muted-foreground">{item.answer}</p>
@@ -89,7 +89,7 @@ export function SnackDetail({ snack }: SnackDetailProps) {
   )
 }
 
-function MacroTable({ snack }: { snack: Snack }) {
+function MacroTable({ snack }: { snack: Product }) {
   const rows = [
     { label: "Protein", value: `${snack.proteinPerServing} g` },
     { label: "Calories", value: `${snack.caloriesPerServing}` },

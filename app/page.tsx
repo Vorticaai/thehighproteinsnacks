@@ -3,12 +3,15 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
 import { getAllProducts, type Product } from "@/lib/products";
-import { categoryFilters } from "@/lib/categoryFilters";
+import { categoryFilters, weightLossFilter } from "@/lib/categoryFilters";
 import ComparisonsRow from "@/components/sections/ComparisonsRow";
 import GuidesRow from "@/components/sections/GuidesRow";
 import ProductRow from "@/components/sections/ProductRow";
 import ExploreCategoryRow from "@/components/sections/ExploreCategoryRow";
 import TopRankingsToday from "@/components/sections/TopRankingsToday";
+import WeightLossTop3 from "@/components/sections/WeightLossTop3";
+import { uniqueByBrand } from "@/lib/utils/uniqueByBrand";
+
 
 
 // --- BRAND COLORS (centralized) ---
@@ -16,10 +19,25 @@ const PRIMARY_DARK = "#124942"; // was #0F3D37// softer deep teal
 const ACCENT_LIME  = "#C6FF47"; // lime highlight
 
 export const metadata: Metadata = {
-  title: "The High Protein Snacks Directory",
+  title: "Best High-Protein Snacks Ranked (2025) – Protein, Sugar & Value Directory",
   description:
-    "Independent rankings of the cleanest high-protein snacks—compare macros, sugar, and price in one scroll-friendly hub.",
+    "Find high-protein snacks that actually taste good — bars, shakes, chips & bites ranked by protein-per-dollar, sugar, calories, and ingredient quality. Updated constantly.",
+  openGraph: {
+    title: "Best High-Protein Snacks Ranked (2025)",
+    description:
+      "Independent rankings of high-protein snacks — bars, shakes, chips & bites. Ranked by protein-per-dollar, sugar, calories & ingredient quality.",
+    url: "https://thehighproteinsnacks.com",
+    siteName: "The High Protein Snacks",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best High-Protein Snacks (2025)",
+    description:
+      "Independent rankings of bars, shakes, chips & bites — ranked by protein-per-dollar, sugar & calories.",
+  },
 };
+
 
 type CategorySlug = keyof typeof categoryFilters;
 
@@ -35,12 +53,8 @@ const sorters: Partial<Record<CategorySlug, (a: Product, b: Product) => number>>
       }
       return a.sugarPerServing - b.sugarPerServing;
     },
-    "weight-loss": (a, b) => {
-      if (a.caloriesPerServing === b.caloriesPerServing) {
-        return b.proteinPerServing - a.proteinPerServing;
-      }
-      return a.caloriesPerServing - b.caloriesPerServing;
-    },
+    "weight-loss": (a, b) =>
+      (b.proteinPerDollar ?? 0) - (a.proteinPerDollar ?? 0),
     keto: (a, b) => {
       const netA = a.netCarbs ?? Number.POSITIVE_INFINITY;
       const netB = b.netCarbs ?? Number.POSITIVE_INFINITY;
@@ -65,12 +79,37 @@ function selectProducts(
 
 export default async function HomePage() {
   const products = getAllProducts();
+  const weightLossProducts = products
+    .filter(weightLossFilter)
+    .sort((a, b) => (b.proteinPerDollar ?? 0) - (a.proteinPerDollar ?? 0));
+  const weightLossTop3 = weightLossProducts.slice(0, 3);
+  const weightLossRow = weightLossProducts.slice(0, 6);
 
-  const bestValue = selectProducts("best-value", products);
-  const lowSugar = selectProducts("low-sugar", products);
-  const weightLoss = selectProducts("weight-loss", products);
-  const keto = selectProducts("keto", products);
-  const highProtein = selectProducts("high-protein", products);
+  const bestValue = uniqueByBrand(selectProducts("best-value", products));
+  const lowSugar = uniqueByBrand(selectProducts("low-sugar", products));
+  const weightLoss = uniqueByBrand(weightLossProducts);
+  const keto = uniqueByBrand(selectProducts("keto", products));
+  const highProtein = uniqueByBrand(selectProducts("high-protein", products));
+  const bestValueProduct = products.reduce<Product | null>((best, product) => {
+    const current = product.proteinPerDollar ?? 0;
+    const bestScore = best?.proteinPerDollar ?? 0;
+    return !best || current > bestScore ? product : best;
+  }, null);
+  const bestLowSugarProduct = products.reduce<Product | null>((best, product) => {
+    const currentSugar =
+      product.sugarPerServing ?? Number.POSITIVE_INFINITY;
+    const bestSugar =
+      best?.sugarPerServing ?? Number.POSITIVE_INFINITY;
+    return !best || currentSugar < bestSugar ? product : best;
+  }, null);
+  const bestHighProteinProduct = products.reduce<Product | null>(
+    (best, product) => {
+      const currentProtein = product.proteinPerServing ?? 0;
+      const bestProtein = best?.proteinPerServing ?? 0;
+      return !best || currentProtein > bestProtein ? product : best;
+    },
+    null,
+  );
 
   return (
     <>
@@ -151,10 +190,86 @@ export default async function HomePage() {
       >
         Best value (g per $)
       </Link>
+
+      <Link
+  href="/snacks/weight-loss"
+  className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
+>
+  Weight-loss picks
+</Link>
+
     </div>
   </div>
+
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "The High Protein Snacks",
+      url: "https://thehighproteinsnacks.com",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://thehighproteinsnacks.com/snacks?q={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    }),
+  }}
+/>
+
 </header>
-<TopRankingsToday />
+      {bestValueProduct && bestLowSugarProduct && bestHighProteinProduct && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              name: "Top Rankings Today",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: bestValueProduct.name,
+                  url: `/snack/${bestValueProduct.id}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: bestLowSugarProduct.name,
+                  url: `/snack/${bestLowSugarProduct.id}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: bestHighProteinProduct.name,
+                  url: `/snack/${bestHighProteinProduct.id}`,
+                },
+              ],
+            }),
+          }}
+        />
+      )}
+      <section className="bg-white py-10 border-b">
+  <div className="mx-auto max-w-4xl px-4 text-center">
+    <h2 className="text-2xl font-bold text-gray-900 mb-3">
+      Not sure which snack to choose?
+    </h2>
+    <p className="text-gray-600 mb-6">
+      Answer 4 quick questions and get your top 3 high-protein snack matches.
+    </p>
+    <Link
+      href="/tools/snack-finder"
+      className="inline-block rounded-full bg-[#C6FF47] px-6 py-3 text-black font-bold hover:bg-[#A3CC00] transition"
+    >
+      Take the Snack Finder Quiz →
+    </Link>
+  </div>
+</section>
+
+      <TopRankingsToday />
+      <WeightLossTop3 products={weightLossTop3} /> 
 
       {/* JSON-LD: Best Value list (only once) */}
       <script
@@ -173,6 +288,7 @@ export default async function HomePage() {
           }),
         }}
       />
+
 
       <main className="mx-auto max-w-7xl bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
         <ProductRow

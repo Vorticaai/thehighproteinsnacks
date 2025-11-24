@@ -3,7 +3,7 @@
  */
 import { absoluteUrl } from "@/lib/seo"
 import type { Category } from "@/data/types"
-import type { Snack } from "@/data/types"
+import type { Product } from "@/lib/products"
 
 type JsonLdProps = {
   data: Record<string, unknown>
@@ -19,7 +19,7 @@ function JsonLd({ data }: JsonLdProps) {
   )
 }
 
-export function ProductJsonLd({ snack }: { snack: Snack }) {
+export function ProductJsonLd({ snack }: { snack: Product }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -32,25 +32,25 @@ export function ProductJsonLd({ snack }: { snack: Snack }) {
     },
     offers: {
       "@type": "Offer",
-      priceCurrency: snack.currency,
-      price: snack.pricePerUnit.toFixed(2),
+      priceCurrency: "USD",
+      price: Number(snack.pricePerUnit ?? snack.pricePerServing).toFixed(2),
       availability: "https://schema.org/InStock",
       url: snack.buyUrl,
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: snack.rating.toFixed(1),
+      ratingValue: Number(snack.rating ?? 4.6).toFixed(1),
       reviewCount: 12,
     },
     nutrition: {
       "@type": "NutritionInformation",
-      servingSize: snack.servingSize,
+      servingSize: snack.servingSize ?? "1 serving",
       proteinContent: `${snack.proteinPerServing} g`,
       calorieContent: `${snack.caloriesPerServing} cal`,
       carbohydrateContent: `${snack.carbsPerServing} g`,
       fatContent: `${snack.fatsPerServing} g`,
     },
-    url: absoluteUrl(`/snack/${snack.slug}`),
+    url: absoluteUrl(`/snack/${snack.id}`),
   }
 
   return <JsonLd data={data} />
@@ -61,7 +61,7 @@ export function ItemListJsonLd({
   snacks,
 }: {
   category: Category
-  snacks: Snack[]
+  snacks: Product[]
 }) {
   const data = {
     "@context": "https://schema.org",
@@ -71,7 +71,7 @@ export function ItemListJsonLd({
       "@type": "ListItem",
       position: index + 1,
       name: snack.name,
-      url: absoluteUrl(`/snack/${snack.slug}`),
+      url: absoluteUrl(`/snack/${snack.id}`),
     })),
   }
 

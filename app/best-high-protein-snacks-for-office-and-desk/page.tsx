@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { snacks } from "@/data/snacks"
+import { getAllProducts, type Product } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
@@ -19,17 +19,17 @@ export const metadata: Metadata = {
 }
 
 interface OfficeCandidate {
-  snack: (typeof snacks)[0]
+  snack: Product
   score: number
 }
 
 function getOfficeFriendlySnacks(): OfficeCandidate[] {
   const officeKeywords = ["desk-snack", "office-drawer", "study-fuel", "on-the-go"]
 
-  const candidates = snacks.filter((snack) => {
+  const candidates = getAllProducts().filter((snack) => {
     // Must have at least one office-related tag in bestFor
-    const hasOfficeTag = snack.bestFor?.some((tag) =>
-      officeKeywords.includes(tag)
+    const hasOfficeTag = (snack.bestFor ?? []).some((tag) =>
+      officeKeywords.includes(tag),
     )
     // Must be in reasonable calorie range for a snack
     const caloriesOk =
@@ -79,7 +79,7 @@ export default function BestOfficeSnacksPage() {
   }
 
   // Helper to get snack descriptions for office context
-  const getOfficeNote = (snack: (typeof snacks)[0]): string => {
+const getOfficeNote = (snack: Product): string => {
     const notes: Record<string, string> = {
       "quest-choc-chip-cookie-dough":
         "The ultimate desk drawer staple. Individually wrapped, doesn't need refrigeration, and packs 21g protein to power through afternoon meetings. The soft texture means no loud crunching during video calls, and it stays fresh for weeks in your drawer.",

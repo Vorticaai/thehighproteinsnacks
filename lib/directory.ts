@@ -3,8 +3,8 @@
  * Swapping to Supabase later means re-implementing only these helpers.
  */
 import { categories } from "@/data/categories"
-import { snacks } from "@/data/snacks"
-import type { Category, CategoryTag, DietTag, Snack } from "@/data/types"
+import type { Category, CategoryTag, DietTag } from "@/data/types"
+import { getAllProducts, type Product } from "@/lib/products"
 
 export type SortOption =
   | "protein-desc"
@@ -19,16 +19,17 @@ export type SnackFilters = {
 }
 
 export function getAllSnacks() {
-  return snacks
+  return getAllProducts()
 }
 
-export function getSnackBySlug(slug: string): Snack | undefined {
-  return snacks.find((snack) => snack.slug === slug)
+export function getSnackBySlug(slug: string): Product | undefined {
+  // Legacy helpers treated id as slug, so we keep parity
+  return getAllProducts().find((snack) => snack.id === slug)
 }
 
 export function getSnacksByCategory(categorySlug: string) {
-  return snacks.filter((snack) =>
-    snack.categoryTags.includes(categorySlug as CategoryTag),
+  return getAllProducts().filter((snack) =>
+    (snack.categoryTags ?? []).includes(categorySlug as CategoryTag),
   )
 }
 
@@ -43,7 +44,7 @@ export function getCategoryBySlug(slug: string): Category | undefined {
 export function filterSnacks(
   categorySlug: string,
   filters: SnackFilters = {},
-): Snack[] {
+): Product[] {
   const { minProtein, maxCalories, dietTags, sort = "protein-desc" } = filters
   let filtered = getSnacksByCategory(categorySlug)
 
@@ -61,7 +62,7 @@ export function filterSnacks(
 
   if (dietTags && dietTags.length) {
     filtered = filtered.filter((snack) =>
-      dietTags.every((tag) => snack.dietTags.includes(tag)),
+      dietTags.every((tag) => (snack.dietTags ?? []).includes(tag)),
     )
   }
 

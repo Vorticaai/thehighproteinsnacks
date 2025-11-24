@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { snacks } from "@/data/snacks"
+import { getAllProducts } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 function getBestKetoSnacks() {
-  const ketoSnacks = snacks.filter((snack) =>
+  const ketoSnacks = getAllProducts().filter((snack) =>
     snack.categoryTags?.includes("keto")
   )
 

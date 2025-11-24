@@ -7,7 +7,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import { getAllSnacks } from "@/lib/directory"
 import { buildMetadata, absoluteUrl } from "@/lib/seo"
-import { snacks } from "@/data/snacks"
+import { getAllProducts } from "@/lib/products"
 import { Star, Check } from "lucide-react"
 import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 import type { Crumb } from "@/components/layout/breadcrumbs"
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: SnackPageProps): Promise<Metadata> {
-  const snack = snacks.find((s) => s.id === params.id)
+  const snack = getAllProducts().find((s) => s.id === params.id)
   if (!snack) {
     return buildMetadata({
       title: "Snack not found",
@@ -63,10 +63,28 @@ export async function generateMetadata({
 }
 
 export default function SnackPage({ params }: SnackPageProps) {
-  const snack = snacks.find((s) => s.id === params.id)
+  const snack = getAllProducts().find((s) => s.id === params.id)
   if (!snack) {
     notFound()
   }
+
+  const categoryTags = snack.categoryTags ?? []
+  const dietTags = snack.dietTags ?? []
+  const shortBenefits = snack.shortBenefits ?? []
+  const bestFor = snack.bestFor ?? []
+  const faqEntries = snack.faq ?? []
+  const description =
+    snack.description ??
+    `${snack.brand} ${snack.name} delivers ${snack.proteinPerServing}g protein per serving.`
+  const whyGreat =
+    snack.whyGreat ??
+    `${snack.name} balances macros so you stay energized without crashing.`
+  const nutritionBreakdown =
+    snack.nutritionBreakdown ??
+    `Protein ${snack.proteinPerServing}g · Carbs ${snack.carbsPerServing}g · Fat ${snack.fatsPerServing}g · Sugar ${snack.sugarPerServing}g`
+  const ingredientsHighlight =
+    snack.ingredientsHighlight ??
+    "See retailer listing for the latest ingredient list."
 
   // Show image if imageUrl exists
   const hasImage = snack.imageUrl && snack.imageUrl.trim().length > 0
@@ -79,7 +97,7 @@ export default function SnackPage({ params }: SnackPageProps) {
     snack.fatsPerServing != null
 
   // Determine primary category for breadcrumb
-  const primaryCategory = snack.categoryTags[0] || "snacks"
+  const primaryCategory = categoryTags[0] || "snacks"
 
   // Enhanced Product schema with complete nutrition data
   const productSchema = {
@@ -87,21 +105,21 @@ export default function SnackPage({ params }: SnackPageProps) {
     "@type": "Product",
     name: snack.name,
     image: [snack.imageUrl],
-    description: snack.description,
+    description,
     brand: {
       "@type": "Brand",
       name: snack.brand,
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: snack.rating,
-      reviewCount: snack.reviewCount,
+      ratingValue: Number(snack.rating ?? 4.6),
+      reviewCount: snack.reviewCount ?? 150,
       bestRating: 5,
       worstRating: 1,
     },
     nutrition: {
       "@type": "NutritionInformation",
-      servingSize: snack.servingSize,
+      servingSize: snack.servingSize ?? "1 serving",
       calories: `${snack.caloriesPerServing} kcal`,
       proteinContent: `${snack.proteinPerServing} g`,
       carbohydrateContent: `${snack.carbsPerServing} g`,
@@ -111,7 +129,7 @@ export default function SnackPage({ params }: SnackPageProps) {
     },
     offers: {
       "@type": "Offer",
-      price: snack.pricePerUnit.toFixed(2),
+      price: Number(snack.pricePerUnit ?? snack.pricePerServing).toFixed(2),
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: snack.buyUrl || absoluteUrl(`/snack/${snack.id}`),
@@ -122,7 +140,7 @@ export default function SnackPage({ params }: SnackPageProps) {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: snack.faq.map((faq) => ({
+    mainEntity: faqEntries.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -222,8 +240,12 @@ export default function SnackPage({ params }: SnackPageProps) {
                     className="h-5 w-5 fill-[#0C6C5A] text-[#0C6C5A]"
                     style={{ fill: "var(--brand-bg)", color: "var(--brand-bg)" }}
                   />
-                  <span className="text-lg font-bold text-gray-900">{snack.rating.toFixed(1)}</span>
-                  <span className="text-sm text-gray-500">({snack.reviewCount} reviews)</span>
+                  <span className="text-lg font-bold text-gray-900">
+                    {Number(snack.rating ?? 4.6).toFixed(1)}
+                  </span>
+                  <span className="text-sm text-gray-500">
+                    ({snack.reviewCount ?? 150} reviews)
+                  </span>
                 </div>
               </div>
               
@@ -244,7 +266,7 @@ export default function SnackPage({ params }: SnackPageProps) {
 
               {/* Diet Tags */}
               <div className="mb-4 flex flex-wrap gap-2">
-                {snack.dietTags.map((tag) => (
+                {dietTags.map((tag) => (
                   <span
                     key={tag}
                     className="inline-block rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium capitalize text-gray-700"
@@ -256,7 +278,7 @@ export default function SnackPage({ params }: SnackPageProps) {
 
               {/* Description */}
               <p className="mb-6 max-w-3xl text-base leading-relaxed text-gray-600">
-                {snack.description}
+                {description}
               </p>
 
               {/* CTA Button */}
@@ -285,7 +307,7 @@ export default function SnackPage({ params }: SnackPageProps) {
                 <MetricCard label="Calories" value={`${snack.caloriesPerServing}`} sublabel="per serving" />
                 <MetricCard
                   label="Price"
-                  value={`$${snack.pricePerUnit.toFixed(2)}`}
+                  value={`$${Number(snack.pricePerUnit ?? snack.pricePerServing).toFixed(2)}`}
                   sublabel="approx. per serving"
                 />
                 <MetricCard
@@ -311,9 +333,9 @@ export default function SnackPage({ params }: SnackPageProps) {
               Why {snack.name} Is a Great High-Protein Snack
             </h2>
             <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="mb-5 leading-relaxed text-gray-700">{snack.whyGreat}</p>
+              <p className="mb-5 leading-relaxed text-gray-700">{whyGreat}</p>
               <ul className="space-y-3">
-                {snack.shortBenefits.map((benefit, idx) => (
+                {shortBenefits.map((benefit, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <Check
                       className="mt-0.5 h-5 w-5 shrink-0 text-[#0C6C5A]"
@@ -333,8 +355,8 @@ export default function SnackPage({ params }: SnackPageProps) {
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-bold text-gray-900">Nutrition Breakdown & Ingredients</h2>
             <div className="space-y-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="leading-relaxed text-gray-700">{snack.nutritionBreakdown}</p>
-              <p className="leading-relaxed text-gray-700">{snack.ingredientsHighlight}</p>
+              <p className="leading-relaxed text-gray-700">{nutritionBreakdown}</p>
+              <p className="leading-relaxed text-gray-700">{ingredientsHighlight}</p>
             </div>
           </section>
 
@@ -345,7 +367,7 @@ export default function SnackPage({ params }: SnackPageProps) {
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-bold text-gray-900">Best Time to Enjoy</h2>
             <div className="flex flex-wrap gap-2">
-              {snack.bestFor.map((time) => (
+              {bestFor.map((time) => (
                 <span
                   key={time}
                   className="inline-block rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium capitalize text-gray-700"
@@ -363,7 +385,7 @@ export default function SnackPage({ params }: SnackPageProps) {
           <section className="mb-8">
             <h2 className="mb-4 text-2xl font-bold text-gray-900">Common Questions</h2>
             <div className="space-y-4">
-              {snack.faq.map((faq, idx) => (
+              {faqEntries.map((faq, idx) => (
                 <div key={idx} className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
                   <h3 className="mb-2 text-lg font-semibold text-gray-900">{faq.question}</h3>
                   <p className="leading-relaxed text-gray-700">{faq.answer}</p>

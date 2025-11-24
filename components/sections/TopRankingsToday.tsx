@@ -1,21 +1,18 @@
-"use client";
+import Image from "next/image"
+import Link from "next/link"
+import { getAllProducts, type Product } from "@/lib/products"
 
-import Image from "next/image";
-import Link from "next/link";
-import { snacks } from "@/data/snacks";
-import type { Snack } from "@/data/types";
-
-function pickBestValue(snacks: Snack[]) {
+function pickBestValue(snacks: Product[]) {
   return [...snacks].sort((a, b) => b.proteinPerDollar - a.proteinPerDollar)[0];
 }
 
-function pickLowestSugar(snacks: Snack[]) {
+function pickLowestSugar(snacks: Product[]) {
   return [...snacks]
     .filter((s) => typeof s.sugarPerServing === "number")
     .sort((a, b) => a.sugarPerServing - b.sugarPerServing)[0];
 }
 
-function pickHighestProtein(snacks: Snack[]) {
+function pickHighestProtein(snacks: Product[]) {
   return [...snacks].sort(
     (a, b) => b.proteinPerServing - a.proteinPerServing
   )[0];
@@ -25,24 +22,25 @@ const rankingData = [
   {
     title: "🥇 BEST VALUE",
     pickFn: pickBestValue,
-    highlightStat: (s: Snack) => `${s.proteinPerDollar.toFixed(2)}g protein per $1`,
-    href: (s: Snack) => `/snack/${s.id}`,
+    highlightStat: (s: Product) => `${s.proteinPerDollar.toFixed(2)}g protein per $1`,
+    href: (s: Product) => `/snacks/${s.id}`,
   },
   {
     title: "🥈 BEST LOW SUGAR",
     pickFn: pickLowestSugar,
-    highlightStat: (s: Snack) => `${s.sugarPerServing}g sugar`,
-    href: (s: Snack) => `/snack/${s.id}`,
+    highlightStat: (s: Product) => `${s.sugarPerServing}g sugar`,
+    href: (s: Product) => `/snacks/${s.id}`,
   },
   {
     title: "🥉 BEST HIGH PROTEIN",
     pickFn: pickHighestProtein,
-    highlightStat: (s: Snack) => `${s.proteinPerServing}g protein`,
-    href: (s: Snack) => `/snack/${s.id}`,
+    highlightStat: (s: Product) => `${s.proteinPerServing}g protein`,
+    href: (s: Product) => `/snacks/${s.id}`,
   },
 ];
 
 export default function TopRankingsToday() {
+  const snacks = getAllProducts();
   const winners = rankingData.map((item) => {
     const snack = item.pickFn(snacks);
     return { ...item, snack };

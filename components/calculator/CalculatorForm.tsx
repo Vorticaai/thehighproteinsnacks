@@ -2,18 +2,27 @@
 
 import { useState } from "react"
 import { SnackCard } from "@/components/snacks/snack-card"
+import type { Product } from "@/lib/products"
 
-export default function CalculatorForm({ snacks }) {
+type GoalOption = "lose-fat" | "maintain" | "build-muscle"
+type ActivityLevel = "sedentary" | "light" | "moderate" | "very"
+
+type CalculatorFormProps = {
+  snacks: Product[]
+}
+
+type ProteinRange = {
+  min: number
+  max: number
+}
+
+export default function CalculatorForm({ snacks }: CalculatorFormProps) {
   const [weight, setWeight] = useState(90)
   const [unit, setUnit] = useState<"kg" | "lbs">("kg")
-  const [goal, setGoal] = useState<"lose-fat" | "maintain" | "build-muscle">(
-    "lose-fat"
-  )
-  const [activity, setActivity] = useState<
-    "sedentary" | "light" | "moderate" | "very"
-  >("moderate")
+  const [goal, setGoal] = useState<GoalOption>("lose-fat")
+  const [activity, setActivity] = useState<ActivityLevel>("moderate")
 
-  const [result, setResult] = useState(null)
+  const [result, setResult] = useState<ProteinRange | null>(null)
 
   const calculate = () => {
     const kg = unit === "lbs" ? weight * 0.453592 : weight
@@ -39,17 +48,15 @@ export default function CalculatorForm({ snacks }) {
     setResult({ min: minG, max: maxG })
   }
 
-  const recommended =
-    result &&
-    snacks
-      .filter(
-        (s) =>
-          s.proteinPerServing >= 10 &&
-          s.caloriesPerServing <= 260 &&
-          typeof s.proteinPerDollar === "number"
-      )
-      .sort((a, b) => b.proteinPerDollar - a.proteinPerDollar)
-      .slice(0, 6)
+  const recommendedSnacks = snacks
+    .filter(
+      (s) =>
+        s.proteinPerServing >= 10 &&
+        s.caloriesPerServing <= 260 &&
+        typeof s.proteinPerDollar === "number",
+    )
+    .sort((a, b) => b.proteinPerDollar - a.proteinPerDollar)
+    .slice(0, 6)
 
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm md:p-8">
@@ -92,7 +99,7 @@ export default function CalculatorForm({ snacks }) {
           Primary Goal
         </label>
         <div className="space-y-2">
-          {["lose-fat", "maintain", "build-muscle"].map((g) => (
+          {(["lose-fat", "maintain", "build-muscle"] as GoalOption[]).map((g) => (
             <label
               key={g}
               className="flex cursor-pointer items-center gap-3 rounded-xl border p-4 hover:border-[#006F6D]"
@@ -102,7 +109,7 @@ export default function CalculatorForm({ snacks }) {
                 name="goal"
                 value={g}
                 checked={goal === g}
-                onChange={(e) => setGoal(e.target.value)}
+                onChange={() => setGoal(g)}
               />
               <span className="font-medium text-gray-900 capitalize">
                 {g.replace("-", " ")}
@@ -119,7 +126,7 @@ export default function CalculatorForm({ snacks }) {
         </label>
         <select
           value={activity}
-          onChange={(e) => setActivity(e.target.value)}
+          onChange={(e) => setActivity(e.target.value as ActivityLevel)}
           className="w-full rounded-lg border px-4 py-3"
         >
           <option value="sedentary">Sedentary</option>
@@ -155,7 +162,7 @@ export default function CalculatorForm({ snacks }) {
             </h3>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {recommended.map((s) => (
+              {recommendedSnacks.map((s) => (
                 <SnackCard key={s.id} snack={s} />
               ))}
             </div>
