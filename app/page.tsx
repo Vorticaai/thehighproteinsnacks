@@ -14,6 +14,8 @@ import { uniqueByBrand } from "@/lib/utils/uniqueByBrand";
 
 
 
+
+
 // --- BRAND COLORS (centralized) ---
 const PRIMARY_DARK = "#124942"; // was #0F3D37// softer deep teal
 const ACCENT_LIME  = "#C6FF47"; // lime highlight
@@ -85,10 +87,14 @@ export default async function HomePage() {
   const weightLossTop3 = weightLossProducts.slice(0, 3);
   const weightLossRow = weightLossProducts.slice(0, 6);
 
-  const bestValue = uniqueByBrand(selectProducts("best-value", products));
+  const bestValue = uniqueByBrand(
+    products.filter((p) => p.proteinPerDollar >= 12)
+  );
+  
   const lowSugar = uniqueByBrand(selectProducts("low-sugar", products));
   const weightLoss = uniqueByBrand(weightLossProducts);
-  const keto = uniqueByBrand(selectProducts("keto", products));
+  const keto = uniqueByBrand(selectProducts("keto", products, 20));
+
   const highProtein = uniqueByBrand(selectProducts("high-protein", products));
   const bestValueProduct = products.reduce<Product | null>((best, product) => {
     const current = product.proteinPerDollar ?? 0;
@@ -118,7 +124,8 @@ export default async function HomePage() {
   
   
   <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
-    
+
+
     {/* NEW HEADLINE */}
     <h1 className="text-4xl font-black tracking-tight sm:text-6xl">
       Find the best <span className="text-[#C6FF47]">high-protein snacks</span> for your goals.

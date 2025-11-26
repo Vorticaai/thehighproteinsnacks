@@ -74,7 +74,14 @@ export default function ExploreCategoryRow() {
         {exploreCategories.map((category) => {
           const filterFn = categoryFilters[category.slug]
           if (!filterFn) return null
-          const count = products.filter(filterFn).length
+          let count = 0;
+
+          if (category.slug === "best-value") {
+            count = products.filter((p) => p.proteinPerDollar >= 12).length;
+          } else if (filterFn) {
+            count = products.filter(filterFn).length;
+          }
+          
 
           return (
             <Link

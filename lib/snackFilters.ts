@@ -16,7 +16,7 @@ export type CategorySlug =
   | "halal"
   | "protein-bars"
   | "chips"
-
+  | "best-value"
 
 
   const slugToFlag: Record<CategorySlug, FlagKey> = {
@@ -28,14 +28,14 @@ export type CategorySlug =
     "gluten-free": "glutenFree",
     vegan: "vegan",
     "plant-based": "plantBased",
-    halal: "halal",            // ⭐ REQUIRED LINE
+    halal: "halal",
     "protein-bars": "bars",
     chips: "chips",
+    "best-value": "budget",
   }
   
-  
 
-  const categoryDetails: Record<
+const categoryDetails: Record<
   CategorySlug,
   {
     title: string
@@ -142,8 +142,23 @@ export type CategorySlug =
     seoDescription:
       "Quest-style chips, puffs, and crisps delivering protein with bold flavors. Perfect for salty snack cravings.",
   },
+
+  "best-value": {
+    title: "Best Value Protein Snacks",
+    description:
+      "Snacks ranked by the best protein-per-dollar ratio — get the most grams of protein for every $1 spent.",
+    seoTitle: "Best Value Protein Snacks | The High Protein Snacks",
+    seoDescription:
+      "Find high-protein snacks with unbeatable value. Ranked by protein per dollar to help you snack smarter on a budget.",
+  },
+
 }
 
+export const categorySlugs = Object.keys(categoryDetails) as CategorySlug[]
+
+export function getCategoryDetails(slug: CategorySlug) {
+  return categoryDetails[slug]
+}
 
 function filterByFlag(flag: FlagKey): Product[] {
   return getAllProducts().filter((product) => product.flags[flag])
@@ -184,6 +199,16 @@ export function getBars(): Product[] {
 export function getChips(): Product[] {
   return filterByFlag("chips")
 }
+
+export function getHalalSnacks(): Product[] {
+  return getAllProducts().filter(
+    (p) =>
+      (p.dietTags ?? []).includes("halal") ||
+      (p.categoryTags ?? []).includes("halal")
+  );
+}
+
+
 export function getProductsByCategory(slug: CategorySlug): Product[] {
   if (slug === "weight-loss") {
     return getWeightLossSnacks();
@@ -193,17 +218,15 @@ export function getProductsByCategory(slug: CategorySlug): Product[] {
     return getHalalSnacks();
   }
 
+  if (slug === "best-value") {
+    return getAllProducts().filter((p) => p.proteinPerDollar >= 12);
+  }
+
   const flag = slugToFlag[slug];
   if (!flag) return [];
 
   return filterByFlag(flag);
 }
 
-// ADD THIS ↓↓↓
-export function getHalalSnacks(): Product[] {
-  return getAllProducts().filter((p) =>
-    (p.dietTags ?? []).includes("halal") ||
-    (p.categoryTags ?? []).includes("halal")
-  );
-}
+
 

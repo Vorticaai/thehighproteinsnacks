@@ -17,6 +17,7 @@ export type ProductFlags = {
   bars?: boolean
   chips?: boolean
   cookies?: boolean
+  
 }
 
 export type Product = {
@@ -103,23 +104,7 @@ export function getAllProducts(): Product[] {
 
   return productCache
 }
-// --- Auto-detection helpers for diet flags ---
-
-const KNOWN_VEGAN_BRANDS = [
-  'orgain',
-  'no cow',
-  'gomacro',
-  'barebells vegan',
-  'think! plant',
-  // TODO: extend with brands you know are fully vegan
-];
-
-const KNOWN_GLUTEN_FREE_BRANDS = [
-  'kind',
-  'rxbar',
-  'lara bar',
-  // TODO: extend with brands you know are GF (or GF product lines)
-];
+// --- SMART AUTO-DETECTION HELPERS (NO BRAND ASSUMPTIONS) ---
 
 function detectVegan(brandRaw: string, productNameRaw: string): {
   vegan: boolean;
@@ -127,46 +112,49 @@ function detectVegan(brandRaw: string, productNameRaw: string): {
 } {
   const text = `${brandRaw} ${productNameRaw}`.toLowerCase();
 
-  const hasVeganKeyword =
-    text.includes('vegan') ||
-    text.includes('100% plant') ||
-    text.includes('plant-based') ||
-    text.includes('plant based') ||
-    text.includes('dairy-free') ||
-    text.includes('dairy free') ||
-    text.includes('no dairy');
+  const vegan =
+    text.includes("vegan") ||
+    text.includes("plant-based") ||
+    text.includes("plant based") ||
+    text.includes("dairy-free") ||
+    text.includes("dairy free") ||
+    text.includes("no dairy") ||
+    text.includes("100% plant") ||
+    text.includes("made with plants");
 
-  const isKnownVeganBrand = KNOWN_VEGAN_BRANDS.some((b) =>
-    text.includes(b.toLowerCase())
-  );
-
-  const vegan = hasVeganKeyword || isKnownVeganBrand;
-  const plantBased = vegan || text.includes('plant protein') || text.includes('plant powered');
+  const plantBased =
+    vegan ||
+    text.includes("plant protein") ||
+    text.includes("plant powered");
 
   return { vegan, plantBased };
 }
 
+
 function detectGlutenFree(brandRaw: string, productNameRaw: string): boolean {
   const text = `${brandRaw} ${productNameRaw}`.toLowerCase();
 
-  const hasGlutenFreeKeyword =
-    text.includes('gluten-free') ||
-    text.includes('gluten free') ||
-    text.includes('no gluten') ||
-    text.includes('gf certified') ||
-    text.includes('coeliac safe');
-
-  const isKnownGfBrand = KNOWN_GLUTEN_FREE_BRANDS.some((b) =>
-    text.includes(b.toLowerCase())
+  return (
+    text.includes("gluten free") ||
+    text.includes("gluten-free") ||
+    text.includes("gf") ||
+    text.includes("glutenfree") ||
+    text.includes("celiac") ||
+    text.includes("coeliac") ||
+    text.includes("no gluten")
   );
-
-  return hasGlutenFreeKeyword || isKnownGfBrand;
 }
+
 
 function detectHalal(brandRaw: string, productNameRaw: string): boolean {
   const text = `${brandRaw} ${productNameRaw}`.toLowerCase();
-  return text.includes('halal');
+  return (
+    text.includes("halal") ||
+    text.includes("zabihah") ||
+    text.includes("hand slaughtered")
+  );
 }
+
 
 
 function normalizeRow(row: RawProductRow): Product {
@@ -216,19 +204,19 @@ const veganDetection = detectVegan(baseProduct.brand, baseProduct.name)
 const autoGlutenFree = detectGlutenFree(baseProduct.brand, baseProduct.name)
 const isHalal = detectHalal(baseProduct.brand, baseProduct.name)
 
-// Only ever upgrade to true; don't force false over CSV
-if (veganDetection.vegan) {
-  baseProduct.flags.vegan = true
-}
-if (veganDetection.plantBased) {
-  baseProduct.flags.plantBased = true
-}
-if (autoGlutenFree) {
-  baseProduct.flags.glutenFree = true
-}
-if (isHalal) {
-  baseProduct.flags.halal = true
-}
+// Merge CSV + auto-detection (CSV always wins if true)
+baseProduct.flags.vegan =
+  baseProduct.flags.vegan || veganDetection.vegan;
+
+baseProduct.flags.plantBased =
+  baseProduct.flags.plantBased || veganDetection.plantBased;
+
+baseProduct.flags.glutenFree =
+  baseProduct.flags.glutenFree || autoGlutenFree;
+
+baseProduct.flags.halal =
+  baseProduct.flags.halal || isHalal;
+
 
   let finalProduct: Product = {
     ...baseProduct,
@@ -281,11 +269,19 @@ function normalizeProductType(value: string | undefined): string | undefined {
 }
 
 function buildImagePath(fileName: string | undefined): string {
-  if (!fileName) return ""
-  const trimmed = fileName.trim()
-  if (!trimmed) return ""
-  return trimmed.startsWith("/snacks/") ? trimmed : `/snacks/${trimmed}`
+  if (!fileName) return "/snacks/placeholder.jpg";
+  const trimmed = fileName.trim();
+
+  // Remove accidental /public prefix
+  const cleaned = trimmed.replace(/^\/?public\//, "");
+
+  if (cleaned.startsWith("http")) return cleaned;
+  if (cleaned.startsWith("/snacks/")) return cleaned;
+
+  return `/snacks/${cleaned}`;
 }
+
+
 
 function buildAutoContent(product: Product) {
   const dietTags = [
@@ -372,4 +368,5 @@ function qualifiesForWeightLoss(product: {
       product.sugarPerServing <= 5) ||
     product.brand.toLowerCase().includes("chomps")
   )
+  
 }

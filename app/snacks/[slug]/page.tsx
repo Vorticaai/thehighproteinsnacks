@@ -33,20 +33,15 @@ const CATEGORY_PRIORITIES: Array<{
   { flag: "keto", label: "Keto", slug: "keto" },
   { flag: "vegan", label: "Vegan", slug: "vegan" },
   { flag: "glutenFree", label: "Gluten Free", slug: "gluten-free" },
+  { flag: "halal", label: "Halal", slug: "halal" },
   { flag: "bars", label: "Protein Bars", slug: "protein-bars" },
   { flag: "chips", label: "Protein Chips", slug: "chips" },
 ];
 
 const FALLBACK_CATEGORY = { label: "All Snacks", slug: "snacks" };
-const CATEGORY_OVERRIDES = new Set(["best-value"]);
-
 
 function isCategorySlug(slug: string): slug is CategorySlug {
   return categorySlugs.includes(slug as CategorySlug);
-}
-
-function isDynamicCategorySlug(slug: string): slug is CategorySlug {
-  return isCategorySlug(slug) && !CATEGORY_OVERRIDES.has(slug);
 }
 
 function getPrimaryCategory(product: Product) {
@@ -192,9 +187,7 @@ function selectRelatedProducts(product: Product, products: Product[]) {
 export async function generateStaticParams() {
   const products = getAllProducts();
   const productParams = products.map((product) => ({ slug: product.id }));
-  const categoryParams = categorySlugs
-    .filter((slug) => !CATEGORY_OVERRIDES.has(slug))
-    .map((slug) => ({ slug }));
+  const categoryParams = categorySlugs.map((slug) => ({ slug }));
   return [...productParams, ...categoryParams];
 }
 
@@ -204,7 +197,7 @@ export async function generateMetadata({
   const slug = params.slug;
   const product = getAllProducts().find((p) => p.id === slug);
   if (!product) {
-    if (isDynamicCategorySlug(slug)) {
+    if (isCategorySlug(slug)) {
       const details = getCategoryDetails(slug);
       if (!details) {
         return { title: "Category not found", description: "Missing category" };
@@ -264,7 +257,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
   const products = getAllProducts();
   const product = products.find((p) => p.id === slug);
   if (!product) {
-    if (isDynamicCategorySlug(slug)) {
+    if (isCategorySlug(slug)) {
       return <CategoryListing slug={slug as CategorySlug} />;
     }
     notFound();

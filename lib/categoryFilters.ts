@@ -14,12 +14,16 @@ export const weightLossFilter = (p: WeightLossComparable) =>
   p.brand.toLowerCase().includes("chomps")
 
 export const categoryFilters: Record<string, CategoryFilter> = {
-  "best-value": (product) =>
-    hasPositiveValue(product.pricePerServing) &&
-    hasPositiveValue(product.proteinPerServing),
+ "best-value": (product) => product.proteinPerDollar >= 12,
   "low-sugar": (product) => product.flags?.lowSugar === true,
   "weight-loss": (product) => weightLossFilter(product),
-  keto: (product) => product.netCarbs !== undefined && product.netCarbs <= 10,
+  keto: (product) =>
+    typeof product.netCarbs === "number" &&
+    product.netCarbs <= 10 &&
+    product.sugarPerServing <= 5 &&
+    product.caloriesPerServing <= 250 &&
+    product.proteinPerServing >= 10,
+  
   "high-protein": (product) => product.proteinPerServing >= 15,
   vegan: (product) => product.flags?.vegan === true,
   "gluten-free": (product) => product.flags?.glutenFree === true,

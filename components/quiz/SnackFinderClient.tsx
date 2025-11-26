@@ -359,12 +359,26 @@ function getRecommendedSnacks(
   }
 
   if (answers.dietTags.length > 0) {
-    filtered = filtered.filter((snack) =>
-      answers.dietTags.every((tag) =>
-        snack.dietTags?.includes(tag as DietTagChoice),
-      ),
-    )
+    filtered = filtered.filter((snack) => {
+      return answers.dietTags.every((tag) => {
+        switch (tag) {
+          case "halal":
+            return (
+              snack.flags?.halal === true ||
+              snack.dietTags?.includes("halal") ||
+              snack.categoryTags?.includes("halal")
+            )
+          default:
+            return (
+              snack.flags?.[tag.replace("-", "") as keyof Product["flags"]] === true ||
+              snack.dietTags?.includes(tag) ||
+              snack.categoryTags?.includes(tag)
+            )
+        }
+      })
+    })
   }
+  
 
   if (answers.snackTime) {
     const timeMap: Record<SnackTime, string[]> = {

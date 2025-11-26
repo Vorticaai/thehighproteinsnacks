@@ -24,6 +24,22 @@ export function CategoryPageTemplate({
   if (!filterFn) {
     return <div className="p-10 text-red-500">Invalid category.</div>;
   }
+// --- Fix for "Best Value" category count ---
+if (slug === "best-value") {
+  const snacks = all.filter((p) => p.proteinPerDollar >= 12).sort((a, b) => b.proteinPerDollar - a.proteinPerDollar);
+  return (
+    <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Snacks", href: "/snacks" }, { name: title }]} />
+      <h1 className="mt-4 text-3xl font-bold">{title}</h1>
+      <p className="mt-2 mb-8 text-gray-600">{description}</p>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {snacks.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+    </main>
+  );
+}
 
   const snacks = all.filter(filterFn).sort(sortFn);
 

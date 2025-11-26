@@ -5,6 +5,7 @@ import { buildMetadata, defaultMeta } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Header } from "@/components/layout/header"
 import Link from "next/link"
 import "./globals.css"
 
@@ -28,13 +29,7 @@ export default function RootLayout({
         )}
       >
         <div className="min-h-screen flex flex-col">
-          <header className="border-b bg-white/80 backdrop-blur">
-            <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-              <Link href="/" className="font-semibold tracking-tight text-slate-900">
-                The High Protein Snacks
-              </Link>
-            </div>
-          </header>
+          <Header />
 
           <main className="flex-1">
             {children}
