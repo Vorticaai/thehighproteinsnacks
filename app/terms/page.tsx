@@ -150,14 +150,14 @@ export default function TermsPage() {
         </section>
 
         <section>
-          <h2 className="mb-3 text-2xl font-bold text-gray-900">9. Contact</h2>
-          // AFTER (shorter)
-<p>
-  If you have questions about these Terms, please review it carefully before using the site.
-</p>
+  <h2 className="mb-3 text-2xl font-bold text-gray-900">9. Contact</h2>
 
-      
-        </section>
+  {/* AFTER (shorter) */}
+  <p>
+    If you have questions about these Terms, please review them carefully before using the site.
+  </p>
+</section>
+
       </div>
     </main>
   )

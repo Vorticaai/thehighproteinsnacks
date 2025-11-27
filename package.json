@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsx scripts/addAffiliateTag.ts && next build",
+    "build": "next build",
+    "prep": "tsx scripts/addAffiliateTag.ts",
     "start": "next start",
     "lint": "next lint",
     "validate:low-sugar": "tsx scripts/validate-low-sugar.ts",
