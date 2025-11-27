@@ -6,6 +6,8 @@ import type { Metadata } from "next"
 const SITE_NAME = "The High Protein Snacks"
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://thehighproteinsnacks.com"
+  const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.jpg`
+
 
 export const defaultMeta = {
   title: SITE_NAME,
@@ -37,26 +39,33 @@ export function buildMetadata({
     alternates: {
       canonical: url,
     },
+    keywords: [
+      "high protein snacks",
+      "low sugar snacks",
+      "keto snacks",
+      "vegan protein bars",
+      "healthy snacks",
+    ],
+    
     openGraph: {
       title: `${title} | ${SITE_NAME}`,
       description,
       url,
       siteName: SITE_NAME,
       type: "website",
-      images: ogImage
-        ? [
-            {
-              url: ogImage,
-            },
-          ]
-        : undefined,
+      images: [
+        {
+          url: ogImage || DEFAULT_OG_IMAGE,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${title} | ${SITE_NAME}`,
       description,
-      images: ogImage ? [ogImage] : undefined,
+      images: [ogImage || DEFAULT_OG_IMAGE],
     },
+    
   }
 }
 

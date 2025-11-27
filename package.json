@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tsx scripts/addAffiliateTag.ts && next build",
     "start": "next start",
     "lint": "next lint",
     "validate:low-sugar": "tsx scripts/validate-low-sugar.ts",
-    "patch:low-sugar": "tsx scripts/patch-low-sugar.ts"
+    "patch:low-sugar": "tsx scripts/patch-low-sugar.ts",
+    "watch:affiliate": "tsx scripts/addAffiliateTag.ts"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
@@ -37,6 +38,9 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
+    "chokidar": "^3.6.0",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.7",
     "postcss": "^8.4.47",

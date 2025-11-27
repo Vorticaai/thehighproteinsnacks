@@ -9,7 +9,7 @@ type JsonLdProps = {
   data: Record<string, unknown>
 }
 
-function JsonLd({ data }: JsonLdProps) {
+export function JsonLd({ data }: JsonLdProps) {
   return (
     <script
       type="application/ld+json"

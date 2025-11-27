@@ -6,15 +6,46 @@ import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Header } from "@/components/layout/header"
-import Link from "next/link"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = buildMetadata({
-  title: defaultMeta.title,
-  description: defaultMeta.description,
-})
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.thehighproteinsnacks.com"),
+
+  ...buildMetadata({
+    title: defaultMeta.title,
+    description: defaultMeta.description,
+  }),
+
+  openGraph: {
+    type: "website",
+    url: "https://www.thehighproteinsnacks.com",
+    siteName: "The High Protein Snacks",
+    title: defaultMeta.title,
+    description: defaultMeta.description,
+    images: [
+      {
+        url: "/images/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "High protein snacks assortment",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: defaultMeta.title,
+    description: defaultMeta.description,
+    images: ["/images/og-default.jpg"],
+  },
+
+  alternates: {
+    canonical: "https://www.thehighproteinsnacks.com",
+  },
+};
+
 
 export default function RootLayout({
   children,
@@ -35,24 +66,34 @@ export default function RootLayout({
             {children}
           </main>
 
-          <footer className="border-t bg-slate-50 text-xs text-slate-500">
-            <div className="max-w-6xl mx-auto flex flex-col gap-3 px-4 py-6 md:flex-row md:items-center md:justify-between">
-              <p>© 2025 The High Protein Snacks. All rights reserved.</p>
-              <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:gap-4">
-                <p className="max-w-md">
-                  Some links on this site are affiliate links. If you click and buy, we may earn a small commission at no extra cost to you.
+          <footer className="border-t bg-[#0B1F1E] text-gray-300">
+            <div className="max-w-7xl mx-auto flex flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+              <div className="space-y-2">
+                <h3 className="text-lg font-bold text-white">The High Protein Snacks</h3>
+                <p className="max-w-md text-sm text-gray-400">
+                  Independent directory of high-protein snacks — bars, chips & bites — ranked by macros, taste, and value. Updated regularly.
                 </p>
-                <nav className="flex gap-4">
-                  <Link href="/privacy" className="hover:underline">
-                    Privacy
-                  </Link>
-                  <Link href="/terms" className="hover:underline">
-                    Terms
-                  </Link>
-                </nav>
+                <p className="text-xs text-gray-600 max-w-md">
+  Some links on this site are affiliate links.{" "}
+  <strong>As an Amazon Associate, we earn from qualifying purchases</strong> — 
+  at no extra cost to you. This helps keep our snack rankings independent and ad-free.
+</p>
+
               </div>
+
+              <nav className="flex flex-col gap-3 text-sm md:flex-row md:gap-6">
+                <a href="/how-we-review" className="hover:text-[#C6FF47] transition-colors">Data Accuracy</a>
+                <a href="/privacy" className="hover:text-[#C6FF47] transition-colors">Privacy</a>
+                <a href="/terms" className="hover:text-[#C6FF47] transition-colors">Terms</a>
+              </nav>
+            </div>
+
+            <div className="border-t border-white/10 py-4 text-center text-xs text-gray-500">
+            © 2025 The High Protein Snacks. Built with 💪 by Solo Vibecoder. 
+            This site contains ads and affiliate links — we may earn a small commission if you buy through them, at no extra cost to you.
             </div>
           </footer>
+
         </div>
       </body>
     </html>

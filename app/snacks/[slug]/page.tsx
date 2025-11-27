@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import ProductCard from "@/components/snacks/ProductCard";
+import { ProductJsonLd, ItemListJsonLd } from "@/components/seo/jsonld";
 import { getAllProducts, type Product } from "@/lib/products";
 import { weightLossFilter } from "@/lib/categoryFilters";
 import {
@@ -14,6 +15,8 @@ import {
   type CategorySlug,
 } from "@/lib/snackFilters";
 import { absoluteUrl } from "@/lib/seo";
+import { categories } from "@/data/categories";
+import type { Category } from "@/data/types";
 
 export const revalidate = 60 * 60 * 6;
 
@@ -354,6 +357,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
 
   return (
     <>
+      <ProductJsonLd snack={product} />
       <Script
         id={`product-${product.id}-schema`}
         type="application/ld+json"
@@ -631,6 +635,17 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
   if (!details) notFound();
 
   const products = getProductsByCategory(slug);
+  const category =
+    categories.find((cat) => cat.slug === slug) ??
+    ({
+      id: `category-${slug}`,
+      slug: slug as Category["slug"],
+      title: details.title,
+      description: details.description,
+      primaryKeyword: details.title,
+      secondaryKeywords: [],
+      heroCopy: details.description,
+    } as Category);
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Snacks", href: "/snacks" },
@@ -670,6 +685,7 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
 
   return (
     <>
+      <ItemListJsonLd category={category} snacks={products} />
       <Script
         id={`category-${slug}-itemlist`}
         type="application/ld+json"

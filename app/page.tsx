@@ -11,6 +11,7 @@ import ExploreCategoryRow from "@/components/sections/ExploreCategoryRow";
 import TopRankingsToday from "@/components/sections/TopRankingsToday";
 import WeightLossTop3 from "@/components/sections/WeightLossTop3";
 import { uniqueByBrand } from "@/lib/utils/uniqueByBrand";
+import { JsonLd } from "@/components/seo/jsonld";
 
 
 
@@ -19,6 +20,27 @@ import { uniqueByBrand } from "@/lib/utils/uniqueByBrand";
 // --- BRAND COLORS (centralized) ---
 const PRIMARY_DARK = "#124942"; // was #0F3D37// softer deep teal
 const ACCENT_LIME  = "#C6FF47"; // lime highlight
+const siteUrl = "https://www.thehighproteinsnacks.com";
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "The High Protein Snacks",
+  url: siteUrl,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${siteUrl}/snacks?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "The High Protein Snacks",
+  url: siteUrl,
+  logo: `${siteUrl}/logo-highproteinsnacks.png`,
+};
 
 export const metadata: Metadata = {
   title: "Best High-Protein Snacks Ranked (2025) – Protein, Sugar & Value Directory",
@@ -119,6 +141,8 @@ export default async function HomePage() {
 
   return (
     <>
+      <JsonLd data={websiteJsonLd} />
+      <JsonLd data={organizationJsonLd} />
       {/* HERO */}
 <header style={{ backgroundColor: PRIMARY_DARK }} className="text-white">
   
@@ -207,24 +231,6 @@ export default async function HomePage() {
 
     </div>
   </div>
-
-  <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: "The High Protein Snacks",
-      url: "https://thehighproteinsnacks.com",
-      potentialAction: {
-        "@type": "SearchAction",
-        target: "https://thehighproteinsnacks.com/snacks?q={search_term_string}",
-        "query-input": "required name=search_term_string",
-      },
-    }),
-  }}
-/>
-
 </header>
       {bestValueProduct && bestLowSugarProduct && bestHighProteinProduct && (
         <script
