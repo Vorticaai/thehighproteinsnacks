@@ -9,7 +9,6 @@ import { Header } from "@/components/layout/header"
 import "./globals.css"
 import Script from "next/script"
 
-
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -46,8 +45,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.thehighproteinsnacks.com",
   },
-};
-
+}
 
 export default function RootLayout({
   children,
@@ -57,18 +55,37 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body
-      
         className={cn(
           "min-h-screen bg-background font-body text-base text-foreground",
         )}
       >
-         {/* AdSense global script */}
-         <Script
+
+        {/* --- ✅ GOOGLE ANALYTICS (GA4) --- */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+        {/* --- END GA4 --- */}
+
+        {/* --- AdSense global script --- */}
+        <Script
           id="adsense-script"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595892489334854"
           strategy="afterInteractive"
           crossOrigin="anonymous"
         />
+        {/* --- END ADSENSE --- */}
+
         <div className="min-h-screen flex flex-col">
           <Header />
 
@@ -84,11 +101,10 @@ export default function RootLayout({
                   Independent directory of high-protein snacks — bars, chips & bites — ranked by macros, taste, and value. Updated regularly.
                 </p>
                 <p className="text-xs text-gray-600 max-w-md">
-  Some links on this site are affiliate links.{" "}
-  <strong>As an Amazon Associate, we earn from qualifying purchases</strong> — 
-  at no extra cost to you. This helps keep our snack rankings independent and ad-free.
-</p>
-
+                  Some links on this site are affiliate links.{" "}
+                  <strong>As an Amazon Associate, we earn from qualifying purchases</strong> — 
+                  at no extra cost to you. This helps keep our snack rankings independent and ad-free.
+                </p>
               </div>
 
               <nav className="flex flex-col gap-3 text-sm md:flex-row md:gap-6">
@@ -99,8 +115,8 @@ export default function RootLayout({
             </div>
 
             <div className="border-t border-white/10 py-4 text-center text-xs text-gray-500">
-            © 2025 The High Protein Snacks. Built with 💪 by Solo Vibecoder. 
-            This site contains ads and affiliate links — we may earn a small commission if you buy through them, at no extra cost to you.
+              © 2025 The High Protein Snacks. Built with 💪 by Solo Vibecoder. 
+              This site contains ads and affiliate links — we may earn a small commission if you buy through them, at no extra cost to you.
             </div>
           </footer>
 
