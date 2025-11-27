@@ -8,6 +8,7 @@ console.log("trackAmazonClick imported as:", trackAmazonClick);
 
 
 
+
 // helpers to color the value badge
 const valueClass = (gPerDollar: number) => {
   if (gPerDollar >= 18) return "bg-[#C6FF47] text-black";      // elite value
