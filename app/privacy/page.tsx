@@ -26,11 +26,7 @@ export default function PrivacyPage() {
           <h2 className="mb-3 text-2xl font-bold text-gray-900">1. Information we collect</h2>
           <p className="mb-3">We collect information in the following ways:</p>
           <ul className="ml-6 list-disc space-y-2">
-            <li>
-              <strong>Information you provide:</strong> If you contact us directly (for example via
-              email), we may collect your name, email address, and any other information you choose
-              to share.
-            </li>
+            
             <li>
               <strong>Usage data:</strong> We may collect anonymous information about how you
               interact with the site, such as pages visited, clicks, and time on page. This is

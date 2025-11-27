@@ -6,6 +6,7 @@ import { getAllProducts, type Product } from "@/lib/products";
 import { weightLossFilter } from "@/lib/categoryFilters";
 import { absoluteUrl } from "@/lib/seo";
 import { categoryFilters } from "@/lib/categoryFilters";
+import { AdSlot } from "@/components/ads/AdSlot";
 
 export const revalidate = 60 * 60 * 6; // 21600 seconds
 
@@ -139,6 +140,8 @@ export default function SnacksIndexPage() {
           {heroCopy.description}
         </p>
       </header>
+
+      <AdSlot slot="REPLACE_WITH_SNACKS_SLOT_ID" className="my-8" />
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {cardsWithCounts.map((card) => (

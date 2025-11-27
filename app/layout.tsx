@@ -7,6 +7,8 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Header } from "@/components/layout/header"
 import "./globals.css"
+import Script from "next/script"
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -55,10 +57,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body
+      
         className={cn(
           "min-h-screen bg-background font-body text-base text-foreground",
         )}
       >
+         {/* AdSense global script */}
+         <Script
+          id="adsense-script"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595892489334854"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         <div className="min-h-screen flex flex-col">
           <Header />
 

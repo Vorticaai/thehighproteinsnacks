@@ -12,6 +12,7 @@ import TopRankingsToday from "@/components/sections/TopRankingsToday";
 import WeightLossTop3 from "@/components/sections/WeightLossTop3";
 import { uniqueByBrand } from "@/lib/utils/uniqueByBrand";
 import { JsonLd } from "@/components/seo/jsonld";
+import { AdSlot } from "@/components/ads/AdSlot";
 
 
 
@@ -232,6 +233,7 @@ export default async function HomePage() {
     </div>
   </div>
 </header>
+      <AdSlot slot="REPLACE_WITH_HOME_SLOT_ID" className="my-10" />
       {bestValueProduct && bestLowSugarProduct && bestHighProteinProduct && (
         <script
           type="application/ld+json"

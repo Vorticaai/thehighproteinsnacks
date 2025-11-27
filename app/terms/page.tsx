@@ -151,8 +151,12 @@ export default function TermsPage() {
 
         <section>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">9. Contact</h2>
-          <p>If you have any questions about these Terms, please contact us at:</p>
-          <p className="mt-3 font-medium">support@thehighproteinsnacks.com</p>
+          // AFTER (shorter)
+<p>
+  If you have questions about these Terms, please review it carefully before using the site.
+</p>
+
+      
         </section>
       </div>
     </main>
