@@ -74,10 +74,11 @@ export default function ProductCard({ product }: Props) {
     console.log("[CTA] Amazon clicked →", product.name, product.id);
     trackAmazonClick(product.name, product.id);
   }}
-  className="..."
+  className="mt-auto inline-flex w-full items-center justify-center rounded-full bg-[#C6FF47] px-3 py-2 text-xs font-bold text-black transition hover:bg-[#b8e840]"
 >
   View on Amazon →
 </a>
+
 
 
 
