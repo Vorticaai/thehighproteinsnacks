@@ -3,6 +3,10 @@
 
 import type { Product } from "@/lib/products";
 import Link from "next/link";
+import { trackAmazonClick } from "@/lib/analytics"
+console.log("trackAmazonClick imported as:", trackAmazonClick);
+
+
 
 // helpers to color the value badge
 const valueClass = (gPerDollar: number) => {
@@ -60,16 +64,21 @@ export default function ProductCard({ product }: Props) {
       </p>
 
       {/* CTA */}
-      <a
-        href={product.buyUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-event="cta_amazon"
-        data-sku={product.id}
-        className="mt-auto inline-flex w-full items-center justify-center rounded-full bg-[#C6FF47] px-3 py-2 text-xs font-bold text-black transition hover:bg-[#b8e840]"
-      >
-        View on Amazon →
-      </a>
+     {/* CTA */}
+     <a
+  href={product.buyUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    console.log("[CTA] Amazon clicked →", product.name, product.id);
+    trackAmazonClick(product.name, product.id);
+  }}
+  className="..."
+>
+  View on Amazon →
+</a>
+
+
 
       <p className="mt-1 text-center text-[10px] text-gray-500">Available on Amazon</p>
     </div>
