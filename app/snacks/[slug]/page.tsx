@@ -209,19 +209,28 @@ export async function generateMetadata({
       return {
         title: details.seoTitle,
         description: details.seoDescription,
-        alternates: { canonical: url },
+        alternates: {
+          canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks/${slug}`,
+        },
         openGraph: {
           title: details.seoTitle,
           description: details.seoDescription,
-          url,
+          url: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks/${slug}`,
           type: "website",
+          images: [
+            {
+              url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+            },
+          ],
         },
         twitter: {
           card: "summary_large_image",
           title: details.seoTitle,
           description: details.seoDescription,
+          images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
         },
       };
+      
     }
     return {
       title: "Snack not found",

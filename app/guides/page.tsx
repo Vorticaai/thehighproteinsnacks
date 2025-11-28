@@ -4,30 +4,37 @@ import Script from "next/script";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { guides } from "@/data/guides";
 import { absoluteUrl } from "@/lib/seo";
+const PAGE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/guides`;
 
-const PAGE_URL = "https://thehighproteinsnacks.com/guides";
-
-export const revalidate = 60 * 60 * 6;
 
 export const metadata: Metadata = {
   title: "Expert High-Protein Snack Guides",
   description:
     "Read nutritionist-backed buying guides for low-sugar, keto, vegan, budget, and weight-loss snacks.",
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/guides`,
+  },
   openGraph: {
     title: "Expert High-Protein Snack Guides",
     description:
       "Read nutritionist-backed buying guides for low-sugar, keto, vegan, budget, and weight-loss snacks.",
-    url: PAGE_URL,
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/guides`,
     type: "website",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Expert High-Protein Snack Guides",
     description:
       "Read nutritionist-backed buying guides for low-sugar, keto, vegan, budget, and weight-loss snacks.",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
   },
 };
+
 
 const featuredCategoryLinks = [
   { label: "Weight Loss Snacks", href: "/snacks/weight-loss" },

@@ -36,18 +36,29 @@ export async function generateMetadata({
     title: `${guide.title} | The High-Protein Snacks`,
     description: guide.metaDescription,
     alternates: { canonical: url },
+
     openGraph: {
       title: `${guide.title} | The High-Protein Snacks`,
       description: guide.metaDescription,
       url,
       type: "article",
+      images: [
+        {
+          url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+        },
+      ],
     },
+
     twitter: {
       card: "summary_large_image",
       title: `${guide.title} | The High-Protein Snacks`,
       description: guide.metaDescription,
+      images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
     },
   };
+
+  
+  
 }
 
 const markdownAllowedElements = [

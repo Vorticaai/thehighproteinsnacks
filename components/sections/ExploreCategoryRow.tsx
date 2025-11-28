@@ -81,7 +81,7 @@ export default function ExploreCategoryRow() {
           } else if (filterFn) {
             count = products.filter(filterFn).length;
           }
-          
+        
 
           return (
             <Link

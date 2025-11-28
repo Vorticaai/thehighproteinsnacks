@@ -43,25 +43,34 @@ const organizationJsonLd = {
   logo: `${siteUrl}/logo-highproteinsnacks.png`,
 };
 
-export const metadata: Metadata = {
-  title: "Best High-Protein Snacks Ranked (2025) – Protein, Sugar & Value Directory",
+export const metadata = {
+  title: "Best High-Protein Snacks Ranked (2025)",
   description:
-    "Find high-protein snacks that actually taste good — bars, shakes, chips & bites ranked by protein-per-dollar, sugar, calories, and ingredient quality. Updated constantly.",
+    "Browse the #1 ranked directory of high-protein snacks. Compare protein, sugar, calories, price per serving, and diet tags like keto, vegan, gluten-free.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+  },
   openGraph: {
     title: "Best High-Protein Snacks Ranked (2025)",
     description:
-      "Independent rankings of high-protein snacks — bars, shakes, chips & bites. Ranked by protein-per-dollar, sugar, calories & ingredient quality.",
-    url: "https://thehighproteinsnacks.com",
-    siteName: "The High Protein Snacks",
+      "Browse the #1 ranked directory of high-protein snacks. Compare protein, sugar, calories, price per serving, and all diet flags.",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
     type: "website",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best High-Protein Snacks (2025)",
+    title: "Best High-Protein Snacks Ranked (2025)",
     description:
-      "Independent rankings of bars, shakes, chips & bites — ranked by protein-per-dollar, sugar & calories.",
+      "Compare the top high-protein snacks by macros, sugar, calories, and price.",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
   },
 };
+
 
 
 type CategorySlug = keyof typeof categoryFilters;

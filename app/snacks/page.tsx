@@ -10,7 +10,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 
 export const revalidate = 60 * 60 * 6; // 21600 seconds
 
-const PAGE_URL = "https://thehighproteinsnacks.com/snacks";
+const PAGE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/snacks`;
 
 const heroCopy = {
   title: "Snack Categories Built for Real Goals",
@@ -75,24 +75,33 @@ const categoryCards: CategoryCard[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Browse High-Protein Snack Categories",
+  title: "High-Protein Snack Categories",
   description:
-    "Explore low-sugar, weight-loss, keto, vegan, and best-value protein snack lists—each curated from real nutrition data.",
-  alternates: { canonical: PAGE_URL },
+    "Browse snacks by category — low sugar, keto, vegan, weight loss, best value, gluten-free and more.",
+  alternates: {
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks`,
+  },
   openGraph: {
-    title: "Browse High-Protein Snack Categories",
+    title: "High-Protein Snack Categories",
     description:
-      "Explore low-sugar, weight-loss, keto, vegan, and best-value protein snack lists—each curated from real nutrition data.",
-    url: PAGE_URL,
+      "Filter snacks by low sugar, weight loss, keto, vegan, gluten-free and more.",
+    url: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks`,
     type: "website",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Browse High-Protein Snack Categories",
+    title: "High-Protein Snack Categories",
     description:
-      "Explore low-sugar, weight-loss, keto, vegan, and best-value protein snack lists—each curated from real nutrition data.",
+      "Browse snack categories based on macros, diet tags, and health goals.",
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
   },
 };
+
 
 export default function SnacksIndexPage() {
   const products = getAllProducts();

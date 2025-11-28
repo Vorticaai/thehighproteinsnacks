@@ -48,8 +48,10 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://www.thehighproteinsnacks.com",
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}`,
   },
+  
+
 }
 
 export default function RootLayout({

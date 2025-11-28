@@ -5,8 +5,9 @@ import type { Metadata } from "next"
 
 const SITE_NAME = "The High Protein Snacks"
 const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://thehighproteinsnacks.com"
-  const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.jpg`
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.thehighproteinsnacks.com"
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og-default.jpg`
+
 
 
 export const defaultMeta = {
