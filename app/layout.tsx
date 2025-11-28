@@ -77,10 +77,13 @@ export default function RootLayout({
 
     gtag('js', new Date());
 
-    gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-      send_page_view: true,
-      debug_mode: true
-    });
+  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+  send_page_view: true,
+  debug_mode: true,
+  allow_google_signals: true,
+  allow_ad_personalization_signals: true
+});
+
   `}
 </Script>
 
