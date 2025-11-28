@@ -81,8 +81,12 @@ export default function RootLayout({
   send_page_view: true,
   debug_mode: true,
   allow_google_signals: true,
-  allow_ad_personalization_signals: true
+  allow_ad_personalization_signals: true,
+  // force GA to accept cookies even in incognito
+  allow_Ad_personalization: true,
+  allow_Ad_storage: true
 });
+
 
   `}
 </Script>
