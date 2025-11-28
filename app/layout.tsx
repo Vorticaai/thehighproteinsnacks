@@ -19,6 +19,12 @@ export const metadata: Metadata = {
     description: defaultMeta.description,
   }),
 
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+
   openGraph: {
     type: "website",
     url: "https://www.thehighproteinsnacks.com",
@@ -34,7 +40,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     title: defaultMeta.title,
@@ -61,35 +66,27 @@ export default function RootLayout({
       >
 
         {/* --- ✅ GOOGLE ANALYTICS (GA4) --- */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script
+{/* --- ✅ GOOGLE ANALYTICS (GA4) --- */}
+<Script
   src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
   strategy="afterInteractive"
 />
 
 <Script id="ga-init" strategy="afterInteractive">
-  {`
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
 
-    gtag('js', new Date());
+  gtag('js', new Date());
 
   gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-  send_page_view: true,
-  debug_mode: true,
-  allow_google_signals: true,
-  allow_ad_personalization_signals: true,
-  // force GA to accept cookies even in incognito
-  allow_Ad_personalization: true,
-  allow_Ad_storage: true
-});
-
-
-  `}
+    send_page_view: true,
+    allow_google_signals: true,
+    allow_ad_personalization_signals: true
+  });
+`}
 </Script>
+
 
         {/* --- END GA4 --- */}
 
