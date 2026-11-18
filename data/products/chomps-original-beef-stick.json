@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": "1 Stick / 32 grm",
+    "servingSize": "1 portion (32 g)",
     "servingSizeG": 32,
-    "protein": 9,
-    "calories": 90,
+    "protein": 10,
+    "calories": 100,
     "carbs": 0,
     "fiber": 0,
     "sugar": 0,
-    "fat": 6
+    "fat": 7
   },
   "claims": {
     "vegan": false,
@@ -75,6 +75,7 @@
     "notes": [
       "Pinned by a person after review.",
       "Open Food Facts agrees with the USDA label data.",
+      "Published the Open Food Facts values: the current 1.15 oz stick in the package photo lists 10 g protein and 100 calories; the USDA record is for a 32 g stick (9 g, 90 calories).",
       "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763)."
     ]
   }

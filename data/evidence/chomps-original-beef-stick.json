@@ -30,7 +30,7 @@
       "fiber": 0,
       "sugar": 0,
       "fat": 6,
-      "servingSize": "1 Stick / 32 grm",
+      "servingSize": "1 Stick / 32 g",
       "servingSizeG": 32
     }
   },
@@ -60,11 +60,12 @@
       "fiber": 0,
       "sugar": 0,
       "fat": 6,
-      "servingSize": "1 Stick / 32 grm",
+      "servingSize": "1 Stick / 32 g",
       "servingSizeG": 32
     },
     "notes": [
-      "Open Food Facts agrees with the USDA label data."
+      "Open Food Facts agrees with the USDA label data.",
+      "Published the Open Food Facts values: the current 1.15 oz stick in the package photo lists 10 g protein and 100 calories; the USDA record is for a 32 g stick (9 g, 90 calories)."
     ]
   },
   "before": {
@@ -78,13 +79,13 @@
     "fat": 6
   },
   "after": {
-    "servingSize": "1 Stick / 32 grm",
+    "servingSize": "1 portion (32 g)",
     "servingSizeG": 32,
-    "protein": 9,
-    "calories": 90,
+    "protein": 10,
+    "calories": 100,
     "carbs": 0,
     "fiber": 0,
     "sugar": 0,
-    "fat": 6
+    "fat": 7
   }
 }

@@ -30,7 +30,7 @@
       "fiber": 2.07,
       "sugar": 7,
       "fat": 3.52,
-      "servingSize": "1 Bottle / 414 mlt",
+      "servingSize": "1 Bottle / 414 ml",
       "servingSizeG": null
     }
   },
@@ -60,7 +60,7 @@
       "fiber": 2,
       "sugar": 7,
       "fat": 3.5,
-      "servingSize": "1 Bottle / 414 mlt",
+      "servingSize": "1 Bottle / 414 ml",
       "servingSizeG": null
     },
     "notes": [
@@ -78,7 +78,7 @@
     "fat": 3.5
   },
   "after": {
-    "servingSize": "1 Bottle / 414 mlt",
+    "servingSize": "1 Bottle / 414 ml",
     "servingSizeG": null,
     "protein": 42,
     "calories": 230,

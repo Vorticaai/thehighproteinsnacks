@@ -30,7 +30,7 @@
       "fiber": 12,
       "sugar": 0.998,
       "fat": 13,
-      "servingSize": "1 cookie / 58 grm",
+      "servingSize": "1 cookie / 58 g",
       "servingSizeG": 58
     }
   },
@@ -60,7 +60,7 @@
       "fiber": 12,
       "sugar": 1,
       "fat": 13,
-      "servingSize": "1 cookie / 58 grm",
+      "servingSize": "1 cookie / 58 g",
       "servingSizeG": 58
     },
     "notes": [
@@ -78,7 +78,7 @@
     "fat": 13
   },
   "after": {
-    "servingSize": "1 cookie / 58 grm",
+    "servingSize": "1 cookie / 58 g",
     "servingSizeG": 58,
     "protein": 15,
     "calories": 220,

@@ -87,7 +87,7 @@
       "fiber": 13,
       "sugar": 1,
       "fat": 8,
-      "servingSize": "1 bar / 60 grm",
+      "servingSize": "1 bar / 60 g",
       "servingSizeG": 60
     }
   },
@@ -117,7 +117,7 @@
       "fiber": 13,
       "sugar": 1,
       "fat": 8,
-      "servingSize": "1 bar / 60 grm",
+      "servingSize": "1 bar / 60 g",
       "servingSizeG": 60
     },
     "notes": [
@@ -135,7 +135,7 @@
     "fat": 8
   },
   "after": {
-    "servingSize": "1 bar / 60 grm",
+    "servingSize": "1 bar / 60 g",
     "servingSizeG": 60,
     "protein": 21,
     "calories": 190,

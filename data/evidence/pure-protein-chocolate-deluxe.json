@@ -87,7 +87,7 @@
       "fiber": 2,
       "sugar": 3,
       "fat": 4.5,
-      "servingSize": "1 BAR / 50 grm",
+      "servingSize": "1 BAR / 50 g",
       "servingSizeG": 50
     }
   },
@@ -117,7 +117,7 @@
       "fiber": 2,
       "sugar": 3,
       "fat": 4.5,
-      "servingSize": "1 BAR / 50 grm",
+      "servingSize": "1 BAR / 50 g",
       "servingSizeG": 50
     },
     "notes": [
@@ -135,7 +135,7 @@
     "fat": 4.5
   },
   "after": {
-    "servingSize": "1 BAR / 50 grm",
+    "servingSize": "1 BAR / 50 g",
     "servingSizeG": 50,
     "protein": 21,
     "calories": 180,
