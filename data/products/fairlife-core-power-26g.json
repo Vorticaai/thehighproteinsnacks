@@ -1,0 +1,43 @@
+{
+  "id": "fairlife-core-power-26g",
+  "name": "Fairlife Core Power 26g",
+  "brand": "Fairlife",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Core-Power-Protein-Shake-Chocolate/dp/B07LD2NV9X?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.75,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 26,
+    "calories": 170,
+    "carbs": 6,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 4.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07LD2NV9X",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

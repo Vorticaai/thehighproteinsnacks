@@ -1,0 +1,43 @@
+{
+  "id": "orgain-vegan-protein-bar-peanut-butter",
+  "name": "Orgain Organic Vegan Protein Bars Peanut Butter Chocolate Chunk",
+  "brand": "Orgain",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Orgain-Organic-Protein-Peanut-Chocolate/dp/B01HNTBGP8/ref=sr_1_5?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.15,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 19,
+    "fiber": 1,
+    "sugar": 6,
+    "fat": 5
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B01HNTBGP8",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

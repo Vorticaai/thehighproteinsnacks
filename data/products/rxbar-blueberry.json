@@ -1,0 +1,43 @@
+{
+  "id": "rxbar-blueberry",
+  "name": "RXBAR Blueberry Bar",
+  "brand": "RXBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/RXBAR-Blueberry-Protein-Ounce-Gluten/dp/B0823BY2P8/ref=sr_1_2_sspa?crid=279T7OVGU211H&tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.8,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 23,
+    "fiber": 6,
+    "sugar": 15,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0823BY2P8",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

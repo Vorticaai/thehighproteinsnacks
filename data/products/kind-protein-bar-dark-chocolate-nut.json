@@ -1,0 +1,43 @@
+{
+  "id": "kind-protein-bar-dark-chocolate-nut",
+  "name": "KIND Protein Bar Dark Chocolate Nut",
+  "brand": "KIND",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/KIND-Protein-Double-Chocolate-Gluten/dp/B0777W3R15/ref=sr_1_2?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 250,
+    "carbs": 17,
+    "fiber": 5,
+    "sugar": 8,
+    "fat": 17
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0777W3R15",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "boxed-halal-Premium-bbq-beef-jerky",
+  "name": "Boxed Halal BBQ Beef Jerky",
+  "brand": "Boxed Halal",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Premium-Grass-Fed-Certified-Halal-Friendly/dp/B0C4VZ7CFX?tag=thehighprotei-20",
+  "price": {
+    "perServing": 3.3,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 9,
+    "calories": 100,
+    "carbs": 10,
+    "fiber": 0,
+    "sugar": 9,
+    "fat": 2
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0C4VZ7CFX",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

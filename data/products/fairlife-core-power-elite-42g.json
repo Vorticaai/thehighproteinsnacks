@@ -1,0 +1,43 @@
+{
+  "id": "fairlife-core-power-elite-42g",
+  "name": "Fairlife Core Power Elite 42g",
+  "brand": "Fairlife",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Core-Power-fairlife-Protein-Chocolate/dp/B01DDIRDZA?tag=thehighprotei-20",
+  "price": {
+    "perServing": 3.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B01DDIRDZA",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

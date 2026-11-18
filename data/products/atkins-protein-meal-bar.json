@@ -1,0 +1,43 @@
+{
+  "id": "atkins-protein-meal-bar",
+  "name": "Atkins Protein Meal Bar – Chocolate PB",
+  "brand": "Atkins",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Atkins-Chocolate-Protein-Replacement-Friendly/dp/B0BZDWKDT1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 19,
+    "fiber": 7,
+    "sugar": 1,
+    "fat": 11
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0BZDWKDT1",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

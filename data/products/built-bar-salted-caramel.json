@@ -1,0 +1,43 @@
+{
+  "id": "built-bar-salted-caramel",
+  "name": "Built Bar Salted Caramel",
+  "brand": "Built Bar",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Built-Bar-Pack-Protein-Energy/dp/B09M96KGNJ/ref=sr_1_4?tag=thehighprotei-20",
+  "price": {
+    "perServing": 4.9,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 4,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B09M96KGNJ",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

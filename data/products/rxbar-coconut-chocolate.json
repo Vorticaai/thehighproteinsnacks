@@ -1,0 +1,43 @@
+{
+  "id": "rxbar-coconut-chocolate",
+  "name": "RXBAR Coconut Chocolate",
+  "brand": "RXBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/RXBAR-Protein-Coconut-Chocolate-1-83oz/dp/B0143NQVI4/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.58,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 200,
+    "carbs": 23,
+    "fiber": 5,
+    "sugar": 14,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0143NQVI4",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

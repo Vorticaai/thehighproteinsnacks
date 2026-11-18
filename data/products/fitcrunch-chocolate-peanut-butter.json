@@ -1,0 +1,43 @@
+{
+  "id": "fitcrunch-chocolate-peanut-butter",
+  "name": "FitCrunch Protein Bar – Chocolate PB",
+  "brand": "FitCrunch",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/FITCRUNCH-Protein-Gluten-Proteins-Crunch/dp/B0FG8BZ4RP?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 14,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0FG8BZ4RP",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

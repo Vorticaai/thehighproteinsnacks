@@ -1,0 +1,43 @@
+{
+  "id": "quest-peanut-butter-cookie",
+  "name": "Quest Protein Cookie Peanut Butter",
+  "brand": "Quest Nutrition",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/NUTRITION-Peanut-Butter-Protein-Cookie/dp/B07JLQTN5P/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 5,
+    "calories": 210,
+    "carbs": 5,
+    "fiber": 11,
+    "sugar": 1,
+    "fat": 13
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07JLQTN5P",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

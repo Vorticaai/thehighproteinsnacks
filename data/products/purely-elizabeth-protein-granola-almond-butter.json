@@ -1,0 +1,43 @@
+{
+  "id": "purely-elizabeth-protein-granola-almond-butter",
+  "name": "Purely Elizabeth Protein Granola Almond Butter",
+  "brand": "Purely Elizabeth",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Purely-Elizabeth-Granola-Vanilla-Collagen/dp/B07RB7KM5S/ref=sr_1_2?tag=thehighprotei-20",
+  "price": {
+    "perServing": 6.8,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 6,
+    "calories": 170,
+    "carbs": 8,
+    "fiber": 2,
+    "sugar": 4,
+    "fat": 13
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07RB7KM5S",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

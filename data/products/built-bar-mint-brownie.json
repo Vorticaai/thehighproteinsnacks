@@ -1,0 +1,43 @@
+{
+  "id": "built-bar-mint-brownie",
+  "name": "Built Bar Mint Brownie",
+  "brand": "Built Bar",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Built-Puffs-Count-Protein-Bar/dp/B0C5QCYZTH/ref=sr_1_2?dib=eyJ2IjoiMSJ9.76sCFlrj0pwo0OK-1kwaCYVnaqzB8Vad73GSRG43lntM1BNMxsQ_Iunu1cbPYCw_OsvoEP_qV9WNGMfoiENJSS0qrjsIdOsufs-kzjdhjG0.VEJSRm5UeV4Du0ils2vEJiGjOt81an-f1-fTGHi-dCs&tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.9,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 140,
+    "carbs": 18,
+    "fiber": 1,
+    "sugar": 7,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0C5QCYZTH",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

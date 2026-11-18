@@ -1,24 +1,22 @@
 import fs from "fs"
 import path from "path"
-import Papa from "papaparse"
-import { weightLossFilter } from "./categoryFilters"
+import { categoryFilters } from "./categoryFilters"
+import type { ProductImage, ProductRecord, VerificationStatus } from "./productRecord"
+
+/**
+ * Loads product records from data/products/*.json and turns them into the
+ * Product shape the pages use. Records are the single source of truth; see
+ * lib/productRecord.ts for the stored format and /pipeline for how values are
+ * verified.
+ */
 
 export type ProductFlags = {
-  weightLoss?: boolean
-  highProtein?: boolean
-  lowCarb?: boolean
-  keto?: boolean
-  lowSugar?: boolean
-  glutenFree?: boolean
   vegan?: boolean
   plantBased?: boolean
+  glutenFree?: boolean
   halal?: boolean
-  dairyFree?: boolean
-  budget?: boolean
   bars?: boolean
   chips?: boolean
-  cookies?: boolean
-  
 }
 
 export type Product = {
@@ -31,16 +29,23 @@ export type Product = {
   fatsPerServing: number
   sugarPerServing: number
   fiberPerServing: number
-  netCarbs?: number
+  netCarbs: number
   pricePerServing: number
   buyUrl: string
+  /** Kept for older components; empty unless a licensed image exists. */
   imageUrl: string
+  image: ProductImage | null
   proteinPerDollar: number
   type?: string
   flags: ProductFlags
-  // optional editorial fields (legacy pages still expect these)
-  rating?: number
-  reviewCount?: number
+  servingSize?: string
+  gtin?: string
+  verification: {
+    status: VerificationStatus
+    checkedAt: string | null
+    sources: ProductRecord["verification"]["sources"]
+  }
+  // Generated editorial fields used by older pages
   description?: string
   whyGreat?: string
   nutritionBreakdown?: string
@@ -50,270 +55,88 @@ export type Product = {
   dietTags?: string[]
   categoryTags?: string[]
   faq?: Array<{ question: string; answer: string }>
-  servingSize?: string
   pricePerUnit?: number
   isHero?: boolean
+  // Legacy fields; no longer populated
+  rating?: number
+  reviewCount?: number
 }
 
-type RawProductRow = {
-  ID: string
-  Product_Name: string
-  Brand: string
-  proteinPerServing: string
-  caloriesPerServing: string
-  carbsPerServing: string
-  fatsPerServing: string
-  sugarPerServing: string
-  fiberPerServing: string
-  pricePerServing: string
-  buyUrl: string
-  imageFileName: string
-  type?: string
-  isWeightLoss: string
-  isHighProtein: string
-  isLowCarb: string
-  isKeto: string
-  isLowSugar: string
-  isGlutenFree: string
-  isVegan: string
-  isBars: string
-  isChips: string
-  isPlantBased?: string
-  isDairyFree?: string
-  isBudget?: string
-  isCookies?: string
-}
+const PRODUCTS_DIR = path.join(process.cwd(), "data", "products")
 
 let productCache: Product[] | null = null
 
+export function readProductRecords(dir = PRODUCTS_DIR): ProductRecord[] {
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as ProductRecord)
+}
+
 export function getAllProducts(): Product[] {
   if (productCache) return productCache
-
-  const csvPath = path.join(process.cwd(), "data", "products.csv")
-  const csvContent = fs.readFileSync(csvPath, "utf8")
-
-  const parsed = Papa.parse<RawProductRow>(csvContent, {
-    header: true,
-    skipEmptyLines: true,
-  })
-
-  const rows = parsed.data.filter((row): row is RawProductRow =>
-    Boolean(row?.ID && row?.Product_Name),
-  )
-
-  // Drop duplicate IDs (first row wins) so each product has one URL.
-  const seen = new Set<string>()
-  const uniqueRows = rows.filter((row) => {
-    const id = row.ID.trim()
-    if (seen.has(id)) return false
-    seen.add(id)
-    return true
-  })
-
-  productCache = uniqueRows.map((row) => normalizeRow(row))
-
+  productCache = readProductRecords().map(toProduct)
   return productCache
 }
-// --- SMART AUTO-DETECTION HELPERS (NO BRAND ASSUMPTIONS) ---
 
-function detectVegan(brandRaw: string, productNameRaw: string): {
-  vegan: boolean;
-  plantBased: boolean;
-} {
-  const text = `${brandRaw} ${productNameRaw}`.toLowerCase();
+export function toProduct(record: ProductRecord): Product {
+  const n = record.nutrition
+  const price = record.price.perServing
+  // US labels include fiber in total carbohydrate.
+  const netCarbs = Math.max(n.carbs - n.fiber, 0)
 
-  const vegan =
-    text.includes("vegan") ||
-    text.includes("plant-based") ||
-    text.includes("plant based") ||
-    text.includes("dairy-free") ||
-    text.includes("dairy free") ||
-    text.includes("no dairy") ||
-    text.includes("100% plant") ||
-    text.includes("made with plants");
-
-  const plantBased =
-    vegan ||
-    text.includes("plant protein") ||
-    text.includes("plant powered");
-
-  return { vegan, plantBased };
-}
-
-
-function detectGlutenFree(brandRaw: string, productNameRaw: string): boolean {
-  const text = `${brandRaw} ${productNameRaw}`.toLowerCase();
-
-  return (
-    text.includes("gluten free") ||
-    text.includes("gluten-free") ||
-    text.includes("glutenfree") ||
-    text.includes("celiac") ||
-    text.includes("coeliac") ||
-    text.includes("no gluten")
-  );
-}
-
-
-function detectHalal(brandRaw: string, productNameRaw: string): boolean {
-  const text = `${brandRaw} ${productNameRaw}`.toLowerCase();
-  return (
-    text.includes("halal") ||
-    text.includes("zabihah") ||
-    text.includes("hand slaughtered")
-  );
-}
-
-
-
-function normalizeRow(row: RawProductRow): Product {
-  const protein = toNumber(row.proteinPerServing)
-  const price = toNumber(row.pricePerServing)
-  const carbs = toNumber(row.carbsPerServing)
-  const fiber = toNumber(row.fiberPerServing)
-  const netCarbs = Math.max(carbs - fiber, 0)
-
-  const baseProduct: Product = {
-    id: row.ID,
-    name: row.Product_Name,
-    brand: row.Brand,
-    proteinPerServing: protein,
-    caloriesPerServing: toNumber(row.caloriesPerServing),
-    carbsPerServing: carbs,
-    fatsPerServing: toNumber(row.fatsPerServing),
-    sugarPerServing: toNumber(row.sugarPerServing),
-    fiberPerServing: fiber,
+  const product: Product = {
+    id: record.id,
+    name: record.name,
+    brand: record.brand,
+    proteinPerServing: n.protein,
+    caloriesPerServing: n.calories,
+    carbsPerServing: n.carbs,
+    fatsPerServing: n.fat,
+    sugarPerServing: n.sugar,
+    fiberPerServing: n.fiber,
     netCarbs,
     pricePerServing: price,
-    buyUrl: row.buyUrl?.trim() ?? "",
-    // Product photos were removed (they were copied from Amazon listings).
-    // Pages show a generated LabelCard instead. imageFileName stays in the CSV
-    // only as a record of the old file name.
-    imageUrl: "",
-    proteinPerDollar: price > 0 ? Number((protein / price).toFixed(2)) : 0,
-    type: normalizeProductType(row.type),
-    flags: {
-      weightLoss: toBool(row.isWeightLoss, "isWeightLoss"),
-      highProtein: toBool(row.isHighProtein, "isHighProtein"),
-      lowCarb: toBool(row.isLowCarb, "isLowCarb"),
-      keto: toBool(row.isKeto, "isKeto"),
-      lowSugar: toBool(row.isLowSugar, "isLowSugar"),
-      glutenFree: toBool(row.isGlutenFree, "isGlutenFree"),
-      vegan: toBool(row.isVegan, "isVegan"),
-      plantBased: toBool(row.isPlantBased, "isPlantBased"),
-      halal: false,
-      dairyFree: toBool(row.isDairyFree, "isDairyFree"),
-      budget: toBool(row.isBudget, "isBudget"),
-      bars: toBool(row.isBars, "isBars"),
-      chips: toBool(row.isChips, "isChips"),
-      cookies: toBool(row.isCookies, "isCookies"),
-    },
     pricePerUnit: price,
-    servingSize: "1 serving",
-  }
-// --- MERGE AUTO-DETECTED VEGAN / PLANT-BASED / GLUTEN-FREE FLAGS ---
-const veganDetection = detectVegan(baseProduct.brand, baseProduct.name)
-const autoGlutenFree = detectGlutenFree(baseProduct.brand, baseProduct.name)
-const isHalal = detectHalal(baseProduct.brand, baseProduct.name)
-
-// Merge CSV + auto-detection (CSV always wins if true)
-baseProduct.flags.vegan =
-  baseProduct.flags.vegan || veganDetection.vegan;
-
-baseProduct.flags.plantBased =
-  baseProduct.flags.plantBased || veganDetection.plantBased;
-
-baseProduct.flags.glutenFree =
-  baseProduct.flags.glutenFree || autoGlutenFree;
-
-baseProduct.flags.halal =
-  baseProduct.flags.halal || isHalal;
-
-
-  let finalProduct: Product = {
-    ...baseProduct,
-    ...buildAutoContent(baseProduct),
+    buyUrl: record.buyUrl,
+    imageUrl: record.image?.src ?? "",
+    image: record.image,
+    proteinPerDollar: price > 0 ? Number((n.protein / price).toFixed(2)) : 0,
+    type: record.productType ?? undefined,
+    flags: {
+      vegan: record.claims.vegan,
+      plantBased: record.claims.plantBased,
+      glutenFree: record.claims.glutenFree,
+      halal: record.claims.halal,
+      bars: record.productType === "bar",
+      chips: record.productType === "chips",
+    },
+    servingSize: n.servingSize ?? undefined,
+    gtin: record.identifiers.gtin ?? undefined,
+    verification: {
+      status: record.verification.status,
+      checkedAt: record.verification.checkedAt,
+      sources: record.verification.sources,
+    },
   }
 
-  if (isHalal) {
-    finalProduct.dietTags = [...(finalProduct.dietTags ?? []), "halal"]
-    finalProduct.categoryTags = [...(finalProduct.categoryTags ?? []), "halal"]
-  }
-
-  return finalProduct
+  return { ...product, ...buildAutoContent(product) }
 }
-
-function toNumber(value: string | undefined): number {
-  if (!value) return 0
-  const parsed = Number(value)
-  return Number.isFinite(parsed) ? parsed : 0
-}
-
-function toBool(value: string | undefined, key: string): boolean {
-  if (!value) return false
-  const normalized = value.trim().toLowerCase()
-  if (!normalized) return false
-
-  const truthy = ["true", "1", "yes", "y", "x", "✓"]
-  const falsy = ["false", "0", "no", "n", "?"]
-
-  if (truthy.includes(normalized)) return true
-  if (falsy.includes(normalized)) return false
-
-  // Anything unrecognised is treated as "not set", never as true.
-  return normalized === key.toLowerCase()
-}
-
-function normalizeProductType(value: string | undefined): string | undefined {
-  if (!value) return undefined
-  const normalized = value.trim().toLowerCase()
-  if (!normalized) return undefined
-
-  const typeMap: Record<string, string> = {
-    bar: "bar",
-    bars: "bar",
-    chip: "chips",
-    chips: "chips",
-    cookie: "cookie",
-    cookies: "cookie",
-  }
-
-  return typeMap[normalized] ?? normalized
-}
-
-
-
 
 function buildAutoContent(product: Product) {
+  const inCategory = (slug: string) => categoryFilters[slug]?.(product) === true
+
   const dietTags = [
-    ...(product.dietTags ?? []),
     product.flags.vegan && "vegan",
     product.flags.plantBased && "plant-based",
     product.flags.halal && "halal",
-    product.flags.keto && "keto",
-    product.flags.lowSugar && "low-sugar",
     product.flags.glutenFree && "gluten-free",
-    product.flags.dairyFree && "dairy-free",
-  ]
-    .filter(Boolean)
-    .map((tag) => tag as string)
-  const dedupedDietTags = Array.from(new Set(dietTags))
+    inCategory("keto") && "keto",
+    inCategory("low-sugar") && "low-sugar",
+  ].filter(Boolean) as string[]
 
-  const categoryTags = [
-    ...(product.categoryTags ?? []),
-    product.flags.halal && "halal",
-    weightLossFilter(product) && "weight-loss",
-    product.flags.lowSugar && "low-sugar",
-    product.flags.glutenFree && "gluten-free",
-    product.flags.budget && "best-value",
-    product.proteinPerServing >= 20 && "high-protein",
-    product.type === "bar" && "protein-bars",
-    product.type === "chips" && "protein-chips",
-    product.type === "cookie" && "protein-cookies",
-  ]
-    .filter(Boolean)
-    .map((tag) => tag as string)
-  const dedupedCategoryTags = Array.from(new Set(categoryTags))
+  const categoryTags = Object.keys(categoryFilters).filter(inCategory)
 
   const shortBenefits = [
     `${product.proteinPerServing}g protein`,
@@ -333,23 +156,16 @@ function buildAutoContent(product: Product) {
     },
   ]
 
-  const description = `${product.brand} ${product.name} delivers ${product.proteinPerServing}g protein for ${product.caloriesPerServing} calories per serving.`
-  const whyGreat = `${product.name} has ${product.proteinPerServing}g protein and ${product.caloriesPerServing} calories per serving.`
-  const nutritionBreakdown = `Protein ${product.proteinPerServing}g · Carbs ${product.carbsPerServing}g · Fat ${product.fatsPerServing}g · Sugar ${product.sugarPerServing}g`
-  const ingredientsHighlight =
-    "See retailer listing for the most up-to-date ingredient list."
-
   return {
-    dietTags: dedupedDietTags,
-    categoryTags: dedupedCategoryTags,
+    dietTags: Array.from(new Set(dietTags)),
+    categoryTags,
     shortBenefits,
     bestFor: ["desk-snack", "on-the-go", "post-workout"],
     faq,
-    description,
-    whyGreat,
-    nutritionBreakdown,
-    ingredientsHighlight,
+    description: `${product.brand} ${product.name} has ${product.proteinPerServing}g protein for ${product.caloriesPerServing} calories per serving.`,
+    whyGreat: `${product.name} has ${product.proteinPerServing}g protein and ${product.caloriesPerServing} calories per serving.`,
+    nutritionBreakdown: `Protein ${product.proteinPerServing}g · Carbs ${product.carbsPerServing}g · Fat ${product.fatsPerServing}g · Sugar ${product.sugarPerServing}g`,
+    ingredientsHighlight: "See the package or retailer listing for the current ingredient list.",
     isHero: false,
   }
 }
-

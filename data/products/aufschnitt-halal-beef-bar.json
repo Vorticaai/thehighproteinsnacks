@@ -1,0 +1,43 @@
+{
+  "id": "aufschnitt-halal-beef-bar",
+  "name": "Aufschnitt Halal Beef Bar",
+  "brand": "Aufschnitt",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Aufschnitt-Nitrites-Chocolate-Teriyaki-Cranberry/dp/B07F5K89XX?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.1,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 8,
+    "calories": 70,
+    "carbs": 5,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 2
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07F5K89XX",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

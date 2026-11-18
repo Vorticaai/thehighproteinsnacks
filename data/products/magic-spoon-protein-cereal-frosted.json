@@ -1,0 +1,43 @@
+{
+  "id": "magic-spoon-protein-cereal-frosted",
+  "name": "Magic Spoon Protein Cereal Frosted",
+  "brand": "Magic Spoon",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Magic-Spoon-Cereal-Frosted-1-Pack/dp/B09DMPMN4R/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 14,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B09DMPMN4R",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

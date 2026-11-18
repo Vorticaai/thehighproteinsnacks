@@ -1,0 +1,43 @@
+{
+  "id": "epic-bison-cranberry-bar",
+  "name": "Epic Bison Cranberry Protein Bar",
+  "brand": "Epic Provisions",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/gp/aw/d/B00ET7LPK4/?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.3,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 7,
+    "calories": 130,
+    "carbs": 8,
+    "fiber": 1,
+    "sugar": 6,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

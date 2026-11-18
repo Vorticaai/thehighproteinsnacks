@@ -1,0 +1,43 @@
+{
+  "id": "muscle-milk-pro-series-40",
+  "name": "Muscle Milk Pro Series 40",
+  "brand": "Muscle Milk",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Muscle-Milk-Protein-Intense-Vanilla/dp/B00FLVZA3U?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.16,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 200,
+    "carbs": 7,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B00FLVZA3U",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

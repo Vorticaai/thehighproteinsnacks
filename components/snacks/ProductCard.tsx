@@ -2,7 +2,8 @@
 import type { Product } from "@/lib/products";
 import Link from "next/link";
 import BuyLink from "@/components/snacks/BuyLink";
-import LabelCard from "@/components/snacks/LabelCard";
+import ProductVisual from "@/components/snacks/ProductVisual";
+import { VerifiedPill } from "@/components/snacks/VerificationNote";
 
 
 
@@ -21,9 +22,9 @@ interface Props {
 export default function ProductCard({ product }: Props) {
   return (
     <div className="group flex h-full flex-col rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition hover:shadow-md">
-      {/* Generated label card (no third-party product photos) */}
-      <div className="mb-3 h-[120px] w-full overflow-hidden rounded-lg">
-        <LabelCard product={product} />
+      {/* Licensed photo with credit, or the generated label card */}
+      <div className="mb-3 h-[132px] w-full overflow-hidden rounded-lg">
+        <ProductVisual product={product} />
       </div>
 
       {/* Title + brand */}
@@ -35,9 +36,10 @@ export default function ProductCard({ product }: Props) {
           {product.name}
         </Link>
       </h3>
-      <p className="mb-2 text-[11px] uppercase tracking-wide text-gray-500">
-        {product.brand}
-      </p>
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <p className="text-[11px] uppercase tracking-wide text-gray-500">{product.brand}</p>
+        <VerifiedPill product={product} />
+      </div>
 
       {/* Nutrition & value badges */}
       <div className="mb-2 flex flex-wrap gap-2 text-[11px] font-semibold">

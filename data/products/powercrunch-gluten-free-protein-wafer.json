@@ -1,0 +1,43 @@
+{
+  "id": "powercrunch-gluten-free-protein-wafer",
+  "name": "Power Crunch Protein Wafer – Triple Chocolate",
+  "brand": "Power Crunch",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Power-Crunch-Triple-Chocolate-1-4-Ounce/dp/B000FRUMBK?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.79,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 215,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 5,
+    "fat": 13
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B000FRUMBK",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

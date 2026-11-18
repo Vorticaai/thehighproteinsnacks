@@ -1,0 +1,43 @@
+{
+  "id": "kind-protein-bar-dark-chocolate-cherry-cashew",
+  "name": "KIND Protein Bar Dark Chocolate Cherry Cashew",
+  "brand": "KIND",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/KIND-Dark-Chocolate-Cherry-Cashew/dp/B087ZJLJC8/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 4,
+    "calories": 170,
+    "carbs": 22,
+    "fiber": 6,
+    "sugar": 10,
+    "fat": 10
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B087ZJLJC8",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

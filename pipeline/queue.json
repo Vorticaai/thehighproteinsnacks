@@ -1,0 +1,14 @@
+{
+  "products": [
+    { "id": "quest-choc-chip-cookie-dough" },
+    { "id": "quest-cookies-cream" },
+    { "id": "quest-peanut-butter-cookie" },
+    { "id": "iqbar-peanut-butter-chip" },
+    { "id": "pure-protein-chocolate-deluxe" },
+    { "id": "premier-protein-chocolate" },
+    { "id": "premier-protein-vanilla" },
+    { "id": "fairlife-core-power-elite-42g" },
+    { "id": "muscle-milk-pro-series-40" },
+    { "id": "chomps-original-beef-stick" }
+  ]
+}

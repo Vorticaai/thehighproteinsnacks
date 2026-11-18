@@ -1,0 +1,43 @@
+{
+  "id": "ensure-max-protein-milk-chocolate",
+  "name": "Ensure Max Protein – Milk Chocolate",
+  "brand": "Ensure",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Ensure-Max-Protein-Nutrition-Chocolate/dp/B0791Y2LMB?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 150,
+    "carbs": 6,
+    "fiber": 2,
+    "sugar": 1,
+    "fat": 1.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0791Y2LMB",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

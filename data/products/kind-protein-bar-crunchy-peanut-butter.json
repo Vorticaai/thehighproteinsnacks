@@ -1,0 +1,43 @@
+{
+  "id": "kind-protein-bar-crunchy-peanut-butter",
+  "name": "KIND Protein Bar Crunchy Peanut Butter",
+  "brand": "KIND",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/KIND-Protein-Crunchy-Peanut-Butter/dp/B077TZPVX6/ref=sr_1_6?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 250,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 17
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B077TZPVX6",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "magic-spoon-peanut-butter-cereal",
+  "name": "Magic Spoon Peanut Butter Cereal (per serving)",
+  "brand": "Magic Spoon",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Magic-Spoon-Cereal-Variety-6-Pack/dp/B0BX73JWBX/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 10.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 170,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0BX73JWBX",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

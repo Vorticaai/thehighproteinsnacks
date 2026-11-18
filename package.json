@@ -5,12 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prep": "tsx scripts/addAffiliateTag.ts",
     "start": "next start",
     "lint": "next lint",
-    "validate:low-sugar": "tsx scripts/validate-low-sugar.ts",
-    "patch:low-sugar": "tsx scripts/patch-low-sugar.ts",
-    "watch:affiliate": "tsx scripts/addAffiliateTag.ts"
+    "test": "node --import tsx --test \"tests/*.test.ts\"",
+    "verify:products": "tsx pipeline/run.ts"
   },
   "dependencies": {
     "@radix-ui/react-select": "^2.2.6",
@@ -25,7 +23,6 @@
     "lucide-react": "^0.554.0",
     "marked": "^17.0.1",
     "next": "14.2.35",
-    "papaparse": "^5.5.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^10.1.0",
@@ -35,13 +32,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.16.11",
-    "@types/papaparse": "^5.5.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
-    "chokidar": "^3.6.0",
-    "csv-parser": "^3.2.0",
-    "csv-writer": "^1.6.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.35",
     "postcss": "^8.4.47",

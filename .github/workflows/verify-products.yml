@@ -1,0 +1,50 @@
+# Checks the products listed in pipeline/queue.json against USDA FoodData
+# Central and Open Food Facts, then commits the results to the same branch.
+# Results only reach the live site when a person merges the pull request.
+name: Verify products
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/**", "data/**"]
+    paths: ["pipeline/queue.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: verify-products-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run verification
+        env:
+          FDC_API_KEY: ${{ secrets.FDC_API_KEY }}
+        run: npx tsx pipeline/run.ts
+
+      - name: Commit results
+        run: |
+          git config user.name "product-verification-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/products data/evidence public/products pipeline/last-run.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: verification run $(date -u +%Y-%m-%d)"
+            git push
+          fi

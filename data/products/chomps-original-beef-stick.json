@@ -1,0 +1,43 @@
+{
+  "id": "chomps-original-beef-stick",
+  "name": "Chomps Original Grass-Fed Beef Stick",
+  "brand": "Chomps",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Chomps-Grass-Fed-Finished-Original-10-Pack/dp/B07D3NS8NW/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07D3NS8NW",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

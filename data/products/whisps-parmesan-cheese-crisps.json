@@ -1,0 +1,43 @@
+{
+  "id": "whisps-parmesan-cheese-crisps",
+  "name": "Whisps Parmesan Cheese Crisps",
+  "brand": "Whisps",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/Whisps-FAMILY-Parmesan-Cheddar-Protein/dp/B08LN3F13D/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 11.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 160,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 12
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B08LN3F13D",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

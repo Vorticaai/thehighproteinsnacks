@@ -1,0 +1,43 @@
+{
+  "id": "rxbar-chocolate-sea-salt",
+  "name": "RXBAR Chocolate Sea Salt Bar",
+  "brand": "RXBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/RXBAR-Whole-Protein-Chocolate-Ounce/dp/B0143NQVQ6/ref=sr_1_4?crid=1HND7JWH7OXPM&tag=thehighprotei-20",
+  "price": {
+    "perServing": 2,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 200,
+    "carbs": 22,
+    "fiber": 5,
+    "sugar": 13,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0143NQVQ6",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

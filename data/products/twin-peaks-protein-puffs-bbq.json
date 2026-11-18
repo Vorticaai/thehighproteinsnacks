@@ -1,0 +1,43 @@
+{
+  "id": "twin-peaks-protein-puffs-bbq",
+  "name": "Twin Peaks Protein Puffs BBQ",
+  "brand": "Twin Peaks Ingredients",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/Allergy-Friendly-Protein-Mesquite-Barbecue/dp/B07KMKFHX2/ref=sr_1_2?tag=thehighprotei-20",
+  "price": {
+    "perServing": 26,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 120,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07KMKFHX2",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "pure-protein-chocolate-deluxe",
+  "name": "Pure Protein Bar – Chocolate Deluxe",
+  "brand": "Pure Protein",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Pure-Protein-Healthy-Support-Chocolate/dp/B00MNXGSAI?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.18,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 180,
+    "carbs": 17,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B00MNXGSAI",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}
