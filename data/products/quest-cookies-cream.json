@@ -10,11 +10,11 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 60 grm",
+    "servingSizeG": 60,
     "protein": 21,
     "calories": 190,
-    "carbs": 4,
+    "carbs": 21,
     "fiber": 13,
     "sugar": 1,
     "fat": 8
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B00I0DI0Z6",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "888849000005",
+    "fdcId": 2669747
   },
-  "image": null,
+  "image": {
+    "src": "/products/quest-cookies-cream.jpg",
+    "alt": "Quest Nutrition Quest Protein Bar Cookies & Cream package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849000005"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669747",
+        "url": "https://fdc.nal.usda.gov/food-details/2669747/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 21,
+          "calories": 190,
+          "carbs": 21,
+          "fiber": 13,
+          "sugar": 1,
+          "fat": 8
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849000005",
+        "url": "https://world.openfoodfacts.org/product/0888849000005",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 21,
+          "calories": 190,
+          "carbs": 22,
+          "fiber": 13,
+          "sugar": 1,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Chomps Original Grass-Fed Beef Stick",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  }
+}

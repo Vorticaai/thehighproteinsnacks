@@ -31,13 +31,21 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/iqbar-peanut-butter-chip.jpg",
+    "alt": "IQBAR IQBAR Peanut Butter Chip Bar package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850004554005"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-18",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10)."
     ]
   }
 }

@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Fairlife Core Power Elite 42g",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2757397,
+      "description": "Fairlife Milk, Ultra- Filtered",
+      "brandOwner": "",
+      "brandName": "fairlife",
+      "gtinUpc": "00811620021418",
+      "publishedDate": "2026-04-23",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2757397,
+        "description": "Fairlife Milk, Ultra- Filtered",
+        "brandOwner": "",
+        "brandName": "fairlife",
+        "gtinUpc": "00811620021418",
+        "publishedDate": "2026-04-23",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2757704,
+        "description": "Fairlife Whole Ultra- Filtered Milk",
+        "brandOwner": "",
+        "brandName": "fairlife",
+        "gtinUpc": "00811620020169",
+        "publishedDate": "2026-04-23",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2756132,
+        "description": "Fairlife Yogurt, Ultra- Filtered, Peach",
+        "brandOwner": "",
+        "brandName": "fairlife",
+        "gtinUpc": "00811620023092",
+        "publishedDate": "2026-04-23",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2756934,
+        "description": "Fairlife Fat Free Ultra- Filtered Milk",
+        "brandOwner": "",
+        "brandName": "fairlife",
+        "gtinUpc": "00856312002757",
+        "publishedDate": "2026-04-23",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2757397,
+    "description": "Fairlife Milk, Ultra- Filtered",
+    "brandOwner": "",
+    "brandName": "fairlife",
+    "gtinUpc": "00811620021418",
+    "servingSize": 240,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "",
+    "dataSource": "Euromonitor",
+    "ingredients": "Low Fat Ultra- Filtered Milk, Lactase Enzyme, Vitamin A Palmitate, Vitamin D3.",
+    "perServing": {
+      "protein": 13,
+      "calories": 100,
+      "carbs": 6,
+      "fiber": 0,
+      "sugar": 6,
+      "fat": 2.5,
+      "servingSize": "240 g",
+      "servingSizeG": 240
+    }
+  },
+  "openFoodFacts": {
+    "code": "0811620021418",
+    "product_name": "1% low fat ultra-filtered milk",
+    "brands": "fairlife",
+    "serving_size": "1 bottle (414 ml)",
+    "perServing": {
+      "protein": 42,
+      "calories": 230,
+      "carbs": 8,
+      "sugar": 6,
+      "fat": 3.5,
+      "servingSize": "1 bottle (414 ml)",
+      "servingSizeG": 414
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3.5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3.5
+  }
+}

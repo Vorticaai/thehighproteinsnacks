@@ -31,13 +31,21 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/quest-peanut-butter-cookie.jpg",
+    "alt": "Quest Nutrition Quest Protein Cookie Peanut Butter package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849006038"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-18",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "USDA and Open Food Facts disagree (calories: 250 vs 210; carbs: 18 vs 23; fiber: 8.99 vs 12; fat: 17 vs 13)."
     ]
   }
 }

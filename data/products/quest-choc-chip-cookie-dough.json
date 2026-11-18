@@ -31,13 +31,21 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/quest-choc-chip-cookie-dough.jpg",
+    "alt": "Quest Nutrition Quest Protein Bar Chocolate Chip Cookie Dough package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849003853"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-18",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "USDA and Open Food Facts disagree (fat: 9 vs 7.98)."
     ]
   }
 }

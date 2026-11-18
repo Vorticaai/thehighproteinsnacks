@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "IQBAR Peanut Butter Chip Bar",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2663638,
+      "description": "PEANUT BUTTER CHIP BAR, PEANUT BUTTER CHIP",
+      "brandOwner": "IQ BAR, Inc.",
+      "brandName": "IQBAR",
+      "gtinUpc": "850004554005",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2663638,
+        "description": "PEANUT BUTTER CHIP BAR, PEANUT BUTTER CHIP",
+        "brandOwner": "IQ BAR, Inc.",
+        "brandName": "IQBAR",
+        "gtinUpc": "850004554005",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2460327,
+        "description": "PEANUT BUTTER CHIP BRAIN + BODY BARS, PEANUT BUTTER CHIP",
+        "brandOwner": "IQ BAR, Inc.",
+        "brandName": "IQBAR",
+        "gtinUpc": "850004554432",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2663638,
+    "description": "PEANUT BUTTER CHIP BAR, PEANUT BUTTER CHIP",
+    "brandOwner": "IQ BAR, Inc.",
+    "brandName": "IQBAR",
+    "gtinUpc": "850004554005",
+    "servingSize": 45,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "3/6/2023",
+    "ingredients": "NUTS (PEANUTS, ALMONDS), TAPIOCA FIBER, PLANT-BASED PROTEIN CRISPS (PEA PROTEIN, TAPIOCA STARCH), NATURAL FLAVORS, PEA PROTEIN, FLAXSEEDS, PEANUT FLOUR, UNSWEETENED CHOCOLATE, GUM ACACIA, COCONUT OIL, COCOA BUTTER, SUNFLOWER LECITHIN, SEA SALT, WATER, NON-GMO STEVIOL GLYCOSIDES, LION'S MANE, VITAMIN E",
+    "perServing": {
+      "protein": 12,
+      "calories": 180,
+      "carbs": 13,
+      "fiber": 9.99,
+      "sugar": 0.999,
+      "fat": 12,
+      "servingSize": "45 grm",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850004554005",
+    "product_name": "IQ Bar Peanut Butter Chip",
+    "brands": "IQ BAR",
+    "serving_size": "1 bar (45 g)",
+    "perServing": {
+      "protein": 12,
+      "calories": 160,
+      "carbs": 12,
+      "fiber": 9,
+      "sugar": 1,
+      "fat": 10,
+      "servingSize": "1 bar (45 g)",
+      "servingSizeG": 45
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/455/4005/front_id.226.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 3,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 10
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 3,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 10
+  }
+}
