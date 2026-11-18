@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Aufschnitt Grass-Fed Beef Jerky",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 11,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 2.5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 11,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 2.5
+  }
+}

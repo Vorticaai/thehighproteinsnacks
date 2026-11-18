@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Pacific Gold halal beef jerky",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 1961319,
+      "description": "PACIFIC GOLD ORANGE PECANS",
+      "brandOwner": "GNS Foods, Inc.",
+      "brandName": "",
+      "gtinUpc": "020022053037",
+      "publishedDate": "2021-07-29",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 1961319,
+        "description": "PACIFIC GOLD ORANGE PECANS",
+        "brandOwner": "GNS Foods, Inc.",
+        "brandName": "",
+        "gtinUpc": "020022053037",
+        "publishedDate": "2021-07-29",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 1961319,
+    "description": "PACIFIC GOLD ORANGE PECANS",
+    "brandOwner": "GNS Foods, Inc.",
+    "brandName": "",
+    "gtinUpc": "020022053037",
+    "servingSize": 32,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1/4 cup",
+    "dataSource": "LI",
+    "modifiedDate": "3/23/2021",
+    "ingredients": "PECANS [PRODUCT OF USA OR MEXICO], SUGAR, BUTTER [CREAM AND NATURAL FLAVORINGS], ALL NATURAL OIL OF ORANGE, SALT, WATER.",
+    "perServing": {
+      "protein": 2,
+      "calories": 190,
+      "carbs": 13,
+      "fiber": 1.98,
+      "sugar": 11,
+      "fat": 16,
+      "servingSize": "1/4 cup / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": {
+    "code": "0020022053037",
+    "product_name": "Pacific gold orange pecans",
+    "serving_size": "1/4 cup (32 g)",
+    "perServing": {
+      "protein": 2,
+      "calories": 190,
+      "carbs": 13,
+      "fiber": 1.98,
+      "sugar": 11,
+      "fat": 16,
+      "servingSize": "1/4 cup (32 g)",
+      "servingSizeG": 32
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

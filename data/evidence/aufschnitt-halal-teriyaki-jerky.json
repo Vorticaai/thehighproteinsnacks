@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Aufschnitt Teriyaki Jerky",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2456453,
+      "description": "TERIYAKI BEEF JERKY, TERIYAKI",
+      "brandOwner": "Aufschnitt Meats LLC ",
+      "brandName": "AUFSCHNITT",
+      "gtinUpc": "860713000137",
+      "publishedDate": "2023-01-26",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2456453,
+        "description": "TERIYAKI BEEF JERKY, TERIYAKI",
+        "brandOwner": "Aufschnitt Meats LLC ",
+        "brandName": "AUFSCHNITT",
+        "gtinUpc": "860713000137",
+        "publishedDate": "2023-01-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2456453,
+    "description": "TERIYAKI BEEF JERKY, TERIYAKI",
+    "brandOwner": "Aufschnitt Meats LLC ",
+    "brandName": "AUFSCHNITT",
+    "gtinUpc": "860713000137",
+    "servingSize": 28,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "3/6/2021",
+    "ingredients": "MEAT, SOY SAUCE, PINEAPPLE JUICE, CORNED BEEF SEASONING, MAPLE SYRUP, BROWN SUGAR, NITRITE, SODIUM ERYTHORBATE.",
+    "perServing": {
+      "protein": 8,
+      "calories": 58,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 1,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": {
+    "code": "0860713000137",
+    "product_name": "Beef jerky",
+    "serving_size": "1 ONZ (28 g)",
+    "perServing": {
+      "protein": 8,
+      "calories": 58,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 1,
+      "servingSize": "1 ONZ (28 g)",
+      "servingSizeG": 28
+    }
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 8,
+      "calories": 60,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 1,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 80,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 1.5
+  },
+  "after": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 8,
+    "calories": 60,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 1
+  }
+}

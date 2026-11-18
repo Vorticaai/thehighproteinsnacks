@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Supreme Beef Jerky",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2651940,
+      "description": "BEEF JERKY, BEEF",
+      "brandOwner": "Mexican General Merchandise",
+      "brandName": "2 GRINGO'S CHUPACABRA",
+      "gtinUpc": "094454003038",
+      "publishedDate": "2023-10-26",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2651940,
+        "description": "BEEF JERKY, BEEF",
+        "brandOwner": "Mexican General Merchandise",
+        "brandName": "2 GRINGO'S CHUPACABRA",
+        "gtinUpc": "094454003038",
+        "publishedDate": "2023-10-26",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2630627,
+        "description": "BEEF JERKY, BEEF",
+        "brandOwner": "Ralph's Packing Company",
+        "brandName": "RALPH'S",
+        "gtinUpc": "085808000759",
+        "publishedDate": "2023-08-31",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2593352,
+        "description": "BEEF JERKY CRISPS, BEEF JERKY",
+        "brandOwner": "Hawaiian Kine Trading Company LLC",
+        "brandName": "BETTER JERKY CO.",
+        "gtinUpc": "850003402437",
+        "publishedDate": "2023-06-29",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2539313,
+        "description": "BEEF JERKY, BEEF",
+        "brandOwner": "Smoking Gun Jerky Inc.",
+        "brandName": "SMOKING GUN",
+        "gtinUpc": "856409002066",
+        "publishedDate": "2023-04-27",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2415327,
+        "description": "BEEF JERKY, BEEF",
+        "brandOwner": "Amana Bakery",
+        "brandName": "AMANA",
+        "gtinUpc": "021285300128",
+        "publishedDate": "2022-12-22",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2651940,
+    "description": "BEEF JERKY, BEEF",
+    "brandOwner": "Mexican General Merchandise",
+    "brandName": "2 GRINGO'S CHUPACABRA",
+    "gtinUpc": "094454003038",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 oz",
+    "dataSource": "LI",
+    "modifiedDate": "12/7/2022",
+    "ingredients": "BEEF, WATER, SALT, NATURAL FLAVORINGS, SUGAR, MONOSODIUM GLUTAMATE, BROWN SUGAR, PAPRIKA, CHILI PEPPERS, BELL PEPPER, CITRIC ACID, SODIUM NITRITE, NATURAL LEMON EXTRACT.",
+    "perServing": {
+      "protein": 13,
+      "calories": 100,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 4.5,
+      "servingSize": "1 oz / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

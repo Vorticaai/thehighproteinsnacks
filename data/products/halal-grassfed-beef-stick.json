@@ -46,11 +46,13 @@
     "summary": "Sold as made with 100% halal beef. We could not find which body certifies it; check the halal mark on the package."
   },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-18",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Only 50% of product words found; needs a person to confirm.",
+      "USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Halal batch: check nutrition against label data."
     ]
   }
 }

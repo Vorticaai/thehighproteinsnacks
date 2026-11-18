@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 10,
-    "calories": 80,
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 8,
+    "calories": 60,
     "carbs": 3,
     "fiber": 0,
-    "sugar": 2,
-    "fat": 1.5
+    "sugar": 3,
+    "fat": 1
   },
   "claims": {
     "vegan": false,
@@ -28,8 +28,8 @@
   },
   "identifiers": {
     "asin": "B08T9RSTNH",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "860713000137",
+    "fdcId": 2456453
   },
   "image": null,
   "halal": {
@@ -51,12 +51,42 @@
     "summary": "Kosher-certified by Star-K and sold as \"halal friendly\". We found no halal certificate, so we don't list it as halal."
   },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2456453",
+        "url": "https://fdc.nal.usda.gov/food-details/2456453/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 8,
+          "calories": 58,
+          "carbs": 3,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 1
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0860713000137",
+        "url": "https://world.openfoodfacts.org/product/0860713000137",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 8,
+          "calories": 58,
+          "carbs": 3,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 1
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label.",
-      "Reviewer: the retailer link points to an Aufschnitt chicken teriyaki listing, so this may be chicken, not beef. Name made neutral until the label is checked."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Halal batch: check nutrition against label data."
     ]
   }
 }

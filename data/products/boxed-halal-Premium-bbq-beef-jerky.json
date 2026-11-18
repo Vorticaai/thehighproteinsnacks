@@ -51,11 +51,13 @@
     "summary": "HFSAA is named as the certifier by a halal directory and retailers. We have not yet confirmed the jerky on HFSAA's own list."
   },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-18",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Only 33% of product words found; needs a person to confirm.",
+      "USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Halal batch: check nutrition against label data."
     ]
   }
 }
