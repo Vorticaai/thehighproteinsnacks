@@ -19,43 +19,6 @@ export function JsonLd({ data }: JsonLdProps) {
   )
 }
 
-export function ProductJsonLd({ snack }: { snack: Product }) {
-  const data = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: snack.name,
-    description: snack.description,
-    image: snack.imageUrl,
-    brand: {
-      "@type": "Brand",
-      name: snack.brand,
-    },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "USD",
-      price: Number(snack.pricePerUnit ?? snack.pricePerServing).toFixed(2),
-      availability: "https://schema.org/InStock",
-      url: snack.buyUrl,
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: Number(snack.rating ?? 4.6).toFixed(1),
-      reviewCount: 12,
-    },
-    nutrition: {
-      "@type": "NutritionInformation",
-      servingSize: snack.servingSize ?? "1 serving",
-      proteinContent: `${snack.proteinPerServing} g`,
-      calorieContent: `${snack.caloriesPerServing} cal`,
-      carbohydrateContent: `${snack.carbsPerServing} g`,
-      fatContent: `${snack.fatsPerServing} g`,
-    },
-    url: absoluteUrl(`/snack/${snack.id}`),
-  }
-
-  return <JsonLd data={data} />
-}
-
 export function ItemListJsonLd({
   category,
   snacks,
@@ -71,7 +34,7 @@ export function ItemListJsonLd({
       "@type": "ListItem",
       position: index + 1,
       name: snack.name,
-      url: absoluteUrl(`/snack/${snack.id}`),
+      url: absoluteUrl(`/snacks/${snack.id}`),
     })),
   }
 

@@ -7,6 +7,7 @@ import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 import Link from "next/link"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/best-high-protein-snacks-for-road-trips" },
   title: "Best High-Protein Snacks for Road Trips & Travel (No Cooler Needed)",
   description:
     "Hand-picked high-protein snacks that travel well, don't melt easily, and keep you full on long drives and flights. Ranked using real macros and fiber content.",
@@ -64,16 +65,7 @@ export default function BestRoadTripSnacksPage() {
       item: {
         "@type": "Product",
         name: entry.snack.name,
-        url: `https://thehighproteinsnacks.com/snack/${entry.snack.id}`,
-        brand: {
-          "@type": "Brand",
-          name: entry.snack.brand,
-        },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: entry.snack.rating,
-          reviewCount: entry.snack.reviewCount,
-        },
+        url: `https://www.thehighproteinsnacks.com/snacks/${entry.snack.id}`,
       },
     })),
   }
@@ -263,7 +255,7 @@ const getTravelNote = (snack: Product): string => {
                 {longDrivePicks.map((pick) => (
                   <li key={pick.snack.id}>
                     <Link
-                      href={`/snack/${pick.snack.id}`}
+                      href={`/snacks/${pick.snack.id}`}
                       className="text-sm text-primary hover:underline"
                     >
                       → {pick.snack.name}
@@ -290,7 +282,7 @@ const getTravelNote = (snack: Product): string => {
                 {kidFriendlyPicks.map((pick) => (
                   <li key={pick.snack.id}>
                     <Link
-                      href={`/snack/${pick.snack.id}`}
+                      href={`/snacks/${pick.snack.id}`}
                       className="text-sm text-primary hover:underline"
                     >
                       → {pick.snack.name}
@@ -317,7 +309,7 @@ const getTravelNote = (snack: Product): string => {
                 {airportPicks.map((pick) => (
                   <li key={pick.snack.id}>
                     <Link
-                      href={`/snack/${pick.snack.id}`}
+                      href={`/snacks/${pick.snack.id}`}
                       className="text-sm text-primary hover:underline"
                     >
                       → {pick.snack.name}

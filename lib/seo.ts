@@ -6,14 +6,14 @@ import type { Metadata } from "next"
 const SITE_NAME = "The High Protein Snacks"
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.thehighproteinsnacks.com"
-const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og-default.jpg`
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og-default.jpg`
 
 
 
 export const defaultMeta = {
   title: SITE_NAME,
   description:
-    "Compare high-protein snacks by macros, diet tags, price, and ratings.",
+    "Compare high-protein snacks by protein, sugar, calories and protein per dollar.",
 }
 
 type BuildMetadataOptions = {

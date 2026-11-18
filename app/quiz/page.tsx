@@ -3,6 +3,7 @@ import SnackFinderClient from "@/components/quiz/SnackFinderClient"
 import { getAllProducts } from "@/lib/products"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/quiz" },
   title: "Snack Finder Quiz | The High Protein Snacks",
   description:
     "Answer a few quick questions and get matched with the best high-protein snacks for your taste, macros, and diet.",

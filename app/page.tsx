@@ -13,6 +13,7 @@ import WeightLossTop3 from "@/components/sections/WeightLossTop3";
 import { uniqueByBrand } from "@/lib/utils/uniqueByBrand";
 import { JsonLd } from "@/components/seo/jsonld";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { absoluteUrl } from "@/lib/seo";
 
 
 
@@ -43,31 +44,28 @@ const organizationJsonLd = {
   logo: `${siteUrl}/logo-highproteinsnacks.png`,
 };
 
+const HOME_TITLE = "High-Protein Snacks Compared by Protein, Sugar & Price";
+const HOME_DESCRIPTION =
+  "Compare high-protein snacks by protein, sugar, calories and protein per dollar. Filter by low sugar, keto, vegan, gluten-free and more.";
+
 export const metadata = {
-  title: "Best High-Protein Snacks Ranked (2025)",
-  description:
-    "Browse the #1 ranked directory of high-protein snacks. Compare protein, sugar, calories, price per serving, and diet tags like keto, vegan, gluten-free.",
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+    canonical: absoluteUrl("/"),
   },
   openGraph: {
-    title: "Best High-Protein Snacks Ranked (2025)",
-    description:
-      "Browse the #1 ranked directory of high-protein snacks. Compare protein, sugar, calories, price per serving, and all diet flags.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL}/`,
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    url: absoluteUrl("/"),
     type: "website",
-    images: [
-      {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
-      },
-    ],
+    images: [{ url: absoluteUrl("/og-default.jpg") }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best High-Protein Snacks Ranked (2025)",
-    description:
-      "Compare the top high-protein snacks by macros, sugar, calories, and price.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    images: [absoluteUrl("/og-default.jpg")],
   },
 };
 
@@ -169,8 +167,8 @@ export default async function HomePage() {
     <p className="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-200">
       Bars, shakes, chips, bites — ranked by what actually matters:
       <span className="font-semibold text-white"> protein-per-dollar</span>,
-      <span className="font-semibold text-white"> sugar</span>, and
-      <span className="font-semibold text-white"> ingredient quality</span>.
+      <span className="font-semibold text-white"> protein</span>, and
+      <span className="font-semibold text-white"> sugar</span>.
     </p>
 
     
@@ -178,16 +176,13 @@ export default async function HomePage() {
     {/* Trust badges */}
     <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300">
       <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Tested by real people
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Ranked by the numbers
       </span>
       <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Ranked by nutrition
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> No brand pays for placement
       </span>
       <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> No sponsored content
-      </span>
-      <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Updated constantly
+        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Free to use
       </span>
     </div>
 
@@ -256,19 +251,19 @@ export default async function HomePage() {
                   "@type": "ListItem",
                   position: 1,
                   name: bestValueProduct.name,
-                  url: `/snack/${bestValueProduct.id}`,
+                  url: absoluteUrl(`/snacks/${bestValueProduct.id}`),
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: bestLowSugarProduct.name,
-                  url: `/snack/${bestLowSugarProduct.id}`,
+                  url: absoluteUrl(`/snacks/${bestLowSugarProduct.id}`),
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: bestHighProteinProduct.name,
-                  url: `/snack/${bestHighProteinProduct.id}`,
+                  url: absoluteUrl(`/snacks/${bestHighProteinProduct.id}`),
                 },
               ],
             }),

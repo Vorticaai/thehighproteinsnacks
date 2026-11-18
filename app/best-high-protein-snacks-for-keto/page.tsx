@@ -10,6 +10,7 @@ const PAGE_DESCRIPTION =
   "A ranked list of high-protein, low-carb snacks that fit a keto lifestyle. All picks are under 10g carbs and packed with protein for steady energy and appetite control."
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/best-high-protein-snacks-for-keto" },
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   openGraph: {
@@ -28,9 +29,9 @@ function getBestKetoSnacks() {
 
   const ranked = [...filtered].sort((a, b) => {
     const aScore =
-      a.proteinPerServing * 4 - a.carbsPerServing * 0.5 + (a.rating || 0)
+      a.proteinPerServing * 4 - a.carbsPerServing * 0.5
     const bScore =
-      b.proteinPerServing * 4 - b.carbsPerServing * 0.5 + (b.rating || 0)
+      b.proteinPerServing * 4 - b.carbsPerServing * 0.5
     return bScore - aScore
   })
 
@@ -46,20 +47,10 @@ export default function BestKetoSnacksPage() {
     name: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
     itemListElement: bestSnacks.map((snack, index) => ({
-      "@type": "Product",
+      "@type": "ListItem",
       position: index + 1,
-      url: `https://thehighproteinsnacks.com/snack/${snack.id}`,
+      url: `https://www.thehighproteinsnacks.com/snacks/${snack.id}`,
       name: snack.name,
-      image: snack.imageUrl,
-      brand: {
-        "@type": "Brand",
-        name: snack.brand,
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: snack.rating,
-        reviewCount: snack.reviewCount,
-      },
     })),
   }
 
@@ -133,21 +124,20 @@ export default function BestKetoSnacksPage() {
             <p>
               <strong>Filtering criteria:</strong> We filtered our entire
               database to include only snacks tagged as "keto" friendly with 10g
-              of carbs or fewer per serving. This ensures you're getting truly
-              low-carb options that won't kick you out of ketosis or spike your
-              blood sugar.
+              of carbs or fewer per serving. How any food affects ketosis varies
+              from person to person, so check sugar alcohols on the label.
             </p>
             <p>
               <strong>Ranking algorithm:</strong> We ranked the filtered snacks
-              using a score that heavily weighs protein content, penalizes carbs,
-              and factors in verified customer ratings. Snacks with higher
-              protein-to-carb ratios score better, helping you maintain ketosis
-              while staying satisfied.
+              using a simple score that heavily weighs protein content and
+              penalises carbs. Snacks with higher protein-to-carb ratios score
+              better.
             </p>
             <p>
               <strong>Transparency:</strong> This list is not sponsored. We
               evaluated products based purely on their macronutrient profiles,
-              carb counts, and real customer reviews. Our goal is to help you
+              and carb counts as listed in our data. We earn a commission
+              if you buy through our links. Our goal is to help you
               find keto snacks that actually support your low-carb lifestyle.
             </p>
           </div>

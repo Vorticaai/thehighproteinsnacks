@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy – The High Protein Snacks",
   description:
     "Learn how The High Protein Snacks collects, uses, and protects information when you browse our site.",

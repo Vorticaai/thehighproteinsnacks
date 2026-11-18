@@ -14,6 +14,5 @@ export function trackAmazonClick(snackName: string, snackId: string) {
     event_category: "Affiliate",
     event_label: snackName,
     snack_id: snackId,
-    debug_mode: true
   });
 }

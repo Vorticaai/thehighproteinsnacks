@@ -46,9 +46,9 @@ export const guides: Guide[] = [
     slug: "best-high-protein-snacks-for-weight-loss",
     title: "The Complete Guide to Best High-Protein Snacks for Weight Loss",
     description:
-      "Discover science-backed high-protein snacks proven to accelerate weight loss and keep you satisfied between meals.",
+      "High-protein snacks under about 200 calories, compared by protein, sugar and price.",
     metaDescription:
-      "Top 7 high-protein snacks for weight loss. Expert guide with comparison chart, macros, and why they work for fat loss. Includes brands like Quest, Built Bar, and more.",
+      "Top 7 high-protein snacks for weight loss. Comparison chart, macros and how to fit snacks into a calorie target. Includes brands like Quest, Built Bar, and more.",
     keywords: [
       "high protein snacks weight loss",
       "best protein bars weight loss",
@@ -82,7 +82,7 @@ export const guides: Guide[] = [
         {
           heading: "Why Protein Snacks Work for Weight Loss",
           content:
-            "High-protein snacks are scientifically proven to: (1) Increase satiety—protein keeps you full 3-4 hours longer than carbs, reducing overall calorie intake. (2) Boost metabolism—protein has a 20-30% higher thermic effect, meaning your body burns 20-30% of protein calories during digestion. (3) Preserve muscle—during calorie deficit, high protein prevents muscle loss and maintains metabolic rate. (4) Reduce cravings—stable blood sugar from protein prevents energy crashes and sugar cravings. (5) Support hormones—adequate protein maintains leptin (satiety hormone) during weight loss. A 2020 meta-analysis in the Journal of Nutrition found that individuals consuming high-protein snacks lost 5-10 lbs more fat over 12 weeks while maintaining muscle mass.",
+            "Protein is the most filling of the three macronutrients for many people, it takes more energy to digest than carbs or fat, and eating enough of it helps preserve muscle when you eat fewer calories. A snack only helps if it fits your total daily calories, so compare calories as well as protein. This guide is general information, not medical advice.",
         },
         {
           heading: "How to Choose the Right Weight-Loss Snack",
@@ -147,7 +147,7 @@ export const guides: Guide[] = [
     description:
       "Ultimate guide to keto-friendly protein snacks under 10g net carbs. Science-backed recommendations for maintaining ketosis while satisfying hunger.",
     metaDescription:
-      "Best keto protein snacks under 10g net carbs. Expert guide with macro comparison, keto macros explained, and top recommendations for staying in ketosis.",
+      "Best keto protein snacks under 10g net carbs. Guide with macro comparison, keto macros explained, and top recommendations for staying in ketosis.",
     keywords: [
       "keto protein snacks",
       "best keto snacks",
@@ -481,7 +481,7 @@ export const guides: Guide[] = [
     description:
       "Snacks with 1–3g sugar and 12–20g protein — perfect for weight loss, clean eating, and blood-sugar control.",
     metaDescription:
-      "Best low-sugar high-protein snacks to stay full without blood sugar spikes. Compare bars and chips with 1–3g sugar and 12–20g protein.",
+      "Low-sugar high-protein snacks compared. Bars and chips with 1–3g sugar and 12–20g protein.",
     keywords: [
       "low sugar high protein snacks",
       "low sugar protein bars",

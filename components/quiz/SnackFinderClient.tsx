@@ -435,7 +435,6 @@ function getRecommendedSnacks(
     } else if (answers.goal === "build-muscle") {
       score += snack.proteinPerServing * 2
     } else {
-      score += (snack.rating ?? 4.5) * 10
     }
 
     score += snack.proteinPerDollar * 3

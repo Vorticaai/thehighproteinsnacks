@@ -4,34 +4,34 @@ import Script from "next/script";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { guides } from "@/data/guides";
 import { absoluteUrl } from "@/lib/seo";
-const PAGE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/guides`;
+const PAGE_URL = `https://www.thehighproteinsnacks.com/guides`;
 
 
 export const metadata: Metadata = {
-  title: "Expert High-Protein Snack Guides",
+  title: "High-Protein Snack Buying Guides",
   description:
-    "Read nutritionist-backed buying guides for low-sugar, keto, vegan, budget, and weight-loss snacks.",
+    "Buying guides for low-sugar, keto, vegan, budget and lower-calorie high-protein snacks, built from our product data.",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/guides`,
+    canonical: `https://www.thehighproteinsnacks.com/guides`,
   },
   openGraph: {
-    title: "Expert High-Protein Snack Guides",
+    title: "High-Protein Snack Buying Guides",
     description:
-      "Read nutritionist-backed buying guides for low-sugar, keto, vegan, budget, and weight-loss snacks.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL}/guides`,
+      "Buying guides for low-sugar, keto, vegan, budget and lower-calorie high-protein snacks, built from our product data.",
+    url: `https://www.thehighproteinsnacks.com/guides`,
     type: "website",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+        url: `https://www.thehighproteinsnacks.com/og-default.jpg`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Expert High-Protein Snack Guides",
+    title: "High-Protein Snack Buying Guides",
     description:
-      "Read nutritionist-backed buying guides for low-sugar, keto, vegan, budget, and weight-loss snacks.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
+      "Buying guides for low-sugar, keto, vegan, budget and lower-calorie high-protein snacks, built from our product data.",
+    images: [`https://www.thehighproteinsnacks.com/og-default.jpg`],
   },
 };
 
@@ -75,9 +75,9 @@ export default function GuidesPage() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Expert Buying Guides",
+    name: "Buying Guides",
     description:
-      "Expert-written guides that compare protein snacks by diet needs, sugar, price, and macros.",
+      "Guides that compare protein snacks by diet needs, sugar, price and macros.",
     url: PAGE_URL,
   };
 
@@ -109,10 +109,10 @@ export default function GuidesPage() {
             EXPERT INSIGHTS
           </p>
           <h1 className="font-display mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
-            Expert Buying Guides
+            Buying Guides
           </h1>
           <p className="text-gray-600">
-            Shortcut your research with nutritionist-written breakdowns of the
+            Shortcut your research with data-driven breakdowns of the
             best snacks for every diet goal. Every pick is sourced from our CSV
             database so macros stay honest.
           </p>

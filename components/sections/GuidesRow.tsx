@@ -13,7 +13,7 @@ const items = [
   },
   {
     title: "Low-Sugar Snack Guide",
-    desc: "Avoid insulin spikes with these ≤2g sugar options.",
+    desc: "Snacks with 3g of sugar or less per serving.",
     slug: "best-low-sugar-high-protein-snacks",
   },
 ];

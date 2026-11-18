@@ -1,7 +1,7 @@
 /**
  * Root layout wires up global styles, fonts, and default SEO metadata.
  */
-import { buildMetadata, defaultMeta } from "@/lib/seo"
+import { defaultMeta } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
@@ -11,29 +11,29 @@ import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
+const SITE_URL = "https://www.thehighproteinsnacks.com"
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+
+// No canonical here on purpose: a canonical in the root layout is inherited by
+// every page that doesn't set its own, which would point them all at one URL.
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.thehighproteinsnacks.com"),
-
-  ...buildMetadata({
-    title: defaultMeta.title,
-    description: defaultMeta.description,
-  }),
-
+  metadataBase: new URL(SITE_URL),
+  title: defaultMeta.title,
+  description: defaultMeta.description,
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
-
   openGraph: {
     type: "website",
-    url: "https://www.thehighproteinsnacks.com",
+    url: SITE_URL,
     siteName: "The High Protein Snacks",
     title: defaultMeta.title,
     description: defaultMeta.description,
     images: [
       {
-        url: "/images/og-default.jpg",
+        url: "/og-default.jpg",
         width: 1200,
         height: 630,
         alt: "High protein snacks assortment",
@@ -44,14 +44,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultMeta.title,
     description: defaultMeta.description,
-    images: ["/images/og-default.jpg"],
+    images: ["/og-default.jpg"],
   },
-
-  alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}`,
-  },
-  
-
 }
 
 export default function RootLayout({
@@ -67,39 +61,33 @@ export default function RootLayout({
         )}
       >
 
-        {/* --- ✅ GOOGLE ANALYTICS (GA4) --- */}
-{/* --- ✅ GOOGLE ANALYTICS (GA4) --- */}
-<Script
-  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-  strategy="afterInteractive"
-/>
-
-<Script id="ga-init" strategy="afterInteractive">
-{`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-
-  gtag('js', new Date());
-
-  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
-    send_page_view: true,
-    allow_google_signals: true,
-    allow_ad_personalization_signals: true
-  });
-`}
-</Script>
-
-
+        {/* Google Analytics (GA4): only loads when the measurement ID is set */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', {
+                  send_page_view: true,
+                  allow_google_signals: true,
+                  allow_ad_personalization_signals: true
+                });
+              `}
+            </Script>
+          </>
+        )}
         {/* --- END GA4 --- */}
 
-        {/* --- AdSense global script --- */}
-        <Script
-          id="adsense-script"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4595892489334854"
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
-        {/* --- END ADSENSE --- */}
+        {/* AdSense is approved but switched off until traffic justifies ads.
+            To re-enable: restore the adsbygoogle script (publisher
+            ca-pub-4595892489334854), add public/ads.txt and set
+            NEXT_PUBLIC_ADSENSE_ENABLED=true in Vercel. */}
 
         <div className="min-h-screen flex flex-col">
           <Header />
@@ -113,12 +101,12 @@ export default function RootLayout({
               <div className="space-y-2">
                 <h3 className="text-lg font-bold text-white">The High Protein Snacks</h3>
                 <p className="max-w-md text-sm text-gray-400">
-                  Independent directory of high-protein snacks — bars, chips & bites — ranked by macros, taste, and value. Updated regularly.
+                  Independent directory of high-protein snacks — bars, chips & bites — compared by protein, sugar, calories and protein per dollar.
                 </p>
                 <p className="text-xs text-gray-600 max-w-md">
-                  Some links on this site are affiliate links.{" "}
-                  <strong>As an Amazon Associate, we earn from qualifying purchases</strong> — 
-                  at no extra cost to you. This helps keep our snack rankings independent and ad-free.
+                  Some links on this site are affiliate links: we may earn a commission if you buy
+                  through them, at no extra cost to you. No brand pays to be listed or ranked.
+                  Nutrition values and prices can change; always check the package and the retailer.
                 </p>
               </div>
 
@@ -130,8 +118,7 @@ export default function RootLayout({
             </div>
 
             <div className="border-t border-white/10 py-4 text-center text-xs text-gray-500">
-              © 2025 The High Protein Snacks. Built with 💪 by Solo Vibecoder. 
-              This site contains ads and affiliate links — we may earn a small commission if you buy through them, at no extra cost to you.
+              © {new Date().getFullYear()} The High Protein Snacks. Built with 💪 by Solo Vibecoder.
             </div>
           </footer>
 
