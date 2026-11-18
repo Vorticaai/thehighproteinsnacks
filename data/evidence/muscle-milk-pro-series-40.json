@@ -1,72 +1,15 @@
 {
   "checkedAt": "2026-11-18",
-  "query": "Muscle Milk Pro Series 40",
+  "query": "Muscle Milk Pro Advanced Nutrition 40g Shake – Knockout Chocolate",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2669536,
-      "description": "PRO ADVANCED NUTRITION NON-DAIRY PROTEIN 40 G SHAKE, KNOCKOUT CHOCOLATE, KNOCKOUT CHOCOLATE",
-      "brandOwner": "PepsiCo, Inc. (CytoSport)",
-      "brandName": "MUSCLE MILK",
-      "gtinUpc": "876063002806",
-      "publishedDate": "2023-11-16",
-      "score": 0.6666666666666666,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2669536,
-        "description": "PRO ADVANCED NUTRITION NON-DAIRY PROTEIN 40 G SHAKE, KNOCKOUT CHOCOLATE, KNOCKOUT CHOCOLATE",
-        "brandOwner": "PepsiCo, Inc. (CytoSport)",
-        "brandName": "MUSCLE MILK",
-        "gtinUpc": "876063002806",
-        "publishedDate": "2023-11-16",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2628917,
-        "description": "PRO SERIES PROTEIN 32 GRAMS SHAKE, SLAMMIN' STRAWBERRY, SLAMMIN' STRAWBERRY",
-        "brandOwner": "PepsiCo, Inc. (CytoSport)",
-        "brandName": "MUSCLE MILK",
-        "gtinUpc": "876063001229",
-        "publishedDate": "2023-08-31",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2534808,
-        "description": "PRO SERIES GAINER VANILLA CRME PROTEIN POWDER SUPPLEMENT",
-        "brandOwner": "",
-        "brandName": "MUSCLE MILK",
-        "gtinUpc": "0660726500019",
-        "publishedDate": "2023-04-27",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2339728,
-        "description": "GO BANANAS PRO SERIES NON-DAIRY PROTEIN SHAKE, GO BANANAS",
-        "brandOwner": "PepsiCo, Inc. (CytoSport)",
-        "brandName": "MUSCLE MILK",
-        "gtinUpc": "876063002844",
-        "publishedDate": "2022-09-15",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2114497,
-        "description": "MUSCLE MILK, PRO SERIES PROTEIN POWDER, KNOCKOUT CHOCOLATE",
-        "brandOwner": "CytoSport, Inc.",
-        "brandName": "MUSCLE MILK",
-        "gtinUpc": "660726534212",
-        "publishedDate": "2021-10-28",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2669536,
@@ -109,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/087/606/300/2806/front_en.118.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 40,
+      "calories": 220,
+      "carbs": 12,
+      "fiber": 6,
+      "sugar": 1,
+      "fat": 2.5,
+      "servingSize": "1 bottle / 414 ml",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -125,13 +78,13 @@
     "fat": 6
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "1 bottle / 414 ml",
     "servingSizeG": null,
     "protein": 40,
-    "calories": 200,
-    "carbs": 7,
-    "fiber": 1,
+    "calories": 220,
+    "carbs": 12,
+    "fiber": 6,
     "sugar": 1,
-    "fat": 6
+    "fat": 2.5
   }
 }

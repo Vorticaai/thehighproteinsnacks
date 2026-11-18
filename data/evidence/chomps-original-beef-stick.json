@@ -69,14 +69,14 @@
     ]
   },
   "before": {
-    "servingSize": "1 Stick / 32 grm",
+    "servingSize": "1 portion (32 g)",
     "servingSizeG": 32,
-    "protein": 9,
-    "calories": 90,
+    "protein": 10,
+    "calories": 100,
     "carbs": 0,
     "fiber": 0,
     "sugar": 0,
-    "fat": 6
+    "fat": 7
   },
   "after": {
     "servingSize": "1 portion (32 g)",

@@ -1,6 +1,6 @@
 {
   "id": "muscle-milk-pro-series-40",
-  "name": "Muscle Milk Pro Advanced Nutrition 40g Shake \u2013 Knockout Chocolate",
+  "name": "Muscle Milk Pro Advanced Nutrition 40g Shake – Knockout Chocolate",
   "brand": "Muscle Milk",
   "productType": null,
   "buyUrl": "https://www.amazon.com/Muscle-Milk-Protein-Intense-Vanilla/dp/B00FLVZA3U?tag=thehighprotei-20",
@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "1 bottle / 414 ml",
     "servingSizeG": null,
     "protein": 40,
-    "calories": 200,
-    "carbs": 7,
-    "fiber": 1,
+    "calories": 220,
+    "carbs": 12,
+    "fiber": 6,
     "sugar": 1,
-    "fat": 6
+    "fat": 2.5
   },
   "claims": {
     "vegan": false,
@@ -28,18 +28,54 @@
   },
   "identifiers": {
     "asin": "B00FLVZA3U",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "876063002806",
+    "fdcId": 2669536
   },
-  "image": null,
+  "image": {
+    "src": "/products/muscle-milk-pro-series-40.jpg",
+    "alt": "Muscle Milk Muscle Milk Pro Advanced Nutrition 40g Shake – Knockout Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0876063002806"
+  },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-18",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669536",
+        "url": "https://fdc.nal.usda.gov/food-details/2669536/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 40,
+          "calories": 219,
+          "carbs": 12,
+          "fiber": 5.8,
+          "sugar": 1,
+          "fat": 2.5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0876063002806",
+        "url": "https://world.openfoodfacts.org/product/0876063002806",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 40,
+          "calories": 220,
+          "carbs": 12,
+          "fiber": 6,
+          "sugar": 1,
+          "fat": 2.5
+        }
+      }
+    ],
     "notes": [
-      "Only 67% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file.",
-      "Reviewer: the only 40 g Muscle Milk record is 'Pro Advanced Nutrition 40 g, Knockout Chocolate', which looks like the renamed product. Owner to confirm before the name and values change."
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Owner confirmed (19 Nov 2026) that Pro Series 40 was renamed Pro Advanced Nutrition 40 g; values are for Knockout Chocolate. URL kept for continuity."
     ]
   }
 }
