@@ -21,7 +21,7 @@ import type { ProductRecord, SourceRef } from "../lib/productRecord"
 import { pickBest, type MatchResult } from "./match"
 import { fdcPerServing, fdcUrl, getFoods, searchBranded, type FdcFood } from "./sources/fdc"
 import { downloadImage, getByBarcode, offPerServing, offUrl, type OffProduct } from "./sources/off"
-import { CORE_FIELDS, decide, type PerServing } from "./verify"
+import { CORE_FIELDS, decide, labelRoundAll, type PerServing } from "./verify"
 
 type QueueEntry = {
   id: string
@@ -31,6 +31,11 @@ type QueueEntry = {
   query?: string
   /** Reviewer's reason for trusting USDA label data over Open Food Facts. */
   acceptUsdaReason?: string
+  /**
+   * When both sources agree within tolerance, publish the Open Food Facts
+   * values instead (e.g. they match the package in the photo). Reason required.
+   */
+  preferOffReason?: string
   /** Reviewer rejected the Open Food Facts photo (wrong side, blurry...). */
   skipPhoto?: boolean
   note?: string
@@ -97,7 +102,9 @@ async function main() {
     const sources: SourceRef[] = []
 
     if (decision.status === "verified" && food && primary) {
-      const label = decision.values
+      const useOff = Boolean(entry.preferOffReason && secondary)
+      const label = useOff ? { ...decision.values, ...labelRoundAll(secondary!) } : decision.values
+      if (useOff) decision.notes.push(`Published the Open Food Facts values: ${entry.preferOffReason}`)
       sources.push({
         name: "USDA FoodData Central",
         id: String(food.fdcId),

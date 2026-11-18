@@ -32,7 +32,7 @@ export default function ProductVisual({ product, size = "sm", className = "" }: 
           className={`w-auto object-contain ${large ? "max-h-[360px]" : "max-h-[96px]"}`}
         />
       </div>
-      <figcaption className={`mt-1 text-gray-500 ${large ? "text-xs" : "text-[9px] leading-tight"}`}>
+      <figcaption className={`mt-1 px-1 text-gray-500 ${large ? "text-xs leading-snug" : "text-[9px] leading-tight"}`}>
         Photo:{" "}
         <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline">
           {image.credit}

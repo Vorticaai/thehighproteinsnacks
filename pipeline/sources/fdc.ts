@@ -70,13 +70,14 @@ export async function getFoods(ids: number[], apiKey: string): Promise<FdcFood[]
 }
 
 const GRAM_UNITS = new Set(["g", "grm", "gm", "gram", "grams"])
+const UNIT_LABEL: Record<string, string> = { grm: "g", gm: "g", g: "g", mlt: "ml", ml: "ml" }
 
 /** Per-serving values, preferring the label panel exactly as printed. */
 export function fdcPerServing(food: FdcFood): PerServing | null {
   const unit = (food.servingSizeUnit ?? "").toLowerCase()
   const servingSizeG = food.servingSize && GRAM_UNITS.has(unit) ? food.servingSize : null
   const servingSize =
-    [food.householdServingFullText, food.servingSize ? `${food.servingSize} ${unit || ""}`.trim() : null]
+    [food.householdServingFullText, food.servingSize ? `${food.servingSize} ${UNIT_LABEL[unit] ?? unit}`.trim() : null]
       .filter(Boolean)
       .join(" / ") || null
 

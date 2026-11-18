@@ -41,7 +41,8 @@
     {
       "id": "chomps-original-beef-stick",
       "fdcId": 2652237,
-      "note": "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763)."
+      "note": "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763).",
+      "preferOffReason": "the current 1.15 oz stick in the package photo lists 10 g protein and 100 calories; the USDA record is for a 32 g stick (9 g, 90 calories)."
     }
   ]
 }
