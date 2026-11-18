@@ -68,12 +68,12 @@
     ]
   },
   "before": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 5,
-    "calories": 210,
-    "carbs": 5,
-    "fiber": 11,
+    "servingSize": "1 cookie / 58 grm",
+    "servingSizeG": 58,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 12,
     "sugar": 1,
     "fat": 13
   },

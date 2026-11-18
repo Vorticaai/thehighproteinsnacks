@@ -1,72 +1,15 @@
 {
   "checkedAt": "2026-11-18",
-  "query": "chomps original beef stick",
+  "query": "Chomps Original Grass-Fed Beef Stick",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2652237,
-      "description": "ORIGINAL BEEF STICKS, ORIGINAL",
-      "brandOwner": "We Are The Chompians LLC",
-      "brandName": "CHOMPS",
-      "gtinUpc": "856584004763",
-      "publishedDate": "2023-10-26",
-      "score": 0.5,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2652237,
-        "description": "ORIGINAL BEEF STICKS, ORIGINAL",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004763",
-        "publishedDate": "2023-10-26",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2511051,
-        "description": "ORIGINAL BEEF STICKS, ORIGINAL",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004190",
-        "publishedDate": "2023-03-16",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2451126,
-        "description": "ORIGINAL BEEF STICKS, ORIGINAL",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004510",
-        "publishedDate": "2023-01-26",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2415752,
-        "description": "ORIGINAL BEEF STICKS, ORIGINAL",
-        "brandOwner": "Eastern Poultry Distributors, Inc.",
-        "brandName": "CHOMPS",
-        "gtinUpc": "85658400510",
-        "publishedDate": "2022-12-22",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2421275,
-        "description": "ORIGINAL BEEF STICKS, ORIGINAL",
-        "brandOwner": "Jlabs Beauty",
-        "brandName": "CHOMPS",
-        "gtinUpc": "850015892523",
-        "publishedDate": "2022-12-22",
-        "score": 0.5,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2652237,
@@ -111,7 +54,7 @@
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA and Open Food Facts disagree (calories: 89.9 vs 100)."
     ]
   },
   "before": {

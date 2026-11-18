@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/chomps-original-beef-stick.jpg",
+    "alt": "Chomps Chomps Original Grass-Fed Beef Stick package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0856584004763"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-18",
     "sources": [],
     "notes": [
-      "Only 50% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (calories: 89.9 vs 100).",
+      "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763)."
     ]
   }
 }

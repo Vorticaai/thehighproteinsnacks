@@ -1,32 +1,15 @@
 {
   "checkedAt": "2026-11-18",
-  "query": "core power elite 42g protein shake",
+  "query": "Fairlife Core Power Elite 42g",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 25% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2668980,
-      "description": "ELITE HIGH COMPLETE PROTEIN 42 G MILK SHAKE, CHOCOLATE, CHOCOLATE",
-      "brandOwner": "Coca-Cola USA Operations",
-      "brandName": "FAIRLIFE",
-      "gtinUpc": "049000553604",
-      "publishedDate": "2023-11-16",
-      "score": 0.25,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2668980,
-        "description": "ELITE HIGH COMPLETE PROTEIN 42 G MILK SHAKE, CHOCOLATE, CHOCOLATE",
-        "brandOwner": "Coca-Cola USA Operations",
-        "brandName": "FAIRLIFE",
-        "gtinUpc": "049000553604",
-        "publishedDate": "2023-11-16",
-        "score": 0.25,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2668980,
@@ -69,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/004/900/055/3604/front_en.6.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 42,
+      "calories": 232,
+      "carbs": 8.98,
+      "fiber": 2.07,
+      "sugar": 7,
+      "fat": 3.52,
+      "servingSize": "1 Bottle / 414 mlt",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -85,13 +78,13 @@
     "fat": 3.5
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "1 Bottle / 414 mlt",
     "servingSizeG": null,
     "protein": 42,
-    "calories": 230,
-    "carbs": 8,
-    "fiber": 0,
-    "sugar": 3,
+    "calories": 232,
+    "carbs": 9,
+    "fiber": 2.1,
+    "sugar": 7,
     "fat": 3.5
   }
 }
