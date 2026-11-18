@@ -11,7 +11,8 @@
     {
       "id": "quest-peanut-butter-cookie",
       "fdcId": 2669722,
-      "note": "Reviewer: trying the newer 'Soft & Chewy' USDA record (2023); the first match was last updated in 2019."
+      "note": "Reviewer: confirmed the 'Soft & Chewy' USDA record (2023), which Open Food Facts agrees with. Photo rejected: the box in it shows newer label numbers (16 g protein, 10 g fiber), so Quest may have updated the recipe; re-check next run.",
+      "skipPhoto": true
     },
     {
       "id": "iqbar-peanut-butter-chip",
@@ -30,7 +31,8 @@
     {
       "id": "fairlife-core-power-elite-42g",
       "fdcId": 2668980,
-      "note": "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour."
+      "note": "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour. Photo rejected: a store-shelf shot of multipacks, not a clear product image.",
+      "skipPhoto": true
     },
     {
       "id": "muscle-milk-pro-series-40",
