@@ -26,16 +26,21 @@ export type FdcFood = FdcCandidate & {
 }
 
 async function getJson(url: string): Promise<unknown> {
-  for (let attempt = 1; attempt <= 3; attempt++) {
+  let last = 0
+  for (let attempt = 1; attempt <= 4; attempt++) {
     const res = await fetch(url, { headers: { Accept: "application/json" } })
     if (res.ok) return res.json()
+    last = res.status
     if (res.status === 429 || res.status >= 500) {
-      await new Promise((r) => setTimeout(r, 2000 * attempt))
+      await new Promise((r) => setTimeout(r, 3000 * attempt))
       continue
     }
     throw new Error(`FDC ${res.status} for ${url.replace(/api_key=[^&]+/, "api_key=***")}`)
   }
-  throw new Error("FDC request failed after retries (rate limit?). Set the FDC_API_KEY secret.")
+  throw new Error(
+    `FDC request failed after retries (last status ${last}). ` +
+      (last === 429 ? "The shared DEMO_KEY is rate-limited: add a free FDC_API_KEY repository secret." : ""),
+  )
 }
 
 export async function searchBranded(query: string, apiKey: string): Promise<FdcCandidate[]> {
