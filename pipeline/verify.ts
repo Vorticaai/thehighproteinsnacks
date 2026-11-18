@@ -13,6 +13,29 @@ export type PerServing = Partial<Pick<NutritionValues, CoreField>> & {
 }
 
 /**
+ * Round the way a US Nutrition Facts label does (21 CFR 101.9), so values
+ * computed from per-100 g data read like the printed label:
+ * calories to 5 (≤50) or 10 (>50); fat to 0.5 g below 5 g, else 1 g;
+ * other grams to 1 g; anything under 0.5 g shows as 0.
+ */
+export function labelRound(field: CoreField, x: number): number {
+  if (!Number.isFinite(x)) return x
+  if (field === "calories") return x < 5 ? 0 : x <= 50 ? Math.round(x / 5) * 5 : Math.round(x / 10) * 10
+  if (x < 0.5) return 0
+  if (field === "fat" && x < 5) return Math.round(x * 2) / 2
+  return Math.round(x)
+}
+
+export function labelRoundAll(v: PerServing): PerServing {
+  const out: PerServing = { ...v }
+  for (const f of CORE_FIELDS) {
+    const x = v[f]
+    if (typeof x === "number") out[f] = labelRound(f, x)
+  }
+  return out
+}
+
+/**
  * Two values agree if within 10%, with a floor of 1.5 g (or 10 kcal).
  * The floor absorbs US label rounding and per-100 g conversions.
  */
@@ -90,7 +113,9 @@ export function decide(input: {
   /** A reviewer looked at both sources and chose the USDA label data. */
   acceptPrimaryReason?: string
 }): Decision {
-  const { primary, primaryConfident, secondary, acceptPrimaryReason } = input
+  const primary = input.primary ? labelRoundAll(input.primary) : null
+  const secondary = input.secondary ? labelRoundAll(input.secondary) : null
+  const { primaryConfident, acceptPrimaryReason } = input
   if (!primary) {
     return { status: "needs-review", notes: ["No USDA label record found for this product."] }
   }

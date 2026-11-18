@@ -97,6 +97,7 @@ async function main() {
     const sources: SourceRef[] = []
 
     if (decision.status === "verified" && food && primary) {
+      const label = decision.values
       sources.push({
         name: "USDA FoodData Central",
         id: String(food.fdcId),
@@ -108,14 +109,14 @@ async function main() {
         sources.push({ name: "Open Food Facts", id: off.code, url: offUrl(off.code), checkedAt: today, values: pickValues(secondary) })
       }
       record.nutrition = {
-        servingSize: primary.servingSize ?? null,
-        servingSizeG: primary.servingSizeG ?? null,
-        protein: round(primary.protein)!,
-        calories: round(primary.calories)!,
-        carbs: round(primary.carbs)!,
-        fiber: round(primary.fiber ?? 0)!,
-        sugar: round(primary.sugar)!,
-        fat: round(primary.fat)!,
+        servingSize: label.servingSize ?? null,
+        servingSizeG: label.servingSizeG ?? null,
+        protein: label.protein!,
+        calories: label.calories!,
+        carbs: label.carbs!,
+        fiber: label.fiber ?? 0,
+        sugar: label.sugar!,
+        fat: label.fat!,
       }
       record.identifiers.fdcId = food.fdcId
       record.identifiers.gtin = food.gtinUpc ?? null

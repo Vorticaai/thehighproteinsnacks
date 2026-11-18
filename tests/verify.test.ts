@@ -1,6 +1,6 @@
 import { test } from "node:test"
 import assert from "node:assert/strict"
-import { agrees, decide, disagreements, energyCheck, plausibilityProblems } from "../pipeline/verify"
+import { agrees, decide, disagreements, energyCheck, labelRound, plausibilityProblems } from "../pipeline/verify"
 
 const questLabel = { protein: 21, calories: 190, carbs: 22, fiber: 14, sugar: 1, fat: 8, servingSizeG: 60 }
 
@@ -12,6 +12,16 @@ test("agrees uses 10% with a 1 g / 10 kcal floor", () => {
   assert.equal(agrees("fat", 9, 7), false)
   assert.equal(agrees("calories", 190, 200), true)
   assert.equal(agrees("calories", 190, 215), false)
+})
+
+test("labelRound follows US label rounding", () => {
+  assert.equal(labelRound("calories", 159), 160)
+  assert.equal(labelRound("calories", 89.9), 90)
+  assert.equal(labelRound("calories", 42), 40)
+  assert.equal(labelRound("fat", 3.52), 3.5)
+  assert.equal(labelRound("fat", 7.98), 8)
+  assert.equal(labelRound("fiber", 2.07), 2)
+  assert.equal(labelRound("sugar", 0.3), 0)
 })
 
 test("energy check allows a wider band for high-fiber bars", () => {
