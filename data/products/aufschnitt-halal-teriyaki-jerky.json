@@ -1,6 +1,6 @@
 {
   "id": "aufschnitt-halal-teriyaki-jerky",
-  "name": "Aufschnitt Teriyaki Jerky",
+  "name": "Aufschnitt Teriyaki Beef Jerky",
   "brand": "Aufschnitt",
   "productType": null,
   "buyUrl": "https://www.amazon.com/Aufschnitt-Healthy-Chicken-Certified-Teriyaki/dp/B08T9RSTNH?tag=thehighprotei-20",
@@ -86,7 +86,8 @@
     "notes": [
       "Brand matches and 100% of product words found.",
       "Open Food Facts agrees with the USDA label data.",
-      "Halal batch: check nutrition against label data."
+      "Halal batch: check nutrition against label data.",
+      "Reviewer: USDA record is Aufschnitt Meats' own teriyaki beef jerky (1 oz serving, label data from 2021), so this is beef, not chicken."
     ]
   }
 }
