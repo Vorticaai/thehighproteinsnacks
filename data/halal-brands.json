@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-11-19",
+  "brands": [
+    {
+      "brand": "Chief Nutrition",
+      "product": "Collagen Protein Bars",
+      "type": "bar",
+      "usAvailability": "Sold on Chief's US online store (Australian brand).",
+      "proteinNote": "About 14 g protein per bar, per Chief.",
+      "url": "https://us.wearechief.com/collections/halal-certified",
+      "halal": {
+        "status": "brand-claim",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Chief's US help centre says its collagen range is halal-certified; no certifier is named.",
+            "url": "https://help.us.wearechief.com/en-US/are-your-collagen-bars-halal-or-kosher-2065827",
+            "kind": "brand"
+          },
+          {
+            "label": "Chief's product pages put the bars under \"Halal Certified\" and list \"halal grass-fed bovine collagen\" as an ingredient.",
+            "url": "https://knowledge.wearechief.com/products/collagen-protein-choc-pistachio",
+            "kind": "brand"
+          }
+        ],
+        "summary": "The brand says the collagen bars are halal-certified but doesn't say by whom."
+      }
+    },
+    {
+      "brand": "YuBi",
+      "product": "Protein Bars",
+      "type": "bar",
+      "usAvailability": "UK brand; its website has a US storefront.",
+      "proteinNote": null,
+      "url": "https://www.yubibar.com/en-us/collections/halal-protein-bars",
+      "halal": {
+        "status": "certifier-named",
+        "certifier": "Institute of Islamic Jurisprudence (UK)",
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "YuBi says its products are certified halal by the Institute of Islamic Jurisprudence and are plant-based.",
+            "url": "https://www.yubibar.com/en-us/collections/halal-protein-bars",
+            "kind": "brand"
+          }
+        ],
+        "summary": "Plant-based bars the brand says are certified by the Institute of Islamic Jurisprudence. Not yet confirmed with the certifier."
+      }
+    },
+    {
+      "brand": "Barebells",
+      "product": "Protein Bars",
+      "type": "bar",
+      "usAvailability": "Widely sold in the US.",
+      "proteinNote": null,
+      "url": "https://barebells.com/at/FAQ",
+      "halal": {
+        "status": "not-certified",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Barebells' FAQ says most of its bars sold in the EU, Switzerland, UK, Africa, Asia and the Middle East are halal-certified, with named exceptions. The US is not on that list.",
+            "url": "https://barebells.com/at/FAQ",
+            "kind": "brand"
+          },
+          {
+            "label": "Barebells' US shop says bars sold in the US may be made in the US or the EU.",
+            "url": "https://shop.barebells.com/contact",
+            "kind": "brand"
+          }
+        ],
+        "summary": "Halal-certified in Europe, the UK and the Middle East, but the brand does not say this covers bars sold in the US."
+      }
+    },
+    {
+      "brand": "Chief Nutrition",
+      "product": "Beef Bars and Biltong",
+      "type": "jerky",
+      "usAvailability": "Sold on Chief's US online store.",
+      "proteinNote": null,
+      "url": "https://us.wearechief.com/blogs/articles/are-your-products-halal-or-kosher",
+      "halal": {
+        "status": "not-certified",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Chief says the beef it uses is halal-certified but its manufacturing is not halal-certified yet.",
+            "url": "https://us.wearechief.com/blogs/articles/are-your-products-halal-or-kosher",
+            "kind": "brand"
+          }
+        ],
+        "summary": "Halal-certified beef, but the brand says the finished product is not halal-certified."
+      }
+    },
+    {
+      "brand": "Quest Nutrition",
+      "product": "Protein Bars",
+      "type": "bar",
+      "usAvailability": "Widely sold in the US.",
+      "proteinNote": null,
+      "url": "https://halalcodecheck.com/brand/quest/",
+      "halal": {
+        "status": "not-certified",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "HalalCodeCheck reports that Quest holds no halal certification and is not in IFANCA's product register.",
+            "url": "https://halalcodecheck.com/brand/quest/",
+            "kind": "directory"
+          }
+        ],
+        "summary": "No halal certification found."
+      }
+    },
+    {
+      "brand": "RXBAR",
+      "product": "Protein Bars",
+      "type": "bar",
+      "usAvailability": "Widely sold in the US.",
+      "proteinNote": null,
+      "url": "https://halalcodecheck.com/brand/rxbar/",
+      "halal": {
+        "status": "not-certified",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "HalalCodeCheck reports no formal halal certification and notes the protein comes from egg whites.",
+            "url": "https://halalcodecheck.com/brand/rxbar/",
+            "kind": "directory"
+          }
+        ],
+        "summary": "Not halal-certified. Some shoppers accept it because the ingredients have no animal-derived additives, but that is a personal judgement, not a certification."
+      }
+    }
+  ]
+}

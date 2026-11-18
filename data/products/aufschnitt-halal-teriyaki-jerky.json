@@ -1,6 +1,6 @@
 {
   "id": "aufschnitt-halal-teriyaki-jerky",
-  "name": "Aufschnitt Halal Teriyaki Beef Jerky",
+  "name": "Aufschnitt Teriyaki Jerky",
   "brand": "Aufschnitt",
   "productType": null,
   "buyUrl": "https://www.amazon.com/Aufschnitt-Healthy-Chicken-Certified-Teriyaki/dp/B08T9RSTNH?tag=thehighprotei-20",
@@ -23,7 +23,7 @@
     "vegan": false,
     "plantBased": false,
     "glutenFree": true,
-    "halal": true,
+    "halal": false,
     "status": "as-listed"
   },
   "identifiers": {
@@ -32,12 +32,31 @@
     "fdcId": null
   },
   "image": null,
+  "halal": {
+    "status": "not-certified",
+    "certifier": null,
+    "checkedAt": "2026-11-19",
+    "evidence": [
+      {
+        "label": "Star-K lists Aufschnitt jerky, beef bars and sticks as certified glatt kosher (valid through 31 Dec 2026). Kosher certification is not halal certification.",
+        "url": "https://apiservice.star-k.org/api/Loc/LoadLoc/ZDJSYBYQ",
+        "kind": "certifier"
+      },
+      {
+        "label": "Retail listings describe the jerky as \"certified kosher\" and \"halal friendly\" and name only Star-K.",
+        "url": "https://whlsome.com/products/aufschnitt-grass-fed-beef-jerky-low-sodium-certified-kosher-halal-and-keto-friendly-5-pack-variety-pack",
+        "kind": "retailer"
+      }
+    ],
+    "summary": "Kosher-certified by Star-K and sold as \"halal friendly\". We found no halal certificate, so we don't list it as halal."
+  },
   "verification": {
     "status": "unverified",
     "checkedAt": null,
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label.",
+      "Reviewer: the retailer link points to an Aufschnitt chicken teriyaki listing, so this may be chicken, not beef. Name made neutral until the label is checked."
     ]
   }
 }

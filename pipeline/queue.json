@@ -1,49 +1,156 @@
 {
   "products": [
     {
-      "id": "quest-choc-chip-cookie-dough",
-      "skipPhoto": true,
-      "note": "Reviewer: the Open Food Facts 'front' photo shows the nutrition panel, so it is not used."
+      "id": "boxed-halal-Premium-orignal-beef-jerky",
+      "note": "Halal batch: check nutrition against label data.",
+      "query": "Boxed Halal beef jerky original"
     },
     {
-      "id": "quest-cookies-cream"
+      "id": "boxed-halal-Premium-bbq-beef-jerky",
+      "note": "Halal batch: check nutrition against label data.",
+      "query": "Boxed Halal beef jerky BBQ"
     },
     {
-      "id": "quest-peanut-butter-cookie",
-      "fdcId": 2669722,
-      "note": "Reviewer: confirmed the 'Soft & Chewy' USDA record (2023), which Open Food Facts agrees with. Photo rejected: the box in it shows newer label numbers (16 g protein, 10 g fiber), so Quest may have updated the recipe; re-check next run.",
-      "skipPhoto": true
+      "id": "halal-grassfed-beef-stick",
+      "note": "Halal batch: check nutrition against label data.",
+      "query": "Sharifa halal beef stick"
     },
     {
-      "id": "iqbar-peanut-butter-chip",
-      "note": "Reviewer: IQBAR appears to have changed the recipe (USDA 180 kcal / 12 g fat vs Open Food Facts 160 kcal / 10 g). Needs the current label from iqbar.com or the package."
+      "id": "aufschnitt-grassfed-halal-jerky",
+      "note": "Halal batch: check nutrition against label data."
     },
     {
-      "id": "pure-protein-chocolate-deluxe"
+      "id": "aufschnitt-halal-teriyaki-jerky",
+      "note": "Halal batch: check nutrition against label data."
     },
     {
-      "id": "premier-protein-chocolate",
-      "acceptUsdaReason": "USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
+      "id": "aufschnitt-halal-beef-bar",
+      "note": "Halal batch: check nutrition against label data."
     },
     {
-      "id": "premier-protein-vanilla"
+      "id": "supreme-halal-beef-jerky-jalapeno-garlic",
+      "query": "Supreme Beef Jerky",
+      "add": {
+        "name": "Supreme Halal Beef Jerky, Jalape\u00f1o Garlic",
+        "brand": "Supreme Beef Jerky",
+        "productType": null,
+        "buyUrl": "https://www.supremebeefjerky.com",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "Halal Food Standards Alliance of America (HFSAA)",
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Jerky review site Jerky Ingredients reports the company's facilities are HFSAA-certified and the beef is zabiha halal.",
+              "url": "https://jerkyingredients.com/2025/06/23/supreme-beef-jerky-jalapeno-garlic-halal-beef-jerky/",
+              "kind": "press"
+            },
+            {
+              "label": "Trade press reports the brand uses 100% certified halal beef.",
+              "url": "https://www.snackandbakery.com/articles/108375-supreme-beef-jerky-debuts-new-packaging",
+              "kind": "press"
+            }
+          ],
+          "summary": "HFSAA is named as the certifier in a 2025 review. Not yet confirmed on HFSAA's own list."
+        }
+      }
     },
     {
-      "id": "fairlife-core-power-elite-42g",
-      "fdcId": 2668980,
-      "note": "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour. Photo rejected: a store-shelf shot of multipacks, not a clear product image.",
-      "skipPhoto": true
+      "id": "midamar-halal-beef-jerky-original",
+      "query": "Midamar beef jerky",
+      "add": {
+        "name": "Midamar Halal Beef Jerky, Original",
+        "brand": "Midamar",
+        "productType": null,
+        "buyUrl": "https://shop.zabihah.com/products/beef-jerky-original",
+        "halal": {
+          "status": "brand-claim",
+          "certifier": null,
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Midamar sells it as zabiha halal beef jerky.",
+              "url": "https://shop.zabihah.com/products/beef-jerky-original",
+              "kind": "brand"
+            },
+            {
+              "label": "Midamar says it works with several certifiers, most often Islamic Services of America, and publishes its certificate.",
+              "url": "https://www.midamarhalal.com/en-ar/pages/halal-certificate",
+              "kind": "brand"
+            }
+          ],
+          "summary": "Midamar is a long-standing halal brand and publishes a certificate, but we haven't matched this jerky to a named certifier yet."
+        }
+      }
     },
     {
-      "id": "muscle-milk-pro-series-40",
-      "fdcId": 2669536,
-      "note": "Owner confirmed (19 Nov 2026) that Pro Series 40 was renamed Pro Advanced Nutrition 40 g; values are for Knockout Chocolate. URL kept for continuity."
+      "id": "pacific-gold-halal-beef-jerky-original",
+      "query": "Pacific Gold halal beef jerky",
+      "add": {
+        "name": "Pacific Gold Halal Beef Jerky, Original",
+        "brand": "Pacific Gold",
+        "productType": null,
+        "buyUrl": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
+        "halal": {
+          "status": "brand-claim",
+          "certifier": null,
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Costco lists \"Halal\" under the product's certifications; no certifier is named.",
+              "url": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
+              "kind": "retailer"
+            }
+          ],
+          "summary": "Pacific Gold's halal-labelled jerky. The retailer lists it as halal-certified but doesn't name the certifier."
+        }
+      }
     },
     {
-      "id": "chomps-original-beef-stick",
-      "fdcId": 2652237,
-      "note": "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763).",
-      "preferOffReason": "the current 1.15 oz stick in the package photo lists 10 g protein and 100 calories; the USDA record is for a 32 g stick (9 g, 90 calories)."
+      "id": "mummified-halal-beef-jerky-original",
+      "query": "Mummified halal beef jerky",
+      "add": {
+        "name": "Halal Mummified Jerky, Original Silver Nile",
+        "brand": "Mummified Jerky",
+        "productType": null,
+        "buyUrl": "https://www.mummifiedjerky.com",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "Halal Transactions of Omaha",
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Jerky Ingredients reports the beef is certified halal by Halal Transactions of Omaha and the bag carries a halal mark (2018 review).",
+              "url": "https://jerkyingredients.com/?p=19055",
+              "kind": "press"
+            }
+          ],
+          "summary": "Halal Transactions of Omaha is named as the certifier, but our source is from 2018, so check the current bag."
+        }
+      }
+    },
+    {
+      "id": "sharifa-halal-beef-jerky-black-pepper",
+      "query": "Sharifa halal beef jerky",
+      "add": {
+        "name": "Sharifa Halal Beef Jerky, Black Pepper",
+        "brand": "Sharifa Halal",
+        "productType": null,
+        "buyUrl": "https://halalworlddepot.com/products/sharifa-halal-black-pepper-beef-jerky",
+        "halal": {
+          "status": "brand-claim",
+          "certifier": null,
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Halal World Depot, a retailer, lists it among \"100% Halal Certified\" products; no certifier is named.",
+              "url": "https://halalworlddepot.com/products/sharifa-halal-black-pepper-beef-jerky",
+              "kind": "retailer"
+            }
+          ],
+          "summary": "Sold as halal-certified, but we could not find which body certifies it."
+        }
+      }
     }
   ]
 }

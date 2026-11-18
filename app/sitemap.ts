@@ -76,6 +76,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  entries.push({
+    url: absoluteUrl("/snacks/halal-protein-bars"),
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  });
+
   products.forEach((product) => {
     entries.push({
       url: absoluteUrl(`/snacks/${product.id}`),

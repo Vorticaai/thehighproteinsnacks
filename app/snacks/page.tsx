@@ -68,7 +68,7 @@ const categoryCards: CategoryCard[] = [
   // ⭐ NEW: HALAL CATEGORY
   {
     title: "Halal",
-    description: "High-protein snacks marketed as halal by the brand.",
+    description: "Halal snacks with the certifier named where we could find it.",
     slug: "halal",
     filter: categoryFilters["halal"],
   },

@@ -1,6 +1,6 @@
 {
   "id": "halal-grassfed-beef-stick",
-  "name": "Halal Grass-Fed Original Beef Stick",
+  "name": "Sharifa Halal Original Beef Stick",
   "brand": "Sharifa Halal",
   "productType": null,
   "buyUrl": "https://www.amazon.com/SHARIFA-HALAL-BEEF-STICKS-ORIGINAL/dp/B08L599QZZ?tag=thehighprotei-20",
@@ -32,6 +32,19 @@
     "fdcId": null
   },
   "image": null,
+  "halal": {
+    "status": "brand-claim",
+    "certifier": null,
+    "checkedAt": "2026-11-19",
+    "evidence": [
+      {
+        "label": "Sadaf, a retailer, lists the sticks as \"made with 100% Halal beef\"; no certifier is named.",
+        "url": "https://www.sadaf.com/products/sharifa-beef-sticks-original-31g",
+        "kind": "retailer"
+      }
+    ],
+    "summary": "Sold as made with 100% halal beef. We could not find which body certifies it; check the halal mark on the package."
+  },
   "verification": {
     "status": "unverified",
     "checkedAt": null,

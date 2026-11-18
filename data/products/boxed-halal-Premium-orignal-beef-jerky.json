@@ -32,6 +32,24 @@
     "fdcId": null
   },
   "image": null,
+  "halal": {
+    "status": "certifier-named",
+    "certifier": "Halal Food Standards Alliance of America (HFSAA)",
+    "checkedAt": "2026-11-19",
+    "evidence": [
+      {
+        "label": "Halal directory HalalX lists Boxed Halal as certified by HFSAA.",
+        "url": "https://halalx.org/?p=11620",
+        "kind": "directory"
+      },
+      {
+        "label": "Retail listings for Boxed Halal beef jerky state HFSAA certification.",
+        "url": "https://www.desertcart.ma/products/547742022",
+        "kind": "retailer"
+      }
+    ],
+    "summary": "HFSAA is named as the certifier by a halal directory and retailers. We have not yet confirmed the jerky on HFSAA's own list."
+  },
   "verification": {
     "status": "unverified",
     "checkedAt": null,

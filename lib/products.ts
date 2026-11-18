@@ -1,7 +1,8 @@
 import fs from "fs"
 import path from "path"
 import { categoryFilters } from "./categoryFilters"
-import type { ProductImage, ProductRecord, VerificationStatus } from "./productRecord"
+import { isListedHalal } from "./halal"
+import type { HalalCheck, ProductImage, ProductRecord, VerificationStatus } from "./productRecord"
 
 /**
  * Loads product records from data/products/*.json and turns them into the
@@ -40,6 +41,8 @@ export type Product = {
   flags: ProductFlags
   servingSize?: string
   gtin?: string
+  /** Halal certification research; null when not researched. */
+  halal: HalalCheck | null
   verification: {
     status: VerificationStatus
     checkedAt: string | null
@@ -108,12 +111,15 @@ export function toProduct(record: ProductRecord): Product {
       vegan: record.claims.vegan,
       plantBased: record.claims.plantBased,
       glutenFree: record.claims.glutenFree,
-      halal: record.claims.halal,
+      // Only products with halal research that names a certifier or a
+      // brand claim appear as halal; "halal friendly" alone does not count.
+      halal: isListedHalal(record.halal),
       bars: record.productType === "bar",
       chips: record.productType === "chips",
     },
     servingSize: n.servingSize ?? undefined,
     gtin: record.identifiers.gtin ?? undefined,
+    halal: record.halal ?? null,
     verification: {
       status: record.verification.status,
       checkedAt: record.verification.checkedAt,
