@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Quest Protein Bar Chocolate Chip Cookie Dough",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669765,
+      "description": "CHOCOLATE CHIP COOKIE DOUGH PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849003853",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669765,
+        "description": "CHOCOLATE CHIP COOKIE DOUGH PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849003853",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2641057,
+        "description": "CHOCOLATE CHIP COOKIE DOUGH DIPPED PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849012268",
+        "publishedDate": "2023-09-14",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2629232,
+        "description": "CHOCOLATE CHIP COOKIE DOUGH PROTEIN BAR, CHOCOLATE CHIP COOKIE DOUGH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000012",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511709,
+        "description": "CHOCOLATE CHIP COOKIE DOUGH PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849009305",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511722,
+        "description": "CHOCOLATE CHIP COOKIE DOUGH PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011131",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669765,
+    "description": "CHOCOLATE CHIP COOKIE DOUGH PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849003853",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "10/21/2022",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), POLYDEXTROSE (PREBIOTIC FIBER), ALMONDS, WATER, UNSWEETENED CHOCOLATE, ERYTHRITOL, NATURAL FLAVORS, COCOA BUTTER. CONTAINS LESS THAN 2% OF THE FOLLOWING: SEA SALT, SUNFLOWER LECITHIN, STEVIA SWEETENER, SUCRALOSE.",
+    "perServing": {
+      "protein": 21,
+      "calories": 190,
+      "carbs": 21,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": {
+    "code": "0888849003853",
+    "product_name": "Chocolate Chip Cookie Dough Flavored Protein Bar",
+    "brands": "Quest",
+    "serving_size": "1 serving (60 g)",
+    "perServing": {
+      "protein": 21,
+      "calories": 190,
+      "carbs": 20,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 7.98,
+      "servingSize": "1 serving (60 g)",
+      "servingSizeG": 60
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/900/3853/front_en.34.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 190,
+      "carbs": 21,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 21,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 21,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 9
+  }
+}

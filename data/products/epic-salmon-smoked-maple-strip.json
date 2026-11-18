@@ -1,0 +1,43 @@
+{
+  "id": "epic-salmon-smoked-maple-strip",
+  "name": "Epic Salmon Smoked Maple Strip",
+  "brand": "Epic Provisions",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Epic-Snack-Strips-Smoked-Salmon/dp/B01MUD20GN/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.9,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 7,
+    "calories": 80,
+    "carbs": 5,
+    "fiber": 0,
+    "sugar": 5,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B01MUD20GN",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

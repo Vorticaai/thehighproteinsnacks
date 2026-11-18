@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Quest Protein Cookie Peanut Butter",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2669722,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2669722,
+    "description": "PEANUT BUTTER SOFT & CHEWY PROTEIN COOKIES, PEANUT BUTTER",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849006045",
+    "servingSize": 58,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 cookie",
+    "dataSource": "LI",
+    "modifiedDate": "11/25/2022",
+    "ingredients": "PEANUTS, SOLUBLE CORN FIBER, PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), WATER, ERYTHRITOL, BUTTER (CREAM, NATURAL FLAVOR), NATURAL FLAVORS, CALCIUM CASEINATE. CONTAINS LESS THAN 2% OF THE FOLLOWING: SEA SALT, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), XANTHAN GUM, BAKING SODA, STEVIA SWEETENER.",
+    "perServing": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 12,
+      "sugar": 0.998,
+      "fat": 13,
+      "servingSize": "1 cookie / 58 g",
+      "servingSizeG": 58
+    }
+  },
+  "openFoodFacts": {
+    "code": "0888849006045",
+    "product_name": "Protein Cookie",
+    "brands": "Quest",
+    "serving_size": "1 cookie (58 g)",
+    "perServing": {
+      "protein": 15,
+      "calories": 210,
+      "carbs": 22,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 13,
+      "servingSize": "1 cookie (58 g)",
+      "servingSizeG": 58
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/900/6045/front_en.4.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 13,
+      "servingSize": "1 cookie / 58 g",
+      "servingSizeG": 58
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": "1 cookie / 58 g",
+    "servingSizeG": 58,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 13
+  },
+  "after": {
+    "servingSize": "1 cookie / 58 g",
+    "servingSizeG": 58,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 13
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "quest-choc-chip-cookie-dough",
+  "name": "Quest Protein Bar Chocolate Chip Cookie Dough",
+  "brand": "Quest Nutrition",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Quest-Nutrition-Dipped-Chocolate-Protein/dp/B094K6VJ9Z/ref=sr_1_2?crid=2XPUNE3CQHBA3&tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.6,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 21,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B094K6VJ9Z",
+    "gtin": "888849003853",
+    "fdcId": 2669765
+  },
+  "image": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669765",
+        "url": "https://fdc.nal.usda.gov/food-details/2669765/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 21,
+          "calories": 190,
+          "carbs": 21,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 9
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849003853",
+        "url": "https://world.openfoodfacts.org/product/0888849003853",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 21,
+          "calories": 190,
+          "carbs": 20,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 8
+        }
+      }
+    ],
+    "notes": [
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: the Open Food Facts 'front' photo shows the nutrition panel, so it is not used."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "quest-ranch-protein-chips",
+  "name": "Quest Protein Chips Ranch",
+  "brand": "Quest Nutrition",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/Quest-Nutrition-Tortilla-Style-Protein/dp/B07RQVPYT7/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.29,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07RQVPYT7",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

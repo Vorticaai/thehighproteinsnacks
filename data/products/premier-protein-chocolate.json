@@ -1,0 +1,80 @@
+{
+  "id": "premier-protein-chocolate",
+  "name": "Premier Protein Shake – Chocolate",
+  "brand": "Premier Protein",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Premier-Protein-High-Shake-Chocolate/dp/B008JGIZGS?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.83,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": "1 Shake (11.5 fl oz) / 345 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 160,
+    "carbs": 5,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B008JGIZGS",
+    "gtin": "0643843717157",
+    "fdcId": 2622653
+  },
+  "image": {
+    "src": "/products/premier-protein-chocolate.jpg",
+    "alt": "Premier Protein Premier Protein Shake – Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0643843717157"
+  },
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2622653",
+        "url": "https://fdc.nal.usda.gov/food-details/2622653/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 30,
+          "calories": 159,
+          "carbs": 5,
+          "fiber": 3.1,
+          "sugar": 1,
+          "fat": 3
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0643843717157",
+        "url": "https://world.openfoodfacts.org/product/0643843717157",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 31.3,
+          "calories": 167,
+          "carbs": 4.2,
+          "fiber": 1.1,
+          "sugar": 2.1,
+          "fat": 3.1
+        }
+      }
+    ],
+    "notes": [
+      "Brand matches and 100% of product words found.",
+      "USDA and Open Food Facts disagree (fiber: 3 vs 1); a reviewer accepted the USDA label data: USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
+    ]
+  }
+}

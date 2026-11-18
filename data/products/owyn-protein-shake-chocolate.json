@@ -1,0 +1,43 @@
+{
+  "id": "owyn-protein-shake-chocolate",
+  "name": "OWYN 20g Plant Protein Shake – Smooth Chocolate",
+  "brand": "OWYN",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/OWYN-Plant-Based-Dairy-Free-Gluten-Free-Allergy-Free/dp/B08PMC1ZJW?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.75,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 9,
+    "fiber": 3,
+    "sugar": 4,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B08PMC1ZJW",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Pure Protein Bar – Chocolate Deluxe",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2666605,
+      "description": "PROTEIN BAR, CHOCOLATE DELUXE",
+      "brandOwner": "Rexall Sundown, Inc.",
+      "brandName": "PURE PROTEIN",
+      "gtinUpc": "749826126517",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2666605,
+        "description": "PROTEIN BAR, CHOCOLATE DELUXE",
+        "brandOwner": "Rexall Sundown, Inc.",
+        "brandName": "PURE PROTEIN",
+        "gtinUpc": "749826126517",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666606,
+        "description": "CHOCOLATE DELUXE BAR, CHOCOLATE DELUXE",
+        "brandOwner": "Rexall Sundown, Inc.",
+        "brandName": "PURE PROTEIN",
+        "gtinUpc": "749826140292",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2677218,
+        "description": "CHOCOLATE DELUXE GLUTEN FREE BAR, CHOCOLATE",
+        "brandOwner": "Rexall Sundown, Inc.",
+        "brandName": "PURE PROTEIN",
+        "gtinUpc": "0749826000190",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2489813,
+        "description": "ABBOTT, EAS, ADVANT EDGE PURE MILK PROTEIN SHAKE, DELUXE DARK CHOCOLATE, DELUXE DARK CHOCOLATE",
+        "brandOwner": "Ross Products Division",
+        "brandName": "ABBOTT",
+        "gtinUpc": "791083304368",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2490705,
+        "description": "GLUTEN FREE BAR, CHOCOLATE DELUXE",
+        "brandOwner": "Rexall Sundown, Inc.",
+        "brandName": "PURE PROTEIN",
+        "gtinUpc": "749826844824",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2666605,
+    "description": "PROTEIN BAR, CHOCOLATE DELUXE",
+    "brandOwner": "Rexall Sundown, Inc.",
+    "brandName": "PURE PROTEIN",
+    "gtinUpc": "749826126517",
+    "servingSize": 50,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "2/16/2018",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE, WHEY PROTEIN CONCENTRATE), CHOCOLATE FLAVORED COATING (MALTITOL, FRACTIONATED PALM KERNEL OIL, WHEY PROTEIN CONCENTRATE, COCOA [PROCESSED WITH ALKALI], CALCIUM CARBONATE, NATURAL FLAVORS, SOY LECITHIN, SUCRALOSE), HYDROLYZED COLLAGEN, GLYCERIN, COCOA POWDER, WATER, MILK CHOCOLATE DROPS (SUGAR, WHOLE MILK POWDER, CHOCOLATE LIQUOR, COCOA BUTTER, MILK FAT, SOY LECITHIN, NATURAL VANILLA FLAVOR), MALTITOL SYRUP, PEANUT FLOUR, NATURAL FLAVORS, SUCRALOSE, ALMOND BUTTER, SOY LECITHIN.",
+    "perServing": {
+      "protein": 21,
+      "calories": 180,
+      "carbs": 17,
+      "fiber": 2,
+      "sugar": 3,
+      "fat": 4.5,
+      "servingSize": "1 BAR / 50 g",
+      "servingSizeG": 50
+    }
+  },
+  "openFoodFacts": {
+    "code": "0749826126517",
+    "product_name": "PURE PROTEIN CHOCOLATE DELUXE",
+    "brands": "PURE PROTEIN",
+    "serving_size": "1 bar (50 g)",
+    "perServing": {
+      "protein": 21,
+      "calories": 180,
+      "carbs": 17,
+      "fiber": 2,
+      "sugar": 3,
+      "fat": 4.5,
+      "servingSize": "1 bar (50 g)",
+      "servingSizeG": 50
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/074/982/612/6517/front_en.234.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 180,
+      "carbs": 17,
+      "fiber": 2,
+      "sugar": 3,
+      "fat": 4.5,
+      "servingSize": "1 BAR / 50 g",
+      "servingSizeG": 50
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": "1 BAR / 50 g",
+    "servingSizeG": 50,
+    "protein": 21,
+    "calories": 180,
+    "carbs": 17,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 4.5
+  },
+  "after": {
+    "servingSize": "1 BAR / 50 g",
+    "servingSizeG": 50,
+    "protein": 21,
+    "calories": 180,
+    "carbs": 17,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 4.5
+  }
+}

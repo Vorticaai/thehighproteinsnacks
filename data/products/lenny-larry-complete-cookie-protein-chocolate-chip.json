@@ -1,0 +1,43 @@
+{
+  "id": "lenny-larry-complete-cookie-protein-chocolate-chip",
+  "name": "Lenny & Larry's Complete Cookie Chocolate Chip",
+  "brand": "Lenny & Larry's",
+  "productType": "bar",
+  "buyUrl": "http://amazon.com/Lenny-Larrys-Complete-Chocolate-Protein/dp/B004IJM4OY/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.8,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 8,
+    "calories": 220,
+    "carbs": 35,
+    "fiber": 5,
+    "sugar": 11,
+    "fat": 5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B004IJM4OY",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "aloha-plant-based-bar",
+  "name": "ALOHA Plant-Based Protein Bar – Chocolate Chip Cookie Dough",
+  "brand": "ALOHA",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/ALOHA-Organic-Protein-Chocolate-Non-GMO/dp/B07RZM418G?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.49,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 220,
+    "carbs": 24,
+    "fiber": 10,
+    "sugar": 5,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07RZM418G",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

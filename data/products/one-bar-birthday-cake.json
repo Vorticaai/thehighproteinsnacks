@@ -1,0 +1,43 @@
+{
+  "id": "one-bar-birthday-cake",
+  "name": "ONE Protein Bar – Birthday Cake",
+  "brand": "ONE Brands",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/ONE-Protein-Birthday-Cake-Count/dp/B07CNGQ5BN?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.33,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 220,
+    "carbs": 23,
+    "fiber": 8,
+    "sugar": 1,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07CNGQ5BN",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

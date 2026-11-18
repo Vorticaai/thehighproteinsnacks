@@ -1,0 +1,74 @@
+{
+  "id": "quest-peanut-butter-cookie",
+  "name": "Quest Protein Cookie Peanut Butter",
+  "brand": "Quest Nutrition",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/NUTRITION-Peanut-Butter-Protein-Cookie/dp/B07JLQTN5P/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": "1 cookie / 58 g",
+    "servingSizeG": 58,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 13
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07JLQTN5P",
+    "gtin": "888849006045",
+    "fdcId": 2669722
+  },
+  "image": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669722",
+        "url": "https://fdc.nal.usda.gov/food-details/2669722/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 15,
+          "calories": 220,
+          "carbs": 22,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 13
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849006045",
+        "url": "https://world.openfoodfacts.org/product/0888849006045",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 15,
+          "calories": 210,
+          "carbs": 22,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 13
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: confirmed the 'Soft & Chewy' USDA record (2023), which Open Food Facts agrees with. Photo rejected: the box in it shows newer label numbers (16 g protein, 10 g fiber), so Quest may have updated the recipe; re-check next run."
+    ]
+  }
+}

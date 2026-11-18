@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Muscle Milk Pro Advanced Nutrition 40g Shake – Knockout Chocolate",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2669536,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2669536,
+    "description": "PRO ADVANCED NUTRITION NON-DAIRY PROTEIN 40 G SHAKE, KNOCKOUT CHOCOLATE, KNOCKOUT CHOCOLATE",
+    "brandOwner": "PepsiCo, Inc. (CytoSport)",
+    "brandName": "MUSCLE MILK",
+    "gtinUpc": "876063002806",
+    "servingSize": 414,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 bottle",
+    "dataSource": "LI",
+    "modifiedDate": "3/7/2022",
+    "ingredients": "WATER, MILK PROTEIN ISOLATE, CALCIUM CASEINATE (MILK DERIVATIVE), CONTAINS LESS THAN 2% OF SODIUM CASEINATE (MILK DERIVATIVE), COCOA (PROCESSED WITH ALKALI), SOLUBLE CORN FIBER, NATURAL AND ARTIFICIAL FLAVOR, HIGH OLEIC SUNFLOWER OIL, CELLULOSE GEL, INULIN, TRIPOTASSIUM PHOSPHATE, POTASSIUM CHLORIDE, POTASSIUM PHOSPHATE, SODIUM POLYPHOSPHATES, CELLULOSE GUM, SUCRALOSE, CARRAGEENAN, ACESULFAME POTASSIUM, SALT, ASCORBIC ACID (VITAMIN C), SODIUM CITRATE, FERRIC PYROPHOSPHATE, CALCIUM PHOSPHATE, VITAMIN E ACETATE, NIACINAMIDE, ZINC OXIDE, COPPER GLUCONATE, CALCIUM PANTOTHENATE, VITAMIN A PALMITATE, PYRIDOXINE HYDROCHLORIDE (VITAMIN B6), VITAMIN D3, THIAMIN MONONITRATE (VITAMIN B1), RIBOFLAVIN, FOLIC ACID, POTASSIUM IODIDE, CHROMIUM CHLORIDE, BIOTIN, CYANOCOBALAMIN (VITAMIN B12).",
+    "perServing": {
+      "protein": 40,
+      "calories": 219,
+      "carbs": 12,
+      "fiber": 5.8,
+      "sugar": 0.994,
+      "fat": 2.48,
+      "servingSize": "1 bottle / 414 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0876063002806",
+    "product_name": "Protein Shake",
+    "brands": "Muscle Milk",
+    "serving_size": "1 bottle (414 ml)",
+    "perServing": {
+      "protein": 40,
+      "calories": 220,
+      "carbs": 12,
+      "fiber": 6,
+      "sugar": 1,
+      "fat": 2.5,
+      "servingSize": "1 bottle (414 ml)",
+      "servingSizeG": 414
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/087/606/300/2806/front_en.118.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 40,
+      "calories": 220,
+      "carbs": 12,
+      "fiber": 6,
+      "sugar": 1,
+      "fat": 2.5,
+      "servingSize": "1 bottle / 414 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 200,
+    "carbs": 7,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 6
+  },
+  "after": {
+    "servingSize": "1 bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 220,
+    "carbs": 12,
+    "fiber": 6,
+    "sugar": 1,
+    "fat": 2.5
+  }
+}

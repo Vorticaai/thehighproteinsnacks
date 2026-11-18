@@ -1,0 +1,43 @@
+{
+  "id": "quest-choc-chunk-cookie",
+  "name": "Quest Protein Cookie Chocolate Chip",
+  "brand": "Quest Nutrition",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/QUEST-NUTRITION-Chocolate-Protein-Cookie/dp/B07JMP7DYR/ref=sr_1_2?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 250,
+    "carbs": 2,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 17
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07JMP7DYR",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

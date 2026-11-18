@@ -1,0 +1,82 @@
+{
+  "id": "chomps-original-beef-stick",
+  "name": "Chomps Original Grass-Fed Beef Stick",
+  "brand": "Chomps",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Chomps-Grass-Fed-Finished-Original-10-Pack/dp/B07D3NS8NW/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": "1 portion (32 g)",
+    "servingSizeG": 32,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07D3NS8NW",
+    "gtin": "856584004763",
+    "fdcId": 2652237
+  },
+  "image": {
+    "src": "/products/chomps-original-beef-stick.jpg",
+    "alt": "Chomps Chomps Original Grass-Fed Beef Stick package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0856584004763"
+  },
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2652237",
+        "url": "https://fdc.nal.usda.gov/food-details/2652237/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 9,
+          "calories": 89.9,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 6
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0856584004763",
+        "url": "https://world.openfoodfacts.org/product/0856584004763",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 10,
+          "calories": 100,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 7
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Published the Open Food Facts values: the current 1.15 oz stick in the package photo lists 10 g protein and 100 calories; the USDA record is for a 32 g stick (9 g, 90 calories).",
+      "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763)."
+    ]
+  }
+}

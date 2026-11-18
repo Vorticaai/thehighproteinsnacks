@@ -1,0 +1,43 @@
+{
+  "id": "owyn-100plant-protein-shake",
+  "name": "OWYN 100% Plant Protein Shake",
+  "brand": "OWYN",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/OWYN-Only-What-You-Need/dp/B08B7B3CF8?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 10,
+    "fiber": 3,
+    "sugar": 4,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B08B7B3CF8",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "rxbar-apple-cinnamon",
+  "name": "RXBAR Apple Cinnamon",
+  "brand": "RXBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/RXBAR-Honey-Cinnamon-Peanut-Butter/dp/B09KMWCX72/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.19,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 200,
+    "carbs": 23,
+    "fiber": 6,
+    "sugar": 14,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B09KMWCX72",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

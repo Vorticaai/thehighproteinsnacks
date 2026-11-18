@@ -1,0 +1,43 @@
+{
+  "id": "barebells-cookies-cream",
+  "name": "Barebells Protein Bar – Cookies & Cream",
+  "brand": "Barebells",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Barebells-Protein-Bars-Cookies-Cream/dp/B08KWGDMJW?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.08,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 200,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B08KWGDMJW",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

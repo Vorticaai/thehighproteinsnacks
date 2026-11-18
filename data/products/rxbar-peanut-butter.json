@@ -1,0 +1,43 @@
+{
+  "id": "rxbar-peanut-butter",
+  "name": "RXBAR Peanut Butter",
+  "brand": "RXBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/RXBAR-Protein-Peanut-Butter-1-83oz/dp/B0143NQVP2/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.9,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 190,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 17,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0143NQVP2",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

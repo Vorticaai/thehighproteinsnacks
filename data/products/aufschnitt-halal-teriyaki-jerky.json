@@ -1,0 +1,43 @@
+{
+  "id": "aufschnitt-halal-teriyaki-jerky",
+  "name": "Aufschnitt Halal Teriyaki Beef Jerky",
+  "brand": "Aufschnitt",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Aufschnitt-Healthy-Chicken-Certified-Teriyaki/dp/B08T9RSTNH?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 80,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 1.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B08T9RSTNH",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

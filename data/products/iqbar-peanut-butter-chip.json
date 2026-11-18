@@ -1,0 +1,52 @@
+{
+  "id": "iqbar-peanut-butter-chip",
+  "name": "IQBAR Peanut Butter Chip Bar",
+  "brand": "IQBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Protein-Peanut-Butter-Friendly-Alcohols/dp/B0876HZ2VX/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.1,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 3,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 10
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0876HZ2VX",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": {
+    "src": "/products/iqbar-peanut-butter-chip.jpg",
+    "alt": "IQBAR IQBAR Peanut Butter Chip Bar package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850004554005"
+  },
+  "verification": {
+    "status": "needs-review",
+    "checkedAt": "2026-11-18",
+    "sources": [],
+    "notes": [
+      "Brand matches and 100% of product words found.",
+      "USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10).",
+      "Reviewer: IQBAR appears to have changed the recipe (USDA 180 kcal / 12 g fat vs Open Food Facts 160 kcal / 10 g). Needs the current label from iqbar.com or the package."
+    ]
+  }
+}

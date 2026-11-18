@@ -1,0 +1,81 @@
+{
+  "id": "muscle-milk-pro-series-40",
+  "name": "Muscle Milk Pro Advanced Nutrition 40g Shake – Knockout Chocolate",
+  "brand": "Muscle Milk",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Muscle-Milk-Protein-Intense-Vanilla/dp/B00FLVZA3U?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.16,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": "1 bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 220,
+    "carbs": 12,
+    "fiber": 6,
+    "sugar": 1,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B00FLVZA3U",
+    "gtin": "876063002806",
+    "fdcId": 2669536
+  },
+  "image": {
+    "src": "/products/muscle-milk-pro-series-40.jpg",
+    "alt": "Muscle Milk Muscle Milk Pro Advanced Nutrition 40g Shake – Knockout Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0876063002806"
+  },
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669536",
+        "url": "https://fdc.nal.usda.gov/food-details/2669536/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 40,
+          "calories": 219,
+          "carbs": 12,
+          "fiber": 5.8,
+          "sugar": 1,
+          "fat": 2.5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0876063002806",
+        "url": "https://world.openfoodfacts.org/product/0876063002806",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 40,
+          "calories": 220,
+          "carbs": 12,
+          "fiber": 6,
+          "sugar": 1,
+          "fat": 2.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Owner confirmed (19 Nov 2026) that Pro Series 40 was renamed Pro Advanced Nutrition 40 g; values are for Knockout Chocolate. URL kept for continuity."
+    ]
+  }
+}

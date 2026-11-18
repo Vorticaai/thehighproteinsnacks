@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Fairlife Core Power Elite 42g",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2668980,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2668980,
+    "description": "ELITE HIGH COMPLETE PROTEIN 42 G MILK SHAKE, CHOCOLATE, CHOCOLATE",
+    "brandOwner": "Coca-Cola USA Operations",
+    "brandName": "FAIRLIFE",
+    "gtinUpc": "049000553604",
+    "servingSize": 414,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 Bottle",
+    "dataSource": "LI",
+    "modifiedDate": "10/16/2023",
+    "ingredients": "FILTERED LOWFAT GRADE A MILK, ALKALIZED COCOA, CONTAINS LESS THAN 1% OF NATURAL FLAVORS, LACTASE ENZYME, SEA SALT, ACESULFAME POTASSIUM, CARRAGEENAN, MONK FRUIT JUICE CONCENTRATE, MALTODEXTRIN, CELLULOSE GEL, CELLULOSE GUM, STEVIA LEAF EXTRACT, SUCRALOSE, VITAMIN A PALMITATE, VITAMIN D3",
+    "perServing": {
+      "protein": 42,
+      "calories": 232,
+      "carbs": 8.98,
+      "fiber": 2.07,
+      "sugar": 7,
+      "fat": 3.52,
+      "servingSize": "1 Bottle / 414 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0049000553604",
+    "product_name": "Core Power",
+    "brands": "fairlife",
+    "serving_size": "1 portion (414 ml)",
+    "perServing": {
+      "protein": 42,
+      "calories": 230,
+      "carbs": 9,
+      "fiber": 2,
+      "sugar": 7,
+      "fat": 3.5,
+      "servingSize": "1 portion (414 ml)",
+      "servingSizeG": 414
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/004/900/055/3604/front_en.6.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 42,
+      "calories": 230,
+      "carbs": 9,
+      "fiber": 2,
+      "sugar": 7,
+      "fat": 3.5,
+      "servingSize": "1 Bottle / 414 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": "1 Bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 9,
+    "fiber": 2,
+    "sugar": 7,
+    "fat": 3.5
+  },
+  "after": {
+    "servingSize": "1 Bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 9,
+    "fiber": 2,
+    "sugar": 7,
+    "fat": 3.5
+  }
+}

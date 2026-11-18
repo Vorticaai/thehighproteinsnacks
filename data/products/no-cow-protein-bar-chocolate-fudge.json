@@ -1,0 +1,43 @@
+{
+  "id": "no-cow-protein-bar-chocolate-fudge",
+  "name": "No Cow Protein Bar – Chocolate Fudge",
+  "brand": "No Cow",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/No-Cow-Protein-Chocolate-Brownie/dp/B01K5SBEJM?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.33,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 26,
+    "fiber": 14,
+    "sugar": 1,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B01K5SBEJM",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

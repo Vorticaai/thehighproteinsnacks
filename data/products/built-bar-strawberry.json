@@ -1,0 +1,43 @@
+{
+  "id": "built-bar-strawberry",
+  "name": "Built Bar Strawberry",
+  "brand": "Built Bar",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/BUILT-Puffs-Protein-Strawberries-Cream/dp/B0D1KD323N/ref=sr_1_5?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 140,
+    "carbs": 15,
+    "fiber": 0,
+    "sugar": 8,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0D1KD323N",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

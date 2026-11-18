@@ -1,0 +1,43 @@
+{
+  "id": "halal-grassfed-beef-stick",
+  "name": "Halal Grass-Fed Original Beef Stick",
+  "brand": "Sharifa Halal",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/SHARIFA-HALAL-BEEF-STICKS-ORIGINAL/dp/B08L599QZZ?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.6,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 9,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B08L599QZZ",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

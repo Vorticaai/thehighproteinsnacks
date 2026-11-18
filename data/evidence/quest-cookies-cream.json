@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Quest Protein Bar Cookies & Cream",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669747,
+      "description": "COOKIES & CREAM PROTEIN BAR, COOKIES & CREAM",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849000005",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669747,
+        "description": "COOKIES & CREAM PROTEIN BAR, COOKIES & CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000005",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2669766,
+        "description": "COOKIES & CREAM PROTEIN BARS, COOKIES & CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849003860",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2669737,
+        "description": "COOKIES & CREAM CRISPY HERO PROTEIN BARS, COOKIES & CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011605",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653043,
+        "description": "COOKIES & CREAM DIPPED PROTEIN BARS, COOKIES & CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849013753",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653049,
+        "description": "COOKIES & CREAM CRISPY HERO PROTEIN BARS, COOKIES & CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011599",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669747,
+    "description": "COOKIES & CREAM PROTEIN BAR, COOKIES & CREAM",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849000005",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "10/21/2022",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), POLYDEXTROSE (PREBIOTIC FIBER), ALMONDS, WATER, NATURAL FLAVORS, COCOA BUTTER, ERYTHRITOL, SOLUBLE CORN FIBER. CONTAINS LESS THAN 2% OF THE FOLLOWING: COCOA PROCESSED WITH ALKALI, PALM KERNEL OIL, SEA SALT, SODIUM CASEINATE, SUNFLOWER LECITHIN, XANTHAN GUM, BAKING SODA, STEVIA SWEETENER, SUCRALOSE.",
+    "perServing": {
+      "protein": 21,
+      "calories": 190,
+      "carbs": 21,
+      "fiber": 13,
+      "sugar": 1,
+      "fat": 8,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": {
+    "code": "0888849000005",
+    "product_name": "Cookies & Cream Protein Bar",
+    "brands": "Quest",
+    "serving_size": "1 bar (60 g)",
+    "perServing": {
+      "protein": 21,
+      "calories": 190,
+      "carbs": 22,
+      "fiber": 13,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar (60 g)",
+      "servingSizeG": 60
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/900/0005/front_en.310.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 190,
+      "carbs": 21,
+      "fiber": 13,
+      "sugar": 1,
+      "fat": 8,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 21,
+    "fiber": 13,
+    "sugar": 1,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 21,
+    "fiber": 13,
+    "sugar": 1,
+    "fat": 8
+  }
+}

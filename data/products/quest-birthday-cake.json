@@ -1,0 +1,43 @@
+{
+  "id": "quest-birthday-cake",
+  "name": "Quest Protein Bar Birthday Cake",
+  "brand": "Quest Nutrition",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Quest-Nutrition-Birthday-Protein-Friendly/dp/B0764FYSNF/ref=sr_1_1?crid=24DANWBYOT813&tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.6,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 4,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0764FYSNF",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

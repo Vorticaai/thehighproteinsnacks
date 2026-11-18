@@ -3,11 +3,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import ProductCard from "@/components/snacks/ProductCard";
-import LabelCard from "@/components/snacks/LabelCard";
+import ProductVisual from "@/components/snacks/ProductVisual";
+import { NutritionSource } from "@/components/snacks/VerificationNote";
 import BuyLink from "@/components/snacks/BuyLink";
 import { JsonLd } from "@/components/seo/jsonld";
 import { getAllProducts, type Product } from "@/lib/products";
-import { CATEGORY_THRESHOLDS, weightLossFilter } from "@/lib/categoryFilters";
+import { CATEGORY_THRESHOLDS, categoryFilters, weightLossFilter } from "@/lib/categoryFilters";
 import {
   categorySlugs,
   getCategoryDetails,
@@ -22,21 +23,16 @@ type SnackPageProps = {
   params: { slug: string };
 };
 
-type FlagKey = keyof Product["flags"];
-
-const CATEGORY_PRIORITIES: Array<{
-  flag: FlagKey;
-  label: string;
-  slug: string;
-}> = [
-  { flag: "weightLoss", label: "Weight Loss", slug: "weight-loss" },
-  { flag: "lowSugar", label: "Low Sugar", slug: "low-sugar" },
-  { flag: "keto", label: "Keto", slug: "keto" },
-  { flag: "vegan", label: "Vegan", slug: "vegan" },
-  { flag: "glutenFree", label: "Gluten Free", slug: "gluten-free" },
-  { flag: "halal", label: "Halal", slug: "halal" },
-  { flag: "bars", label: "Protein Bars", slug: "protein-bars" },
-  { flag: "chips", label: "Protein Chips", slug: "chips" },
+// Breadcrumb category: the first of these the product belongs to.
+const CATEGORY_PRIORITIES: Array<{ label: string; slug: string }> = [
+  { label: "Weight Loss", slug: "weight-loss" },
+  { label: "Low Sugar", slug: "low-sugar" },
+  { label: "Keto", slug: "keto" },
+  { label: "Vegan", slug: "vegan" },
+  { label: "Gluten Free", slug: "gluten-free" },
+  { label: "Halal", slug: "halal" },
+  { label: "Protein Bars", slug: "protein-bars" },
+  { label: "Protein Chips", slug: "chips" },
 ];
 
 const FALLBACK_CATEGORY = { label: "All Snacks", slug: "snacks" };
@@ -46,15 +42,10 @@ function isCategorySlug(slug: string): slug is CategorySlug {
 }
 
 function getPrimaryCategory(product: Product) {
-  for (const category of CATEGORY_PRIORITIES) {
-    if (
-      (category.flag === "weightLoss" && weightLossFilter(product)) ||
-      (category.flag !== "weightLoss" && product.flags[category.flag])
-    ) {
-      return category;
-    }
-  }
-  return FALLBACK_CATEGORY;
+  return (
+    CATEGORY_PRIORITIES.find((c) => categoryFilters[c.slug]?.(product)) ??
+    FALLBACK_CATEGORY
+  );
 }
 
 function formatCurrency(value: number) {
@@ -133,7 +124,10 @@ function buildFaqs(product: Product) {
   const faqs = [
     {
       question: `How much protein is in one serving of ${product.name}?`,
-      answer: `${product.proteinPerServing} grams of protein per serving, according to the product information we hold. Check the package for the current label.`,
+      answer:
+        product.verification.status === "verified"
+          ? `${product.proteinPerServing} grams of protein per serving${product.servingSize ? ` (${product.servingSize})` : ""}, matching the manufacturer label data we checked.`
+          : `${product.proteinPerServing} grams of protein per serving, according to our original research. Check the package for the current label.`,
     },
     {
       question: `Is ${product.name} good for weight loss?`,
@@ -231,7 +225,7 @@ export async function generateMetadata({
 
   const description = `${product.brand} ${product.name} – ${product.proteinPerServing}g protein, ${product.caloriesPerServing} calories, ${product.sugarPerServing}g sugar per serving. Compare macros and protein per dollar.`;
   const url = absoluteUrl(`/snacks/${product.id}`);
-  const image = absoluteUrl("/og-default.jpg");
+  const image = absoluteUrl(product.image?.src || "/og-default.jpg");
 
   return {
     title: `${product.name}: Protein, Calories & Sugar`,
@@ -312,6 +306,8 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
     name: product.name,
     description: whyWeLoveIt,
     brand: { "@type": "Brand", name: product.brand },
+    ...(product.image ? { image: absoluteUrl(product.image.src) } : {}),
+    ...(product.gtin && product.verification.status === "verified" ? { gtin: product.gtin } : {}),
     url: absoluteUrl(`/snacks/${product.id}`),
     nutrition: {
       "@type": "NutritionInformation",
@@ -335,7 +331,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
         <section className="mb-10 rounded-3xl border border-gray-200 bg-white shadow-sm">
           <div className="grid gap-8 p-8 lg:grid-cols-[1fr,1.2fr]">
             <div className="relative overflow-hidden rounded-2xl">
-              <LabelCard product={product} size="lg" />
+              <ProductVisual product={product} size="lg" />
             </div>
 
             <div>
@@ -386,9 +382,8 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
                 </BuyLink>
               )}
               <p className="mt-3 text-xs text-gray-500">
-                Prices are estimates from when we added this product and change often. Nutrition is
-                per serving as listed in our data; always check the package. We earn a commission if
-                you buy through this link.
+                Prices are estimates from when we added this product and change often. We earn a
+                commission if you buy through this link.
               </p>
             </div>
           </div>
@@ -398,8 +393,11 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
           <div>
             <h2 className="text-xl font-bold text-gray-900">Nutrition snapshot</h2>
             <p className="mt-2 text-sm text-gray-600">
-              Macro profile per single serving.
+              Per serving{product.servingSize ? ` (${product.servingSize})` : ""}.
             </p>
+            <div className="mt-4">
+              <NutritionSource product={product} />
+            </div>
             <dl className="mt-4 grid grid-cols-2 gap-4 text-sm">
               <div className="rounded-2xl border bg-gray-50 p-4 text-center">
                 <dt className="text-xs uppercase tracking-wide text-gray-500">

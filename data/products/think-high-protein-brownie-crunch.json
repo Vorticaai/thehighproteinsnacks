@@ -1,0 +1,43 @@
+{
+  "id": "think-high-protein-brownie-crunch",
+  "name": "Think! High Protein Bar – Brownie Crunch",
+  "brand": "think!",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Protein-Isolate-Nutrition-Artificial-Sweeteners/dp/B0B17P5N3D?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.5,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 230,
+    "carbs": 24,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0B17P5N3D",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "clif-builder-vegan-choc-peanut",
+  "name": "Clif Builder’s Vegan Protein Bar – Chocolate Peanut Butter",
+  "brand": "Clif",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/CLIF-BUILDERS-Protein-Chocolate-Peanut/dp/B09QHBBGJT?tag=thehighprotei-20",
+  "price": {
+    "perServing": 1.83,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 280,
+    "carbs": 29,
+    "fiber": 4,
+    "sugar": 17,
+    "fat": 11
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B09QHBBGJT",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

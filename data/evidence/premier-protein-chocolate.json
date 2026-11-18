@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Premier Protein Shake – Chocolate",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2622653,
+      "description": "CHOCOLATE HIGH PROTEIN SHAKE, CHOCOLATE",
+      "brandOwner": "Premier Nutrition Corporation",
+      "brandName": "PREMIER PROTEIN",
+      "gtinUpc": "0643843717157",
+      "publishedDate": "2023-08-31",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2622653,
+        "description": "CHOCOLATE HIGH PROTEIN SHAKE, CHOCOLATE",
+        "brandOwner": "Premier Nutrition Corporation",
+        "brandName": "PREMIER PROTEIN",
+        "gtinUpc": "0643843717157",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2471401,
+        "description": "CHOCOLATE PROTEIN SHAKE, CHOCOLATE",
+        "brandOwner": "Premier Nutrition Corporation",
+        "brandName": "POWERBAR",
+        "gtinUpc": "097421560428",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2489244,
+        "description": "HIGH PROTEIN SHAKE, CHOCOLATE",
+        "brandOwner": "Premier Nutrition Corporation",
+        "brandName": "PREMIER PROTEIN",
+        "gtinUpc": "643843714200",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2491052,
+        "description": "HIGH PROTEIN SHAKE, CHOCOLATE",
+        "brandOwner": "Premier Nutrition Corporation",
+        "brandName": "PREMIER PROTEIN",
+        "gtinUpc": "643843714118",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2467876,
+        "description": "CHOCOLATE HIGH PROTEIN SHAKE, CHOCOLATE",
+        "brandOwner": "Premier Nutrition Corporation",
+        "brandName": "PREMIER PROTEIN",
+        "gtinUpc": "643843780021",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2622653,
+    "description": "CHOCOLATE HIGH PROTEIN SHAKE, CHOCOLATE",
+    "brandOwner": "Premier Nutrition Corporation",
+    "brandName": "PREMIER PROTEIN",
+    "gtinUpc": "0643843717157",
+    "servingSize": 345,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 Shake (11.5 fl oz)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "WATER, MILK PROTEIN CONCENTRATE, CALCIUM CASEINATE, COCOA POWDER (PROCESSED WITH ALKALI), CONTAINS LESS THAN 1% OF HIGH OLEIC SUNFLOWER OIL, NATURAL AND ARTIFICIAL FLAVORS, INULIN, CELLULOSE GEL AND CELLULOSE GUM, SALT, SUCRALOSE, ACESULFAME POTASSIUM, CARRAGEENAN, TRIPOTASSIUM PHOSPHATE, DIPOTASSIUM PHOSPHATE, SODIUM HEXAMETAPHOSPHATE, VITAMIN AND MINERAL BLEND (DL-ALPHA-TOCOPHERYL ACETATE [VITAMIN E], ZINC GLYCINATE CHELATE, FERRIC ORTHOPHOSPHATE, VITAMIN A PALMITATE, NIACINAMIDE, PHYTONADIONE [VITAMIN K1], POTASSIUM IODIDE, CHOLECALCIFEROL [VITAMIN D3], COPPER GLUCONATE, CALCIUM D-PANTOTHENATE, MANGANESE SULFATE, SODIUM SELENITE, BIOTIN, SODIUM MOLYBDATE, FOLIC ACID, THIAMINE MONONITRATE [VITAMIN B1], CYANOCOBALAMIN [VITAMIN B12], PYRIDOXINE HYDROCHLORIDE [VITAMIN B6], RIBOFLAVIN [VITAMIN B2], CHROMIUM POLYNICOTINATE), MAGNESIUM PHOSPHATE, SODIUM ASCORBATE, SOURCE OF PROTEIN",
+    "perServing": {
+      "protein": 30,
+      "calories": 159,
+      "carbs": 5,
+      "fiber": 3.1,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "1 Shake (11.5 fl oz) / 345 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0643843717157",
+    "product_name": "Chocolate High Protein Shake",
+    "brands": "Premier Protein",
+    "serving_size": "1 serving (340 g)",
+    "perServing": {
+      "protein": 31.3,
+      "calories": 167,
+      "carbs": 4.18,
+      "fiber": 1.05,
+      "sugar": 2.07,
+      "fat": 3.13,
+      "servingSize": "1 serving (340 g)",
+      "servingSizeG": 340
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/064/384/371/7157/front_en.328.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 30,
+      "calories": 160,
+      "carbs": 5,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "1 Shake (11.5 fl oz) / 345 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "USDA and Open Food Facts disagree (fiber: 3 vs 1); a reviewer accepted the USDA label data: USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
+    ]
+  },
+  "before": {
+    "servingSize": "1 Shake (11.5 fl oz) / 345 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 160,
+    "carbs": 5,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 3
+  },
+  "after": {
+    "servingSize": "1 Shake (11.5 fl oz) / 345 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 160,
+    "carbs": 5,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 3
+  }
+}

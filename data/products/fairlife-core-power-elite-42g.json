@@ -1,0 +1,74 @@
+{
+  "id": "fairlife-core-power-elite-42g",
+  "name": "Fairlife Core Power Elite 42g",
+  "brand": "Fairlife",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Core-Power-fairlife-Protein-Chocolate/dp/B01DDIRDZA?tag=thehighprotei-20",
+  "price": {
+    "perServing": 3.25,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": "1 Bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 9,
+    "fiber": 2,
+    "sugar": 7,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B01DDIRDZA",
+    "gtin": "049000553604",
+    "fdcId": 2668980
+  },
+  "image": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-18",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2668980",
+        "url": "https://fdc.nal.usda.gov/food-details/2668980/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 42,
+          "calories": 232,
+          "carbs": 9,
+          "fiber": 2.1,
+          "sugar": 7,
+          "fat": 3.5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0049000553604",
+        "url": "https://world.openfoodfacts.org/product/0049000553604",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 42,
+          "calories": 230,
+          "carbs": 9,
+          "fiber": 2,
+          "sugar": 7,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour. Photo rejected: a store-shelf shot of multipacks, not a clear product image."
+    ]
+  }
+}

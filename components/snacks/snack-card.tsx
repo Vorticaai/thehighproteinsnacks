@@ -3,7 +3,8 @@
  */
 import Link from "next/link"
 import type { Product } from "@/lib/products"
-import LabelCard from "@/components/snacks/LabelCard"
+import ProductVisual from "@/components/snacks/ProductVisual"
+import { VerifiedPill } from "@/components/snacks/VerificationNote"
 
 type SnackCardProps = {
   snack: Product
@@ -13,15 +14,16 @@ export function SnackCard({ snack }: SnackCardProps) {
   return (
     <Link href={`/snacks/${snack.id}`} className="block">
       <div className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md">
-        {/* Generated label card (no third-party product photos) */}
+        {/* Licensed photo with credit, or the generated label card */}
         <div className="aspect-[4/3] w-full overflow-hidden rounded-t-2xl">
-          <LabelCard product={snack} />
+          <ProductVisual product={snack} />
         </div>
 
         {/* Card Content */}
         <div className="flex flex-1 flex-col p-4">
-          <div className="mb-3">
+          <div className="mb-3 flex items-center justify-between gap-2">
             <span className="text-xs font-semibold text-gray-600">{snack.brand}</span>
+            <VerifiedPill product={snack} />
           </div>
 
           {/* Product Name */}

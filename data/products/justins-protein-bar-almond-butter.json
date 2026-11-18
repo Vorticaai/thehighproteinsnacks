@@ -1,0 +1,43 @@
+{
+  "id": "justins-protein-bar-almond-butter",
+  "name": "Justin’s Almond Butter Protein Bar",
+  "brand": "Justin’s",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/Butter-Squeeze-Justins-Gluten-free-Responsibly/dp/B001HTIYDI?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.49,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 180,
+    "carbs": 21,
+    "fiber": 3,
+    "sugar": 5,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B001HTIYDI",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "aufschnitt-grassfed-halal-jerky",
+  "name": "Aufschnitt Grass-Fed Halal Beef Jerky",
+  "brand": "Aufschnitt",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Aufschnitt-Grass-Beef-Jerky-Certification/dp/B00YT21XBA?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.7,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 11,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": true,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B00YT21XBA",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

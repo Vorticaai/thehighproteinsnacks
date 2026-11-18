@@ -1,0 +1,43 @@
+{
+  "id": "iconic-protein-shake-cacao",
+  "name": "ICONIC Protein Shake – Café Mocha",
+  "brand": "ICONIC",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/Iconic-Protein-Drinks-Cacao-Greens/dp/B07QNZM51V?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.66,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 140,
+    "carbs": 3,
+    "fiber": 4,
+    "sugar": 0,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B07QNZM51V",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}

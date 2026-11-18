@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Chomps Original Grass-Fed Beef Stick",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2652237,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2652237,
+    "description": "ORIGINAL BEEF STICKS, ORIGINAL",
+    "brandOwner": "We Are The Chompians LLC",
+    "brandName": "CHOMPS",
+    "gtinUpc": "856584004763",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Stick",
+    "dataSource": "LI",
+    "modifiedDate": "9/1/2023",
+    "ingredients": "GRASS FED & FINISHED BEEF, WATER, SEA SALT, ENCAPSULATED LACTIC ACID, CULTURED CELERY POWDER (CELERY POWDER, SEA SALT), BLACK PEPPER, RED PEPPER, GARLIC POWDER, CORIANDER, STUFFED IN A BEEF COLLAGEN CASING",
+    "perServing": {
+      "protein": 9,
+      "calories": 89.9,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 6,
+      "servingSize": "1 Stick / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": {
+    "code": "0856584004763",
+    "product_name": "Original Beef Stick",
+    "brands": "Chomps",
+    "serving_size": "1 portion (32 g)",
+    "perServing": {
+      "protein": 10,
+      "calories": 100,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 portion (32 g)",
+      "servingSizeG": 32
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/658/400/4763/front_en.92.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 9,
+      "calories": 90,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 6,
+      "servingSize": "1 Stick / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data.",
+      "Published the Open Food Facts values: the current 1.15 oz stick in the package photo lists 10 g protein and 100 calories; the USDA record is for a 32 g stick (9 g, 90 calories)."
+    ]
+  },
+  "before": {
+    "servingSize": "1 portion (32 g)",
+    "servingSizeG": 32,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": "1 portion (32 g)",
+    "servingSizeG": 32,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "iqbar-chocolate-sea-salt",
+  "name": "IQBAR Chocolate Sea Salt Bar",
+  "brand": "IQBAR",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/Protein-Chocolate-Friendly-Gluten-Alcohols/dp/B0876LNH8Y/ref=sr_1_1?tag=thehighprotei-20",
+  "price": {
+    "perServing": 2.1,
+    "status": "estimate",
+    "note": "Estimated when the product was added (2025). Not a live price."
+  },
+  "nutrition": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 170,
+    "carbs": 2,
+    "fiber": 8,
+    "sugar": 1,
+    "fat": 12
+  },
+  "claims": {
+    "vegan": true,
+    "plantBased": true,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": "B0876LNH8Y",
+    "gtin": null,
+    "fdcId": null
+  },
+  "image": null,
+  "verification": {
+    "status": "unverified",
+    "checkedAt": null,
+    "sources": [],
+    "notes": [
+      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+    ]
+  }
+}
