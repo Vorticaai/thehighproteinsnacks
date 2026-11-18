@@ -22,7 +22,7 @@ export default function WeightLossTop3({ products }: WeightLossTop3Props) {
 
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-10">
           Under 200 calories. High protein. Clean ingredients.
-          Only the top 3 snacks that actually support fat loss.
+          The three highest protein-per-dollar snacks under 200 calories.
         </p>
 
         <div className="grid gap-6 md:grid-cols-3">

@@ -44,7 +44,7 @@ export async function generateMetadata({
       type: "article",
       images: [
         {
-          url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+          url: `https://www.thehighproteinsnacks.com/og-default.jpg`,
         },
       ],
     },
@@ -53,7 +53,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${guide.title} | The High-Protein Snacks`,
       description: guide.metaDescription,
-      images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
+      images: [`https://www.thehighproteinsnacks.com/og-default.jpg`],
     },
   };
 

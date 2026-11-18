@@ -8,9 +8,10 @@ import { weightLossFilter } from "@/lib/categoryFilters"
 
 const PAGE_TITLE = "Best High-Protein Snacks for Weight Loss (Under 200 Calories)"
 const PAGE_DESCRIPTION =
-  "A ranked list of high-protein snacks under 200 calories that keep you full, support fat loss, and actually taste good. Hand-picked from top brands like Quest, RXBAR, KIND, Built Bar, IQBAR and more."
+  "A ranked list of high-protein snacks under 200 calories compared by protein, calories and sugar. Hand-picked from top brands like Quest, RXBAR, KIND, Built Bar, IQBAR and more."
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/best-high-protein-snacks-for-weight-loss" },
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
   openGraph: {
@@ -25,9 +26,9 @@ function getBestWeightLossSnacks() {
 
   const ranked = [...weightLossSnacks].sort((a, b) => {
     const aScore =
-      a.proteinPerServing * 4 - a.caloriesPerServing / 10 + (a.rating || 0)
+      a.proteinPerServing * 4 - a.caloriesPerServing / 10
     const bScore =
-      b.proteinPerServing * 4 - b.caloriesPerServing / 10 + (b.rating || 0)
+      b.proteinPerServing * 4 - b.caloriesPerServing / 10
     return bScore - aScore
   })
 
@@ -43,20 +44,10 @@ export default function BestWeightLossSnacksPage() {
     name: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
     itemListElement: bestSnacks.map((snack, index) => ({
-      "@type": "Product",
+      "@type": "ListItem",
       position: index + 1,
-      url: `https://thehighproteinsnacks.com/snack/${snack.id}`,
+      url: `https://www.thehighproteinsnacks.com/snacks/${snack.id}`,
       name: snack.name,
-      image: snack.imageUrl,
-      brand: {
-        "@type": "Brand",
-        name: snack.brand,
-      },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: snack.rating,
-        reviewCount: snack.reviewCount,
-      },
     })),
   }
 
@@ -136,15 +127,14 @@ export default function BestWeightLossSnacksPage() {
             </p>
             <p>
               <strong>Ranking algorithm:</strong> We ranked the filtered snacks
-              using a proprietary score that weighs protein content (heavily),
-              total calories (penalized), and verified customer ratings. Higher
-              protein-per-calorie ratios score better, helping you stay full
-              longer while cutting.
+              using a simple score that weighs protein content (heavily) and
+              penalises total calories. Higher protein-per-calorie ratios score
+              better.
             </p>
             <p>
               <strong>Transparency:</strong> This list is not sponsored. We
               evaluated products based purely on their macronutrient profiles,
-              calorie counts, and real customer reviews. Our goal is to help
+              and calorie counts as listed in our data. Our goal is to help
               you find snacks that actually support your weight loss goals.
             </p>
           </div>

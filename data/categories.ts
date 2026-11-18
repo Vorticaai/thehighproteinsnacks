@@ -10,7 +10,7 @@ export const categories: Category[] = [
     slug: "weight-loss",
     title: "Best for Weight Loss — Top 3 Picks",
     description:
-      "High-protein, low-calorie snacks curated to support fat loss while keeping you full.",
+      "High-protein snacks under 200 calories per serving.",
     primaryKeyword: "high protein snacks for weight loss",
     secondaryKeywords: [
       "low calorie protein snacks",
@@ -55,7 +55,7 @@ export const categories: Category[] = [
       "vegan high protein foods",
     ],
     heroCopy:
-      "Get your protein from plants with these delicious vegan-certified snacks.",
+      "Snacks listed as vegan or plant-based. Check the label to confirm.",
   },
   {
     id: "cat-budget",
@@ -94,7 +94,7 @@ export const categories: Category[] = [
     slug: "gluten-free",
     title: "Gluten-Free High-Protein Snacks",
     description:
-      "Certified gluten-free protein snacks safe for celiac disease and gluten sensitivity. Made in dedicated facilities to prevent cross-contamination.",
+      "Snacks listed as gluten-free in our product data. Certification is not verified; check the package if you have coeliac disease.",
     primaryKeyword: "gluten free high protein snacks",
     secondaryKeywords: [
       "gluten free protein bars",
@@ -103,14 +103,14 @@ export const categories: Category[] = [
       "protein snacks without gluten",
     ],
     heroCopy:
-      "Enjoy worry-free protein snacks that are certified gluten-free and delicious.",
+      "High-protein snacks listed as gluten-free. Always check the label.",
   },
   {
     id: "cat-halal",
     slug: "halal",
     title: "Halal High-Protein Snacks",
     description:
-      "Halal-certified protein snacks made without pork, alcohol, or non-halal animal derivatives. Perfect for Muslim consumers seeking compliant nutrition.",
+      "Snacks marketed as halal by their brand. Certification is not verified; check the package and the certifier.",
     primaryKeyword: "halal high protein snacks",
     secondaryKeywords: [
       "halal protein bars",
@@ -126,7 +126,7 @@ export const categories: Category[] = [
     slug: "low-sugar",
     title: "Low-Sugar High-Protein Snacks",
     description:
-    "High-protein snacks with 3g or less sugar per serving. Designed to support blood sugar control, weight loss, and clean energy without the crash.",
+    "High-protein snacks with 3g or less sugar per serving.",
   
     primaryKeyword: "low sugar high protein snacks",
     secondaryKeywords: [
@@ -143,7 +143,7 @@ export const categories: Category[] = [
     slug: "high-fiber",
     title: "High-Fiber High-Protein Snacks",
     description:
-      "Protein snacks with 5g or more fiber per serving to support digestive health, enhance satiety, and regulate blood sugar levels.",
+      "Protein snacks with 5g or more fiber per serving.",
     primaryKeyword: "high fiber high protein snacks",
     secondaryKeywords: [
       "protein snacks with fiber",

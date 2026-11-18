@@ -6,6 +6,7 @@ import CalculatorCTA from "@/components/shared/calculator-cta"
 import { Breadcrumbs } from "@/components/layout/breadcrumbs"
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/compare/quest-bars-vs-rxbars" },
   title: "Quest Bars vs RXBAR: Which High-Protein Snack Is Better?",
   description:
     "Detailed comparison of Quest Nutrition protein bars versus RXBAR. We compare protein, calories, sugar, fiber, price per bar, and best use cases so you can pick the right snack for your goals.",
@@ -100,35 +101,17 @@ export default function CompareQuestVsRxbarPage() {
     "@type": "ItemList",
     name: "Quest Bars vs RXBAR comparison",
     description:
-      "Side-by-side comparison of Quest Nutrition protein bars versus RXBAR, using average macros, ratings, and price per bar.",
+      "Side-by-side comparison of Quest Nutrition protein bars versus RXBAR, using average macros and estimated price per bar.",
     itemListElement: [
       {
-        "@type": "Product",
+        "@type": "ListItem",
         position: 1,
         name: "Quest Nutrition protein bars",
-        brand: {
-          "@type": "Brand",
-          name: "Quest Nutrition",
-        },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: questSummary.averageRating,
-          reviewCount: questSummary.productCount * 100,
-        },
       },
       {
-        "@type": "Product",
+        "@type": "ListItem",
         position: 2,
         name: "RXBAR protein bars",
-        brand: {
-          "@type": "Brand",
-          name: "RXBAR",
-        },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: rxbarSummary.averageRating,
-          reviewCount: rxbarSummary.productCount * 100,
-        },
       },
     ],
   }
@@ -173,8 +156,8 @@ export default function CompareQuestVsRxbarPage() {
           <p className="text-lg text-gray-600">
             Both Quest Nutrition and RXBAR are popular protein bar brands, but
             they take very different approaches. We'll compare their macros,
-            sugar content, fiber, customer ratings, and price per serving using
-            real product data from our database to help you decide which is
+            sugar content, fiber and estimated price per serving using
+            the product data in our database to help you decide which is
             right for your goals.
           </p>
         </div>
@@ -253,17 +236,6 @@ export default function CompareQuestVsRxbarPage() {
                   </td>
                   <td className="px-6 py-4 text-right text-sm font-semibold text-gray-900">
                     {rxbarSummary.averageFiber}g
-                  </td>
-                </tr>
-                <tr className="bg-green-50">
-                  <td className="px-6 py-4 text-sm text-gray-700">
-                    Average rating
-                  </td>
-                  <td className="px-6 py-4 text-right text-sm font-semibold text-gray-900">
-                    {questSummary.averageRating} / 5
-                  </td>
-                  <td className="px-6 py-4 text-right text-sm font-semibold text-gray-900">
-                    {rxbarSummary.averageRating} / 5
                   </td>
                 </tr>
                 <tr>
@@ -364,21 +336,21 @@ export default function CompareQuestVsRxbarPage() {
           <div className="space-y-4 text-gray-700">
             <p>
               <strong>Data source:</strong> We analyzed all Quest Nutrition and
-              RXBAR products currently in our database. Each product includes
-              verified nutritional information, customer ratings, and pricing
-              data.
+              RXBAR products currently in our database. Nutrition values are as
+              listed in our data; prices are estimates from when each product
+              was added.
             </p>
             <p>
               <strong>Methodology:</strong> For each brand, we calculated the
-              average protein, calories, carbs, sugar, fiber, customer rating,
-              and price per bar. These averages give you a representative view of
+              average protein, calories, carbs, sugar, fiber and estimated
+              price per bar. These averages give you a representative view of
               what to expect from each brand.
             </p>
             <p>
               <strong>Transparency:</strong> This comparison is not sponsored by
               either Quest Nutrition or RXBAR. We evaluated products purely based
-              on their macronutrient profiles, ingredient quality, and real
-              customer reviews. Our goal is to help you make an informed decision
+              on their macronutrient profiles as listed in our data. We earn a
+              commission if you buy through our links. Our goal is to help you make an informed decision
               based on your specific dietary goals.
             </p>
           </div>

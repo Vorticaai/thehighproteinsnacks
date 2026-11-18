@@ -1,13 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import ProductCard from "@/components/snacks/ProductCard";
-import { ProductJsonLd, ItemListJsonLd } from "@/components/seo/jsonld";
+import LabelCard from "@/components/snacks/LabelCard";
+import BuyLink from "@/components/snacks/BuyLink";
+import { JsonLd } from "@/components/seo/jsonld";
 import { getAllProducts, type Product } from "@/lib/products";
-import { weightLossFilter } from "@/lib/categoryFilters";
+import { CATEGORY_THRESHOLDS, weightLossFilter } from "@/lib/categoryFilters";
 import {
   categorySlugs,
   getCategoryDetails,
@@ -15,8 +15,6 @@ import {
   type CategorySlug,
 } from "@/lib/snackFilters";
 import { absoluteUrl } from "@/lib/seo";
-import { categories } from "@/data/categories";
-import type { Category } from "@/data/types";
 
 export const revalidate = 60 * 60 * 6;
 
@@ -78,13 +76,13 @@ function buildPros(product: Product) {
     );
   }
   if (weightLossFilter(product)) {
-    pros.push("Calories stay under typical weight-loss targets");
+    pros.push(`Under ${CATEGORY_THRESHOLDS.weightLossMaxCalories} calories per serving`);
   }
   if (product.fiberPerServing >= 5) {
-    pros.push(`Fiber-rich (${product.fiberPerServing}g) for better satiety`);
+    pros.push(`Fiber-rich (${product.fiberPerServing}g per serving)`);
   }
   if (pros.length < 3) {
-    pros.push(`Balanced macros with ${product.caloriesPerServing} calories`);
+    pros.push(`${product.caloriesPerServing} calories per serving`);
   }
   return pros.slice(0, 4);
 }
@@ -95,7 +93,7 @@ function buildCons(product: Product) {
     cons.push(`Calories run higher (${product.caloriesPerServing} per serving)`);
   }
   if (product.pricePerServing > 2.75) {
-    cons.push(`Premium pricing at ${formatCurrency(product.pricePerServing)}`);
+    cons.push(`Higher estimated price (${formatCurrency(product.pricePerServing)} per serving)`);
   }
   if (product.fatsPerServing > 10) {
     cons.push(`Fat-heavy (${product.fatsPerServing}g) compared to other picks`);
@@ -104,47 +102,46 @@ function buildCons(product: Product) {
     cons.push(`Moderate sugar (${product.sugarPerServing}g)`);
   }
   if (cons.length === 0) {
-    cons.push("Limited flavor variety compared to competitor lines");
-    cons.push("Availability can fluctuate depending on retailer stock");
+    cons.push("No drawbacks on the nutrition numbers we track");
   }
   return cons.slice(0, 3);
 }
 
 function buildBestFor(product: Product) {
   const badges = new Set<string>();
-  if (weightLossFilter(product)) badges.add("Weight Loss");
-  if (product.flags.lowSugar) badges.add("Blood Sugar Control");
-  if (product.flags.keto) badges.add("Keto / Low Carb");
+  if (weightLossFilter(product)) badges.add("Calorie Tracking");
+  if (product.sugarPerServing <= CATEGORY_THRESHOLDS.lowSugarMaxSugarG) badges.add("Low Sugar");
   if (product.flags.vegan) badges.add("Plant-Based");
   if (product.flags.glutenFree) badges.add("Gluten-Free");
   if (product.flags.bars) badges.add("Travel / Gym Bag");
   if (product.flags.chips) badges.add("Crunchy Snack Cravings");
   if (product.proteinPerDollar >= 12) badges.add("Budget-Friendly");
-  if (product.proteinPerServing >= 20) badges.add("Muscle Gain");
+  if (product.proteinPerServing >= CATEGORY_THRESHOLDS.highProteinMinProteinG) badges.add("20g+ Protein");
   return Array.from(badges).slice(0, 6);
 }
 
 function whyWeLikeIt(product: Product) {
   const value = product.proteinPerDollar.toFixed(1);
-  return `${product.name} delivers ${product.proteinPerServing}g protein for only ${product.caloriesPerServing} calories, so you stay full without wasting macros. With ${product.sugarPerServing}g sugar and ${product.fiberPerServing}g fiber, it keeps blood sugar stable while the ${value}g per dollar value beats most grocery store competitors.`;
+  const valueText =
+    product.pricePerServing > 0
+      ? ` At an estimated ${formatCurrency(product.pricePerServing)} per serving, that is about ${value}g of protein per dollar.`
+      : "";
+  return `${product.name} lists ${product.proteinPerServing}g protein, ${product.caloriesPerServing} calories, ${product.sugarPerServing}g sugar and ${product.fiberPerServing}g fiber per serving.${valueText}`;
 }
 
 function buildFaqs(product: Product) {
   const faqs = [
     {
       question: `How much protein is in one serving of ${product.name}?`,
-      answer: `${product.proteinPerServing} grams of protein per serving based on the latest nutrition label.`,
+      answer: `${product.proteinPerServing} grams of protein per serving, according to the product information we hold. Check the package for the current label.`,
     },
     {
       question: `Is ${product.name} good for weight loss?`,
-      answer:
-        weightLossFilter(product)
-          ? "Yes. Its calorie count stays under common deficit targets and the high protein keeps you satisfied between meals."
-          : "It can fit a deficit as long as you budget the calories. Pair it with lighter meals if you are in a cut.",
+      answer: `It has ${product.caloriesPerServing} calories and ${product.proteinPerServing}g protein per serving. No single food causes weight loss; what matters is your overall diet. Ask a doctor or dietitian for personal advice.`,
     },
     {
       question: `How much sugar does ${product.name} have?`,
-      answer: `${product.sugarPerServing} grams of sugar per serving, which keeps energy steady without a crash.`,
+      answer: `${product.sugarPerServing} grams of sugar per serving.`,
     },
     {
       question: "What are the full macros per serving?",
@@ -152,9 +149,7 @@ function buildFaqs(product: Product) {
     },
     {
       question: "Where can I buy it?",
-      answer: product.buyUrl
-        ? `You can buy it directly from the retailer at ${product.buyUrl}.`
-        : "Check major retailers or the brand site for stock updates.",
+      answer: "It is sold by major online retailers, including Amazon, and often in grocery stores. Use the button on this page to check the current price.",
     },
   ];
   return faqs.slice(0, 5);
@@ -210,24 +205,20 @@ export async function generateMetadata({
         title: details.seoTitle,
         description: details.seoDescription,
         alternates: {
-          canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks/${slug}`,
+          canonical: url,
         },
         openGraph: {
           title: details.seoTitle,
           description: details.seoDescription,
-          url: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks/${slug}`,
+          url,
           type: "website",
-          images: [
-            {
-              url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
-            },
-          ],
+          images: [{ url: absoluteUrl("/og-default.jpg") }],
         },
         twitter: {
           card: "summary_large_image",
           title: details.seoTitle,
           description: details.seoDescription,
-          images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
+          images: [absoluteUrl("/og-default.jpg")],
         },
       };
       
@@ -238,14 +229,12 @@ export async function generateMetadata({
     };
   }
 
-  const description = `${product.brand} ${product.name} – ${product.proteinPerServing}g protein, ${product.caloriesPerServing} calories, ${product.sugarPerServing}g sugar per serving. ${formatCurrency(product.pricePerServing)} per serving. Expert review.`;
+  const description = `${product.brand} ${product.name} – ${product.proteinPerServing}g protein, ${product.caloriesPerServing} calories, ${product.sugarPerServing}g sugar per serving. Compare macros and protein per dollar.`;
   const url = absoluteUrl(`/snacks/${product.id}`);
-  const image = product.imageUrl
-    ? absoluteUrl(product.imageUrl)
-    : absoluteUrl("/snacks/placeholder.jpg");
+  const image = absoluteUrl("/og-default.jpg");
 
   return {
-    title: `${product.name} | The High-Protein Snacks`,
+    title: `${product.name}: Protein, Calories & Sugar`,
     description,
     alternates: { canonical: url },
     openGraph: {
@@ -291,10 +280,9 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
 
   const badgeHighlights = [
     `${product.proteinPerServing}g protein`,
-    product.flags.lowSugar ? "Low sugar" : null,
-    weightLossFilter(product) ? "Deficit-friendly" : null,
-    product.flags.keto ? "Keto ready" : null,
-    product.proteinPerDollar >= 12 ? "Great value" : null,
+    product.sugarPerServing <= CATEGORY_THRESHOLDS.lowSugarMaxSugarG ? "Low sugar" : null,
+    weightLossFilter(product) ? `Under ${CATEGORY_THRESHOLDS.weightLossMaxCalories} cal` : null,
+    product.proteinPerDollar >= CATEGORY_THRESHOLDS.bestValueMinProteinPerDollar ? "Good value" : null,
   ].filter(Boolean) as string[];
 
   const pros = buildPros(product);
@@ -304,25 +292,6 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
   const faqs = buildFaqs(product);
   const related = selectRelatedProducts(product, products);
   const showRelated = related.length >= 2;
-
-  const ratingValue = Math.min(
-    4.9,
-    Math.max(4.1, 4 + product.proteinPerServing / 25),
-  );
-  const reviewCount = 120 + Math.round(product.proteinPerDollar * 8);
-
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -335,88 +304,43 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
     })),
   };
 
+  // No ratings, reviews or offers: we have none of our own, and invented
+  // ones break Google's structured-data policies.
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
-    image: absoluteUrl(product.imageUrl || "/snacks/placeholder.jpg"),
     description: whyWeLoveIt,
     brand: { "@type": "Brand", name: product.brand },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: ratingValue.toFixed(1),
-      reviewCount,
-    },
-    offers: {
-      "@type": "Offer",
-      price: product.pricePerServing ? product.pricePerServing.toFixed(2) : "0.00",
-      priceCurrency: "USD",
-      url: product.buyUrl || absoluteUrl(`/snacks/${product.id}`),
-      availability: "https://schema.org/InStock",
-    },
-  };
-
-  const webPageJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: product.name,
-    mainEntity: productJsonLd,
     url: absoluteUrl(`/snacks/${product.id}`),
+    nutrition: {
+      "@type": "NutritionInformation",
+      proteinContent: `${product.proteinPerServing} g`,
+      calories: `${product.caloriesPerServing} calories`,
+      sugarContent: `${product.sugarPerServing} g`,
+      carbohydrateContent: `${product.carbsPerServing} g`,
+      fatContent: `${product.fatsPerServing} g`,
+      fiberContent: `${product.fiberPerServing} g`,
+    },
   };
 
   return (
     <>
-      <ProductJsonLd snack={product} />
-      <Script
-        id={`product-${product.id}-schema`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
-      <Script
-        id={`product-${product.id}-webpage`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
-      />
-      <Script
-        id={`product-${product.id}-breadcrumbs`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <Script
-        id={`product-${product.id}-faq`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      <JsonLd data={productJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
 
       <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbs} />
 
         <section className="mb-10 rounded-3xl border border-gray-200 bg-white shadow-sm">
           <div className="grid gap-8 p-8 lg:grid-cols-[1fr,1.2fr]">
-            <div className="relative overflow-hidden rounded-2xl bg-gray-50">
-              {product.imageUrl ? (
-                <Image
-                  src={product.imageUrl}
-                  alt={product.name}
-                  width={640}
-                  height={640}
-                  className="h-full w-full object-contain p-6"
-                  priority
-                />
-              ) : (
-                <div className="flex h-full min-h-[320px] items-center justify-center text-gray-400">
-                  No image available
-                </div>
-              )}
+            <div className="relative overflow-hidden rounded-2xl">
+              <LabelCard product={product} size="lg" />
             </div>
 
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C6FF47]">
-                Premium Review
+                Product profile
               </p>
               <h1 className="mt-2 text-3xl font-black text-gray-900 sm:text-4xl">
                 {product.name}
@@ -426,14 +350,10 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
               </p>
 
               <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-gray-600">
-                <span className="flex items-center gap-1 text-lg font-bold text-[#0C6C5A]">
-                  ★ {ratingValue.toFixed(1)}
-                </span>
-                <span>{reviewCount}+ verified reviews</span>
                 {product.pricePerServing > 0 && (
                   <span>
-                    {formatCurrency(product.pricePerServing)} / serving •{" "}
-                    {product.proteinPerDollar.toFixed(1)}g per $
+                    Est. {formatCurrency(product.pricePerServing)} / serving •{" "}
+                    {product.proteinPerDollar.toFixed(1)}g protein per $
                   </span>
                 )}
               </div>
@@ -456,15 +376,20 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
               </p>
 
               {product.buyUrl && (
-                <a
+                <BuyLink
                   href={product.buyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  productName={product.name}
+                  productId={product.id}
                   className="mt-6 inline-flex items-center justify-center rounded-full bg-[#C6FF47] px-8 py-3 text-sm font-bold text-black transition hover:bg-[#b7ff1f]"
                 >
-                  Buy now →
-                </a>
+                  Check price on Amazon →
+                </BuyLink>
               )}
+              <p className="mt-3 text-xs text-gray-500">
+                Prices are estimates from when we added this product and change often. Nutrition is
+                per serving as listed in our data; always check the package. We earn a commission if
+                you buy through this link.
+              </p>
             </div>
           </div>
         </section>
@@ -558,7 +483,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
           <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
             <h3 className="text-xl font-bold text-gray-900">Best for</h3>
             <p className="mt-2 text-sm text-gray-600">
-              Use-case badges auto-generated from diet flags.
+              Based on the nutrition numbers above.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {bestFor.map((badge) => (
@@ -573,7 +498,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
           </div>
 
           <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-gray-900">Why we like it</h3>
+            <h3 className="text-xl font-bold text-gray-900">Summary</h3>
             <p className="mt-3 text-sm leading-relaxed text-gray-600">
               {whyWeLoveIt}
             </p>
@@ -581,7 +506,7 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
         </section>
 
         <section className="mb-10 rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
-          <h3 className="text-xl font-bold text-gray-900">Auto-generated FAQs</h3>
+          <h3 className="text-xl font-bold text-gray-900">Quick answers</h3>
           <div className="mt-4 space-y-4">
             {faqs.map((faq) => (
               <details
@@ -624,14 +549,14 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
             <p className="mt-2 text-sm text-gray-600">
               Tap below to check the latest price and availability.
             </p>
-            <a
+            <BuyLink
               href={product.buyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              productName={product.name}
+              productId={product.id}
               className="mt-4 inline-flex items-center justify-center rounded-full bg-[#0C6C5A] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#0a5546]"
             >
-              Buy {product.name}
-            </a>
+              Check price for {product.name}
+            </BuyLink>
           </section>
         )}
       </main>
@@ -644,17 +569,6 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
   if (!details) notFound();
 
   const products = getProductsByCategory(slug);
-  const category =
-    categories.find((cat) => cat.slug === slug) ??
-    ({
-      id: `category-${slug}`,
-      slug: slug as Category["slug"],
-      title: details.title,
-      description: details.description,
-      primaryKeyword: details.title,
-      secondaryKeywords: [],
-      heroCopy: details.description,
-    } as Category);
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Snacks", href: "/snacks" },
@@ -694,25 +608,9 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
 
   return (
     <>
-      <ItemListJsonLd category={category} snacks={products} />
-      <Script
-        id={`category-${slug}-itemlist`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
-      />
-      <Script
-        id={`category-${slug}-breadcrumbs`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <Script
-        id={`category-${slug}-webpage`}
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
-      />
+      <JsonLd data={itemListJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={webPageJsonLd} />
 
       <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbItems} />

@@ -1,8 +1,6 @@
 import type { Product } from "./products"
 import { getAllProducts } from "./products"
-import { weightLossFilter } from "./categoryFilters"
-
-type FlagKey = keyof Product["flags"]
+import { CATEGORY_THRESHOLDS as T, categoryFilters } from "./categoryFilters"
 
 export type CategorySlug =
   | "weight-loss"
@@ -18,23 +16,8 @@ export type CategorySlug =
   | "chips"
   | "best-value"
 
-
-  const slugToFlag: Record<CategorySlug, FlagKey> = {
-    "weight-loss": "weightLoss",
-    "high-protein": "highProtein",
-    "low-carb": "lowCarb",
-    keto: "keto",
-    "low-sugar": "lowSugar",
-    "gluten-free": "glutenFree",
-    vegan: "vegan",
-    "plant-based": "plantBased",
-    halal: "halal",
-    "protein-bars": "bars",
-    chips: "chips",
-    "best-value": "budget",
-  }
-  
-
+// Copy rule: describe the filter honestly. No certification, medical or
+// weight-loss promises; diet tags are as listed by the product, not verified.
 const categoryDetails: Record<
   CategorySlug,
   {
@@ -45,113 +28,99 @@ const categoryDetails: Record<
   }
 > = {
   "weight-loss": {
-    title: "Best Weight Loss High-Protein Snacks",
-    description:
-      "Snacks under 200 calories that deliver serious protein so you can stay full, crush cravings, and keep your deficit on track.",
-    seoTitle: "Best Weight Loss High-Protein Snacks",
-    seoDescription:
-      "Hand-picked low-calorie, high-protein snacks that support fat loss without hunger. Compare macros, sugar, and price per serving.",
+    title: "High-Protein Snacks for Weight Loss (Under 200 Calories)",
+    description: `Snacks under ${T.weightLossMaxCalories} calories with at least ${T.weightLossMinProteinG}g protein and no more than ${T.weightLossMaxSugarG}g sugar per serving. Useful if you are tracking calories; no snack causes weight loss on its own.`,
+    seoTitle: "High-Protein Snacks for Weight Loss: Under 200 Calories",
+    seoDescription: `High-protein snacks under ${T.weightLossMaxCalories} calories per serving. Compare protein, sugar and price per serving side by side.`,
   },
 
   "high-protein": {
-    title: "High-Protein All-Stars",
-    description:
-      "The highest-protein picks in the database — 20g+ per serving with balanced calories for post-workout or meal replacement.",
-    seoTitle: "Top High-Protein Snacks (20g+ per serving)",
-    seoDescription:
-      "Browse snacks that pack 20g+ protein per serving. Perfect for building muscle, curbing hunger, and simplifying macro tracking.",
+    title: `High-Protein Snacks (${T.highProteinMinProteinG}g+)`,
+    description: `Snacks with ${T.highProteinMinProteinG}g or more protein per serving.`,
+    seoTitle: `High-Protein Snacks with ${T.highProteinMinProteinG}g+ Protein per Serving`,
+    seoDescription: `Browse snacks with ${T.highProteinMinProteinG}g or more protein per serving and compare calories, sugar and price.`,
   },
 
   "low-carb": {
     title: "Low-Carb Protein Snacks",
-    description:
-      "For carb-conscious eaters who still want flavor — each option keeps carbs tight while delivering satisfying protein.",
-    seoTitle: "Best Low-Carb High-Protein Snacks",
-    seoDescription:
-      "Low-carb snacks with the macros you need for cutting and carb cycling. Filtered for low net carbs and clean ingredients.",
+    description: `Snacks with ${T.lowCarbMaxNetCarbsG}g or fewer net carbs (total carbs minus fiber) per serving.`,
+    seoTitle: "Low-Carb High-Protein Snacks",
+    seoDescription: `Protein snacks with ${T.lowCarbMaxNetCarbsG}g or fewer net carbs per serving. Compare macros and price per serving.`,
   },
 
   keto: {
     title: "Keto-Friendly Protein Snacks",
-    description:
-      "Under 10g net carbs with the fat and protein balance you need to stay keto while keeping hunger away.",
-    seoTitle: "Keto High-Protein Snacks & Bars",
-    seoDescription:
-      "Stay in ketosis with these low-net-carb protein bars, chips, and shakes. Every pick keeps sugar minimal and protein high.",
+    description: `Snacks with ${T.ketoMaxNetCarbsG}g or fewer net carbs and ${T.ketoMaxSugarG}g or less sugar per serving. Check sugar alcohols on the label if you track them.`,
+    seoTitle: "Keto-Friendly High-Protein Snacks",
+    seoDescription: `Protein bars, chips and shakes with ${T.ketoMaxNetCarbsG}g or fewer net carbs per serving. Compare macros side by side.`,
   },
 
   "low-sugar": {
-    title: "Low-Sugar Snacks (≤3g)",
-    description:
-      "Tight sugar control without sacrificing flavor. Perfect for metabolic health, diabetes-friendly eating, and appetite control.",
+    title: `Low-Sugar Snacks (≤${T.lowSugarMaxSugarG}g)`,
+    description: `Every snack here lists ${T.lowSugarMaxSugarG}g of sugar or less per serving.`,
     seoTitle: "Low-Sugar High-Protein Snacks",
-    seoDescription:
-      "Every snack here has 3 grams of sugar or less. Ideal for blood sugar control, weight loss, and steady energy.",
+    seoDescription: `High-protein snacks with ${T.lowSugarMaxSugarG}g of sugar or less per serving. Compare protein, calories and price.`,
   },
 
   "gluten-free": {
     title: "Gluten-Free Protein Snacks",
     description:
-      "Certified gluten-free picks that deliver macro-friendly nutrition without cross-contamination worries.",
+      "Snacks listed as gluten-free by the product information we hold. We have not verified certification. If you have coeliac disease, check the package and the brand before buying.",
     seoTitle: "Gluten-Free High-Protein Snacks",
     seoDescription:
-      "Shop gluten-free protein snacks vetted for celiac safety. Bars, chips, and shakes with great macros.",
+      "High-protein snacks listed as gluten-free. Compare macros and price per serving; always check the label if you have coeliac disease.",
   },
 
   vegan: {
     title: "Vegan Protein Snacks",
     description:
-      "Pea, rice, and nut-based proteins with clean ingredients so you can hit your targets without dairy or whey.",
-    seoTitle: "Best Vegan High-Protein Snacks",
+      "Snacks listed as vegan or plant-based by the product information we hold. Check the label to confirm.",
+    seoTitle: "Vegan High-Protein Snacks",
     seoDescription:
-      "Plant-based snacks that deliver 12–20g protein. Perfect for vegans, dairy-free eaters, and gentle digestion.",
+      "Plant-based protein snacks compared by protein, sugar, calories and price per serving.",
   },
 
   "plant-based": {
     title: "Plant-Based Protein Snacks",
     description:
-      "Vegan and plant-powered snacks made from pea, rice, and nut proteins — macro-balanced and dairy-free.",
-    seoTitle: "Best Plant-Based High-Protein Snacks",
+      "Snacks listed as vegan or plant-based by the product information we hold. Check the label to confirm.",
+    seoTitle: "Plant-Based High-Protein Snacks",
     seoDescription:
-      "Top vegan and plant-based protein snacks with clean ingredients and 10–20g protein per serving.",
+      "Plant-based protein snacks compared by protein, sugar, calories and price per serving.",
   },
 
   halal: {
     title: "Halal Protein Snacks",
     description:
-      "Certified Halal protein snacks with clean ingredients and reliable macros for everyday snacking.",
-    seoTitle: "Best Halal Protein Snacks",
+      "Snacks marketed as halal by their brand. We have not verified halal certification; check the package and the certifier before buying.",
+    seoTitle: "Halal High-Protein Snacks",
     seoDescription:
-      "Browse Halal-certified high-protein snacks with trustworthy ingredients, low sugar, and great macros.",
+      "High-protein snacks marketed as halal, compared by protein, sugar and price per serving. Check certification on the package.",
   },
 
   "protein-bars": {
-    title: "Protein Bars Worth Buying",
-    description:
-      "The most reliable protein bars for travel, work, and gym bags. Ranked by protein density, flavor, and ingredient quality.",
-    seoTitle: "Best Protein Bars (Ranked by Macros)",
+    title: "Protein Bars Compared",
+    description: "Protein bars compared by protein, calories, sugar and price per serving.",
+    seoTitle: "Protein Bars Compared by Macros and Price",
     seoDescription:
-      "Discover the best protein bars on the market with verified macros, low sugar, and great taste.",
+      "Compare protein bars by protein per serving, sugar, calories and protein per dollar.",
   },
 
   chips: {
     title: "High-Protein Chips & Crunchy Snacks",
-    description:
-      "Savory, crunchy, high-protein chips that replace junk food without sacrificing flavor or macros.",
+    description: "Protein chips, puffs and crisps compared by macros and price per serving.",
     seoTitle: "High-Protein Chips & Crunchy Snacks",
     seoDescription:
-      "Quest-style chips, puffs, and crisps delivering protein with bold flavors. Perfect for salty snack cravings.",
+      "Compare protein chips, puffs and crisps by protein, calories, sugar and price per serving.",
   },
 
   "best-value": {
     title: "Best Value Protein Snacks",
-    description:
-      "Snacks ranked by the best protein-per-dollar ratio — get the most grams of protein for every $1 spent.",
-    seoTitle: "Best Value Protein Snacks | The High Protein Snacks",
+    description: `Snacks with at least ${T.bestValueMinProteinPerDollar}g of protein per $1, ranked by protein per dollar. Prices are estimates from when each product was added and change often.`,
+    seoTitle: "Best Value Protein Snacks (Protein per Dollar)",
     seoDescription:
-      "Find high-protein snacks with unbeatable value. Ranked by protein per dollar to help you snack smarter on a budget.",
+      "High-protein snacks ranked by grams of protein per dollar. Prices are estimates; check the retailer for the current price.",
   },
-
 }
 
 export const categorySlugs = Object.keys(categoryDetails) as CategorySlug[]
@@ -160,73 +129,12 @@ export function getCategoryDetails(slug: CategorySlug) {
   return categoryDetails[slug]
 }
 
-function filterByFlag(flag: FlagKey): Product[] {
-  return getAllProducts().filter((product) => product.flags[flag])
-}
-
-export function getWeightLossSnacks(): Product[] {
-  return getAllProducts().filter(weightLossFilter)
-}
-
-export function getHighProteinSnacks(): Product[] {
-  return filterByFlag("highProtein")
-}
-
-export function getLowCarbSnacks(): Product[] {
-  return filterByFlag("lowCarb")
-}
-
-export function getKetoSnacks(): Product[] {
-  return filterByFlag("keto")
-}
-
-export function getLowSugarSnacks(): Product[] {
-  return filterByFlag("lowSugar")
-}
-
-export function getGlutenFreeSnacks(): Product[] {
-  return filterByFlag("glutenFree")
-}
-
-export function getVeganSnacks(): Product[] {
-  return filterByFlag("vegan")
-}
-
-export function getBars(): Product[] {
-  return filterByFlag("bars")
-}
-
-export function getChips(): Product[] {
-  return filterByFlag("chips")
-}
-
-export function getHalalSnacks(): Product[] {
-  return getAllProducts().filter(
-    (p) =>
-      (p.dietTags ?? []).includes("halal") ||
-      (p.categoryTags ?? []).includes("halal")
-  );
-}
-
-
 export function getProductsByCategory(slug: CategorySlug): Product[] {
-  if (slug === "weight-loss") {
-    return getWeightLossSnacks();
-  }
-
-  if (slug === "halal") {
-    return getHalalSnacks();
-  }
-
+  const filter = categoryFilters[slug]
+  if (!filter) return []
+  const products = getAllProducts().filter(filter)
   if (slug === "best-value") {
-    return getAllProducts().filter((p) => p.proteinPerDollar >= 12);
+    return [...products].sort((a, b) => b.proteinPerDollar - a.proteinPerDollar)
   }
-
-  const flag = slugToFlag[slug];
-  if (!flag) return [];
-
-  return filterByFlag(flag);
+  return products
 }
-
-
-

@@ -10,7 +10,7 @@ import { AdSlot } from "@/components/ads/AdSlot";
 
 export const revalidate = 60 * 60 * 6; // 21600 seconds
 
-const PAGE_URL = `${process.env.NEXT_PUBLIC_SITE_URL}/snacks`;
+const PAGE_URL = `https://www.thehighproteinsnacks.com/snacks`;
 
 const heroCopy = {
   title: "Snack Categories Built for Real Goals",
@@ -36,31 +36,31 @@ const categoryCards: CategoryCard[] = [
   },
   {
     title: "Low Sugar",
-    description: "≤2g sugar for stable energy and blood-sugar control.",
+    description: "3g of sugar or less per serving.",
     slug: "low-sugar",
     filter: categoryFilters["low-sugar"],
   },
   {
     title: "Weight Loss",
-    description: "Under 200 calories with 5g+ protein.",
+    description: "Under 200 calories with 10g+ protein per serving.",
     slug: "weight-loss",
     filter: categoryFilters["weight-loss"],
   },
   {
     title: "Keto Friendly",
-    description: "Low net carbs — under 10g net carbs.",
+    description: "10g or fewer net carbs per serving.",
     slug: "keto",
     filter: categoryFilters["keto"],
   },
   {
     title: "Plant-Based",
-    description: "Vegan and plant-powered protein picks.",
+    description: "Listed as vegan or plant-based.",
     slug: "vegan",
     filter: categoryFilters["vegan"],
   },
   {
     title: "Gluten-Free",
-    description: "Snacks suitable for gluten-sensitive diets.",
+    description: "Listed as gluten-free; certification not verified.",
     slug: "gluten-free",
     filter: categoryFilters["gluten-free"] ?? (() => false),
   },
@@ -68,7 +68,7 @@ const categoryCards: CategoryCard[] = [
   // ⭐ NEW: HALAL CATEGORY
   {
     title: "Halal",
-    description: "Certified Halal high-protein snacks.",
+    description: "High-protein snacks marketed as halal by the brand.",
     slug: "halal",
     filter: categoryFilters["halal"],
   },
@@ -79,17 +79,17 @@ export const metadata: Metadata = {
   description:
     "Browse snacks by category — low sugar, keto, vegan, weight loss, best value, gluten-free and more.",
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks`,
+    canonical: `https://www.thehighproteinsnacks.com/snacks`,
   },
   openGraph: {
     title: "High-Protein Snack Categories",
     description:
       "Filter snacks by low sugar, weight loss, keto, vegan, gluten-free and more.",
-    url: `${process.env.NEXT_PUBLIC_SITE_URL}/snacks`,
+    url: `https://www.thehighproteinsnacks.com/snacks`,
     type: "website",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`,
+        url: `https://www.thehighproteinsnacks.com/og-default.jpg`,
       },
     ],
   },
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     title: "High-Protein Snack Categories",
     description:
       "Browse snack categories based on macros, diet tags, and health goals.",
-    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/og-default.jpg`],
+    images: [`https://www.thehighproteinsnacks.com/og-default.jpg`],
   },
 };
 

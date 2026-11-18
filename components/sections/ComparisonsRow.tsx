@@ -3,7 +3,7 @@ import Link from "next/link";
 const items = [
   {
     title: "Weight Loss vs Keto Snacks",
-    description: "When to pick fat-burning keto macros vs tighter calorie control.",
+    description: "How keto macros compare with simple calorie control.",
     slug: "best-keto-snacks",
   },
   {
@@ -13,7 +13,7 @@ const items = [
   },
   {
     title: "Low Sugar vs High Protein",
-    description: "Balance blood sugar control with 20g+ protein servings.",
+    description: "Low sugar and 20g+ protein: which snacks do both.",
     slug: "best-low-sugar-high-protein-snacks",
   },
 ];

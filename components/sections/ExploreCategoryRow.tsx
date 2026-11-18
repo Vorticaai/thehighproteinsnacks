@@ -21,21 +21,21 @@ const exploreCategories: ExploreCategory[] = [
   {
     slug: "low-sugar",
     title: "Low Sugar",
-    desc: "≤2g sugar to prevent insulin spikes",
+    desc: "3g of sugar or less per serving",
     icon: "🍬",
     href: "/snacks/low-sugar",
   },
   {
     slug: "weight-loss",
     title: "Weight Loss",
-    desc: "Under 200 calories, designed to keep you full",
+    desc: "Under 200 calories with 10g+ protein",
     icon: "⚖️",
     href: "/snacks/weight-loss",
   },
   {
     slug: "keto",
     title: "Keto",
-    desc: "Low net carbs with serious flavor",
+    desc: "10g or fewer net carbs per serving",
     icon: "🥑",
     href: "/snacks/keto",
   },
@@ -51,7 +51,7 @@ const exploreCategories: ExploreCategory[] = [
   {
     slug: "halal",
     title: "Halal Snacks",
-    desc: "Certified halal high-protein picks",
+    desc: "Marketed as halal by the brand",
     icon: "🕌",
     href: "/snacks/halal",
   },

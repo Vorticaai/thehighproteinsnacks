@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { getAllProducts, type Product } from "@/lib/products"
 
@@ -64,14 +63,12 @@ export default function TopRankingsToday() {
             </p>
 
             <div className="flex items-center gap-4">
-              <div className="relative h-16 w-16 flex-shrink-0 overflow-hidden rounded-lg bg-gray-100">
-                <Image
-                  src={snack.imageUrl}
-                  alt={snack.name}
-                  fill
-                  sizes="64px"
-                  className="object-cover"
-                />
+              <div
+                aria-hidden="true"
+                className="flex h-16 w-16 flex-shrink-0 flex-col items-center justify-center rounded-lg bg-[#0B1F1E] text-white"
+              >
+                <span className="text-lg font-black leading-none">{snack.proteinPerServing}g</span>
+                <span className="text-[9px] uppercase tracking-wide text-[#C6FF47]">protein</span>
               </div>
 
               <div className="flex-1">

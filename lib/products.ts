@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import Papa from "papaparse"
+import { weightLossFilter } from "./categoryFilters"
 
 export type ProductFlags = {
   weightLoss?: boolean
@@ -100,7 +101,16 @@ export function getAllProducts(): Product[] {
     Boolean(row?.ID && row?.Product_Name),
   )
 
-  productCache = rows.map((row) => normalizeRow(row))
+  // Drop duplicate IDs (first row wins) so each product has one URL.
+  const seen = new Set<string>()
+  const uniqueRows = rows.filter((row) => {
+    const id = row.ID.trim()
+    if (seen.has(id)) return false
+    seen.add(id)
+    return true
+  })
+
+  productCache = uniqueRows.map((row) => normalizeRow(row))
 
   return productCache
 }
@@ -137,7 +147,6 @@ function detectGlutenFree(brandRaw: string, productNameRaw: string): boolean {
   return (
     text.includes("gluten free") ||
     text.includes("gluten-free") ||
-    text.includes("gf") ||
     text.includes("glutenfree") ||
     text.includes("celiac") ||
     text.includes("coeliac") ||
@@ -177,7 +186,10 @@ function normalizeRow(row: RawProductRow): Product {
     netCarbs,
     pricePerServing: price,
     buyUrl: row.buyUrl?.trim() ?? "",
-    imageUrl: buildImagePath(row.imageFileName),
+    // Product photos were removed (they were copied from Amazon listings).
+    // Pages show a generated LabelCard instead. imageFileName stays in the CSV
+    // only as a record of the old file name.
+    imageUrl: "",
     proteinPerDollar: price > 0 ? Number((protein / price).toFixed(2)) : 0,
     type: normalizeProductType(row.type),
     flags: {
@@ -248,7 +260,8 @@ function toBool(value: string | undefined, key: string): boolean {
   if (truthy.includes(normalized)) return true
   if (falsy.includes(normalized)) return false
 
-  return normalized === key.toLowerCase() || normalized.length > 0
+  // Anything unrecognised is treated as "not set", never as true.
+  return normalized === key.toLowerCase()
 }
 
 function normalizeProductType(value: string | undefined): string | undefined {
@@ -268,18 +281,6 @@ function normalizeProductType(value: string | undefined): string | undefined {
   return typeMap[normalized] ?? normalized
 }
 
-function buildImagePath(fileName: string | undefined): string {
-  if (!fileName) return "/snacks/placeholder.jpg";
-  const trimmed = fileName.trim();
-
-  // Remove accidental /public prefix
-  const cleaned = trimmed.replace(/^\/?public\//, "");
-
-  if (cleaned.startsWith("http")) return cleaned;
-  if (cleaned.startsWith("/snacks/")) return cleaned;
-
-  return `/snacks/${cleaned}`;
-}
 
 
 
@@ -301,11 +302,11 @@ function buildAutoContent(product: Product) {
   const categoryTags = [
     ...(product.categoryTags ?? []),
     product.flags.halal && "halal",
-    qualifiesForWeightLoss(product) && "weight-loss",
+    weightLossFilter(product) && "weight-loss",
     product.flags.lowSugar && "low-sugar",
     product.flags.glutenFree && "gluten-free",
     product.flags.budget && "best-value",
-    product.proteinPerServing >= 15 && "high-protein",
+    product.proteinPerServing >= 20 && "high-protein",
     product.type === "bar" && "protein-bars",
     product.type === "chips" && "protein-chips",
     product.type === "cookie" && "protein-cookies",
@@ -324,9 +325,7 @@ function buildAutoContent(product: Product) {
   const faq = [
     {
       question: `Is ${product.name} good for weight loss?`,
-      answer: qualifiesForWeightLoss(product)
-        ? "Yes. Its calories stay under common deficit targets and the protein keeps you satisfied."
-        : "It can fit a deficit if you budget the calories with lighter meals.",
+      answer: `It has ${product.caloriesPerServing} calories and ${product.proteinPerServing}g protein per serving. No single food causes weight loss; what matters is your overall diet.`,
     },
     {
       question: `What are the macros per serving?`,
@@ -335,7 +334,7 @@ function buildAutoContent(product: Product) {
   ]
 
   const description = `${product.brand} ${product.name} delivers ${product.proteinPerServing}g protein for ${product.caloriesPerServing} calories per serving.`
-  const whyGreat = `${product.name} balances macros so you stay full without blowing your budget or calories.`
+  const whyGreat = `${product.name} has ${product.proteinPerServing}g protein and ${product.caloriesPerServing} calories per serving.`
   const nutritionBreakdown = `Protein ${product.proteinPerServing}g · Carbs ${product.carbsPerServing}g · Fat ${product.fatsPerServing}g · Sugar ${product.sugarPerServing}g`
   const ingredientsHighlight =
     "See retailer listing for the most up-to-date ingredient list."
@@ -350,23 +349,7 @@ function buildAutoContent(product: Product) {
     whyGreat,
     nutritionBreakdown,
     ingredientsHighlight,
-    rating: 4.6,
-    reviewCount: 180,
     isHero: false,
   }
 }
 
-function qualifiesForWeightLoss(product: {
-  caloriesPerServing: number
-  proteinPerServing: number
-  sugarPerServing: number
-  brand: string
-}) {
-  return (
-    (product.caloriesPerServing < 200 &&
-      product.proteinPerServing >= 5 &&
-      product.sugarPerServing <= 5) ||
-    product.brand.toLowerCase().includes("chomps")
-  )
-  
-}

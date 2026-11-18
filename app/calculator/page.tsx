@@ -4,6 +4,13 @@ import CalculatorForm from "@/components/calculator/CalculatorForm"
 
 export const revalidate = 3600 // 1 hour
 
+export const metadata = {
+  title: "Protein Calculator | The High Protein Snacks",
+  description:
+    "Work out how much protein you need per day and which snacks help you reach it, compared by protein per serving and per dollar.",
+  alternates: { canonical: "/calculator" },
+}
+
 export default function CalculatorPage() {
   const products = getAllProducts()
 

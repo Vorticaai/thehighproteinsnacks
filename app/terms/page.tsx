@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms of Use – The High Protein Snacks",
   description:
     "Read the terms of use and affiliate disclosure for The High Protein Snacks.",

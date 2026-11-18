@@ -1,38 +1,62 @@
 import type { Product } from "@/lib/products"
 
+/**
+ * Single source of truth for category membership.
+ *
+ * Every category count, category page, homepage section and sitemap entry
+ * must use these functions, so counts and listings can never disagree.
+ * Numeric thresholds live in CATEGORY_THRESHOLDS so copy can quote them.
+ *
+ * Diet claims (vegan, gluten-free, halal) come from product data only and
+ * are NOT verified certifications. Page copy must say so.
+ */
+
 type CategoryFilter = (product: Product) => boolean
+
+export const CATEGORY_THRESHOLDS = {
+  lowSugarMaxSugarG: 3,
+  highProteinMinProteinG: 20,
+  ketoMaxNetCarbsG: 10,
+  ketoMaxSugarG: 5,
+  lowCarbMaxNetCarbsG: 15,
+  weightLossMaxCalories: 200,
+  weightLossMinProteinG: 10,
+  weightLossMaxSugarG: 5,
+  bestValueMinProteinPerDollar: 12,
+} as const
+
+const T = CATEGORY_THRESHOLDS
+
 type WeightLossComparable = Pick<
   Product,
-  "caloriesPerServing" | "proteinPerServing" | "sugarPerServing" | "brand"
+  "caloriesPerServing" | "proteinPerServing" | "sugarPerServing"
 >
 
-const hasPositiveValue = (value: number | undefined): boolean =>
-  typeof value === "number" && Number.isFinite(value) && value > 0
-
 export const weightLossFilter = (p: WeightLossComparable) =>
-  (p.caloriesPerServing < 200 && p.proteinPerServing >= 5 && p.sugarPerServing <= 5) ||
-  p.brand.toLowerCase().includes("chomps")
+  p.caloriesPerServing > 0 &&
+  p.caloriesPerServing < T.weightLossMaxCalories &&
+  p.proteinPerServing >= T.weightLossMinProteinG &&
+  p.sugarPerServing <= T.weightLossMaxSugarG
+
+const netCarbs = (p: Product) =>
+  typeof p.netCarbs === "number" ? p.netCarbs : Math.max(p.carbsPerServing - p.fiberPerServing, 0)
 
 export const categoryFilters: Record<string, CategoryFilter> = {
- "best-value": (product) => product.proteinPerDollar >= 12,
-  "low-sugar": (product) => product.flags?.lowSugar === true,
-  "weight-loss": (product) => weightLossFilter(product),
-  keto: (product) =>
-    typeof product.netCarbs === "number" &&
-    product.netCarbs <= 10 &&
-    product.sugarPerServing <= 5 &&
-    product.caloriesPerServing <= 250 &&
-    product.proteinPerServing >= 10,
-  
-  "high-protein": (product) => product.proteinPerServing >= 15,
-  vegan: (product) => product.flags?.vegan === true,
-  "gluten-free": (product) => product.flags?.glutenFree === true,
-  budget: (product) => product.flags?.budget === true,
-  "protein-bars": (product) => product.type === "bar",
-  "protein-chips": (product) => product.type === "chips",
-  "protein-cookies": (product) => product.type === "cookie",
-  halal: (product) =>
-    product.flags?.halal === true ||
-    (product.dietTags ?? []).includes("halal") ||
-    (product.categoryTags ?? []).includes("halal"),
+  "best-value": (p) =>
+    p.pricePerServing > 0 && p.proteinPerDollar >= T.bestValueMinProteinPerDollar,
+  "low-sugar": (p) => p.sugarPerServing <= T.lowSugarMaxSugarG,
+  "weight-loss": (p) => weightLossFilter(p),
+  keto: (p) => netCarbs(p) <= T.ketoMaxNetCarbsG && p.sugarPerServing <= T.ketoMaxSugarG,
+  "low-carb": (p) => netCarbs(p) <= T.lowCarbMaxNetCarbsG,
+  "high-protein": (p) => p.proteinPerServing >= T.highProteinMinProteinG,
+  vegan: (p) => p.flags?.vegan === true,
+  "plant-based": (p) => p.flags?.plantBased === true || p.flags?.vegan === true,
+  "gluten-free": (p) => p.flags?.glutenFree === true,
+  halal: (p) => p.flags?.halal === true,
+  "protein-bars": (p) => p.flags?.bars === true,
+  chips: (p) => p.flags?.chips === true,
+}
+
+export function filterForCategory(slug: string): CategoryFilter | undefined {
+  return categoryFilters[slug]
 }
