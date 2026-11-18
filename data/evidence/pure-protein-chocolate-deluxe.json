@@ -125,14 +125,14 @@
     ]
   },
   "before": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 BAR / 50 grm",
+    "servingSizeG": 50,
     "protein": 21,
     "calories": 180,
     "carbs": 17,
     "fiber": 2,
     "sugar": 3,
-    "fat": 5
+    "fat": 4.5
   },
   "after": {
     "servingSize": "1 BAR / 50 grm",

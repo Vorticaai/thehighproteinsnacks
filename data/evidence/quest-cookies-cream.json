@@ -125,11 +125,11 @@
     ]
   },
   "before": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 60 grm",
+    "servingSizeG": 60,
     "protein": 21,
     "calories": 190,
-    "carbs": 4,
+    "carbs": 21,
     "fiber": 13,
     "sugar": 1,
     "fat": 8

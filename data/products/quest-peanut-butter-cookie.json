@@ -10,12 +10,12 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 5,
-    "calories": 210,
-    "carbs": 5,
-    "fiber": 11,
+    "servingSize": "1 cookie / 58 grm",
+    "servingSizeG": 58,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 12,
     "sugar": 1,
     "fat": 13
   },
@@ -28,8 +28,8 @@
   },
   "identifiers": {
     "asin": "B07JLQTN5P",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "888849006045",
+    "fdcId": 2669722
   },
   "image": {
     "src": "/products/quest-peanut-butter-cookie.jpg",
@@ -37,15 +37,45 @@
     "credit": "Open Food Facts contributors",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://world.openfoodfacts.org/product/0888849006038"
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849006045"
   },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-18",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669722",
+        "url": "https://fdc.nal.usda.gov/food-details/2669722/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 15,
+          "calories": 220,
+          "carbs": 22,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 13
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849006045",
+        "url": "https://world.openfoodfacts.org/product/0888849006045",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 15,
+          "calories": 210,
+          "carbs": 22,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 13
+        }
+      }
+    ],
     "notes": [
-      "Brand matches and 100% of product words found.",
-      "USDA and Open Food Facts disagree (calories: 250 vs 210; carbs: 18 vs 23; fiber: 8.99 vs 12; fat: 17 vs 13)."
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: trying the newer 'Soft & Chewy' USDA record (2023); the first match was last updated in 2019."
     ]
   }
 }

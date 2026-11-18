@@ -2,106 +2,69 @@
   "checkedAt": "2026-11-18",
   "query": "Quest Protein Cookie Peanut Butter",
   "match": {
-    "pinned": false,
+    "pinned": true,
     "confident": true,
-    "reason": "Brand matches and 100% of product words found.",
+    "reason": "Pinned by a person after review.",
     "chosen": {
-      "fdcId": 2669721,
-      "description": "PROTEIN COOKIE, PEANUT BUTTER",
-      "brandOwner": "Quest Nutrition, LLC",
-      "brandName": "QUEST",
-      "gtinUpc": "888849006038",
-      "publishedDate": "2023-11-16",
-      "score": 1,
-      "brandOk": true
+      "fdcId": 2669722,
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2669721,
-        "description": "PROTEIN COOKIE, PEANUT BUTTER",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849006038",
-        "publishedDate": "2023-11-16",
-        "score": 1,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2669722,
-        "description": "PEANUT BUTTER SOFT & CHEWY PROTEIN COOKIES, PEANUT BUTTER",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849006045",
-        "publishedDate": "2023-11-16",
-        "score": 1,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2511701,
-        "description": "PEANUT BUTTER SOFT & CHEWY PROTEIN COOKIES, PEANUT BUTTER",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849006052",
-        "publishedDate": "2023-03-16",
-        "score": 1,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2503880,
-        "description": "SEA QUEST EGG HUNT, SEA QUEST",
-        "brandOwner": "Bee International, Inc.",
-        "brandName": "BEE",
-        "gtinUpc": "073563004792",
-        "publishedDate": "2023-03-16",
-        "score": 0,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
-    "fdcId": 2669721,
-    "description": "PROTEIN COOKIE, PEANUT BUTTER",
+    "fdcId": 2669722,
+    "description": "PEANUT BUTTER SOFT & CHEWY PROTEIN COOKIES, PEANUT BUTTER",
     "brandOwner": "Quest Nutrition, LLC",
     "brandName": "QUEST",
-    "gtinUpc": "888849006038",
+    "gtinUpc": "888849006045",
     "servingSize": 58,
     "servingSizeUnit": "GRM",
-    "householdServingFullText": "1 COOKIE",
+    "householdServingFullText": "1 cookie",
     "dataSource": "LI",
-    "modifiedDate": "3/23/2019",
-    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), PEANUT BUTTER, SOLUBLE CORN FIBER, PALM OIL, BUTTER (CREAM), ERYTHRITOL, WATER, CALCIUM CASEINATE, PEANUTS, NATURAL FLAVORS. CONTAINS LESS THAN 2% OF THE FOLLOWING: SUNFLOWER LECITHIN, SEA SALT, BAKING SODA, XANTHAN GUM, STEVIOL GLYCOSIDES (STEVIA).",
+    "modifiedDate": "11/25/2022",
+    "ingredients": "PEANUTS, SOLUBLE CORN FIBER, PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), WATER, ERYTHRITOL, BUTTER (CREAM, NATURAL FLAVOR), NATURAL FLAVORS, CALCIUM CASEINATE. CONTAINS LESS THAN 2% OF THE FOLLOWING: SEA SALT, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), XANTHAN GUM, BAKING SODA, STEVIA SWEETENER.",
     "perServing": {
       "protein": 15,
-      "calories": 250,
-      "carbs": 18,
-      "fiber": 8.99,
-      "sugar": 2,
-      "fat": 17,
-      "servingSize": "1 COOKIE / 58 grm",
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 12,
+      "sugar": 0.998,
+      "fat": 13,
+      "servingSize": "1 cookie / 58 grm",
       "servingSizeG": 58
     }
   },
   "openFoodFacts": {
-    "code": "0888849006038",
-    "product_name": "Protein Cookie Peanut Butter",
+    "code": "0888849006045",
+    "product_name": "Protein Cookie",
     "brands": "Quest",
     "serving_size": "1 cookie (58 g)",
     "perServing": {
       "protein": 15,
       "calories": 210,
-      "carbs": 23,
+      "carbs": 22,
       "fiber": 12,
       "sugar": 1,
       "fat": 13,
       "servingSize": "1 cookie (58 g)",
       "servingSizeG": 58
     },
-    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/900/6038/front_en.19.400.jpg"
+    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/900/6045/front_en.4.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 12,
+      "sugar": 0.998,
+      "fat": 13,
+      "servingSize": "1 cookie / 58 grm",
+      "servingSizeG": 58
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (calories: 250 vs 210; carbs: 18 vs 23; fiber: 8.99 vs 12; fat: 17 vs 13)."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -115,12 +78,12 @@
     "fat": 13
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 5,
-    "calories": 210,
-    "carbs": 5,
-    "fiber": 11,
+    "servingSize": "1 cookie / 58 grm",
+    "servingSizeG": 58,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 12,
     "sugar": 1,
     "fat": 13
   }

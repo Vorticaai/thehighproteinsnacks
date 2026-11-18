@@ -109,9 +109,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/064/384/371/7157/front_en.328.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 30,
+      "calories": 159,
+      "carbs": 5,
+      "fiber": 3.1,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "1 Shake (11.5 fl oz) / 345 mlt",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (fiber: 3.1 vs 1.05; sugar: 1 vs 2.07)."
+      "USDA and Open Food Facts disagree (fiber: 3.1 vs 1.05); a reviewer accepted the USDA label data: USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
     ]
   },
   "before": {
@@ -125,12 +135,12 @@
     "fat": 3
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "1 Shake (11.5 fl oz) / 345 mlt",
     "servingSizeG": null,
     "protein": 30,
-    "calories": 160,
-    "carbs": 4,
-    "fiber": 1,
+    "calories": 159,
+    "carbs": 5,
+    "fiber": 3.1,
     "sugar": 1,
     "fat": 3
   }

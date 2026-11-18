@@ -10,11 +10,11 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "1 Shake (11.5 fl oz) / 345 mlt",
     "servingSizeG": null,
     "protein": 30,
-    "calories": 160,
-    "carbs": 5,
+    "calories": 159,
+    "carbs": 4,
     "fiber": 1,
     "sugar": 1,
     "fat": 3
@@ -28,8 +28,8 @@
   },
   "identifiers": {
     "asin": "B008JGIZNQ",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "0643843717041",
+    "fdcId": 2622652
   },
   "image": {
     "src": "/products/premier-protein-vanilla.jpg",
@@ -40,12 +40,41 @@
     "sourceUrl": "https://world.openfoodfacts.org/product/0643843717041"
   },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-18",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2622652",
+        "url": "https://fdc.nal.usda.gov/food-details/2622652/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 30,
+          "calories": 159,
+          "carbs": 4,
+          "fiber": 1,
+          "sugar": 1,
+          "fat": 3
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0643843717041",
+        "url": "https://world.openfoodfacts.org/product/0643843717041",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 30,
+          "calories": 160,
+          "carbs": 3,
+          "fiber": 0,
+          "sugar": 1,
+          "fat": 3
+        }
+      }
+    ],
     "notes": [
       "Brand matches and 100% of product words found.",
-      "USDA and Open Food Facts disagree (fiber: 1.04 vs 0)."
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

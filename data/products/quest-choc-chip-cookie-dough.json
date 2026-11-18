@@ -10,12 +10,12 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 60 grm",
+    "servingSizeG": 60,
     "protein": 21,
-    "calories": 200,
-    "carbs": 4,
-    "fiber": 9,
+    "calories": 190,
+    "carbs": 21,
+    "fiber": 12,
     "sugar": 1,
     "fat": 9
   },
@@ -28,24 +28,47 @@
   },
   "identifiers": {
     "asin": "B094K6VJ9Z",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "888849003853",
+    "fdcId": 2669765
   },
-  "image": {
-    "src": "/products/quest-choc-chip-cookie-dough.jpg",
-    "alt": "Quest Nutrition Quest Protein Bar Chocolate Chip Cookie Dough package",
-    "credit": "Open Food Facts contributors",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://world.openfoodfacts.org/product/0888849003853"
-  },
+  "image": null,
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-18",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669765",
+        "url": "https://fdc.nal.usda.gov/food-details/2669765/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 21,
+          "calories": 190,
+          "carbs": 21,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 9
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849003853",
+        "url": "https://world.openfoodfacts.org/product/0888849003853",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 21,
+          "calories": 190,
+          "carbs": 20,
+          "fiber": 12,
+          "sugar": 1,
+          "fat": 8
+        }
+      }
+    ],
     "notes": [
       "Brand matches and 100% of product words found.",
-      "USDA and Open Food Facts disagree (fat: 9 vs 7.98)."
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: the Open Food Facts 'front' photo shows the nutrition panel, so it is not used."
     ]
   }
 }
