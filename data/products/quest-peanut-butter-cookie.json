@@ -31,14 +31,7 @@
     "gtin": "888849006045",
     "fdcId": 2669722
   },
-  "image": {
-    "src": "/products/quest-peanut-butter-cookie.jpg",
-    "alt": "Quest Nutrition Quest Protein Cookie Peanut Butter package",
-    "credit": "Open Food Facts contributors",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://world.openfoodfacts.org/product/0888849006045"
-  },
+  "image": null,
   "verification": {
     "status": "verified",
     "checkedAt": "2026-11-18",
@@ -75,7 +68,7 @@
     "notes": [
       "Pinned by a person after review.",
       "Open Food Facts agrees with the USDA label data.",
-      "Reviewer: trying the newer 'Soft & Chewy' USDA record (2023); the first match was last updated in 2019."
+      "Reviewer: confirmed the 'Soft & Chewy' USDA record (2023), which Open Food Facts agrees with. Photo rejected: the box in it shows newer label numbers (16 g protein, 10 g fiber), so Quest may have updated the recipe; re-check next run."
     ]
   }
 }

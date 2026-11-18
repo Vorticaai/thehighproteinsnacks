@@ -31,14 +31,7 @@
     "gtin": "049000553604",
     "fdcId": 2668980
   },
-  "image": {
-    "src": "/products/fairlife-core-power-elite-42g.jpg",
-    "alt": "Fairlife Fairlife Core Power Elite 42g package",
-    "credit": "Open Food Facts contributors",
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-    "sourceUrl": "https://world.openfoodfacts.org/product/0049000553604"
-  },
+  "image": null,
   "verification": {
     "status": "verified",
     "checkedAt": "2026-11-18",
@@ -75,7 +68,7 @@
     "notes": [
       "Pinned by a person after review.",
       "Open Food Facts agrees with the USDA label data.",
-      "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour."
+      "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour. Photo rejected: a store-shelf shot of multipacks, not a clear product image."
     ]
   }
 }
