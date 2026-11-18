@@ -36,7 +36,8 @@ const ROOT = process.cwd()
 const PRODUCTS = path.join(ROOT, "data", "products")
 const EVIDENCE = path.join(ROOT, "data", "evidence")
 const IMAGES = path.join(ROOT, "public", "products")
-const API_KEY = process.env.FDC_API_KEY || "DEMO_KEY"
+const API_KEY = (process.env.FDC_API_KEY ?? "").trim() || "DEMO_KEY"
+console.log(`USDA key: ${process.env.FDC_API_KEY ? `secret set (${API_KEY.length} characters after trimming)` : "DEMO_KEY"}`)
 const today = new Date().toISOString().slice(0, 10)
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 

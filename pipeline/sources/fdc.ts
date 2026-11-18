@@ -35,7 +35,8 @@ async function getJson(url: string): Promise<unknown> {
       await new Promise((r) => setTimeout(r, 3000 * attempt))
       continue
     }
-    throw new Error(`FDC ${res.status} for ${url.replace(/api_key=[^&]+/, "api_key=***")}`)
+    const body = (await res.text()).slice(0, 300)
+    throw new Error(`FDC ${res.status} for ${url.replace(/api_key=[^&]+/, "api_key=***")}: ${body}`)
   }
   throw new Error(
     `FDC request failed after retries (last status ${last}). ` +
