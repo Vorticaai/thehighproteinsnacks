@@ -12,9 +12,12 @@ export type PerServing = Partial<Pick<NutritionValues, CoreField>> & {
   servingSizeG?: number | null
 }
 
-/** Two values agree if within 10%, with a floor of 1 g (or 10 kcal). */
+/**
+ * Two values agree if within 10%, with a floor of 1.5 g (or 10 kcal).
+ * The floor absorbs US label rounding and per-100 g conversions.
+ */
 export function agrees(field: CoreField, a: number, b: number): boolean {
-  const floor = field === "calories" ? 10 : 1
+  const floor = field === "calories" ? 10 : 1.5
   const tolerance = Math.max(floor, 0.1 * Math.max(Math.abs(a), Math.abs(b)))
   return Math.abs(a - b) <= tolerance
 }
@@ -84,8 +87,10 @@ export function decide(input: {
   primary: PerServing | null
   primaryConfident: boolean
   secondary: PerServing | null
+  /** A reviewer looked at both sources and chose the USDA label data. */
+  acceptPrimaryReason?: string
 }): Decision {
-  const { primary, primaryConfident, secondary } = input
+  const { primary, primaryConfident, secondary, acceptPrimaryReason } = input
   if (!primary) {
     return { status: "needs-review", notes: ["No USDA label record found for this product."] }
   }
@@ -103,6 +108,15 @@ export function decide(input: {
   if (secondary) {
     const diff = disagreements(primary, secondary)
     if (diff.length) {
+      if (acceptPrimaryReason) {
+        return {
+          status: "verified",
+          values: primary,
+          notes: [
+            `USDA and Open Food Facts disagree (${diff.join("; ")}); a reviewer accepted the USDA label data: ${acceptPrimaryReason}`,
+          ],
+        }
+      }
       return {
         status: "needs-review",
         notes: [`USDA and Open Food Facts disagree (${diff.join("; ")}).`],

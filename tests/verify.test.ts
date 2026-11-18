@@ -8,6 +8,8 @@ test("agrees uses 10% with a 1 g / 10 kcal floor", () => {
   assert.equal(agrees("protein", 21, 22), true)
   assert.equal(agrees("protein", 21, 24), false)
   assert.equal(agrees("sugar", 0, 1), true)
+  assert.equal(agrees("fat", 9, 7.98), true)
+  assert.equal(agrees("fat", 9, 7), false)
   assert.equal(agrees("calories", 190, 200), true)
   assert.equal(agrees("calories", 190, 215), false)
 })
@@ -37,5 +39,14 @@ test("decide only verifies a confident, plausible, uncontradicted USDA record", 
   assert.equal(
     decide({ primary: questLabel, primaryConfident: true, secondary: { ...questLabel, protein: 10 } }).status,
     "needs-review",
+  )
+  assert.equal(
+    decide({
+      primary: questLabel,
+      primaryConfident: true,
+      secondary: { ...questLabel, protein: 10 },
+      acceptPrimaryReason: "Open Food Facts entry is out of date",
+    }).status,
+    "verified",
   )
 })

@@ -1,14 +1,43 @@
 {
   "products": [
-    { "id": "quest-choc-chip-cookie-dough" },
-    { "id": "quest-cookies-cream" },
-    { "id": "quest-peanut-butter-cookie" },
-    { "id": "iqbar-peanut-butter-chip" },
-    { "id": "pure-protein-chocolate-deluxe" },
-    { "id": "premier-protein-chocolate" },
-    { "id": "premier-protein-vanilla" },
-    { "id": "fairlife-core-power-elite-42g" },
-    { "id": "muscle-milk-pro-series-40" },
-    { "id": "chomps-original-beef-stick" }
+    {
+      "id": "quest-choc-chip-cookie-dough",
+      "skipPhoto": true,
+      "note": "Reviewer: the Open Food Facts 'front' photo shows the nutrition panel, so it is not used."
+    },
+    {
+      "id": "quest-cookies-cream"
+    },
+    {
+      "id": "quest-peanut-butter-cookie",
+      "fdcId": 2669722,
+      "note": "Reviewer: trying the newer 'Soft & Chewy' USDA record (2023); the first match was last updated in 2019."
+    },
+    {
+      "id": "iqbar-peanut-butter-chip",
+      "note": "Reviewer: IQBAR appears to have changed the recipe (USDA 180 kcal / 12 g fat vs Open Food Facts 160 kcal / 10 g). Needs the current label from iqbar.com or the package."
+    },
+    {
+      "id": "pure-protein-chocolate-deluxe"
+    },
+    {
+      "id": "premier-protein-chocolate",
+      "acceptUsdaReason": "USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
+    },
+    {
+      "id": "premier-protein-vanilla"
+    },
+    {
+      "id": "fairlife-core-power-elite-42g",
+      "query": "core power elite 42g protein shake"
+    },
+    {
+      "id": "muscle-milk-pro-series-40",
+      "note": "Reviewer: the only 40 g Muscle Milk record is 'Pro Advanced Nutrition 40 g, Knockout Chocolate', which looks like the renamed product. Owner to confirm before the name and values change."
+    },
+    {
+      "id": "chomps-original-beef-stick",
+      "query": "chomps original beef stick"
+    }
   ]
 }

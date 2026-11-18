@@ -29,6 +29,10 @@ type QueueEntry = {
   fdcId?: number
   /** Optional search text when the product name finds the wrong records. */
   query?: string
+  /** Reviewer's reason for trusting USDA label data over Open Food Facts. */
+  acceptUsdaReason?: string
+  /** Reviewer rejected the Open Food Facts photo (wrong side, blurry...). */
+  skipPhoto?: boolean
   note?: string
 }
 
@@ -83,7 +87,12 @@ async function main() {
     }
     const secondary = off ? offPerServing(off) : null
 
-    const decision = decide({ primary, primaryConfident: match.confident, secondary })
+    const decision = decide({
+      primary,
+      primaryConfident: match.confident,
+      secondary,
+      acceptPrimaryReason: entry.acceptUsdaReason,
+    })
     const before = { ...record.nutrition }
     const sources: SourceRef[] = []
 
@@ -121,7 +130,12 @@ async function main() {
 
     // 4. Photo: only when the barcode came from a confident USDA match
     let photo = "none"
-    if (off?.image_front_url && match.confident) {
+    if (entry.skipPhoto) {
+      const file = path.join(IMAGES, `${record.id}.jpg`)
+      if (fs.existsSync(file)) fs.unlinkSync(file)
+      record.image = null
+      photo = "rejected by reviewer"
+    } else if (off?.image_front_url && match.confident) {
       const bytes = await downloadImage(off.image_front_url)
       if (bytes && bytes.length > 5000) {
         const file = `${record.id}.jpg`
