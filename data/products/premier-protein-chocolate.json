@@ -13,9 +13,9 @@
     "servingSize": "1 Shake (11.5 fl oz) / 345 mlt",
     "servingSizeG": null,
     "protein": 30,
-    "calories": 159,
+    "calories": 160,
     "carbs": 5,
-    "fiber": 3.1,
+    "fiber": 3,
     "sugar": 1,
     "fat": 3
   },
@@ -74,7 +74,7 @@
     ],
     "notes": [
       "Brand matches and 100% of product words found.",
-      "USDA and Open Food Facts disagree (fiber: 3.1 vs 1.05); a reviewer accepted the USDA label data: USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
+      "USDA and Open Food Facts disagree (fiber: 3 vs 1); a reviewer accepted the USDA label data: USDA holds the manufacturer's own label data (updated June 2023); the Open Food Facts figures are converted from per-100 g values and do not match the printed label."
     ]
   }
 }

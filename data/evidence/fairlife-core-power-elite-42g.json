@@ -55,11 +55,11 @@
     "status": "verified",
     "values": {
       "protein": 42,
-      "calories": 232,
-      "carbs": 8.98,
-      "fiber": 2.07,
+      "calories": 230,
+      "carbs": 9,
+      "fiber": 2,
       "sugar": 7,
-      "fat": 3.52,
+      "fat": 3.5,
       "servingSize": "1 Bottle / 414 mlt",
       "servingSizeG": null
     },
@@ -68,22 +68,22 @@
     ]
   },
   "before": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 42,
-    "calories": 230,
-    "carbs": 8,
-    "fiber": 0,
-    "sugar": 3,
-    "fat": 3.5
-  },
-  "after": {
     "servingSize": "1 Bottle / 414 mlt",
     "servingSizeG": null,
     "protein": 42,
     "calories": 232,
     "carbs": 9,
     "fiber": 2.1,
+    "sugar": 7,
+    "fat": 3.5
+  },
+  "after": {
+    "servingSize": "1 Bottle / 414 mlt",
+    "servingSizeG": null,
+    "protein": 42,
+    "calories": 230,
+    "carbs": 9,
+    "fiber": 2,
     "sugar": 7,
     "fat": 3.5
   }

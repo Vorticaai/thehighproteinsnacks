@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 10,
-    "calories": 100,
+    "servingSize": "1 Stick / 32 grm",
+    "servingSizeG": 32,
+    "protein": 9,
+    "calories": 90,
     "carbs": 0,
     "fiber": 0,
     "sugar": 0,
-    "fat": 7
+    "fat": 6
   },
   "claims": {
     "vegan": false,
@@ -28,8 +28,8 @@
   },
   "identifiers": {
     "asin": "B07D3NS8NW",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "856584004763",
+    "fdcId": 2652237
   },
   "image": {
     "src": "/products/chomps-original-beef-stick.jpg",
@@ -40,12 +40,41 @@
     "sourceUrl": "https://world.openfoodfacts.org/product/0856584004763"
   },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-18",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2652237",
+        "url": "https://fdc.nal.usda.gov/food-details/2652237/nutrients",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 9,
+          "calories": 89.9,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 6
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0856584004763",
+        "url": "https://world.openfoodfacts.org/product/0856584004763",
+        "checkedAt": "2026-11-18",
+        "values": {
+          "protein": 10,
+          "calories": 100,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
       "Pinned by a person after review.",
-      "USDA and Open Food Facts disagree (calories: 89.9 vs 100).",
+      "Open Food Facts agrees with the USDA label data.",
       "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763)."
     ]
   }

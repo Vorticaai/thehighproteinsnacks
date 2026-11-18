@@ -52,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/085/658/400/4763/front_en.92.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 9,
+      "calories": 90,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 6,
+      "servingSize": "1 Stick / 32 grm",
+      "servingSizeG": 32
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (calories: 89.9 vs 100)."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -68,13 +78,13 @@
     "fat": 7
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 10,
-    "calories": 100,
+    "servingSize": "1 Stick / 32 grm",
+    "servingSizeG": 32,
+    "protein": 9,
+    "calories": 90,
     "carbs": 0,
     "fiber": 0,
     "sugar": 0,
-    "fat": 7
+    "fat": 6
   }
 }
