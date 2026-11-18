@@ -29,7 +29,8 @@
     },
     {
       "id": "fairlife-core-power-elite-42g",
-      "query": "core power elite 42g protein shake"
+      "fdcId": 2668980,
+      "note": "Reviewer: confirmed Core Power Elite 42 g (fairlife / Coca-Cola, barcode 0049000553604). Values are for the chocolate flavour."
     },
     {
       "id": "muscle-milk-pro-series-40",
@@ -37,7 +38,8 @@
     },
     {
       "id": "chomps-original-beef-stick",
-      "query": "chomps original beef stick"
+      "fdcId": 2652237,
+      "note": "Reviewer: confirmed Chomps Original beef stick (We Are The Chompians LLC, barcode 856584004763)."
     }
   ]
 }
