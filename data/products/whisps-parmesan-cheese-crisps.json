@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 13,
-    "calories": 160,
+    "servingSize": "1 Pack / 18 g",
+    "servingSizeG": 18,
+    "protein": 9,
+    "calories": 100,
     "carbs": 1,
     "fiber": 0,
     "sugar": 0,
-    "fat": 12
+    "fat": 7
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B08LN3F13D",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "088231416418",
+    "fdcId": 2677312
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2677312",
+        "url": "https://fdc.nal.usda.gov/food-details/2677312/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 9,
+          "calories": 100,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

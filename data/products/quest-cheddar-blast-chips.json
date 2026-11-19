@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 10,
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 19,
     "calories": 140,
     "carbs": 5,
     "fiber": 1,
     "sugar": 1,
-    "fat": 7
+    "fat": 5
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B0B5M5YB9G",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "888849000296",
+    "fdcId": 2669751
   },
-  "image": null,
+  "image": {
+    "src": "/products/quest-cheddar-blast-chips.jpg",
+    "alt": "Quest Nutrition Quest Protein Chips Cheddar & Sour Cream package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849000296"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669751",
+        "url": "https://fdc.nal.usda.gov/food-details/2669751/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 19,
+          "calories": 140,
+          "carbs": 5,
+          "fiber": 1,
+          "sugar": 1,
+          "fat": 5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849000296",
+        "url": "https://world.openfoodfacts.org/product/0888849000296",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 19,
+          "calories": 140,
+          "carbs": 5,
+          "fiber": 1,
+          "sugar": 1,
+          "fat": 5
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

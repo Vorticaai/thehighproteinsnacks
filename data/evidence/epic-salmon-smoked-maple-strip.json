@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Epic Salmon Smoked Maple Strip",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2778578,
+      "description": "EPIC Maple Smoked Salmon Strips 8 Count",
+      "brandOwner": "GENERAL MILLS SALES INC.",
+      "brandName": "EPIC Provisions",
+      "gtinUpc": "00732153146365",
+      "publishedDate": "2026-10-22",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2778578,
+        "description": "EPIC Maple Smoked Salmon Strips 8 Count",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153146365",
+        "publishedDate": "2026-10-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2751579,
+        "description": "EPIC Maple Smoked Salmon Strip",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153015951",
+        "publishedDate": "2026-01-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2751725,
+        "description": "EPIC Maple Smoked Salmon Strips 10 Count",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153031739",
+        "publishedDate": "2026-01-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2751916,
+        "description": "EPIC Maple Smoked Salmon Strips 20 Count",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153029644",
+        "publishedDate": "2026-01-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2109540,
+        "description": "SMOKED MAPLE STRIP SALMON FILLET",
+        "brandOwner": "EPIC Provisions, LLC",
+        "brandName": "EPIC",
+        "gtinUpc": "854660006601",
+        "publishedDate": "2021-10-28",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2778578,
+    "description": "EPIC Maple Smoked Salmon Strips 8 Count",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "EPIC Provisions",
+    "gtinUpc": "00732153146365",
+    "servingSize": 23,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 strip",
+    "dataSource": "GDSN",
+    "modifiedDate": "9/14/2026",
+    "ingredients": "Salmon, Maple Syrup, Coconut Oil. Contains 2% or less of: Sea Salt, Salt, Onion Powder, Garlic Powder, Dill Weed.",
+    "perServing": {
+      "protein": 7,
+      "calories": 89.9,
+      "carbs": 5,
+      "fiber": 0,
+      "sugar": 5,
+      "fat": 4,
+      "servingSize": "1 strip / 23 g",
+      "servingSizeG": 23
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 7,
+      "calories": 90,
+      "carbs": 5,
+      "fiber": 0,
+      "sugar": 5,
+      "fat": 4,
+      "servingSize": "1 strip / 23 g",
+      "servingSizeG": 23
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 7,
+    "calories": 80,
+    "carbs": 5,
+    "fiber": 0,
+    "sugar": 5,
+    "fat": 4
+  },
+  "after": {
+    "servingSize": "1 strip / 23 g",
+    "servingSizeG": 23,
+    "protein": 7,
+    "calories": 90,
+    "carbs": 5,
+    "fiber": 0,
+    "sugar": 5,
+    "fat": 4
+  }
+}

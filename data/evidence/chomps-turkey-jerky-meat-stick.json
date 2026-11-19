@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Chomps Turkey Jerky Meat Sticks",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 1903778,
+      "description": "WHITEWATER CHOMP BAR",
+      "brandOwner": "Pinto Barn Inc. ",
+      "brandName": "DON'T GO NUTS",
+      "gtinUpc": "851653004477",
+      "publishedDate": "2021-07-29",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 1903778,
+        "description": "WHITEWATER CHOMP BAR",
+        "brandOwner": "Pinto Barn Inc. ",
+        "brandName": "DON'T GO NUTS",
+        "gtinUpc": "851653004477",
+        "publishedDate": "2021-07-29",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1920141,
+        "description": "WHITEWATER CHOMP BAR",
+        "brandOwner": "Pinto Barn Inc. ",
+        "brandName": "DON'T GO NUTS",
+        "gtinUpc": "851653004859",
+        "publishedDate": "2021-07-29",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1907799,
+        "description": "LIFE ICE, BITE-SIZED ICES, CITRUS CHOMP, CITRUS CHOMP",
+        "brandOwner": "Grower Alliance, LLC",
+        "brandName": "LIFE ICE",
+        "gtinUpc": "856977004011",
+        "publishedDate": "2021-07-29",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 770974,
+        "description": "CADBURY CHOMP CHOCOLATE",
+        "brandOwner": "",
+        "gtinUpc": "07622210168931",
+        "publishedDate": "2020-02-27",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 1903778,
+    "description": "WHITEWATER CHOMP BAR",
+    "brandOwner": "Pinto Barn Inc. ",
+    "brandName": "DON'T GO NUTS",
+    "gtinUpc": "851653004477",
+    "servingSize": 45,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "1/20/2018",
+    "ingredients": "ORGANIC BROWN RICE SYRUP (ORGANIC BROWN RICE, PURE (FILTERED WATER), ORGANIC OATS, ORGANIC WHITE CHOCOLATE (ORGANIC SUGAR, ORGANIC WHOLE MILK, ORGANIC COCOA BUTTER, ORGANIC SOY LECITHIN, ORGANIC VANILLA FLAVOR), RICE CEREAL (RICE FLOUR, RICE BRAN, RAISIN JUICE CONCENTRATE, HONEY, SALT), ORGANIC SUGAR, WHITE DRIZZLE (SUGAR, FRACTIONATED PALM KERNEL OIL, NON FAT MILK, WHOLE MILK, WHEY POWDER, PALM OIL, SOY LECITHIN, NATURAL VANILLA FLAVOR), ORGANIC TAPIOCA SYRUP, WATER, ORGANIC SOY LECITHIN, ORGANIC VANILLA EXTRACT (WATER, ORGANIC ALCOHOL, ORGANIC VANILLA BEAN EXTRACTIVES), SEA SALT, ORGANIC FLAVOR (ORGANIC ETHYL ALCOHOL, WATER, NATURAL AROMATIC FLAVOR).",
+    "perServing": {
+      "protein": 3,
+      "calories": 180,
+      "carbs": 33,
+      "fiber": 0.99,
+      "sugar": 17,
+      "fat": 4.5,
+      "servingSize": "1 BAR / 45 g",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": {
+    "code": "0851653004477",
+    "product_name": "Whitewater Chomp Bar",
+    "brands": "Don'T Go Nuts",
+    "serving_size": "1 BAR (45 g)",
+    "perServing": {
+      "protein": 3,
+      "calories": 180,
+      "carbs": 33,
+      "fiber": 0.99,
+      "sugar": 17,
+      "fat": 4.5,
+      "servingSize": "1 BAR (45 g)",
+      "servingSizeG": 45
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 80,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 3.5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 80,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 3.5
+  }
+}

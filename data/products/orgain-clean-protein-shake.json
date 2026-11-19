@@ -31,13 +31,21 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/orgain-clean-protein-shake.jpg",
+    "alt": "Orgain Orgain Clean Protein Shake – Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0851770006118"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "USDA and Open Food Facts disagree (protein: 20 vs 66; calories: 130 vs 430; carbs: 11 vs 36; sugar: 3 vs 10; fat: 2 vs 7)."
     ]
   }
 }

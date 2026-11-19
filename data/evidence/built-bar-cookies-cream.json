@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Built Bar Cookies & Cream",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2659294,
+      "description": "CHOCOLATE COOKIE PRE-BUILT HAUNTED HOUSE KIT, CHOCOLATE COOKIE",
+      "brandOwner": "Target Stores",
+      "brandName": "HYDE AND EEK! BOUTIQUE",
+      "gtinUpc": "085239306703",
+      "publishedDate": "2023-10-26",
+      "score": 0.5,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2659294,
+        "description": "CHOCOLATE COOKIE PRE-BUILT HAUNTED HOUSE KIT, CHOCOLATE COOKIE",
+        "brandOwner": "Target Stores",
+        "brandName": "HYDE AND EEK! BOUTIQUE",
+        "gtinUpc": "085239306703",
+        "publishedDate": "2023-10-26",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635939,
+        "description": "SPRING PRE-BUILT SUGAR COOKIE HOUSE, SPRING",
+        "brandOwner": "Target Stores",
+        "brandName": "FAVORITE DAY",
+        "gtinUpc": "085239358672",
+        "publishedDate": "2023-09-14",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635864,
+        "description": "CHOCOLATE COOKIE PRE-BUILT SPOOKY MANOR WITH ICING, CHOCOLATE COOKIE",
+        "brandOwner": "Target Stores",
+        "brandName": "HYDE AND EEK! BOUTIQUE",
+        "gtinUpc": "085239309094",
+        "publishedDate": "2023-09-14",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2625848,
+        "description": "PRE-BUILT HAUNTED HOUSE COOKIE HOUSE KIT, PRE-BUILT HAUNTED HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "FAVORITE DAY",
+        "gtinUpc": "085239988701",
+        "publishedDate": "2023-08-31",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635211,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239054789",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2659294,
+    "description": "CHOCOLATE COOKIE PRE-BUILT HAUNTED HOUSE KIT, CHOCOLATE COOKIE",
+    "brandOwner": "Target Stores",
+    "brandName": "HYDE AND EEK! BOUTIQUE",
+    "gtinUpc": "085239306703",
+    "servingSize": 30,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1/24 kit (30g)",
+    "dataSource": "LI",
+    "modifiedDate": "8/24/2023",
+    "ingredients": "COOKIE: ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, ASCORBIC ACID [ADDED AS A DOUGH CONDITIONER], THIAMINE MONONITRATE, RIBOFLAVIN, ENZYME, FOLIC ACID), SUGAR, SHORTENING (PALM OIL, FRACTIONATED PALM OIL), WATER, INVERT SUGAR, COCOA POWDER (PROCESSED WITH ALKALI), LEAVENING (SODIUM BICARBONATE), NATURAL FLAVOR, ICINGS: SUGAR, WATER, PALM OIL, CORNSTARCH, HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, MODIFIED CORNSTARCH, SALT, ANNATTO (COLOR), WHEY PROTEIN ISOLATE, ACETYLATED MONOGLYCERIDES (EMULSIFIER), WHITE RICE FLOUR, GUM ARABIC, ARTIFICIAL FLAVOR, POLYSORBATE 60, POTASSIUM SORBATE (PRESERVATIVE), CITRIC ACID, YELLOW 5, YELLOW 6, CREAM OF TARTAR, BLUE 1, DECORATIVE SUGARS: SUGAR, EDIBLE SHAPES (HYDROXYPROPYL METHYLCELLULOSE, PROPYLENE GLYCOL, MICA-BASED PEARLESCENT PIGMENTS, RED 40, BLUE 1, YELLOW 6, YELLOW 5), CONFECTIONER'S GLAZE, CARNAUBA WAX, RED 3, PUMPKIN CANDY: SUGAR, CORN SYRUP, DEXTROSE, HONEY, SALT, CONFECTIONER'S GLAZE, ACACIA GUM, ARTIFICIAL FLAVOR, RICE PROTEIN, CARNAUBA WAX, MODIFIED POTATO STARCH, POTATO PROTEIN, YELLOW 6, RED 40, YELLOW 5, BLUE 1, FONDANT: ICING SUGAR (SUGAR, CORNSTARCH), CORN SYRUP, VEGETABLE SHORTENING (PALM OIL, FRACTIONATED PALM OIL, MONO- AND DIGLYCERIDES, POLYSORBATE 60), WATER, GLYCERINE, MODIFIED FOOD STARCH, CELLULOSE GUM, GUM TRAGACANTH POWDER, ARTIFICIAL FLAVOR, RED 40, BLUE 1, SODIUM DIACETATE, POTASSIUM SORBATE (PRESERVATIVE), YELLOW 5, HALLOWEEN QUINS: DEXTROSE, CORN SYRUP, CALCIUM STEARATE, TAPIOCA DEXTRIN, TITANIUM DIOXIDE (COLOR), CONFECTIONER'S GLAZE, CARNAUBA WAX, ARTIFICIAL FLAVOR, RED 3, RED 40, YELLOW 5, BLUE 1, MINI QUINS: ICING SUGAR (SUGAR, CORNSTARCH), PALM KERNEL OIL, MODIFIED CORN STARCH, CORN STARCH, CONFECTIONER'S GLAZE, SUNFLOWER LECITHIN, YELLOW 5, YELLOW 6, BLUE 1, RED 40, POLYSORBATE 60",
+    "perServing": {
+      "protein": 0.999,
+      "calories": 120,
+      "carbs": 22,
+      "fiber": 0,
+      "sugar": 15,
+      "fat": 3,
+      "servingSize": "1/24 kit (30g) / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 17,
+    "calories": 140,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 2
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 17,
+    "calories": 140,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 2
+  }
+}

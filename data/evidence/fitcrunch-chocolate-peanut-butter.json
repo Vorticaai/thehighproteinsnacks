@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "FitCrunch Protein Bar – Chocolate PB",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 14,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 14,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 8
+  }
+}

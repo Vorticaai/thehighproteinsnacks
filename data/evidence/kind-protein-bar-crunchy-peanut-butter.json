@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "KIND Protein Bar Crunchy Peanut Butter",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2666117,
+      "description": "CRUNCHY PEANUT BUTTER PROTEIN BARS, CRUNCHY PEANUT BUTTER",
+      "brandOwner": "KIND Inc.",
+      "brandName": "KIND",
+      "gtinUpc": "602652276897",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2666117,
+        "description": "CRUNCHY PEANUT BUTTER PROTEIN BARS, CRUNCHY PEANUT BUTTER",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652276897",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2585614,
+        "description": "CRUNCHY PEANUT BUTTER PROTEIN BAR, CRUNCHY PEANUT BUTTER",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652207006",
+        "publishedDate": "2023-06-29",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2550653,
+        "description": "CRUNCHY PEANUT BUTTER PROTEIN BARS, CRUNCHY PEANUT BUTTER",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652208003",
+        "publishedDate": "2023-05-25",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2550656,
+        "description": "CRUNCHY PEANUT BUTTER PROTEIN BARS, CRUNCHY PEANUT BUTTER",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652209000",
+        "publishedDate": "2023-05-25",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2666117,
+    "description": "CRUNCHY PEANUT BUTTER PROTEIN BARS, CRUNCHY PEANUT BUTTER",
+    "brandOwner": "KIND Inc.",
+    "brandName": "KIND",
+    "gtinUpc": "602652276897",
+    "servingSize": 50,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "4/21/2023",
+    "ingredients": "PEANUTS, CHICORY ROOT FIBER, SOY PROTEIN ISOLATE, HONEY, GLUCOSE SYRUP, PALM KERNEL OIL, SUGAR, PEANUT FLOUR, PEANUT BUTTER (PEANUTS, SEA SALT), NONFAT MILK POWDER, SEA SALT, SOY LECITHIN, PEANUT OIL.",
+    "perServing": {
+      "protein": 12,
+      "calories": 250,
+      "carbs": 17,
+      "fiber": 6,
+      "sugar": 7,
+      "fat": 18,
+      "servingSize": "1 bar / 50 g",
+      "servingSizeG": 50
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 250,
+      "carbs": 17,
+      "fiber": 6,
+      "sugar": 7,
+      "fat": 18,
+      "servingSize": "1 bar / 50 g",
+      "servingSizeG": 50
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 250,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 17
+  },
+  "after": {
+    "servingSize": "1 bar / 50 g",
+    "servingSizeG": 50,
+    "protein": 12,
+    "calories": 250,
+    "carbs": 17,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 18
+  }
+}

@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
     "protein": 21,
-    "calories": 190,
-    "carbs": 26,
+    "calories": 210,
+    "carbs": 24,
     "fiber": 14,
     "sugar": 1,
-    "fat": 6
+    "fat": 7
   },
   "claims": {
     "vegan": true,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B01K5SBEJM",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "852346005542",
+    "fdcId": 2525534
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2525534",
+        "url": "https://fdc.nal.usda.gov/food-details/2525534/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 21,
+          "calories": 210,
+          "carbs": 24,
+          "fiber": 14,
+          "sugar": 1,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

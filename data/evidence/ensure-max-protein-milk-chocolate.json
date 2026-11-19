@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Ensure Max Protein – Milk Chocolate",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2381365,
+      "description": "MILK CHOCOLATE FLAVOR MAX PROTEIN NUTRITION SHAKE, MILK CHOCOLATE",
+      "brandOwner": "Abbott Laboratories Inc ",
+      "brandName": "ENSURE",
+      "gtinUpc": "070074681689",
+      "publishedDate": "2022-12-22",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2381365,
+        "description": "MILK CHOCOLATE FLAVOR MAX PROTEIN NUTRITION SHAKE, MILK CHOCOLATE",
+        "brandOwner": "Abbott Laboratories Inc ",
+        "brandName": "ENSURE",
+        "gtinUpc": "070074681689",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2214378,
+        "description": "MILK CHOCOLATE FLAVOR MAX PROTEIN NUTRITION SHAKE, MILK CHOCOLATE",
+        "brandOwner": "Abbott Laboratories Inc ",
+        "brandName": "ENSURE",
+        "gtinUpc": "070074677255",
+        "publishedDate": "2022-01-06",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1838189,
+        "description": "MAX PROTEIN NUTRITION SHAKE, MILK CHOCOLATE",
+        "brandOwner": "Abbott Laboratories Inc ",
+        "brandName": "ENSURE",
+        "gtinUpc": "070074668987",
+        "publishedDate": "2021-06-17",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1838254,
+        "description": "MILK CHOCOLATE MAX PROTEIN NUTRITION SHAKE, MILK CHOCOLATE",
+        "brandOwner": "Abbott Laboratories Inc ",
+        "brandName": "ENSURE",
+        "gtinUpc": "070074668970",
+        "publishedDate": "2021-06-17",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2214364,
+        "description": "ABBOTT, ENSURE, ORIGINAL NUTRITION SHAKE, MILK CHOCOLATE, MILK CHOCOLATE",
+        "brandOwner": "Abbott Laboratories Inc ",
+        "brandName": "ABBOTT",
+        "gtinUpc": "070074536231",
+        "publishedDate": "2022-01-06",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2381365,
+    "description": "MILK CHOCOLATE FLAVOR MAX PROTEIN NUTRITION SHAKE, MILK CHOCOLATE",
+    "brandOwner": "Abbott Laboratories Inc ",
+    "brandName": "ENSURE",
+    "gtinUpc": "070074681689",
+    "servingSize": 330,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "1 carton",
+    "dataSource": "LI",
+    "modifiedDate": "7/13/2021",
+    "ingredients": "WATER, MILK PROTEIN CONCENTRATE, CALCIUM CASEINATE, COCOA POWDER (PROCESSED WITH ALKALI); LESS THAN 0.5% OF: VITAMINS AND MINERALS++, INULIN, SOLUBLE CORN FIBER, NATURAL AND ARTIFICIAL FLAVORS, SUNFLOWER OIL, SALT, CELLULOSE GEL, CAFFEINE, ACESULFAME POTASSIUM, CELLULOSE GUM, SUCRALOSE, AND CARRAGEENAN.",
+    "perServing": {
+      "protein": 30,
+      "calories": 148,
+      "carbs": 6.01,
+      "fiber": 1.98,
+      "sugar": 0.99,
+      "fat": 1.48,
+      "servingSize": "1 carton / 330 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 30,
+      "calories": 150,
+      "carbs": 6,
+      "fiber": 2,
+      "sugar": 1,
+      "fat": 1.5,
+      "servingSize": "1 carton / 330 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 150,
+    "carbs": 6,
+    "fiber": 2,
+    "sugar": 1,
+    "fat": 1.5
+  },
+  "after": {
+    "servingSize": "1 carton / 330 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 150,
+    "carbs": 6,
+    "fiber": 2,
+    "sugar": 1,
+    "fat": 1.5
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Orgain Organic Vegan Protein Bars Peanut Butter Chocolate Chunk",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2608933,
+      "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BAR, PEANUT BUTTER CHOCOLATE CHUNK",
+      "brandOwner": "Orgain, Inc.",
+      "brandName": "ORGAIN",
+      "gtinUpc": "851770006330",
+      "publishedDate": "2023-07-13",
+      "score": 0.6666666666666666,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2608933,
+        "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BAR, PEANUT BUTTER CHOCOLATE CHUNK",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770006330",
+        "publishedDate": "2023-07-13",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2587372,
+        "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BARS, PEANUT BUTTER CHOCOLATE CHUNK",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770006385",
+        "publishedDate": "2023-06-29",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2339252,
+        "description": "ORGAIN, ORGANIC PROTEIN NUTRITIONAL SHAKE",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770003414",
+        "publishedDate": "2022-09-15",
+        "score": 0.16666666666666666,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2608933,
+    "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BAR, PEANUT BUTTER CHOCOLATE CHUNK",
+    "brandOwner": "Orgain, Inc.",
+    "brandName": "ORGAIN",
+    "gtinUpc": "851770006330",
+    "servingSize": 40,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "6/30/2023",
+    "ingredients": "ORGAIN ORGANIC PROTEIN BLEND [ORGANIC BROWN RICE PROTEIN, ORGANIC PROTEIN CRISPS (ORGANIC PEA PROTEIN, ORGANIC RICE FLOUR), ORGANIC GROUND CHIA SEEDS], ORGANIC TAPIOCA FIBER, ORGANIC TAPIOCA SYRUP, ORGANIC PEANUT BUTTER, ORGANIC CHOCOLATE CHUNKS (ORGANIC CANE SUGAR, ORGANIC CHOCOLATE LIQUOR, ORGANIC COCOA BUTTER, ORGANIC VANILLA POWDER), ORGANIC ERYTHRITOL, NATURAL FLAVOR, ORGANIC VEGETABLE GLYCERIN, SEA SALT, ORGANIC SUNFLOWER LECITHIN.",
+    "perServing": {
+      "protein": 10,
+      "calories": 150,
+      "carbs": 18,
+      "fiber": 3,
+      "sugar": 5,
+      "fat": 6,
+      "servingSize": "1 BAR / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 19,
+    "fiber": 1,
+    "sugar": 6,
+    "fat": 5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 19,
+    "fiber": 1,
+    "sugar": 6,
+    "fat": 5
+  }
+}

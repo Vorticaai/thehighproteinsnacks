@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Twin Peaks Protein Puffs BBQ",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2544658,
+      "description": "TWIN DEMI BAGUETTE, TWIN DEMI",
+      "brandOwner": "Wal-Mart Stores, Inc.",
+      "brandName": "MARKETSIDE",
+      "gtinUpc": "681131091435",
+      "publishedDate": "2023-05-25",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2544658,
+        "description": "TWIN DEMI BAGUETTE, TWIN DEMI",
+        "brandOwner": "Wal-Mart Stores, Inc.",
+        "brandName": "MARKETSIDE",
+        "gtinUpc": "681131091435",
+        "publishedDate": "2023-05-25",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2411877,
+        "description": "TWIN BARS",
+        "brandOwner": "Sam Tell & Son, Inc",
+        "brandName": "SCHAR",
+        "gtinUpc": "810757011828",
+        "publishedDate": "2022-12-22",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2388568,
+        "description": "TWIN CHERRY",
+        "brandOwner": "Nordic Tooling Company",
+        "brandName": "THE FRESH MARKET",
+        "gtinUpc": "638499996377",
+        "publishedDate": "2022-12-22",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2196159,
+        "description": "HAM TWIN",
+        "brandOwner": "Bimbo Bakeries USA, Inc.",
+        "brandName": "SARA LEE",
+        "gtinUpc": "072945610767",
+        "publishedDate": "2021-12-01",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2195246,
+        "description": "TWIN BING",
+        "brandOwner": "Palmer Candy Company",
+        "brandName": "PALMER CANDY CO.",
+        "gtinUpc": "077232801002",
+        "publishedDate": "2021-12-01",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2544658,
+    "description": "TWIN DEMI BAGUETTE, TWIN DEMI",
+    "brandOwner": "Wal-Mart Stores, Inc.",
+    "brandName": "MARKETSIDE",
+    "gtinUpc": "681131091435",
+    "servingSize": 57,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "4/30/2022",
+    "ingredients": "ENRICHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), WATER, CONTAINS LESS THAN 2% OF DOUGH CONDITIONER (ENRICHED WHEAT FLOUR, ASCORBIC ACID, ENZYMES), MALT (MALTED BARLEY, WHEAT FLOUR, DEXTROSE), PRESERVATIVES (CULTURED WHEAT STARCH, WHEAT FLOUR, CITRIC ACID), SALT, VINEGAR, YEAST.",
+    "perServing": {
+      "protein": 5,
+      "calories": 140,
+      "carbs": 29,
+      "fiber": 1.03,
+      "sugar": 0.998,
+      "fat": 0.502,
+      "servingSize": "57 g",
+      "servingSizeG": 57
+    }
+  },
+  "openFoodFacts": {
+    "code": "0681131091435",
+    "product_name": "TWIN DEMI BAGUETTES",
+    "brands": "MARKETSIDE",
+    "serving_size": "2 ONZ (57 g)",
+    "perServing": {
+      "protein": 5,
+      "calories": 130,
+      "carbs": 29,
+      "fiber": 1.03,
+      "sugar": 0.998,
+      "fat": 0.502,
+      "servingSize": "2 ONZ (57 g)",
+      "servingSizeG": 57
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/068/113/109/1435/front_en.9.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 120,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 3
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 120,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 3
+  }
+}

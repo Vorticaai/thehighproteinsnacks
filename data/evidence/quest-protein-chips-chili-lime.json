@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Chips – Chili Lime",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669729,
+      "description": "CHILI LIME TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849010530",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669729,
+        "description": "CHILI LIME TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010530",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2669725,
+        "description": "CHILI LIME FLAVOR TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849006656",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511713,
+        "description": "CHILI LIME TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010288",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2279923,
+        "description": "CHILI LIME FLAVOR TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011698",
+        "publishedDate": "2022-05-23",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1046271,
+        "description": "CHILI LIME FLAVOR TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+        "brandOwner": "QUEST",
+        "gtinUpc": "30888849006657",
+        "publishedDate": "2020-06-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669729,
+    "description": "CHILI LIME TORTILLA STYLE PROTEIN CHIPS, CHILI LIME",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849010530",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bag",
+    "dataSource": "LI",
+    "modifiedDate": "1/10/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, NATURAL FLAVORS, SALT, PSYLLIUM HUSK. CONTAINS LESS THAN 2% OF THE FOLLOWING: ONION POWDER, PAPRIKA, SPICE, CHIA SEED, VINEGAR POWDER, LIME JUICE POWDER, SUGAR++, YEAST, CITRIC ACID, TURMERIC OLEORESIN (COLOR), PAPRIKA EXTRACT (COLOR), LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), CALCIUM CARBONATE, YEAST EXTRACT, ACACIA GUM, STEVIA SWEETENER.",
+    "perServing": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 4,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 4.5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 4,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 4.5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 6
+  },
+  "after": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 20,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 4.5
+  }
+}

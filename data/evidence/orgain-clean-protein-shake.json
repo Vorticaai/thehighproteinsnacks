@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Orgain Clean Protein Shake – Chocolate",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2665207,
+      "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
+      "brandOwner": "Orgain, Inc.",
+      "brandName": "ORGAIN",
+      "gtinUpc": "851770006118",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2665207,
+        "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770006118",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2665242,
+        "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770006224",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2640582,
+        "description": "GRASS-FED CLEAN PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770006668",
+        "publishedDate": "2023-09-14",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2757919,
+        "description": "Orgain Organic Nutrition Shake - Chocolate Kids - Case of 12 - 8.25 FZ",
+        "brandOwner": "",
+        "brandName": "Orgain",
+        "gtinUpc": "00851770003001",
+        "publishedDate": "2026-04-23",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2640583,
+        "description": "CLEAN PROTEIN 20 G SHAKE, VANILLA BEAN, VANILLA BEAN",
+        "brandOwner": "Orgain, Inc.",
+        "brandName": "ORGAIN",
+        "gtinUpc": "851770006675",
+        "publishedDate": "2023-09-14",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2665207,
+    "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
+    "brandOwner": "Orgain, Inc.",
+    "brandName": "ORGAIN",
+    "gtinUpc": "851770006118",
+    "servingSize": 330,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 Carton",
+    "dataSource": "LI",
+    "modifiedDate": "10/25/2023",
+    "ingredients": "FILTERED WATER, GRASS-FED MILK PROTEIN CONCENTRATE, ORGANIC AGAVE, COCOA POWDER, NATURAL FLAVORS, ORGANIC HIGH OLEIC SUNFLOWER OIL, VEGETABLE GLYCERIN, CELLULOSE, SUNFLOWER LECITHIN, SODIUM POLYPHOSPHATE, MAGNESIUM PHOSPHATE, POTASSIUM CITRATE, POTASSIUM CHLORIDE, TRICALCIUM PHOSPHATE, SEA SALT, MONK FRUIT EXTRACT, GELLAN GUM, ORGANIC REB A (STEVIA EXTRACT), ORGANIC LOCUST BEAN GUM.",
+    "perServing": {
+      "protein": 20,
+      "calories": 129,
+      "carbs": 11,
+      "fiber": 1.98,
+      "sugar": 3,
+      "fat": 2.01,
+      "servingSize": "1 Carton / 330 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0851770006118",
+    "product_name": "Grass fed clean protein shake creamy chocolate fudge",
+    "brands": "Orgain",
+    "serving_size": "11 OZA (330 ml)",
+    "perServing": {
+      "protein": 66,
+      "calories": 429,
+      "carbs": 36.3,
+      "fiber": 2.97,
+      "sugar": 9.9,
+      "fat": 6.6,
+      "servingSize": "11 OZA (330 ml)",
+      "servingSizeG": 330
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/177/000/6118/front_en.4.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 20 vs 66; calories: 130 vs 430; carbs: 11 vs 36; sugar: 3 vs 10; fat: 2 vs 7)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 130,
+    "carbs": 11,
+    "fiber": 2,
+    "sugar": 4,
+    "fat": 2
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 130,
+    "carbs": 11,
+    "fiber": 2,
+    "sugar": 4,
+    "fat": 2
+  }
+}

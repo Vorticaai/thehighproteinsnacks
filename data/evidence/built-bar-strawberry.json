@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Built Bar Strawberry",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2635211,
+      "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+      "brandOwner": "Target Stores",
+      "brandName": "WONDERSHOP",
+      "gtinUpc": "085239054789",
+      "publishedDate": "2023-09-14",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2635211,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239054789",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635005,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239034415",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635505,
+        "description": "PRE-BUILT TINY HOMES GINGERBREAD KIT, PRE-BUILT TINY HOMES",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239131497",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635712,
+        "description": "DECORATING ICING WITH BUILT-IN TIP, GREEN",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239214329",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635711,
+        "description": "DECORATING ICING WITH BUILT-IN TIP, RED",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239214312",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2635211,
+    "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+    "brandOwner": "Target Stores",
+    "brandName": "WONDERSHOP",
+    "gtinUpc": "085239054789",
+    "servingSize": 30,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1/28 KIT",
+    "dataSource": "LI",
+    "modifiedDate": "8/24/2023",
+    "ingredients": "GINGERBREAD: ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, ASCORBIC ACID [ADDED AS A DOUGH CONDITIONER], THIAMINE MONONITRATE, RIBOFLAVIN, ENZYME, FOLIC ACID), SUGAR, PALM OIL, MOLASSES, WATER, SPICE, LEAVENING (SODIUM BICARBONATE), SALT. ICINGS: SUGAR, WATER, PALM OIL, CORNSTARCH, HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, MODIFIED CORNSTARCH, POWDERED VEGETABLE SHORTENING (PALM OIL, MALTODEXTRIN, SODIUM CASEINATE [MILK], POTASSIUM PHOSPHATE, MONO- AND DIGLYCERIDES, SODIUM HEXAMETAPHOSPHATE), SALT, EGG WHITES, ACETYLATED MONOGLYCERIDES (EMULSIFIER), COLOR (TITANIUM DIOXIDE, RED #40, YELLOW #6), ARTIFICIAL FLAVOR, POLYSORBATE 60, GUM ARABIC, CREAM OF TARTAR, POTASSIUM SORBATE (PRESERVATIVE), AMMONIUM ALUMINUM SULFATE, CITRIC ACID. JELLY HEARTS CANDY: CORN SYRUP, SUGAR, CORNSTARCH, WATER, CITRIC ACID, SODIUM CITRATE, NATURAL AND ARTIFICIAL FLAVOR, COLOR (YELLOW #5, YELLOW #6, BLUE #1, RED #40). PEPPERMINT BALLS: SUGAR, CORN SYRUP, COLOR (TITANIUM DIOXIDE, RED #40 LAKE), PEPPERMINT OIL. GUM BALLS: SUGAR, DEXTROSE, CORN SYRUP, CHEWING GUM BASE (CONTAINS SOYBEAN), CORNSTARCH, NATURAL AND ARTIFICIAL FLAVOR, GLYCERINE, TAPIOCA DEXTRIN, COLOR (TITANIUM DIOXIDE, RED #40, YELLOW #5, BLUE #1), CONFECTIONER'S GLAZE, CARNAUBA WAX, BHT (PRESERVATIVE). SPEARMINT LEAVES: SUGAR, CORN SYRUP, CORNSTARCH, MODIFIED CORNSTARCH, SPEARMINT OIL, COLOR (YELLOW #5, BLUE #1). MINI BEADS CANDY: DEXTROSE, CORN SYRUP, CITRIC ACID, CALCIUM STEARATE, TAPIOCA DEXTRIN, COLOR (TITANIUM DIOXIDE, RED #3, RED #40, YELLOW #5, YELLOW #6, BLUE #1), CONFECTIONER'S GLAZE, CARNAUBA WAX, ARTIFICIAL FLAVOR.",
+    "perServing": {
+      "protein": 0.999,
+      "calories": 120,
+      "carbs": 22,
+      "fiber": 0,
+      "sugar": 15,
+      "fat": 2.5,
+      "servingSize": "1/28 KIT / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": {
+    "code": "0085239054789",
+    "product_name": "Pre-built house gingerbread kit",
+    "serving_size": "0.036 KIT (30 g)",
+    "perServing": {
+      "protein": 0.999,
+      "calories": 120,
+      "carbs": 22,
+      "fiber": 0,
+      "sugar": 15,
+      "fat": 2.5,
+      "servingSize": "0.036 KIT (30 g)",
+      "servingSizeG": 30
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 140,
+    "carbs": 15,
+    "fiber": 0,
+    "sugar": 8,
+    "fat": 2.5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 140,
+    "carbs": 15,
+    "fiber": 0,
+    "sugar": 8,
+    "fat": 2.5
+  }
+}

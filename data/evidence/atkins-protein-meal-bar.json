@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Atkins Protein Meal Bar – Chocolate PB",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 33% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2289466,
+      "description": "ATKINS, CREAMY CHOCOLATE SHAKE, CHOCOLATE, CHOCOLATE",
+      "brandOwner": "Atkins Nutritionals, Inc.",
+      "brandName": "ATKINS",
+      "gtinUpc": "637480064422",
+      "publishedDate": "2022-05-23",
+      "score": 0.3333333333333333,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2289466,
+        "description": "ATKINS, CREAMY CHOCOLATE SHAKE, CHOCOLATE, CHOCOLATE",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480064422",
+        "publishedDate": "2022-05-23",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2289466,
+    "description": "ATKINS, CREAMY CHOCOLATE SHAKE, CHOCOLATE, CHOCOLATE",
+    "brandOwner": "Atkins Nutritionals, Inc.",
+    "brandName": "ATKINS",
+    "gtinUpc": "637480064422",
+    "servingSize": 325,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "11 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2021",
+    "ingredients": "WATER, DAIRY PROTEIN BLEND (MILK PROTEIN CONCENTRATE, CALCIUM CASEINATE, WHEY PROTEIN CONCENTRATE), CREAM, COCOA POWDER (PROCESSED WITH ALKALI), SUNFLOWER OIL, POLYDEXTROSE, NATURAL AND ARTIFICIAL FLAVORS, DIPOTASSIUM PHOSPHATE, CELLULOSE GEL, SALT, CELLULOSE GUM, VITAMIN MINERAL MIX [SODIUM ASCORBATE (VITAMIN C), ASCORBIC ACID, DL-ALPHA-TOCOPHERYL ACETATE (VITAMIN E), NIACINAMIDE, VITAMIN A PALMITATE, THIAMIN HYDROCHLORIDE (VITAMIN B1), RIBOFLAVIN (VITAMIN B2), FOLIC ACID, VITAMIN D3], CARRAGEENAN, ACESULFAME POTASSIUM, SUCRALOSE.",
+    "perServing": {
+      "protein": 10,
+      "calories": 140,
+      "carbs": 10,
+      "fiber": 7.15,
+      "sugar": 0,
+      "fat": 9,
+      "servingSize": "11 OZA / 325 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0637480064422",
+    "product_name": "Atkins, creamy chocolate shake, chocolate",
+    "brands": "Atkins, Atkins Nutritionals  Inc.",
+    "serving_size": "11 OZA (325 ml)",
+    "perServing": {
+      "protein": 10,
+      "calories": 140,
+      "carbs": 10,
+      "fiber": 7.15,
+      "sugar": 0,
+      "fat": 9,
+      "servingSize": "11 OZA (325 ml)",
+      "servingSizeG": 325
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 19,
+    "fiber": 7,
+    "sugar": 1,
+    "fat": 11
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 19,
+    "fiber": 7,
+    "sugar": 1,
+    "fat": 11
+  }
+}

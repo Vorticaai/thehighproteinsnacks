@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1/2 cookie / 57 g",
+    "servingSizeG": 57,
     "protein": 8,
-    "calories": 220,
-    "carbs": 35,
+    "calories": 210,
+    "carbs": 30,
     "fiber": 5,
-    "sugar": 11,
-    "fat": 5
+    "sugar": 12,
+    "fat": 6
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B004IJM4OY",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "787692834617",
+    "fdcId": 2608424
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2608424",
+        "url": "https://fdc.nal.usda.gov/food-details/2608424/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 8,
+          "calories": 210,
+          "carbs": 30,
+          "fiber": 5,
+          "sugar": 12,
+          "fat": 6
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

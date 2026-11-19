@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Peanut Butter Cups (2 cups)",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 190,
+    "carbs": 3,
+    "fiber": 4,
+    "sugar": 1,
+    "fat": 12
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 190,
+    "carbs": 3,
+    "fiber": 4,
+    "sugar": 1,
+    "fat": 12
+  }
+}

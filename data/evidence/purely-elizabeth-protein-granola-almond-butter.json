@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Purely Elizabeth Protein Granola Almond Butter",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2152461,
+      "description": "MAPLE ALMOND BUTTER NUT BUTTER GRANOLA, MAPLE ALMOND BUTTER",
+      "brandOwner": "Purely Elizabeth ",
+      "brandName": "PURELY ELIZABETH.",
+      "gtinUpc": "855140002991",
+      "publishedDate": "2021-10-28",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2152461,
+        "description": "MAPLE ALMOND BUTTER NUT BUTTER GRANOLA, MAPLE ALMOND BUTTER",
+        "brandOwner": "Purely Elizabeth ",
+        "brandName": "PURELY ELIZABETH.",
+        "gtinUpc": "855140002991",
+        "publishedDate": "2021-10-28",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2088636,
+        "description": "ELIZABETH'S NATURALS, BUTTER TOFFE CASHEWS",
+        "brandOwner": "Sagsveen & Sagsveen Food Brokers Ltd.",
+        "brandName": "ELIZABETH'S NATURALS",
+        "gtinUpc": "648570004457",
+        "publishedDate": "2021-10-28",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      },
+      {
+        "fdcId": 453668,
+        "description": "PURELY ELIZABETH, ANCIENT GRANOLA + PUFFS CEREAL, PUMPKIN FIG",
+        "brandOwner": "Purely Elizabeth",
+        "gtinUpc": "855140002502",
+        "publishedDate": "2019-04-01",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2152461,
+    "description": "MAPLE ALMOND BUTTER NUT BUTTER GRANOLA, MAPLE ALMOND BUTTER",
+    "brandOwner": "Purely Elizabeth ",
+    "brandName": "PURELY ELIZABETH.",
+    "gtinUpc": "855140002991",
+    "servingSize": 30,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1/3 cup",
+    "dataSource": "LI",
+    "modifiedDate": "4/8/2020",
+    "ingredients": "ORGANIC GLUTEN-FREE OATS, ORGANIC COCONUT SUGAR, ORGANIC RAW VIRGIN COCONUT OIL, ALMOND BUTTER, MAPLE SYRUP, SUNFLOWER SEEDS, ALMONDS, ORGANIC AMARANTH PUFFS, ORGANIC QUINOA FLAKES, ORGANIC CHIA SEEDS, CINNAMON, SEA SALT, NATURAL FLAVOR.",
+    "perServing": {
+      "protein": 3,
+      "calories": 130,
+      "carbs": 19,
+      "fiber": 3,
+      "sugar": 6,
+      "fat": 5,
+      "servingSize": "1/3 cup / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 3,
+      "calories": 130,
+      "carbs": 19,
+      "fiber": 3,
+      "sugar": 6,
+      "fat": 5,
+      "servingSize": "1/3 cup / 30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 6,
+    "calories": 170,
+    "carbs": 8,
+    "fiber": 2,
+    "sugar": 4,
+    "fat": 13
+  },
+  "after": {
+    "servingSize": "1/3 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 3,
+    "calories": 130,
+    "carbs": 19,
+    "fiber": 3,
+    "sugar": 6,
+    "fat": 5
+  }
+}

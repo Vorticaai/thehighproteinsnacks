@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Whisps Parmesan Cheese Crisps",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2677312,
+      "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+      "brandOwner": "Arthur Schuman Inc.",
+      "brandName": "WHISPS",
+      "gtinUpc": "088231416418",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2677312,
+        "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+        "brandOwner": "Arthur Schuman Inc.",
+        "brandName": "WHISPS",
+        "gtinUpc": "088231416418",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2677313,
+        "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+        "brandOwner": "Arthur Schuman Inc.",
+        "brandName": "WHISPS",
+        "gtinUpc": "088231412045",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2424565,
+        "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+        "brandOwner": "Arthur Schuman Inc.",
+        "brandName": "WHISPS",
+        "gtinUpc": "088231412687",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2376758,
+        "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+        "brandOwner": "Whisps Acquisition Corp",
+        "brandName": "WHISPS",
+        "gtinUpc": "810030720492",
+        "publishedDate": "2022-12-07",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2323074,
+        "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+        "brandOwner": "Whisps Acquisition Corp",
+        "brandName": "WHISPS",
+        "gtinUpc": "810030721604",
+        "publishedDate": "2022-06-21",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2677312,
+    "description": "PARMESAN CHEESE CRISPS, PARMESAN",
+    "brandOwner": "Arthur Schuman Inc.",
+    "brandName": "WHISPS",
+    "gtinUpc": "088231416418",
+    "servingSize": 18,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Pack",
+    "dataSource": "LI",
+    "modifiedDate": "7/5/2022",
+    "ingredients": "PARMESAN CHEESE (PASTEURIZED PART-SKIM MILK, CHEESE CULTURES, SALT, ENZYMES).",
+    "perServing": {
+      "protein": 9,
+      "calories": 100,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 Pack / 18 g",
+      "servingSizeG": 18
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 9,
+      "calories": 100,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 Pack / 18 g",
+      "servingSizeG": 18
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 160,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 12
+  },
+  "after": {
+    "servingSize": "1 Pack / 18 g",
+    "servingSizeG": 18,
+    "protein": 9,
+    "calories": 100,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 7
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "OWYN 20g Plant Protein Shake – Smooth Chocolate",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 60% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2670030,
+      "description": "SMOOTH VANILLA 20G PROTEIN PLANT-BASED DRINK, SMOOTH VANILLA",
+      "brandOwner": "Only What You Need, Inc.",
+      "brandName": "OWYN",
+      "gtinUpc": "857335004988",
+      "publishedDate": "2023-11-16",
+      "score": 0.6,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2670030,
+        "description": "SMOOTH VANILLA 20G PROTEIN PLANT-BASED DRINK, SMOOTH VANILLA",
+        "brandOwner": "Only What You Need, Inc.",
+        "brandName": "OWYN",
+        "gtinUpc": "857335004988",
+        "publishedDate": "2023-11-16",
+        "score": 0.6,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2510526,
+        "description": "PROTEIN 20G NON-DAIRY SHAKE, DARK CHOCOLATE, DARK CHOCOLATE",
+        "brandOwner": "Integrative Nutrition",
+        "brandName": "OWYN",
+        "gtinUpc": "850043711155",
+        "publishedDate": "2023-03-16",
+        "score": 0.6,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2422511,
+        "description": "PLANT 32 G PROTEIN SHAKES, CHOCOLATE, CHOCOLATE",
+        "brandOwner": "Only What You Need, Inc.",
+        "brandName": "OWYN",
+        "gtinUpc": "856461008662",
+        "publishedDate": "2022-12-22",
+        "score": 0.6,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2670197,
+        "description": "SMOOTH VANILLA PROTEIN SHAKE, SMOOTH VANILLA",
+        "brandOwner": "Only What You Need, Inc.",
+        "brandName": "OWYN",
+        "gtinUpc": "856461008778",
+        "publishedDate": "2023-11-16",
+        "score": 0.4,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2670030,
+    "description": "SMOOTH VANILLA 20G PROTEIN PLANT-BASED DRINK, SMOOTH VANILLA",
+    "brandOwner": "Only What You Need, Inc.",
+    "brandName": "OWYN",
+    "gtinUpc": "857335004988",
+    "servingSize": 355,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "12 fl oz",
+    "dataSource": "LI",
+    "modifiedDate": "3/4/2021",
+    "ingredients": "WATER, OWYN PROTEIN BLEND (PEA PROTEIN, ORGANIC PUMPKIN SEED PROTEIN, ORGANIC FLAX OIL), VEGETABLE FIBER, ORGANIC CANE SUGAR, SUNFLOWER OIL, NATURAL FLAVORS, SUNFLOWER LECITHIN, GUAR GUM, GREENS BLEND (BROCCOLI, SPINACH, KALE) MONK FRUIT EXTRACT, HIMALAYAN PINK SALT.",
+    "perServing": {
+      "protein": 20,
+      "calories": 181,
+      "carbs": 9.02,
+      "fiber": 4.97,
+      "sugar": 4.01,
+      "fat": 6.99,
+      "servingSize": "12 fl oz / 355 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 9,
+    "fiber": 3,
+    "sugar": 4,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 9,
+    "fiber": 3,
+    "sugar": 4,
+    "fat": 7
+  }
+}

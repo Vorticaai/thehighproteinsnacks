@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Epic Bison Cranberry Protein Bar",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2770123,
+      "description": "EPIC Grass Fed Bison Uncured Bacon + Cranberry Bar",
+      "brandOwner": "GENERAL MILLS SALES INC.",
+      "brandName": "EPIC Provisions",
+      "gtinUpc": "00732153029224",
+      "publishedDate": "2026-06-25",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2770123,
+        "description": "EPIC Grass Fed Bison Uncured Bacon + Cranberry Bar",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153029224",
+        "publishedDate": "2026-06-25",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2770125,
+        "description": "EPIC Grass Fed Bison Uncured Bacon + Cranberry Bars 12 Count",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153025349",
+        "publishedDate": "2026-06-25",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2740797,
+        "description": "EPIC Grass Fed Bison Uncured Bacon + Cranberry Bars 4 Count",
+        "brandOwner": "GENERAL MILLS SALES INC.",
+        "brandName": "EPIC Provisions",
+        "gtinUpc": "00732153125384",
+        "publishedDate": "2025-08-21",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2623475,
+        "description": "UNCURED BACON + CRANBERRY BISON BAR",
+        "brandOwner": "General Mills, Inc.",
+        "brandName": "EPIC",
+        "gtinUpc": "0732153029156",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2438093,
+        "description": "BISON UNCURED BACON + CRANBERRY BAR, BISON UNCURED BACON + CRANBERRY",
+        "brandOwner": "EPIC Provisions, LLC",
+        "brandName": "EPIC",
+        "gtinUpc": "858284002254",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2770123,
+    "description": "EPIC Grass Fed Bison Uncured Bacon + Cranberry Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "EPIC Provisions",
+    "gtinUpc": "00732153029224",
+    "servingSize": 37,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/6/2026",
+    "ingredients": "Bison, Uncured Bacon - No Nitrates or Nitrites Added (pork, water, sea salt, cultured celery powder), Dried Cranberries (apple juice concentrate, cranberries), Encapsulated Lactic Acid**, Vinegar. Contains 2% or less of: Water, Cultured Celery Powder, Sea Salt.**Not from milkExcept for those naturally occurring in sea salt and celery powder",
+    "perServing": {
+      "protein": 7,
+      "calories": 120,
+      "carbs": 8,
+      "fiber": 2,
+      "sugar": 6,
+      "fat": 7,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    }
+  },
+  "openFoodFacts": {
+    "code": "0732153029224",
+    "product_name": "Bison Uncured Bacon + Cranberry Bar",
+    "brands": "EPIC",
+    "serving_size": "1 bar (37 g)",
+    "perServing": {
+      "protein": 7,
+      "calories": 120,
+      "carbs": 8,
+      "fiber": 2,
+      "sugar": 6,
+      "fat": 7,
+      "servingSize": "1 bar (37 g)",
+      "servingSizeG": 37
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/073/215/302/9224/front_en.17.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 7,
+      "calories": 120,
+      "carbs": 8,
+      "fiber": 2,
+      "sugar": 6,
+      "fat": 7,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 7,
+    "calories": 130,
+    "carbs": 8,
+    "fiber": 1,
+    "sugar": 6,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
+    "protein": 7,
+    "calories": 120,
+    "carbs": 8,
+    "fiber": 2,
+    "sugar": 6,
+    "fat": 7
+  }
+}

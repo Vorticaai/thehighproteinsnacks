@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Built Bar Mint Brownie",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2217864,
+      "description": "MINT BROWNIE BARS, MINT BROWNIE",
+      "brandOwner": "Grand Industrial Products",
+      "brandName": "BUILT BAR",
+      "gtinUpc": "040962483510",
+      "publishedDate": "2022-01-06",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2217864,
+        "description": "MINT BROWNIE BARS, MINT BROWNIE",
+        "brandOwner": "Grand Industrial Products",
+        "brandName": "BUILT BAR",
+        "gtinUpc": "040962483510",
+        "publishedDate": "2022-01-06",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2181223,
+        "description": "MINT BROWNIE BAR, MINT BROWNIE",
+        "brandOwner": "Grand Industrial Products",
+        "brandName": "BUILT",
+        "gtinUpc": "040962483503",
+        "publishedDate": "2021-10-28",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635211,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239054789",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2635005,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "WONDERSHOP",
+        "gtinUpc": "085239034415",
+        "publishedDate": "2023-09-14",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2583896,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
+        "brandOwner": "Target Stores",
+        "brandName": "FAVORITE DAY",
+        "gtinUpc": "085239327913",
+        "publishedDate": "2023-06-29",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2217864,
+    "description": "MINT BROWNIE BARS, MINT BROWNIE",
+    "brandOwner": "Grand Industrial Products",
+    "brandName": "BUILT BAR",
+    "gtinUpc": "040962483510",
+    "servingSize": 49,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "11/8/2021",
+    "ingredients": "PROTEIN BLEND (WHEY PROTEIN ISOLATE, PARTIALLY HYDROLYZED WHEY PROTEIN ISOLATE), WATER, DARK CHOCOLATE (SUGAR, CHOCOLATE LIQUOR, COCOA BUTTER, MILKFAT, SOY LECITHIN, VANILLA), DIGESTION RESISTANT MALTODEXTRIN, GLYCERIN, ERYTHRITOL, COCOA, GELATIN, NATURAL FLAVOR, CITRIC ACID, NONFAT DRY MILK.",
+    "perServing": {
+      "protein": 17,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5.98,
+      "sugar": 4,
+      "fat": 2.5,
+      "servingSize": "1 Bar / 49 g",
+      "servingSizeG": 49
+    }
+  },
+  "openFoodFacts": {
+    "code": "0040962483510",
+    "product_name": "Mint brownie protein bar",
+    "perServing": null,
+    "image_front_url": "https://images.openfoodfacts.org/images/products/004/096/248/3510/front_en.7.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 17,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 6,
+      "sugar": 4,
+      "fat": 2.5,
+      "servingSize": "1 Bar / 49 g",
+      "servingSizeG": 49
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 140,
+    "carbs": 18,
+    "fiber": 1,
+    "sugar": 7,
+    "fat": 2.5
+  },
+  "after": {
+    "servingSize": "1 Bar / 49 g",
+    "servingSizeG": 49,
+    "protein": 17,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 4,
+    "fat": 2.5
+  }
+}

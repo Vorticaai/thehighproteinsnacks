@@ -10,10 +10,10 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 strip / 23 g",
+    "servingSizeG": 23,
     "protein": 7,
-    "calories": 80,
+    "calories": 90,
     "carbs": 5,
     "fiber": 0,
     "sugar": 5,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B01MUD20GN",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "00732153146365",
+    "fdcId": 2778578
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2778578",
+        "url": "https://fdc.nal.usda.gov/food-details/2778578/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 7,
+          "calories": 89.9,
+          "carbs": 5,
+          "fiber": 0,
+          "sugar": 5,
+          "fat": 4
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

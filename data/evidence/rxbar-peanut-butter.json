@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Peanut Butter",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2599185,
+      "description": "RXBAR PROTEIN BAR, 1.83 OZ, 10 COUNT",
+      "brandOwner": "Chicago Bar Company ",
+      "brandName": "RXBAR",
+      "gtinUpc": "00859162007255",
+      "publishedDate": "2023-07-13",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2599185,
+        "description": "RXBAR PROTEIN BAR, 1.83 OZ, 10 COUNT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "00859162007255",
+        "publishedDate": "2023-07-13",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2599185,
+    "description": "RXBAR PROTEIN BAR, 1.83 OZ, 10 COUNT",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "00859162007255",
+    "servingSize": 52,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "5/30/2023",
+    "ingredients": "CHOCOLATE SEA SALT - DATES, EGG WHITES, ALMONDS, CASHEWS, CHOCOLATE, COCOA, NATURAL FLAVOR, SEA SALT,COCONUT CHOCOLATE - DATES, EGG WHITES, ALMONDS, CASHEWS, CHOCOLATE, NATURAL FLAVOR, SEA SALT, COCONUT,BLUEBERRY - DATES, EGG WHITES, ALMONDS, CASHEWS, BLUEBERRIES, NATURAL FLAVOR,PEANUT BUTTER CHOCOLATE - DATES, PEANUTS, EGG WHITES, CHOCOLATE, NATURAL FLAVOR, COCOA, SEA SALT",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 24,
+      "fiber": 4.99,
+      "sugar": 13,
+      "fat": 9,
+      "servingSize": "52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 190,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 17,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 190,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 17,
+    "fat": 7
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Cookie Chocolate Chip",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669720,
+      "description": "PROTEIN COOKIE, DOUBLE CHOCOLATE CHIP",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849006014",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669720,
+        "description": "PROTEIN COOKIE, DOUBLE CHOCOLATE CHIP",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849006014",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2449493,
+        "description": "CHOCOLATE CHIP SOFT & CHEWY PROTEIN COOKIES, CHOCOLATE CHIP",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011407",
+        "publishedDate": "2023-01-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2373925,
+        "description": "CHOCOLATE CHIP SOFT & CHEWY PROTEIN COOKIES, CHOCOLATE CHIP",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849006090",
+        "publishedDate": "2022-12-07",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2244992,
+        "description": "PROTEIN COOKIE, CHOCOLATE CHIP",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849005994",
+        "publishedDate": "2022-04-01",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1879529,
+        "description": "QUEST, PROTEIN CHIPS, SALT & VINEGAR, SALT & VINEGAR",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000982",
+        "publishedDate": "2021-07-29",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669720,
+    "description": "PROTEIN COOKIE, DOUBLE CHOCOLATE CHIP",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849006014",
+    "servingSize": 59,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 COOKIE",
+    "dataSource": "LI",
+    "modifiedDate": "3/23/2019",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), BUTTER (CREAM), SOLUBLE CORN FIBER, ERYTHRITOL, PALM OIL, COCOA (PROCESSED WITH ALKALI), UNSWEETENED CHOCOLATE, CALCIUM CASEINATE, NATURAL FLAVORS, WATER, COCOA BUTTER. CONTAINS LESS THAN 2% OF THE FOLLOWING: SUNFLOWER LECITHIN, SEA SALT, BAKING SODA, SODIUM CASEINATE, XANTHAN GUM, YEAST EXTRACT, STEVIOL GLYCOSIDES (STEVIA), PEANUTS.",
+    "perServing": {
+      "protein": 15,
+      "calories": 240,
+      "carbs": 20,
+      "fiber": 9.97,
+      "sugar": 0.997,
+      "fat": 16,
+      "servingSize": "1 COOKIE / 59 g",
+      "servingSizeG": 59
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 240,
+      "carbs": 20,
+      "fiber": 10,
+      "sugar": 1,
+      "fat": 16,
+      "servingSize": "1 COOKIE / 59 g",
+      "servingSizeG": 59
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 250,
+    "carbs": 2,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 17
+  },
+  "after": {
+    "servingSize": "1 COOKIE / 59 g",
+    "servingSizeG": 59,
+    "protein": 15,
+    "calories": 240,
+    "carbs": 20,
+    "fiber": 10,
+    "sugar": 1,
+    "fat": 16
+  }
+}

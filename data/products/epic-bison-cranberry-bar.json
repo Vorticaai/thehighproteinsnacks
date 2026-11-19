@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
     "protein": 7,
-    "calories": 130,
+    "calories": 120,
     "carbs": 8,
-    "fiber": 1,
+    "fiber": 2,
     "sugar": 6,
-    "fat": 8
+    "fat": 7
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": null,
-    "gtin": null,
-    "fdcId": null
+    "gtin": "00732153029224",
+    "fdcId": 2770123
   },
-  "image": null,
+  "image": {
+    "src": "/products/epic-bison-cranberry-bar.jpg",
+    "alt": "Epic Provisions Epic Bison Cranberry Protein Bar package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0732153029224"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2770123",
+        "url": "https://fdc.nal.usda.gov/food-details/2770123/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 7,
+          "calories": 120,
+          "carbs": 8,
+          "fiber": 2,
+          "sugar": 6,
+          "fat": 7
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0732153029224",
+        "url": "https://world.openfoodfacts.org/product/0732153029224",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 7,
+          "calories": 120,
+          "carbs": 8,
+          "fiber": 2,
+          "sugar": 6,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

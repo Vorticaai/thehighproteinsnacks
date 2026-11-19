@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Chocolate Sea Salt Bar",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2670032,
+      "description": "CHOCOLATE SEA SALT PROTEIN BARS, CHOCOLATE SEA SALT",
+      "brandOwner": "Chicago Bar Company ",
+      "brandName": "RXBAR",
+      "gtinUpc": "857777004485",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2670032,
+        "description": "CHOCOLATE SEA SALT PROTEIN BARS, CHOCOLATE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004485",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653556,
+        "description": "CHOCOLATE SEA SALT BAR, CHOCOLATE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004232",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2659059,
+        "description": "CHOCOLATE SEA SALT PROTEIN BAR, CHOCOLATE; SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "0857777004300",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2636409,
+        "description": "CHOCOLATE SEA SALT MINIS PROTEIN BAR, CHOCOLATE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "193908000484",
+        "publishedDate": "2023-09-14",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2626368,
+        "description": "CHOCOLATE SEA SALT PROTEIN BARS, CHOCOLATE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "193908002754",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2670032,
+    "description": "CHOCOLATE SEA SALT PROTEIN BARS, CHOCOLATE SEA SALT",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "857777004485",
+    "servingSize": 52,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "2/8/2023",
+    "ingredients": "DATES, EGG WHITES, CASHEWS, ALMONDS, CHOCOLATE, COCOA, NATURAL FLAVORS, SEA SALT.",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 23,
+      "fiber": 4.99,
+      "sugar": 13,
+      "fat": 9,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 23,
+      "fiber": 5,
+      "sugar": 13,
+      "fat": 9,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 200,
+    "carbs": 22,
+    "fiber": 5,
+    "sugar": 13,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": "1 bar / 52 g",
+    "servingSizeG": 52,
+    "protein": 12,
+    "calories": 210,
+    "carbs": 23,
+    "fiber": 5,
+    "sugar": 13,
+    "fat": 9
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Barebells Protein Bar – Cookies & Cream",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2643090,
+      "description": "COOKIES & CREAM PROTEIN BARS, COOKIES & CREAM",
+      "brandOwner": "MINX, INC",
+      "brandName": "BAREBELLS",
+      "gtinUpc": "850000429598",
+      "publishedDate": "2023-09-14",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2643090,
+        "description": "COOKIES & CREAM PROTEIN BARS, COOKIES & CREAM",
+        "brandOwner": "MINX, INC",
+        "brandName": "BAREBELLS",
+        "gtinUpc": "850000429598",
+        "publishedDate": "2023-09-14",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2643090,
+    "description": "COOKIES & CREAM PROTEIN BARS, COOKIES & CREAM",
+    "brandOwner": "MINX, INC",
+    "brandName": "BAREBELLS",
+    "gtinUpc": "850000429598",
+    "servingSize": 55,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "8/15/2023",
+    "ingredients": "MILK PROTEIN BLEND (CALCIUM CASEINATE, WHEY PROTEIN CONCENTRATE, WHEY PROTEIN ISOLATE), GLYCERIN, MALTITOL, BOVINE COLLAGEN HYDROLYSATE, POLYDEXTROSE, COCOA BUTTER, WATER, SOY PROTEIN ISOLATE, DRY WHOLE MILK, SUNFLOWER OIL, UNSWEETENED CHOCOLATE, TAPIOCA STARCH, NATURAL AND ARTIFICIAL FLAVORS, COCOA PROCESSED WITH ALKALI, SUNFLOWER LECITHIN, SUCRALOSE.",
+    "perServing": {
+      "protein": 20,
+      "calories": 200,
+      "carbs": 20,
+      "fiber": 3.02,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar / 55 g",
+      "servingSizeG": 55
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850000429598",
+    "product_name": "Cookies and cream protein bars",
+    "brands": "Barebells",
+    "serving_size": "55g",
+    "perServing": {
+      "protein": 20,
+      "calories": 200,
+      "carbs": 20,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "55g",
+      "servingSizeG": 55
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/042/9598/front_en.39.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 200,
+      "carbs": 20,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar / 55 g",
+      "servingSizeG": 55
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 200,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": "1 bar / 55 g",
+    "servingSizeG": 55,
+    "protein": 20,
+    "calories": 200,
+    "carbs": 20,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 7
+  }
+}

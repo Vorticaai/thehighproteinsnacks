@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Nutrition Protein Puffs Ranch",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2503880,
+      "description": "SEA QUEST EGG HUNT, SEA QUEST",
+      "brandOwner": "Bee International, Inc.",
+      "brandName": "BEE",
+      "gtinUpc": "073563004792",
+      "publishedDate": "2023-03-16",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2503880,
+        "description": "SEA QUEST EGG HUNT, SEA QUEST",
+        "brandOwner": "Bee International, Inc.",
+        "brandName": "BEE",
+        "gtinUpc": "073563004792",
+        "publishedDate": "2023-03-16",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2421887,
+        "description": "SEA QUEST FLAVORED EGG HUNT, SEA QUEST",
+        "brandOwner": "Bee International, Inc.",
+        "brandName": "BEE",
+        "gtinUpc": "073563006178",
+        "publishedDate": "2022-12-22",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2277215,
+        "description": "SEA QUEST FLAVORED EGG HUNT, SEA QUEST",
+        "brandOwner": "Bee International, Inc.",
+        "brandName": "BEE",
+        "gtinUpc": "073563004785",
+        "publishedDate": "2022-05-23",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1879529,
+        "description": "QUEST, PROTEIN CHIPS, SALT & VINEGAR, SALT & VINEGAR",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000982",
+        "publishedDate": "2021-07-29",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1879658,
+        "description": "QUEST, PROTEIN CHIPS, SEA SALT, SEA SALT",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000258",
+        "publishedDate": "2021-07-29",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2503880,
+    "description": "SEA QUEST EGG HUNT, SEA QUEST",
+    "brandOwner": "Bee International, Inc.",
+    "brandName": "BEE",
+    "gtinUpc": "073563004792",
+    "servingSize": 4.5,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Roll",
+    "dataSource": "LI",
+    "modifiedDate": "2/20/2023",
+    "ingredients": "DEXTROSE, CITRIC ACID, CALCIUM STEARATE, NATURAL AND ARTIFICIAL FLAVOR, RED 40 LAKE, YELLOW 5 LAKE, YELLOW 6 LAKE, BLUE 2 LAKE.",
+    "perServing": {
+      "protein": 0,
+      "calories": 15,
+      "carbs": 4,
+      "fiber": 0,
+      "sugar": 4,
+      "fat": 0,
+      "servingSize": "1 Roll / 4.5 g",
+      "servingSizeG": 4.5
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  }
+}

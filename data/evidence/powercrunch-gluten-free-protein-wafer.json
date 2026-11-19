@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Power Crunch Protein Wafer – Triple Chocolate",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2665580,
+      "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BAR, TRIPLE CHOCOLATE",
+      "brandOwner": "Bionutritional Research Group, Inc.",
+      "brandName": "POWER CRUNCH",
+      "gtinUpc": "644225727832",
+      "publishedDate": "2023-11-16",
+      "score": 0.6666666666666666,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2665580,
+        "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BAR, TRIPLE CHOCOLATE",
+        "brandOwner": "Bionutritional Research Group, Inc.",
+        "brandName": "POWER CRUNCH",
+        "gtinUpc": "644225727832",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2665557,
+        "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BARS, TRIPLE CHOCOLATE",
+        "brandOwner": "Bionutritional Research Group, Inc.",
+        "brandName": "POWER CRUNCH",
+        "gtinUpc": "644225730825",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2612910,
+        "description": "TRIPLE NUT CRUNCH 70% DARK CHOCOLATE, TRIPLE NUT CRUNCH",
+        "brandOwner": "Strasner's Bar-B-Que",
+        "brandName": "TAZA CHOCOLATE",
+        "gtinUpc": "850033354072",
+        "publishedDate": "2023-07-13",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2509165,
+        "description": "TRIPLE CHOCOLATE CRUNCH ICE CREAM BARS, TRIPLE CHOCOLATE CRUNCH",
+        "brandOwner": "Parabit Systems Inc.",
+        "brandName": "KETO",
+        "gtinUpc": "810092630357",
+        "publishedDate": "2023-03-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2442616,
+        "description": "STRAUB'S, GOURMET POPCORN, TRIPLE CHOCOLATE CARAMEL CRUNCH, TRIPLE CHOCOLATE CARAMEL CRUNCH",
+        "brandOwner": "The Hampton Popcorn Company, Inc. ",
+        "brandName": "STRAUB'S",
+        "gtinUpc": "813117021963",
+        "publishedDate": "2022-12-22",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2665580,
+    "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BAR, TRIPLE CHOCOLATE",
+    "brandOwner": "Bionutritional Research Group, Inc.",
+    "brandName": "POWER CRUNCH",
+    "gtinUpc": "644225727832",
+    "servingSize": 40,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Cookie",
+    "dataSource": "LI",
+    "modifiedDate": "8/25/2021",
+    "ingredients": "PROTO WHEY PROTEIN BLEND (MICRO PEPTIDES FROM HIGH-DH HYDROLYZED WHEY PROTEIN [40% DI AND TRIPEPTIDES], WHEY PROTEIN ISOLATE, MILK PROTEIN ISOLATE), PALM OIL, ENRICHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), PALM KERNEL OIL, SUGAR, COCOA PROCESSED WITH ALKALI, CANOLA OIL, FRUCTOSE, SOY LECITHIN, NATURAL FLAVORS, MALTODEXTRIN, SALT, STEVIA LEAF EXTRACT, BAKING SODA, AMMONIUM BICARBONATE, MONK FRUIT.",
+    "perServing": {
+      "protein": 13,
+      "calories": 220,
+      "carbs": 11,
+      "fiber": 1,
+      "sugar": 5,
+      "fat": 13,
+      "servingSize": "1 Cookie / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": {
+    "code": "0644225727832",
+    "product_name": "Protein Bar",
+    "brands": "Power crunch",
+    "serving_size": "1 Bar (40 g)",
+    "perServing": {
+      "protein": 5.2,
+      "calories": 220,
+      "carbs": 4.4,
+      "fiber": 0.4,
+      "sugar": 2,
+      "fat": 5.2,
+      "servingSize": "1 Bar (40 g)",
+      "servingSizeG": 40
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/064/422/572/7832/front_en.49.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 215,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 5,
+    "fat": 13
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 215,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 5,
+    "fat": 13
+  }
+}

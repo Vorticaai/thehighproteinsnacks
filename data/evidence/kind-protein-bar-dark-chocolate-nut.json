@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "KIND Protein Bar Dark Chocolate Nut",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2666119,
+      "description": "DARK CHOCOLATE NUT PROTEIN BARS, DARK CHOCOLATE NUT",
+      "brandOwner": "KIND Inc.",
+      "brandName": "KIND",
+      "gtinUpc": "602652276958",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2666119,
+        "description": "DARK CHOCOLATE NUT PROTEIN BARS, DARK CHOCOLATE NUT",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652276958",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2550654,
+        "description": "DOUBLE DARK CHOCOLATE NUT PROTEIN BARS, DOUBLE DARK CHOCOLATE NUT",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652208027",
+        "publishedDate": "2023-05-25",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2550657,
+        "description": "DOUBLE DARK CHOCOLATE NUT PROTEIN BARS, DOUBLE DARK CHOCOLATE NUT",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652209024",
+        "publishedDate": "2023-05-25",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2081658,
+        "description": "KIND, DARK CHOCOLATE CINNAMON PECAN BAR, NUTS & SPICES, NUTS & SPICES",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652176524",
+        "publishedDate": "2021-10-28",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1907528,
+        "description": "KIND, NUTS & SPICES BAR, DARK CHOCOLATE CHILI ALMOND, DARK CHOCOLATE CHILI ALMOND",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652170935",
+        "publishedDate": "2021-07-29",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2666119,
+    "description": "DARK CHOCOLATE NUT PROTEIN BARS, DARK CHOCOLATE NUT",
+    "brandOwner": "KIND Inc.",
+    "brandName": "KIND",
+    "gtinUpc": "602652276958",
+    "servingSize": 50,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "4/24/2023",
+    "ingredients": "PEANUTS, ALMONDS, GLUCOSE SYRUP, SOY PROTEIN ISOLATE, HONEY, PALM KERNEL OIL, SUGAR, CHICORY ROOT FIBER, UNSWEETENED CHOCOLATE, ALKALIZED COCOA, SOY LECITHIN, NATURAL FLAVOR, SEA SALT, COCOA BUTTER.",
+    "perServing": {
+      "protein": 12,
+      "calories": 240,
+      "carbs": 18,
+      "fiber": 5,
+      "sugar": 8,
+      "fat": 17,
+      "servingSize": "1 BAR / 50 g",
+      "servingSizeG": 50
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 240,
+      "carbs": 18,
+      "fiber": 5,
+      "sugar": 8,
+      "fat": 17,
+      "servingSize": "1 BAR / 50 g",
+      "servingSizeG": 50
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 250,
+    "carbs": 17,
+    "fiber": 5,
+    "sugar": 8,
+    "fat": 17
+  },
+  "after": {
+    "servingSize": "1 BAR / 50 g",
+    "servingSizeG": 50,
+    "protein": 12,
+    "calories": 240,
+    "carbs": 18,
+    "fiber": 5,
+    "sugar": 8,
+    "fat": 17
+  }
+}

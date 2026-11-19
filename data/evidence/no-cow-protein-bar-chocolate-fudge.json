@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "No Cow Protein Bar – Chocolate Fudge",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2525534,
+      "description": "CHOCOLATE FUDGE BROWNIE PROTEIN BARS, CHOCOLATE FUDGE BROWNIE",
+      "brandOwner": "D's Naturals, LLC",
+      "brandName": "NO COW",
+      "gtinUpc": "852346005542",
+      "publishedDate": "2023-04-27",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2525534,
+        "description": "CHOCOLATE FUDGE BROWNIE PROTEIN BARS, CHOCOLATE FUDGE BROWNIE",
+        "brandOwner": "D's Naturals, LLC",
+        "brandName": "NO COW",
+        "gtinUpc": "852346005542",
+        "publishedDate": "2023-04-27",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2412191,
+        "description": "CHOCOLATE FUDGE BROWNIE PROTEIN BAR, CHOCOLATE FUDGE BROWNIE",
+        "brandOwner": "D's Naturals, LLC",
+        "brandName": "NO COW",
+        "gtinUpc": "852346005498",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2171791,
+        "description": "CHOCOLATE FUDGE BROWNIE FLAVORED PROTEIN BAR, CHOCOLATE FUDGE BROWNIE",
+        "brandOwner": "D's Naturals, LLC",
+        "brandName": "NO COW",
+        "gtinUpc": "852346005313",
+        "publishedDate": "2021-10-28",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2095715,
+        "description": "CARAMEL FUDGE COW TRACKS FUDGE FILLED COWS AND CARAMEL SWIRLS IN CHOCOLATE ICE CREAM, CARAMEL FUDGE COW TRACKS",
+        "brandOwner": "Kemps LLC ",
+        "brandName": "KEMPS",
+        "gtinUpc": "041483029829",
+        "publishedDate": "2021-10-28",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2525534,
+    "description": "CHOCOLATE FUDGE BROWNIE PROTEIN BARS, CHOCOLATE FUDGE BROWNIE",
+    "brandOwner": "D's Naturals, LLC",
+    "brandName": "NO COW",
+    "gtinUpc": "852346005542",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "3/9/2023",
+    "ingredients": "PROTEIN BLEND (BROWN RICE PROTEIN, PEA PROTEIN), SOLUBLE CORN FIBER, GLYCERINE, CHOCOLATE CHIPS (UNSWEETENED CHOCOLATE, ERYTHRITOL, COCOA BUTTER, STEVIA, SUNFLOWER LECITHIN), PALM OIL*, ALMONDS, COCOA POWDER (PROCESSED WITH ALKALI), NATURAL FLAVORS, SALT, COCOA BUTTER, SWEETENER BLEND (ERYTHRITOL, STEVIA LEAF REB M, MONK FRUIT).",
+    "perServing": {
+      "protein": 21,
+      "calories": 210,
+      "carbs": 24,
+      "fiber": 14,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 210,
+      "carbs": 24,
+      "fiber": 14,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 190,
+    "carbs": 26,
+    "fiber": 14,
+    "sugar": 1,
+    "fat": 6
+  },
+  "after": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 21,
+    "calories": 210,
+    "carbs": 24,
+    "fiber": 14,
+    "sugar": 1,
+    "fat": 7
+  }
+}

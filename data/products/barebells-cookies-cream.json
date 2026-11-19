@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 55 g",
+    "servingSizeG": 55,
     "protein": 20,
     "calories": 200,
-    "carbs": 17,
+    "carbs": 20,
     "fiber": 3,
     "sugar": 1,
-    "fat": 8
+    "fat": 7
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B08KWGDMJW",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "850000429598",
+    "fdcId": 2643090
   },
-  "image": null,
+  "image": {
+    "src": "/products/barebells-cookies-cream.jpg",
+    "alt": "Barebells Barebells Protein Bar – Cookies & Cream package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850000429598"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2643090",
+        "url": "https://fdc.nal.usda.gov/food-details/2643090/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 200,
+          "carbs": 20,
+          "fiber": 3,
+          "sugar": 1,
+          "fat": 7
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0850000429598",
+        "url": "https://world.openfoodfacts.org/product/0850000429598",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 200,
+          "carbs": 20,
+          "fiber": 3,
+          "sugar": 1,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

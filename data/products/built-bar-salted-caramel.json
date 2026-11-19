@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 15,
+    "servingSize": "1 Bar (49g) / 49 g",
+    "servingSizeG": 49,
+    "protein": 17,
     "calories": 130,
     "carbs": 18,
     "fiber": 6,
     "sugar": 4,
-    "fat": 3
+    "fat": 2.5
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B09M96KGNJ",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "0840229301195",
+    "fdcId": 2642460
   },
-  "image": null,
+  "image": {
+    "src": "/products/built-bar-salted-caramel.jpg",
+    "alt": "Built Bar Built Bar Salted Caramel package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0840229301195"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2642460",
+        "url": "https://fdc.nal.usda.gov/food-details/2642460/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 17,
+          "calories": 130,
+          "carbs": 18,
+          "fiber": 6,
+          "sugar": 4,
+          "fat": 2.5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0840229301195",
+        "url": "https://world.openfoodfacts.org/product/0840229301195",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 17,
+          "calories": 130,
+          "carbs": 18,
+          "fiber": 6,
+          "sugar": 4,
+          "fat": 2.5
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Wilde Protein Chips – Buffalo",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2652405,
+      "description": "BUFFALO STYLE PROTEIN CHIPS, BUFFALO STYLE",
+      "brandOwner": "Wilde Brands, LLC",
+      "brandName": "WILDE",
+      "gtinUpc": "856802008818",
+      "publishedDate": "2023-10-26",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2652405,
+        "description": "BUFFALO STYLE PROTEIN CHIPS, BUFFALO STYLE",
+        "brandOwner": "Wilde Brands, LLC",
+        "brandName": "WILDE",
+        "gtinUpc": "856802008818",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653127,
+        "description": "BUFFALO STYLE PROTEIN CHIPS, BUFFALO STYLE",
+        "brandOwner": "Wilde Brands, LLC",
+        "brandName": "WILDE",
+        "gtinUpc": "866418000311",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653521,
+        "description": "BUFFALO STYLE PROTEIN CHIPS, BUFFALO STYLE",
+        "brandOwner": "Wilde Brands, LLC",
+        "brandName": "WILDE",
+        "gtinUpc": "856802008412",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653516,
+        "description": "BUFFALO STYLE PROTEIN CHIPS, BUFFALO STYLE",
+        "brandOwner": "Wilde Brands, LLC",
+        "brandName": "WILDE",
+        "gtinUpc": "856802008795",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2652405,
+    "description": "BUFFALO STYLE PROTEIN CHIPS, BUFFALO STYLE",
+    "brandOwner": "Wilde Brands, LLC",
+    "brandName": "WILDE",
+    "gtinUpc": "856802008818",
+    "servingSize": 30,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "9/11/2023",
+    "ingredients": "ANTIBIOTIC-FREE CHICKEN BREAST, NATIVE TAPIOCA STARCH, HIGH OLEIC SUNFLOWER OIL AND/OR SAFFLOWER OIL, EGG WHITES, CHICKEN BONE BROTH, MODIFIED TAPIOCA STARCH. CONTAINS LESS THAN 2% OF THE FOLLOWING: AGED CAYENNE PEPPER SAUCE, VINEGAR, PAPRIKA EXTRACT, SEA SALT, SPICES, CITRIC ACID, MALTODEXTRIN, YEAST EXTRACT, NATURAL FLAVORS, SODIUM CITRATE, SALT, SUGAR**. **ADDS A TRIVIAL AMOUNT OF ADDED SUGAR.",
+    "perServing": {
+      "protein": 10,
+      "calories": 170,
+      "carbs": 8,
+      "fiber": 2.01,
+      "sugar": 0.999,
+      "fat": 10,
+      "servingSize": "30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 170,
+      "carbs": 8,
+      "fiber": 2,
+      "sugar": 1,
+      "fat": 10,
+      "servingSize": "30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 170,
+    "carbs": 6,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": "30 g",
+    "servingSizeG": 30,
+    "protein": 10,
+    "calories": 170,
+    "carbs": 8,
+    "fiber": 2,
+    "sugar": 1,
+    "fat": 10
+  }
+}
