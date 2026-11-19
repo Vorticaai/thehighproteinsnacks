@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/chomps-turkey-jerky-meat-stick.jpg",
+    "alt": "Chomps Chomps Turkey Jerky Meat Sticks package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0856584004329"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 50% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (protein: 10 vs 12).",
+      "Reviewer: fdcId 2554461 (tried first) turned out to be a genuinely different, older 10g-protein formulation under a different GS1 prefix ('Jlabs Beauty' brandOwner, UPC 850015892295) - both USDA and Open Food Facts agree it's 10g protein, just disagreeing on calories, so the pipeline correctly left it as needs-review rather than publish the wrong product's numbers. Trying this candidate instead: same brandOwner as the two already-ruled-out mini sticks ('We Are The Chompians LLC', the real Chomps manufacturer), no 'mini' in its description, not yet checked."
     ]
   }
 }

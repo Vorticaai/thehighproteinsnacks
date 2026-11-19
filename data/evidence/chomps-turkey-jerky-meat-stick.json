@@ -1,117 +1,58 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Chomps original turkey stick",
+  "query": "Chomps Turkey Jerky Meat Sticks",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
-      "fdcId": 2653535,
-      "description": "ORIGINAL FREE RANGE TURKEY SNACK STICK, ORIGINAL TURKEY",
-      "brandOwner": "We Are The Chompians LLC",
-      "brandName": "CHOMPS",
-      "gtinUpc": "856584004404",
-      "publishedDate": "2023-10-26",
-      "score": 0.5,
-      "brandOk": true
+      "fdcId": 1983177,
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2653535,
-        "description": "ORIGINAL FREE RANGE TURKEY SNACK STICK, ORIGINAL TURKEY",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004404",
-        "publishedDate": "2023-10-26",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2643239,
-        "description": "ORIGINAL TURKEY MINI STICKS, ORIGINAL TURKEY",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004879",
-        "publishedDate": "2023-09-14",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2554461,
-        "description": "ORIGINAL TURKEY STICKS, ORIGINAL TURKEY",
-        "brandOwner": "Jlabs Beauty",
-        "brandName": "CHOMPS",
-        "gtinUpc": "850015892295",
-        "publishedDate": "2023-05-25",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2396308,
-        "description": "MILD ORIGINAL TURKEY MINI STICK, MILD ORIGINAL",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004596",
-        "publishedDate": "2022-12-22",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1983177,
-        "description": "ORIGINAL TURKEY FREE RANGE SNACK STICK, ORIGINAL TURKEY",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004329",
-        "publishedDate": "2021-07-29",
-        "score": 0.5,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
-    "fdcId": 2653535,
-    "description": "ORIGINAL FREE RANGE TURKEY SNACK STICK, ORIGINAL TURKEY",
+    "fdcId": 1983177,
+    "description": "ORIGINAL TURKEY FREE RANGE SNACK STICK, ORIGINAL TURKEY",
     "brandOwner": "We Are The Chompians LLC",
     "brandName": "CHOMPS",
-    "gtinUpc": "856584004404",
-    "servingSize": 14,
-    "servingSizeUnit": "GRM",
-    "householdServingFullText": ".5 oz",
+    "gtinUpc": "856584004329",
+    "servingSize": 32,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1.15 ONZ",
     "dataSource": "LI",
-    "modifiedDate": "9/28/2023",
-    "ingredients": "TURKEY, WATER, SEA SALT, ENCAPSULATED LACTIC ACID, CULTURED CELERY POWDER (CELERY POWDER, SEA SALT), BLACK PEPPER, RED PEPPER, GARLIC POWDER, CORIANDER, STUFFED IN A BEEF COLLAGEN CASING",
+    "modifiedDate": "10/29/2019",
+    "ingredients": "TURKEY, WATER, SEA SALT, ENCAPSULATED LACTIC ACID, CULTURED CELERY POWDER (CELERY POWDER, SEA SALT), BLACK PEPPER, RED PEPPER, GARLIC POWDER, CORIANDER, STUFFED IN A BEEF COLLAGEN CASING.",
     "perServing": {
-      "protein": 5,
-      "calories": 29,
+      "protein": 10,
+      "calories": 70.1,
       "carbs": 0,
       "fiber": 0,
       "sugar": 0,
-      "fat": 1,
-      "servingSize": ".5 oz / 14 g",
-      "servingSizeG": 14
+      "fat": 2,
+      "servingSize": "1.15 ONZ / 32 g",
+      "servingSizeG": 32
     }
   },
   "openFoodFacts": {
-    "code": "0856584004404",
-    "product_name": "Original All Natural Chomps Antibiotic Free Turkey",
-    "brands": "CHOMPS",
-    "serving_size": "1 Stick (32 g)",
+    "code": "0856584004329",
+    "product_name": "Original Turkey Flavor",
+    "brands": "Chomps",
+    "serving_size": "1 stick (32 g)",
     "perServing": {
       "protein": 12,
       "calories": 80,
       "carbs": 0,
-      "fiber": 0,
-      "sugar": 0,
       "fat": 3.5,
-      "servingSize": "1 Stick (32 g)",
+      "servingSize": "1 stick (32 g)",
       "servingSizeG": 32
     },
-    "image_front_url": "https://images.openfoodfacts.org/images/products/085/658/400/4404/front_en.112.400.jpg"
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/658/400/4329/front_es.11.400.jpg"
   },
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA and Open Food Facts disagree (protein: 10 vs 12)."
     ]
   },
   "before": {
