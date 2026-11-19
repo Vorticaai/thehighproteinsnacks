@@ -5,9 +5,9 @@
   "productType": "chips",
   "buyUrl": "https://www.saffronroad.com/pages/chickpeas",
   "price": {
-    "perServing": 0,
+    "perServing": 1.34,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Brand's own store (saffronroad.com): 6-pack of ~5.4 oz bags, $40.99 total, divided across bags and this product's 1/4-cup serving (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1/4 cup / 30 g",

@@ -5,9 +5,9 @@
   "productType": "chips",
   "buyUrl": "https://www.amazon.com/s?k=FitCrunch+Cheddar+Cheese+High+Protein+Puffs",
   "price": {
-    "perServing": 0,
+    "perServing": 2.3,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Estimated from comparable protein-puff bag pricing (Shrewd Food, IWON Organics, Pure Protein); no specific FitCrunch Puffs listing found (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 Bag / 30 g",

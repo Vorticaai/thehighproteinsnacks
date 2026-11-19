@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Jack+Link%27s+Beef+Stick+%26+Colby+Jack+Cheese",
   "price": {
-    "perServing": 0,
+    "perServing": 1.16,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, from a 9-pack of beef-and-cheese stick combos ($10.42/9); no single-item listing confirmed (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 package / 43 g",

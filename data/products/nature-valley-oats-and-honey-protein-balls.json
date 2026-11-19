@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Oats+%26+Honey+Protein+Balls",
   "price": {
-    "perServing": 0,
+    "perServing": 1.04,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Estimated from comparable Nature Valley protein-snack pricing (~$0.023/g); no specific retail listing found for Protein Balls (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "2 Balls / 45 g",

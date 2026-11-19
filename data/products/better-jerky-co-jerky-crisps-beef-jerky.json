@@ -5,9 +5,9 @@
   "productType": "chips",
   "buyUrl": "https://www.amazon.com/s?k=Better+Jerky+Co.+Beef+Jerky+Crisps",
   "price": {
-    "perServing": 0,
+    "perServing": 7.39,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Estimated from comparable US jerky/biltong snack pricing (~$3.50-4.00/oz); no specific Better Jerky Co. retail listing found (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 package / 56 g",

@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Atkins+Lift+Protein+Drink%2C+Orange",
   "price": {
-    "perServing": 0,
+    "perServing": 2.91,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Estimated from standard Atkins 11 fl oz RTD shake pricing (~$1.87/bottle), scaled to this product's larger ~17 fl oz bottle; no exact listing found (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 BOTTLE / 507 ml",

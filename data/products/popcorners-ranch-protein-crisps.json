@@ -5,9 +5,9 @@
   "productType": "chips",
   "buyUrl": "https://www.amazon.com/s?k=PopCorners+Protein+Crisps%2C+Ranch",
   "price": {
-    "perServing": 0,
+    "perServing": 0.89,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 5 oz bag (~5 servings of 28 g each), $4.47 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "28 g",

@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Luna+Protein+Bar%2C+Chocolate+Coconut+Almond",
   "price": {
-    "perServing": 0,
+    "perServing": 1.25,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 6-bar box (1.69 oz bars), $7.47 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 BAR / 45 iu",

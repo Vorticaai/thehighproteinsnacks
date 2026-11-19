@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Ratio+Protein+Banana+Cream+Dairy+Snack",
   "price": {
-    "perServing": 0,
+    "perServing": 1.66,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, single 5.3 oz cup, $1.66 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 container / 150 g",

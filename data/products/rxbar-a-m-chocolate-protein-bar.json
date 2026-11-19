@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=RXBAR+A.M.+Protein+Bar%2C+Chocolate",
   "price": {
-    "perServing": 0,
+    "perServing": 1.79,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 5-count RXBAR box, $8.96 ≈ $1.79/bar (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 Bar (55g) / 55 g",
