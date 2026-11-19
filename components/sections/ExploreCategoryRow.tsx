@@ -51,7 +51,7 @@ const exploreCategories: ExploreCategory[] = [
   {
     slug: "halal",
     title: "Halal Snacks",
-    desc: "Marketed as halal by the brand",
+    desc: "Certifier named where we could find it",
     icon: "🕌",
     href: "/snacks/halal",
   },

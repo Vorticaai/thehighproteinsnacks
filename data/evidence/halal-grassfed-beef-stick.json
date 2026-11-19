@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Sharifa halal beef stick",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2772041,
+      "description": "Original Philly Beef Sandwich Slices Halal, 4 Oz.",
+      "brandOwner": "Tyson Foods Inc.",
+      "brandName": "Original Philly",
+      "gtinUpc": "10616952155544",
+      "publishedDate": "2026-07-23",
+      "score": 0.5,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2772041,
+        "description": "Original Philly Beef Sandwich Slices Halal, 4 Oz.",
+        "brandOwner": "Tyson Foods Inc.",
+        "brandName": "Original Philly",
+        "gtinUpc": "10616952155544",
+        "publishedDate": "2026-07-23",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2616651,
+        "description": "JAMAICAN STYLE MILD BEEF HALAL PATTIES",
+        "brandOwner": "Tower Isles Frozen Foods Ltd.",
+        "brandName": "TOWER ISLE'S",
+        "gtinUpc": "0073773098543",
+        "publishedDate": "2023-08-31",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2571730,
+        "description": "GLUTEN FREE ALL NATURAL HALAL BEEF BURGERS",
+        "brandOwner": "Green Bay Dressed Beef LLC",
+        "brandName": "GREAT AMERICAN",
+        "gtinUpc": "0096423810210",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2655417,
+        "description": "HALAL MARSHMALLOWS",
+        "brandOwner": "ZB Importing Inc.",
+        "brandName": "ZIYAD",
+        "gtinUpc": "074265021841",
+        "publishedDate": "2023-10-26",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2060823,
+        "description": "HALAL CLASSIC FRANKS",
+        "brandOwner": "Agri Star Meat & Poultry LLC",
+        "brandName": "AL-SAHARA",
+        "gtinUpc": "783919512429",
+        "publishedDate": "2021-10-28",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2772041,
+    "description": "Original Philly Beef Sandwich Slices Halal, 4 Oz.",
+    "brandOwner": "Tyson Foods Inc.",
+    "brandName": "Original Philly",
+    "gtinUpc": "10616952155544",
+    "servingSize": 100,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "100 GRAM",
+    "dataSource": "GDSN",
+    "modifiedDate": "6/24/2026",
+    "ingredients": "Beef, water, contains 2% or less of: dextrose, modified food starch, sodium phosphates, salt, autolyzed yeast, hydrolyzed corn protein, natural flavorings.",
+    "perServing": {
+      "protein": 13.8,
+      "calories": 155,
+      "carbs": 0.96,
+      "fiber": 0,
+      "sugar": 0.58,
+      "fat": 10.7,
+      "servingSize": "100 GRAM / 100 g",
+      "servingSizeG": 100
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 9,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 4
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 9,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 4
+  }
+}

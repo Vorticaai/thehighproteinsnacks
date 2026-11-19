@@ -90,12 +90,12 @@ const categoryDetails: Record<
   },
 
   halal: {
-    title: "Halal Protein Snacks",
+    title: "Halal Protein Snacks: Who Certifies Them",
     description:
-      "Snacks marketed as halal by their brand. We have not verified halal certification; check the package and the certifier before buying.",
-    seoTitle: "Halal High-Protein Snacks",
+      "Halal jerky, meat sticks and bars, with the certifier named where we could find it and a link to every source.",
+    seoTitle: "Halal Protein Snacks: Certified Jerky & Meat Sticks Compared",
     seoDescription:
-      "High-protein snacks marketed as halal, compared by protein, sugar and price per serving. Check certification on the package.",
+      "Halal high-protein snacks compared by protein, calories and sugar, with who certifies each one and how sure we are. \"Halal friendly\" alone doesn't count.",
   },
 
   "protein-bars": {

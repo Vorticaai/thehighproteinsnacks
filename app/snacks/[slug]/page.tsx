@@ -5,6 +5,8 @@ import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import ProductCard from "@/components/snacks/ProductCard";
 import ProductVisual from "@/components/snacks/ProductVisual";
 import { NutritionSource } from "@/components/snacks/VerificationNote";
+import HalalHub from "@/components/halal/HalalHub";
+import { HalalCheckBox } from "@/components/halal/HalalStatus";
 import BuyLink from "@/components/snacks/BuyLink";
 import { JsonLd } from "@/components/seo/jsonld";
 import { getAllProducts, type Product } from "@/lib/products";
@@ -397,6 +399,11 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
             </p>
             <div className="mt-4">
               <NutritionSource product={product} />
+              {product.halal && (
+                <div className="mt-3">
+                  <HalalCheckBox check={product.halal} />
+                </div>
+              )}
             </div>
             <dl className="mt-4 grid grid-cols-2 gap-4 text-sm">
               <div className="rounded-2xl border bg-gray-50 p-4 text-center">
@@ -565,6 +572,9 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
 function CategoryListing({ slug }: { slug: CategorySlug }) {
   const details = getCategoryDetails(slug);
   if (!details) notFound();
+  if (slug === "halal") {
+    return <HalalHub title={details.title} description={details.seoDescription} />;
+  }
 
   const products = getProductsByCategory(slug);
   const breadcrumbItems = [

@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Boxed Halal beef jerky BBQ",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 33% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2616651,
+      "description": "JAMAICAN STYLE MILD BEEF HALAL PATTIES",
+      "brandOwner": "Tower Isles Frozen Foods Ltd.",
+      "brandName": "TOWER ISLE'S",
+      "gtinUpc": "0073773098543",
+      "publishedDate": "2023-08-31",
+      "score": 0.3333333333333333,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2616651,
+        "description": "JAMAICAN STYLE MILD BEEF HALAL PATTIES",
+        "brandOwner": "Tower Isles Frozen Foods Ltd.",
+        "brandName": "TOWER ISLE'S",
+        "gtinUpc": "0073773098543",
+        "publishedDate": "2023-08-31",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2754122,
+        "description": "MAGGI Boullion Chicken Flavor Halal (24x.74oz) Box",
+        "brandOwner": "Société des Produits Nestlé S.A.",
+        "brandName": "MAGGI",
+        "gtinUpc": "00028000088064",
+        "publishedDate": "2026-02-19",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2616651,
+    "description": "JAMAICAN STYLE MILD BEEF HALAL PATTIES",
+    "brandOwner": "Tower Isles Frozen Foods Ltd.",
+    "brandName": "TOWER ISLE'S",
+    "gtinUpc": "0073773098543",
+    "servingSize": 141,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Patty (141g)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "FILLING: CERTIFIED HALAL BEEF, WATER, ONIONS, MODIFIED FOOD STARCH, BREAD CRUMBS [BLEACHED WHEAT FLOUR, DEXTROSE, CONTAINS 2% OR LESS OF EACH OF THE FOLLOWING: YEAST, VEGETABLE SHORTENING (SOYBEAN AND/OR COTTONSEED OIL), SALT], GARLIC, FLAVORS (DEXTROSE, AUTOLYZED YEAST EXTRACT, SALT, CITRIC ACID), MONO SODIUM GLUTAMATE, SALT, PEPPER, ANNATTO, SPICES, CRUST: ENRICHED FLOUR (NIACIN, REDUCED IRON, THIAMIN MONONITRATE, RIBOFLAVIN), WATER, CERTIFIED BEEF SUET, VEGETABLE SHORTENING (PALM OIL WITH CITRIC ACID ADDED AS A PRESERVATIVE), SALT, ANNATTO AND TURMERIC COLORING (FD&C YELLOW #5 AND #6, SALT)",
+    "perServing": {
+      "protein": 17,
+      "calories": 330,
+      "carbs": 51,
+      "fiber": 2.96,
+      "sugar": 3,
+      "fat": 6.99,
+      "servingSize": "1 Patty (141g) / 141 g",
+      "servingSizeG": 141
+    }
+  },
+  "openFoodFacts": {
+    "code": "0073773098543",
+    "product_name": "Mild Beef Patties Halal",
+    "perServing": null,
+    "image_front_url": "https://images.openfoodfacts.org/images/products/007/377/309/8543/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 9,
+    "calories": 100,
+    "carbs": 10,
+    "fiber": 0,
+    "sugar": 9,
+    "fat": 2
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 9,
+    "calories": 100,
+    "carbs": 10,
+    "fiber": 0,
+    "sugar": 9,
+    "fat": 2
+  }
+}

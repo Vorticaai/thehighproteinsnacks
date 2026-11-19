@@ -18,6 +18,7 @@
 import fs from "fs"
 import path from "path"
 import type { ProductRecord, SourceRef } from "../lib/productRecord"
+import { newRecord } from "./newRecord"
 import { pickBest, type MatchResult } from "./match"
 import { fdcPerServing, fdcUrl, getFoods, searchBranded, type FdcFood } from "./sources/fdc"
 import { downloadImage, getByBarcode, offPerServing, offUrl, type OffProduct } from "./sources/off"
@@ -39,6 +40,17 @@ type QueueEntry = {
   /** Reviewer rejected the Open Food Facts photo (wrong side, blurry...). */
   skipPhoto?: boolean
   note?: string
+  /**
+   * A product that is not in the catalogue yet. It is published (a record is
+   * written) only if its label data verifies; otherwise only evidence is saved.
+   */
+  add?: {
+    name: string
+    brand: string
+    productType: "bar" | "chips" | null
+    buyUrl: string
+    halal?: ProductRecord["halal"]
+  }
 }
 
 const ROOT = process.cwd()
@@ -62,7 +74,7 @@ async function main() {
   // 1. Search (skipped for pinned products)
   const matches = new Map<string, MatchResult & { pinned: boolean }>()
   for (const entry of queue.products) {
-    const record = readRecord(entry.id)
+    const record = readRecord(entry)
     if (entry.fdcId) {
       matches.set(entry.id, { best: { fdcId: entry.fdcId, description: "(pinned)" }, confident: true, reason: "Pinned by a person after review.", ranked: [], pinned: true })
       continue
@@ -79,7 +91,8 @@ async function main() {
 
   const rows: string[] = []
   for (const entry of queue.products) {
-    const record = readRecord(entry.id)
+    const record = readRecord(entry)
+    const isNew = !recordExists(entry.id)
     const match = matches.get(entry.id)!
     const food = match.best ? foods.get(match.best.fdcId) ?? null : null
     const primary = food ? fdcPerServing(food) : null
@@ -143,6 +156,8 @@ async function main() {
       if (fs.existsSync(file)) fs.unlinkSync(file)
       record.image = null
       photo = "rejected by reviewer"
+    } else if (isNew && decision.status !== "verified") {
+      photo = "none (not published)"
     } else if (off?.image_front_url && match.confident) {
       const bytes = await downloadImage(off.image_front_url)
       if (bytes && bytes.length > 5000) {
@@ -160,7 +175,8 @@ async function main() {
       }
     }
 
-    writeRecord(record)
+    const published = !isNew || decision.status === "verified"
+    if (published) writeRecord(record)
     fs.writeFileSync(
       path.join(EVIDENCE, `${record.id}.json`),
       JSON.stringify(
@@ -202,7 +218,7 @@ async function main() {
 
     const changes = CORE_FIELDS.filter((f) => before[f] !== record.nutrition[f]).map((f) => `${f} ${before[f]}→${record.nutrition[f]}`)
     rows.push(
-      `| ${record.id} | ${decision.status} | ${food ? `[${food.fdcId}](${fdcUrl(food.fdcId)}) ${escape(food.description)}` : "—"} | ${off ? `[${off.code}](${offUrl(off.code)})` : "—"} | ${changes.join(", ") || "none"} | ${photo} | ${escape(record.verification.notes.join(" "))} |`,
+      `| ${record.id}${isNew ? (published ? " (new, published)" : " (new, not published)") : ""} | ${decision.status} | ${food ? `[${food.fdcId}](${fdcUrl(food.fdcId)}) ${escape(food.description)}` : "—"} | ${off ? `[${off.code}](${offUrl(off.code)})` : "—"} | ${changes.join(", ") || "none"} | ${photo} | ${escape(record.verification.notes.join(" "))} |`,
     )
   }
 
@@ -228,10 +244,13 @@ function pickValues(v: PerServing) {
 
 const escape = (s: string) => s.replace(/\|/g, "/").replace(/\n/g, " ")
 
-function readRecord(id: string): ProductRecord {
-  const file = path.join(PRODUCTS, `${id}.json`)
-  if (!fs.existsSync(file)) throw new Error(`Unknown product id in queue: ${id}`)
-  return JSON.parse(fs.readFileSync(file, "utf8"))
+const recordExists = (id: string) => fs.existsSync(path.join(PRODUCTS, `${id}.json`))
+
+function readRecord(entry: QueueEntry): ProductRecord {
+  const file = path.join(PRODUCTS, `${entry.id}.json`)
+  if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, "utf8"))
+  if (entry.add) return newRecord(entry.id, entry.add)
+  throw new Error(`Unknown product id in queue: ${entry.id} (add an "add" block to create it)`)
 }
 
 function writeRecord(record: ProductRecord) {

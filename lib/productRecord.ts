@@ -45,6 +45,36 @@ export type ProductImage = {
   sourceUrl: string
 }
 
+/**
+ * How sure we are that a product is halal-certified. Ordered from strongest
+ * to weakest. Only the first three put a product on the halal pages.
+ */
+export type HalalStatus =
+  /** Certifier named and the product confirmed on the certifier's own list or certificate. */
+  | "certified"
+  /** A certifier is named (by the brand, a directory or a retailer) but not yet confirmed with the certifier. */
+  | "certifier-named"
+  /** Brand says halal or halal-certified but names no certifier. */
+  | "brand-claim"
+  /** Sold as "halal-friendly" or similar, with no halal certificate found. */
+  | "not-certified"
+
+export type HalalEvidence = {
+  /** What the source says, in our words. */
+  label: string
+  url: string
+  kind: "certifier" | "brand" | "directory" | "retailer" | "press"
+}
+
+export type HalalCheck = {
+  status: HalalStatus
+  certifier: string | null
+  checkedAt: string
+  evidence: HalalEvidence[]
+  /** Shown to readers. */
+  summary: string
+}
+
 export type ProductRecord = {
   id: string
   name: string
@@ -52,6 +82,7 @@ export type ProductRecord = {
   productType: "bar" | "chips" | null
   buyUrl: string
   price: {
+    /** 0 means no price recorded. */
     perServing: number
     status: "estimate"
     note: string
@@ -71,6 +102,8 @@ export type ProductRecord = {
     fdcId: number | null
   }
   image: ProductImage | null
+  /** Halal certification research. Absent when nobody has checked. */
+  halal?: HalalCheck | null
   verification: {
     status: VerificationStatus
     checkedAt: string | null

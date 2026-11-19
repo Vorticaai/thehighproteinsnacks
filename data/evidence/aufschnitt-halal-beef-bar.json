@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-18",
+  "query": "Aufschnitt Beef Bar",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 8,
+    "calories": 70,
+    "carbs": 5,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 2
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 8,
+    "calories": 70,
+    "carbs": 5,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 2
+  }
+}
