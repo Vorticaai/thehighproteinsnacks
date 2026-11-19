@@ -55,3 +55,13 @@ test("no product page shows ratings", () => {
     assert.equal(p.reviewCount, undefined)
   }
 })
+
+test("no two products share a USDA label record", () => {
+  const seen = new Map<number, string>()
+  for (const r of records) {
+    const id = r.identifiers.fdcId
+    if (!id) continue
+    assert.ok(!seen.has(id), `${r.id} and ${seen.get(id)} are the same USDA product ${id}`)
+    seen.set(id, r.id)
+  }
+})

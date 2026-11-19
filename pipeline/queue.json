@@ -1,172 +1,101 @@
 {
   "products": [
     {
-      "id": "aloha-plant-based-bar"
+      "id": "chomps-turkey-jalapeno-stick",
+      "fdcId": 2396313,
+      "note": "Reviewer: Chomps' own 'Medium Jalape\u00f1o Turkey Stick' record."
     },
     {
-      "id": "atkins-protein-meal-bar"
+      "id": "clif-builder-vegan-choc-peanut",
+      "fdcId": 2660067,
+      "note": "Reviewer: Clif-brand Chocolate Peanut Butter Protein Bar (Builders line)."
     },
     {
-      "id": "barebells-cookies-cream"
+      "id": "orgain-clean-protein-shake",
+      "fdcId": 2665207,
+      "acceptUsdaReason": "Open Food Facts lists 66 g protein / 430 kcal, which is a whole multi-serving container, not one 11 fl oz bottle; USDA holds Orgain's own label data."
     },
     {
-      "id": "built-bar-cookies-cream"
+      "id": "orgain-vegan-protein-bar-peanut-butter",
+      "fdcId": 2608933,
+      "note": "Reviewer: Orgain's Peanut Butter Chocolate Chunk Protein Snack Bar."
     },
     {
-      "id": "built-bar-mint-brownie"
+      "id": "powercrunch-gluten-free-protein-wafer",
+      "fdcId": 2665580,
+      "note": "Reviewer: Power Crunch (Bionutritional Research Group) Triple Chocolate."
     },
     {
-      "id": "built-bar-salted-caramel"
+      "id": "atkins-protein-meal-bar",
+      "query": "Atkins chocolate peanut butter protein meal bar"
     },
     {
-      "id": "built-bar-strawberry"
+      "id": "built-bar-cookies-cream",
+      "query": "Built Brands cookies and cream protein bar"
     },
     {
-      "id": "chomps-turkey-jalapeno-stick"
+      "id": "built-bar-strawberry",
+      "query": "Built Brands strawberry protein bar"
     },
     {
-      "id": "chomps-turkey-jerky-meat-stick"
+      "id": "chomps-turkey-jerky-meat-stick",
+      "query": "Chomps original turkey stick"
     },
     {
-      "id": "clif-builder-vegan-choc-peanut"
+      "id": "fairlife-core-power-26g",
+      "query": "Core Power 26g protein shake chocolate"
     },
     {
-      "id": "ensure-max-protein-milk-chocolate"
+      "id": "fitcrunch-chocolate-peanut-butter",
+      "query": "FITCRUNCH chocolate peanut butter baked bar"
     },
     {
-      "id": "epic-bison-cranberry-bar"
+      "id": "gomacro-peanut-butter-choc-chip",
+      "query": "GoMacro MacroBar peanut butter chocolate chip"
     },
     {
-      "id": "epic-salmon-smoked-maple-strip"
+      "id": "iconic-protein-shake-cacao",
+      "query": "Iconic protein drink cafe mocha"
     },
     {
-      "id": "fairlife-core-power-26g"
+      "id": "magic-spoon-peanut-butter-cereal",
+      "query": "Magic Spoon peanut butter cereal"
     },
     {
-      "id": "fitcrunch-chocolate-peanut-butter"
+      "id": "pure-protein-shake-frosty-chocolate",
+      "query": "Pure Protein frosty chocolate shake"
     },
     {
-      "id": "gomacro-peanut-butter-choc-chip"
+      "id": "quest-nutrition-protein-puffs-ranch",
+      "query": "Quest protein puffs ranch"
     },
     {
-      "id": "iconic-protein-shake-cacao"
+      "id": "quest-peanut-butter-cup",
+      "query": "Quest peanut butter cups"
     },
     {
-      "id": "iqbar-blueberry-lemon"
+      "id": "rxbar-coconut-chocolate",
+      "query": "RXBAR coconut chocolate"
     },
     {
-      "id": "iqbar-chocolate-sea-salt"
+      "id": "rxbar-peanut-butter-chocolate",
+      "query": "RXBAR peanut butter chocolate"
     },
     {
-      "id": "justins-protein-bar-almond-butter"
+      "id": "rxbar-peanut-butter",
+      "query": "RXBAR peanut butter protein bar"
     },
     {
-      "id": "kind-protein-bar-crunchy-peanut-butter"
+      "id": "twin-peaks-protein-puffs-bbq",
+      "query": "Twin Peaks protein puffs BBQ"
     },
     {
-      "id": "kind-protein-bar-dark-chocolate-cherry-cashew"
+      "id": "owyn-protein-shake-chocolate",
+      "query": "OWYN smooth chocolate protein shake"
     },
     {
-      "id": "kind-protein-bar-dark-chocolate-nut"
-    },
-    {
-      "id": "lenny-larry-complete-cookie-choc-chip"
-    },
-    {
-      "id": "lenny-larry-complete-cookie-protein-chocolate-chip"
-    },
-    {
-      "id": "magic-spoon-peanut-butter-cereal"
-    },
-    {
-      "id": "magic-spoon-protein-cereal-frosted"
-    },
-    {
-      "id": "no-cow-protein-bar-chocolate-fudge"
-    },
-    {
-      "id": "one-bar-birthday-cake"
-    },
-    {
-      "id": "orgain-clean-protein-shake"
-    },
-    {
-      "id": "orgain-vegan-protein-bar-peanut-butter"
-    },
-    {
-      "id": "owyn-100plant-protein-shake"
-    },
-    {
-      "id": "owyn-protein-shake-chocolate"
-    },
-    {
-      "id": "powercrunch-gluten-free-protein-wafer"
-    },
-    {
-      "id": "pure-protein-shake-frosty-chocolate"
-    },
-    {
-      "id": "purely-elizabeth-protein-granola-almond-butter"
-    },
-    {
-      "id": "quest-birthday-cake"
-    },
-    {
-      "id": "quest-cheddar-blast-chips"
-    },
-    {
-      "id": "quest-chips-cheddar-sourcream"
-    },
-    {
-      "id": "quest-choc-chunk-cookie"
-    },
-    {
-      "id": "quest-nutrition-protein-puffs-ranch"
-    },
-    {
-      "id": "quest-peanut-butter-cup"
-    },
-    {
-      "id": "quest-protein-chips-chili-lime"
-    },
-    {
-      "id": "quest-protein-chips-nacho-cheese"
-    },
-    {
-      "id": "quest-ranch-protein-chips"
-    },
-    {
-      "id": "rxbar-apple-cinnamon"
-    },
-    {
-      "id": "rxbar-blueberry"
-    },
-    {
-      "id": "rxbar-chocolate-sea-salt"
-    },
-    {
-      "id": "rxbar-coconut-chocolate"
-    },
-    {
-      "id": "rxbar-maple-sea-salt"
-    },
-    {
-      "id": "rxbar-peanut-butter-chocolate"
-    },
-    {
-      "id": "rxbar-peanut-butter"
-    },
-    {
-      "id": "think-high-protein-brownie-crunch"
-    },
-    {
-      "id": "twin-peaks-protein-puffs-bbq"
-    },
-    {
-      "id": "whisps-parmesan-cheese-crisps"
-    },
-    {
-      "id": "wilde-chicken-chips-buffalo"
+      "id": "owyn-100plant-protein-shake",
+      "query": "OWYN plant protein shake chocolate"
     }
   ]
 }

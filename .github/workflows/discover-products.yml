@@ -1,0 +1,51 @@
+# Finds high-protein products in USDA FoodData Central that are not in the
+# catalogue yet and commits pipeline/candidates.{json,md} to the branch.
+# Nothing is published: chosen candidates go through pipeline/queue.json.
+name: Discover products
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+    paths: ["pipeline/discover-queries.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: discover-products-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Discover
+        env:
+          FDC_API_KEY: ${{ secrets.FDC_API_KEY }}
+        run: npx tsx pipeline/discover.ts
+
+      - name: Commit candidates
+        run: |
+          git config user.name "product-discovery-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase --autostash || true
+          git add pipeline/candidates.json pipeline/candidates.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: discovery run $(date -u +%Y-%m-%d)"
+            git push
+          fi
