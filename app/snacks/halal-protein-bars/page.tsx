@@ -1,11 +1,10 @@
 import type { Metadata } from "next"
-import fs from "fs"
-import path from "path"
 import Link from "next/link"
 import Breadcrumbs from "@/components/nav/Breadcrumbs"
 import { JsonLd } from "@/components/seo/jsonld"
 import { HalalEvidenceLinks, HalalStatusLegend, HalalStatusPill, HowToCheckHalal } from "@/components/halal/HalalStatus"
-import { HALAL_STATUS_RANK, type HalalBrandNote } from "@/lib/halal"
+import { HALAL_STATUS_RANK } from "@/lib/halal"
+import { readHalalBrandNotes } from "@/lib/halalBrands"
 import { getAllProducts } from "@/lib/products"
 import { absoluteUrl } from "@/lib/seo"
 
@@ -23,12 +22,8 @@ export const metadata: Metadata = {
   openGraph: { title: TITLE, description: DESCRIPTION, url: absoluteUrl(PATH), type: "article", images: [{ url: absoluteUrl("/og-default.jpg") }] },
 }
 
-function readBrandNotes(): { checkedAt: string; brands: HalalBrandNote[] } {
-  return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "halal-brands.json"), "utf8"))
-}
-
 export default function HalalProteinBarsPage() {
-  const { checkedAt, brands } = readBrandNotes()
+  const { checkedAt, brands } = readHalalBrandNotes()
   const bars = brands
     .filter((b) => b.type === "bar")
     .sort((a, b) => HALAL_STATUS_RANK[a.halal.status] - HALAL_STATUS_RANK[b.halal.status])

@@ -39,11 +39,11 @@ export function SnackCard({ snack }: SnackCardProps) {
               highlight
             />
             <MacroStat label="Calories" value={`${snack.caloriesPerServing}`} />
-            <MacroStat
-              label="g per $"
-              value={`${snack.proteinPerDollar.toFixed(1)}`}
-              isPricePerProtein
-            />
+            {snack.pricePerServing > 0 ? (
+              <MacroStat label="g per $" value={`${snack.proteinPerDollar.toFixed(1)}`} isPricePerProtein />
+            ) : (
+              <MacroStat label="Sugar" value={`${snack.sugarPerServing}g`} />
+            )}
           </div>
 
           {/* Diet Tags */}

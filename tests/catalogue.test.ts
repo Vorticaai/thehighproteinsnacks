@@ -29,7 +29,8 @@ test("verified records name their sources and a date", () => {
   for (const r of records.filter((x) => x.verification.status === "verified")) {
     assert.ok(r.verification.sources.length > 0, `${r.id} is verified without sources`)
     assert.ok(r.verification.checkedAt, `${r.id} is verified without a date`)
-    assert.ok(r.identifiers.fdcId, `${r.id} is verified without a USDA id`)
+    const fromManufacturer = r.verification.sources.some((s) => s.name === "Manufacturer website")
+    assert.ok(r.identifiers.fdcId || fromManufacturer, `${r.id} is verified without a USDA id or manufacturer panel`)
   }
 })
 

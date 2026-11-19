@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
-import ProductCard from "@/components/snacks/ProductCard";
+import ProductCard, { buyLabel } from "@/components/snacks/ProductCard";
 import ProductVisual from "@/components/snacks/ProductVisual";
 import { NutritionSource } from "@/components/snacks/VerificationNote";
 import HalalHub from "@/components/halal/HalalHub";
@@ -380,12 +380,16 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
                   productId={product.id}
                   className="mt-6 inline-flex items-center justify-center rounded-full bg-[#C6FF47] px-8 py-3 text-sm font-bold text-black transition hover:bg-[#b7ff1f]"
                 >
-                  Check price on Amazon →
+                  {buyLabel(product)} →
                 </BuyLink>
               )}
               <p className="mt-3 text-xs text-gray-500">
-                Prices are estimates from when we added this product and change often. We earn a
-                commission if you buy through this link.
+                {product.pricePerServing > 0
+                  ? "Prices are estimates from when we added this product and change often. "
+                  : "We don't have a price for this product yet. "}
+                {/[?&]tag=/.test(product.buyUrl)
+                  ? "We may earn a commission if you buy through this link."
+                  : "We don't earn anything from this link."}
               </p>
             </div>
           </div>

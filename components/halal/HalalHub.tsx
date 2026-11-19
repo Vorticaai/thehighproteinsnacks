@@ -3,7 +3,8 @@ import Breadcrumbs from "@/components/nav/Breadcrumbs"
 import ProductCard from "@/components/snacks/ProductCard"
 import { VerifiedPill } from "@/components/snacks/VerificationNote"
 import { JsonLd } from "@/components/seo/jsonld"
-import { HALAL_STATUS_RANK } from "@/lib/halal"
+import { HALAL_STATUS_RANK, LISTED_HALAL_STATUSES, type HalalBrandNote } from "@/lib/halal"
+import { readHalalBrandNotes } from "@/lib/halalBrands"
 import { getAllProducts, type Product } from "@/lib/products"
 import { absoluteUrl } from "@/lib/seo"
 import { HalalEvidenceLinks, HalalStatusLegend, HalalStatusPill, HowToCheckHalal } from "./HalalStatus"
@@ -15,8 +16,26 @@ const byEvidenceThenProtein = (a: Product, b: Product) =>
 /** /snacks/halal: halal snacks with who certifies them and how sure we are. */
 export default function HalalHub({ title, description }: { title: string; description: string }) {
   const researched = getAllProducts().filter((p) => p.halal)
-  const listed = researched.filter((p) => p.flags.halal).sort(byEvidenceThenProtein)
+  const allListed = researched.filter((p) => p.flags.halal).sort(byEvidenceThenProtein)
+  // Only label-checked products go in the comparison; the rest join "still checking".
+  const listed = allListed.filter((p) => p.verification.status === "verified")
+  const listedUnchecked: HalalBrandNote[] = allListed
+    .filter((p) => p.verification.status !== "verified")
+    .map((p) => ({
+      brand: p.brand,
+      product: p.name.startsWith(p.brand) ? p.name.slice(p.brand.length).trim() : p.name,
+      type: "other",
+      usAvailability: "In our directory; nutrition not yet checked against a label.",
+      proteinNote: null,
+      halal: p.halal!,
+      url: `/snacks/${p.id}`,
+    }))
   const notCertified = researched.filter((p) => !p.flags.halal)
+  const notes = readHalalBrandNotes().brands.filter((b) => b.type !== "bar")
+  const notesListed = [...listedUnchecked, ...notes]
+    .filter((b) => LISTED_HALAL_STATUSES.includes(b.halal.status))
+    .sort((a, b) => HALAL_STATUS_RANK[a.halal.status] - HALAL_STATUS_RANK[b.halal.status])
+  const notesFriendly = notes.filter((b) => b.halal.status === "not-certified")
   const lastChecked = researched.map((p) => p.halal!.checkedAt).sort().at(-1)
 
   const breadcrumbItems = [{ name: "Home", href: "/" }, { name: "Snacks", href: "/snacks" }, { name: title }]
@@ -117,10 +136,23 @@ export default function HalalHub({ title, description }: { title: string; descri
             </table>
           </div>
           <p className="mt-2 text-xs text-gray-500">
-            Per serving. Products without the &ldquo;Label-checked&rdquo; mark still show our original numbers; we are
-            checking them against manufacturer label data.
+            Per serving, checked against the manufacturer&apos;s label data (USDA FoodData Central or the brand&apos;s own
+            Nutrition Facts panel).
           </p>
         </section>
+
+        {notesListed.length > 0 && (
+          <section aria-labelledby="more-heading" className="mb-12">
+            <h2 id="more-heading" className="mb-2 text-xl font-bold text-gray-900">
+              More halal snacks we&apos;re still checking
+            </h2>
+            <p className="mb-3 max-w-3xl text-sm text-gray-600">
+              Sold as halal, with the evidence we found. We haven&apos;t confirmed their nutrition against a label yet,
+              so they aren&apos;t in the comparison above.
+            </p>
+            <BrandNotesTable notes={notesListed} />
+          </section>
+        )}
 
         <section aria-labelledby="legend-heading" className="mb-12">
           <h2 id="legend-heading" className="mb-3 text-xl font-bold text-gray-900">
@@ -129,26 +161,26 @@ export default function HalalHub({ title, description }: { title: string; descri
           <HalalStatusLegend />
         </section>
 
-        {listed.length > 0 && (
+        {allListed.length > 0 && (
           <section className="mb-12">
             <h2 className="mb-4 text-xl font-bold text-gray-900">The snacks</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {listed.map((p) => (
+              {allListed.map((p) => (
                 <ProductCard key={p.id} product={p} />
               ))}
             </div>
           </section>
         )}
 
-        {notCertified.length > 0 && (
+        {(notCertified.length > 0 || notesFriendly.length > 0) && (
           <section aria-labelledby="not-certified-heading" className="mb-12 rounded-2xl border border-gray-200 bg-gray-50 p-6">
             <h2 id="not-certified-heading" className="text-xl font-bold text-gray-900">
-              Sold as &ldquo;halal friendly&rdquo;, but not halal-certified
+              Halal-friendly, but not halal-certified
             </h2>
             <p className="mt-2 max-w-3xl text-gray-600">
-              These came up in halal searches and used to be on this page. We found a kosher certificate but no halal
-              certificate, so we no longer list them as halal. Whether kosher meat is acceptable is a question for your
-              own scholar, not a certification.
+              Sold as &ldquo;halal friendly&rdquo;, or made with halal-certified meat in a factory that isn&apos;t
+              certified. Some carry a kosher certificate instead. Whether these are acceptable is a question for your
+              own scholar; none of them has a halal certificate we could find.
             </p>
             <ul className="mt-4 space-y-3">
               {notCertified.map((p) => (
@@ -157,6 +189,14 @@ export default function HalalHub({ title, description }: { title: string; descri
                     {p.name}
                   </Link>{" "}
                   &mdash; {p.halal!.summary} <HalalEvidenceLinks check={p.halal!} />
+                </li>
+              ))}
+              {notesFriendly.map((b) => (
+                <li key={b.brand + b.product} className="text-sm text-gray-700">
+                  <a href={b.url} target="_blank" rel="noopener noreferrer" className="font-semibold underline">
+                    {b.brand} {b.product}
+                  </a>{" "}
+                  &mdash; {b.halal.summary} <HalalEvidenceLinks check={b.halal} />
                 </li>
               ))}
             </ul>
@@ -192,5 +232,44 @@ export default function HalalHub({ title, description }: { title: string; descri
         </p>
       </main>
     </>
+  )
+}
+
+function BrandNotesTable({ notes }: { notes: HalalBrandNote[] }) {
+  return (
+    <div className="overflow-x-auto rounded-2xl border border-gray-200">
+      <table className="min-w-full divide-y divide-gray-200 text-sm">
+        <thead className="bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+          <tr>
+            <th className="px-4 py-3">Snack</th>
+            <th className="px-4 py-3">Halal status</th>
+            <th className="px-4 py-3">Certifier</th>
+            <th className="px-4 py-3">What we found</th>
+            <th className="px-4 py-3">Sources</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 bg-white align-top">
+          {notes.map((b) => (
+            <tr key={b.brand + b.product}>
+              <td className="px-4 py-3">
+                <a href={b.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 underline-offset-2 hover:underline">
+                  {b.brand} {b.product}
+                </a>
+                <div className="mt-1 text-xs text-gray-500">{b.usAvailability}</div>
+                {b.proteinNote && <div className="mt-1 text-xs text-gray-500">{b.proteinNote}</div>}
+              </td>
+              <td className="px-4 py-3">
+                <HalalStatusPill status={b.halal.status} />
+              </td>
+              <td className="px-4 py-3 text-gray-700">{b.halal.certifier ?? "Not named"}</td>
+              <td className="px-4 py-3 text-gray-700">{b.halal.summary}</td>
+              <td className="px-4 py-3">
+                <HalalEvidenceLinks check={b.halal} />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   )
 }

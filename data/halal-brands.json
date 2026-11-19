@@ -136,6 +136,231 @@
         ],
         "summary": "Not halal-certified. Some shoppers accept it because the ingredients have no animal-derived additives, but that is a personal judgement, not a certification."
       }
+    },
+    {
+      "brand": "Supreme Beef Jerky",
+      "product": "Halal Beef & Turkey Jerky and Beef Sticks",
+      "type": "jerky",
+      "usAvailability": "Sold on the brand's site and Amazon.",
+      "proteinNote": "9\u201315 g protein per 1 oz serving, per the brand's packaging.",
+      "url": "https://supremebeefjerky.com",
+      "halal": {
+        "status": "certifier-named",
+        "certifier": "Halal Food Standards Alliance of America (HFSAA)",
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "The brand's own product photos show the HFSAA \"Certified by\" mark and www.hfsaa.org on the bag.",
+            "url": "https://supremebeefjerky.com/products/halal-beef-jerky-marinated-beef-jerky-handcrafted-gourmet-meat-snacks-2-5-oz-sweet-garlic",
+            "kind": "brand"
+          },
+          {
+            "label": "Jerky Ingredients (2025 review) reports the facilities are HFSAA-certified.",
+            "url": "https://jerkyingredients.com/2025/06/23/supreme-beef-jerky-jalapeno-garlic-halal-beef-jerky/",
+            "kind": "press"
+          }
+        ],
+        "summary": "HFSAA mark printed on the packaging. We haven't listed the nutrition yet: the panels we checked don't add up (calories don't match the protein, carbs and fat), so we're holding the numbers until they're confirmed."
+      }
+    },
+    {
+      "brand": "Halal's Best",
+      "product": "Beef Sticks",
+      "type": "stick",
+      "usAvailability": "Sold on Amazon.",
+      "proteinNote": "7 g protein per stick, per the listing.",
+      "url": "https://www.amazon.com/Halals-Best-Original-Sticks-protein/dp/B09JTT522L",
+      "halal": {
+        "status": "certifier-named",
+        "certifier": "Halal Transactions of Omaha",
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "The brand's Amazon listing says it is certified by Halal Transactions of Omaha and uses zabiha halal meat.",
+            "url": "https://www.amazon.com/Halals-Best-Original-Sticks-protein/dp/B09JTT522L",
+            "kind": "retailer"
+          }
+        ],
+        "summary": "Brand names Halal Transactions of Omaha as its certifier. Not yet confirmed with the certifier."
+      }
+    },
+    {
+      "brand": "Saffron Road",
+      "product": "Crunchy Chickpeas",
+      "type": "other",
+      "usAvailability": "Widely sold in US supermarkets.",
+      "proteinNote": "6 g protein per serving, per the brand.",
+      "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
+      "halal": {
+        "status": "certifier-named",
+        "certifier": "IFANCA",
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
+            "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
+            "kind": "brand"
+          },
+          {
+            "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
+            "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
+            "kind": "retailer"
+          }
+        ],
+        "summary": "IFANCA-certified plant-based snack. Lower in protein than meat snacks, but one of the few certified options in ordinary US supermarkets."
+      }
+    },
+    {
+      "brand": "Sharifa Halal",
+      "product": "Beef Jerky and Smokey Toms Turkey Sticks",
+      "type": "jerky",
+      "usAvailability": "Sold on the brand's site, Sadaf and halal grocers.",
+      "proteinNote": "12\u201314 g protein per serving for the jerky, per the brand's listings.",
+      "url": "https://sharifahalalsnacks.com/collections/frontpage",
+      "halal": {
+        "status": "brand-claim",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "The brand's site sells it as 100% zabiha halal and posts a halal certificate image, but its text doesn't name the issuer.",
+            "url": "https://sharifahalalsnacks.com/pages/halal-certificate",
+            "kind": "brand"
+          }
+        ],
+        "summary": "Sold as zabiha halal with a certificate image on the brand's site; the issuer isn't named in text. The brand's listings also disagree with some of its own labels, so we haven't published nutrition yet."
+      }
+    },
+    {
+      "brand": "Shahir",
+      "product": "Zabiha Halal Beef Sticks",
+      "type": "stick",
+      "usAvailability": "Sold on Amazon.",
+      "proteinNote": null,
+      "url": "https://www.amazon.com/Shahir-Zabiha-Halal-Sticks-Ready/dp/B0FVB8RD16",
+      "halal": {
+        "status": "brand-claim",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "The Amazon listing says \"halal certified\" and \"zabiha by hand\" without naming a certifier.",
+            "url": "https://www.amazon.com/Shahir-Zabiha-Halal-Sticks-Ready/dp/B0FVB8RD16",
+            "kind": "retailer"
+          }
+        ],
+        "summary": "Sold as halal-certified zabiha beef; certifier not named."
+      }
+    },
+    {
+      "brand": "Five Star Jerky",
+      "product": "Prime Halal Jerky",
+      "type": "jerky",
+      "usAvailability": "US brand (Missouri).",
+      "proteinNote": null,
+      "url": "https://www.gulfood.com/exhibitorslist-2024/five-star-jerky",
+      "halal": {
+        "status": "certifier-named",
+        "certifier": "Halal Transactions of Omaha",
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "The company's Gulfood exhibitor profile says its Prime Halal line is certified by Halal Transactions of Omaha.",
+            "url": "https://www.gulfood.com/exhibitorslist-2024/five-star-jerky",
+            "kind": "brand"
+          }
+        ],
+        "summary": "The company names Halal Transactions of Omaha for its Prime Halal line. Not yet confirmed with the certifier."
+      }
+    },
+    {
+      "brand": "Mummified Jerky",
+      "product": "Halal Beef and Chicken Jerky",
+      "type": "jerky",
+      "usAvailability": "Sold on the brand's site.",
+      "proteinNote": null,
+      "url": "https://www.mummifiedjerky.com",
+      "halal": {
+        "status": "certifier-named",
+        "certifier": "Halal Transactions of Omaha",
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Jerky Ingredients reports the beef is certified by Halal Transactions of Omaha and the bag carries a halal mark (2018 reviews).",
+            "url": "https://jerkyingredients.com/?p=19055",
+            "kind": "press"
+          }
+        ],
+        "summary": "Certifier named in older reviews; check the current bag."
+      }
+    },
+    {
+      "brand": "Pacific Gold",
+      "product": "Halal Beef Jerky",
+      "type": "jerky",
+      "usAvailability": "Costco and Costco Business Delivery.",
+      "proteinNote": "11 g protein per serving, per Costco.",
+      "url": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
+      "halal": {
+        "status": "brand-claim",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Costco lists \"Halal\" under the product's certifications; no certifier is named.",
+            "url": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
+            "kind": "retailer"
+          }
+        ],
+        "summary": "Pacific Gold's halal-labelled jerky. The retailer lists it as halal-certified but doesn't name the certifier."
+      }
+    },
+    {
+      "brand": "SNAPDOWN Snacks",
+      "product": "Halal Beef Steak Jerky",
+      "type": "jerky",
+      "usAvailability": "Mainly UK; limited in the US.",
+      "proteinNote": null,
+      "url": "https://www.desertcart.com.cy/products/645028042-snapdown-snacks-beef-steak-jerky-high-protein-jerky-original-meat",
+      "halal": {
+        "status": "brand-claim",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Retail listings describe it as halal-certified; no certifier is named.",
+            "url": "https://www.desertcart.com.cy/products/645028042-snapdown-snacks-beef-steak-jerky-high-protein-jerky-original-meat",
+            "kind": "retailer"
+          }
+        ],
+        "summary": "Sold as halal-certified; certifier not named."
+      }
+    },
+    {
+      "brand": "Aufschnitt",
+      "product": "Beef Sticks and Jerky Bits",
+      "type": "stick",
+      "usAvailability": "Sold on Amazon and kosher grocers.",
+      "proteinNote": null,
+      "url": "https://apiservice.star-k.org/api/Loc/LoadLoc/ZDJSYBYQ",
+      "halal": {
+        "status": "not-certified",
+        "certifier": null,
+        "checkedAt": "2026-11-19",
+        "evidence": [
+          {
+            "label": "Star-K lists Aufschnitt sticks and jerky bits as certified glatt kosher. Kosher certification is not halal certification.",
+            "url": "https://apiservice.star-k.org/api/Loc/LoadLoc/ZDJSYBYQ",
+            "kind": "certifier"
+          },
+          {
+            "label": "Retail listings call the sticks \"Keto & Halal Friendly\" and name only Star-K.",
+            "url": "https://groceryeshop.us/products/aufschnitt-grass-fed-beef-jerky-sticks-low-sodium-certified-kosher-made-in-usa-keto-halal-friendly-6-pack-original",
+            "kind": "retailer"
+          }
+        ],
+        "summary": "Kosher-certified and sold as \"halal friendly\"; no halal certificate found."
+      }
     }
   ]
 }
