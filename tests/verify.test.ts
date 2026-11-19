@@ -60,3 +60,11 @@ test("decide only verifies a confident, plausible, uncontradicted USDA record", 
     "verified",
   )
 })
+
+import { decideManufacturer } from "../pipeline/verify"
+test("decideManufacturer needs every core value and plausible numbers", () => {
+  const ok = decideManufacturer({ protein: 13, calories: 70, carbs: 2, fiber: 0, sugar: 1, fat: 1 })
+  assert.equal(ok.status, "verified")
+  assert.equal(decideManufacturer({ protein: 13, calories: 70, carbs: 2, fiber: 0, fat: 1 }).status, "needs-review")
+  assert.equal(decideManufacturer({ protein: 30, calories: 40, carbs: 2, fiber: 0, sugar: 1, fat: 1 }).status, "needs-review")
+})

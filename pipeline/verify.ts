@@ -153,3 +153,22 @@ export function decide(input: {
   }
   return { status: "verified", values: primary, notes }
 }
+
+/**
+ * Second label source for products USDA doesn't hold: the brand's own
+ * Nutrition Facts panel, transcribed by a reviewer into pipeline/queue.json
+ * with the URL of the page or panel image. Published only if every core value
+ * is present and the numbers pass the same plausibility checks.
+ */
+export function decideManufacturer(values: PerServing): Decision {
+  const v = labelRoundAll(values)
+  const missing = CORE_FIELDS.filter((f) => typeof v[f] !== "number")
+  if (missing.length) {
+    return { status: "needs-review", notes: [`Manufacturer panel is missing: ${missing.join(", ")}.`] }
+  }
+  const problems = plausibilityProblems(v)
+  if (problems.length) {
+    return { status: "needs-review", notes: problems.map((p) => `Manufacturer panel failed a check: ${p}.`) }
+  }
+  return { status: "verified", values: v, notes: ["Values from the brand's own Nutrition Facts panel."] }
+}
