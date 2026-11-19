@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Tillamook Country Smoker Beef Jerky",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2023754,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2023754,
+    "description": "BEEF JERKY",
+    "brandOwner": "Tillamook Country Smoker Inc",
+    "brandName": "TILLAMOOK COUNTRY SMOKER",
+    "gtinUpc": "051943334011",
+    "servingSize": 28,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "4/15/2020",
+    "ingredients": "BEEF, BROWN SUGAR, WATER, SEA SALT, NATURAL FLAVORS, VINEGAR.",
+    "perServing": {
+      "protein": 10,
+      "calories": 80.1,
+      "carbs": 7,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 1.5,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 80,
+      "carbs": 7,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 1.5,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 80,
+    "carbs": 7,
+    "fiber": 0,
+    "sugar": 7,
+    "fat": 1.5
+  }
+}

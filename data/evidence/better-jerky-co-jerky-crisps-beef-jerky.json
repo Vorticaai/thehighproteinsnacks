@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Better Jerky Co. Beef Jerky Crisps",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2593353,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2593353,
+    "description": "JERKY CRISPS BEEF JERKY, JERKY CRISPS",
+    "brandOwner": "Hawaiian Kine Trading Company LLC",
+    "brandName": "BETTER JERKY CO.",
+    "gtinUpc": "850003402468",
+    "servingSize": 56,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 package",
+    "dataSource": "LI",
+    "modifiedDate": "5/30/2023",
+    "ingredients": "BEEF, SOY SAUCE (WATER, WHEAT GLUTEN, SALT, SUGAR, SOYBEANS, CARAMEL COLORING, SODIUM BENZOATE, A PRESERVATIVE), WORCESTERSHIRE SAUCE (DISTILLED WHITE VINEGAR, MOLASSES, SUGAR, WATER, SALT, ONIONS, ANCHOVIES, GARLIC, CLOVES, TAMARIND EXTRACT, NATURAL FLAVORINGS, CHILI PEPPER EXTRACT), BLACK PEPPER, LIQUID SMOKE (WATER, NATURAL HICKORY SMOKE FLAVOR, ONION POWDER.",
+    "perServing": {
+      "protein": 36,
+      "calories": 230,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 6,
+      "servingSize": "1 package / 56 g",
+      "servingSizeG": 56
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 36,
+      "calories": 230,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 6,
+      "servingSize": "1 package / 56 g",
+      "servingSizeG": 56
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 package / 56 g",
+    "servingSizeG": 56,
+    "protein": 36,
+    "calories": 230,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 6
+  }
+}

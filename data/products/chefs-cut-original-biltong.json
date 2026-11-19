@@ -1,0 +1,61 @@
+{
+  "id": "chefs-cut-original-biltong",
+  "name": "Chef’s Cut Original Biltong Air Dried Beef",
+  "brand": "Chef's Cut",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Chef%E2%80%99s+Cut+Original+Biltong+Air+Dried+Beef",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 PACKAGE / 48 g",
+    "servingSizeG": 48,
+    "protein": 26,
+    "calories": 140,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 2
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "854088007969",
+    "fdcId": 2401522
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2401522",
+        "url": "https://fdc.nal.usda.gov/food-details/2401522/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 26,
+          "calories": 140,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 2
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

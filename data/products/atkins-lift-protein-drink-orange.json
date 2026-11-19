@@ -1,0 +1,73 @@
+{
+  "id": "atkins-lift-protein-drink-orange",
+  "name": "Atkins Lift Protein Drink, Orange",
+  "brand": "Atkins",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Atkins+Lift+Protein+Drink%2C+Orange",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 BOTTLE / 507 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "637480062015",
+    "fdcId": 2545289
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2545289",
+        "url": "https://fdc.nal.usda.gov/food-details/2545289/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 91.3,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 0
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0637480062015",
+        "url": "https://world.openfoodfacts.org/product/0637480062015",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 91.3,
+          "carbs": 1,
+          "fat": 0
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

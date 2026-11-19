@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-18",
-  "query": "Boxed Halal beef jerky BBQ",
+  "checkedAt": "2026-11-19",
+  "query": "Boxed Halal BBQ Beef Jerky",
   "match": {
     "pinned": false,
     "confident": false,
@@ -68,9 +68,20 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/007/377/309/8543/front_en.3.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "servingSize": "1 oz (28 g)",
+      "servingSizeG": 28,
+      "protein": 9,
+      "calories": 100,
+      "carbs": 10,
+      "fiber": 0,
+      "sugar": 9,
+      "fat": 3
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -84,13 +95,13 @@
     "fat": 2
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 oz (28 g)",
+    "servingSizeG": 28,
     "protein": 9,
     "calories": 100,
     "carbs": 10,
     "fiber": 0,
     "sugar": 9,
-    "fat": 2
+    "fat": 3
   }
 }

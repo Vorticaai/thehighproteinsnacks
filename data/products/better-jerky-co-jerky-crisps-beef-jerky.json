@@ -1,0 +1,61 @@
+{
+  "id": "better-jerky-co-jerky-crisps-beef-jerky",
+  "name": "Better Jerky Co. Beef Jerky Crisps",
+  "brand": "Better Jerky Co.",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/s?k=Better+Jerky+Co.+Beef+Jerky+Crisps",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 package / 56 g",
+    "servingSizeG": 56,
+    "protein": 36,
+    "calories": 230,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "850003402468",
+    "fdcId": 2593353
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2593353",
+        "url": "https://fdc.nal.usda.gov/food-details/2593353/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 36,
+          "calories": 230,
+          "carbs": 3,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 6
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

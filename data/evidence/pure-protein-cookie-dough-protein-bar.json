@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Pure Protein Cookie Dough Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2153971,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2153971,
+    "description": "COOKIE DOUGH PROTEIN BAR, COOKIE DOUGH",
+    "brandOwner": "Rexall Sundown, Inc.",
+    "brandName": "PURE PROTEIN",
+    "gtinUpc": "749826001630",
+    "servingSize": 50,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "4/8/2020",
+    "ingredients": "MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE, GLYCERINE, OLIGOFRUCTOSE, FRACTIONATED PALM KERNEL OIL, HYDROLYZED COLLAGEN, INULIN, WATER, SUGAR, NATURAL FLAVOR, PARTIALLY HYDROLYZED WHEY PROTEIN ISOLATE, CASEIN, BUTTEROIL, COCOA (PROCESSED WITH ALKALI), UNSWEETENED CHOCOLATE, MOLASSES, CANOLA OIL, MILK PROTEIN CONCENTRATE, ALMOND BUTTER, HYDROLYZED WHEY PROTEIN ISOLATE, ERYTHRITOL, SALT, COCOA, YOGURT POWDER (WHEY PROTEIN CONCENTRATE, NONFAT MILK, YOGURT CULTURES), COCOA BUTTER, STEVIA LEAF EXTRACT, SUNFLOWER LECITHIN, SOY LECITHIN, MILK.",
+    "perServing": {
+      "protein": 20,
+      "calories": 190,
+      "carbs": 17,
+      "fiber": 6,
+      "sugar": 4,
+      "fat": 7,
+      "servingSize": "1 BAR / 50 g",
+      "servingSizeG": 50
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 190,
+      "carbs": 17,
+      "fiber": 6,
+      "sugar": 4,
+      "fat": 7,
+      "servingSize": "1 BAR / 50 g",
+      "servingSizeG": 50
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BAR / 50 g",
+    "servingSizeG": 50,
+    "protein": 20,
+    "calories": 190,
+    "carbs": 17,
+    "fiber": 6,
+    "sugar": 4,
+    "fat": 7
+  }
+}

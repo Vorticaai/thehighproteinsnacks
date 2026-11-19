@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Built Coconut Puff Protein Bars",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2509968,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2509968,
+    "description": "COCONUT PUFF PROTEIN BARS, COCONUT",
+    "brandOwner": "Built Brands",
+    "brandName": "BUILT",
+    "gtinUpc": "840229303816",
+    "servingSize": 40,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "2/9/2023",
+    "ingredients": "PREMIUM COLLAGEN PROTEIN BLEND (COLLAGEN PEPTIDES, PARTIALLY HYDROLYZED WHEY PROTEIN ISOLATE), DARK CHOCOLATE (SUGAR, CHOCOLATE LIQUOR, COCOA BUTTER, MILKFAT, SOY LECITHIN, VANILLA), GLYCERIN, WATER, SUGAR, GELATIN, NATURAL FLAVORS, NONFAT DRY MILK OR CULTURED DEXTROSE.",
+    "perServing": {
+      "protein": 17,
+      "calories": 140,
+      "carbs": 13,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 3,
+      "servingSize": "1 Bar / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 17,
+      "calories": 140,
+      "carbs": 13,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 3,
+      "servingSize": "1 Bar / 40 g",
+      "servingSizeG": 40
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar / 40 g",
+    "servingSizeG": 40,
+    "protein": 17,
+    "calories": 140,
+    "carbs": 13,
+    "fiber": 0,
+    "sugar": 7,
+    "fat": 3
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Twin Peaks Ingredients Nacho Cheese Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2154713,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2154713,
+    "description": "NACHO CHEESE PROTEIN PUFFS, NACHO CHEESE",
+    "brandOwner": "TPI Marketing, LLC",
+    "brandName": "TWIN PEAKS INGREDIENTS",
+    "gtinUpc": "850000796034",
+    "servingSize": 30,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 cup",
+    "dataSource": "LI",
+    "modifiedDate": "4/8/2020",
+    "ingredients": "MILK PROTEIN ISOLATE, SUNFLOWER OIL, NONFAT DRY MILK, SALT, YEAST EXTRACT, WHEY SOLIDS, ONION POWDER, SPICES, SOUR CREAM POWDER (CREAM, CULTURES, AND LACTIC ACID), BUTTERMILK SOLIDS, GARLIC POWDER, CHEDDAR CHEESE BLEND (MILK, SALT, CHEESE CULTURES, ENZYMES), MALTODEXTRIN, SUGAR, LACTIC ACID, CITRIC ACID, SILICON DIOXIDE, PAPRIKA EXTRACT, TURMERIC, NATURAL & ARTIFICIAL FLAVORS, YELLOW #5 LAKE, YELLOW #6 LAKE, CORN STARCH, ANNATTO EXTRACT.",
+    "perServing": {
+      "protein": 21,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 0.999,
+      "fat": 4,
+      "servingSize": "1 cup / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "1 cup / 30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 21,
+    "calories": 130,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 4
+  }
+}

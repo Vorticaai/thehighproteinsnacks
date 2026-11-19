@@ -1,0 +1,61 @@
+{
+  "id": "orgain-organic-protein-shake-creamy-chocolate-fudge",
+  "name": "Orgain Organic Protein Shake, Creamy Chocolate Fudge",
+  "brand": "Orgain",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Orgain+Organic+Protein+Shake%2C+Creamy+Chocolate+Fudge",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "11 OZA / 330 ml",
+    "servingSizeG": null,
+    "protein": 25,
+    "calories": 150,
+    "carbs": 8,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "851770003230",
+    "fdcId": 2339251
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2339251",
+        "url": "https://fdc.nal.usda.gov/food-details/2339251/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 25,
+          "calories": 148,
+          "carbs": 8,
+          "fiber": 1,
+          "sugar": 1,
+          "fat": 3
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

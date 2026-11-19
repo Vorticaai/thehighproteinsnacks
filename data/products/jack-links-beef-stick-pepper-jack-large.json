@@ -1,0 +1,61 @@
+{
+  "id": "jack-links-beef-stick-pepper-jack-large",
+  "name": "Jack Link's Beef Stick & Pepper Jack Cheese, Large Pack",
+  "brand": "Jack Link's",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Jack+Link%27s+Beef+Stick+%26+Pepper+Jack+Cheese%2C+Large+Pack",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 package / 85 g",
+    "servingSizeG": 85,
+    "protein": 19,
+    "calories": 280,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 22
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "017082008657",
+    "fdcId": 2675671
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2675671",
+        "url": "https://fdc.nal.usda.gov/food-details/2675671/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 19,
+          "calories": 280,
+          "carbs": 2,
+          "fiber": 0,
+          "sugar": 1,
+          "fat": 22
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

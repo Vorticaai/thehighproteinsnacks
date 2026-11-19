@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Muscle Milk Pro Advanced Nutrition 40g Protein Shake, Intense Vanilla",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2669537,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2669537,
+    "description": "PRO ADVANCED NUTRITION 40G PROTEIN SHAKE, INTENSE VANILLA, INTENSE VANILLA",
+    "brandOwner": "PepsiCo, Inc. (CytoSport)",
+    "brandName": "MUSCLE MILK",
+    "gtinUpc": "876063002813",
+    "servingSize": 414,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 bottle",
+    "dataSource": "LI",
+    "modifiedDate": "5/1/2023",
+    "ingredients": "WATER, MILK PROTEIN ISOLATE, CALCIUM CASEINATE, CONTAINS LESS THAN 2% OF SODIUM CASEINATE, SOLUBLE CORN FIBER, HIGH OLEIC SUNFLOWER OIL, NATURAL AND ARTIFICIAL FLAVOR, INULIN, CELLULOSE GEL, TRIPOTASSIUM PHOSPHATE, POTASSIUM CHLORIDE, POTASSIUM PHOSPHATE, SODIUM POLYPHOSPHATES, CELLULOSE GUM, CARRAGEENAN, SALT, SUCRALOSE, ACESULFAME POTASSIUM, ASCORBIC ACID (PRESERVES FRESHNESS), SODIUM CITRATE, FERRIC PYROPHOSPHATE, CALCIUM PHOSPHATE, VITAMIN E ACETATE, NIACINAMIDE, ZINC OXIDE, COPPER GLUCONATE, CALCIUM PANTOTHENATE, VITAMIN A PALMITATE, PYRIDOXINE HYDROCHLORIDE (VITAMIN B6), VITAMIN D3, THIAMIN MONONITRATE (VITAMIN B1), RIBOFLAVIN, FOLIC ACID, POTASSIUM IODIDE, CHROMIUM CHLORIDE, BIOTIN, CYANOCOBALAMIN (VITAMIN B12).",
+    "perServing": {
+      "protein": 40,
+      "calories": 211,
+      "carbs": 10,
+      "fiber": 5.8,
+      "sugar": 0.994,
+      "fat": 2.48,
+      "servingSize": "1 bottle / 414 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 40,
+      "calories": 210,
+      "carbs": 10,
+      "fiber": 6,
+      "sugar": 1,
+      "fat": 2.5,
+      "servingSize": "1 bottle / 414 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 210,
+    "carbs": 10,
+    "fiber": 6,
+    "sugar": 1,
+    "fat": 2.5
+  }
+}

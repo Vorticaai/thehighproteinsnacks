@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 oz (28 g)",
+    "servingSizeG": 28,
     "protein": 9,
     "calories": 100,
     "carbs": 10,
     "fiber": 0,
     "sugar": 9,
-    "fat": 2
+    "fat": 3
   },
   "claims": {
     "vegan": false,
@@ -51,13 +51,29 @@
     "summary": "HFSAA is named as the certifier by a halal directory and retailers. We have not yet confirmed the jerky on HFSAA's own list."
   },
   "verification": {
-    "status": "needs-review",
-    "checkedAt": "2026-11-18",
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://boxedhalal.com/products/beef-jerky-bbq-sampler-pack",
+        "url": "https://cdn.shopify.com/s/files/1/0474/4262/4666/files/24.png",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 9,
+          "calories": 100,
+          "carbs": 10,
+          "fiber": 0,
+          "sugar": 9,
+          "fat": 3
+        }
+      }
+    ],
     "notes": [
       "Only 33% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file.",
-      "Halal batch: check nutrition against label data."
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values transcribed from the Nutrition Facts panel on Boxed Halal's own product photo."
     ]
   }
 }

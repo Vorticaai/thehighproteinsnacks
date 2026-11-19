@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Core Power High Protein Shake, Banana",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 1935189,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 1935189,
+    "description": "CORE POWER, HIGH PROTEIN MILK SHAKE, BANANA, BANANA",
+    "brandOwner": "Fair Oaks Farms Brands, Inc.",
+    "brandName": "CORE POWER",
+    "gtinUpc": "856312002696",
+    "servingSize": 340,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "11.5 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2021",
+    "ingredients": "FILTERED LOWFAT GRADE A MILK, CANE SUGAR, BANANA PUREE, CONTAINS LESS THAN 1% OF NATURAL FLAVORS, HONEY, VANILLA EXTRACT, GREEN TEA EXTRACT, SODIUM POLYPHOSPHATE, CARRAGEENAN, STEVIA LEAF EXTRACT, NATURAL COLOR (TURMERIC EXTRACT), LACTASE ENZYME, VITAMIN A PALMITATE, VITAMIN D3.",
+    "perServing": {
+      "protein": 26,
+      "calories": 241,
+      "carbs": 26,
+      "fiber": 0,
+      "sugar": 26,
+      "fat": 3.5,
+      "servingSize": "11.5 OZA / 340 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 26,
+      "calories": 240,
+      "carbs": 26,
+      "fiber": 0,
+      "sugar": 26,
+      "fat": 3.5,
+      "servingSize": "11.5 OZA / 340 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "11.5 OZA / 340 ml",
+    "servingSizeG": null,
+    "protein": 26,
+    "calories": 240,
+    "carbs": 26,
+    "fiber": 0,
+    "sugar": 26,
+    "fat": 3.5
+  }
+}

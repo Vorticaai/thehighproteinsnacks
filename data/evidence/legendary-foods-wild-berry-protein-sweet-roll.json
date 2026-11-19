@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Legendary Foods Wild Berry Protein Sweet Roll",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2664095,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2664095,
+    "description": "WILD BERRY PROTEIN SWEET ROLL, WILD BERRY",
+    "brandOwner": "Legendary Foods LLC  ",
+    "brandName": "LEGENDARY FOODS",
+    "gtinUpc": "810035971646",
+    "servingSize": 64,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Roll",
+    "dataSource": "LI",
+    "modifiedDate": "12/20/2022",
+    "ingredients": "PROTEIN BLEND (MICELLAR CASEIN, COLLAGEN PEPTIDES, WHEY PROTEIN ISOLATE), LF LOW POLYUNSATURATED FAT OIL (CONTAINS ONE OR MORE OF THE FOLLOWING: HIGH OLEIC SUNFLOWER OIL, HIGH OLEIC SAFFLOWER OIL, PALM OIL, PALM KERNEL OIL), ERYTHRITOL, WATER, POLYDEXTROSE, GLYCERIN, MODIFIED RESISTANT TAPIOCA STARCH. CONTAINS LESS THAN 2% OF: DRIED BLUEBERRIES, DRIED STRAWBERRIES, XANTHAN GUM, PSYLLIUM HUSK, NATURAL FLAVORS, EPG (MODIFIED PLANT-BASED OIL), STRAWBERRY EXTRACT, RED NO. 40, BLUE NO. 1, CELLULOSE, SUCRALOSE, SUCROSE FATTY ACID ESTERS, SUNFLOWER LECITHIN, SODIUM ALGINATE, CITRIC ACID, SEA SALT, BAKING SODA.",
+    "perServing": {
+      "protein": 20,
+      "calories": 190,
+      "carbs": 23,
+      "fiber": 9.02,
+      "sugar": 0.998,
+      "fat": 8,
+      "servingSize": "1 Roll / 64 g",
+      "servingSizeG": 64
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 190,
+      "carbs": 23,
+      "fiber": 9,
+      "sugar": 1,
+      "fat": 8,
+      "servingSize": "1 Roll / 64 g",
+      "servingSizeG": 64
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Roll / 64 g",
+    "servingSizeG": 64,
+    "protein": 20,
+    "calories": 190,
+    "carbs": 23,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 8
+  }
+}

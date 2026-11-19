@@ -1,0 +1,61 @@
+{
+  "id": "quest-protein-chips-bbq",
+  "name": "Quest Protein Chips, BBQ",
+  "brand": "Quest",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/s?k=Quest+Protein+Chips%2C+BBQ",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 BAG / 32 g",
+    "servingSizeG": 32,
+    "protein": 22,
+    "calories": 130,
+    "carbs": 4,
+    "fiber": 2,
+    "sugar": 0,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "888849000289",
+    "fdcId": 2669750
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669750",
+        "url": "https://fdc.nal.usda.gov/food-details/2669750/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 22,
+          "calories": 130,
+          "carbs": 4,
+          "fiber": 2,
+          "sugar": 0,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

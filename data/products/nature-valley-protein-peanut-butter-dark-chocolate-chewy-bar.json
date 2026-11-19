@@ -1,0 +1,61 @@
+{
+  "id": "nature-valley-protein-peanut-butter-dark-chocolate-chewy-bar",
+  "name": "Nature Valley Protein Peanut Butter Dark Chocolate Chewy Bar",
+  "brand": "Nature Valley",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Protein+Peanut+Butter+Dark+Chocolate+Chewy+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 50 g",
+    "servingSizeG": 50,
+    "protein": 16,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 4,
+    "sugar": 6,
+    "fat": 11
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00016000238428",
+    "fdcId": 2774910
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2774910",
+        "url": "https://fdc.nal.usda.gov/food-details/2774910/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 16,
+          "calories": 220,
+          "carbs": 17,
+          "fiber": 4,
+          "sugar": 6,
+          "fat": 11
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

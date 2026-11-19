@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Good! Snacks Protein Bars",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2509995,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2509995,
+    "description": "PROTEIN BARS",
+    "brandOwner": "Sundia Corporation",
+    "brandName": "GOOD! SNACKS",
+    "gtinUpc": "840609112311",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "1/12/2023",
+    "ingredients": "GOOD GREENS PROTEIN BLEND (BROWN RICE PROTEIN, FAVA BEAN PROTEIN), SOLUBLE TAPIOCA FIBER, CANE SUGAR, TAPIOCA SYRUP, ALMOND BUTTER, PALM KERNEL OIL, NATURAL FLAVORS, VEGETABLE GLYCERIN, SUNFLOWER LECITHIN, HIGH OLEIC SUNFLOWER OIL, SALT, GROUND CINNAMON, PALM OIL, PEANUT BUTTER.",
+    "perServing": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 30,
+      "fiber": 13,
+      "sugar": 10,
+      "fat": 6,
+      "servingSize": "1 Bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 30,
+      "fiber": 13,
+      "sugar": 10,
+      "fat": 6,
+      "servingSize": "1 Bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 30,
+    "fiber": 13,
+    "sugar": 10,
+    "fat": 6
+  }
+}

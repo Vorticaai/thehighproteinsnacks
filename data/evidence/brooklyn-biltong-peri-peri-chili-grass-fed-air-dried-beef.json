@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Brooklyn Biltong Peri Peri Chili Grass Fed Air Dried Beef",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2385764,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2385764,
+    "description": "PERI PERI CHILI GRASS FED AIR DRIED BEEF, PERI PERI CHILI",
+    "brandOwner": "Authentic Joy",
+    "brandName": "BROOKLYN BILTONG",
+    "gtinUpc": "850015093036",
+    "servingSize": 28,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "12/17/2020",
+    "ingredients": "GRASS FED BEEF WATER. APPLE CIDER VINEGAR GARLIC POWDER REALSALT (SEA SALT). CAYENNE PEPPER, BLACK PEPPER CELERY JUICE POWDER",
+    "perServing": {
+      "protein": 14,
+      "calories": 89.9,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 3,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 14,
+      "calories": 90,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 3,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 14,
+    "calories": 90,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 3
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Perfect Bar Chocolate Hazelnut Crisp Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2664734,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2664734,
+    "description": "CHOCOLATE HAZELNUT CRISP PROTEIN BAR, CHOCOLATE HAZELNUT CRISP",
+    "brandOwner": "Perfect Bar, LLC",
+    "brandName": "PERFECT BAR",
+    "gtinUpc": "855569110314",
+    "servingSize": 62,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "10/23/2023",
+    "ingredients": "PEANUT BUTTER*, HONEY*, HAZELNUT BUTTER, NONFAT DRY MILK*, DARK CHOCOLATE* (CHOCOLATE*+, CANE SUGAR*+, COCOA BUTTER*+), CRISP SORGHUM*, COCOA*, DRIED WHOLE EGG POWDER*, RICE PROTEIN*, VANILLA EXTRACT*, DRIED WHOLE FOOD POWDERS (KALE*, FLAX SEED*, ROSE HIP*, ORANGE*, LEMON*, PAPAYA*, TOMATO*, APPLE*, ALFALFA*, CELERY*, KELP*, DULSE*, CARROT*, SPINACH*), FLAX SEED OIL*, SESAME SEED OIL*, OLIVE OIL*, PUMPKIN SEED OIL*.",
+    "perServing": {
+      "protein": 12,
+      "calories": 320,
+      "carbs": 24,
+      "fiber": 4.03,
+      "sugar": 15,
+      "fat": 21,
+      "servingSize": "1 Bar / 62 g",
+      "servingSizeG": 62
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 320,
+      "carbs": 24,
+      "fiber": 4,
+      "sugar": 15,
+      "fat": 21,
+      "servingSize": "1 Bar / 62 g",
+      "servingSizeG": 62
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar / 62 g",
+    "servingSizeG": 62,
+    "protein": 12,
+    "calories": 320,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 15,
+    "fat": 21
+  }
+}

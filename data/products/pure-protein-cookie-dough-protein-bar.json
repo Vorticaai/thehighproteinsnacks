@@ -1,0 +1,61 @@
+{
+  "id": "pure-protein-cookie-dough-protein-bar",
+  "name": "Pure Protein Cookie Dough Protein Bar",
+  "brand": "Pure Protein",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Pure+Protein+Cookie+Dough+Protein+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 BAR / 50 g",
+    "servingSizeG": 50,
+    "protein": 20,
+    "calories": 190,
+    "carbs": 17,
+    "fiber": 6,
+    "sugar": 4,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "749826001630",
+    "fdcId": 2153971
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2153971",
+        "url": "https://fdc.nal.usda.gov/food-details/2153971/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 190,
+          "carbs": 17,
+          "fiber": 6,
+          "sugar": 4,
+          "fat": 7
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

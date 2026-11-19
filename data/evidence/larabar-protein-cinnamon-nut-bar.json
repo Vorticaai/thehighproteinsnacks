@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Larabar Protein Cinnamon Nut Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2772249,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2772249,
+    "description": "Larabar Protein Cinnamon Nut Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Larabar",
+    "gtinUpc": "00021908266473",
+    "servingSize": 45,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/26/2026",
+    "ingredients": "ROASTED PEANUTS, TAPIOCA SYRUP, SOY PROTEIN ISOLATE, ALMONDS, DATES, PALM AND PALM KERNEL OIL, PEANUT FLOUR, UNSWEETENED COCONUT, CINNAMON, VANILLA EXTRACT, SEA SALT. ",
+    "perServing": {
+      "protein": 11,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3.02,
+      "sugar": 10,
+      "fat": 13,
+      "servingSize": "1 bar / 45 g",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": {
+    "code": "0021908266473",
+    "product_name": "Cinnamon Nut",
+    "brands": "Larvae",
+    "serving_size": "1 bar (45 g)",
+    "perServing": {
+      "protein": 11,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3,
+      "sugar": 10,
+      "fat": 13,
+      "servingSize": "1 bar (45 g)",
+      "servingSizeG": 45
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/002/190/826/6473/front_en.11.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 11,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3,
+      "sugar": 10,
+      "fat": 13,
+      "servingSize": "1 bar / 45 g",
+      "servingSizeG": 45
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 45 g",
+    "servingSizeG": 45,
+    "protein": 11,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 10,
+    "fat": 13
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Ratio Protein Banana Cream Dairy Snack",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2737553,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2737553,
+    "description": ":ratio Protein Banana Cream Dairy Snack",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Ratio",
+    "gtinUpc": "00070470224473",
+    "servingSize": 150,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 container",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/28/2025",
+    "ingredients": "Cultured Pasteurized Ultra-Filtered Nonfat Milk, Cultured Pasteurized Milk, Whey Protein Concentrate, Nonfat Milk. Contains 2% or less of: Sunflower Oil, Natural Flavor, Sucralose, Carrageenan, Turmeric Extract (for color).",
+    "perServing": {
+      "protein": 25,
+      "calories": 170,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3.5,
+      "servingSize": "1 container / 150 g",
+      "servingSizeG": 150
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 25,
+      "calories": 170,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3.5,
+      "servingSize": "1 container / 150 g",
+      "servingSizeG": 150
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 container / 150 g",
+    "servingSizeG": 150,
+    "protein": 25,
+    "calories": 170,
+    "carbs": 9,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3.5
+  }
+}

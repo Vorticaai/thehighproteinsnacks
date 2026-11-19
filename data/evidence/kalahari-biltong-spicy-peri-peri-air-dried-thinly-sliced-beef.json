@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Kalahari Biltong Spicy Peri Peri Air Dried, Thinly Sliced Beef",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2653432,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2653432,
+    "description": "SPICY PERI PERI AIR DRIED, THINLY SLICED BEEF, SPICY PERI PERI",
+    "brandOwner": "Kalahari Foods LLC",
+    "brandName": "KALAHARI BILTONG",
+    "gtinUpc": "852487008013",
+    "servingSize": 56,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Package",
+    "dataSource": "LI",
+    "modifiedDate": "9/22/2023",
+    "ingredients": "BEEF, VINEGAR, SALT, CHILI POWDER, CORIANDER, BLACK PEPPER",
+    "perServing": {
+      "protein": 32,
+      "calories": 160,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 4,
+      "servingSize": "1 Package / 56 g",
+      "servingSizeG": 56
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 32,
+      "calories": 160,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 4,
+      "servingSize": "1 Package / 56 g",
+      "servingSizeG": 56
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Package / 56 g",
+    "servingSizeG": 56,
+    "protein": 32,
+    "calories": 160,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 4
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Protein One 90 Calorie Peanut Butter Chocolate Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2716146,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2716146,
+    "description": "Protein One 90 Calorie Peanut Butter Chocolate Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Protein One",
+    "gtinUpc": "00016000225671",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "9/26/2024",
+    "ingredients": "Soy Protein Isolate, Maltitol Syrup, Vegetable Glycerin, Maltitol, Cocoa (processed with alkali), Whey Protein Isolate, Fractionated Palm Kernel and Palm Oil, Milk Protein Isolate, Peanuts, Hydrolyzed Gelatin, Whey Protein Concentrate, Cane Sugar, Partially Defatted Peanut Flour, Maltodextrin, Sugar, Natural Flavor (with annatto and turmeric [color]), Tapioca Starch, Canola Oil, Milk, Unsweetened Chocolate, Cocoa Butter, Soy Lecithin, Sea Salt, Calcium Carbonate, Sodium Caseinate, Milkfat, Stevia Leaf Extract, Sucralose, Almond Butter, Salt, Vitamin E (mixed tocopherols) Added to Retain Freshness. ",
+    "perServing": {
+      "protein": 19.8,
+      "calories": 228,
+      "carbs": 25.8,
+      "fiber": 3,
+      "sugar": 2.4,
+      "fat": 7.2,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": {
+    "code": "0016000225671",
+    "product_name": "Protein Bar",
+    "brands": "Protein One",
+    "serving_size": "1 bar (60 g)",
+    "perServing": {
+      "protein": 12,
+      "calories": 138,
+      "carbs": 15,
+      "fiber": 1.8,
+      "sugar": 1.2,
+      "fat": 4.2,
+      "servingSize": "1 bar (60 g)",
+      "servingSizeG": 60
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/001/600/022/5671/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 20 vs 12; calories: 230 vs 140; carbs: 26 vs 15; fat: 7 vs 4)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

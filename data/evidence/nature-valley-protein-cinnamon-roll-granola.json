@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Nature Valley Protein Cinnamon Roll Granola",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2772890,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2772890,
+    "description": "Nature Valley Protein Cinnamon Roll Granola",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Nature Valley",
+    "gtinUpc": "00016000233195",
+    "servingSize": 67,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "2/3 cup Bowl",
+    "dataSource": "GDSN",
+    "modifiedDate": "6/23/2026",
+    "ingredients": "Whole Grain Oats, Sugar, Soy Protein Isolate, Canola and/or Sunflower Oil, Honey, Molasses, Rice Starch, Cinnamon, Soy Lecithin, Baking Soda, Salt, Natural Flavor. Vitamin E (mixed tocopherols) Added to Preserve Freshness. ",
+    "perServing": {
+      "protein": 13,
+      "calories": 280,
+      "carbs": 42,
+      "fiber": 4.02,
+      "sugar": 16,
+      "fat": 7,
+      "servingSize": "2/3 cup Bowl / 67 g",
+      "servingSizeG": 67
+    }
+  },
+  "openFoodFacts": {
+    "code": "0016000233195",
+    "product_name": "Protein Granola Cinnamon Roll",
+    "brands": "Nature Valley",
+    "serving_size": "0.28 cup (28 g)",
+    "perServing": {
+      "protein": 5,
+      "calories": 126,
+      "carbs": 18,
+      "fiber": 2,
+      "sugar": 7,
+      "fat": 3,
+      "servingSize": "0.28 cup (28 g)",
+      "servingSizeG": 28
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/001/600/023/3195/front_en.14.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 13 vs 5; calories: 280 vs 130; carbs: 42 vs 18; fiber: 4 vs 2; sugar: 16 vs 7; fat: 7 vs 3)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Orgain Organic Protein Shake, Creamy Chocolate Fudge",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2339251,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2339251,
+    "description": "ORGAIN, ORGANIC PROTEIN, NUTRITIONAL PROTEIN SHAKE CREAMY CHOCOLATE FUDGE",
+    "brandOwner": "Orgain, Inc.",
+    "brandName": "ORGAIN",
+    "gtinUpc": "851770003230",
+    "servingSize": 330,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "11 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2021",
+    "ingredients": "FILTERED WATER, ORGAIN ORGANIC PROTEIN BLEND (ORGANIC GRASS FED MILK PROTEIN CONCENTRATE, ORGANIC WHEY PROTEIN CONCENTRATE), ORGANIC ERYTHRITOL, ORGANIC COCOA, ORGANIC HIGH OLEIC SUNFLOWER OIL, ORGANIC NATURAL FLAVORS, ORGANIC RICE BRAN EXTRACT, POTASSIUM CITRATE, TRICALCIUM PHOSPHATE, ORGANIC INULIN, POTASSIUM CHLORIDE, SEA SALT, ORGANIC LOCUST BEAN, ORGANIC AGAR GUM, GELLAN GUM, SODIUM PHOSPHATE, ORGANIC STEVIA, MONK FRUIT EXTRACT.",
+    "perServing": {
+      "protein": 25,
+      "calories": 148,
+      "carbs": 7.99,
+      "fiber": 0.99,
+      "sugar": 0.99,
+      "fat": 3,
+      "servingSize": "11 OZA / 330 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 25,
+      "calories": 150,
+      "carbs": 8,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "11 OZA / 330 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "11 OZA / 330 ml",
+    "servingSizeG": null,
+    "protein": 25,
+    "calories": 150,
+    "carbs": 8,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 3
+  }
+}

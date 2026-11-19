@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Epic BBQ Seasoned Chicken Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2770152,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2770152,
+    "description": "EPIC BBQ Seasoned Chicken Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "EPIC Provisions",
+    "gtinUpc": "00732153247444",
+    "servingSize": 37,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/6/2026",
+    "ingredients": "Chicken Meat, Encapsulated Lactic Acid**, Vinegar. Contains 2% or less of: Sea Salt, Smoked Paprika, Garlic Powder, Onion Powder, Spices (including allspice, black pepper, clove, cumin, mustard, oregano), Cultured Celery Powder.**Not from Milk ",
+    "perServing": {
+      "protein": 11,
+      "calories": 89.9,
+      "carbs": 3,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 4.5,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    }
+  },
+  "openFoodFacts": {
+    "code": "0732153247444",
+    "product_name": "CHICKEN BBQ SEASONED BAR",
+    "brands": "EPIC",
+    "serving_size": "1 bar (37 g)",
+    "perServing": {
+      "protein": 11,
+      "calories": 90,
+      "carbs": 3,
+      "fiber": 2,
+      "fat": 4.5,
+      "servingSize": "1 bar (37 g)",
+      "servingSizeG": 37
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/073/215/324/7444/front_en.15.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 11,
+      "calories": 90,
+      "carbs": 3,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 4.5,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
+    "protein": 11,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 2,
+    "sugar": 0,
+    "fat": 4.5
+  }
+}

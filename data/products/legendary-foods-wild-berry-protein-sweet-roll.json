@@ -1,0 +1,61 @@
+{
+  "id": "legendary-foods-wild-berry-protein-sweet-roll",
+  "name": "Legendary Foods Wild Berry Protein Sweet Roll",
+  "brand": "Legendary Foods",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Legendary+Foods+Wild+Berry+Protein+Sweet+Roll",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Roll / 64 g",
+    "servingSizeG": 64,
+    "protein": 20,
+    "calories": 190,
+    "carbs": 23,
+    "fiber": 9,
+    "sugar": 1,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "810035971646",
+    "fdcId": 2664095
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2664095",
+        "url": "https://fdc.nal.usda.gov/food-details/2664095/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 190,
+          "carbs": 23,
+          "fiber": 9,
+          "sugar": 1,
+          "fat": 8
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

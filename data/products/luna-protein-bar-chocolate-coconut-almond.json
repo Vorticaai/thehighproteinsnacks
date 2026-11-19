@@ -1,0 +1,61 @@
+{
+  "id": "luna-protein-bar-chocolate-coconut-almond",
+  "name": "Luna Protein Bar, Chocolate Coconut Almond",
+  "brand": "Luna",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Luna+Protein+Bar%2C+Chocolate+Coconut+Almond",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 BAR / 45 iu",
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 21,
+    "fiber": 3,
+    "sugar": 12,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "722252233073",
+    "fdcId": 2507861
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2507861",
+        "url": "https://fdc.nal.usda.gov/food-details/2507861/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 180,
+          "carbs": 21,
+          "fiber": 3,
+          "sugar": 12,
+          "fat": 7
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

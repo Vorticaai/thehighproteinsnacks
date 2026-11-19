@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Chocolate Chip Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2609152,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2609152,
+    "description": "CHOCOLATE CHIP PROTEIN BAR, CHOCOLATE CHIP",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "857777004690",
+    "servingSize": 52,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "6/30/2023",
+    "ingredients": "DATES, EGG WHITES, ALMONDS, CASHEWS, CHOCOLATE, NATURAL FLAVORS, SEA SALT.",
+    "perServing": {
+      "protein": 12,
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 4.99,
+      "sugar": 13,
+      "fat": 10,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": {
+    "code": "0857777004690",
+    "product_name": "Protein Bar",
+    "brands": "Rxbar",
+    "serving_size": "1 bar (52 g)",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 23,
+      "fiber": 3,
+      "sugar": 18,
+      "fat": 8,
+      "servingSize": "1 bar (52 g)",
+      "servingSizeG": 52
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/777/700/4690/front_en.9.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (fiber: 5 vs 3; sugar: 13 vs 18; fat: 10 vs 8)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

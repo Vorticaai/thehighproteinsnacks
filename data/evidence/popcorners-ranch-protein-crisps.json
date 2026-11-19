@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "PopCorners Protein Crisps, Ranch",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2582208,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2582208,
+    "description": "RANCH PROTEIN CRISPS",
+    "brandOwner": "PepsiCo, Inc. (BFY Brands)",
+    "brandName": "POPCORNERS",
+    "gtinUpc": "0810607020772",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "5/23/2023",
+    "ingredients": "SOY PROTEIN CONCENTRATE, TAPIOCA STARCH, SUNFLOWER OIL, CASSAVA FLOUR, SOY FIBER, SALT, CANE SUGAR, ORGANIC BUTTERMILK, ORGANIC SOUR CREAM (CREAM, CULTURES, LACTIC ACID), MALTODEXTRIN (MADE FROM POTATO AND ORGANIC TAPIOCA), GARLIC POWDER, ONION POWDER, NATURAL FLAVORS, ORGANIC SKIM MILK, SPICES, ORGANIC CHEDDAR CHEESE (MILK, CHEESE CULTURES, SALT, ENZYMES), ORGANIC BUTTER (CREAM, SALT), MODIFIED TAPIOCA STARCH, YEAST, ORGANIC PARMESAN CHEESE (MILK, CHEESE CULTURES, SALT, ENZYMES), ORGANIC OAT FIBER, ORGANIC VINEGAR, ORGANIC WHEY, MIXED TOCOPHEROLS (ANTIOXIDANT)",
+    "perServing": {
+      "protein": 10,
+      "calories": 120,
+      "carbs": 12,
+      "fiber": 5.01,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 120,
+      "carbs": 12,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 120,
+    "carbs": 12,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 4
+  }
+}

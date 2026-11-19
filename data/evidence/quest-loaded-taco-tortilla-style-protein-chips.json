@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Loaded Taco Tortilla Style Protein Chips",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2511712,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2511712,
+    "description": "LOADED TACO TORTILLA STYLE PROTEIN CHIPS, LOADED TACO",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849010271",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bag",
+    "dataSource": "LI",
+    "modifiedDate": "1/18/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, NATURAL FLAVORS, PSYLLIUM HUSK. CONTAINS LESS THAN 2% OF THE FOLLOWING: SALT, SOLUBLE CORN FIBER, SOUR CREAM (CREAM, NON-FAT MILK, CULTURES), CHEDDAR CHEESE POWDER (CULTURED MILK, SALT, ENZYMES), BUTTERMILK POWDER, ONION POWDER, TOMATO POWDER, GARLIC POWDER, GREEN BELL PEPPER, PAPRIKA, SPICE, CHIA SEED, YEAST, TURMERIC OLEORESIN (COLOR), PAPRIKA EXTRACT (COLOR), ACACIA GUM, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), CALCIUM CARBONATE, YEAST EXTRACT, STEVIA SWEETENER.",
+    "perServing": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Stryve Spicy Peri Peri Biltong Sticks",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2390812,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2390812,
+    "description": "SPICY PERI PERI BILTONG STICKS, SPICY PERI PERI",
+    "brandOwner": "Stryve Foods",
+    "brandName": "STRYVE",
+    "gtinUpc": "856926008374",
+    "servingSize": 28,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "8/20/2020",
+    "ingredients": "BEEF, VINEGAR, SALT, CHILI PEPPER, CORIANDER, BLACK PEPPER, NUTMEG, CLOVE, LAMB CASING",
+    "perServing": {
+      "protein": 14,
+      "calories": 125,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 8,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 14,
+      "calories": 130,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 8,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 14,
+    "calories": 130,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 8
+  }
+}

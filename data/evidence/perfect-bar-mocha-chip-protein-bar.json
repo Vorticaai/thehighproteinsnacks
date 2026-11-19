@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Perfect Bar Mocha Chip Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2467504,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2467504,
+    "description": "MOCHA CHIP PROTEIN BAR, MOCHA CHIP",
+    "brandOwner": "Perfect Bar, LLC",
+    "brandName": "PERFECT BAR",
+    "gtinUpc": "855569210502",
+    "servingSize": 62,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "5/6/2020",
+    "ingredients": "INGREDIENTS: PEANUT BUTTER*, ALMOND BUTTER*, HONEY*, NONFAT DRY MILK*, DARK CHOCOLATE*+ (CHOCOLATE*, CANE SUGAR*, COCOA BUTTER*, SUNFLOWER LECITHIN), COCOA*, GROUND COFFEE*+, DRIED WHOLE EGG POWDER*, RICE PROTEIN*, VANILLA EXTRACT*, DRIED WHOLE FOOD POWDERS (KALE*, FLAX SEED*, ROSE HIP*, ORANGE*, LEMON*, PAPAYA*, TOMATO*, APPLE*, ALFALFA*, CELERY*, KELP*, DULSE*, CARROT*, SPINACH*), SUNFLOWER LECITHIN*, FLAX SEED OIL*, SUNFLOWER OIL*, SESAME SEED OIL*, OLIVE OIL*, PUMPKIN SEED OIL*.",
+    "perServing": {
+      "protein": 14,
+      "calories": 310,
+      "carbs": 24,
+      "fiber": 4.03,
+      "sugar": 16,
+      "fat": 20,
+      "servingSize": "1 Bar / 62 g",
+      "servingSizeG": 62
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 14,
+      "calories": 310,
+      "carbs": 24,
+      "fiber": 4,
+      "sugar": 16,
+      "fat": 20,
+      "servingSize": "1 Bar / 62 g",
+      "servingSizeG": 62
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar / 62 g",
+    "servingSizeG": 62,
+    "protein": 14,
+    "calories": 310,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 16,
+    "fat": 20
+  }
+}

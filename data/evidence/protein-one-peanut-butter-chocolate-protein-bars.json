@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Protein One Peanut Butter Chocolate Protein Bars",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2758654,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2758654,
+    "description": "Protein One Peanut Butter Chocolate Protein Bars",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Protein One",
+    "gtinUpc": "00016000140912",
+    "servingSize": 27,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "3/20/2026",
+    "ingredients": "Calcium Caseinate, Whey Protein Concentrate, Vegetable Glycerin, Polydextrose, Collagen, Palm and Palm Kernel Oil, Chicory Root Extract, Canola Oil, Whey Protein Isolate, Allulose, Peanut Butter (peanuts, salt), Partially Defatted Peanut Flour, Cocoa Powder, Dutch Cocoa (processed with alkali), Soy Lecithin, Salt, Peanut Oil, Natural Flavor, Stevia Extract, Sucralose.",
+    "perServing": {
+      "protein": 10,
+      "calories": 99.9,
+      "carbs": 9,
+      "fiber": 3,
+      "sugar": 0.999,
+      "fat": 4,
+      "servingSize": "1 bar / 27 g",
+      "servingSizeG": 27
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 100,
+      "carbs": 9,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "1 bar / 27 g",
+      "servingSizeG": 27
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 27 g",
+    "servingSizeG": 27,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 9,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 4
+  }
+}

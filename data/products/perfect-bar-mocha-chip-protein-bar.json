@@ -1,0 +1,61 @@
+{
+  "id": "perfect-bar-mocha-chip-protein-bar",
+  "name": "Perfect Bar Mocha Chip Protein Bar",
+  "brand": "Perfect Bar",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Perfect+Bar+Mocha+Chip+Protein+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Bar / 62 g",
+    "servingSizeG": 62,
+    "protein": 14,
+    "calories": 310,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 16,
+    "fat": 20
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "855569210502",
+    "fdcId": 2467504
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2467504",
+        "url": "https://fdc.nal.usda.gov/food-details/2467504/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 310,
+          "carbs": 24,
+          "fiber": 4,
+          "sugar": 16,
+          "fat": 20
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

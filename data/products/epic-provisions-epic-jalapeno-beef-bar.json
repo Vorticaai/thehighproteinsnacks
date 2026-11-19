@@ -1,0 +1,82 @@
+{
+  "id": "epic-provisions-epic-jalapeno-beef-bar",
+  "name": "Epic Jalapeno Beef Bar",
+  "brand": "Epic Provisions",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Epic+Jalapeno+Beef+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
+    "protein": 9,
+    "calories": 110,
+    "carbs": 3,
+    "fiber": 2,
+    "sugar": 0,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00732153241190",
+    "fdcId": 2770135
+  },
+  "image": {
+    "src": "/products/epic-provisions-epic-jalapeno-beef-bar.jpg",
+    "alt": "Epic Provisions Epic Jalapeno Beef Bar package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0732153241190"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2770135",
+        "url": "https://fdc.nal.usda.gov/food-details/2770135/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 9,
+          "calories": 110,
+          "carbs": 3,
+          "fiber": 2,
+          "sugar": 0,
+          "fat": 7
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0732153241190",
+        "url": "https://world.openfoodfacts.org/product/0732153241190",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 9,
+          "calories": 110,
+          "carbs": 3,
+          "fiber": 2,
+          "sugar": 1,
+          "fat": 7
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

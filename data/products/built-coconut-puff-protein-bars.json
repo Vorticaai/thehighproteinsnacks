@@ -1,0 +1,61 @@
+{
+  "id": "built-coconut-puff-protein-bars",
+  "name": "Built Coconut Puff Protein Bars",
+  "brand": "Built",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Built+Coconut+Puff+Protein+Bars",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Bar / 40 g",
+    "servingSizeG": 40,
+    "protein": 17,
+    "calories": 140,
+    "carbs": 13,
+    "fiber": 0,
+    "sugar": 7,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "840229303816",
+    "fdcId": 2509968
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2509968",
+        "url": "https://fdc.nal.usda.gov/food-details/2509968/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 17,
+          "calories": 140,
+          "carbs": 13,
+          "fiber": 0,
+          "sugar": 7,
+          "fat": 3
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

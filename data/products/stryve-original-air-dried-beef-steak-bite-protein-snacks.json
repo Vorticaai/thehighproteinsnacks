@@ -1,0 +1,75 @@
+{
+  "id": "stryve-original-air-dried-beef-steak-bite-protein-snacks",
+  "name": "Stryve Original Air-dried Beef Steak Bite Protein Snacks",
+  "brand": "Stryve",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Stryve+Original+Air-dried+Beef+Steak+Bite+Protein+Snacks",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 oz / 28 g",
+    "servingSizeG": 28,
+    "protein": 14,
+    "calories": 130,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "850044218196",
+    "fdcId": 2652026
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2652026",
+        "url": "https://fdc.nal.usda.gov/food-details/2652026/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 130,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 8
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0850044218196",
+        "url": "https://world.openfoodfacts.org/product/0850044218196",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 130,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 8
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

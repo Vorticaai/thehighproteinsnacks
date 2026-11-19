@@ -1,0 +1,61 @@
+{
+  "id": "muscle-milk-non-dairy-protein-shake-crushing-cookies-n-creme",
+  "name": "Muscle Milk Pro Series 40g Shake, Crushing Cookies 'n Creme",
+  "brand": "Muscle Milk",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Series+40g+Shake%2C+Crushing+Cookies+%27n+Creme",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "14 OZA / 414 ml",
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 200,
+    "carbs": 9,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "876063002837",
+    "fdcId": 2338793
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2338793",
+        "url": "https://fdc.nal.usda.gov/food-details/2338793/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 40,
+          "calories": 199,
+          "carbs": 9,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 2.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

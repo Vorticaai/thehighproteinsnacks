@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Atkins Lift Protein Drink, Orange",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2545289,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2545289,
+    "description": "LIFT PROTEIN DRINK, ORANGE",
+    "brandOwner": "Atkins Nutritionals, Inc.",
+    "brandName": "ATKINS",
+    "gtinUpc": "637480062015",
+    "servingSize": 507,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 BOTTLE",
+    "dataSource": "LI",
+    "modifiedDate": "6/2/2022",
+    "ingredients": "WATER, WHEY PROTEIN ISOLATE, NATURAL FLAVOR, SUCRALOSE, FRUIT AND VEGETABLE JUICE (COLOR), PHOSPHORIC ACID, CITRIC ACID.",
+    "perServing": {
+      "protein": 20,
+      "calories": 91.3,
+      "carbs": 1.01,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 0,
+      "servingSize": "1 BOTTLE / 507 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0637480062015",
+    "product_name": "Lift protein drink",
+    "serving_size": "1 BOTTLE (507 ml)",
+    "perServing": {
+      "protein": 20,
+      "calories": 91.3,
+      "carbs": 1.01,
+      "fat": 0,
+      "servingSize": "1 BOTTLE (507 ml)",
+      "servingSizeG": 507
+    }
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 90,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 0,
+      "servingSize": "1 BOTTLE / 507 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BOTTLE / 507 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

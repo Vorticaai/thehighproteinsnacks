@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR A.M. Protein Bar, Honey Cinnamon Peanut Butter",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2599580,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2599580,
+    "description": "A.M. HONEY CINNAMON PEANUT BUTTER PROTEIN BAR, HONEY; CINNAMON; PEANUT BUTTER",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "0193908005175",
+    "servingSize": 55,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar (55g)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "OATS, HONEY, PEANUT BUTTER (PEANUTS), EGG WHITES, PEANUTS, PUMPKIN SEEDS, BROWN RICE, HIGH OLEIC SUNFLOWER OIL, COCONUT SUGAR, OAT FIBER, NATURAL FLAVORS, SEA SALT, CINNAMON",
+    "perServing": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 29,
+      "fiber": 4.02,
+      "sugar": 12,
+      "fat": 10,
+      "servingSize": "1 Bar (55g) / 55 g",
+      "servingSizeG": 55
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 29,
+      "fiber": 4,
+      "sugar": 12,
+      "fat": 10,
+      "servingSize": "1 Bar (55g) / 55 g",
+      "servingSizeG": 55
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar (55g) / 55 g",
+    "servingSizeG": 55,
+    "protein": 10,
+    "calories": 230,
+    "carbs": 29,
+    "fiber": 4,
+    "sugar": 12,
+    "fat": 10
+  }
+}

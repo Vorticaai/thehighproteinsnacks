@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "PopCorners Protein Crisps, Barbecue",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2604063,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2604063,
+    "description": "BARBECUE FLAVORED PROTEIN CRISPS, BARBEQUE",
+    "brandOwner": "PepsiCo, Inc. (BFY Brands)",
+    "brandName": "POPCORNERS",
+    "gtinUpc": "0810607021144",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "SOY PROTEIN CONCENTRATE, TAPIOCA STARCH, SUNFLOWER OIL, CASSAVA FLOUR, CANE SUGAR, SOY FIBER, SEA SALT, MALTODEXTRIN (MADE FROM CORN), TOMATO POWDER, SALT, BROWN SUGAR, DRIED GARLIC, DRIED ONION, NATURAL FLAVORS, ORGANIC DISTILLED VINEGAR, PAPRIKA EXTRACTS, YEAST EXTRACT, PAPRIKA, CITRIC ACID, SPICES, MIXED TOCOPHEROLS (ANTIOXIDANT)",
+    "perServing": {
+      "protein": 10,
+      "calories": 120,
+      "carbs": 13,
+      "fiber": 5.01,
+      "sugar": 3,
+      "fat": 3,
+      "servingSize": "28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": {
+    "code": "0810607021144",
+    "product_name": "Protein Crisps, Barbecue",
+    "brands": "PopCorners",
+    "serving_size": "1 ONZ (28 g)",
+    "perServing": {
+      "protein": 10,
+      "calories": 90,
+      "carbs": 12,
+      "fiber": 4,
+      "sugar": 2,
+      "fat": 2,
+      "servingSize": "1 ONZ (28 g)",
+      "servingSizeG": 28
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/081/060/702/1144/front_en.7.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (calories: 120 vs 90)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

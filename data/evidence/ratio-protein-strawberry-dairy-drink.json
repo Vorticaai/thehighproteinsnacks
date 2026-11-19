@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Ratio Protein Strawberry Dairy Drink",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2737547,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2737547,
+    "description": ":ratio Protein Strawberry Dairy Drink",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Ratio",
+    "gtinUpc": "00070470223360",
+    "servingSize": 330,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bottle",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/12/2025",
+    "ingredients": "Water, Cultured Pasteurized Nonfat Milk, Cultured Pasteurized Milk, Milk Protein, Avocado Oil, Strawberry Puree, Natural Flavor, Citric Acid, Modified Corn Starch, Black Carrot Juice (for color), Sucralose, Gellan Gum, Cultures.",
+    "perServing": {
+      "protein": 26,
+      "calories": 191,
+      "carbs": 9.01,
+      "fiber": 0,
+      "sugar": 5.02,
+      "fat": 6.01,
+      "servingSize": "1 bottle / 330 g",
+      "servingSizeG": 330
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 26,
+      "calories": 190,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 5,
+      "fat": 6,
+      "servingSize": "1 bottle / 330 g",
+      "servingSizeG": 330
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bottle / 330 g",
+    "servingSizeG": 330,
+    "protein": 26,
+    "calories": 190,
+    "carbs": 9,
+    "fiber": 0,
+    "sugar": 5,
+    "fat": 6
+  }
+}

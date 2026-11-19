@@ -1,0 +1,82 @@
+{
+  "id": "larabar-protein-cinnamon-nut-bar",
+  "name": "Larabar Protein Cinnamon Nut Bar",
+  "brand": "Larabar",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Larabar+Protein+Cinnamon+Nut+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 45 g",
+    "servingSizeG": 45,
+    "protein": 11,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 10,
+    "fat": 13
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00021908266473",
+    "fdcId": 2772249
+  },
+  "image": {
+    "src": "/products/larabar-protein-cinnamon-nut-bar.jpg",
+    "alt": "Larabar Larabar Protein Cinnamon Nut Bar package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0021908266473"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2772249",
+        "url": "https://fdc.nal.usda.gov/food-details/2772249/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 11,
+          "calories": 220,
+          "carbs": 17,
+          "fiber": 3,
+          "sugar": 10,
+          "fat": 13
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0021908266473",
+        "url": "https://world.openfoodfacts.org/product/0021908266473",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 11,
+          "calories": 220,
+          "carbs": 17,
+          "fiber": 3,
+          "sugar": 10,
+          "fat": 13
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

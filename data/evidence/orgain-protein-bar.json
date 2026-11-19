@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Orgain Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2095255,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2095255,
+    "description": "PROTEIN BAR",
+    "brandOwner": "Orgain, Inc.",
+    "brandName": "ORGAIN",
+    "gtinUpc": "851770006521",
+    "servingSize": 40,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "4/15/2020",
+    "ingredients": "ORGANIC ORGANIC PROTEIN BLEND [ORGANIC BROWN RICE PROTEIN, ORGANIC PROTEIN CRISPS (ORGANIC PEA PROTEIN, ORGANIC RICE FLOUR), ORGANIC GROUND CHIA SEEDS], ORGANIC DRY ROASTED PEANUTS, ORGANIC TAPIOCA SYRUP, ORGANIC CHOCOLATE CHUNKS (ORGANIC CANE SUGAR, ORGANIC COCOA LIQUOR, ORGANIC COCOA BUTTER, ORGANIC VANILLA EXTRACT), ORGANIC TAPIOCA FIBER, ORGANIC ERYTHRITOL, NATURAL FLAVOR, ORGANIC VEGETABLE GLYCERIN, SEA SALT, SUNFLOWER LECITHIN.",
+    "perServing": {
+      "protein": 10,
+      "calories": 150,
+      "carbs": 18,
+      "fiber": 6,
+      "sugar": 5,
+      "fat": 6,
+      "servingSize": "1 BAR / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 150,
+      "carbs": 18,
+      "fiber": 6,
+      "sugar": 5,
+      "fat": 6,
+      "servingSize": "1 BAR / 40 g",
+      "servingSizeG": 40
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BAR / 40 g",
+    "servingSizeG": 40,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 5,
+    "fat": 6
+  }
+}

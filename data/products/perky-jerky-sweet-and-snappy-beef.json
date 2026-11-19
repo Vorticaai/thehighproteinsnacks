@@ -1,0 +1,61 @@
+{
+  "id": "perky-jerky-sweet-and-snappy-beef",
+  "name": "Perky Jerky Sweet & Snappy Beef Jerky",
+  "brand": "Perky Jerky",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Perky+Jerky+Sweet+%26+Snappy+Beef+Jerky",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 oz (28g) / 28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 80,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 7,
+    "fat": 1
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "0852709002256",
+    "fdcId": 2625903
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2625903",
+        "url": "https://fdc.nal.usda.gov/food-details/2625903/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 80.1,
+          "carbs": 8,
+          "fiber": 0,
+          "sugar": 7,
+          "fat": 1
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

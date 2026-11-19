@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "OWYN Elite Pro Chocolate Shakes",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2607302,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2607302,
+    "description": "ELITE PRO CHOCOLATE SHAKES, CHOCOLATE",
+    "brandOwner": "Only What You Need, Inc.",
+    "brandName": "OWYN",
+    "gtinUpc": "0856461008945",
+    "servingSize": 330,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "11.15 fl oz (330mL)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "WATER, OWYN PROTEIN BLEND (PEA PROTEIN, ORGANIC PUMPKIN SEED PROTEIN, FLAXSEED OIL), GELLAN GUM / ACACIA GUM BLEND, SOLUBLE FIBER, COCOA POWDER, SUNFLOWER OIL, SUNFLOWER LECITHIN, GUAR GUM, MONK FRUIT EXTRACT, HIMALAYAN PINK SEA SALT, NATURAL CHOCOLATE FLAVOR (NATURAL FLAVOR, BLACK COCOA), GREENS BLEND (SPINACH, KALE, BROCCOLI)",
+    "perServing": {
+      "protein": 32,
+      "calories": 201,
+      "carbs": 6.01,
+      "fiber": 5.94,
+      "sugar": 0,
+      "fat": 6.01,
+      "servingSize": "11.15 fl oz (330mL) / 330 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 32,
+      "calories": 200,
+      "carbs": 6,
+      "fiber": 6,
+      "sugar": 0,
+      "fat": 6,
+      "servingSize": "11.15 fl oz (330mL) / 330 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "11.15 fl oz (330mL) / 330 ml",
+    "servingSizeG": null,
+    "protein": 32,
+    "calories": 200,
+    "carbs": 6,
+    "fiber": 6,
+    "sugar": 0,
+    "fat": 6
+  }
+}

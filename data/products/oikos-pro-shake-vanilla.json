@@ -1,0 +1,82 @@
+{
+  "id": "oikos-pro-shake-vanilla",
+  "name": "Oikos Pro Shake, Vanilla",
+  "brand": "Oikos",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Oikos+Pro+Shake%2C+Vanilla",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "355mL / 355 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 170,
+    "carbs": 8,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00036632024268",
+    "fdcId": 2744949
+  },
+  "image": {
+    "src": "/products/oikos-pro-shake-vanilla.jpg",
+    "alt": "Oikos Oikos Pro Shake, Vanilla package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0036632024268"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2744949",
+        "url": "https://fdc.nal.usda.gov/food-details/2744949/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 30,
+          "calories": 170,
+          "carbs": 8,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 3.5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0036632024268",
+        "url": "https://world.openfoodfacts.org/product/0036632024268",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 30,
+          "calories": 170,
+          "carbs": 8,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

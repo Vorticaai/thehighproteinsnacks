@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Jack Link's Beef Stick & Colby Jack Cheese",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2675788,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2675788,
+    "description": "SMOKED BEEF STICK & COLBY AND MONTEREY JACK CHEESE",
+    "brandOwner": "Link Snacks, Inc.",
+    "brandName": "JACK LINK'S",
+    "gtinUpc": "017082888556",
+    "servingSize": 43,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 package",
+    "dataSource": "LI",
+    "modifiedDate": "4/15/2022",
+    "ingredients": "BEEF STICK: BEEF, WATER, CONTAINS 2% OR LESS OF SEA SALT, SALT, FLAVORS, SUGAR, CULTURED DEXTROSE, YEAST EXTRACT, CULTURED CELERY EXTRACT. COLBY AND MONTEREY JACK CHEESE: PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES, COLOR ADDED.",
+    "perServing": {
+      "protein": 10,
+      "calories": 150,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 12,
+      "servingSize": "1 package / 43 g",
+      "servingSizeG": 43
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 150,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 12,
+      "servingSize": "1 package / 43 g",
+      "servingSizeG": 43
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 package / 43 g",
+    "servingSizeG": 43,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 12
+  }
+}

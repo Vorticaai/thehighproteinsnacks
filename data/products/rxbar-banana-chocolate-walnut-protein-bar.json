@@ -1,0 +1,61 @@
+{
+  "id": "rxbar-banana-chocolate-walnut-protein-bar",
+  "name": "RXBAR Banana Chocolate Walnut Protein Bar",
+  "brand": "RXBAR",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=RXBAR+Banana+Chocolate+Walnut+Protein+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 52 g",
+    "servingSizeG": 52,
+    "protein": 12,
+    "calories": 210,
+    "carbs": 25,
+    "fiber": 3,
+    "sugar": 17,
+    "fat": 9
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "858030008363",
+    "fdcId": 2393727
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2393727",
+        "url": "https://fdc.nal.usda.gov/food-details/2393727/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 210,
+          "carbs": 25,
+          "fiber": 3,
+          "sugar": 17,
+          "fat": 9
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

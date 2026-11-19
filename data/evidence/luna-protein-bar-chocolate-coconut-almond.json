@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Luna Protein Bar, Chocolate Coconut Almond",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2507861,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2507861,
+    "description": "LUNA, PROTEIN, HIGH PROTEIN BAR, CHOCOLATE COCONUT ALMOND, LUNA, PROTEIN, HIGH PROTEIN BAR, CHOCOLATE COCONUT ALMOND",
+    "brandOwner": "Clif Bar and Company",
+    "brandName": "LUNA",
+    "gtinUpc": "722252233073",
+    "servingSize": 45,
+    "servingSizeUnit": "IU",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "1/21/2023",
+    "ingredients": "SOY PROTEIN ISOLATED, ORGANIC CANE SYRUP, ORGANIC DRIED CANE SYRUP, VEGETABLE GLYCERIN, PALM KERNEL OIL, INULIN, (CHICORY EXTRACT), ORGANIC TOASTED COCONUT, ALMONDS, COCOA, ALMOND BUTTER, WHEY PROTEIN CONCENTRATE, NATURAL FLAVORS, WATER, TAPIOCA STARCH, SOY LECITHIN SALT, ORGANIC VANILLA EXTRACT. VITAMINS & MINERALS: CALCIUM CARBONATE, ASCORBIC ACID(VIT. C), TOCOPHERYL ACETATE(VIT. E), FERRIC ORTHOPHOSPHATE(IRON), BETA CAROTENE(VIT. A), NIACINAMIDE(VIT. B3), FOLIC ACID(VIT. B9), CYANOCOBALAMIN(VIT. B12), ERGOCALCIFEROL(VIT. D2), THIAMIN MONONITRATE(VIT. B1), RIBOFLAVIN(VIT. B2), PYRIDOXINE HYDROCHLORIDE(VIT. B6)",
+    "perServing": {
+      "protein": 12,
+      "calories": 180,
+      "carbs": 21,
+      "fiber": 3.02,
+      "sugar": 12,
+      "fat": 7,
+      "servingSize": "1 BAR / 45 iu",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 180,
+      "carbs": 21,
+      "fiber": 3,
+      "sugar": 12,
+      "fat": 7,
+      "servingSize": "1 BAR / 45 iu",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BAR / 45 iu",
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 21,
+    "fiber": 3,
+    "sugar": 12,
+    "fat": 7
+  }
+}

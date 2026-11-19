@@ -1,0 +1,61 @@
+{
+  "id": "kalahari-biltong-rosemary-truffle-air-dried-thinly-sliced-beef",
+  "name": "Kalahari Biltong Rosemary Truffle Air Dried, Thinly Sliced Beef",
+  "brand": "Kalahari Biltong",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Kalahari+Biltong+Rosemary+Truffle+Air+Dried%2C+Thinly+Sliced+Beef",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Package / 56 g",
+    "servingSizeG": 56,
+    "protein": 32,
+    "calories": 160,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "852487008716",
+    "fdcId": 2368492
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2368492",
+        "url": "https://fdc.nal.usda.gov/food-details/2368492/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 32,
+          "calories": 160,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 4
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

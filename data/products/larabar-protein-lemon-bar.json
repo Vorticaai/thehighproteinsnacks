@@ -1,0 +1,61 @@
+{
+  "id": "larabar-protein-lemon-bar",
+  "name": "Larabar Protein Lemon Bar",
+  "brand": "Larabar",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Larabar+Protein+Lemon+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 45 g",
+    "servingSizeG": 45,
+    "protein": 10,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 10,
+    "fat": 13
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00021908266442",
+    "fdcId": 2772248
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2772248",
+        "url": "https://fdc.nal.usda.gov/food-details/2772248/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 220,
+          "carbs": 17,
+          "fiber": 3,
+          "sugar": 10,
+          "fat": 13
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

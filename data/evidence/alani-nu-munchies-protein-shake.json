@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Alani Nu Protein Shake, Munchies",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2582064,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2582064,
+    "description": "MUNCHIES PROTEIN SHAKE",
+    "brandOwner": "Alani Nutrition LLC",
+    "brandName": "ALANI NU",
+    "gtinUpc": "0810030510925",
+    "servingSize": 355,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "12 fl oz (355ml)",
+    "dataSource": "LI",
+    "modifiedDate": "5/23/2023",
+    "ingredients": "FILTERED WATER, MILK PROTEIN ISOLATE, CREAM, SUGAR, MILK PROTEIN CONCENTRATE, SOLUBLE CORN FIBER, COCOA (PROCESSED WITH ALKALI), SEA SALT, NATURAL AND ARTIFICIAL FLAVOR, GELLAN GUM, SUCRALOSE, LACTASE ENZYME, ACESULFAME POTASSIUM",
+    "perServing": {
+      "protein": 20,
+      "calories": 138,
+      "carbs": 10,
+      "fiber": 2.84,
+      "sugar": 6,
+      "fat": 3.51,
+      "servingSize": "12 fl oz (355ml) / 355 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0810030510925",
+    "product_name": "Fit Shake",
+    "brands": "Alani",
+    "serving_size": "1 Bottle (355 ml)",
+    "perServing": {
+      "protein": 30,
+      "calories": 160,
+      "carbs": 7,
+      "fiber": 3,
+      "sugar": 3,
+      "fat": 3,
+      "servingSize": "1 Bottle (355 ml)",
+      "servingSizeG": 355
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/081/003/051/0925/front_en.18.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 20 vs 30; calories: 140 vs 160; carbs: 10 vs 7; sugar: 6 vs 3)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

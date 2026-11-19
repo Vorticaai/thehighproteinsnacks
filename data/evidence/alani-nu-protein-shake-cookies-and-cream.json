@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Alani Nu Protein Shake, Cookies & Cream",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2582067,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2582067,
+    "description": "COOKIES & CREAM PROTEIN SHAKE, COOKIES; CREAM",
+    "brandOwner": "Alani Nutrition LLC",
+    "brandName": "ALANI NU",
+    "gtinUpc": "0810030513018",
+    "servingSize": 355,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "12 fl oz (355 mL)",
+    "dataSource": "LI",
+    "modifiedDate": "5/23/2023",
+    "ingredients": "FILTERED WATER, MILK PROTEIN ISOLATE, CREAM, SUGAR, MILK PROTEIN CONCENTRATE, SOLUBLE CORN FIBER, SEA SALT, NATURAL AND ARTIFICIAL FLAVOR, COCOA (PROCESSED WITH ALKALI), DIPOTASSIUM PHOSPHATE, GELLAN GUM, SUCRALOSE, ACESULFAME POTASSIUM",
+    "perServing": {
+      "protein": 20,
+      "calories": 138,
+      "carbs": 10,
+      "fiber": 2.84,
+      "sugar": 6,
+      "fat": 3.51,
+      "servingSize": "12 fl oz (355 mL) / 355 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0810030513018",
+    "product_name": "Fit shake",
+    "perServing": null,
+    "image_front_url": "https://images.openfoodfacts.org/images/products/081/003/051/3018/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 10,
+      "fiber": 3,
+      "sugar": 6,
+      "fat": 3.5,
+      "servingSize": "12 fl oz (355 mL) / 355 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "12 fl oz (355 mL) / 355 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 140,
+    "carbs": 10,
+    "fiber": 3,
+    "sugar": 6,
+    "fat": 3.5
+  }
+}

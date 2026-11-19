@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-18",
-  "query": "Boxed Halal beef jerky original",
+  "checkedAt": "2026-11-19",
+  "query": "Boxed Halal Original Beef Jerky",
   "match": {
     "pinned": false,
     "confident": false,
@@ -11,9 +11,20 @@
   "usda": null,
   "openFoodFacts": null,
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "servingSize": "1 oz (28 g)",
+      "servingSizeG": 28,
+      "protein": 18,
+      "calories": 80,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 1
+    },
     "notes": [
-      "No USDA label record found for this product."
+      "USDA: No USDA label record found for this product.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -27,8 +38,8 @@
     "fat": 1
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 oz (28 g)",
+    "servingSizeG": 28,
     "protein": 18,
     "calories": 80,
     "carbs": 1,

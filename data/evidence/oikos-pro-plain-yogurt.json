@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Oikos Pro Plain Yogurt",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2769968,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2769968,
+    "description": "Oikos Pro Plain Yogurt",
+    "brandOwner": "Dannon Company",
+    "brandName": "Oikos",
+    "gtinUpc": "00036632042590",
+    "servingSize": 170,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "3/4 cup (170g)",
+    "dataSource": "GDSN",
+    "modifiedDate": "4/28/2026",
+    "ingredients": "CULTURED GRADE A ULTRA-FILTERED NON FAT MILK, WHEY PROTEIN CONCENTRATE, CREAM, YOGURT CULTURES S. THERMOPHILUS & L. BULGARICUS.",
+    "perServing": {
+      "protein": 25,
+      "calories": 160,
+      "carbs": 6,
+      "fiber": 0,
+      "sugar": 4,
+      "fat": 3.5,
+      "servingSize": "3/4 cup (170g) / 170 g",
+      "servingSizeG": 170
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 25,
+      "calories": 160,
+      "carbs": 6,
+      "fiber": 0,
+      "sugar": 4,
+      "fat": 3.5,
+      "servingSize": "3/4 cup (170g) / 170 g",
+      "servingSizeG": 170
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "3/4 cup (170g) / 170 g",
+    "servingSizeG": 170,
+    "protein": 25,
+    "calories": 160,
+    "carbs": 6,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 3.5
+  }
+}

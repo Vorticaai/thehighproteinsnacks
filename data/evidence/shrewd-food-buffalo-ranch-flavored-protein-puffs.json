@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Shrewd Food Buffalo Ranch Flavored Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2478185,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2478185,
+    "description": "BUFFALO RANCH FLAVORED PROTEIN PUFFS, BUFFALO RANCH",
+    "brandOwner": "Shrewd Food LLC",
+    "brandName": "SHREWD FOOD",
+    "gtinUpc": "811307025654",
+    "servingSize": 21,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 Bag",
+    "dataSource": "LI",
+    "modifiedDate": "10/22/2022",
+    "ingredients": "MILK PROTEIN ISOLATE, NATURAL BUFFALO RANCH SEASONING (TAPIOCA SOLIDS, CAYENNE PEPPER SAUCE POWDER (AGED RED CAYENNE PEPPERS, DISTILLED VINEGAR, SALT, GARLIC), SALT, GARLIC POWDER, ORGANIC BUTTERMILK, ORGANIC WHEY, SUGAR, ORGANIC CHEDDAR CHEESE (ORGANIC MILK, CULTURES, SALT, ENZYMES), SPICES, NATURAL FLAVOR, YEAST EXTRACT, WHITE DISTILLED VINEGAR, ONION POWDER, CITRIC ACID, TOMATO POWDER, PAPRIKA EXTRACT, LACTIC ACID, ORGANIC SKIM MILK), SUNFLOWER OIL.",
+    "perServing": {
+      "protein": 13,
+      "calories": 90.1,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "1 Bag / 21 g",
+      "servingSizeG": 21
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 13,
+      "calories": 90,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "1 Bag / 21 g",
+      "servingSizeG": 21
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bag / 21 g",
+    "servingSizeG": 21,
+    "protein": 13,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 3
+  }
+}

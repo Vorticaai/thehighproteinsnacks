@@ -1,0 +1,61 @@
+{
+  "id": "perfect-bar-chocolate-hazelnut-crisp-protein-bar",
+  "name": "Perfect Bar Chocolate Hazelnut Crisp Protein Bar",
+  "brand": "Perfect Bar",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Perfect+Bar+Chocolate+Hazelnut+Crisp+Protein+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Bar / 62 g",
+    "servingSizeG": 62,
+    "protein": 12,
+    "calories": 320,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 15,
+    "fat": 21
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "855569110314",
+    "fdcId": 2664734
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2664734",
+        "url": "https://fdc.nal.usda.gov/food-details/2664734/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 320,
+          "carbs": 24,
+          "fiber": 4,
+          "sugar": 15,
+          "fat": 21
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Nature Valley Protein Salted Caramel Chewy Bars",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2774902,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2774902,
+    "description": "Nature Valley Protein Salted Caramel Chewy Bars",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Nature Valley",
+    "gtinUpc": "00016000238435",
+    "servingSize": 50,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "7/2/2026",
+    "ingredients": "Roasted Peanuts, Calcium Caseinate, Vegetable Glycerin, Soy Protein Isolate, Whey Protein Concentrate, Sugar, Almonds, Chicory Root Extract, Tapioca Syrup, Palm and Palm Kernel Oil, Canola Oil, Hydrolyzed Collagen, Corn Syrup, Fructose, Rice Starch, Nonfat Milk, Soy Lecithin, Corn Starch, Salt, Peanut Flour, Potassium Chloride, Natural Flavor, Baking Soda, Guar Gum.",
+    "perServing": {
+      "protein": 16,
+      "calories": 230,
+      "carbs": 18,
+      "fiber": 4,
+      "sugar": 7,
+      "fat": 10,
+      "servingSize": "1 bar / 50 g",
+      "servingSizeG": 50
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 16,
+      "calories": 230,
+      "carbs": 18,
+      "fiber": 4,
+      "sugar": 7,
+      "fat": 10,
+      "servingSize": "1 bar / 50 g",
+      "servingSizeG": 50
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 50 g",
+    "servingSizeG": 50,
+    "protein": 16,
+    "calories": 230,
+    "carbs": 18,
+    "fiber": 4,
+    "sugar": 7,
+    "fat": 10
+  }
+}

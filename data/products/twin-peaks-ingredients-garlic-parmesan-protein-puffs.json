@@ -1,0 +1,82 @@
+{
+  "id": "twin-peaks-ingredients-garlic-parmesan-protein-puffs",
+  "name": "Twin Peaks Ingredients Garlic Parmesan Protein Puffs",
+  "brand": "Twin Peaks Ingredients",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/s?k=Twin+Peaks+Ingredients+Garlic+Parmesan+Protein+Puffs",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 21,
+    "calories": 130,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "850000796003",
+    "fdcId": 2154721
+  },
+  "image": {
+    "src": "/products/twin-peaks-ingredients-garlic-parmesan-protein-puffs.jpg",
+    "alt": "Twin Peaks Ingredients Twin Peaks Ingredients Garlic Parmesan Protein Puffs package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850000796003"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2154721",
+        "url": "https://fdc.nal.usda.gov/food-details/2154721/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 21,
+          "calories": 130,
+          "carbs": 2,
+          "fiber": 0,
+          "sugar": 1,
+          "fat": 4
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0850000796003",
+        "url": "https://world.openfoodfacts.org/product/0850000796003",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 21,
+          "calories": 130,
+          "carbs": 2,
+          "fiber": 0,
+          "sugar": 1,
+          "fat": 4
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

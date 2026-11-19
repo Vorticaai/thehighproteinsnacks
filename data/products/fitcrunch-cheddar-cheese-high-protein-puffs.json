@@ -1,0 +1,61 @@
+{
+  "id": "fitcrunch-cheddar-cheese-high-protein-puffs",
+  "name": "FitCrunch Cheddar Cheese High Protein Puffs",
+  "brand": "FitCrunch",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/s?k=FitCrunch+Cheddar+Cheese+High+Protein+Puffs",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Bag / 30 g",
+    "servingSizeG": 30,
+    "protein": 20,
+    "calories": 130,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 4.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "817719020850",
+    "fdcId": 2586897
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2586897",
+        "url": "https://fdc.nal.usda.gov/food-details/2586897/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 130,
+          "carbs": 2,
+          "fiber": 0,
+          "sugar": 2,
+          "fat": 4.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}
