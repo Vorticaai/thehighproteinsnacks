@@ -1,6 +1,14 @@
 import { test } from "node:test"
 import assert from "node:assert/strict"
-import { agrees, decide, disagreements, energyCheck, labelRound, plausibilityProblems } from "../pipeline/verify"
+import {
+  agrees,
+  decide,
+  disagreements,
+  energyCheck,
+  labelRound,
+  nonEnergyPlausibilityProblems,
+  plausibilityProblems,
+} from "../pipeline/verify"
 
 const questLabel = { protein: 21, calories: 190, carbs: 22, fiber: 14, sugar: 1, fat: 8, servingSizeG: 60 }
 
@@ -58,6 +66,34 @@ test("decide only verifies a confident, plausible, uncontradicted USDA record", 
       acceptPrimaryReason: "Open Food Facts entry is out of date",
     }).status,
     "verified",
+  )
+})
+
+test("a failed energy check alone can be accepted by a reviewer; other problems can't", () => {
+  // A cereal using a low-calorie sweetener (e.g. allulose): macros alone
+  // would imply far more calories than the label states.
+  const sweetened = { protein: 10, calories: 120, carbs: 24, fiber: 4, sugar: 0, fat: 2, servingSizeG: 39 }
+  assert.equal(energyCheck(sweetened).ok, false)
+  assert.equal(nonEnergyPlausibilityProblems(sweetened).length, 0)
+
+  // Without a reason, it stays needs-review - the gap isn't silently waived.
+  assert.equal(decide({ primary: sweetened, primaryConfident: true, secondary: null }).status, "needs-review")
+
+  // With a reviewer's reason, it verifies and the note explains why.
+  const accepted = decide({
+    primary: sweetened,
+    primaryConfident: true,
+    secondary: null,
+    acceptPrimaryReason: "Uses allulose, a low-calorie sweetener the energy check doesn't model.",
+  })
+  assert.equal(accepted.status, "verified")
+  assert.ok(accepted.status === "verified" && accepted.notes.some((n) => n.includes("Energy check failed")))
+
+  // acceptPrimaryReason never waives a hard problem like sugar exceeding carbs.
+  const badData = { ...questLabel, sugar: 30 }
+  assert.equal(
+    decide({ primary: badData, primaryConfident: true, secondary: null, acceptPrimaryReason: "trust me" }).status,
+    "needs-review",
   )
 })
 
