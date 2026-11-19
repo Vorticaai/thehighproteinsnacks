@@ -1,7 +1,7 @@
 // app/page.tsx
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
-import { CheckCircle2 } from "lucide-react";
 import { getAllProducts, type Product } from "@/lib/products";
 import { categoryFilters, weightLossFilter } from "@/lib/categoryFilters";
 import ComparisonsRow from "@/components/sections/ComparisonsRow";
@@ -20,9 +20,17 @@ import { absoluteUrl } from "@/lib/seo";
 
 
 // --- BRAND COLORS (centralized) ---
-const PRIMARY_DARK = "#124942"; // was #0F3D37// softer deep teal
-const ACCENT_LIME  = "#C6FF47"; // lime highlight
+// Hero now lives on the photo itself; headline/CTA colors come from the
+// --brand-* CSS variables in app/globals.css (var(--brand-text-dark), var(--brand-lime))
+// instead of hardcoded hex, so there's one source of truth for them.
 const siteUrl = "https://www.thehighproteinsnacks.com";
+
+const HERO_CHIPS = [
+  { label: "High Protein", href: "/snacks/high-protein" },
+  { label: "Low Sugar", href: "/snacks/low-sugar" },
+  { label: "Best Value", href: "/snacks/best-value" },
+  { label: "Weight Loss", href: "/snacks/weight-loss" },
+] as const;
 
 const websiteJsonLd = {
   "@context": "https://schema.org",
@@ -151,92 +159,158 @@ export default async function HomePage() {
     <>
       <JsonLd data={websiteJsonLd} />
       <JsonLd data={organizationJsonLd} />
-      {/* HERO */}
-<header style={{ backgroundColor: PRIMARY_DARK }} className="text-white">
-  
-  
-  <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 lg:px-8">
-
-
-    {/* NEW HEADLINE */}
-    <h1 className="text-4xl font-black tracking-tight sm:text-6xl">
-      Find the best <span className="text-[#C6FF47]">high-protein snacks</span> for your goals.
-    </h1>
-
-    {/* SUBHEAD */}
-    <p className="mt-4 max-w-3xl mx-auto text-lg sm:text-xl text-gray-200">
-      Bars, shakes, chips, bites — ranked by what actually matters:
-      <span className="font-semibold text-white"> protein-per-dollar</span>,
-      <span className="font-semibold text-white"> protein</span>, and
-      <span className="font-semibold text-white"> sugar</span>.
-    </p>
-
-    
-
-    {/* Trust badges */}
-    <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-300">
-      <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Ranked by the numbers
-      </span>
-      <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> No brand pays for placement
-      </span>
-      <span className="flex items-center gap-1">
-        <CheckCircle2 className="h-4 w-4 text-emerald-300" /> Free to use
-      </span>
-    </div>
-
-    {/* Primary CTAs */}
-    <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-      <Link
-        href="/snacks"
-        className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold text-black transition hover:opacity-95"
-        style={{ backgroundColor: ACCENT_LIME }}
+      {/* HERO — full-bleed photo, real HTML content overlaid in the photo's
+          left negative space. The outer header's background is the same
+          cream as the photo's own empty area, so on screens wider than the
+          1680px media cap, the extra margin reads as a seamless extension
+          of the photo rather than a hard edge or stretched/over-cropped image. */}
+      <header
+        className="relative overflow-hidden"
+        style={{ backgroundColor: "var(--hero-cream)" }}
       >
-        Find Your Snack →
-      </Link>
+        <div className="relative mx-auto max-w-[1680px]">
+          {/* Desktop / tablet */}
+          <div
+            className="relative hidden w-full md:block"
+            style={{ height: "clamp(440px, 36vw, 620px)" }}
+          >
+            <Image
+              src="/images/hero/hero-desktop.jpg"
+              alt="A flat-lay of high-protein snack bars, protein shakes, chips and bites"
+              fill
+              priority
+              sizes="(min-width: 1680px) 1680px, 100vw"
+              style={{ objectFit: "cover", objectPosition: "center 42%" }}
+            />
+            <div className="absolute inset-0 flex items-center">
+              <div className="ml-6 max-w-[420px] lg:ml-14 xl:ml-20">
+                <h1
+                  className="text-3xl font-black leading-tight tracking-tight lg:text-[2.75rem]"
+                  style={{ color: "var(--brand-text-dark)" }}
+                >
+                  Find &amp; Compare High-Protein Snacks for Your Goals
+                </h1>
+                <p
+                  className="mt-4 text-base lg:text-lg"
+                  style={{ color: "rgba(2,46,39,0.78)" }}
+                >
+                  Compare protein, sugar, calories and value across hundreds
+                  of snacks — ranked by the numbers, not the marketing.
+                </p>
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <Link
+                    href="/snacks"
+                    className="inline-flex min-h-[48px] items-center justify-center rounded-full px-6 text-sm font-bold transition hover:opacity-90"
+                    style={{
+                      backgroundColor: "var(--brand-lime)",
+                      color: "var(--brand-text-dark)",
+                    }}
+                  >
+                    Explore Snacks
+                  </Link>
+                  <Link
+                    href="/quiz"
+                    className="inline-flex min-h-[48px] items-center justify-center rounded-full border-2 bg-white/90 px-6 text-sm font-semibold transition hover:bg-white"
+                    style={{
+                      borderColor: "var(--brand-text-dark)",
+                      color: "var(--brand-text-dark)",
+                    }}
+                  >
+                    Find My Perfect Snack
+                  </Link>
+                </div>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {HERO_CHIPS.map((chip) => (
+                    <Link
+                      key={chip.href}
+                      href={chip.href}
+                      className="inline-flex min-h-[38px] items-center rounded-full border bg-white/90 px-3 text-sm font-medium transition hover:bg-white"
+                      style={{
+                        borderColor: "rgba(2,46,39,0.25)",
+                        color: "var(--brand-text-dark)",
+                      }}
+                    >
+                      {chip.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <Link
-        href="/tools/snack-finder"
-        className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15"
-      >
-        Snack Finder Quiz
-      </Link>
-    </div>
-
-    {/* Quick filter chips */}
-    <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
-      <Link
-        href="/snacks/high-protein"
-        className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
-      >
-        High-protein picks
-      </Link>
-
-      <Link
-        href="/snacks/low-sugar"
-        className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
-      >
-        Low-sugar snacks
-      </Link>
-
-      <Link
-        href="/snacks/best-value"
-        className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
-      >
-        Best value (g per $)
-      </Link>
-
-      <Link
-  href="/snacks/weight-loss"
-  className="rounded-full border border-white/20 bg-white/5 px-3 py-1 text-white hover:bg-white/10"
->
-  Weight-loss picks
-</Link>
-
-    </div>
-  </div>
-</header>
+          {/* Mobile — stacked: cream content block, then photo band directly
+              beneath it in the same cream tone, then a separately-cropped
+              mobile composition (not just a scaled-down desktop crop). */}
+          <div className="md:hidden">
+            <div
+              className="px-5 pb-6 pt-10"
+              style={{ backgroundColor: "var(--hero-cream)" }}
+            >
+              <h1
+                className="text-[1.75rem] font-black leading-tight tracking-tight"
+                style={{ color: "var(--brand-text-dark)" }}
+              >
+                Find &amp; Compare High-Protein Snacks for Your Goals
+              </h1>
+              <p
+                className="mt-3 text-sm"
+                style={{ color: "rgba(2,46,39,0.78)" }}
+              >
+                Compare protein, sugar, calories and value across hundreds
+                of snacks — ranked by the numbers, not the marketing.
+              </p>
+              <div className="mt-5 flex flex-col gap-3">
+                <Link
+                  href="/snacks"
+                  className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full px-6 text-sm font-bold"
+                  style={{
+                    backgroundColor: "var(--brand-lime)",
+                    color: "var(--brand-text-dark)",
+                  }}
+                >
+                  Explore Snacks
+                </Link>
+                <Link
+                  href="/quiz"
+                  className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full border-2 bg-white/90 px-6 text-sm font-semibold"
+                  style={{
+                    borderColor: "var(--brand-text-dark)",
+                    color: "var(--brand-text-dark)",
+                  }}
+                >
+                  Find My Perfect Snack
+                </Link>
+              </div>
+              {/* 2x2 — all four visible at once, no horizontal scroll */}
+              <div className="mt-5 grid grid-cols-2 gap-2">
+                {HERO_CHIPS.map((chip) => (
+                  <Link
+                    key={chip.href}
+                    href={chip.href}
+                    className="inline-flex min-h-[44px] items-center justify-center rounded-full border bg-white/90 px-2 text-center text-sm font-medium"
+                    style={{
+                      borderColor: "rgba(2,46,39,0.25)",
+                      color: "var(--brand-text-dark)",
+                    }}
+                  >
+                    {chip.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="relative aspect-[1196/806] w-full">
+              <Image
+                src="/images/hero/hero-mobile.jpg"
+                alt="A flat-lay of high-protein snack bars, protein shakes, chips and bites"
+                fill
+                priority
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          </div>
+        </div>
+      </header>
       <AdSlot slot="REPLACE_WITH_HOME_SLOT_ID" className="my-10" />
       {bestValueProduct && bestLowSugarProduct && bestHighProteinProduct && (
         <script
@@ -270,23 +344,6 @@ export default async function HomePage() {
           }}
         />
       )}
-      <section className="bg-white py-10 border-b">
-  <div className="mx-auto max-w-4xl px-4 text-center">
-    <h2 className="text-2xl font-bold text-gray-900 mb-3">
-      Not sure which snack to choose?
-    </h2>
-    <p className="text-gray-600 mb-6">
-      Answer 4 quick questions and get your top 3 high-protein snack matches.
-    </p>
-    <Link
-      href="/tools/snack-finder"
-      className="inline-block rounded-full bg-[#C6FF47] px-6 py-3 text-black font-bold hover:bg-[#A3CC00] transition"
-    >
-      Take the Snack Finder Quiz →
-    </Link>
-  </div>
-</section>
-
       <TopRankingsToday />
       <WeightLossTop3 products={weightLossTop3} /> 
 
@@ -367,7 +424,7 @@ export default async function HomePage() {
                 title: "Perfect Snack Quiz",
                 desc: "Answer 4 quick questions → get your top 3 matches instantly",
                 cta: "Start Quiz",
-                href: "/tools/snack-finder",
+                href: "/quiz",
                 highlight: true,
               },
               {

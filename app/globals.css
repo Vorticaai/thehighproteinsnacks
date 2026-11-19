@@ -31,6 +31,11 @@
   --brand-text: #FFFFFF;
   --brand-text-dark: #022E27;
   --brand-border: rgba(198, 255, 71, 0.3);
+
+  /* Sampled from the homepage hero photo's own empty area, so the hero
+     section's background (beyond the 1680px media cap) and the mobile
+     content block read as one continuous surface with the photo itself. */
+  --hero-cream: #F4E8E0;
 }
 
 .dark {
