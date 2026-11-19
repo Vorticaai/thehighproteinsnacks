@@ -1,0 +1,38 @@
+# Re-checks every label-checked product against a fresh copy of its USDA
+# record and against the live page. Weekly, on demand, and when this file or
+# the audit script changes on a claude/** branch. Reports only; changes nothing.
+name: Audit catalogue
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 20 * * 0"
+  push:
+    branches: ["claude/**"]
+    paths: ["pipeline/audit.ts", ".github/workflows/audit.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          path: tools
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Audit
+        env:
+          FDC_API_KEY: ${{ secrets.FDC_API_KEY }}
+        run: |
+          cp tools/pipeline/audit.ts pipeline/audit.ts
+          npx tsx pipeline/audit.ts
