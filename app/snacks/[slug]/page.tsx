@@ -8,6 +8,7 @@ import { NutritionSource } from "@/components/snacks/VerificationNote";
 import HalalHub from "@/components/halal/HalalHub";
 import { HalalCheckBox } from "@/components/halal/HalalStatus";
 import BuyLink from "@/components/snacks/BuyLink";
+import CategoryControls from "@/components/snacks/CategoryControls";
 import { JsonLd } from "@/components/seo/jsonld";
 import { getAllProducts, type Product } from "@/lib/products";
 import { CATEGORY_THRESHOLDS, categoryFilters, weightLossFilter } from "@/lib/categoryFilters";
@@ -657,11 +658,10 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
         </header>
 
         {products.length > 0 ? (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <CategoryControls
+            products={products}
+            defaultSort={slug === "best-value" ? "protein-per-dollar-desc" : "protein-desc"}
+          />
         ) : (
           <div className="rounded-2xl border border-dashed border-gray-300 bg-white p-12 text-center text-gray-600">
             No snacks are flagged for this category yet. Check back soon!
