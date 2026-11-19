@@ -52,12 +52,12 @@
   },
   "verification": {
     "status": "needs-review",
-    "checkedAt": "2026-11-18",
+    "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
       "No candidate from the same brand.",
       "No USDA label record found for this product.",
-      "Halal batch: check nutrition against label data."
+      "Reviewer: previous query 'Aufschnitt Beef Bar' returned zero candidates. Trying 'stick' instead of 'bar' in case USDA's description uses different wording, and the manufacturer name for a stronger brand match (same reasoning as aufschnitt-grassfed-halal-jerky)."
     ]
   }
 }

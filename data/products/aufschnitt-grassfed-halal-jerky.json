@@ -52,12 +52,12 @@
   },
   "verification": {
     "status": "needs-review",
-    "checkedAt": "2026-11-18",
+    "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
       "No candidate from the same brand.",
       "No USDA label record found for this product.",
-      "Halal batch: check nutrition against label data."
+      "Reviewer: previous query 'Aufschnitt Grass-Fed Beef Jerky' returned zero candidates. Aufschnitt Meats does have USDA records (confirmed via the already-verified aufschnitt-halal-teriyaki-jerky, fdcId 2456453) so trying a query closer to the manufacturer's registered name."
     ]
   }
 }

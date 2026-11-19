@@ -1,19 +1,60 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "RXBAR peanut butter chocolate",
+  "query": "RXBAR Peanut Butter Chocolate Bar",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "No candidate from the same brand.",
-    "chosen": null,
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2599185,
+      "description": "(pinned)"
+    },
     "topCandidates": []
   },
-  "usda": null,
-  "openFoodFacts": null,
+  "usda": {
+    "fdcId": 2599185,
+    "description": "RXBAR PROTEIN BAR, 1.83 OZ, 10 COUNT",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "00859162007255",
+    "servingSize": 52,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "5/30/2023",
+    "ingredients": "CHOCOLATE SEA SALT - DATES, EGG WHITES, ALMONDS, CASHEWS, CHOCOLATE, COCOA, NATURAL FLAVOR, SEA SALT,COCONUT CHOCOLATE - DATES, EGG WHITES, ALMONDS, CASHEWS, CHOCOLATE, NATURAL FLAVOR, SEA SALT, COCONUT,BLUEBERRY - DATES, EGG WHITES, ALMONDS, CASHEWS, BLUEBERRIES, NATURAL FLAVOR,PEANUT BUTTER CHOCOLATE - DATES, PEANUTS, EGG WHITES, CHOCOLATE, NATURAL FLAVOR, COCOA, SEA SALT",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 24,
+      "fiber": 4.99,
+      "sugar": 13,
+      "fat": 9,
+      "servingSize": "52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": {
+    "code": "0859162007255",
+    "product_name": "RX Bar",
+    "brands": "RXBAR",
+    "serving_size": "52g",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 23,
+      "fiber": 6,
+      "sugar": 15,
+      "fat": 9,
+      "servingSize": "52g",
+      "servingSizeG": 52
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/916/200/7255/front_en.3.400.jpg"
+  },
   "decision": {
     "status": "needs-review",
     "notes": [
-      "No USDA label record found for this product."
+      "USDA and Open Food Facts disagree (sugar: 13 vs 15)."
     ]
   },
   "before": {

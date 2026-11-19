@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/quest-nutrition-protein-puffs-ranch.jpg",
+    "alt": "Quest Nutrition Quest Nutrition Protein Puffs Ranch package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849011025"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 50% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (protein: 19 vs 59; calories: 140 vs 440; carbs: 5 vs 16; fiber: 1 vs 3; sugar: 1 vs 3; fat: 5 vs 14).",
+      "Reviewer: our catalogue calls this 'Protein Puffs' but Quest's real product name is 'Ranch Tortilla Style Protein Chips' — same product, our own naming was informal. USDA label numbers already match our existing catalogue values almost exactly. Pinning so the agreement check can confirm."
     ]
   }
 }

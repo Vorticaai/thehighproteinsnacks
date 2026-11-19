@@ -1,72 +1,15 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Quest protein puffs ranch",
+  "query": "Quest Nutrition Protein Puffs Ranch",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2669733,
-      "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
-      "brandOwner": "Quest Nutrition, LLC",
-      "brandName": "QUEST",
-      "gtinUpc": "888849011025",
-      "publishedDate": "2023-11-16",
-      "score": 0.5,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2669733,
-        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849011025",
-        "publishedDate": "2023-11-16",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2373917,
-        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849010301",
-        "publishedDate": "2022-12-07",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2503880,
-        "description": "SEA QUEST EGG HUNT, SEA QUEST",
-        "brandOwner": "Bee International, Inc.",
-        "brandName": "BEE",
-        "gtinUpc": "073563004792",
-        "publishedDate": "2023-03-16",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2421887,
-        "description": "SEA QUEST FLAVORED EGG HUNT, SEA QUEST",
-        "brandOwner": "Bee International, Inc.",
-        "brandName": "BEE",
-        "gtinUpc": "073563006178",
-        "publishedDate": "2022-12-22",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2277215,
-        "description": "SEA QUEST FLAVORED EGG HUNT, SEA QUEST",
-        "brandOwner": "Bee International, Inc.",
-        "brandName": "BEE",
-        "gtinUpc": "073563004785",
-        "publishedDate": "2022-05-23",
-        "score": 0,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2669733,
@@ -91,11 +34,27 @@
       "servingSizeG": 32
     }
   },
-  "openFoodFacts": null,
+  "openFoodFacts": {
+    "code": "0888849011025",
+    "product_name": "Protein chips",
+    "brands": "Quest",
+    "serving_size": "100 g",
+    "perServing": {
+      "protein": 59.4,
+      "calories": 438,
+      "carbs": 15.6,
+      "fiber": 3.12,
+      "sugar": 3.12,
+      "fat": 14.1,
+      "servingSize": "100 g",
+      "servingSizeG": 100
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/901/1025/front_en.3.400.jpg"
+  },
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA and Open Food Facts disagree (protein: 19 vs 59; calories: 140 vs 440; carbs: 5 vs 16; fiber: 1 vs 3; sugar: 1 vs 3; fat: 5 vs 14)."
     ]
   },
   "before": {

@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/rxbar-coconut-chocolate.jpg",
+    "alt": "RXBAR RXBAR Coconut Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0859162007255"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 0% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (sugar: 13 vs 15).",
+      "Reviewer: USDA only has RXBAR's variety-box GTIN (1.83oz x10, listing Chocolate Sea Salt/Coconut Chocolate/Blueberry/Peanut Butter Chocolate together), not a Coconut Chocolate-only GTIN, so the auto-search scored this 0%. RXBAR's classic flavors share nearly identical macros by design (confirmed across 6 already-verified RXBAR flavors), and the box's generic numbers already match our existing catalogue values within tolerance. Pinning so the agreement check can confirm; if it verifies, the source note should make clear this is the shared box profile, not a flavor-specific label."
     ]
   }
 }

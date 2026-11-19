@@ -1,101 +1,19 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Pure Protein frosty chocolate shake",
+  "query": "PureProtein frosty chocolate ready to drink shake",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "Only 67% of product words found; needs a person to confirm.",
-    "chosen": {
-      "fdcId": 2471956,
-      "description": "MILK CHOCOLATE PURE MILK PROTEIN SHAKE, MILK CHOCOLATE",
-      "brandOwner": "Ross Products Division",
-      "brandName": "EAS",
-      "gtinUpc": "791083302074",
-      "publishedDate": "2023-02-16",
-      "score": 0.6666666666666666,
-      "brandOk": true
-    },
-    "topCandidates": [
-      {
-        "fdcId": 2471956,
-        "description": "MILK CHOCOLATE PURE MILK PROTEIN SHAKE, MILK CHOCOLATE",
-        "brandOwner": "Ross Products Division",
-        "brandName": "EAS",
-        "gtinUpc": "791083302074",
-        "publishedDate": "2023-02-16",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1948396,
-        "description": "CHOCOLATE PURE WHEY PROTEIN SHAKE, CHOCOLATE",
-        "brandOwner": "Ross Products Division",
-        "brandName": "EAS",
-        "gtinUpc": "791083647441",
-        "publishedDate": "2021-07-29",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1983397,
-        "description": "ABBOTT, EAS, PURE WHEY PROTEIN SHAKE, CHOCOLATE, CHOCOLATE",
-        "brandOwner": "Ross Products Division",
-        "brandName": "ABBOTT",
-        "gtinUpc": "791083647458",
-        "publishedDate": "2021-07-29",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2321077,
-        "description": "PURE WHEY PROTEIN SHAKE, STRAWBERRY, STRAWBERRY",
-        "brandOwner": "Ross Products Division",
-        "brandName": "EAS",
-        "gtinUpc": "791083647489",
-        "publishedDate": "2022-06-21",
-        "score": 0.3333333333333333,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1868565,
-        "description": "PROTEIN SUPERFOOD NUTRITION SHAKE, PURE VANILLA",
-        "brandOwner": "Grass Advantage",
-        "brandName": "AMAZING GRASS",
-        "gtinUpc": "829835004614",
-        "publishedDate": "2021-07-29",
-        "score": 0.3333333333333333,
-        "brandOk": true
-      }
-    ]
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
   },
-  "usda": {
-    "fdcId": 2471956,
-    "description": "MILK CHOCOLATE PURE MILK PROTEIN SHAKE, MILK CHOCOLATE",
-    "brandOwner": "Ross Products Division",
-    "brandName": "EAS",
-    "gtinUpc": "791083302074",
-    "servingSize": 325,
-    "servingSizeUnit": "ml",
-    "householdServingFullText": "11 OZA",
-    "dataSource": "LI",
-    "modifiedDate": "2/3/2022",
-    "ingredients": "INGREDIENTS: WATER, MILK PROTEIN CONCENTRATE; LESS THAN 2% OF THE FOLLOWING: COCOA POWDER (PROCESSED WITH ALKALI), VITAMIN AND MINERAL BLEND (POTASSIUM PHOSPHATE, POTASSIUM CITRATE, SODIUM CHLORIDE, SODIUM ASCORBATE, MAGNESIUM CARBONATE, ZINC GLUCONATE, DL-ALPHA-TOCOPHERYL ACETATE, NIACINAMIDE, MANGANESE GLUCONATE, CALCIUM PANTOTHENATE, VITAMIN A PALMITATE, PYRIDOXINE HYDROCHLORIDE, THIAMINE CHLORIDE HYDROCHLORIDE, RIBOFLAVIN, CHROMIUM CHLORIDE, FOLIC ACID, BETA-CAROTENE, VITAMIN D3, BIOTIN, SODIUM MOLYBDATE, SODIUM SELENITE, POTASSIUM IODIDE, PHYTONADIONE AND CYANOCOBALAMIN), VEGETABLE OIL (HIGH OLEIC SUNFLOWER OIL AND/OR CANOLA OIL), NATURAL AND ARTIFICIAL FLAVOR, CELLULOSE GUM, ACESULFAME POTASSIUM, LIQUID SUCRALOSE, CARRAGEENAN, SOY LECITHIN, CELLULOSE GEL AND GELLAN GUM.",
-    "perServing": {
-      "protein": 15,
-      "calories": 101,
-      "carbs": 5,
-      "fiber": 0.975,
-      "sugar": 0,
-      "fat": 2.5,
-      "servingSize": "11 OZA / 325 ml",
-      "servingSizeG": null
-    }
-  },
+  "usda": null,
   "openFoodFacts": null,
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "No USDA label record found for this product."
     ]
   },
   "before": {
