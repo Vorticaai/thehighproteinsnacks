@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Shahir Zabiha Halal Beef Stick",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

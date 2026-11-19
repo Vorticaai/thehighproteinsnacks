@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Mummified Jerky Original Halal Beef Jerky",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2501338,
+      "description": "BEEF JERKY, ORIGINAL",
+      "brandOwner": "Oberto Sausage Company",
+      "brandName": "CATTLEMAN'S CUT",
+      "gtinUpc": "044900301171",
+      "publishedDate": "2023-03-16",
+      "score": 0.5,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2501338,
+        "description": "BEEF JERKY, ORIGINAL",
+        "brandOwner": "Oberto Sausage Company",
+        "brandName": "CATTLEMAN'S CUT",
+        "gtinUpc": "044900301171",
+        "publishedDate": "2023-03-16",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2443298,
+        "description": "BEEF JERKY, ORIGINAL",
+        "brandOwner": "Family Dollar Stores Inc.",
+        "brandName": "FAMILY GOURMET",
+        "gtinUpc": "032251101205",
+        "publishedDate": "2022-12-22",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2314969,
+        "description": "BEEF JERKY, ORIGINAL",
+        "brandOwner": "Hsin Tung Yang Foods Company",
+        "brandName": "HTY",
+        "gtinUpc": "819316020035",
+        "publishedDate": "2022-05-23",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1942885,
+        "description": "BEEF JERKY, ORIGINAL",
+        "brandOwner": "Hy-Vee, Inc.",
+        "brandName": "HY-VEE",
+        "gtinUpc": "075450088342",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1948691,
+        "description": "BEEF JERKY, ORIGINAL",
+        "brandOwner": "Lowe's Food Stores, Inc.",
+        "brandName": "LOWES FOODS",
+        "gtinUpc": "741643045897",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2501338,
+    "description": "BEEF JERKY, ORIGINAL",
+    "brandOwner": "Oberto Sausage Company",
+    "brandName": "CATTLEMAN'S CUT",
+    "gtinUpc": "044900301171",
+    "servingSize": 28,
+    "servingSizeUnit": "MG",
+    "householdServingFullText": "1 oz",
+    "dataSource": "LI",
+    "modifiedDate": "2/7/2023",
+    "ingredients": "BEEF, CORN SYRUP SOLIDS, BROWN SUGAR, SUGAR, WATER, SALT, SPICES AND NATURAL FLAVORINGS, NATURAL SMOKE FLAVOR, BEEF STOCK, SODIUM NITRITE.",
+    "perServing": {
+      "protein": 10,
+      "calories": 80.1,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 6,
+      "fat": 0.501,
+      "servingSize": "1 oz / 28 mg",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0044900301171",
+    "product_name": "Beef jerky",
+    "serving_size": "1 ONZ (28 g)",
+    "perServing": {
+      "protein": 10,
+      "calories": 80.1,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 6,
+      "fat": 0.501,
+      "servingSize": "1 ONZ (28 g)",
+      "servingSizeG": 28
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

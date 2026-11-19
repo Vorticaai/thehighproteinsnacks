@@ -1,0 +1,135 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Five Star Jerky Prime Halal Beef Jerky",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 33% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2593352,
+      "description": "BEEF JERKY CRISPS, BEEF JERKY",
+      "brandOwner": "Hawaiian Kine Trading Company LLC",
+      "brandName": "BETTER JERKY CO.",
+      "gtinUpc": "850003402437",
+      "publishedDate": "2023-06-29",
+      "score": 0.3333333333333333,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2593352,
+        "description": "BEEF JERKY CRISPS, BEEF JERKY",
+        "brandOwner": "Hawaiian Kine Trading Company LLC",
+        "brandName": "BETTER JERKY CO.",
+        "gtinUpc": "850003402437",
+        "publishedDate": "2023-06-29",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2593353,
+        "description": "JERKY CRISPS BEEF JERKY, JERKY CRISPS",
+        "brandOwner": "Hawaiian Kine Trading Company LLC",
+        "brandName": "BETTER JERKY CO.",
+        "gtinUpc": "850003402468",
+        "publishedDate": "2023-06-29",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2538948,
+        "description": "PRIME RIB JERKY KIT, PRIME RIB",
+        "brandOwner": "Ps Seasoning & Spices Inc.",
+        "brandName": "PS SEASONING",
+        "gtinUpc": "818808015771",
+        "publishedDate": "2023-04-27",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2441178,
+        "description": "BEEF JERKY",
+        "brandOwner": "Sweetwood Cattle Company ",
+        "brandName": "SWEETWOOD CATTLE CO.",
+        "gtinUpc": "851015004114",
+        "publishedDate": "2022-12-22",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2424119,
+        "description": "BEEF JERKY",
+        "brandOwner": "Stone Ridge Meat & Country Market, Inc",
+        "brandName": "STONE RIDGE",
+        "gtinUpc": "814464015711",
+        "publishedDate": "2022-12-22",
+        "score": 0.3333333333333333,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2593352,
+    "description": "BEEF JERKY CRISPS, BEEF JERKY",
+    "brandOwner": "Hawaiian Kine Trading Company LLC",
+    "brandName": "BETTER JERKY CO.",
+    "gtinUpc": "850003402437",
+    "servingSize": 56,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 package",
+    "dataSource": "LI",
+    "modifiedDate": "6/5/2023",
+    "ingredients": "BEEF, SOY SAUCE (WATER, WHEAT GLUTEN, SALT, SUGAR, SOYBEANS, CARAMEL COLORING, SODIUM BENZOATE, A PRESERVATIVE), BROWN SUGAR, MIRIN (SAKE [WATER, RICE, KOJI (ASPERGILLUS ORYZAE)], SUGAR, WATER, SALT, YEAST EXTRACT), GINGER POWDER",
+    "perServing": {
+      "protein": 34,
+      "carbs": 10,
+      "fiber": 0,
+      "sugar": 10,
+      "fat": 4,
+      "servingSize": "1 package / 56 g",
+      "servingSizeG": 56
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850003402437",
+    "product_name": "Jerky Crisps Beef Jerky Teriyaki",
+    "brands": "Better Jerky Co.",
+    "serving_size": "1 package (56 g)",
+    "perServing": {
+      "protein": 36,
+      "calories": 230,
+      "carbs": 10,
+      "fiber": 0,
+      "sugar": 10,
+      "fat": 4,
+      "servingSize": "1 package (56 g)",
+      "servingSizeG": 56
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Supreme Beef Jerky Sweet Garlic Halal",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2593057,
+      "description": "BOHEMIAN GARLIC BEEF JERKY, BOHEMIAN GARLIC",
+      "brandOwner": "Jr.'s Texas Best, LLC",
+      "brandName": "UNCLE ERVIN'S",
+      "gtinUpc": "810071760020",
+      "publishedDate": "2023-06-29",
+      "score": 0.5,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2593057,
+        "description": "BOHEMIAN GARLIC BEEF JERKY, BOHEMIAN GARLIC",
+        "brandOwner": "Jr.'s Texas Best, LLC",
+        "brandName": "UNCLE ERVIN'S",
+        "gtinUpc": "810071760020",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2426154,
+        "description": "GARLIC CRISPY BEEF JERKY, GARLIC",
+        "brandOwner": "Todd's Health & Fitness",
+        "brandName": "HAWAII JERKY SHOP",
+        "gtinUpc": "796168318810",
+        "publishedDate": "2022-12-22",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2265381,
+        "description": "SWEET HEAT BEEF JERKY",
+        "brandOwner": "The Lynde Company",
+        "brandName": "PONY EXPRESS",
+        "gtinUpc": "054042009095",
+        "publishedDate": "2022-05-23",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2174257,
+        "description": "GARLIC BEEF JERKY, GARLIC",
+        "brandOwner": "Werner Gourmet Meat Snacks, Inc.",
+        "brandName": "WERNER",
+        "gtinUpc": "709972783095",
+        "publishedDate": "2021-10-28",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2177583,
+        "description": "GARLIC BEEF JERKY, GARLIC",
+        "brandOwner": "Werner Gourmet Meat Snacks, Inc.",
+        "brandName": "WERNER",
+        "gtinUpc": "709972789097",
+        "publishedDate": "2021-10-28",
+        "score": 0.5,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2593057,
+    "description": "BOHEMIAN GARLIC BEEF JERKY, BOHEMIAN GARLIC",
+    "brandOwner": "Jr.'s Texas Best, LLC",
+    "brandName": "UNCLE ERVIN'S",
+    "gtinUpc": "810071760020",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 oz",
+    "dataSource": "LI",
+    "modifiedDate": "5/8/2023",
+    "ingredients": "BEEF, BEEF STOCK, SUGAR, NATURAL FLAVORINGS, BROWN SUGAR, VINEGAR, SALT, SODIUM CITRATE, MONOSODIUM GLUTAMATE, SOY SAUCE POWDER (WHEAT, SOYBEANS, SALT, MALTODEXTRIN), SODIUM NITRITE.",
+    "perServing": {
+      "protein": 12,
+      "calories": 80.1,
+      "carbs": 4,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 1,
+      "servingSize": "1 oz / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}
