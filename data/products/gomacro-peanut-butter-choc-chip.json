@@ -1,9 +1,9 @@
 {
   "id": "gomacro-peanut-butter-choc-chip",
-  "name": "GoMacro Vegan Bar – Peanut Butter Chocolate Chip",
+  "name": "GoMacro MacroBar, Peanut Butter Chocolate Chip",
   "brand": "GoMacro",
   "productType": "bar",
-  "buyUrl": "https://www.amazon.com/GoMacro-MacroBar-Organic-Vegan-Protein/dp/B0858F5D3C?tag=thehighprotei-20",
+  "buyUrl": "https://www.gomacro.com/products/peanut-butter-chocolate-chip-macrobar",
   "price": {
     "perServing": 2.49,
     "status": "estimate",
@@ -33,7 +33,7 @@
   },
   "image": {
     "src": "/products/gomacro-peanut-butter-choc-chip.jpg",
-    "alt": "GoMacro GoMacro Vegan Bar – Peanut Butter Chocolate Chip package",
+    "alt": "GoMacro GoMacro Vegan Bar \u2013 Peanut Butter Chocolate Chip package",
     "credit": "Open Food Facts contributors",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",

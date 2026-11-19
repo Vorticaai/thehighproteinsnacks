@@ -1,13 +1,13 @@
 {
   "id": "magic-spoon-peanut-butter-cereal",
-  "name": "Magic Spoon Peanut Butter Cereal (per serving)",
+  "name": "Magic Spoon Protein Cereal, Peanut Butter",
   "brand": "Magic Spoon",
   "productType": null,
-  "buyUrl": "https://www.amazon.com/Magic-Spoon-Cereal-Variety-6-Pack/dp/B0BX73JWBX/ref=sr_1_1?tag=thehighprotei-20",
+  "buyUrl": "https://magicspoon.com/products/peanut-butter-1-case-4-boxes",
   "price": {
-    "perServing": 10.5,
+    "perServing": 1.95,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $39 for 4 boxes of about 5 servings (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,

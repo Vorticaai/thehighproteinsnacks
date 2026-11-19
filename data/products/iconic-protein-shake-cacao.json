@@ -1,13 +1,13 @@
 {
   "id": "iconic-protein-shake-cacao",
-  "name": "ICONIC Protein Shake – Café Mocha",
+  "name": "ICONIC Protein Drink, Caf\u00e9 Latte",
   "brand": "ICONIC",
   "productType": null,
-  "buyUrl": "https://www.amazon.com/Iconic-Protein-Drinks-Cacao-Greens/dp/B07QNZM51V?tag=thehighprotei-20",
+  "buyUrl": "https://www.drinkiconic.com/products/cafe-latte",
   "price": {
-    "perServing": 2.66,
+    "perServing": 4.17,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $49.99 for 12 bottles (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,

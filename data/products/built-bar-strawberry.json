@@ -1,13 +1,13 @@
 {
   "id": "built-bar-strawberry",
-  "name": "Built Bar Strawberry",
+  "name": "Built Puff Strawberries 'N Cream",
   "brand": "Built Bar",
-  "productType": null,
-  "buyUrl": "https://www.amazon.com/BUILT-Puffs-Protein-Strawberries-Cream/dp/B0D1KD323N/ref=sr_1_5?tag=thehighprotei-20",
+  "productType": "bar",
+  "buyUrl": "https://built.com/products/strawberriesncream",
   "price": {
     "perServing": 2.5,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $29.99 for 12 bars (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,

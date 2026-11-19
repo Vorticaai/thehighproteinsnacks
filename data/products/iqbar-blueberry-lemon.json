@@ -1,13 +1,13 @@
 {
   "id": "iqbar-blueberry-lemon",
-  "name": "IQBAR Blueberry Lemon",
+  "name": "IQBAR Lemon Blueberry",
   "brand": "IQBAR",
   "productType": null,
-  "buyUrl": "https://www.amazon.com/Paleo-Bars-Lemon-Protein-Bar/dp/B0876K3ZS2/ref=sr_1_3?tag=thehighprotei-20",
+  "buyUrl": "https://www.eatiqbar.com/products/lemon-blueberry",
   "price": {
-    "perServing": 2.1,
+    "perServing": 3.17,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $38 for 12 bars (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,

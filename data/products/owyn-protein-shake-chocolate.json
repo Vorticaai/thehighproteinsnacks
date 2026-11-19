@@ -1,13 +1,13 @@
 {
   "id": "owyn-protein-shake-chocolate",
-  "name": "OWYN 20g Plant Protein Shake – Smooth Chocolate",
+  "name": "OWYN Plant Protein Shake, Dark Chocolate",
   "brand": "OWYN",
   "productType": null,
-  "buyUrl": "https://www.amazon.com/OWYN-Plant-Based-Dairy-Free-Gluten-Free-Allergy-Free/dp/B08PMC1ZJW?tag=thehighprotei-20",
+  "buyUrl": "https://liveowyn.com/products/dark-chocolate-protein-shake-1",
   "price": {
-    "perServing": 2.75,
+    "perServing": 3.25,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $38.99 for 12 bottles (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,

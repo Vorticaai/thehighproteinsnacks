@@ -1,13 +1,13 @@
 {
   "id": "built-bar-cookies-cream",
-  "name": "Built Bar Cookies & Cream",
+  "name": "Built Puff Cookies 'N Cream",
   "brand": "Built Bar",
-  "productType": null,
-  "buyUrl": "https://www.amazon.com/Protein-Chocolatey-Collagen-Bar-calories/dp/B0D7PS26VG/ref=sr_1_11?tag=thehighprotei-20",
+  "productType": "bar",
+  "buyUrl": "https://built.com/products/cookies-n-cream-puff",
   "price": {
-    "perServing": 2.9,
+    "perServing": 2.5,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $29.99 for 12 bars (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,

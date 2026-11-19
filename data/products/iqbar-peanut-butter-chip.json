@@ -3,11 +3,11 @@
   "name": "IQBAR Peanut Butter Chip Bar",
   "brand": "IQBAR",
   "productType": "bar",
-  "buyUrl": "https://www.amazon.com/Protein-Peanut-Butter-Friendly-Alcohols/dp/B0876HZ2VX/ref=sr_1_1?tag=thehighprotei-20",
+  "buyUrl": "https://www.eatiqbar.com/products/peanut-butter-chip",
   "price": {
-    "perServing": 2.1,
+    "perServing": 3.17,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $38 for 12 bars (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": null,
