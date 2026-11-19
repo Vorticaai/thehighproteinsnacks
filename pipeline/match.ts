@@ -38,6 +38,17 @@ export function brandTokens(brand: string): string[] {
   return tokens(brand).filter((t) => !STOP.has(t) && t.length >= 3)
 }
 
+/**
+ * Brand words that are common enough, on their own, to risk matching an
+ * unrelated product's free-text description rather than its actual brand.
+ * E.g. "Pure Protein" -> brandTokens ["pure"] (STOP removes "protein"), and
+ * "pure" also appears in Abbott/EAS's "Pure Milk Protein Shake" - a
+ * different company whose own brandName/brandOwner is "EAS", not "Pure
+ * Protein". For these, only the candidate's own brandName/brandOwner count
+ * as a brand match; its free-text description doesn't.
+ */
+const WEAK_BRAND_WORDS = new Set(["pure", "one", "good", "perfect", "premier", "cow", "built", "ratio"])
+
 /** The words that identify the specific product: flavour, format, size. */
 export function productTokens(name: string, brand: string): string[] {
   const b = new Set(brandTokens(brand))
@@ -49,8 +60,11 @@ export function scoreCandidate(
   c: FdcCandidate,
 ): { score: number; brandOk: boolean } {
   const text = new Set(tokens(`${c.description} ${c.brandName ?? ""} ${c.brandOwner ?? ""}`))
-  const brandText = new Set(tokens(`${c.brandName ?? ""} ${c.brandOwner ?? ""} ${c.description}`))
-  const brandOk = brandTokens(product.brand).some((t) => contains(brandText, t))
+  const officialBrandText = new Set(tokens(`${c.brandName ?? ""} ${c.brandOwner ?? ""}`))
+  const fullBrandText = new Set(tokens(`${c.brandName ?? ""} ${c.brandOwner ?? ""} ${c.description}`))
+  const brandOk = brandTokens(product.brand).some((t) =>
+    WEAK_BRAND_WORDS.has(t) ? contains(officialBrandText, t) : contains(fullBrandText, t),
+  )
   const want = productTokens(product.name, product.brand)
   if (want.length === 0) return { score: 0, brandOk }
   const found = want.filter((t) => contains(text, t)).length

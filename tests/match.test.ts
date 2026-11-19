@@ -28,6 +28,26 @@ test("rejects candidates from other brands", () => {
   assert.equal(result.best, null)
 })
 
+test("a weak brand word doesn't match through an unrelated candidate's description", () => {
+  // "Pure Protein" -> brandTokens ["pure"] once STOP removes "protein". Abbott/EAS's
+  // real shake has brandName "EAS", but its description happens to contain "pure" -
+  // that must not count as a Pure Protein match.
+  const pureProtein = { name: "Pure Protein Shake Frosty Chocolate", brand: "Pure Protein" }
+  const result = pickBest(pureProtein, [
+    { fdcId: 1, description: "MILK CHOCOLATE PURE MILK PROTEIN SHAKE", brandOwner: "Ross Products Division", brandName: "EAS" },
+  ])
+  assert.equal(result.best, null)
+})
+
+test("a weak brand word still matches through the candidate's own brandName", () => {
+  const pureProtein = { name: "Pure Protein Shake Frosty Chocolate", brand: "Pure Protein" }
+  const result = pickBest(pureProtein, [
+    { fdcId: 1, description: "FROSTY CHOCOLATE SHAKE", brandName: "PURE PROTEIN", brandOwner: "Rexall Sundown, Inc." },
+  ])
+  assert.equal(result.best?.fdcId, 1)
+  assert.equal(result.confident, true)
+})
+
 test("barcode variants cover UPC-12 and EAN-13 forms", () => {
   const v = barcodeVariants("00888849000425")
   assert.ok(v.includes("888849000425"))
