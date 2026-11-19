@@ -1,49 +1,10 @@
 {
   "products": [
     {
-      "id": "fitcrunch-chocolate-peanut-butter",
-      "fdcId": 2587180,
-      "note": "Reviewer: checked the evidence from the earlier auto-search (score 0.5, 'baked bar' vs 'baked bars' wording). Brand and flavor are an exact match (FITCRUNCH Chocolate Peanut Butter High Protein Baked Bar), and the USDA label numbers already match our existing catalogue values almost exactly. Pinning so the agreement check can confirm."
-    },
-    {
       "id": "quest-nutrition-protein-puffs-ranch",
       "fdcId": 2669733,
-      "note": "Reviewer: our catalogue calls this 'Protein Puffs' but Quest's real product name is 'Ranch Tortilla Style Protein Chips' — same product, our own naming was informal. USDA label numbers already match our existing catalogue values almost exactly. Pinning so the agreement check can confirm."
-    },
-    {
-      "id": "rxbar-coconut-chocolate",
-      "fdcId": 2599185,
-      "note": "Reviewer: USDA only has RXBAR's variety-box GTIN (1.83oz x10, listing Chocolate Sea Salt/Coconut Chocolate/Blueberry/Peanut Butter Chocolate together), not a Coconut Chocolate-only GTIN, so the auto-search scored this 0%. RXBAR's classic flavors share nearly identical macros by design (confirmed across 6 already-verified RXBAR flavors), and the box's generic numbers already match our existing catalogue values within tolerance. Pinning so the agreement check can confirm; if it verifies, the source note should make clear this is the shared box profile, not a flavor-specific label."
-    },
-    {
-      "id": "rxbar-peanut-butter-chocolate",
-      "fdcId": 2599185,
-      "note": "Reviewer: same reasoning and same USDA variety-box record as rxbar-coconut-chocolate (that GTIN's ingredient statement lists Peanut Butter Chocolate too). Box numbers already match our existing catalogue values within tolerance. Pinning so the agreement check can confirm."
-    },
-    {
-      "id": "aufschnitt-grassfed-halal-jerky",
-      "query": "Aufschnitt Meats grass fed beef jerky",
-      "note": "Reviewer: previous query 'Aufschnitt Grass-Fed Beef Jerky' returned zero candidates. Aufschnitt Meats does have USDA records (confirmed via the already-verified aufschnitt-halal-teriyaki-jerky, fdcId 2456453) so trying a query closer to the manufacturer's registered name."
-    },
-    {
-      "id": "aufschnitt-halal-beef-bar",
-      "query": "Aufschnitt Meats beef stick",
-      "note": "Reviewer: previous query 'Aufschnitt Beef Bar' returned zero candidates. Trying 'stick' instead of 'bar' in case USDA's description uses different wording, and the manufacturer name for a stronger brand match (same reasoning as aufschnitt-grassfed-halal-jerky)."
-    },
-    {
-      "id": "fairlife-core-power-26g",
-      "query": "Fairlife Core Power chocolate protein shake",
-      "note": "Reviewer: the previous query, 'Core Power 26g protein shake chocolate', never actually included the brand name 'Fairlife', which likely caused the same-brand filter to find nothing. Adding it back in."
-    },
-    {
-      "id": "owyn-100plant-protein-shake",
-      "query": "OWYN protein shake chocolate",
-      "note": "Reviewer: the previous query only turned up OWYN's separate 32g 'Pro Elite' line (a different, higher-protein product), not the base 20g 100% Plant Protein Shake we have. Dropping '100' and 'plant' from the query in case that was biasing the USDA search toward the Pro Elite listing. If this still only finds the 32g line, the base line likely just isn't in USDA's branded database."
-    },
-    {
-      "id": "pure-protein-shake-frosty-chocolate",
-      "query": "PureProtein frosty chocolate ready to drink shake",
-      "note": "Reviewer: the previous query matched Abbott/EAS's unrelated 'Pure Milk Protein Shake' — a different company entirely. This is a known limitation in pipeline/match.ts: brandTokens() strips 'protein' as a stopword, so our brand 'Pure Protein' collapses to the single generic word 'pure', which also appears in EAS's description and false-passes the brand filter. Trying a query that hopefully won't surface the EAS record at all; if it still does, this needs a match.ts fix (keep 'protein' when stripping it would leave only short/generic tokens), not another query attempt."
+      "acceptUsdaReason": "Open Food Facts disagrees on every field, but all six are off by the same ~3.0-3.2x factor (e.g. calories 140 vs 440, protein 19 vs 59) consistent with OFF holding per-100g values against this product's ~32g serving rather than a real conflict. The USDA label data (per official manufacturer submission) already matches our existing catalogue values closely.",
+      "note": "Follow-up to this batch's first pass: pinning again with acceptUsdaReason now that the OFF disagreement is understood to be a unit-scaling artifact, not a real data conflict."
     }
   ]
 }
