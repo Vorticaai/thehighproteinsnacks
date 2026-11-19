@@ -185,32 +185,6 @@
       }
     },
     {
-      "brand": "Saffron Road",
-      "product": "Crunchy Chickpeas",
-      "type": "other",
-      "usAvailability": "Widely sold in US supermarkets.",
-      "proteinNote": "6 g protein per serving, per the brand.",
-      "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
-      "halal": {
-        "status": "certifier-named",
-        "certifier": "IFANCA",
-        "checkedAt": "2026-11-19",
-        "evidence": [
-          {
-            "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
-            "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
-            "kind": "brand"
-          },
-          {
-            "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
-            "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
-            "kind": "retailer"
-          }
-        ],
-        "summary": "IFANCA-certified plant-based snack. Lower in protein than meat snacks, but one of the few certified options in ordinary US supermarkets."
-      }
-    },
-    {
       "brand": "Sharifa Halal",
       "product": "Beef Jerky and Smokey Toms Turkey Sticks",
       "type": "jerky",
