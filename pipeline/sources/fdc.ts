@@ -44,8 +44,18 @@ async function getJson(url: string): Promise<unknown> {
   )
 }
 
+/** USDA search rejects some punctuation (e.g. parentheses); keep words only. */
+export const cleanQuery = (q: string) =>
+  q
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[’']/g, "")
+    .replace(/[^A-Za-z0-9&%. -]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+
 export async function searchBranded(query: string, apiKey: string): Promise<FdcCandidate[]> {
-  const url = `${BASE}/foods/search?api_key=${encodeURIComponent(apiKey)}&dataType=Branded&pageSize=25&query=${encodeURIComponent(query)}`
+  const url = `${BASE}/foods/search?api_key=${encodeURIComponent(apiKey)}&dataType=Branded&pageSize=25&query=${encodeURIComponent(cleanQuery(query))}`
   const data = (await getJson(url)) as { foods?: FdcCandidate[] }
   return (data.foods ?? []).map((f) => ({
     fdcId: f.fdcId,

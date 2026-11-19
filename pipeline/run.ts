@@ -80,7 +80,13 @@ async function main() {
       continue
     }
     const query = entry.query ?? record.name
-    const candidates = await searchBranded(query, API_KEY)
+    let candidates: Awaited<ReturnType<typeof searchBranded>> = []
+    try {
+      candidates = await searchBranded(query, API_KEY)
+    } catch (err) {
+      // One failed search must not stop the whole batch.
+      console.error(`Search failed for ${entry.id}: ${(err as Error).message.slice(0, 200)}`)
+    }
     matches.set(entry.id, { ...pickBest(record, candidates), pinned: false })
     await sleep(500)
   }
