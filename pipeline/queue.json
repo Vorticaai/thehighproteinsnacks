@@ -1,9 +1,3 @@
 {
-  "products": [
-    {
-      "id": "chomps-turkey-jerky-meat-stick",
-      "fdcId": 1983177,
-      "note": "Reviewer: fdcId 2554461 (tried first) turned out to be a genuinely different, older 10g-protein formulation under a different GS1 prefix ('Jlabs Beauty' brandOwner, UPC 850015892295) - both USDA and Open Food Facts agree it's 10g protein, just disagreeing on calories, so the pipeline correctly left it as needs-review rather than publish the wrong product's numbers. Trying this candidate instead: same brandOwner as the two already-ruled-out mini sticks ('We Are The Chompians LLC', the real Chomps manufacturer), no 'mini' in its description, not yet checked."
-    }
-  ]
+  "products": []
 }
