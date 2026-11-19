@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { categoryCountLabel } from "@/lib/categoryCounts"
 import { getAllProducts } from "@/lib/products"
 import { categoryFilters } from "@/lib/categoryFilters"
 
@@ -57,10 +58,6 @@ const exploreCategories: ExploreCategory[] = [
   },
 ]
 
-const formatCount = (count: number) => {
-  if (count === 0) return "No snacks yet"
-  return `${count} snack${count === 1 ? "" : "s"}`
-}
 
 export default function ExploreCategoryRow() {
   const products = getAllProducts()
@@ -93,7 +90,7 @@ export default function ExploreCategoryRow() {
               <h3 className="text-xl font-bold text-gray-900">{category.title}</h3>
               <p className="mt-2 text-sm text-gray-600">{category.desc}</p>
               <p className="mt-4 text-sm font-semibold text-[#006F6D]">
-                {formatCount(count)}
+                {categoryCountLabel(category.slug, count)}
               </p>
               <span className="mt-6 inline-block font-bold text-[#0B1F1E] group-hover:underline">
                 View snacks →
