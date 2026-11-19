@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
     "protein": 16,
-    "calories": 190,
-    "carbs": 19,
-    "fiber": 7,
-    "sugar": 1,
-    "fat": 11
+    "calories": 240,
+    "carbs": 23,
+    "fiber": 12,
+    "sugar": 2,
+    "fat": 15
   },
   "claims": {
     "vegan": false,
@@ -28,17 +28,33 @@
   },
   "identifiers": {
     "asin": "B0BZDWKDT1",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "637480004305",
+    "fdcId": 2668067
   },
   "image": null,
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2668067",
+        "url": "https://fdc.nal.usda.gov/food-details/2668067/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 16,
+          "calories": 240,
+          "carbs": 23,
+          "fiber": 12,
+          "sugar": 2,
+          "fat": 15
+        }
+      }
+    ],
     "notes": [
-      "Only 67% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Reviewer: Atkins Nutritionals' own Chocolate Peanut Butter Protein Meal Bar record (2023)."
     ]
   }
 }

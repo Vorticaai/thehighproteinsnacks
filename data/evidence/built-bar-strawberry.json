@@ -1,51 +1,21 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Built Brands strawberry protein bar",
+  "query": "Built Puff Strawberries 'N Cream",
   "match": {
     "pinned": false,
     "confident": false,
     "reason": "Only 0% of product words found; needs a person to confirm.",
     "chosen": {
-      "fdcId": 2635211,
-      "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
-      "brandOwner": "Target Stores",
-      "brandName": "WONDERSHOP",
-      "gtinUpc": "085239054789",
-      "publishedDate": "2023-09-14",
+      "fdcId": 2217564,
+      "description": "PRE-BUILT GINGERBREAD HOUSE KIT, PRE-BUILT",
+      "brandOwner": "Wilton Industries Inc.",
+      "brandName": "WILTON",
+      "gtinUpc": "070896068736",
+      "publishedDate": "2022-01-06",
       "score": 0,
       "brandOk": true
     },
     "topCandidates": [
-      {
-        "fdcId": 2635211,
-        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
-        "brandOwner": "Target Stores",
-        "brandName": "WONDERSHOP",
-        "gtinUpc": "085239054789",
-        "publishedDate": "2023-09-14",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2635005,
-        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
-        "brandOwner": "Target Stores",
-        "brandName": "WONDERSHOP",
-        "gtinUpc": "085239034415",
-        "publishedDate": "2023-09-14",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2583896,
-        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
-        "brandOwner": "Target Stores",
-        "brandName": "FAVORITE DAY",
-        "gtinUpc": "085239327913",
-        "publishedDate": "2023-06-29",
-        "score": 0,
-        "brandOk": true
-      },
       {
         "fdcId": 2217564,
         "description": "PRE-BUILT GINGERBREAD HOUSE KIT, PRE-BUILT",
@@ -59,47 +29,44 @@
     ]
   },
   "usda": {
-    "fdcId": 2635211,
-    "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
-    "brandOwner": "Target Stores",
-    "brandName": "WONDERSHOP",
-    "gtinUpc": "085239054789",
+    "fdcId": 2217564,
+    "description": "PRE-BUILT GINGERBREAD HOUSE KIT, PRE-BUILT",
+    "brandOwner": "Wilton Industries Inc.",
+    "brandName": "WILTON",
+    "gtinUpc": "070896068736",
     "servingSize": 30,
-    "servingSizeUnit": "GRM",
-    "householdServingFullText": "1/28 KIT",
+    "servingSizeUnit": "g",
+    "householdServingFullText": "30 GRM",
     "dataSource": "LI",
-    "modifiedDate": "8/24/2023",
-    "ingredients": "GINGERBREAD: ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, ASCORBIC ACID [ADDED AS A DOUGH CONDITIONER], THIAMINE MONONITRATE, RIBOFLAVIN, ENZYME, FOLIC ACID), SUGAR, PALM OIL, MOLASSES, WATER, SPICE, LEAVENING (SODIUM BICARBONATE), SALT. ICINGS: SUGAR, WATER, PALM OIL, CORNSTARCH, HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, MODIFIED CORNSTARCH, POWDERED VEGETABLE SHORTENING (PALM OIL, MALTODEXTRIN, SODIUM CASEINATE [MILK], POTASSIUM PHOSPHATE, MONO- AND DIGLYCERIDES, SODIUM HEXAMETAPHOSPHATE), SALT, EGG WHITES, ACETYLATED MONOGLYCERIDES (EMULSIFIER), COLOR (TITANIUM DIOXIDE, RED #40, YELLOW #6), ARTIFICIAL FLAVOR, POLYSORBATE 60, GUM ARABIC, CREAM OF TARTAR, POTASSIUM SORBATE (PRESERVATIVE), AMMONIUM ALUMINUM SULFATE, CITRIC ACID. JELLY HEARTS CANDY: CORN SYRUP, SUGAR, CORNSTARCH, WATER, CITRIC ACID, SODIUM CITRATE, NATURAL AND ARTIFICIAL FLAVOR, COLOR (YELLOW #5, YELLOW #6, BLUE #1, RED #40). PEPPERMINT BALLS: SUGAR, CORN SYRUP, COLOR (TITANIUM DIOXIDE, RED #40 LAKE), PEPPERMINT OIL. GUM BALLS: SUGAR, DEXTROSE, CORN SYRUP, CHEWING GUM BASE (CONTAINS SOYBEAN), CORNSTARCH, NATURAL AND ARTIFICIAL FLAVOR, GLYCERINE, TAPIOCA DEXTRIN, COLOR (TITANIUM DIOXIDE, RED #40, YELLOW #5, BLUE #1), CONFECTIONER'S GLAZE, CARNAUBA WAX, BHT (PRESERVATIVE). SPEARMINT LEAVES: SUGAR, CORN SYRUP, CORNSTARCH, MODIFIED CORNSTARCH, SPEARMINT OIL, COLOR (YELLOW #5, BLUE #1). MINI BEADS CANDY: DEXTROSE, CORN SYRUP, CITRIC ACID, CALCIUM STEARATE, TAPIOCA DEXTRIN, COLOR (TITANIUM DIOXIDE, RED #3, RED #40, YELLOW #5, YELLOW #6, BLUE #1), CONFECTIONER'S GLAZE, CARNAUBA WAX, ARTIFICIAL FLAVOR.",
+    "modifiedDate": "11/30/2021",
+    "ingredients": "GINGERBREAD: ENRICHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, IRON, FUNGAL-AMYLASE, ASCORBIC ACID, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), SUGAR, VEGETABLE SHORTENING (PALM OIL, MODIFIED PALM OIL), MOLASSES, WATER, BAKING SODA, SALT, SPICES (CINNAMON, GINGER, ALLSPICE, CLOVES). WHITE READY-TO-USE ICING: SUGAR, WATER, VEGETABLE SHORTENING (PALM OIL, MODIFIED PALM OIL, MONO- AND DIGLYCERIDES OF FATTY ACIDS, POLYSORBATE 60), HIGH FRUCTOSE CORN SYRUP, CORN SYRUP, CORN STARCH, MODIFIED CORN STARCH, SALT, ACETYLATED MONOGLYCERIDES, ARTIFICIAL VANILLA FLAVOR, TITANIUM DIOXIDE (COLOR), POLYSORBATE 60, POTASSIUM SORBATE (PRESERVATIVE), CITRIC ACID. WHITE ICING MORTAR: SUGAR, CORN STARCH, PALM OIL SHORTENING (PALM OIL, MALTODEXTRIN, SODIUM CASEINATE [MILK], DIPOTASSIUM PHOSPHATE, MONO- AND DIGLYCERIDES, SODIUM HEXAMETAPHOSPHATE, SILICON DIOXIDE), DRIED EGG WHITE (EGG WHITE, CITRIC ACID), TITANIUM DIOXIDE (COLOR), GUM ARABIC, CREAM OF TARTAR, SALT, AMMONIUM ALUMINUM SULFATE, ARTIFICIAL VANILLA FLAVOR. GUM DROPS: DEXTROSE, SUGAR, WATER, MODIFIED CORN STARCH, ARTIFICIAL FLAVOR, RED 40, YELLOW 5, YELLOW 6, BLUE 1, RED 3, TITANIUM DIOXIDE (COLOR). MULTI-COLORED CANDIES: DEXTROSE, CORN STARCH, DEXTRIN, MAGNESIUM STEARATE, GUM ARABIC, APPLE JUICE (COLOR), CARROT JUICE (COLOR), CARNAUBA WAX, CONFECTIONER'S GLAZE, ARTIFICIAL VANILLA FLAVOR, YELLOW 5, YELLOW 6, RED 40, BLUE 1, RED 3. CANDY CANE STICKS: SUGAR, CORN SYRUP, WATER, ARTIFICIAL FLAVOR, TITANIUM DIOXIDE (COLOR), RED 40, YELLOW 5, BLUE 1, RED 3.",
     "perServing": {
       "protein": 0.999,
       "calories": 120,
       "carbs": 22,
       "fiber": 0,
-      "sugar": 15,
+      "sugar": 16,
       "fat": 2.5,
-      "servingSize": "1/28 KIT / 30 g",
+      "servingSize": "30 GRM / 30 g",
       "servingSizeG": 30
     }
   },
-  "openFoodFacts": {
-    "code": "0085239054789",
-    "product_name": "Pre-built house gingerbread kit",
-    "serving_size": "0.036 KIT (30 g)",
-    "perServing": {
-      "protein": 0.999,
-      "calories": 120,
-      "carbs": 22,
-      "fiber": 0,
-      "sugar": 15,
-      "fat": 2.5,
-      "servingSize": "0.036 KIT (30 g)",
-      "servingSizeG": 30
-    }
-  },
+  "openFoodFacts": null,
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 140,
+      "carbs": 15,
+      "fiber": 0,
+      "sugar": 8,
+      "fat": 2.5,
+      "servingSize": "1 bar (40 g)",
+      "servingSizeG": 40
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -113,8 +80,8 @@
     "fat": 2.5
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar (40 g)",
+    "servingSizeG": 40,
     "protein": 15,
     "calories": 140,
     "carbs": 15,

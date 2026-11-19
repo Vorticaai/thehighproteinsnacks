@@ -1,10 +1,10 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "GoMacro MacroBar peanut butter chocolate chip",
+  "query": "GoMacro MacroBar, Peanut Butter Chocolate Chip",
   "match": {
     "pinned": false,
     "confident": true,
-    "reason": "Brand matches and 80% of product words found.",
+    "reason": "Brand matches and 100% of product words found.",
     "chosen": {
       "fdcId": 2677577,
       "description": "PEANUT BUTTER CHOCOLATE CHIP MACROBAR, PEANUT BUTTER CHOCOLATE CHIP",
@@ -12,7 +12,7 @@
       "brandName": "GOMACRO",
       "gtinUpc": "181945000062",
       "publishedDate": "2023-11-16",
-      "score": 0.8,
+      "score": 1,
       "brandOk": true
     },
     "topCandidates": [
@@ -23,7 +23,7 @@
         "brandName": "GOMACRO",
         "gtinUpc": "181945000062",
         "publishedDate": "2023-11-16",
-        "score": 0.8,
+        "score": 1,
         "brandOk": true
       },
       {
@@ -33,7 +33,7 @@
         "brandName": "GOMACRO",
         "gtinUpc": "810039910610",
         "publishedDate": "2023-11-16",
-        "score": 0.8,
+        "score": 1,
         "brandOk": true
       },
       {
@@ -43,7 +43,7 @@
         "brandName": "GOMACRO",
         "gtinUpc": "853555006559",
         "publishedDate": "2023-11-16",
-        "score": 0.8,
+        "score": 1,
         "brandOk": true
       },
       {
@@ -53,7 +53,7 @@
         "brandName": "GOMACRO",
         "gtinUpc": "181945000802",
         "publishedDate": "2023-03-16",
-        "score": 0.8,
+        "score": 1,
         "brandOk": true
       },
       {
@@ -63,7 +63,7 @@
         "brandName": "GOMACRO",
         "gtinUpc": "810039910672",
         "publishedDate": "2023-03-16",
-        "score": 0.8,
+        "score": 1,
         "brandOk": true
       }
     ]
@@ -109,9 +109,20 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/018/194/500/0062/front_en.46.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 11,
+      "calories": 290,
+      "carbs": 39,
+      "fiber": 2,
+      "sugar": 8,
+      "fat": 10,
+      "servingSize": "1 bar",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (sugar: 14 vs 8)."
+      "USDA: USDA and Open Food Facts disagree (sugar: 14 vs 8).",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -125,13 +136,13 @@
     "fat": 10
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "1 bar",
     "servingSizeG": null,
     "protein": 11,
-    "calories": 260,
-    "carbs": 37,
+    "calories": 290,
+    "carbs": 39,
     "fiber": 2,
-    "sugar": 9,
+    "sugar": 8,
     "fat": 10
   }
 }

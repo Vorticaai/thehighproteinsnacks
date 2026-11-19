@@ -3,18 +3,18 @@
   "name": "IQBAR Peanut Butter Chip Bar",
   "brand": "IQBAR",
   "productType": "bar",
-  "buyUrl": "https://www.amazon.com/Protein-Peanut-Butter-Friendly-Alcohols/dp/B0876HZ2VX/ref=sr_1_1?tag=thehighprotei-20",
+  "buyUrl": "https://www.eatiqbar.com/products/peanut-butter-chip",
   "price": {
-    "perServing": 2.1,
+    "perServing": 3.17,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $38 for 12 bars (19 Nov 2026)."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar (45 g)",
+    "servingSizeG": 45,
     "protein": 12,
-    "calories": 180,
-    "carbs": 3,
+    "calories": 190,
+    "carbs": 17,
     "fiber": 9,
     "sugar": 1,
     "fat": 10
@@ -40,13 +40,29 @@
     "sourceUrl": "https://world.openfoodfacts.org/product/0850004554005"
   },
   "verification": {
-    "status": "needs-review",
-    "checkedAt": "2026-11-18",
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://www.eatiqbar.com/products/peanut-butter-chip",
+        "url": "https://cdn.shopify.com/s/files/1/1682/9837/files/PBC_Listing_Images_Blood_Glucose_Index_Chart.jpg",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 190,
+          "carbs": 17,
+          "fiber": 9,
+          "sugar": 1,
+          "fat": 10
+        }
+      }
+    ],
     "notes": [
       "Brand matches and 100% of product words found.",
-      "USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10).",
-      "Reviewer: IQBAR appears to have changed the recipe (USDA 180 kcal / 12 g fat vs Open Food Facts 160 kcal / 10 g). Needs the current label from iqbar.com or the package."
+      "USDA: USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10).",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values transcribed from the brand's own Nutrition Facts panel. The recipe has changed since the USDA record (now 190 kcal, 10 g fat)."
     ]
   }
 }

@@ -1,17 +1,17 @@
 {
   "id": "magic-spoon-peanut-butter-cereal",
-  "name": "Magic Spoon Peanut Butter Cereal (per serving)",
+  "name": "Magic Spoon Protein Cereal, Peanut Butter",
   "brand": "Magic Spoon",
   "productType": null,
-  "buyUrl": "https://www.amazon.com/Magic-Spoon-Cereal-Variety-6-Pack/dp/B0BX73JWBX/ref=sr_1_1?tag=thehighprotei-20",
+  "buyUrl": "https://magicspoon.com/products/peanut-butter-1-case-4-boxes",
   "price": {
-    "perServing": 10.5,
+    "perServing": 1.95,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $39 for 4 boxes of about 5 servings (19 Nov 2026)."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "about 1 cup (36 g)",
+    "servingSizeG": 36,
     "protein": 14,
     "calories": 170,
     "carbs": 10,
@@ -33,12 +33,29 @@
   },
   "image": null,
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://magicspoon.com/products/peanut-butter-1-case-4-boxes",
+        "url": "https://cdn.shopify.com/s/files/1/0081/3826/0542/products/MS_NFP_CORE_6.22.23_MS_PEANUT-BUTTER_NFP_AV032301-443660.png",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 170,
+          "carbs": 10,
+          "fiber": 1,
+          "sugar": 0,
+          "fat": 9
+        }
+      }
+    ],
     "notes": [
-      "Only 50% of product words found; needs a person to confirm.",
-      "No USDA label record found for this product."
+      "Only 67% of product words found; needs a person to confirm.",
+      "USDA: No USDA label record found for this product.",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values transcribed from the brand's own Nutrition Facts panel. Carbs include 5 g allulose, which the FDA doesn't count as sugar."
     ]
   }
 }

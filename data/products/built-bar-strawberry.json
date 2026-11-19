@@ -1,17 +1,17 @@
 {
   "id": "built-bar-strawberry",
-  "name": "Built Bar Strawberry",
+  "name": "Built Puff Strawberries 'N Cream",
   "brand": "Built Bar",
-  "productType": null,
-  "buyUrl": "https://www.amazon.com/BUILT-Puffs-Protein-Strawberries-Cream/dp/B0D1KD323N/ref=sr_1_5?tag=thehighprotei-20",
+  "productType": "bar",
+  "buyUrl": "https://built.com/products/strawberriesncream",
   "price": {
     "perServing": 2.5,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $29.99 for 12 bars (19 Nov 2026)."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar (40 g)",
+    "servingSizeG": 40,
     "protein": 15,
     "calories": 140,
     "carbs": 15,
@@ -33,12 +33,29 @@
   },
   "image": null,
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://built.com/products/strawberriesncream",
+        "url": "https://cdn.shopify.com/s/files/1/0119/4829/4202/files/Puff_StrawberriesNCream_Stack_12CT_NFP_250808.jpg",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 15,
+          "calories": 140,
+          "carbs": 15,
+          "fiber": 0,
+          "sugar": 8,
+          "fat": 2.5
+        }
+      }
+    ],
     "notes": [
       "Only 0% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values transcribed from the brand's own Nutrition Facts panel."
     ]
   }
 }

@@ -10,11 +10,11 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 Cookie / 40 g",
+    "servingSizeG": 40,
     "protein": 13,
-    "calories": 215,
-    "carbs": 10,
+    "calories": 220,
+    "carbs": 11,
     "fiber": 1,
     "sugar": 5,
     "fat": 13
@@ -28,8 +28,8 @@
   },
   "identifiers": {
     "asin": "B000FRUMBK",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "644225727832",
+    "fdcId": 2665580
   },
   "image": {
     "src": "/products/powercrunch-gluten-free-protein-wafer.jpg",
@@ -40,13 +40,41 @@
     "sourceUrl": "https://world.openfoodfacts.org/product/0644225727832"
   },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2665580",
+        "url": "https://fdc.nal.usda.gov/food-details/2665580/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 13,
+          "calories": 220,
+          "carbs": 11,
+          "fiber": 1,
+          "sugar": 5,
+          "fat": 13
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0644225727832",
+        "url": "https://world.openfoodfacts.org/product/0644225727832",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 5.2,
+          "calories": 220,
+          "carbs": 4.4,
+          "fiber": 0.4,
+          "sugar": 2,
+          "fat": 5.2
+        }
+      }
+    ],
     "notes": [
       "Pinned by a person after review.",
-      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5).",
-      "Reviewer: Power Crunch (Bionutritional Research Group) Triple Chocolate."
+      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5); a reviewer accepted the USDA label data: Open Food Facts values are scaled wrongly (5.2 g protein is 13 g x 0.4); calories agree; USDA holds the brand's own label data."
     ]
   }
 }

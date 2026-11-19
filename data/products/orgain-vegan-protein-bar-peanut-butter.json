@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 BAR / 40 g",
+    "servingSizeG": 40,
     "protein": 10,
     "calories": 150,
-    "carbs": 19,
-    "fiber": 1,
-    "sugar": 6,
-    "fat": 5
+    "carbs": 18,
+    "fiber": 3,
+    "sugar": 5,
+    "fat": 6
   },
   "claims": {
     "vegan": true,
@@ -28,8 +28,8 @@
   },
   "identifiers": {
     "asin": "B01HNTBGP8",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "851770006330",
+    "fdcId": 2608933
   },
   "image": {
     "src": "/products/orgain-vegan-protein-bar-peanut-butter.jpg",
@@ -40,13 +40,27 @@
     "sourceUrl": "https://world.openfoodfacts.org/product/0851770006330"
   },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2608933",
+        "url": "https://fdc.nal.usda.gov/food-details/2608933/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 150,
+          "carbs": 18,
+          "fiber": 3,
+          "sugar": 5,
+          "fat": 6
+        }
+      }
+    ],
     "notes": [
       "Pinned by a person after review.",
-      "USDA and Open Food Facts disagree (fiber: 3 vs 1).",
-      "Reviewer: Orgain's Peanut Butter Chocolate Chunk Protein Snack Bar."
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

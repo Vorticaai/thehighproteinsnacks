@@ -1,19 +1,98 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Built Brands cookies and cream protein bar",
+  "query": "Built Puff Cookies 'N Cream",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "No candidate from the same brand.",
-    "chosen": null,
-    "topCandidates": []
+    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2630531,
+      "description": "COOKIES 'N CREAM BAR, COOKIES N' CREAM",
+      "brandOwner": "Built Brands",
+      "brandName": "BUILT",
+      "gtinUpc": "0840229301300",
+      "publishedDate": "2023-08-31",
+      "score": 0.6666666666666666,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2630531,
+        "description": "COOKIES 'N CREAM BAR, COOKIES N' CREAM",
+        "brandOwner": "Built Brands",
+        "brandName": "BUILT",
+        "gtinUpc": "0840229301300",
+        "publishedDate": "2023-08-31",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2593310,
+        "description": "COOKIES 'N CREAM BARS, COOKIES 'N CREAM",
+        "brandOwner": "Built Brands",
+        "brandName": "BUILT",
+        "gtinUpc": "840229303762",
+        "publishedDate": "2023-06-29",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      }
+    ]
   },
-  "usda": null,
-  "openFoodFacts": null,
+  "usda": {
+    "fdcId": 2630531,
+    "description": "COOKIES 'N CREAM BAR, COOKIES N' CREAM",
+    "brandOwner": "Built Brands",
+    "brandName": "BUILT",
+    "gtinUpc": "0840229301300",
+    "servingSize": 48,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar (48g)",
+    "dataSource": "LI",
+    "modifiedDate": "7/10/2023",
+    "ingredients": "PROTEIN BLEND (WHEY PROTEIN ISOLATE, PARTIALLY HYDROLYZED WHEY PROTEIN ISOLATE), WATER, DARK CHOCOLATE (SUGAR, CHOCOLATE LIQUOR, COCOA BUTTER, MILKFAT, SOY LECITHIN, VANILLA), DIGESTION RESISTANT MALTODEXTRIN, GLYCERIN, ERYTHRITOL, GELATIN, NATURAL FLAVORS, CITRIC ACID, COCOA POWDER, NONFAT DRY MILK, CULTURED DEXTROSE",
+    "perServing": {
+      "protein": 17,
+      "calories": 130,
+      "carbs": 19,
+      "fiber": 6,
+      "sugar": 4,
+      "fat": 2.5,
+      "servingSize": "1 Bar (48g) / 48 g",
+      "servingSizeG": 48
+    }
+  },
+  "openFoodFacts": {
+    "code": "0840229301300",
+    "product_name": "COOKIES AND CREAM",
+    "brands": "Built",
+    "serving_size": "1 bar (40 g)",
+    "perServing": {
+      "protein": 17,
+      "calories": 150,
+      "carbs": 14,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 2.5,
+      "servingSize": "1 bar (40 g)",
+      "servingSizeG": 40
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/084/022/930/1300/front_en.3.400.jpg"
+  },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 17,
+      "calories": 150,
+      "carbs": 14,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 2.5,
+      "servingSize": "1 bar (40 g)",
+      "servingSizeG": 40
+    },
     "notes": [
-      "No USDA label record found for this product."
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -27,13 +106,13 @@
     "fat": 2
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar (40 g)",
+    "servingSizeG": 40,
     "protein": 17,
-    "calories": 140,
-    "carbs": 18,
-    "fiber": 6,
+    "calories": 150,
+    "carbs": 14,
+    "fiber": 0,
     "sugar": 7,
-    "fat": 2
+    "fat": 2.5
   }
 }

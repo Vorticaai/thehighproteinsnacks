@@ -1,20 +1,20 @@
 {
   "id": "iconic-protein-shake-cacao",
-  "name": "ICONIC Protein Shake – Café Mocha",
+  "name": "ICONIC Protein Drink, Café Latte",
   "brand": "ICONIC",
   "productType": null,
-  "buyUrl": "https://www.amazon.com/Iconic-Protein-Drinks-Cacao-Greens/dp/B07QNZM51V?tag=thehighprotei-20",
+  "buyUrl": "https://www.drinkiconic.com/products/cafe-latte",
   "price": {
-    "perServing": 2.66,
+    "perServing": 4.17,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Brand's own store: $49.99 for 12 bottles (19 Nov 2026)."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "1 bottle",
     "servingSizeG": null,
     "protein": 20,
     "calories": 140,
-    "carbs": 3,
+    "carbs": 8,
     "fiber": 4,
     "sugar": 0,
     "fat": 2.5
@@ -33,12 +33,29 @@
   },
   "image": null,
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://www.drinkiconic.com/products/cafe-latte",
+        "url": "https://cdn.shopify.com/s/files/1/1326/5521/files/CAFERTD.png",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 140,
+          "carbs": 8,
+          "fiber": 4,
+          "sugar": 0,
+          "fat": 2.5
+        }
+      }
+    ],
     "notes": [
-      "Only 0% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Only 67% of product words found; needs a person to confirm.",
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values transcribed from the brand's own Nutrition Facts panel. Café Mocha is no longer sold; this is the brand's coffee flavour, Café Latte."
     ]
   }
 }

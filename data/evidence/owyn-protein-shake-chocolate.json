@@ -1,59 +1,59 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "OWYN smooth chocolate protein shake",
+  "query": "OWYN Plant Protein Shake, Dark Chocolate",
   "match": {
     "pinned": false,
-    "confident": false,
-    "reason": "Only 40% of product words found; needs a person to confirm.",
+    "confident": true,
+    "reason": "Brand matches and 75% of product words found.",
     "chosen": {
-      "fdcId": 2670197,
-      "description": "SMOOTH VANILLA PROTEIN SHAKE, SMOOTH VANILLA",
+      "fdcId": 2670196,
+      "description": "DARK CHOCOLATE PROTEIN SHAKE, DARK CHOCOLATE",
       "brandOwner": "Only What You Need, Inc.",
       "brandName": "OWYN",
-      "gtinUpc": "856461008778",
+      "gtinUpc": "856461008716",
       "publishedDate": "2023-11-16",
-      "score": 0.4,
+      "score": 0.75,
       "brandOk": true
     },
     "topCandidates": [
       {
-        "fdcId": 2670197,
-        "description": "SMOOTH VANILLA PROTEIN SHAKE, SMOOTH VANILLA",
+        "fdcId": 2670196,
+        "description": "DARK CHOCOLATE PROTEIN SHAKE, DARK CHOCOLATE",
         "brandOwner": "Only What You Need, Inc.",
         "brandName": "OWYN",
-        "gtinUpc": "856461008778",
+        "gtinUpc": "856461008716",
         "publishedDate": "2023-11-16",
-        "score": 0.4,
+        "score": 0.75,
         "brandOk": true
       },
       {
-        "fdcId": 2510527,
-        "description": "SMOOTH VANILLA NON-DAIRY PROTEIN SHAKE, SMOOTH VANILLA",
-        "brandOwner": "Integrative Nutrition",
+        "fdcId": 2422511,
+        "description": "PLANT 32 G PROTEIN SHAKES, CHOCOLATE, CHOCOLATE",
+        "brandOwner": "Only What You Need, Inc.",
         "brandName": "OWYN",
-        "gtinUpc": "850043711162",
-        "publishedDate": "2023-03-16",
-        "score": 0.4,
+        "gtinUpc": "856461008662",
+        "publishedDate": "2022-12-22",
+        "score": 0.75,
         "brandOk": true
       }
     ]
   },
   "usda": {
-    "fdcId": 2670197,
-    "description": "SMOOTH VANILLA PROTEIN SHAKE, SMOOTH VANILLA",
+    "fdcId": 2670196,
+    "description": "DARK CHOCOLATE PROTEIN SHAKE, DARK CHOCOLATE",
     "brandOwner": "Only What You Need, Inc.",
     "brandName": "OWYN",
-    "gtinUpc": "856461008778",
+    "gtinUpc": "856461008716",
     "servingSize": 330,
     "servingSizeUnit": "MLT",
     "householdServingFullText": "11.15 fl oz",
     "dataSource": "LI",
     "modifiedDate": "2/3/2022",
-    "ingredients": "WATER, OWYN PROTEIN BLEND (PEA PROTEIN, ORGANIC PUMPKIN SEED PROTEIN, ORGANIC FLAX OIL), VEGETABLE FIBER, ORGANIC CANE SUGAR, SUNFLOWER OIL, NATURAL FLAVORS, SUNFLOWER LECITHIN, GUAR GUM, GREENS BLEND (BROCCOLI, SPINACH, KALE), MONK FRUIT EXTRACT, HIMALAYAN PINK SALT.",
+    "ingredients": "WATER, OWYN PROTEIN BLEND (PEA PROTEIN, ORGANIC PUMPKIN SEED PROTEIN, ORGANIC FLAX OIL), VEGETABLE FIBER, ORGANIC CANE SUGAR, SUNFLOWER OIL, COCOA POWDER, SUNFLOWER LECITHIN, NATURAL FLAVORS, HIMALAYAN PINK SALT, GUAR GUM, GREENS BLEND (BROCCOLI, SPINACH, KALE), MONK FRUIT EXTRACT.",
     "perServing": {
       "protein": 20,
       "calories": 172,
-      "carbs": 7.99,
+      "carbs": 9.01,
       "fiber": 4.95,
       "sugar": 3.99,
       "fat": 7,
@@ -61,11 +61,37 @@
       "servingSizeG": null
     }
   },
-  "openFoodFacts": null,
+  "openFoodFacts": {
+    "code": "0856461008716",
+    "product_name": "Owyn",
+    "brands": "Owyn",
+    "serving_size": "1 portion (11.15 fl oz)",
+    "perServing": {
+      "protein": 20,
+      "calories": 170,
+      "carbs": 9,
+      "fiber": 5,
+      "sugar": 4,
+      "fat": 7,
+      "servingSize": "1 portion (11.15 fl oz)",
+      "servingSizeG": 329.744525
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/646/100/8716/front_en.9.400.jpg"
+  },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 170,
+      "carbs": 9,
+      "fiber": 5,
+      "sugar": 4,
+      "fat": 7,
+      "servingSize": "11.15 fl oz / 330 ml",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -79,12 +105,12 @@
     "fat": 7
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "11.15 fl oz / 330 ml",
     "servingSizeG": null,
     "protein": 20,
-    "calories": 180,
+    "calories": 170,
     "carbs": 9,
-    "fiber": 3,
+    "fiber": 5,
     "sugar": 4,
     "fat": 7
   }

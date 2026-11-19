@@ -1,10 +1,10 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Magic Spoon peanut butter cereal",
+  "query": "Magic Spoon Protein Cereal, Peanut Butter",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "reason": "Only 67% of product words found; needs a person to confirm.",
     "chosen": {
       "fdcId": 2013976,
       "description": "BIG SPOON ROASTERS, PEANUT BUTTER",
@@ -12,7 +12,7 @@
       "brandName": "BIG SPOON ROASTERS",
       "gtinUpc": "793573184238",
       "publishedDate": "2021-10-28",
-      "score": 0.5,
+      "score": 0.6666666666666666,
       "brandOk": true
     },
     "topCandidates": [
@@ -23,7 +23,7 @@
         "brandName": "BIG SPOON ROASTERS",
         "gtinUpc": "793573184238",
         "publishedDate": "2021-10-28",
-        "score": 0.5,
+        "score": 0.6666666666666666,
         "brandOk": true
       },
       {
@@ -33,7 +33,7 @@
         "brandName": "BIG SPOON ROASTERS",
         "gtinUpc": "793573184245",
         "publishedDate": "2021-07-29",
-        "score": 0.5,
+        "score": 0.6666666666666666,
         "brandOk": true
       },
       {
@@ -43,7 +43,7 @@
         "brandName": "BIG SPOON ROASTERS",
         "gtinUpc": "793573184252",
         "publishedDate": "2021-07-29",
-        "score": 0.5,
+        "score": 0.6666666666666666,
         "brandOk": true
       },
       {
@@ -53,17 +53,7 @@
         "brandName": "BIG SPOON ROASTERS",
         "gtinUpc": "793573184276",
         "publishedDate": "2021-07-29",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1854276,
-        "description": "BIG SPOON ROASTERS, HANDCRAFTED NUT BUTTERS, PEANUT COCOA, PEANUT COCOA",
-        "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
-        "brandName": "BIG SPOON ROASTERS",
-        "gtinUpc": "793573184269",
-        "publishedDate": "2021-07-29",
-        "score": 0.5,
+        "score": 0.6666666666666666,
         "brandOk": true
       }
     ]
@@ -98,9 +88,20 @@
     }
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 14,
+      "calories": 170,
+      "carbs": 10,
+      "fiber": 1,
+      "sugar": 0,
+      "fat": 9,
+      "servingSize": "about 1 cup (36 g)",
+      "servingSizeG": 36
+    },
     "notes": [
-      "No USDA label record found for this product."
+      "USDA: No USDA label record found for this product.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -114,8 +115,8 @@
     "fat": 9
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "about 1 cup (36 g)",
+    "servingSizeG": 36,
     "protein": 14,
     "calories": 170,
     "carbs": 10,
