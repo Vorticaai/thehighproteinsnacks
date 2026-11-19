@@ -6,55 +6,53 @@
     "confident": true,
     "reason": "Pinned by a person after review.",
     "chosen": {
-      "fdcId": 2554461,
+      "fdcId": 1983177,
       "description": "(pinned)"
     },
     "topCandidates": []
   },
   "usda": {
-    "fdcId": 2554461,
-    "description": "ORIGINAL TURKEY STICKS, ORIGINAL TURKEY",
-    "brandOwner": "Jlabs Beauty",
+    "fdcId": 1983177,
+    "description": "ORIGINAL TURKEY FREE RANGE SNACK STICK, ORIGINAL TURKEY",
+    "brandOwner": "We Are The Chompians LLC",
     "brandName": "CHOMPS",
-    "gtinUpc": "850015892295",
+    "gtinUpc": "856584004329",
     "servingSize": 32,
-    "servingSizeUnit": "GRM",
-    "householdServingFullText": "",
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1.15 ONZ",
     "dataSource": "LI",
-    "modifiedDate": "3/16/2023",
-    "ingredients": "FREE RANGE TURKEY, WATER, SEA SALT, ENCAPSULATED LACTIC ACID, CULTURED CELERY POWDER (CELERY POWDER, SEA SALT), BLACK PEPPER, RED PEPPER, GARLIC POWDER, CORIANDER, STUFFED IN A BEEF COLLAGEN CASING",
+    "modifiedDate": "10/29/2019",
+    "ingredients": "TURKEY, WATER, SEA SALT, ENCAPSULATED LACTIC ACID, CULTURED CELERY POWDER (CELERY POWDER, SEA SALT), BLACK PEPPER, RED PEPPER, GARLIC POWDER, CORIANDER, STUFFED IN A BEEF COLLAGEN CASING.",
     "perServing": {
       "protein": 10,
-      "calories": 60.2,
+      "calories": 70.1,
       "carbs": 0,
       "fiber": 0,
       "sugar": 0,
-      "fat": 2.5,
-      "servingSize": "32 g",
+      "fat": 2,
+      "servingSize": "1.15 ONZ / 32 g",
       "servingSizeG": 32
     }
   },
   "openFoodFacts": {
-    "code": "0850015892295",
-    "product_name": "Original Turkey Sticks",
-    "brands": "CHOMPS",
+    "code": "0856584004329",
+    "product_name": "Original Turkey Flavor",
+    "brands": "Chomps",
     "serving_size": "1 stick (32 g)",
     "perServing": {
-      "protein": 10,
+      "protein": 12,
       "calories": 80,
       "carbs": 0,
-      "fiber": 0,
-      "sugar": 0,
-      "fat": 2.5,
+      "fat": 3.5,
       "servingSize": "1 stick (32 g)",
       "servingSizeG": 32
     },
-    "image_front_url": "https://images.openfoodfacts.org/images/products/085/001/589/2295/front_en.18.400.jpg"
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/658/400/4329/front_es.11.400.jpg"
   },
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA and Open Food Facts disagree (calories: 60 vs 80)."
+      "USDA and Open Food Facts disagree (protein: 10 vs 12)."
     ]
   },
   "before": {
