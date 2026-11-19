@@ -4,7 +4,7 @@ import Script from "next/script";
 import Link from "next/link";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { getGuideBySlug, getAllGuideSlugs, guides } from "@/data/guides";
-import { getAllProducts, type Product } from "@/lib/products";
+import { guideHref, resolveGuideProducts } from "@/lib/guides";
 import { absoluteUrl } from "@/lib/seo";
 import { SnackComparisonTable } from "@/components/snacks/SnackComparisonTable";
 import ProductCard from "@/components/snacks/ProductCard";
@@ -142,13 +142,6 @@ function AutoNutritionTable({ rows }: { rows: SnackTableRow[] }) {
   );
 }
 
-function toGuideProducts(ids: string[], products: Product[]) {
-  const map = new Map(products.map((p) => [p.id, p]));
-  return ids
-    .map((id) => map.get(id))
-    .filter((p): p is Product => Boolean(p));
-}
-
 function getRelatedGuides(currentSlug: string, relatedIds: string[]) {
   const pool = guides.filter((g) => g.slug !== currentSlug);
   const direct = relatedIds
@@ -167,11 +160,7 @@ export default function GuidePage({ params }: GuidePageProps) {
   const guide = getGuideBySlug(params.slug);
   if (!guide) notFound();
 
-  const allProducts = getAllProducts();
-  const recommendedProducts = toGuideProducts(
-    guide.recommendedSnackIds,
-    allProducts,
-  );
+  const recommendedProducts = resolveGuideProducts(guide.recommendedSnackIds);
 
   const breadcrumbItems = [
     { name: "Home", href: "/" },
@@ -255,7 +244,7 @@ export default function GuidePage({ params }: GuidePageProps) {
           <div className="flex flex-wrap gap-4 text-xs font-semibold uppercase tracking-wide text-gray-500">
             <span>Updated {guide.updatedDate}</span>
             <span>{guide.readingTimeMinutes} min read</span>
-            <span>{guide.recommendedSnackIds.length} featured snacks</span>
+            <span>{recommendedProducts.length} featured snacks</span>
           </div>
         </header>
 
@@ -387,7 +376,7 @@ export default function GuidePage({ params }: GuidePageProps) {
               {relatedGuides.map((related) => (
                 <Link
                   key={related.slug}
-                  href={`/guides/${related.slug}`}
+                  href={guideHref(related.slug)}
                   className="rounded-2xl border border-[#C6FF47] bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:ring-2 hover:ring-[#C6FF47]"
                 >
                   <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
