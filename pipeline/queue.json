@@ -1,77 +1,146 @@
 {
   "products": [
     {
-      "id": "halal-grassfed-beef-stick",
-      "manufacturer": {
-        "url": "https://sharifahalalsnacks.com/products/original-halal-beef-stick",
-        "panelUrl": "https://cdn.shopify.com/s/files/1/0397/0551/0037/products/beef-stick-original__75077.jpg",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "servingSize": "1 stick (31 g)",
-          "servingSizeG": 31,
-          "protein": 5,
-          "calories": 70,
-          "carbs": 1,
-          "fiber": 0,
-          "sugar": 1,
-          "fat": 4.5
-        }
-      },
-      "note": "Reviewer: values transcribed from the Nutrition Facts on Sharifa's own wrapper photo. The old figure of 9 g protein was wrong."
-    },
-    {
-      "id": "saffron-road-crunchy-chickpeas-sea-salt",
-      "query": "Saffron Road crunchy chickpeas sea salt",
+      "id": "pacific-gold-halal-beef-jerky-original",
+      "query": "Pacific Gold Halal Beef Jerky Original",
+      "note": "Costco sells this as a distinct Halal-labelled SKU (item 2007818, 12 oz bag) stating 11g protein per serving; letting USDA search find and verify the actual label rather than assuming it matches the standard (non-halal) Pacific Gold Original line.",
       "add": {
-        "name": "Saffron Road Crunchy Chickpeas, Sea Salt",
-        "brand": "Saffron Road",
-        "productType": "chips",
-        "buyUrl": "https://www.saffronroad.com/pages/chickpeas",
+        "name": "Pacific Gold Halal Beef Jerky, Original",
+        "brand": "Pacific Gold",
+        "productType": null,
+        "buyUrl": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
         "halal": {
-          "status": "certifier-named",
-          "certifier": "IFANCA",
+          "status": "brand-claim",
+          "certifier": null,
           "checkedAt": "2026-11-19",
           "evidence": [
             {
-              "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
-              "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
-              "kind": "brand"
-            },
-            {
-              "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
-              "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
+              "label": "Costco lists this Pacific Gold jerky under \"Certifications: Halal\"; no certifier is named.",
+              "url": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
               "kind": "retailer"
             }
           ],
-          "summary": "IFANCA-certified plant-based snack, named by the brand and printed on the package. Not yet confirmed on IFANCA's own list."
+          "summary": "Sold by Costco as Halal-certified; the retailer doesn't name the certifying body."
         }
       }
     },
     {
-      "id": "saffron-road-crunchy-chickpeas-bombay-spice",
-      "query": "Saffron Road crunchy chickpeas bombay spice",
+      "id": "supreme-beef-jerky-sweet-garlic",
+      "query": "Supreme Beef Jerky Sweet Garlic Halal",
+      "note": "Earlier attempts to transcribe Supreme's panels didn't pass the energy check (data/halal-brands.json). Trying USDA's own branded-food search instead of a hand-transcribed panel.",
       "add": {
-        "name": "Saffron Road Crunchy Chickpeas, Bombay Spice",
-        "brand": "Saffron Road",
-        "productType": "chips",
-        "buyUrl": "https://www.saffronroad.com/pages/chickpeas",
+        "name": "Supreme Beef Jerky, Sweet Garlic",
+        "brand": "Supreme Beef Jerky",
+        "productType": null,
+        "buyUrl": "https://supremebeefjerky.com/products/halal-beef-jerky-marinated-beef-jerky-handcrafted-gourmet-meat-snacks-2-5-oz-sweet-garlic",
         "halal": {
           "status": "certifier-named",
-          "certifier": "IFANCA",
+          "certifier": "Halal Food Standards Alliance of America (HFSAA)",
           "checkedAt": "2026-11-19",
           "evidence": [
             {
-              "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
-              "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
+              "label": "The brand's own product photos show the HFSAA \"Certified by\" mark and www.hfsaa.org on the bag.",
+              "url": "https://supremebeefjerky.com/products/halal-beef-jerky-marinated-beef-jerky-handcrafted-gourmet-meat-snacks-2-5-oz-sweet-garlic",
               "kind": "brand"
-            },
+            }
+          ],
+          "summary": "HFSAA mark printed on the packaging."
+        }
+      }
+    },
+    {
+      "id": "five-star-jerky-prime-halal-beef-jerky",
+      "query": "Five Star Jerky Prime Halal Beef Jerky",
+      "note": "No nutrition panel found by search (reviews cover taste/ingredients only); letting USDA search decide rather than guessing numbers.",
+      "add": {
+        "name": "Five Star Jerky, Prime Halal Beef Jerky",
+        "brand": "Five Star Jerky",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Five+Star+Jerky+Prime+Halal+Beef+Jerky",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "Halal Transactions of Omaha",
+          "checkedAt": "2026-11-19",
+          "evidence": [
             {
-              "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
-              "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
+              "label": "The company's Gulfood exhibitor profile says its Prime Halal line is certified by Halal Transactions of Omaha.",
+              "url": "https://www.gulfood.com/exhibitorslist-2024/five-star-jerky",
+              "kind": "brand"
+            }
+          ],
+          "summary": "The company names Halal Transactions of Omaha for its Prime Halal line. Not yet confirmed with the certifier."
+        }
+      }
+    },
+    {
+      "id": "mummified-jerky-original-halal-beef-jerky",
+      "query": "Mummified Jerky Original Halal Beef Jerky",
+      "note": "No nutrition panel found by search (reviews from 2018 cover taste/ingredients only); letting USDA search decide rather than guessing numbers.",
+      "add": {
+        "name": "Mummified Jerky, Original Halal Beef Jerky",
+        "brand": "Mummified Jerky",
+        "productType": null,
+        "buyUrl": "https://www.mummifiedjerky.com",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "Halal Transactions of Omaha",
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Jerky Ingredients reports the beef is certified by Halal Transactions of Omaha and the bag carries a halal mark (2018 reviews).",
+              "url": "https://jerkyingredients.com/?p=19055",
+              "kind": "press"
+            }
+          ],
+          "summary": "Certifier named in older reviews; check the current bag."
+        }
+      }
+    },
+    {
+      "id": "halals-best-original-beef-stick",
+      "query": "Halal's Best Original Beef Stick",
+      "note": "Brand's own site has no usable product page (per earlier research); Amazon listing gives 7g protein per stick but no full panel. Letting USDA search decide.",
+      "add": {
+        "name": "Halal's Best Original Beef Stick",
+        "brand": "Halal's Best",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/Halals-Best-Original-Sticks-protein/dp/B09JTT522L",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "Halal Transactions of Omaha",
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "The brand's Amazon listing says it is certified by Halal Transactions of Omaha and uses zabiha halal meat.",
+              "url": "https://www.amazon.com/Halals-Best-Original-Sticks-protein/dp/B09JTT522L",
               "kind": "retailer"
             }
           ],
-          "summary": "IFANCA-certified plant-based snack, named by the brand and printed on the package. Not yet confirmed on IFANCA's own list."
+          "summary": "Brand names Halal Transactions of Omaha as its certifier. Not yet confirmed with the certifier."
+        }
+      }
+    },
+    {
+      "id": "shahir-zabiha-halal-beef-stick",
+      "query": "Shahir Zabiha Halal Beef Stick",
+      "note": "No nutrition panel found by search; Amazon listing names no certifier. Letting USDA search decide rather than guessing numbers.",
+      "add": {
+        "name": "Shahir Zabiha Halal Beef Stick",
+        "brand": "Shahir",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/Shahir-Zabiha-Halal-Sticks-Ready/dp/B0FVB8RD16",
+        "halal": {
+          "status": "brand-claim",
+          "certifier": null,
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "The Amazon listing says \"halal certified\" and \"zabiha by hand\" without naming a certifier.",
+              "url": "https://www.amazon.com/Shahir-Zabiha-Halal-Sticks-Ready/dp/B0FVB8RD16",
+              "kind": "retailer"
+            }
+          ],
+          "summary": "Sold as halal-certified zabiha beef; certifier not named."
         }
       }
     }
