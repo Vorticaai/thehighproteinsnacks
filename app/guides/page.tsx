@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { guides } from "@/data/guides";
+import { guideHref, resolveGuideProducts } from "@/lib/guides";
 import { absoluteUrl } from "@/lib/seo";
 const PAGE_URL = `https://www.thehighproteinsnacks.com/guides`;
 
@@ -42,18 +43,6 @@ const featuredCategoryLinks = [
   { label: "Best Value Picks", href: "/snacks/best-value" },
   { label: "Vegan Snacks", href: "/snacks/vegan" },
 ];
-
-// Two data/guides.ts slugs now permanently redirect to the standalone
-// "best-high-protein-snacks-for-*" pages (see next.config.mjs) — link
-// straight to the real destination instead of through the redirect.
-const REDIRECTED_GUIDE_HREFS: Record<string, string> = {
-  "best-high-protein-snacks-for-weight-loss": "/best-high-protein-snacks-for-weight-loss",
-  "best-keto-snacks": "/best-high-protein-snacks-for-keto",
-};
-
-function guideHref(slug: string) {
-  return REDIRECTED_GUIDE_HREFS[slug] ?? `/guides/${slug}`;
-}
 
 // Standalone guide pages that have no data/guides.ts entry at all. Without
 // this, these had no internal link from anywhere on the site.
@@ -144,15 +133,14 @@ export default function GuidesPage() {
         <Breadcrumbs items={breadcrumbItems} />
         <header className="mb-12">
           <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#C6FF47]">
-            EXPERT INSIGHTS
+            COMPARISON GUIDES
           </p>
           <h1 className="font-display mb-4 text-3xl font-bold text-gray-900 md:text-4xl">
             Buying Guides
           </h1>
           <p className="text-gray-600">
-            Shortcut your research with data-driven breakdowns of the
-            best snacks for every diet goal. Every pick is sourced from our CSV
-            database so macros stay honest.
+            Breakdowns of the best snacks for a specific goal, pulled from the
+            same product data and category rules used throughout the site.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             {featuredCategoryLinks.map((link) => (
@@ -177,7 +165,7 @@ export default function GuidesPage() {
               >
                 <div className="mb-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-gray-500">
                   <span>{guide.readingTimeMinutes} min read</span>
-                  <span>{guide.recommendedSnackIds.length} products</span>
+                  <span>{resolveGuideProducts(guide.recommendedSnackIds).length} products</span>
                 </div>
                 <h2 className="mb-3 text-xl font-bold text-gray-900">
                   {guide.title}

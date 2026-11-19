@@ -256,7 +256,7 @@ export const guides: Guide[] = [
     ],
     author: "The High-Protein Snacks Team",
     publishedDate: "2025-01-20",
-    updatedDate: "2025-01-20",
+    updatedDate: "2026-11-19",
     readingTimeMinutes: 9,
 
     recommendedSnackIds: [
@@ -287,7 +287,7 @@ export const guides: Guide[] = [
         {
           heading: "How We Picked These Budget Snacks",
           content:
-            "Selection criteria: (1) Maximum price $2.00 per serving. (2) Minimum 12g protein per serving. (3) Calories between 120-260 to ensure reasonable portion sizes. (4) Protein per dollar ratio of at least 7g/$1. (5) Verified ratings and real user reviews where available. (6) No ultra-processed ingredient lists where possible—we prioritized recognizable proteins (whey, egg white, pea) and natural sweeteners over the absolute cheapest options that cut corners on quality.",
+            "Selection criteria: (1) Maximum price $2.00 per serving. (2) Minimum 12g protein per serving. (3) Calories between 120-260 to ensure reasonable portion sizes. (4) Protein per dollar ratio of at least 7g/$1. (5) Recognizable protein sources (whey, egg white, pea) over ultra-processed ingredient lists, where a product at that price point offered a choice. We don't use star ratings or reviews anywhere on this site — every number above comes from the same label-sourced nutrition and price data shown in the comparison below.",
         },
         {
           heading: "Top 7 Products Ranked by Value",
@@ -353,7 +353,7 @@ export const guides: Guide[] = [
     slug: "best-vegan-high-protein-snacks",
     title: "Best Vegan High-Protein Snacks: Plant-Based Protein on the Go",
     description:
-      "The best vegan and dairy-free high-protein snacks that deliver 12–20g of protein with clean ingredients and no animal products.",
+      "Vegan high-protein snacks with 10–21g of protein per serving, verified against label data and compared on protein, sugar, calories and price.",
     metaDescription:
       "Best vegan high-protein snacks for plant-based eaters. Compare macros, ingredients, and value so you can hit your protein goals without dairy, eggs, or meat.",
     keywords: [
@@ -365,23 +365,20 @@ export const guides: Guide[] = [
     ],
     author: "The High-Protein Snacks Team",
     publishedDate: "2025-01-20",
-    updatedDate: "2025-01-20",
+    updatedDate: "2026-11-19",
     readingTimeMinutes: 9,
 
-    // NOTE: These should be mapped to your actually vegan products in data/snacks.ts.
-    // All slugs here already exist elsewhere in guides so they are safe structurally.
-    // Recommendations
+    // Every id below is checked by tests/guides.test.ts against the live
+    // catalogue's vegan flag, so a product that isn't actually vegan (or
+    // that gets renamed/removed) can't silently sit in this list again.
     recommendedSnackIds: [
-      "no-cow-peanut-butter-choc-chip",
-      "no-cow-chocolate-fudge",
-      "orgain-protein-bar-peanut-butter",
+      "no-cow-protein-bar-chocolate-fudge",
+      "orgain-clean-protein-shake",
+      "owyn-protein-shake-chocolate",
       "iqbar-peanut-butter-chip",
       "iqbar-chocolate-sea-salt",
-      "kind-protein-bar-dark-chocolate-nut"
+      "orgain-vegan-protein-bar-peanut-butter",
     ],
-    
-
-
     relatedGuideIds: [
       "best-high-protein-snacks-for-weight-loss",
       "best-keto-snacks",
@@ -391,86 +388,62 @@ export const guides: Guide[] = [
 
     content: {
       introduction:
-        "Going vegan doesn't mean giving up high-protein snacks—it just means choosing smarter sources. The best plant-based options deliver 12–20g protein per serving using peas, nuts, seeds, and brown rice instead of whey or casein. IQBAR, KIND, and selected chips and bars provide serious protein with no dairy or eggs, making it easier to hit your targets whether you're fully vegan or just dairy-sensitive.",
+        "Going vegan doesn't rule out high-protein snacking — it just narrows the field to plant proteins like pea, soy and brown rice instead of whey or casein. The picks below are vegan products from our directory, chosen for protein density and verified against label data; the table further down shows each one's real protein, calories, sugar and price so you can compare them directly.",
       sections: [
         {
-          heading: "Why Vegan Protein Snacks Matter",
+          heading: "Why a Vegan Snack Isn't Automatically a Downgrade",
           content:
-            "Most conventional protein snacks rely on whey, casein, or egg whites. Those work great for protein—but not if you're vegan, lactose intolerant, or simply prefer plant-based foods. Well-designed vegan snacks: (1) Support muscle maintenance with complete or complementary proteins. (2) Reduce digestive discomfort for people who react to dairy. (3) Align with ethical or environmental goals. (4) Make it easier to get 80–120g protein per day without relying on giant servings of beans or tofu at every meal.",
+            "A common assumption is that plant-based protein can't match whey for density or completeness. In practice, pea and soy protein isolates are close to whey on protein-per-gram, and blending two plant sources (pea plus rice, for example) covers the amino acids either one is lower in on its own. The main practical differences are taste and texture, which come down to personal preference, and price, since plant proteins are often slightly more expensive to source.",
         },
         {
-          heading: "How to Choose a High-Protein Vegan Snack",
+          heading: "What to Check on a Vegan Snack's Label",
           content:
-            "Focus on four things: (1) Protein quality—look for pea, soy, brown rice, or blends that create a complete amino acid profile. Nuts alone are great for healthy fats but not protein-dense enough. (2) Protein density—aim for 12–20g protein per bar or bag, with at least 0.07–0.1g protein per calorie. (3) Sugar and carbs—keep added sugar in single digits to avoid crashes, and prefer fiber-rich carbs from oats or chicory root. (4) Ingredient list—short, recognizable ingredients beat ultra-processed soy crisps with a paragraph of additives.",
+            "Three things matter most: (1) the protein source — pea, soy, brown rice or a blend are the common ones; nuts and seeds add healthy fat but aren't protein-dense enough to carry a bar on their own. (2) Sugar — some vegan bars lean on dates or other whole-food sweeteners, which still count as sugar on the label even though they're not 'added sugar' in the marketing sense. (3) Whether it's labeled vegan at all versus just dairy-free — a dairy-free snack can still contain egg white protein, which isn't vegan.",
         },
         {
-          heading: "Top 7 Vegan Products Ranked",
-          content:
-  "After analyzing protein density, macro balance, satiety, and price value, these 7 options deliver the best high-protein snacking for vegan or dairy-sensitive eaters. Fully vegan options include No Cow Peanut Butter Chocolate Chip (20g protein, low sugar), No Cow Chocolate Fudge Brownie (20g protein, rich chocolate taste), Orgain Peanut Butter Bar (10g protein, organic ingredients), IQBAR Peanut Butter Chip (12g protein, clean-label), and IQBAR Chocolate Sea Salt (12g protein, 6g fiber). Plant-leaning dairy-free options such as Quest Protein Chips Nacho Cheese (18–19g protein) provide great macros but use processed ingredients, so strict vegans may prefer to skip them. This ranking prioritizes strong protein-per-calorie efficiency, fiber content, and recognizable ingredient lists."
- },
-        {
-          heading: "Quick Comparison: Protein, Calories & Sugar",
+          heading: "This Guide's Picks",
           type: "comparison",
-          content: `
-| Snack | Protein | Calories | Sugar |
-| --- | --- | --- | --- |
-| No Cow Peanut Butter Chocolate Chip | 20g | 200 | 1g |
-| No Cow Chocolate Fudge Brownie | 20g | 190 | 1g |
-| Orgain Peanut Butter Bar | 10g | 150 | 5g |
-| IQBAR Peanut Butter Chip | 12g | 180 | 1g |
-| IQBAR Chocolate Sea Salt | 12g | 170 | 1g |
-| Quest Protein Chips Nacho Cheese | 18g | 140 | 1g |
-          `,
+          content:
+            "Ranked by protein per serving among the vegan-flagged products in our directory. Every number in the table is the same verified nutrition and price data shown on each product's own page — nothing here is restated from memory or rounded for the guide.",
         },
         {
           heading: "Common Vegan Snacking Mistakes",
           content:
-            "Mistake 1: Relying only on nuts and dried fruit. They taste great but often deliver just 4–6g protein per serving with a lot of sugar and fat. Mistake 2: Assuming “vegan” automatically means healthy—some bars are basically candy with a soy protein dusting. Mistake 3: Underestimating total protein needs—many plant-based eaters sit around 40–60g protein per day when they actually need 70–110g depending on body weight. Mistake 4: Ignoring amino acid completeness—rotating only one protein source (like pea) can leave small gaps; blends fix this.",
-        },
-        {
-          heading: "Sample Day: Hitting Protein on a Vegan or Plant-Leaning Diet",
-          content:
-            "Here’s a realistic 90–110g protein day using one to two snacks: Breakfast: Overnight oats with soy milk, chia seeds, and peanut butter (~22g protein). Mid-morning: IQBAR Peanut Butter Chip (~12g). Lunch: Lentil and quinoa bowl with mixed veggies (~28g). Afternoon: KIND Protein Bar Dark Chocolate Nut (~12g). Dinner: Tofu stir-fry with brown rice (~26–30g). Total: roughly 100g protein, with your bars and chips acting as plug-and-play “gaps fillers” between meals so you don’t have to overeat at lunch or dinner.",
+            "A few patterns worth watching for: relying only on nuts and dried fruit, which taste great but are usually light on protein and heavy on sugar and fat per serving; assuming 'vegan' means low-calorie or low-sugar, since plenty of vegan bars are built more like a candy bar than a protein bar; and rotating only one protein source. Pea, soy, rice and seed proteins each have a slightly different amino acid profile, so mixing sources (or picking a blend) is generally a better bet than sticking to just one.",
         },
       ],
     },
 
     faqs: [
       {
-        question: "Can you build muscle with vegan protein snacks?",
+        question: "Can you build muscle on vegan protein snacks alone?",
         answer:
-          "Yes. Muscle growth cares about total protein, amino acid profile, and progressive resistance training—not whether the protein came from whey or peas. As long as your daily intake is high enough (typically 0.7–1.0g per pound of goal body weight) and you train consistently, vegan protein snacks are just as effective as dairy-based options.",
+          "Muscle growth depends on total daily protein, amino acid variety and resistance training — not on whether the protein came from whey or peas. Plant proteins work for this as long as you're getting enough of them and varying your sources; they're not inherently less effective, just different in taste and texture.",
       },
       {
-        question: "What are the best protein sources for vegan snacks?",
+        question: "What are the most common vegan protein sources in these snacks?",
         answer:
-          "Pea protein, brown rice protein, soy, and seed blends (hemp, pumpkin, chia) are the big four. Many brands combine pea and rice to create a complete amino acid profile similar to whey. Nuts add healthy fats and texture but shouldn’t be your only protein source if you’re chasing higher numbers.",
+          "Pea protein, soy protein isolate, and brown rice protein are the three you'll see most often, frequently blended together. Nuts, seeds and oats show up too, mostly for texture, fiber and healthy fats rather than as the main protein source.",
       },
       {
-        question: "Are all the snacks in this guide 100% vegan?",
+        question: "Is everything in this guide strictly vegan, or just dairy-free?",
         answer:
-          "The top-ranked snacks include both strictly vegan options and high-protein dairy-free options. Products like No Cow and IQBAR are fully vegan. RXBAR options use egg white protein — suitable for dairy-free or 'plant-leaning' diets but not for strict vegans. Each card is clearly labeled so you can choose based on your personal dietary preference.",
-      },
-      
-      {
-        question: "Are vegan protein bars easier to digest?",
-        answer:
-          "For a lot of people, yes—especially those with lactose intolerance or sensitivity to whey. That said, some plant-based bars use large amounts of chicory root fiber or sugar alcohols, which can cause bloating. If you’re prone to digestive issues, start with half a bar and look for options with 5–8g fiber instead of 15g+.",
+          "Everything recommended here is flagged vegan in our product data, not just dairy-free. That distinction matters because some dairy-free snacks still use egg white protein, which isn't vegan — we keep those out of this specific list, though you may see them elsewhere on the site labeled dairy-free rather than vegan.",
       },
       {
-        question: "How much protein should a vegan snack have?",
+        question: "Are plant-based protein snacks easier to digest than whey-based ones?",
         answer:
-          "Aim for at least 12g per snack, with 15–20g being ideal if you’re using snacks as a key part of your daily intake. Below 10g, you’re mostly eating carbs and fat with a small protein bonus. Above 20g is great, but only if calories and sugar stay reasonable.",
+          "For people with a dairy or whey sensitivity, often yes. That said, some plant-based bars use a lot of fiber from chicory root or similar sources, which can cause its own digestive discomfort in large amounts. If you're prone to bloating, check the fiber content on the label and consider starting with half a serving.",
       },
       {
-        question: "Can I just use protein powder instead of bars?",
+        question: "How much protein should I look for in a vegan snack?",
         answer:
-          "You can. Powder is usually cheaper per gram of protein and very flexible. Bars and chips win when you’re travelling, commuting, or need something you can throw in a bag with no shaker bottle. Many people use powder at home and keep 1–2 vegan-friendly bars in their bag or desk for emergencies.",
+          "There's no universal number — it depends on the rest of your day. As a rough reference point, most of the snacks in our directory's vegan category fall between 10g and 21g of protein per serving; the comparison table above shows exactly where each pick lands.",
       },
       {
-        question: "Do I need different protein targets as a vegan?",
+        question: "Can I just use a vegan protein powder instead of bars or shakes?",
         answer:
-          "Your target doesn’t change just because you’re plant-based—you still want roughly 0.7–1.0g of protein per pound of goal body weight. The only difference is that you’ll need to be more intentional about sources and combinations. A couple of high-quality vegan snacks each day makes that much easier.",
+          "Yes — powder is usually cheaper per gram of protein and more flexible for home use. Ready-to-eat bars, chips and shakes mainly win on convenience when you're out, at work, or don't have a shaker bottle handy.",
       },
     ],
   },
@@ -479,9 +452,9 @@ export const guides: Guide[] = [
     slug: "best-low-sugar-high-protein-snacks",
     title: "Best Low-Sugar High-Protein Snacks",
     description:
-      "Snacks with 1–3g sugar and 12–20g protein — perfect for weight loss, clean eating, and blood-sugar control.",
+      "High-protein snacks with 3g of sugar or less per serving, verified against label data and compared on protein, calories and price.",
     metaDescription:
-      "Low-sugar high-protein snacks compared. Bars and chips with 1–3g sugar and 12–20g protein.",
+      "Low-sugar high-protein snacks compared. Bars and chips with 3g of sugar or less and 12–21g protein.",
     keywords: [
       "low sugar high protein snacks",
       "low sugar protein bars",
@@ -491,94 +464,78 @@ export const guides: Guide[] = [
     ],
     author: "The High-Protein Snacks Team",
     publishedDate: "2025-02-01",
-    updatedDate: "2025-02-01",
+    updatedDate: "2026-11-19",
     readingTimeMinutes: 8,
-  
+
+    // Every id below is checked by tests/guides.test.ts against the live
+    // catalogue, so a renamed or removed product can't silently sit in
+    // this list again.
     recommendedSnackIds: [
       "quest-choc-chip-cookie-dough",
       "quest-cookies-cream",
-      "no-cow-peanut-butter-choc-chip",
-      "no-cow-chocolate-fudge",
-      "quest-nacho-cheese-chips",
+      "no-cow-protein-bar-chocolate-fudge",
+      "quest-protein-chips-nacho-cheese",
       "quest-ranch-protein-chips",
       "iqbar-peanut-butter-chip",
     ],
-  
+
     relatedGuideIds: [
       "best-high-protein-snacks-for-weight-loss",
       "best-budget-snacks",
       "best-vegan-high-protein-snacks",
     ],
     relatedCategoryIds: ["low-sugar", "high-protein", "keto"],
-  
+
     content: {
       introduction:
-        "If you want to stay full, satisfied, and in control of your hunger without the sugar crash — these snacks deliver. We analyzed 40+ top-selling products and handpicked the ones with **1–3g sugar** and **12–20g protein** per serving.",
-  
+        "If you want to stay full and satisfied without a sugar crash, these snacks are built for that: every one is pulled from our directory's low-sugar category, which means 3g of sugar or less per serving — the same rule used on the low-sugar filter page.",
+
       sections: [
         {
-          heading: "Top Picks Under 3g Sugar",
+          heading: "This Guide's Picks",
           type: "comparison",
           content:
-            "These 7 snacks are the **best blend of protein density, fiber, and clean energy**, while keeping sugar extremely low. Ideal for: weight-loss phases, low-sugar diets, carb-conscious tracking, or anyone who wants protein without candy disguised as a snack.",
+            "Ranked by protein per serving among our verified low-sugar products. The table below shows each one's real protein, calories, sugar and price per serving, sourced the same way as every product page on this site.",
         },
-  
+
         {
-          heading: "Why Low Sugar + High Protein Works",
+          heading: "Why Low Sugar and High Protein Pair Well",
           content:
-            "When sugar is low but protein is high, your hunger signals normalize — helping you snack smarter without overeating later. That’s why these snacks support cravings control, weight loss, and better energy levels.",
+            "Protein is the most filling macronutrient for most people gram-for-gram, and a snack with little sugar is less likely to cause the quick rise and fall in blood sugar that can leave you hungry again soon after. That's a reasonable general pattern, not a guarantee for any individual — how a given snack affects you depends on the rest of your diet and on you.",
         },
-  
+
         {
-          heading: "What Counts as Low-Sugar?",
+          heading: "What Counts as Low-Sugar Here",
           content:
-            "We use a science-backed standard: **3g sugar or less per serving** from added or natural sources. We allow sugar alcohols like erythritol because they don’t spike blood glucose and align with consumer expectations for low-sugar bars.",
+            "Our rule is 3g of sugar or less per serving, counting both added and naturally occurring sugar. We don't carve out an exception for sugar alcohols (erythritol, allulose, and similar); if a label lists them separately from sugar, check the product's own nutrition panel for the breakdown rather than assuming they're excluded.",
         },
-  
-        {
-          heading: "Quick Comparison: Protein, Calories & Sugar",
-          type: "comparison",
-          content: `
-| Snack | Protein | Calories | Sugar |
-| --- | --- | --- | --- |
-| Quest Cookies & Cream | 21g | 190 | 1g |
-| No Cow PB Choc Chip | 20g | 200 | 1g |
-| No Cow Chocolate Fudge | 20g | 190 | 1g |
-| IQBAR Peanut Butter Chip | 12g | 180 | 2g |
-| Quest Nacho Cheese Chips | 18g | 140 | 1g |
-| Quest Ranch Protein Chips | 19g | 140 | 1g |
-        `,
-        },
-        
-        
-  
+
         {
           heading: "Common Mistakes People Make",
           content:
-            "Avoid snacks that are labeled high protein but still pack **10–14g sugar** — they cause the same blood sugar spike as candy bars. Also watch out for high-fat trail mixes pretending to be “fitness snacks.”",
+            "A bar can be marketed around its protein number while still carrying 10g or more of sugar — read the nutrition panel, not just the front of the packet. The same goes for trail mixes and granola-style snacks marketed as 'fitness' products: nuts and dried fruit are often higher in sugar and fat than a protein bar built around a protein isolate.",
         },
       ],
     },
-  
+
     faqs: [
       {
-        question: "Are sugar alcohols okay?",
+        question: "Are sugar alcohols in low-sugar bars okay to eat?",
         answer:
-          "Yes for most people — they don’t spike blood sugar. But if you get digestive issues, start with half a bar.",
+          "Most people tolerate sugar alcohols like erythritol and allulose without a blood-sugar spike, which is why they're common in low-sugar bars. A minority of people get digestive discomfort (bloating, a laxative effect) from them, especially in larger amounts, so it's worth trying one bar before buying a box.",
       },
       {
-        question: "Are these snacks good for diabetics?",
+        question: "Are low-sugar, high-protein snacks suitable for diabetics?",
         answer:
-          "They are **far better** than high-sugar bars, but always check total carbs and talk to your dietitian if diabetic.",
+          "This varies by individual and by how someone's diabetes is managed, so we can't make a blanket claim either way. Checking total carbohydrates (not just sugar) on the label and talking to your doctor or dietitian about how a specific product fits your plan is the right approach here — this guide isn't medical advice.",
       },
       {
-        question: "Can this help weight loss?",
+        question: "Does eating low-sugar snacks help with weight loss?",
         answer:
-          "Absolutely. Protein suppresses hunger, and low sugar prevents cravings from returning 1–2 hours later.",
+          "Not on its own — weight loss comes down to overall calorie intake versus what you burn. A low-sugar, high-protein snack can make it easier to stick to a calorie target by keeping you fuller for longer, but it doesn't cause weight loss by itself.",
       },
     ],
-  }
-  
+  },
 ]
 
 // Helper to get guide by slug

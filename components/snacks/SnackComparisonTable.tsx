@@ -35,17 +35,15 @@ export function SnackComparisonTable({ snacks, title }: Props) {
                   ? snack.proteinPerServing / snack.sugarPerServing
                   : snack.proteinPerServing
 
-              const link = snack.buyUrl || "#"
-
               return (
                 <tr
                   key={snack.id}
                   className="border-t border-gray-200 hover:bg-gray-50 transition"
                 >
                   <td className="px-3 py-2 font-medium text-[#006F6D] underline underline-offset-2">
-                    <Link href={link} target={snack.buyUrl ? "_blank" : "_self"}>
-                      {snack.name}
-                    </Link>
+                    {/* Internal link to the product page, matching ProductCard's
+                        pattern below this table — not a raw affiliate link. */}
+                    <Link href={`/snacks/${snack.id}`}>{snack.name}</Link>
                   </td>
                   <td className="px-3 py-2">{snack.proteinPerServing}g</td>
                   <td className="px-3 py-2">{snack.sugarPerServing}g</td>
