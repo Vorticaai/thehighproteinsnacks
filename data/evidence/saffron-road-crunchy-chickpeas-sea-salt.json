@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Saffron Road crunchy chickpeas sea salt",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2609129,
+      "description": "SEA SALT ORGANIC CRUNCHY CHICKPEAS, SEA SALT",
+      "brandOwner": "American Halal Company, Inc. ",
+      "brandName": "SAFFRON ROAD",
+      "gtinUpc": "857063002935",
+      "publishedDate": "2023-07-13",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2609129,
+        "description": "SEA SALT ORGANIC CRUNCHY CHICKPEAS, SEA SALT",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "857063002935",
+        "publishedDate": "2023-07-13",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2608894,
+        "description": "SEA SALT & CRACKED PEPPER CRUNCHY CHICKPEAS, SEA SALT & CRACKED PEPPER",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "850446008975",
+        "publishedDate": "2023-07-13",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1955128,
+        "description": "SEA SALT CRUNCHY CHICKPEAS, SEA SALT",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "857063002492",
+        "publishedDate": "2021-07-29",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2409563,
+        "description": "SEA SALT CHICKPEA CHICKBEAN CRISPS, SEA SALT",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "850446008401",
+        "publishedDate": "2022-12-22",
+        "score": 0.75,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1883693,
+        "description": "SAFFRON ROAD, BEAN STALKS, SEA SALT, SEA SALT",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "854487006372",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2609129,
+    "description": "SEA SALT ORGANIC CRUNCHY CHICKPEAS, SEA SALT",
+    "brandOwner": "American Halal Company, Inc. ",
+    "brandName": "SAFFRON ROAD",
+    "gtinUpc": "857063002935",
+    "servingSize": 30,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1/4 cup",
+    "dataSource": "LI",
+    "modifiedDate": "6/30/2023",
+    "ingredients": "ORGANIC CHICKPEAS, ORGANIC EXPELLER PRESSED CANOLA AND/OR ORGANIC SUNFLOWER OIL, SEA SALT, ORGANIC ROSEMARY EXTRACT, ASCORBIC ACID.",
+    "perServing": {
+      "protein": 6,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5.01,
+      "sugar": 0.999,
+      "fat": 4,
+      "servingSize": "1/4 cup / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": {
+    "code": "0857063002935",
+    "product_name": "Organic Crunchy Chickpeas sea salt",
+    "brands": "Saffron Road",
+    "serving_size": "1 serving (30 g)",
+    "perServing": {
+      "protein": 6,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "1 serving (30 g)",
+      "servingSizeG": 30
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/706/300/2935/front_en.15.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 6,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "1/4 cup / 30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1/4 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 6,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 4
+  }
+}

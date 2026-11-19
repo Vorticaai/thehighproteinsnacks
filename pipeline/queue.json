@@ -1,179 +1,79 @@
 {
   "products": [
     {
-      "id": "iqbar-peanut-butter-chip",
+      "id": "halal-grassfed-beef-stick",
       "manufacturer": {
-        "url": "https://www.eatiqbar.com/products/peanut-butter-chip",
+        "url": "https://sharifahalalsnacks.com/products/original-halal-beef-stick",
+        "panelUrl": "https://cdn.shopify.com/s/files/1/0397/0551/0037/products/beef-stick-original__75077.jpg",
         "transcribedAt": "2026-11-19",
         "values": {
-          "protein": 12,
-          "calories": 190,
-          "carbs": 17,
-          "fiber": 9,
+          "servingSize": "1 stick (31 g)",
+          "servingSizeG": 31,
+          "protein": 5,
+          "calories": 70,
+          "carbs": 1,
+          "fiber": 0,
           "sugar": 1,
-          "fat": 10,
-          "servingSize": "1 bar (45 g)",
-          "servingSizeG": 45
-        },
-        "panelUrl": "https://cdn.shopify.com/s/files/1/1682/9837/files/PBC_Listing_Images_Blood_Glucose_Index_Chart.jpg"
-      },
-      "note": "Reviewer: values transcribed from the brand's own Nutrition Facts panel. The recipe has changed since the USDA record (now 190 kcal, 10 g fat)."
-    },
-    {
-      "id": "iqbar-blueberry-lemon",
-      "manufacturer": {
-        "url": "https://www.eatiqbar.com/products/lemon-blueberry",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 12,
-          "calories": 180,
-          "carbs": 16,
-          "fiber": 8,
-          "sugar": 2,
-          "fat": 10,
-          "servingSize": "1 bar (45 g)",
-          "servingSizeG": 45
-        },
-        "panelUrl": "https://cdn.shopify.com/s/files/1/1682/9837/files/LB_Listing_Images_Blood_Glucose_Index_Chart.jpg"
-      },
-      "note": "Reviewer: values transcribed from the brand's own Nutrition Facts panel."
-    },
-    {
-      "id": "built-bar-cookies-cream",
-      "manufacturer": {
-        "url": "https://built.com/products/cookies-n-cream-puff",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 17,
-          "calories": 150,
-          "carbs": 14,
-          "fiber": 0,
-          "sugar": 7,
-          "fat": 2.5,
-          "servingSize": "1 bar (40 g)",
-          "servingSizeG": 40
-        },
-        "panelUrl": "https://cdn.shopify.com/s/files/1/0119/4829/4202/files/Puff_CookiesNCream_Stack_12CT_NFP_250808_f7ba5414-f0c0-4a96-b0c7-9bdb26b3c4a1.jpg"
-      },
-      "note": "Reviewer: values transcribed from the brand's own Nutrition Facts panel."
-    },
-    {
-      "id": "built-bar-strawberry",
-      "manufacturer": {
-        "url": "https://built.com/products/strawberriesncream",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 15,
-          "calories": 140,
-          "carbs": 15,
-          "fiber": 0,
-          "sugar": 8,
-          "fat": 2.5,
-          "servingSize": "1 bar (40 g)",
-          "servingSizeG": 40
-        },
-        "panelUrl": "https://cdn.shopify.com/s/files/1/0119/4829/4202/files/Puff_StrawberriesNCream_Stack_12CT_NFP_250808.jpg"
-      },
-      "note": "Reviewer: values transcribed from the brand's own Nutrition Facts panel."
-    },
-    {
-      "id": "gomacro-peanut-butter-choc-chip",
-      "manufacturer": {
-        "url": "https://www.gomacro.com/products/peanut-butter-chocolate-chip-macrobar",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 11,
-          "calories": 290,
-          "carbs": 39,
-          "fiber": 2,
-          "sugar": 8,
-          "fat": 10,
-          "servingSize": "1 bar",
-          "servingSizeG": null
+          "fat": 4.5
         }
       },
-      "note": "Reviewer: values from the Nutrition Facts listed as text on GoMacro's product page."
+      "note": "Reviewer: values transcribed from the Nutrition Facts on Sharifa's own wrapper photo. The old figure of 9 g protein was wrong."
     },
     {
-      "id": "iconic-protein-shake-cacao",
-      "manufacturer": {
-        "url": "https://www.drinkiconic.com/products/cafe-latte",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 20,
-          "calories": 140,
-          "carbs": 8,
-          "fiber": 4,
-          "sugar": 0,
-          "fat": 2.5,
-          "servingSize": "1 bottle",
-          "servingSizeG": null
-        },
-        "panelUrl": "https://cdn.shopify.com/s/files/1/1326/5521/files/CAFERTD.png"
-      },
-      "note": "Reviewer: values transcribed from the brand's own Nutrition Facts panel. Caf\u00e9 Mocha is no longer sold; this is the brand's coffee flavour, Caf\u00e9 Latte."
-    },
-    {
-      "id": "magic-spoon-peanut-butter-cereal",
-      "manufacturer": {
-        "url": "https://magicspoon.com/products/peanut-butter-1-case-4-boxes",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 14,
-          "calories": 170,
-          "carbs": 10,
-          "fiber": 1,
-          "sugar": 0,
-          "fat": 9,
-          "servingSize": "about 1 cup (36 g)",
-          "servingSizeG": 36
-        },
-        "panelUrl": "https://cdn.shopify.com/s/files/1/0081/3826/0542/products/MS_NFP_CORE_6.22.23_MS_PEANUT-BUTTER_NFP_AV032301-443660.png"
-      },
-      "note": "Reviewer: values transcribed from the brand's own Nutrition Facts panel. Carbs include 5 g allulose, which the FDA doesn't count as sugar."
-    },
-    {
-      "id": "owyn-protein-shake-chocolate",
-      "manufacturer": {
-        "url": "https://liveowyn.com/products/dark-chocolate-protein-shake-1",
-        "transcribedAt": "2026-11-19",
-        "values": {
-          "protein": 20,
-          "calories": 180,
-          "carbs": 8,
-          "fiber": 3,
-          "sugar": 4,
-          "fat": 7,
-          "servingSize": "1 bottle",
-          "servingSizeG": null
+      "id": "saffron-road-crunchy-chickpeas-sea-salt",
+      "query": "Saffron Road crunchy chickpeas sea salt",
+      "add": {
+        "name": "Saffron Road Crunchy Chickpeas, Sea Salt",
+        "brand": "Saffron Road",
+        "productType": "chips",
+        "buyUrl": "https://www.saffronroad.com/pages/chickpeas",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "IFANCA",
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
+              "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
+              "kind": "brand"
+            },
+            {
+              "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
+              "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
+              "kind": "retailer"
+            }
+          ],
+          "summary": "IFANCA-certified plant-based snack, named by the brand and printed on the package. Not yet confirmed on IFANCA's own list."
         }
-      },
-      "note": "Reviewer: values from the Nutrition Facts listed as text on OWYN's product page."
+      }
     },
     {
-      "id": "twin-peaks-protein-puffs-bbq",
-      "fdcId": 2154717,
-      "note": "Reviewer: Twin Peaks Ingredients' own Mesquite Barbecue record."
-    },
-    {
-      "id": "powercrunch-gluten-free-protein-wafer",
-      "fdcId": 2665580,
-      "acceptUsdaReason": "Open Food Facts values are scaled wrongly (5.2 g protein is 13 g x 0.4); calories agree; USDA holds the brand's own label data."
-    },
-    {
-      "id": "orgain-vegan-protein-bar-peanut-butter",
-      "fdcId": 2608933,
-      "acceptUsdaReason": "Only fiber (3 vs 1 g) and calories (150 vs 160) differ slightly; USDA holds Orgain's own label data."
-    },
-    {
-      "id": "chomps-turkey-jalapeno-stick",
-      "fdcId": 2396313,
-      "acceptUsdaReason": "USDA holds the manufacturer's (Chompians LLC) own label submission; the Open Food Facts entry is user-entered."
-    },
-    {
-      "id": "atkins-protein-meal-bar",
-      "fdcId": 2668067,
-      "note": "Reviewer: Atkins Nutritionals' own Chocolate Peanut Butter Protein Meal Bar record (2023)."
+      "id": "saffron-road-crunchy-chickpeas-bombay-spice",
+      "query": "Saffron Road crunchy chickpeas bombay spice",
+      "add": {
+        "name": "Saffron Road Crunchy Chickpeas, Bombay Spice",
+        "brand": "Saffron Road",
+        "productType": "chips",
+        "buyUrl": "https://www.saffronroad.com/pages/chickpeas",
+        "halal": {
+          "status": "certifier-named",
+          "certifier": "IFANCA",
+          "checkedAt": "2026-11-19",
+          "evidence": [
+            {
+              "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
+              "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
+              "kind": "brand"
+            },
+            {
+              "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
+              "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
+              "kind": "retailer"
+            }
+          ],
+          "summary": "IFANCA-certified plant-based snack, named by the brand and printed on the package. Not yet confirmed on IFANCA's own list."
+        }
+      }
     }
   ]
 }

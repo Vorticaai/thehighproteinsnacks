@@ -7,6 +7,7 @@ import { weightLossFilter } from "@/lib/categoryFilters";
 import { absoluteUrl } from "@/lib/seo";
 import { categoryFilters } from "@/lib/categoryFilters";
 import { AdSlot } from "@/components/ads/AdSlot";
+import { categoryCountLabel } from "@/lib/categoryCounts";
 
 export const revalidate = 60 * 60 * 6; // 21600 seconds
 
@@ -162,7 +163,7 @@ export default function SnacksIndexPage() {
             }`}
           >
             <p className="text-sm font-semibold uppercase tracking-wide text-[#006F6D]">
-              {card.count} snacks
+              {categoryCountLabel(card.slug, card.count)}
             </p>
             <h2 className="mt-2 text-2xl font-bold text-gray-900">
               {card.title}

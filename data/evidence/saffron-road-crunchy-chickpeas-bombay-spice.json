@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Saffron Road crunchy chickpeas bombay spice",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2628735,
+      "description": "BOMBAY SPICE CRUNCHY CHICKPEAS, BOMBAY SPICE",
+      "brandOwner": "American Halal Company, Inc. ",
+      "brandName": "SAFFRON ROAD",
+      "gtinUpc": "857063002430",
+      "publishedDate": "2023-08-31",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2628735,
+        "description": "BOMBAY SPICE CRUNCHY CHICKPEAS, BOMBAY SPICE",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "857063002430",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1954849,
+        "description": "HOT BOMBAY SPICE CRUNCHY CHICKPEAS, BOMBAY SPICE",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "857063002447",
+        "publishedDate": "2021-07-29",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1961367,
+        "description": "CRUNCHY CHICKPEAS DARK CHOCOLATE, CRUNCHY CHICKPEAS",
+        "brandOwner": "American Halal Company, Inc. ",
+        "brandName": "SAFFRON ROAD",
+        "gtinUpc": "854487006860",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2660740,
+        "description": "SAFFRON COOKED LONG GRAIN WHITE RICE FLAVORED WITH SAFFRON & SPICES RICE, SAFFRON",
+        "brandOwner": "Target Stores",
+        "brandName": "ARCHER FARMS",
+        "gtinUpc": "085239027950",
+        "publishedDate": "2023-10-26",
+        "score": 0.25,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1970776,
+        "description": "SAFFRON CHAI SPICE PLANT-BASED GELATO, SAFFRON CHAI SPICE",
+        "brandOwner": "KELAPA LLC, DBA Sacred Serve",
+        "brandName": "SACRED SERVE",
+        "gtinUpc": "850002575071",
+        "publishedDate": "2021-07-29",
+        "score": 0.25,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2628735,
+    "description": "BOMBAY SPICE CRUNCHY CHICKPEAS, BOMBAY SPICE",
+    "brandOwner": "American Halal Company, Inc. ",
+    "brandName": "SAFFRON ROAD",
+    "gtinUpc": "857063002430",
+    "servingSize": 30,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1/4 cup",
+    "dataSource": "LI",
+    "modifiedDate": "7/5/2023",
+    "ingredients": "ORGANIC CHICKPEAS, EXPELLER PRESSED CANOLA AND/OR SUNFLOWER OIL. SEASONED WITH: CANE SUGAR, SALT, SPICES, DEHYDRATED GARLIC, PAPRIKA, ONION POWDER, CORIANDER, GINGER, TURMERIC, CUMIN, CITRIC ACID, PAPRIKA EXTRACT, ANNATTO EXTRACT.",
+    "perServing": {
+      "protein": 6,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5.01,
+      "sugar": 0.999,
+      "fat": 4,
+      "servingSize": "1/4 cup / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": {
+    "code": "0857063002430",
+    "product_name": "Bombay Spice Seasoned Chickpeas",
+    "brands": "Saffron Road",
+    "serving_size": "1/4 cup (30 g)",
+    "perServing": {
+      "protein": 6,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5.01,
+      "sugar": 0.999,
+      "fat": 4,
+      "servingSize": "1/4 cup (30 g)",
+      "servingSizeG": 30
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/706/300/2430/front_en.7.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 6,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "1/4 cup / 30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1/4 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 6,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 4
+  }
+}

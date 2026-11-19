@@ -73,3 +73,12 @@ test("queued new products are well-formed and carry valid halal research", () =>
     if (r.halal) assertValidCheck(entry.id, r.halal)
   }
 })
+
+import { categoryCountLabel } from "../lib/categoryCounts"
+test("halal card count includes the snacks and the brands still being checked", () => {
+  const n = getProductsByCategory("halal").length
+  const label = categoryCountLabel("halal", n)
+  assert.ok(label.startsWith(`${n} snack`), label)
+  assert.match(label, /brands being checked/)
+  assert.equal(categoryCountLabel("keto", 3), "3 snacks")
+})
