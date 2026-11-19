@@ -1,0 +1,98 @@
+{
+  "id": "saffron-road-crunchy-chickpeas-sea-salt",
+  "name": "Saffron Road Crunchy Chickpeas, Sea Salt",
+  "brand": "Saffron Road",
+  "productType": "chips",
+  "buyUrl": "https://www.saffronroad.com/pages/chickpeas",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1/4 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 6,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "857063002935",
+    "fdcId": 2609129
+  },
+  "image": {
+    "src": "/products/saffron-road-crunchy-chickpeas-sea-salt.jpg",
+    "alt": "Saffron Road Saffron Road Crunchy Chickpeas, Sea Salt package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0857063002935"
+  },
+  "halal": {
+    "status": "certifier-named",
+    "certifier": "IFANCA",
+    "checkedAt": "2026-11-19",
+    "evidence": [
+      {
+        "label": "Saffron Road's chickpea page shows the IFANCA Certified Halal icon.",
+        "url": "https://saffronroad.com/pages/chickpeas-with-coupon",
+        "kind": "brand"
+      },
+      {
+        "label": "Retail listings quote the package: \"Certified Halal by IFANCA\".",
+        "url": "https://www.food4less.com/p/saffron-road-organic-sea-salt-crunchy-chickpeas/0085706300293",
+        "kind": "retailer"
+      }
+    ],
+    "summary": "IFANCA-certified plant-based snack, named by the brand and printed on the package. Not yet confirmed on IFANCA's own list."
+  },
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2609129",
+        "url": "https://fdc.nal.usda.gov/food-details/2609129/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 6,
+          "calories": 130,
+          "carbs": 18,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 4
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0857063002935",
+        "url": "https://world.openfoodfacts.org/product/0857063002935",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 6,
+          "calories": 130,
+          "carbs": 18,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 4
+        }
+      }
+    ],
+    "notes": [
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  }
+}
