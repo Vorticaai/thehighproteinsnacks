@@ -145,7 +145,7 @@ const getOfficeNote = (snack: Product): string => {
         <Breadcrumbs 
           items={[
             { label: "Home", href: "/" },
-            { label: "Guides", href: "/" },
+            { label: "Guides", href: "/guides" },
             { label: "Best for Office & Desk" }
           ]} 
         />

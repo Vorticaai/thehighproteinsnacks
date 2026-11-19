@@ -92,9 +92,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  guides.forEach((guide) => {
+  // These two data/guides.ts slugs now permanently redirect to the
+  // standalone pages below (see next.config.mjs) — list the destination,
+  // not a URL that immediately 301s.
+  const redirectedGuideSlugs = new Set([
+    "best-high-protein-snacks-for-weight-loss",
+    "best-keto-snacks",
+  ]);
+
+  guides
+    .filter((guide) => !redirectedGuideSlugs.has(guide.slug))
+    .forEach((guide) => {
+      entries.push({
+        url: absoluteUrl(`/guides/${guide.slug}`),
+        lastModified: today,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      });
+    });
+
+  // Standalone long-tail guide pages (app/best-high-protein-snacks-for-*):
+  // real, substantial content pages that were missing from the sitemap
+  // entirely, so search engines had no declared path to them.
+  [
+    "best-high-protein-snacks-for-weight-loss",
+    "best-high-protein-snacks-for-keto",
+    "best-high-protein-snacks-for-road-trips",
+    "best-high-protein-snacks-for-office-and-desk",
+  ].forEach((slug) => {
     entries.push({
-      url: absoluteUrl(`/guides/${guide.slug}`),
+      url: absoluteUrl(`/${slug}`),
       lastModified: today,
       changeFrequency: "weekly",
       priority: 0.8,

@@ -4,17 +4,20 @@ const items = [
   {
     title: "Best Snacks for Weight Loss",
     desc: "Low-calorie, low-sugar picks that still taste good.",
-    slug: "best-high-protein-snacks-for-weight-loss",
+    // Standalone page, not /guides/<slug> — the old /guides/ duplicate of
+    // this now permanently redirects here (see next.config.mjs); link
+    // straight to the real URL instead of through the redirect.
+    href: "/best-high-protein-snacks-for-weight-loss",
   },
   {
     title: "Best Value Snack Playbook",
     desc: "Protein-per-dollar rankings for budget-minded shoppers.",
-    slug: "best-budget-snacks",
+    href: "/guides/best-budget-snacks",
   },
   {
     title: "Low-Sugar Snack Guide",
     desc: "Snacks with 3g of sugar or less per serving.",
-    slug: "best-low-sugar-high-protein-snacks",
+    href: "/guides/best-low-sugar-high-protein-snacks",
   },
 ];
 
@@ -34,8 +37,8 @@ export default function GuidesRow() {
       <div className="grid gap-4 sm:grid-cols-3">
         {items.map((item) => (
           <Link
-            key={item.slug}
-            href={`/guides/${item.slug}`}
+            key={item.href}
+            href={item.href}
             className="rounded-2xl bg-white p-6 shadow-sm border-2 border-[#C6FF47] hover:-translate-y-0.5 hover:shadow-lg hover:ring-2 hover:ring-[#C6FF47] transition"
           >
             <p className="text-base font-semibold text-gray-900">{item.title}</p>
