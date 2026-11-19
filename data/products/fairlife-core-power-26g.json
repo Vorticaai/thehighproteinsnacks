@@ -38,7 +38,8 @@
     "sources": [],
     "notes": [
       "No candidate from the same brand.",
-      "No USDA label record found for this product."
+      "No USDA label record found for this product.",
+      "Reviewer: the previous query, 'Core Power 26g protein shake chocolate', never actually included the brand name 'Fairlife', which likely caused the same-brand filter to find nothing. Adding it back in."
     ]
   }
 }

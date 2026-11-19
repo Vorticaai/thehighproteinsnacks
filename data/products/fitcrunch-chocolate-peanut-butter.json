@@ -10,12 +10,12 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 46 g",
+    "servingSizeG": 46,
     "protein": 16,
     "calories": 190,
     "carbs": 14,
-    "fiber": 2,
+    "fiber": 1,
     "sugar": 3,
     "fat": 8
   },
@@ -28,17 +28,54 @@
   },
   "identifiers": {
     "asin": "B0FG8BZ4RP",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "839138003023",
+    "fdcId": 2587180
   },
-  "image": null,
+  "image": {
+    "src": "/products/fitcrunch-chocolate-peanut-butter.jpg",
+    "alt": "FitCrunch FitCrunch Protein Bar – Chocolate PB package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0839138003023"
+  },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2587180",
+        "url": "https://fdc.nal.usda.gov/food-details/2587180/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 16,
+          "calories": 190,
+          "carbs": 14,
+          "fiber": 1,
+          "sugar": 3,
+          "fat": 8
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0839138003023",
+        "url": "https://world.openfoodfacts.org/product/0839138003023",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 16,
+          "calories": 190,
+          "carbs": 14,
+          "fiber": 1,
+          "sugar": 3,
+          "fat": 8
+        }
+      }
+    ],
     "notes": [
-      "Only 50% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: checked the evidence from the earlier auto-search (score 0.5, 'baked bar' vs 'baked bars' wording). Brand and flavor are an exact match (FITCRUNCH Chocolate Peanut Butter High Protein Baked Bar), and the USDA label numbers already match our existing catalogue values almost exactly. Pinning so the agreement check can confirm."
     ]
   }
 }

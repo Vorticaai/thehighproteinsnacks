@@ -1,61 +1,19 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "OWYN plant protein shake chocolate",
+  "query": "OWYN protein shake chocolate",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "Only 67% of product words found; needs a person to confirm.",
-    "chosen": {
-      "fdcId": 2422511,
-      "description": "PLANT 32 G PROTEIN SHAKES, CHOCOLATE, CHOCOLATE",
-      "brandOwner": "Only What You Need, Inc.",
-      "brandName": "OWYN",
-      "gtinUpc": "856461008662",
-      "publishedDate": "2022-12-22",
-      "score": 0.6666666666666666,
-      "brandOk": true
-    },
-    "topCandidates": [
-      {
-        "fdcId": 2422511,
-        "description": "PLANT 32 G PROTEIN SHAKES, CHOCOLATE, CHOCOLATE",
-        "brandOwner": "Only What You Need, Inc.",
-        "brandName": "OWYN",
-        "gtinUpc": "856461008662",
-        "publishedDate": "2022-12-22",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      }
-    ]
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
   },
-  "usda": {
-    "fdcId": 2422511,
-    "description": "PLANT 32 G PROTEIN SHAKES, CHOCOLATE, CHOCOLATE",
-    "brandOwner": "Only What You Need, Inc.",
-    "brandName": "OWYN",
-    "gtinUpc": "856461008662",
-    "servingSize": 330,
-    "servingSizeUnit": "ml",
-    "householdServingFullText": "11.15 OZA",
-    "dataSource": "LI",
-    "modifiedDate": "10/11/2021",
-    "ingredients": "WATER, OWYN PROTEIN BLEND (PEA PROTEIN, ORGANIC PUMPKIN SEED PROTEIN, FLAXSEED OIL), GELLAN GUM/ ACACIA GUM BLEND, PEA FIBER, COCOA POWDER, SUNFLOWER OIL, SUNFLOWER LECITHIN, GUAR GUM, MONK FRUIT EXTRACT, HIMALAYAN PINK SEA SALT, NATURAL CHOCOLATE FLAVOR (NATURAL FLAVOR, BLACK COCOA), GREENS BLEND (SPINACH, KALE, BROCCOLI)",
-    "perServing": {
-      "protein": 32,
-      "calories": 201,
-      "carbs": 6.01,
-      "fiber": 5.94,
-      "sugar": 0,
-      "fat": 6.01,
-      "servingSize": "11.15 OZA / 330 ml",
-      "servingSizeG": null
-    }
-  },
+  "usda": null,
   "openFoodFacts": null,
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "No USDA label record found for this product."
     ]
   },
   "before": {

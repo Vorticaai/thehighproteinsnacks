@@ -37,8 +37,9 @@
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 67% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "No candidate from the same brand.",
+      "No USDA label record found for this product.",
+      "Reviewer: the previous query matched Abbott/EAS's unrelated 'Pure Milk Protein Shake' — a different company entirely. This is a known limitation in pipeline/match.ts: brandTokens() strips 'protein' as a stopword, so our brand 'Pure Protein' collapses to the single generic word 'pure', which also appears in EAS's description and false-passes the brand filter. Trying a query that hopefully won't surface the EAS record at all; if it still does, this needs a match.ts fix (keep 'protein' when stripping it would leave only short/generic tokens), not another query attempt."
     ]
   }
 }

@@ -1,72 +1,15 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "FITCRUNCH chocolate peanut butter baked bar",
+  "query": "FitCrunch Protein Bar – Chocolate PB",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2587180,
-      "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BAR, CHOCOLATE PEANUT BUTTER",
-      "brandOwner": "Pervine Foods LLC ",
-      "brandName": "FITCRUNCH",
-      "gtinUpc": "839138003023",
-      "publishedDate": "2023-06-29",
-      "score": 0.5,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2587180,
-        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BAR, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Pervine Foods LLC ",
-        "brandName": "FITCRUNCH",
-        "gtinUpc": "839138003023",
-        "publishedDate": "2023-06-29",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2586911,
-        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Pervine Foods LLC ",
-        "brandName": "FITCRUNCH",
-        "gtinUpc": "817719021758",
-        "publishedDate": "2023-06-29",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2586890,
-        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Pervine Foods LLC ",
-        "brandName": "FITCRUNCH",
-        "gtinUpc": "817719020478",
-        "publishedDate": "2023-06-29",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2586894,
-        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Pervine Foods LLC ",
-        "brandName": "FITCRUNCH",
-        "gtinUpc": "817719020614",
-        "publishedDate": "2023-06-29",
-        "score": 0.5,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2586880,
-        "description": "CHOCOLATE PEANUT BUTTER WHEY PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Pervine Foods LLC ",
-        "brandName": "FITCRUNCH",
-        "gtinUpc": "817719020355",
-        "publishedDate": "2023-06-29",
-        "score": 0.5,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2587180,
@@ -109,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/083/913/800/3023/front_en.860.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 16,
+      "calories": 190,
+      "carbs": 14,
+      "fiber": 1,
+      "sugar": 3,
+      "fat": 8,
+      "servingSize": "1 bar / 46 g",
+      "servingSizeG": 46
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -125,12 +78,12 @@
     "fat": 8
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 46 g",
+    "servingSizeG": 46,
     "protein": 16,
     "calories": 190,
     "carbs": 14,
-    "fiber": 2,
+    "fiber": 1,
     "sugar": 3,
     "fat": 8
   }

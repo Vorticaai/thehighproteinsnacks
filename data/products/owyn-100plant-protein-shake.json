@@ -37,8 +37,9 @@
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 67% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "No candidate from the same brand.",
+      "No USDA label record found for this product.",
+      "Reviewer: the previous query only turned up OWYN's separate 32g 'Pro Elite' line (a different, higher-protein product), not the base 20g 100% Plant Protein Shake we have. Dropping '100' and 'plant' from the query in case that was biasing the USDA search toward the Pro Elite listing. If this still only finds the 32g line, the base line likely just isn't in USDA's branded database."
     ]
   }
 }

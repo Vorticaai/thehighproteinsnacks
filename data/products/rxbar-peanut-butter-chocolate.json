@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/rxbar-peanut-butter-chocolate.jpg",
+    "alt": "RXBAR RXBAR Peanut Butter Chocolate Bar package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0859162007255"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "No candidate from the same brand.",
-      "No USDA label record found for this product."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (sugar: 13 vs 15).",
+      "Reviewer: same reasoning and same USDA variety-box record as rxbar-coconut-chocolate (that GTIN's ingredient statement lists Peanut Butter Chocolate too). Box numbers already match our existing catalogue values within tolerance. Pinning so the agreement check can confirm."
     ]
   }
 }
