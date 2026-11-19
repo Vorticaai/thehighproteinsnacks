@@ -52,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/901/1025/front_en.3.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (protein: 19 vs 59; calories: 140 vs 440; carbs: 5 vs 16; fiber: 1 vs 3; sugar: 1 vs 3; fat: 5 vs 14)."
+      "USDA and Open Food Facts disagree (protein: 19 vs 59; calories: 140 vs 440; carbs: 5 vs 16; fiber: 1 vs 3; sugar: 1 vs 3; fat: 5 vs 14); a reviewer accepted the USDA label data: Open Food Facts disagrees on every field, but all six are off by the same ~3.0-3.2x factor (e.g. calories 140 vs 440, protein 19 vs 59) consistent with OFF holding per-100g values against this product's ~32g serving rather than a real conflict. The USDA label data (per official manufacturer submission) already matches our existing catalogue values closely."
     ]
   },
   "before": {
@@ -68,11 +78,11 @@
     "fat": 5
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
     "protein": 19,
     "calories": 140,
-    "carbs": 4,
+    "carbs": 5,
     "fiber": 1,
     "sugar": 1,
     "fat": 5
