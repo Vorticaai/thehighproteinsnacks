@@ -1,10 +1,3 @@
 {
-  "products": [
-    {
-      "id": "quest-nutrition-protein-puffs-ranch",
-      "fdcId": 2669733,
-      "acceptUsdaReason": "Open Food Facts disagrees on every field, but all six are off by the same ~3.0-3.2x factor (e.g. calories 140 vs 440, protein 19 vs 59) consistent with OFF holding per-100g values against this product's ~32g serving rather than a real conflict. The USDA label data (per official manufacturer submission) already matches our existing catalogue values closely.",
-      "note": "Follow-up to this batch's first pass: pinning again with acceptUsdaReason now that the OFF disagreement is understood to be a unit-scaling artifact, not a real data conflict."
-    }
-  ]
+  "products": []
 }
