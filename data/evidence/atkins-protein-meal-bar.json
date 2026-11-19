@@ -1,71 +1,111 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Atkins Protein Meal Bar – Chocolate PB",
+  "query": "Atkins chocolate peanut butter protein meal bar",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "Only 33% of product words found; needs a person to confirm.",
+    "reason": "Only 67% of product words found; needs a person to confirm.",
     "chosen": {
-      "fdcId": 2289466,
-      "description": "ATKINS, CREAMY CHOCOLATE SHAKE, CHOCOLATE, CHOCOLATE",
+      "fdcId": 2668067,
+      "description": "CHOCOLATE PEANUT BUTTER PROTEIN MEAL BAR, CHOCOLATE PEANUT BUTTER",
       "brandOwner": "Atkins Nutritionals, Inc.",
       "brandName": "ATKINS",
-      "gtinUpc": "637480064422",
-      "publishedDate": "2022-05-23",
-      "score": 0.3333333333333333,
+      "gtinUpc": "637480004305",
+      "publishedDate": "2023-11-16",
+      "score": 0.6666666666666666,
       "brandOk": true
     },
     "topCandidates": [
       {
-        "fdcId": 2289466,
-        "description": "ATKINS, CREAMY CHOCOLATE SHAKE, CHOCOLATE, CHOCOLATE",
+        "fdcId": 2668067,
+        "description": "CHOCOLATE PEANUT BUTTER PROTEIN MEAL BAR, CHOCOLATE PEANUT BUTTER",
         "brandOwner": "Atkins Nutritionals, Inc.",
         "brandName": "ATKINS",
-        "gtinUpc": "637480064422",
-        "publishedDate": "2022-05-23",
-        "score": 0.3333333333333333,
+        "gtinUpc": "637480004305",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666255,
+        "description": "CHOCOLATE PEANUT BUTTER FLAVORED PROTEIN MEAL BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480025027",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666288,
+        "description": "CHOCOLATE PEANUT BUTTER PROTEIN-RICH MEAL BAR, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480020848",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666287,
+        "description": "CHOCOLATE PEANUT BUTTER FLAVORED PROTEIN MEAL PRETZEL BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480022774",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2541572,
+        "description": "CHOCOLATE PEANUT BUTTER PROTEIN-RICH MEAL BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480021647",
+        "publishedDate": "2023-05-25",
+        "score": 0.6666666666666666,
         "brandOk": true
       }
     ]
   },
   "usda": {
-    "fdcId": 2289466,
-    "description": "ATKINS, CREAMY CHOCOLATE SHAKE, CHOCOLATE, CHOCOLATE",
+    "fdcId": 2668067,
+    "description": "CHOCOLATE PEANUT BUTTER PROTEIN MEAL BAR, CHOCOLATE PEANUT BUTTER",
     "brandOwner": "Atkins Nutritionals, Inc.",
     "brandName": "ATKINS",
-    "gtinUpc": "637480064422",
-    "servingSize": 325,
-    "servingSizeUnit": "ml",
-    "householdServingFullText": "11 OZA",
+    "gtinUpc": "637480004305",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
     "dataSource": "LI",
-    "modifiedDate": "5/5/2021",
-    "ingredients": "WATER, DAIRY PROTEIN BLEND (MILK PROTEIN CONCENTRATE, CALCIUM CASEINATE, WHEY PROTEIN CONCENTRATE), CREAM, COCOA POWDER (PROCESSED WITH ALKALI), SUNFLOWER OIL, POLYDEXTROSE, NATURAL AND ARTIFICIAL FLAVORS, DIPOTASSIUM PHOSPHATE, CELLULOSE GEL, SALT, CELLULOSE GUM, VITAMIN MINERAL MIX [SODIUM ASCORBATE (VITAMIN C), ASCORBIC ACID, DL-ALPHA-TOCOPHERYL ACETATE (VITAMIN E), NIACINAMIDE, VITAMIN A PALMITATE, THIAMIN HYDROCHLORIDE (VITAMIN B1), RIBOFLAVIN (VITAMIN B2), FOLIC ACID, VITAMIN D3], CARRAGEENAN, ACESULFAME POTASSIUM, SUCRALOSE.",
+    "modifiedDate": "10/28/2023",
+    "ingredients": "PROTEIN BLEND (SOY PROTEIN ISOLATE, COLLAGEN, WHEY PROTEIN ISOLATE, WHEY PROTEIN CONCENTRATE), POLYDEXTROSE, PEANUTS, VEGETABLE GLYCERIN, PALM KERNEL AND PALM OIL, WATER, CELLULOSE POWDER, NATURAL FLAVORS, COCOA (PROCESSED WITH ALKALI). CONTAINS LESS THAN 2% OF PEANUT OIL, MILK, BUTTERFAT, SOY LECITHIN, GUAR GUM, SALT, SUCRALOSE.",
     "perServing": {
-      "protein": 10,
-      "calories": 140,
-      "carbs": 10,
-      "fiber": 7.15,
-      "sugar": 0,
-      "fat": 9,
-      "servingSize": "11 OZA / 325 ml",
-      "servingSizeG": null
+      "protein": 16,
+      "calories": 240,
+      "carbs": 23,
+      "fiber": 12,
+      "sugar": 2,
+      "fat": 15,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
     }
   },
   "openFoodFacts": {
-    "code": "0637480064422",
-    "product_name": "Atkins, creamy chocolate shake, chocolate",
-    "brands": "Atkins, Atkins Nutritionals  Inc.",
-    "serving_size": "11 OZA (325 ml)",
+    "code": "0637480004305",
+    "product_name": "High Protein Bar Chocolate Peanut Butter",
+    "brands": "Atkins",
+    "serving_size": "60.0g",
     "perServing": {
-      "protein": 10,
-      "calories": 140,
-      "carbs": 10,
-      "fiber": 7.15,
-      "sugar": 0,
+      "protein": 9.6,
+      "calories": 144,
+      "carbs": 13.8,
+      "fiber": 7.2,
       "fat": 9,
-      "servingSize": "11 OZA (325 ml)",
-      "servingSizeG": 325
-    }
+      "servingSize": "60.0g",
+      "servingSizeG": 60
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/063/748/000/4305/front_en.6.400.jpg"
   },
   "decision": {
     "status": "needs-review",

@@ -2,71 +2,14 @@
   "checkedAt": "2026-11-19",
   "query": "Orgain Clean Protein Shake – Chocolate",
   "match": {
-    "pinned": false,
+    "pinned": true,
     "confident": true,
-    "reason": "Brand matches and 100% of product words found.",
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2665207,
-      "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
-      "brandOwner": "Orgain, Inc.",
-      "brandName": "ORGAIN",
-      "gtinUpc": "851770006118",
-      "publishedDate": "2023-11-16",
-      "score": 1,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2665207,
-        "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770006118",
-        "publishedDate": "2023-11-16",
-        "score": 1,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2665242,
-        "description": "CLEAN GRASS-FED PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770006224",
-        "publishedDate": "2023-11-16",
-        "score": 1,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2640582,
-        "description": "GRASS-FED CLEAN PROTEIN 20 G SHAKE, CREAMY CHOCOLATE FUDGE, CREAMY CHOCOLATE FUDGE",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770006668",
-        "publishedDate": "2023-09-14",
-        "score": 1,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2757919,
-        "description": "Orgain Organic Nutrition Shake - Chocolate Kids - Case of 12 - 8.25 FZ",
-        "brandOwner": "",
-        "brandName": "Orgain",
-        "gtinUpc": "00851770003001",
-        "publishedDate": "2026-04-23",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2640583,
-        "description": "CLEAN PROTEIN 20 G SHAKE, VANILLA BEAN, VANILLA BEAN",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770006675",
-        "publishedDate": "2023-09-14",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2665207,
@@ -109,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/085/177/000/6118/front_en.4.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 130,
+      "carbs": 11,
+      "fiber": 2,
+      "sugar": 3,
+      "fat": 2,
+      "servingSize": "1 Carton / 330 ml",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (protein: 20 vs 66; calories: 130 vs 430; carbs: 11 vs 36; sugar: 3 vs 10; fat: 2 vs 7)."
+      "USDA and Open Food Facts disagree (protein: 20 vs 66; calories: 130 vs 430; carbs: 11 vs 36; sugar: 3 vs 10; fat: 2 vs 7); a reviewer accepted the USDA label data: Open Food Facts lists 66 g protein / 430 kcal, which is a whole multi-serving container, not one 11 fl oz bottle; USDA holds Orgain's own label data."
     ]
   },
   "before": {
@@ -125,13 +78,13 @@
     "fat": 2
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "1 Carton / 330 ml",
     "servingSizeG": null,
     "protein": 20,
     "calories": 130,
     "carbs": 11,
     "fiber": 2,
-    "sugar": 4,
+    "sugar": 3,
     "fat": 2
   }
 }

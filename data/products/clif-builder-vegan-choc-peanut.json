@@ -10,12 +10,12 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 68 g",
+    "servingSizeG": 68,
     "protein": 20,
-    "calories": 280,
+    "calories": 290,
     "carbs": 29,
-    "fiber": 4,
+    "fiber": 2,
     "sugar": 17,
     "fat": 11
   },
@@ -28,17 +28,54 @@
   },
   "identifiers": {
     "asin": "B09QHBBGJT",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "722252168504",
+    "fdcId": 2660067
   },
-  "image": null,
+  "image": {
+    "src": "/products/clif-builder-vegan-choc-peanut.jpg",
+    "alt": "Clif Clif Builder’s Vegan Protein Bar – Chocolate Peanut Butter package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0722252168504"
+  },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2660067",
+        "url": "https://fdc.nal.usda.gov/food-details/2660067/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 290,
+          "carbs": 29,
+          "fiber": 2,
+          "sugar": 17,
+          "fat": 11
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0722252168504",
+        "url": "https://world.openfoodfacts.org/product/0722252168504",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 290,
+          "carbs": 29,
+          "fiber": 2,
+          "sugar": 17,
+          "fat": 11
+        }
+      }
+    ],
     "notes": [
-      "Only 60% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: Clif-brand Chocolate Peanut Butter Protein Bar (Builders line)."
     ]
   }
 }

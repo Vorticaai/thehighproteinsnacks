@@ -1,21 +1,41 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Quest Nutrition Protein Puffs Ranch",
+  "query": "Quest protein puffs ranch",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "reason": "Only 50% of product words found; needs a person to confirm.",
     "chosen": {
-      "fdcId": 2503880,
-      "description": "SEA QUEST EGG HUNT, SEA QUEST",
-      "brandOwner": "Bee International, Inc.",
-      "brandName": "BEE",
-      "gtinUpc": "073563004792",
-      "publishedDate": "2023-03-16",
-      "score": 0,
+      "fdcId": 2669733,
+      "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849011025",
+      "publishedDate": "2023-11-16",
+      "score": 0.5,
       "brandOk": true
     },
     "topCandidates": [
+      {
+        "fdcId": 2669733,
+        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011025",
+        "publishedDate": "2023-11-16",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2373917,
+        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010301",
+        "publishedDate": "2022-12-07",
+        "score": 0.5,
+        "brandOk": true
+      },
       {
         "fdcId": 2503880,
         "description": "SEA QUEST EGG HUNT, SEA QUEST",
@@ -45,50 +65,30 @@
         "publishedDate": "2022-05-23",
         "score": 0,
         "brandOk": true
-      },
-      {
-        "fdcId": 1879529,
-        "description": "QUEST, PROTEIN CHIPS, SALT & VINEGAR, SALT & VINEGAR",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849000982",
-        "publishedDate": "2021-07-29",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1879658,
-        "description": "QUEST, PROTEIN CHIPS, SEA SALT, SEA SALT",
-        "brandOwner": "Quest Nutrition, LLC",
-        "brandName": "QUEST",
-        "gtinUpc": "888849000258",
-        "publishedDate": "2021-07-29",
-        "score": 0,
-        "brandOk": true
       }
     ]
   },
   "usda": {
-    "fdcId": 2503880,
-    "description": "SEA QUEST EGG HUNT, SEA QUEST",
-    "brandOwner": "Bee International, Inc.",
-    "brandName": "BEE",
-    "gtinUpc": "073563004792",
-    "servingSize": 4.5,
+    "fdcId": 2669733,
+    "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849011025",
+    "servingSize": 32,
     "servingSizeUnit": "GRM",
-    "householdServingFullText": "1 Roll",
+    "householdServingFullText": "1 bag",
     "dataSource": "LI",
-    "modifiedDate": "2/20/2023",
-    "ingredients": "DEXTROSE, CITRIC ACID, CALCIUM STEARATE, NATURAL AND ARTIFICIAL FLAVOR, RED 40 LAKE, YELLOW 5 LAKE, YELLOW 6 LAKE, BLUE 2 LAKE.",
+    "modifiedDate": "2/24/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, NATURAL FLAVORS, BUTTERMILK POWDER, NONFAT DRY MILK, PSYLLIUM HUSK. CONTAINS LESS THAN 2% OF THE FOLLOWING: CHEDDAR CHEESE POWDER (CULTURED MILK, SALT, ENZYMES), TOMATO POWDER, ONION POWDER, GARLIC POWDER, SPICE, SALT, SOLUBLE CORN FIBER, WHEY POWDER, CHIA SEED, TURMERIC OLEORESIN (COLOR), MALIC ACID, SUGAR++, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), CALCIUM CARBONATE, YEAST EXTRACT, ACACIA GUM, STEVIA SWEETENER.",
     "perServing": {
-      "protein": 0,
-      "calories": 15,
-      "carbs": 4,
-      "fiber": 0,
-      "sugar": 4,
-      "fat": 0,
-      "servingSize": "1 Roll / 4.5 g",
-      "servingSizeG": 4.5
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
     }
   },
   "openFoodFacts": null,

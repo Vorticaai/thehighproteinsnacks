@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/powercrunch-gluten-free-protein-wafer.jpg",
+    "alt": "Power Crunch Power Crunch Protein Wafer – Triple Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0644225727832"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 67% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5).",
+      "Reviewer: Power Crunch (Bionutritional Research Group) Triple Chocolate."
     ]
   }
 }

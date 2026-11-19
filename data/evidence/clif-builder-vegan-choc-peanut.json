@@ -2,71 +2,14 @@
   "checkedAt": "2026-11-19",
   "query": "Clif Builder’s Vegan Protein Bar – Chocolate Peanut Butter",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 60% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2660067,
-      "description": "CHOCOLATE PEANUT BUTTER PROTEIN BAR, CHOCOLATE PEANUT BUTTER",
-      "brandOwner": "Clif Bar and Company",
-      "brandName": "CLIF",
-      "gtinUpc": "722252168504",
-      "publishedDate": "2023-10-26",
-      "score": 0.6,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2660067,
-        "description": "CHOCOLATE PEANUT BUTTER PROTEIN BAR, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Clif Bar and Company",
-        "brandName": "CLIF",
-        "gtinUpc": "722252168504",
-        "publishedDate": "2023-10-26",
-        "score": 0.6,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2659997,
-        "description": "CHOCOLATE PEANUT BUTTER PROTEIN BAR, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Clif Bar and Company",
-        "brandName": "CLIF",
-        "gtinUpc": "722252601414",
-        "publishedDate": "2023-10-26",
-        "score": 0.6,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2659938,
-        "description": "CHOCOLATE PEANUT BUTTER PROTEIN BARS, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Clif Bar and Company",
-        "brandName": "CLIF",
-        "gtinUpc": "722252239518",
-        "publishedDate": "2023-10-26",
-        "score": 0.6,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2627549,
-        "description": "CHOCOLATE PEANUT BUTTER PROTEIN BARS, CHOCOLATE PEANUT BUTTER",
-        "brandOwner": "Clif Bar and Company",
-        "brandName": "CLIF",
-        "gtinUpc": "722252600417",
-        "publishedDate": "2023-08-31",
-        "score": 0.6,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2602832,
-        "description": "CHOCOLATE PEANUT BUTTER PROTEIN BAR, CHOCOLATE; PEANUT BUTTER",
-        "brandOwner": "Clif Bar and Company",
-        "brandName": "LUNA",
-        "gtinUpc": "0722252233011",
-        "publishedDate": "2023-07-13",
-        "score": 0.6,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2660067,
@@ -109,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/072/225/216/8504/front_en.23.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 290,
+      "carbs": 29,
+      "fiber": 2,
+      "sugar": 17,
+      "fat": 11,
+      "servingSize": "1 bar / 68 g",
+      "servingSizeG": 68
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Open Food Facts agrees with the USDA label data."
     ]
   },
   "before": {
@@ -125,12 +78,12 @@
     "fat": 11
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 68 g",
+    "servingSizeG": 68,
     "protein": 20,
-    "calories": 280,
+    "calories": 290,
     "carbs": 29,
-    "fiber": 4,
+    "fiber": 2,
     "sugar": 17,
     "fat": 11
   }

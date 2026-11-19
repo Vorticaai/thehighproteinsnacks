@@ -2,71 +2,14 @@
   "checkedAt": "2026-11-19",
   "query": "Power Crunch Protein Wafer – Triple Chocolate",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2665580,
-      "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BAR, TRIPLE CHOCOLATE",
-      "brandOwner": "Bionutritional Research Group, Inc.",
-      "brandName": "POWER CRUNCH",
-      "gtinUpc": "644225727832",
-      "publishedDate": "2023-11-16",
-      "score": 0.6666666666666666,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2665580,
-        "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BAR, TRIPLE CHOCOLATE",
-        "brandOwner": "Bionutritional Research Group, Inc.",
-        "brandName": "POWER CRUNCH",
-        "gtinUpc": "644225727832",
-        "publishedDate": "2023-11-16",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2665557,
-        "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BARS, TRIPLE CHOCOLATE",
-        "brandOwner": "Bionutritional Research Group, Inc.",
-        "brandName": "POWER CRUNCH",
-        "gtinUpc": "644225730825",
-        "publishedDate": "2023-11-16",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2612910,
-        "description": "TRIPLE NUT CRUNCH 70% DARK CHOCOLATE, TRIPLE NUT CRUNCH",
-        "brandOwner": "Strasner's Bar-B-Que",
-        "brandName": "TAZA CHOCOLATE",
-        "gtinUpc": "850033354072",
-        "publishedDate": "2023-07-13",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2509165,
-        "description": "TRIPLE CHOCOLATE CRUNCH ICE CREAM BARS, TRIPLE CHOCOLATE CRUNCH",
-        "brandOwner": "Parabit Systems Inc.",
-        "brandName": "KETO",
-        "gtinUpc": "810092630357",
-        "publishedDate": "2023-03-16",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2442616,
-        "description": "STRAUB'S, GOURMET POPCORN, TRIPLE CHOCOLATE CARAMEL CRUNCH, TRIPLE CHOCOLATE CARAMEL CRUNCH",
-        "brandOwner": "The Hampton Popcorn Company, Inc. ",
-        "brandName": "STRAUB'S",
-        "gtinUpc": "813117021963",
-        "publishedDate": "2022-12-22",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2665580,
@@ -111,7 +54,7 @@
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5)."
     ]
   },
   "before": {

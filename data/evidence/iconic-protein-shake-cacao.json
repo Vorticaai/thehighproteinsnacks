@@ -1,19 +1,87 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "ICONIC Protein Shake – Café Mocha",
+  "query": "Iconic protein drink cafe mocha",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "No candidate from the same brand.",
-    "chosen": null,
-    "topCandidates": []
+    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2396562,
+      "description": "CAFE LATTE PROTEIN DRINK, CAFE LATTE",
+      "brandOwner": "Be Well Nutrition, INC",
+      "brandName": "ICONIC",
+      "gtinUpc": "853650004160",
+      "publishedDate": "2022-12-22",
+      "score": 0,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2396562,
+        "description": "CAFE LATTE PROTEIN DRINK, CAFE LATTE",
+        "brandOwner": "Be Well Nutrition, INC",
+        "brandName": "ICONIC",
+        "gtinUpc": "853650004160",
+        "publishedDate": "2022-12-22",
+        "score": 0,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2365235,
+        "description": "CAFE LATTE PROTEIN DRINK, CAFE LATTE",
+        "brandOwner": "Be Well Nutrition, INC",
+        "brandName": "ICONIC",
+        "gtinUpc": "853650004450",
+        "publishedDate": "2022-12-07",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
   },
-  "usda": null,
-  "openFoodFacts": null,
+  "usda": {
+    "fdcId": 2396562,
+    "description": "CAFE LATTE PROTEIN DRINK, CAFE LATTE",
+    "brandOwner": "Be Well Nutrition, INC",
+    "brandName": "ICONIC",
+    "gtinUpc": "853650004160",
+    "servingSize": 340,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "11.5 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "6/2/2022",
+    "ingredients": "INGREDIENTS: WATER, GRASS FED MILK PROTEIN ISOLATE, COLOMBIAN COFFEE, ORGANIC BLUE AGAVE, CHICORY ROOT INULIN, LESS THAN 1% OF THE FOLLOWING: GLYCERIN, HIGH OLEIC SUNFLOWER OIL, NATURAL FLAVORS, SODIUM HEXAMETAPHOSPHATE*, MAGNESIUM PHOSPHATE*, SUNFLOWER LECITHIN, POTASSIUM CITRATE*, GELLAN GUM, ORGANIC LOCUST BEAN GUM, SEA SALT, MONK FRUIT, REBUDIOSIDE A (STEVIA LEAF EXTRACT), CYANOCOBALAMIN (VITAMIN B12)",
+    "perServing": {
+      "protein": 20,
+      "calories": 129,
+      "carbs": 7.99,
+      "fiber": 4.08,
+      "sugar": 2.99,
+      "fat": 2.01,
+      "servingSize": "11.5 OZA / 340 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0853650004160",
+    "product_name": "ICONIC Protein Drink - Cafe Latte",
+    "brands": "ICONIC Protein",
+    "serving_size": "11.5 OZA (340 ml)",
+    "perServing": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 8,
+      "fiber": 4.08,
+      "sugar": 0,
+      "fat": 2.5,
+      "servingSize": "11.5 OZA (340 ml)",
+      "servingSizeG": 340
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/365/000/4160/front_en.5.400.jpg"
+  },
   "decision": {
     "status": "needs-review",
     "notes": [
-      "No USDA label record found for this product."
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
     ]
   },
   "before": {

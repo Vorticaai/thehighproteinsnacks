@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Built Bar Strawberry",
+  "query": "Built Brands strawberry protein bar",
   "match": {
     "pinned": false,
     "confident": false,
@@ -37,32 +37,22 @@
         "brandOk": true
       },
       {
-        "fdcId": 2635505,
-        "description": "PRE-BUILT TINY HOMES GINGERBREAD KIT, PRE-BUILT TINY HOMES",
+        "fdcId": 2583896,
+        "description": "PRE-BUILT HOUSE GINGERBREAD KIT, PRE-BUILT HOUSE",
         "brandOwner": "Target Stores",
-        "brandName": "WONDERSHOP",
-        "gtinUpc": "085239131497",
-        "publishedDate": "2023-09-14",
+        "brandName": "FAVORITE DAY",
+        "gtinUpc": "085239327913",
+        "publishedDate": "2023-06-29",
         "score": 0,
         "brandOk": true
       },
       {
-        "fdcId": 2635712,
-        "description": "DECORATING ICING WITH BUILT-IN TIP, GREEN",
-        "brandOwner": "Target Stores",
-        "brandName": "WONDERSHOP",
-        "gtinUpc": "085239214329",
-        "publishedDate": "2023-09-14",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2635711,
-        "description": "DECORATING ICING WITH BUILT-IN TIP, RED",
-        "brandOwner": "Target Stores",
-        "brandName": "WONDERSHOP",
-        "gtinUpc": "085239214312",
-        "publishedDate": "2023-09-14",
+        "fdcId": 2217564,
+        "description": "PRE-BUILT GINGERBREAD HOUSE KIT, PRE-BUILT",
+        "brandOwner": "Wilton Industries Inc.",
+        "brandName": "WILTON",
+        "gtinUpc": "070896068736",
+        "publishedDate": "2022-01-06",
         "score": 0,
         "brandOk": true
       }

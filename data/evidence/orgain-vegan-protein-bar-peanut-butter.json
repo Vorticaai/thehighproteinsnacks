@@ -2,51 +2,14 @@
   "checkedAt": "2026-11-19",
   "query": "Orgain Organic Vegan Protein Bars Peanut Butter Chocolate Chunk",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2608933,
-      "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BAR, PEANUT BUTTER CHOCOLATE CHUNK",
-      "brandOwner": "Orgain, Inc.",
-      "brandName": "ORGAIN",
-      "gtinUpc": "851770006330",
-      "publishedDate": "2023-07-13",
-      "score": 0.6666666666666666,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2608933,
-        "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BAR, PEANUT BUTTER CHOCOLATE CHUNK",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770006330",
-        "publishedDate": "2023-07-13",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2587372,
-        "description": "PEANUT BUTTER CHOCOLATE CHUNK PROTEIN SNACK BARS, PEANUT BUTTER CHOCOLATE CHUNK",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770006385",
-        "publishedDate": "2023-06-29",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2339252,
-        "description": "ORGAIN, ORGANIC PROTEIN NUTRITIONAL SHAKE",
-        "brandOwner": "Orgain, Inc.",
-        "brandName": "ORGAIN",
-        "gtinUpc": "851770003414",
-        "publishedDate": "2022-09-15",
-        "score": 0.16666666666666666,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2608933,
@@ -71,11 +34,27 @@
       "servingSizeG": 40
     }
   },
-  "openFoodFacts": null,
+  "openFoodFacts": {
+    "code": "0851770006330",
+    "product_name": "Orgain protein snack bar",
+    "brands": "Orgain",
+    "serving_size": "1 bar (40 g)",
+    "perServing": {
+      "protein": 10,
+      "calories": 160,
+      "carbs": 18,
+      "fiber": 1,
+      "sugar": 5,
+      "fat": 6,
+      "servingSize": "1 bar (40 g)",
+      "servingSizeG": 40
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/177/000/6330/front_en.23.400.jpg"
+  },
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA and Open Food Facts disagree (fiber: 3 vs 1)."
     ]
   },
   "before": {

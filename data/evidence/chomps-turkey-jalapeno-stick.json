@@ -2,71 +2,14 @@
   "checkedAt": "2026-11-19",
   "query": "Chomps Turkey Jalapeño Stick",
   "match": {
-    "pinned": false,
-    "confident": false,
-    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
     "chosen": {
       "fdcId": 2396313,
-      "description": "MEDIUM JALAPENO TURKEY STICK, MEDIUM JALAPENO TURKEY",
-      "brandOwner": "We Are The Chompians LLC",
-      "brandName": "CHOMPS",
-      "gtinUpc": "856584004350",
-      "publishedDate": "2022-12-22",
-      "score": 0.6666666666666666,
-      "brandOk": true
+      "description": "(pinned)"
     },
-    "topCandidates": [
-      {
-        "fdcId": 2396313,
-        "description": "MEDIUM JALAPENO TURKEY STICK, MEDIUM JALAPENO TURKEY",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004350",
-        "publishedDate": "2022-12-22",
-        "score": 0.6666666666666666,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2551146,
-        "description": "JALAPENO BEEF STICKS, JALAPENO",
-        "brandOwner": "Jlabs Beauty",
-        "brandName": "CHOMPS",
-        "gtinUpc": "850015892677",
-        "publishedDate": "2023-05-25",
-        "score": 0.3333333333333333,
-        "brandOk": true
-      },
-      {
-        "fdcId": 2415753,
-        "description": "JALAPENO BEEF STICKS, JALAPENO",
-        "brandOwner": "We Are The Chompians LLC",
-        "brandName": "CHOMPS",
-        "gtinUpc": "856584004527",
-        "publishedDate": "2022-12-22",
-        "score": 0.3333333333333333,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1903778,
-        "description": "WHITEWATER CHOMP BAR",
-        "brandOwner": "Pinto Barn Inc. ",
-        "brandName": "DON'T GO NUTS",
-        "gtinUpc": "851653004477",
-        "publishedDate": "2021-07-29",
-        "score": 0,
-        "brandOk": true
-      },
-      {
-        "fdcId": 1920141,
-        "description": "WHITEWATER CHOMP BAR",
-        "brandOwner": "Pinto Barn Inc. ",
-        "brandName": "DON'T GO NUTS",
-        "gtinUpc": "851653004859",
-        "publishedDate": "2021-07-29",
-        "score": 0,
-        "brandOk": true
-      }
-    ]
+    "topCandidates": []
   },
   "usda": {
     "fdcId": 2396313,
@@ -109,7 +52,7 @@
   "decision": {
     "status": "needs-review",
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA and Open Food Facts disagree (protein: 10 vs 12; calories: 60 vs 80)."
     ]
   },
   "before": {

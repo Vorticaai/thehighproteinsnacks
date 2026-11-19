@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/orgain-vegan-protein-bar-peanut-butter.jpg",
+    "alt": "Orgain Orgain Organic Vegan Protein Bars Peanut Butter Chocolate Chunk package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0851770006330"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 67% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (fiber: 3 vs 1).",
+      "Reviewer: Orgain's Peanut Butter Chocolate Chunk Protein Snack Bar."
     ]
   }
 }

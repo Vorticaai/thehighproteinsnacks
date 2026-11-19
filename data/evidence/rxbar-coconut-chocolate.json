@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "RXBAR Coconut Chocolate",
+  "query": "RXBAR coconut chocolate",
   "match": {
     "pinned": false,
     "confident": false,
@@ -51,23 +51,7 @@
       "servingSizeG": 52
     }
   },
-  "openFoodFacts": {
-    "code": "0859162007255",
-    "product_name": "RX Bar",
-    "brands": "RXBAR",
-    "serving_size": "52g",
-    "perServing": {
-      "protein": 12,
-      "calories": 210,
-      "carbs": 23,
-      "fiber": 6,
-      "sugar": 15,
-      "fat": 9,
-      "servingSize": "52g",
-      "servingSizeG": 52
-    },
-    "image_front_url": "https://images.openfoodfacts.org/images/products/085/916/200/7255/front_en.3.400.jpg"
-  },
+  "openFoodFacts": null,
   "decision": {
     "status": "needs-review",
     "notes": [

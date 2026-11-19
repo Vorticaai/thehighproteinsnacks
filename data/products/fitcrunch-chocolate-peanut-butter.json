@@ -37,8 +37,8 @@
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "No candidate from the same brand.",
-      "No USDA label record found for this product."
+      "Only 50% of product words found; needs a person to confirm.",
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
     ]
   }
 }
