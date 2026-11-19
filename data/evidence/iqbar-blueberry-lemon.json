@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "IQBAR Blueberry Lemon",
+  "query": "IQBAR Lemon Blueberry",
   "match": {
     "pinned": false,
     "confident": true,
@@ -69,9 +69,20 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/455/4036/front_en.47.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 180,
+      "carbs": 16,
+      "fiber": 8,
+      "sugar": 2,
+      "fat": 10,
+      "servingSize": "1 bar (45 g)",
+      "servingSizeG": 45
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (carbs: 11 vs 16; fat: 15 vs 10)."
+      "USDA: USDA and Open Food Facts disagree (carbs: 11 vs 16; fat: 15 vs 10).",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -85,13 +96,13 @@
     "fat": 12
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar (45 g)",
+    "servingSizeG": 45,
     "protein": 12,
     "calories": 180,
-    "carbs": 10,
-    "fiber": 7,
+    "carbs": 16,
+    "fiber": 8,
     "sugar": 2,
-    "fat": 12
+    "fat": 10
   }
 }

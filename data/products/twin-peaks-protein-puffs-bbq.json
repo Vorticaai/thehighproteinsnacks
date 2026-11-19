@@ -10,8 +10,8 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 cup / 30 g",
+    "servingSizeG": 30,
     "protein": 21,
     "calories": 120,
     "carbs": 2,
@@ -28,17 +28,40 @@
   },
   "identifiers": {
     "asin": "B07KMKFHX2",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "850000796089",
+    "fdcId": 2154717
   },
-  "image": null,
+  "image": {
+    "src": "/products/twin-peaks-protein-puffs-bbq.jpg",
+    "alt": "Twin Peaks Ingredients Twin Peaks Protein Puffs, Mesquite Barbecue package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850000796089"
+  },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2154717",
+        "url": "https://fdc.nal.usda.gov/food-details/2154717/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 21,
+          "calories": 120,
+          "carbs": 2,
+          "fiber": 0,
+          "sugar": 2,
+          "fat": 3
+        }
+      }
+    ],
     "notes": [
-      "Only 0% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Reviewer: Twin Peaks Ingredients' own Mesquite Barbecue record."
     ]
   }
 }

@@ -52,9 +52,19 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/064/422/572/7832/front_en.49.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 13,
+      "calories": 220,
+      "carbs": 11,
+      "fiber": 1,
+      "sugar": 5,
+      "fat": 13,
+      "servingSize": "1 Cookie / 40 g",
+      "servingSizeG": 40
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5)."
+      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5); a reviewer accepted the USDA label data: Open Food Facts values are scaled wrongly (5.2 g protein is 13 g x 0.4); calories agree; USDA holds the brand's own label data."
     ]
   },
   "before": {
@@ -68,11 +78,11 @@
     "fat": 13
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 Cookie / 40 g",
+    "servingSizeG": 40,
     "protein": 13,
-    "calories": 215,
-    "carbs": 10,
+    "calories": 220,
+    "carbs": 11,
     "fiber": 1,
     "sugar": 5,
     "fat": 13

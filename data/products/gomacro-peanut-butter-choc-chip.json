@@ -10,13 +10,13 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "1 bar",
     "servingSizeG": null,
     "protein": 11,
-    "calories": 260,
-    "carbs": 37,
+    "calories": 290,
+    "carbs": 39,
     "fiber": 2,
-    "sugar": 9,
+    "sugar": 8,
     "fat": 10
   },
   "claims": {
@@ -33,19 +33,36 @@
   },
   "image": {
     "src": "/products/gomacro-peanut-butter-choc-chip.jpg",
-    "alt": "GoMacro GoMacro Vegan Bar \u2013 Peanut Butter Chocolate Chip package",
+    "alt": "GoMacro GoMacro Vegan Bar – Peanut Butter Chocolate Chip package",
     "credit": "Open Food Facts contributors",
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://world.openfoodfacts.org/product/0181945000062"
   },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://www.gomacro.com/products/peanut-butter-chocolate-chip-macrobar",
+        "url": "https://www.gomacro.com/products/peanut-butter-chocolate-chip-macrobar",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 11,
+          "calories": 290,
+          "carbs": 39,
+          "fiber": 2,
+          "sugar": 8,
+          "fat": 10
+        }
+      }
+    ],
     "notes": [
-      "Brand matches and 80% of product words found.",
-      "USDA and Open Food Facts disagree (sugar: 14 vs 8)."
+      "Brand matches and 100% of product words found.",
+      "USDA: USDA and Open Food Facts disagree (sugar: 14 vs 8).",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values from the Nutrition Facts listed as text on GoMacro's product page."
     ]
   }
 }

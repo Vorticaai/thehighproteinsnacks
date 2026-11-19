@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-18",
+  "checkedAt": "2026-11-19",
   "query": "IQBAR Peanut Butter Chip Bar",
   "match": {
     "pinned": false,
@@ -79,9 +79,20 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/455/4005/front_id.226.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 190,
+      "carbs": 17,
+      "fiber": 9,
+      "sugar": 1,
+      "fat": 10,
+      "servingSize": "1 bar (45 g)",
+      "servingSizeG": 45
+    },
     "notes": [
-      "USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10)."
+      "USDA: USDA and Open Food Facts disagree (calories: 180 vs 160; fat: 12 vs 10).",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -95,11 +106,11 @@
     "fat": 10
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar (45 g)",
+    "servingSizeG": 45,
     "protein": 12,
-    "calories": 180,
-    "carbs": 3,
+    "calories": 190,
+    "carbs": 17,
     "fiber": 9,
     "sugar": 1,
     "fat": 10

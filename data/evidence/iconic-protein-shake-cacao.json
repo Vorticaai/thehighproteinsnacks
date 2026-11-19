@@ -1,10 +1,10 @@
 {
   "checkedAt": "2026-11-19",
-  "query": "Iconic protein drink cafe mocha",
+  "query": "ICONIC Protein Drink, Café Latte",
   "match": {
     "pinned": false,
     "confident": false,
-    "reason": "Only 0% of product words found; needs a person to confirm.",
+    "reason": "Only 67% of product words found; needs a person to confirm.",
     "chosen": {
       "fdcId": 2396562,
       "description": "CAFE LATTE PROTEIN DRINK, CAFE LATTE",
@@ -12,7 +12,7 @@
       "brandName": "ICONIC",
       "gtinUpc": "853650004160",
       "publishedDate": "2022-12-22",
-      "score": 0,
+      "score": 0.6666666666666666,
       "brandOk": true
     },
     "topCandidates": [
@@ -23,7 +23,17 @@
         "brandName": "ICONIC",
         "gtinUpc": "853650004160",
         "publishedDate": "2022-12-22",
-        "score": 0,
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2409161,
+        "description": "CAFE LATTE GRASS FED PROTEIN DRINK, CAFE LATTE",
+        "brandOwner": "Be Well Nutrition, INC",
+        "brandName": "ICONIC",
+        "gtinUpc": "853650004436",
+        "publishedDate": "2022-12-22",
+        "score": 0.6666666666666666,
         "brandOk": true
       },
       {
@@ -33,7 +43,17 @@
         "brandName": "ICONIC",
         "gtinUpc": "853650004450",
         "publishedDate": "2022-12-07",
-        "score": 0,
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2365105,
+        "description": "CAFE LATTE PROTEIN POWDER, CAFE LATTE",
+        "brandOwner": "Be Well Nutrition, INC",
+        "brandName": "ICONIC",
+        "gtinUpc": "853650004641",
+        "publishedDate": "2022-12-07",
+        "score": 0.3333333333333333,
         "brandOk": true
       }
     ]
@@ -79,9 +99,20 @@
     "image_front_url": "https://images.openfoodfacts.org/images/products/085/365/000/4160/front_en.5.400.jpg"
   },
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 8,
+      "fiber": 4,
+      "sugar": 0,
+      "fat": 2.5,
+      "servingSize": "1 bottle",
+      "servingSizeG": null
+    },
     "notes": [
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "USDA: USDA match is uncertain; a person should confirm the right product in the evidence file.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -95,11 +126,11 @@
     "fat": 2.5
   },
   "after": {
-    "servingSize": null,
+    "servingSize": "1 bottle",
     "servingSizeG": null,
     "protein": 20,
     "calories": 140,
-    "carbs": 3,
+    "carbs": 8,
     "fiber": 4,
     "sugar": 0,
     "fat": 2.5

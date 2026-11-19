@@ -10,12 +10,12 @@
     "note": "Brand's own store: $38.99 for 12 bottles (19 Nov 2026)."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "11.15 fl oz / 330 ml",
     "servingSizeG": null,
     "protein": 20,
-    "calories": 180,
+    "calories": 170,
     "carbs": 9,
-    "fiber": 3,
+    "fiber": 5,
     "sugar": 4,
     "fat": 7
   },
@@ -28,17 +28,54 @@
   },
   "identifiers": {
     "asin": "B08PMC1ZJW",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "856461008716",
+    "fdcId": 2670196
   },
-  "image": null,
+  "image": {
+    "src": "/products/owyn-protein-shake-chocolate.jpg",
+    "alt": "OWYN OWYN Plant Protein Shake, Dark Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0856461008716"
+  },
   "verification": {
-    "status": "needs-review",
+    "status": "verified",
     "checkedAt": "2026-11-19",
-    "sources": [],
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2670196",
+        "url": "https://fdc.nal.usda.gov/food-details/2670196/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 172,
+          "carbs": 9,
+          "fiber": 5,
+          "sugar": 4,
+          "fat": 7
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0856461008716",
+        "url": "https://world.openfoodfacts.org/product/0856461008716",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 170,
+          "carbs": 9,
+          "fiber": 5,
+          "sugar": 4,
+          "fat": 7
+        }
+      }
+    ],
     "notes": [
-      "Only 40% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Brand matches and 75% of product words found.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Reviewer: values from the Nutrition Facts listed as text on OWYN's product page."
     ]
   }
 }
