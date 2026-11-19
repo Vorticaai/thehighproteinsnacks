@@ -573,6 +573,17 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
   );
 }
 
+// Deep-content guide for this category, where one exists. These pages
+// used to have no link to or from the matching /snacks/<category> filter
+// page — two pages on the same topic with nothing connecting them.
+const CATEGORY_GUIDE_LINKS: Partial<Record<CategorySlug, { href: string; label: string }>> = {
+  "weight-loss": { href: "/best-high-protein-snacks-for-weight-loss", label: "Read our full weight-loss snack guide" },
+  "keto": { href: "/best-high-protein-snacks-for-keto", label: "Read our full keto snack guide" },
+  "low-sugar": { href: "/guides/best-low-sugar-high-protein-snacks", label: "Read our full low-sugar snack guide" },
+  "best-value": { href: "/guides/best-budget-snacks", label: "Read our full best-value snack guide" },
+  "vegan": { href: "/guides/best-vegan-high-protein-snacks", label: "Read our full vegan snack guide" },
+};
+
 function CategoryListing({ slug }: { slug: CategorySlug }) {
   const details = getCategoryDetails(slug);
   if (!details) notFound();
@@ -581,6 +592,7 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
   }
 
   const products = getProductsByCategory(slug);
+  const guideLink = CATEGORY_GUIDE_LINKS[slug];
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Snacks", href: "/snacks" },
@@ -634,6 +646,14 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
             {details.title}
           </h1>
           <p className="text-lg text-gray-600">{details.description}</p>
+          {guideLink && (
+            <Link
+              href={guideLink.href}
+              className="mt-4 inline-flex items-center font-semibold text-[#006F6D] hover:underline"
+            >
+              {guideLink.label} →
+            </Link>
+          )}
         </header>
 
         {products.length > 0 ? (

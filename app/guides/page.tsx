@@ -43,6 +43,35 @@ const featuredCategoryLinks = [
   { label: "Vegan Snacks", href: "/snacks/vegan" },
 ];
 
+// Two data/guides.ts slugs now permanently redirect to the standalone
+// "best-high-protein-snacks-for-*" pages (see next.config.mjs) — link
+// straight to the real destination instead of through the redirect.
+const REDIRECTED_GUIDE_HREFS: Record<string, string> = {
+  "best-high-protein-snacks-for-weight-loss": "/best-high-protein-snacks-for-weight-loss",
+  "best-keto-snacks": "/best-high-protein-snacks-for-keto",
+};
+
+function guideHref(slug: string) {
+  return REDIRECTED_GUIDE_HREFS[slug] ?? `/guides/${slug}`;
+}
+
+// Standalone guide pages that have no data/guides.ts entry at all. Without
+// this, these had no internal link from anywhere on the site.
+const situationalGuides = [
+  {
+    href: "/best-high-protein-snacks-for-road-trips",
+    title: "Best High-Protein Snacks for Road Trips",
+    description:
+      "Shelf-stable, mess-free picks that survive a hot glovebox and a long drive.",
+  },
+  {
+    href: "/best-high-protein-snacks-for-office-and-desk",
+    title: "Best High-Protein Snacks for the Office & Desk",
+    description:
+      "Quiet, no-fridge-needed snacks that won't leave your keyboard sticky.",
+  },
+];
+
 export default function GuidesPage() {
   const breadcrumbItems = [
     { name: "Home", href: "/" },
@@ -64,11 +93,20 @@ export default function GuidesPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "High-Protein Snack Guides",
-    itemListElement: guides.map((guide, index) => ({
+    itemListElement: [
+      ...guides.map((guide) => ({
+        name: guide.title,
+        url: absoluteUrl(guideHref(guide.slug)),
+      })),
+      ...situationalGuides.map((guide) => ({
+        name: guide.title,
+        url: absoluteUrl(guide.href),
+      })),
+    ].map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: guide.title,
-      url: absoluteUrl(`/guides/${guide.slug}`),
+      name: item.name,
+      url: item.url,
     })),
   };
 
@@ -134,7 +172,7 @@ export default function GuidesPage() {
             {guides.map((guide) => (
               <Link
                 key={guide.slug}
-                href={`/guides/${guide.slug}`}
+                href={guideHref(guide.slug)}
                 className="group flex h-full flex-col rounded-2xl border-2 border-[#C6FF47] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:ring-2 hover:ring-[#C6FF47]"
               >
                 <div className="mb-4 flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-gray-500">
@@ -160,6 +198,31 @@ export default function GuidesPage() {
             </p>
           </div>
         )}
+
+        <div className="mt-12">
+          <h2 className="mb-6 text-2xl font-bold text-gray-900">
+            Guides by Situation
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            {situationalGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="group flex h-full flex-col rounded-2xl border-2 border-[#C6FF47] bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg hover:ring-2 hover:ring-[#C6FF47]"
+              >
+                <h3 className="mb-3 text-xl font-bold text-gray-900">
+                  {guide.title}
+                </h3>
+                <p className="mb-4 flex-1 text-sm leading-relaxed text-gray-600">
+                  {guide.description}
+                </p>
+                <span className="inline-flex items-center font-semibold text-[#0B1F1E]">
+                  Read guide →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </main>
     </>
   );

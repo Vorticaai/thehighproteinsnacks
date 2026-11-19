@@ -13,6 +13,14 @@ import remarkGfm from "remark-gfm";
 
 export const revalidate = 60 * 60 * 6;
 
+// Matching /snacks/<category> filter page for a guide, where one exists.
+// These two pages used to have nothing linking between them.
+const GUIDE_CATEGORY_LINKS: Partial<Record<string, { href: string; label: string }>> = {
+  "best-low-sugar-high-protein-snacks": { href: "/snacks/low-sugar", label: "Browse & filter all low-sugar snacks" },
+  "best-budget-snacks": { href: "/snacks/best-value", label: "Browse & filter all best-value snacks" },
+  "best-vegan-high-protein-snacks": { href: "/snacks/vegan", label: "Browse & filter all vegan snacks" },
+};
+
 interface GuidePageProps {
   params: { slug: string };
 }
@@ -306,9 +314,17 @@ export default function GuidePage({ params }: GuidePageProps) {
 
         {recommendedProducts.length > 0 && (
           <section className="mb-12">
-            <h2 className="mb-6 border-b-2 border-[#C6FF47] pb-2 text-2xl font-bold">
-              Recommended Snacks
-            </h2>
+            <div className="mb-6 flex flex-wrap items-end justify-between gap-2 border-b-2 border-[#C6FF47] pb-2">
+              <h2 className="text-2xl font-bold">Recommended Snacks</h2>
+              {GUIDE_CATEGORY_LINKS[guide.slug] && (
+                <Link
+                  href={GUIDE_CATEGORY_LINKS[guide.slug]!.href}
+                  className="text-sm font-semibold text-[#0B1F1E] hover:underline"
+                >
+                  {GUIDE_CATEGORY_LINKS[guide.slug]!.label} →
+                </Link>
+              )}
+            </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {recommendedProducts.map((product) => (
                 <Link

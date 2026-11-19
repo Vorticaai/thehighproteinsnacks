@@ -131,7 +131,7 @@ const getTravelNote = (snack: Product): string => {
         <Breadcrumbs 
           items={[
             { label: "Home", href: "/" },
-            { label: "Guides", href: "/" },
+            { label: "Guides", href: "/guides" },
             { label: "Best for Road Trips" }
           ]} 
         />

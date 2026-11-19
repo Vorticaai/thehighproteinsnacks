@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { getAllProducts } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
@@ -66,7 +67,7 @@ export default function BestKetoSnacksPage() {
         <Breadcrumbs 
           items={[
             { label: "Home", href: "/" },
-            { label: "Guides", href: "/" },
+            { label: "Guides", href: "/guides" },
             { label: "Best for Keto" }
           ]} 
         />
@@ -100,9 +101,17 @@ export default function BestKetoSnacksPage() {
 
         {/* Top Picks Section */}
         <section className="mb-16">
-          <h2 className="mb-8 text-3xl font-bold text-gray-900">
-            Top Keto-Friendly Snacks (Ranked)
-          </h2>
+          <div className="mb-8 flex flex-wrap items-baseline justify-between gap-2">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Top Keto-Friendly Snacks (Ranked)
+            </h2>
+            <Link
+              href="/snacks/keto"
+              className="text-sm font-semibold text-primary hover:underline"
+            >
+              Browse &amp; filter all keto snacks →
+            </Link>
+          </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {bestSnacks.map((snack, index) => (
               <div key={snack.id} className="relative">

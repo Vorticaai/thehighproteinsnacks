@@ -11,60 +11,69 @@ type SnackCardProps = {
 }
 
 export function SnackCard({ snack }: SnackCardProps) {
+  // Not a single outer <Link>: ProductVisual's figcaption renders real <a>
+  // attribution links for CC BY-SA photo credit, and HTML doesn't allow an
+  // <a> inside another <a> — wrapping the whole card broke hydration (the
+  // browser silently un-nests the tags, so server and client HTML disagree)
+  // and forced these pages into full client-side re-rendering. ProductCard
+  // already uses this same un-nested pattern; matching it here.
   return (
-    <Link href={`/snacks/${snack.id}`} className="block">
-      <div className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md">
-        {/* Licensed photo with credit, or the generated label card */}
-        <div className="aspect-[4/3] w-full overflow-hidden rounded-t-2xl">
-          <ProductVisual product={snack} />
+    <div className="group flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md">
+      {/* Licensed photo with credit, or the generated label card */}
+      <div className="aspect-[4/3] w-full overflow-hidden rounded-t-2xl">
+        <ProductVisual product={snack} />
+      </div>
+
+      {/* Card Content */}
+      <div className="flex flex-1 flex-col p-4">
+        <div className="mb-3 flex items-center justify-between gap-2">
+          <span className="text-xs font-semibold text-gray-600">{snack.brand}</span>
+          <VerifiedPill product={snack} />
         </div>
 
-        {/* Card Content */}
-        <div className="flex flex-1 flex-col p-4">
-          <div className="mb-3 flex items-center justify-between gap-2">
-            <span className="text-xs font-semibold text-gray-600">{snack.brand}</span>
-            <VerifiedPill product={snack} />
-          </div>
-
-          {/* Product Name */}
-          <h3 className="mb-3 line-clamp-2 text-base font-bold text-gray-900 group-hover:text-[#006F6D]">
+        {/* Product Name */}
+        <Link href={`/snacks/${snack.id}`} className="mb-3 block">
+          <h3 className="line-clamp-2 text-base font-bold text-gray-900 group-hover:text-[#006F6D]">
             {snack.name}
           </h3>
-          
-          {/* Macro Stats */}
-          <div className="mb-4 grid grid-cols-3 gap-2">
-            <MacroStat
-              label="Protein"
-              value={`${snack.proteinPerServing}g`}
-              highlight
-            />
-            <MacroStat label="Calories" value={`${snack.caloriesPerServing}`} />
-            {snack.pricePerServing > 0 ? (
-              <MacroStat label="g per $" value={`${snack.proteinPerDollar.toFixed(1)}`} isPricePerProtein />
-            ) : (
-              <MacroStat label="Sugar" value={`${snack.sugarPerServing}g`} />
-            )}
-          </div>
+        </Link>
 
-          {/* Diet Tags */}
-          <div className="mt-auto flex flex-wrap gap-1.5">
-            {(snack.dietTags ?? []).slice(0, 2).map((tag) => (
-              <span
-                key={tag}
-                className="inline-block rounded-full bg-[#006F6D] px-3 py-1 text-xs font-medium text-white"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-
-          {/* View Link */}
-          <div className="mt-3 text-sm font-medium text-[#006F6D] group-hover:underline">
-            View →
-          </div>
+        {/* Macro Stats */}
+        <div className="mb-4 grid grid-cols-3 gap-2">
+          <MacroStat
+            label="Protein"
+            value={`${snack.proteinPerServing}g`}
+            highlight
+          />
+          <MacroStat label="Calories" value={`${snack.caloriesPerServing}`} />
+          {snack.pricePerServing > 0 ? (
+            <MacroStat label="g per $" value={`${snack.proteinPerDollar.toFixed(1)}`} isPricePerProtein />
+          ) : (
+            <MacroStat label="Sugar" value={`${snack.sugarPerServing}g`} />
+          )}
         </div>
+
+        {/* Diet Tags */}
+        <div className="mt-auto flex flex-wrap gap-1.5">
+          {(snack.dietTags ?? []).slice(0, 2).map((tag) => (
+            <span
+              key={tag}
+              className="inline-block rounded-full bg-[#006F6D] px-3 py-1 text-xs font-medium text-white"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        {/* View Link */}
+        <Link
+          href={`/snacks/${snack.id}`}
+          className="mt-3 block text-sm font-medium text-[#006F6D] group-hover:underline"
+        >
+          View →
+        </Link>
       </div>
-    </Link>
+    </div>
   )
 }
 
