@@ -61,8 +61,12 @@ export function energyCheck(v: PerServing): { ok: boolean; estimate: number } {
   return { ok: Math.abs(estimate - calories!) / calories! <= band, estimate }
 }
 
-/** Basic sanity rules every label must pass. Returns the problems found. */
-export function plausibilityProblems(v: PerServing): string[] {
+/**
+ * Sanity rules that should never be overridden: missing/negative values,
+ * sugar or fiber exceeding total carbs, or macros exceeding the serving
+ * weight. These indicate bad data, not an unusual-but-correct product.
+ */
+export function nonEnergyPlausibilityProblems(v: PerServing): string[] {
   const problems: string[] = []
   for (const f of CORE_FIELDS) {
     const x = v[f]
@@ -75,6 +79,13 @@ export function plausibilityProblems(v: PerServing): string[] {
   if (v.servingSizeG && v.protein! + v.carbs! + v.fat! > v.servingSizeG * 1.05) {
     problems.push(`protein + carbs + fat is more than the serving weight (${v.servingSizeG}g)`)
   }
+  return problems
+}
+
+/** Basic sanity rules every label must pass. Returns the problems found. */
+export function plausibilityProblems(v: PerServing): string[] {
+  const problems = nonEnergyPlausibilityProblems(v)
+  if (problems.length) return problems
   const energy = energyCheck(v)
   if (!energy.ok) {
     problems.push(`calories (${v.calories}) don't match the macros (about ${Math.round(energy.estimate)})`)
@@ -125,11 +136,30 @@ export function decide(input: {
       notes: ["USDA match is uncertain; a person should confirm the right product in the evidence file."],
     }
   }
-  const problems = plausibilityProblems(primary)
-  if (problems.length) {
-    return { status: "needs-review", notes: problems.map((p) => `USDA label data failed a check: ${p}.`) }
+  const hardProblems = nonEnergyPlausibilityProblems(primary)
+  if (hardProblems.length) {
+    return { status: "needs-review", notes: hardProblems.map((p) => `USDA label data failed a check: ${p}.`) }
   }
+  // The energy check assumes standard 4/4/9 kcal-per-gram macros, which
+  // doesn't hold for products using a low-calorie sweetener (allulose,
+  // erythritol, etc.). A reviewer who has confirmed that's the reason for
+  // the mismatch can accept it with acceptPrimaryReason, the same escape
+  // hatch already used for a primary/secondary disagreement below.
+  const energy = energyCheck(primary)
   const notes: string[] = []
+  if (!energy.ok) {
+    if (!acceptPrimaryReason) {
+      return {
+        status: "needs-review",
+        notes: [
+          `USDA label data failed a check: calories (${primary.calories}) don't match the macros (about ${Math.round(energy.estimate)}).`,
+        ],
+      }
+    }
+    notes.push(
+      `Energy check failed (macros imply about ${Math.round(energy.estimate)} kcal vs the stated ${primary.calories}); a reviewer accepted it: ${acceptPrimaryReason}`,
+    )
+  }
   if (secondary) {
     const diff = disagreements(primary, secondary)
     if (diff.length) {
@@ -138,6 +168,7 @@ export function decide(input: {
           status: "verified",
           values: primary,
           notes: [
+            ...notes,
             `USDA and Open Food Facts disagree (${diff.join("; ")}); a reviewer accepted the USDA label data: ${acceptPrimaryReason}`,
           ],
         }
