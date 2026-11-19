@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Oikos+Pro+Vanilla+Greek+Yogurt",
   "price": {
-    "perServing": 0,
+    "perServing": 1.66,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, single ~5.3 oz Oikos Pro cup, $1.66 (19 Nov 2026); exact match for this serving size not confirmed."
   },
   "nutrition": {
     "servingSize": "240 g",

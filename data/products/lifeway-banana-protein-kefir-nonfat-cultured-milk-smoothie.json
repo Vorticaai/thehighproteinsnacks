@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Lifeway+Banana+Protein+Kefir+Nonfat+Cultured+Milk+Smoothie",
   "price": {
-    "perServing": 0,
+    "perServing": 1.59,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Target, single 8 fl oz bottle, $1.59 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 cup / 240 ml",

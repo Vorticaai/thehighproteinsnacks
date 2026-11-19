@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Protein+One+Peanut+Butter+Chocolate+Protein+Bars",
   "price": {
-    "perServing": 0,
+    "perServing": 0.79,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 5-bar box (4.8 oz), $3.97 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 bar / 27 g",

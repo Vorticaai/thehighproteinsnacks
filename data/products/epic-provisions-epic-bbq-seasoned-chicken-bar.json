@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Epic+BBQ+Seasoned+Chicken+Bar",
   "price": {
-    "perServing": 0,
+    "perServing": 2.33,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Amazon, 12-count box, ~$27.99 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 bar / 37 g",

@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Built+Coconut+Puff+Protein+Bars",
   "price": {
-    "perServing": 0,
+    "perServing": 2.25,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 4-count box (1.41 oz bars), $8.98 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 Bar / 40 g",

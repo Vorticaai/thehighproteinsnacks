@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Orgain+Protein+Bar",
   "price": {
-    "perServing": 0,
+    "perServing": 1.15,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Estimated consistent with Orgain's existing protein-bar-line pricing (~$1.15/bar); no new listing found (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 BAR / 40 g",

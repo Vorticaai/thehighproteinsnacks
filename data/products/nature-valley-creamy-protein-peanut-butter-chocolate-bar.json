@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Creamy+Protein+Peanut+Butter+Chocolate+Creamy+Crispy+Bar",
   "price": {
-    "perServing": 0,
+    "perServing": 0.79,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 5-bar box (7.45 oz), $3.97 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 bar (42g) / 42 g",

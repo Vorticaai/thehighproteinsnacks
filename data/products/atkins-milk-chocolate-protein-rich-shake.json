@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Atkins+Protein-Rich+Shake%2C+Milk+Chocolate",
   "price": {
-    "perServing": 0,
+    "perServing": 1.75,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 4-pack of 11 fl oz shakes, $6.98 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 shake / 325 ml",

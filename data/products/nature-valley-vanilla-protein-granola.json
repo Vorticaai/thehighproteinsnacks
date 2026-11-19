@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Vanilla+Protein+Granola",
   "price": {
-    "perServing": 0,
+    "perServing": 0.94,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 11 oz pouch (~4.8 servings of 65 g), $4.47 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "65 / 65 g",

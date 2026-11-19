@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Larabar+Protein+Peanut+Butter+Chocolate+Bar",
   "price": {
-    "perServing": 0,
+    "perServing": 1.39,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 5-bar box (7.95 oz) of Larabar Protein bars, $6.96 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 bar / 45 g",

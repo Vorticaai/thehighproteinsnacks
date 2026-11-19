@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Perfect+Bar+Mocha+Chip+Protein+Bar",
   "price": {
-    "perServing": 0,
+    "perServing": 3.63,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Brand's own store (perfectbar.com): 8-bar box, $29.00 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 Bar / 62 g",

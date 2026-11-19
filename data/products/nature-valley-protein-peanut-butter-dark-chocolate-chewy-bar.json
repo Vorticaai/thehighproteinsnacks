@@ -5,9 +5,9 @@
   "productType": "bar",
   "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Protein+Peanut+Butter+Dark+Chocolate+Chewy+Bar",
   "price": {
-    "perServing": 0,
+    "perServing": 1.39,
     "status": "estimate",
-    "note": "No price recorded yet."
+    "note": "Walmart, 5-bar box (7.1 oz), $6.97 (19 Nov 2026)."
   },
   "nutrition": {
     "servingSize": "1 bar / 50 g",
