@@ -31,14 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/chomps-turkey-jerky-meat-stick.jpg",
+    "alt": "Chomps Chomps Turkey Jerky Meat Sticks package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850015892295"
+  },
   "verification": {
     "status": "needs-review",
     "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Only 50% of product words found; needs a person to confirm.",
-      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (calories: 60 vs 80).",
+      "Reviewer: the auto-search's top candidate (fdcId 2653535) is a 14g mini stick, clearly wrong for a 12g-protein product. This candidate (2554461, description 'ORIGINAL TURKEY STICKS', brandName CHOMPS despite an odd brandOwner field) has no 'mini' in its name and scored the same 50% as the mini one, so wasn't auto-picked. Multiple major retailers (Kroger, Target, H-E-B, Giant Food, Lowes Foods - all independently) consistently list the regular 1.15oz/32g Chomps Original Turkey Stick at 12g protein, 0g sugar, 80 calories, matching our existing catalogue value exactly. Pinning this candidate so the pipeline's own USDA fetch can confirm or reject it directly - not hand-transcribing the retailer numbers themselves."
     ]
   }
 }
