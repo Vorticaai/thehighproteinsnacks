@@ -1,9 +1,3 @@
 {
-  "products": [
-    {
-      "id": "magic-spoon-protein-cereal-frosted",
-      "fdcId": 2554390,
-      "acceptUsdaReason": "USDA's own label data is a confident, exact brand+description match (FROSTED GRAIN-FREE CEREAL, FROSTED, Magic Spoon Inc., GTIN 850002887457). The energy check fails (171 vs 140 kcal) only because the ingredients list a sweetener blend of allulose, monk fruit extract and stevia extract - allulose provides ~0.4 kcal/g rather than the ~4 kcal/g the energy check assumes for carbs, which accounts for the full 31 kcal gap. No Open Food Facts record to cross-check. This also corrects the catalogue's placeholder carbs (4g -> 14g), which was implausible for a cereal."
-    }
-  ]
+  "products": []
 }
