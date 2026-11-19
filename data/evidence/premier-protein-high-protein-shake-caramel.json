@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Premier Protein Shake, Caramel",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2488868,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2488868,
+    "description": "HIGH PROTEIN SHAKE, CARAMEL",
+    "brandOwner": "Premier Nutrition Corporation",
+    "brandName": "PREMIER PROTEIN",
+    "gtinUpc": "643843715566",
+    "servingSize": 330,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "1 SHAKE",
+    "dataSource": "LI",
+    "modifiedDate": "2/3/2022",
+    "ingredients": "WATER, PREMIER PROTEIN SHAKE PROTEIN BLEND (MILK PROTEIN CONCENTRATE, CALCIUM CASEINATE, WHEY PROTEIN CONCENTRATE), CONTAINS 1% OR LESS OF THE FOLLOWING: HIGH OLEIC SUNFLOWER OIL, INULIN, CELLULOSE GEL AND CELLULOSE GUM, MAGNESIUM PHOSPHATE, DATEM, SALT, NATURAL AND ARTIFICIAL FLAVORS, SUCRALOSE, ACESULFAME POTASSIUM, CARRAGEENAN, VITAMIN AND MINERAL BLEND (SODIUM ASCORBATE [VITAMIN C], DL-ALPHA TOCOPHERYL ACETATE [VITAMIN E], ZINC AMINO ACID CHELATE, BIOTIN, VITAMIN A PALMITATE, NIACINAMIDE, POTASSIUM IODIDE, COPPER AMINO ACID CHELATE, CALCIUM D-PANTOTHENATE, CHROMIUM CHLORIDE, CYANOCOBALAMIN [VITAMIN B12], PHYTONADIONE [VITAMIN K], SODIUM MOLYBDATE, SODIUM SELENITE, FOLIC ACID, CHOLECALCIFEROL [VITAMIN D3], PYRIDOXINE HYDROCHLORIDE [VITAMIN B6], THIAMINE MONONITRATE [VITAMIN B1], RIBOFLAVIN [VITAMIN B2]), FERRIC ORTHOPHOSPHATE, MANGANESE SULFATE, TRIPOTASSIUM PHOSPHATE, DIPOTASSIUM PHOSPHATE, SODIUM POLYPHOSPHATE.",
+    "perServing": {
+      "protein": 30,
+      "calories": 158,
+      "carbs": 5.02,
+      "fiber": 1.98,
+      "sugar": 0.99,
+      "fat": 3,
+      "servingSize": "1 SHAKE / 330 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 30,
+      "calories": 160,
+      "carbs": 5,
+      "fiber": 2,
+      "sugar": 1,
+      "fat": 3,
+      "servingSize": "1 SHAKE / 330 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 SHAKE / 330 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 160,
+    "carbs": 5,
+    "fiber": 2,
+    "sugar": 1,
+    "fat": 3
+  }
+}

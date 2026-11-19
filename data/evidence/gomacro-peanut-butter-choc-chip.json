@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "GoMacro MacroBar peanut butter chocolate chip",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 80% of product words found.",
+    "chosen": {
+      "fdcId": 2677577,
+      "description": "PEANUT BUTTER CHOCOLATE CHIP MACROBAR, PEANUT BUTTER CHOCOLATE CHIP",
+      "brandOwner": "GO MACRO LLC",
+      "brandName": "GOMACRO",
+      "gtinUpc": "181945000062",
+      "publishedDate": "2023-11-16",
+      "score": 0.8,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2677577,
+        "description": "PEANUT BUTTER CHOCOLATE CHIP MACROBAR, PEANUT BUTTER CHOCOLATE CHIP",
+        "brandOwner": "GO MACRO LLC",
+        "brandName": "GOMACRO",
+        "gtinUpc": "181945000062",
+        "publishedDate": "2023-11-16",
+        "score": 0.8,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2664065,
+        "description": "PEANUT BUTTER CHOCOLATE CHIP MACROBAR MINIS, PEANUT BUTTER CHOCOLATE CHIP",
+        "brandOwner": "K & D Image Production, Inc.",
+        "brandName": "GOMACRO",
+        "gtinUpc": "810039910610",
+        "publishedDate": "2023-11-16",
+        "score": 0.8,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2664499,
+        "description": "DOUBLE CHOCOLATE + PEANUT BUTTER CHIPS MACROBAR, DOUBLE CHOCOLATE + PEANUT BUTTER CHIPS",
+        "brandOwner": "GO MACRO LLC",
+        "brandName": "GOMACRO",
+        "gtinUpc": "853555006559",
+        "publishedDate": "2023-11-16",
+        "score": 0.8,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2506593,
+        "description": "PEANUT BUTTER CHOCOLATE CHIP MACROBARS, PEANUT BUTTER CHOCOLATE CHIP",
+        "brandOwner": "GO MACRO LLC",
+        "brandName": "GOMACRO",
+        "gtinUpc": "181945000802",
+        "publishedDate": "2023-03-16",
+        "score": 0.8,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2509098,
+        "description": "DOUBLE CHOCOLATE + PEANUT BUTTER CHIPS MACROBAR MINIS, DOUBLE CHOCOLATE + PEANUT BUTTER CHIPS",
+        "brandOwner": "K & D Image Production, Inc.",
+        "brandName": "GOMACRO",
+        "gtinUpc": "810039910672",
+        "publishedDate": "2023-03-16",
+        "score": 0.8,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2677577,
+    "description": "PEANUT BUTTER CHOCOLATE CHIP MACROBAR, PEANUT BUTTER CHOCOLATE CHIP",
+    "brandOwner": "GO MACRO LLC",
+    "brandName": "GOMACRO",
+    "gtinUpc": "181945000062",
+    "servingSize": 69,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "2/16/2023",
+    "ingredients": "ORGANIC BROWN RICE SYRUP, ORGANIC PEANUT BUTTER, ORGANIC PROTEIN BLEND (ORGANIC SPROUTED BROWN RICE PROTEIN, ORGANIC PEA PROTEIN), ORGANIC CHOCOLATE CHIPS (ORGANIC COCONUT SUGAR, ORGANIC COCOA, ORGANIC COCOA BUTTER), ORGANIC PUFFED BROWN RICE, ORGANIC PEANUTS.",
+    "perServing": {
+      "protein": 11,
+      "calories": 290,
+      "carbs": 39,
+      "fiber": 2,
+      "sugar": 14,
+      "fat": 11,
+      "servingSize": "1 bar / 69 g",
+      "servingSizeG": 69
+    }
+  },
+  "openFoodFacts": {
+    "code": "0181945000062",
+    "product_name": "protein pleasure peanut butter chocolate chip",
+    "brands": "go macro MACROBAR",
+    "serving_size": "1 portion (69 g)",
+    "perServing": {
+      "protein": 11,
+      "calories": 290,
+      "carbs": 39,
+      "fiber": 2,
+      "sugar": 8,
+      "fat": 10,
+      "servingSize": "1 portion (69 g)",
+      "servingSizeG": 69
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/018/194/500/0062/front_en.46.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (sugar: 14 vs 8)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 11,
+    "calories": 260,
+    "carbs": 37,
+    "fiber": 2,
+    "sugar": 9,
+    "fat": 10
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 11,
+    "calories": 260,
+    "carbs": 37,
+    "fiber": 2,
+    "sugar": 9,
+    "fat": 10
+  }
+}

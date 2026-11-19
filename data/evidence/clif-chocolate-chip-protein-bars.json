@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Clif Chocolate Chip Protein Bars",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2508153,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2508153,
+    "description": "CHOCOLATE CHIP PROTEIN BARS, CHOCOLATE CHIP",
+    "brandOwner": "Clif Bar and Company",
+    "brandName": "CLIF",
+    "gtinUpc": "722252600479",
+    "servingSize": 68,
+    "servingSizeUnit": "IU",
+    "householdServingFullText": "1 BAR",
+    "dataSource": "LI",
+    "modifiedDate": "1/21/2023",
+    "ingredients": "SOY PROTEIN ISOLATE, BEET JUICE CONCENTRATE, ORGANIC BROWN RICE SYRUP, ORGANIC DRIED CANE SYRUP, PALM KERNEL OIL, NATURAL FLAVORS, COCOA++, ORGANIC SOY BUTTER, VEGETABLE GLYCERIN, ORGANIC SUNFLOWER OIL, INULIN (CHICORY EXTRACT), ORGANIC ROLLED OATS, ORGANIC SOY PROTEIN CONCENTRATE, UNSWEETENED CHOCOLATE, ORGANIC OAT FIBER, RICE STARCH, SEA SALT, ORGANIC COCOA BUTTER, SOY LECITHIN, VANILLA EXTRACT, ORGANIC VANILLA EXTRACT.VITAMINS & MINERALS: CALCIUM CARBONATE, MAGNESIUM OXIDE, ASCORBIC ACID (VIT. C), DL-ALPHA TOCOPHERYL ACETATE (VIT. E), THIAMINE MONONITRATE (VIT. B1), BETA CAROTENE (VIT. A), NIACINAMIDE (VIT. B3), D-CALCIUM PANTOTHENATE (VIT. B5), RIBOFLAVIN (VIT. B2), PYRIDOXINE HYDROCHLORIDE (VIT. B6), ERGOCALCIFEROL (VIT. D2), CYANOCOBALAMIN (VIT. B12), POTASSIUM IODIDE.",
+    "perServing": {
+      "protein": 20,
+      "calories": 270,
+      "carbs": 29,
+      "fiber": 2.99,
+      "sugar": 21,
+      "fat": 8,
+      "servingSize": "1 BAR / 68 iu",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 270,
+      "carbs": 29,
+      "fiber": 3,
+      "sugar": 21,
+      "fat": 8,
+      "servingSize": "1 BAR / 68 iu",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BAR / 68 iu",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 270,
+    "carbs": 29,
+    "fiber": 3,
+    "sugar": 21,
+    "fat": 8
+  }
+}

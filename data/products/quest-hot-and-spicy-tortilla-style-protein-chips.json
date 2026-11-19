@@ -1,0 +1,61 @@
+{
+  "id": "quest-hot-and-spicy-tortilla-style-protein-chips",
+  "name": "Quest Hot & Spicy Tortilla Style Protein Chips",
+  "brand": "Quest",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/s?k=Quest+Hot+%26+Spicy+Tortilla+Style+Protein+Chips",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "888849013548",
+    "fdcId": 2669759
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669759",
+        "url": "https://fdc.nal.usda.gov/food-details/2669759/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 19,
+          "calories": 140,
+          "carbs": 5,
+          "fiber": 1,
+          "sugar": 1,
+          "fat": 5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

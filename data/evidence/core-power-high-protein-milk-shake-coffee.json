@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Core Power High Protein Shake, Coffee",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2369918,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2369918,
+    "description": "HIGH PROTEIN MILK SHAKE, COFFEE",
+    "brandOwner": "Fair Oaks Farms Brands, Inc.",
+    "brandName": "CORE POWER",
+    "gtinUpc": "856312002245",
+    "servingSize": 340,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "11.5 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "9/20/2022",
+    "ingredients": "FILTERED LOWFAT GRADE A MILK, CANE SUGAR, COFFEE EXTRACT, CONTAINS LESS THAN 1% OF HONEY, PECTIN, GELLAN GUM, NATURAL FLAVORS, MONK FRUIT JUICE CONCENTRATE, STEVIA LEAF EXTRACT, LACTASE ENZYME, VITAMIN A PALMITATE, VITAMIN D3",
+    "perServing": {
+      "protein": 26,
+      "calories": 211,
+      "carbs": 21,
+      "fiber": 0,
+      "sugar": 19,
+      "fat": 3.5,
+      "servingSize": "11.5 OZA / 340 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0856312002245",
+    "product_name": "High protein milk shake",
+    "serving_size": "11.5 OZA (340 ml)",
+    "perServing": {
+      "protein": 26,
+      "calories": 211,
+      "carbs": 21,
+      "fiber": 0,
+      "sugar": 19,
+      "fat": 3.5,
+      "servingSize": "11.5 OZA (340 ml)",
+      "servingSizeG": 340
+    }
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 26,
+      "calories": 210,
+      "carbs": 21,
+      "fiber": 0,
+      "sugar": 19,
+      "fat": 3.5,
+      "servingSize": "11.5 OZA / 340 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "11.5 OZA / 340 ml",
+    "servingSizeG": null,
+    "protein": 26,
+    "calories": 210,
+    "carbs": 21,
+    "fiber": 0,
+    "sugar": 19,
+    "fat": 3.5
+  }
+}

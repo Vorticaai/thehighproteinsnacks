@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Stryve Hickory Seasoned Beef Biltong",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2670209,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2670209,
+    "description": "HICKORY SEASONED BEEF BILTONG, HICKORY SEASONED",
+    "brandOwner": "Stryve Foods",
+    "brandName": "STRYVE",
+    "gtinUpc": "856492007474",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 oz",
+    "dataSource": "LI",
+    "modifiedDate": "5/24/2021",
+    "ingredients": "BEEF, NATURAL SMOKE FLAVOR (WATER, HICKORY SMOKE CONCENTRATE), VINEGAR, CONTAINS 2% OR LESS OF: SALT, RAISIN JUICE CONCENTRATE, BLACK PEPPER, WHITE PEPPER, GARLIC POWDER, CORIANDER, CLOVE, AND NUTMEG.",
+    "perServing": {
+      "protein": 16,
+      "calories": 89.9,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 2,
+      "servingSize": "1 oz / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 16,
+      "calories": 90,
+      "carbs": 0,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 2,
+      "servingSize": "1 oz / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 oz / 28 g",
+    "servingSizeG": 28,
+    "protein": 16,
+    "calories": 90,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 2
+  }
+}

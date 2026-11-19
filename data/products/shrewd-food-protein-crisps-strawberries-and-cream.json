@@ -1,0 +1,61 @@
+{
+  "id": "shrewd-food-protein-crisps-strawberries-and-cream",
+  "name": "Shrewd Food Protein Crisps, Strawberries & Cream",
+  "brand": "Shrewd Food",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Shrewd+Food+Protein+Crisps%2C+Strawberries+%26+Cream",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "0.74 ONZ / 21 g",
+    "servingSizeG": 21,
+    "protein": 12,
+    "calories": 90,
+    "carbs": 4,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "811307024633",
+    "fdcId": 2175145
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2175145",
+        "url": "https://fdc.nal.usda.gov/food-details/2175145/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 90.1,
+          "carbs": 4,
+          "fiber": 0,
+          "sugar": 4,
+          "fat": 3
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

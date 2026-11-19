@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 cup (62g) / 62 g",
+    "servingSizeG": 62,
     "protein": 12,
-    "calories": 200,
-    "carbs": 23,
+    "calories": 260,
+    "carbs": 36,
     "fiber": 6,
-    "sugar": 14,
-    "fat": 7
+    "sugar": 9,
+    "fat": 8
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B09KMWCX72",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "0193908110015",
+    "fdcId": 2599585
   },
-  "image": null,
+  "image": {
+    "src": "/products/rxbar-apple-cinnamon.jpg",
+    "alt": "RXBAR RXBAR Apple Cinnamon package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0193908110015"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2599585",
+        "url": "https://fdc.nal.usda.gov/food-details/2599585/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 260,
+          "carbs": 36,
+          "fiber": 6,
+          "sugar": 9,
+          "fat": 8
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0193908110015",
+        "url": "https://world.openfoodfacts.org/product/0193908110015",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 250,
+          "carbs": 35,
+          "fiber": 6,
+          "sugar": 9,
+          "fat": 8
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

@@ -1,0 +1,117 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Built Bar Salted Caramel",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2642460,
+      "description": "SALTED CARAMEL BAR, SALTED CARAMEL",
+      "brandOwner": "Built Brands",
+      "brandName": "BUILT",
+      "gtinUpc": "0840229301195",
+      "publishedDate": "2023-09-14",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2642460,
+        "description": "SALTED CARAMEL BAR, SALTED CARAMEL",
+        "brandOwner": "Built Brands",
+        "brandName": "BUILT",
+        "gtinUpc": "0840229301195",
+        "publishedDate": "2023-09-14",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2217564,
+        "description": "PRE-BUILT GINGERBREAD HOUSE KIT, PRE-BUILT",
+        "brandOwner": "Wilton Industries Inc.",
+        "brandName": "WILTON",
+        "gtinUpc": "070896068736",
+        "publishedDate": "2022-01-06",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2642460,
+    "description": "SALTED CARAMEL BAR, SALTED CARAMEL",
+    "brandOwner": "Built Brands",
+    "brandName": "BUILT",
+    "gtinUpc": "0840229301195",
+    "servingSize": 49,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar (49g)",
+    "dataSource": "LI",
+    "modifiedDate": "7/31/2023",
+    "ingredients": "PROTEIN BLEND (WHEY PROTEIN ISOLATE, PARTIALLY HYDROLYZED WHEY PROTEIN ISOLATE), WATER, DARK CHOCOLATE (SUGAR, CHOCOLATE LIQUOR, COCOA BUTTER, MILKFAT, SOY LECITHIN, VANILLA), DIGESTION RESISTANT MALTODEXTRIN, GLYCERIN, ERYTHRITOL, GELATIN, NATURAL FLAVOR, COCOA, CITRIC ACID, NONFAT DRY MILK, SALT",
+    "perServing": {
+      "protein": 17,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 5.98,
+      "sugar": 4,
+      "fat": 2.5,
+      "servingSize": "1 Bar (49g) / 49 g",
+      "servingSizeG": 49
+    }
+  },
+  "openFoodFacts": {
+    "code": "0840229301195",
+    "product_name": "Salted Caramel Built Bar",
+    "brands": "Built",
+    "serving_size": "49 g",
+    "perServing": {
+      "protein": 17,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 6,
+      "sugar": 4,
+      "fat": 2.5,
+      "servingSize": "49 g",
+      "servingSizeG": 49
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/084/022/930/1195/front_en.10.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 17,
+      "calories": 130,
+      "carbs": 18,
+      "fiber": 6,
+      "sugar": 4,
+      "fat": 2.5,
+      "servingSize": "1 Bar (49g) / 49 g",
+      "servingSizeG": 49
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 4,
+    "fat": 3
+  },
+  "after": {
+    "servingSize": "1 Bar (49g) / 49 g",
+    "servingSizeG": 49,
+    "protein": 17,
+    "calories": 130,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 4,
+    "fat": 2.5
+  }
+}

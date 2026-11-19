@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Alani Nu Fit Snacks Protein Bar, Butter Crisp",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2538850,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2538850,
+    "description": "BUTTER CRISP FIT SNACKS PROTEIN BAR, BUTTER CRISP",
+    "brandOwner": "Alani Nutrition LLC",
+    "brandName": "ALANI NU",
+    "gtinUpc": "810030510949",
+    "servingSize": 46,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "3/6/2023",
+    "ingredients": "PROTEIN BLEND (WHEY PROTEIN ISOLATE, WHEY PROTEIN CONCENTRATE). SOY PROTEIN ISOLATE, PALM KERNEL OIL MALTITOL, CHICORY ROOT FIBER PEANUT FLOUR, CORN FIBER, GLUCOSE SYRUP, GLYCERIN, ALMONDS. RICE FLOUR, PEANUT BUTTER, WATER, TAPIOCA STARCH, NATURAL FLAVOR, SALT, SUCRALOSE, SUGAR, SUNFLOWER LECITHIN, COCOA (PROCESSED WITH ALKALI). CALCIUM CARBONATE, SUNFLOWER LECITHIN AND POTASSIUM SORBATE. CONTAINS MILK, SOY, ALMOND AND PEANUT.",
+    "perServing": {
+      "protein": 16,
+      "calories": 180,
+      "carbs": 15,
+      "fiber": 4,
+      "sugar": 4,
+      "fat": 7,
+      "servingSize": "1 Bar / 46 g",
+      "servingSizeG": 46
+    }
+  },
+  "openFoodFacts": {
+    "code": "0810030510949",
+    "product_name": "Fit Snacks Protein Bar",
+    "brands": "Nu3",
+    "serving_size": "1 bar (46 g)",
+    "perServing": {
+      "protein": 17,
+      "calories": 190,
+      "carbs": 17,
+      "fiber": 3,
+      "sugar": 8,
+      "fat": 6,
+      "servingSize": "1 bar (46 g)",
+      "servingSizeG": 46
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/081/003/051/0949/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (carbs: 15 vs 17; sugar: 4 vs 8)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

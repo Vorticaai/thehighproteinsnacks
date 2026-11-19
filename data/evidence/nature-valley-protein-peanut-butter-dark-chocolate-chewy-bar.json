@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Nature Valley Protein Peanut Butter Dark Chocolate Chewy Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2774910,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2774910,
+    "description": "Nature Valley Protein Peanut Butter Dark Chocolate Chewy Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Nature Valley",
+    "gtinUpc": "00016000238428",
+    "servingSize": 50,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "7/23/2026",
+    "ingredients": "Roasted Peanuts, Soy Protein Isolate, Calcium Caseinate, Vegetable Glycerin, Chicory Root Extract, Whey Protein Concentrate, Tapioca Syrup, Palm and Palm Kernel Oil, Sugar, Canola Oil, Hydrolyzed Collagen, Almonds, Corn Syrup, Peanut Butter (peanuts, salt), Fructose, Cocoa, Soy Lecithin, Rice Starch, Peanut Flour, Alkalized Cocoa, Salt, Natural Flavor, Peanut Oil, Corn Starch, Guar Gum. ",
+    "perServing": {
+      "protein": 16,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 4,
+      "sugar": 6,
+      "fat": 11,
+      "servingSize": "1 bar / 50 g",
+      "servingSizeG": 50
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 16,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 4,
+      "sugar": 6,
+      "fat": 11,
+      "servingSize": "1 bar / 50 g",
+      "servingSizeG": 50
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 50 g",
+    "servingSizeG": 50,
+    "protein": 16,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 4,
+    "sugar": 6,
+    "fat": 11
+  }
+}

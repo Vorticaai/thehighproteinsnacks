@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Ayoba Traditional Biltong",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2663838,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2663838,
+    "description": "TRADITIONAL BILTONG, TRADITIONAL",
+    "brandOwner": "Ayoba, Inc.",
+    "brandName": "AYOBA",
+    "gtinUpc": "850000827004",
+    "servingSize": 57,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Package",
+    "dataSource": "LI",
+    "modifiedDate": "10/17/2023",
+    "ingredients": "GRASS FED BEEF VINEGAR SEA SALT CORIANDER WORCESTERSHIRE POWDER (SALT, TOMATO, VINEGAR, TAMARIND, NATURAL FLAVOR, CITRIC ACID, GARLIC, ONION} PEPPER ROSEMARY",
+    "perServing": {
+      "protein": 31,
+      "calories": 180,
+      "carbs": 0.998,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 5,
+      "servingSize": "1 Package / 57 g",
+      "servingSizeG": 57
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850000827004",
+    "product_name": "Traditional Biltong",
+    "brands": "Ayoba",
+    "serving_size": "1 PACKAGE (57 g)",
+    "perServing": {
+      "protein": 31,
+      "calories": 180,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 5,
+      "servingSize": "1 PACKAGE (57 g)",
+      "servingSizeG": 57
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/082/7004/front_en.5.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 31,
+      "calories": 180,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 5,
+      "servingSize": "1 Package / 57 g",
+      "servingSizeG": 57
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Package / 57 g",
+    "servingSizeG": 57,
+    "protein": 31,
+    "calories": 180,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 5
+  }
+}

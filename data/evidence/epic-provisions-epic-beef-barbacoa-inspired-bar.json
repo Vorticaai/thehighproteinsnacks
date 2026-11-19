@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Epic Beef Barbacoa-inspired Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2770137,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2770137,
+    "description": "EPIC Beef Barbacoa-Inspired  Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "EPIC Provisions",
+    "gtinUpc": "00732153244030",
+    "servingSize": 37,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/6/2026",
+    "ingredients": "Beef, Encapsulated Lactic Acid**, Vinegar, Garlic Powder. Contains 2% or less of: Sea Salt, Onion Powder, Paprika, Black Pepper, Cumin, Oregano, Red Pepper, Cilantro, Cloves, Cultured Celery Powder.**Not From Milk ",
+    "perServing": {
+      "protein": 11,
+      "calories": 110,
+      "carbs": 4,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 6,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 11,
+      "calories": 110,
+      "carbs": 4,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 6,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
+    "protein": 11,
+    "calories": 110,
+    "carbs": 4,
+    "fiber": 2,
+    "sugar": 0,
+    "fat": 6
+  }
+}

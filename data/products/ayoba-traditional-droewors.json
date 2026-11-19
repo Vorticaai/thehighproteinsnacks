@@ -1,0 +1,82 @@
+{
+  "id": "ayoba-traditional-droewors",
+  "name": "Ayoba Traditional Droewors",
+  "brand": "Ayoba",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Ayoba+Traditional+Droewors",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Package / 57 g",
+    "servingSizeG": 57,
+    "protein": 31,
+    "calories": 180,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "850000827028",
+    "fdcId": 2652759
+  },
+  "image": {
+    "src": "/products/ayoba-traditional-droewors.jpg",
+    "alt": "Ayoba Ayoba Traditional Droewors package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0850000827028"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2652759",
+        "url": "https://fdc.nal.usda.gov/food-details/2652759/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 31,
+          "calories": 180,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0850000827028",
+        "url": "https://world.openfoodfacts.org/product/0850000827028",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 31,
+          "calories": 180,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

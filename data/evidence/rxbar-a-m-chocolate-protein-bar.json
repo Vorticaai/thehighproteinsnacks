@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR A.M. Protein Bar, Chocolate",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2599578,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2599578,
+    "description": "A.M. CHOCOLATE PROTEIN BAR, CHOCOLATE",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "0193908005144",
+    "servingSize": 55,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar (55g)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "OATS, HONEY, CASHEW BUTTER (CASHEWS), EGG WHITES, ALMONDS, PUMPKIN SEEDS, BROWN RICE, CHOCOLATE, HIGH OLEIC SUNFLOWER OIL, COCONUT SUGAR, OAT FIBER, COCOA, NATURAL FLAVORS, SEA SALT",
+    "perServing": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 28,
+      "fiber": 4.02,
+      "sugar": 12,
+      "fat": 10,
+      "servingSize": "1 Bar (55g) / 55 g",
+      "servingSizeG": 55
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 28,
+      "fiber": 4,
+      "sugar": 12,
+      "fat": 10,
+      "servingSize": "1 Bar (55g) / 55 g",
+      "servingSizeG": 55
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar (55g) / 55 g",
+    "servingSizeG": 55,
+    "protein": 10,
+    "calories": 230,
+    "carbs": 28,
+    "fiber": 4,
+    "sugar": 12,
+    "fat": 10
+  }
+}

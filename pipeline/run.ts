@@ -22,7 +22,7 @@ import { newRecord } from "./newRecord"
 import { pickBest, type MatchResult } from "./match"
 import { fdcPerServing, fdcUrl, getFoods, searchBranded, type FdcFood } from "./sources/fdc"
 import { downloadImage, getByBarcode, offPerServing, offUrl, type OffProduct } from "./sources/off"
-import { CORE_FIELDS, decide, labelRoundAll, type PerServing } from "./verify"
+import { CORE_FIELDS, decide, decideManufacturer, labelRoundAll, type PerServing } from "./verify"
 
 type QueueEntry = {
   id: string
@@ -44,6 +44,18 @@ type QueueEntry = {
    * A product that is not in the catalogue yet. It is published (a record is
    * written) only if its label data verifies; otherwise only evidence is saved.
    */
+  /**
+   * The brand's own Nutrition Facts panel, for products USDA doesn't hold.
+   * `url` is the product page; `panelUrl` the panel image if the values are
+   * only in an image. Used only when the USDA check doesn't verify.
+   */
+  manufacturer?: {
+    url: string
+    panelUrl?: string
+    transcribedAt: string
+    gtin?: string
+    values: PerServing
+  }
   add?: {
     name: string
     brand: string
@@ -80,7 +92,13 @@ async function main() {
       continue
     }
     const query = entry.query ?? record.name
-    const candidates = await searchBranded(query, API_KEY)
+    let candidates: Awaited<ReturnType<typeof searchBranded>> = []
+    try {
+      candidates = await searchBranded(query, API_KEY)
+    } catch (err) {
+      // One failed search must not stop the whole batch.
+      console.error(`Search failed for ${entry.id}: ${(err as Error).message.slice(0, 200)}`)
+    }
     matches.set(entry.id, { ...pickBest(record, candidates), pinned: false })
     await sleep(500)
   }
@@ -105,7 +123,7 @@ async function main() {
     }
     const secondary = off ? offPerServing(off) : null
 
-    const decision = decide({
+    let decision = decide({
       primary,
       primaryConfident: match.confident,
       secondary,
@@ -114,7 +132,36 @@ async function main() {
     const before = { ...record.nutrition }
     const sources: SourceRef[] = []
 
-    if (decision.status === "verified" && food && primary) {
+    let usedManufacturer = false
+    if (decision.status !== "verified" && entry.manufacturer) {
+      const m = decideManufacturer(entry.manufacturer.values)
+      m.notes.unshift(...decision.notes.map((n) => `USDA: ${n}`))
+      decision = m
+      if (m.status === "verified") {
+        usedManufacturer = true
+        const label = m.values
+        sources.push({
+          name: "Manufacturer website",
+          id: entry.manufacturer.url,
+          url: entry.manufacturer.panelUrl ?? entry.manufacturer.url,
+          checkedAt: entry.manufacturer.transcribedAt,
+          values: pickValues(label),
+        })
+        record.nutrition = {
+          servingSize: label.servingSize ?? null,
+          servingSizeG: label.servingSizeG ?? null,
+          protein: label.protein!,
+          calories: label.calories!,
+          carbs: label.carbs!,
+          fiber: label.fiber ?? 0,
+          sugar: label.sugar!,
+          fat: label.fat!,
+        }
+        record.identifiers.gtin = entry.manufacturer.gtin ?? record.identifiers.gtin
+      }
+    }
+
+    if (!usedManufacturer && decision.status === "verified" && food && primary) {
       const useOff = Boolean(entry.preferOffReason && secondary)
       const label = useOff ? { ...decision.values, ...labelRoundAll(secondary!) } : decision.values
       if (useOff) decision.notes.push(`Published the Open Food Facts values: ${entry.preferOffReason}`)
@@ -158,6 +205,8 @@ async function main() {
       photo = "rejected by reviewer"
     } else if (isNew && decision.status !== "verified") {
       photo = "none (not published)"
+    } else if (usedManufacturer) {
+      photo = "none (manufacturer panel)"
     } else if (off?.image_front_url && match.confident) {
       const bytes = await downloadImage(off.image_front_url)
       if (bytes && bytes.length > 5000) {

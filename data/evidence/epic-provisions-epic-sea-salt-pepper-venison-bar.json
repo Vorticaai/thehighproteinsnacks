@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Epic Sea Salt Pepper Venison Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2770150,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2770150,
+    "description": "EPIC Sea Salt Pepper Venison Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "EPIC Provisions",
+    "gtinUpc": "00732153248816",
+    "servingSize": 37,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/6/2026",
+    "ingredients": "Venison, Encapsulated Lactic Acid**, Vinegar, Sea Salt. Contains 2% or less of: Water, Black Pepper, Onion Powder, Garlic Powder, Cultured Celery Powder.**Not from Milk ",
+    "perServing": {
+      "protein": 12,
+      "calories": 120,
+      "carbs": 0.999,
+      "fiber": 0.999,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 120,
+      "carbs": 1,
+      "fiber": 1,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
+    "protein": 12,
+    "calories": 120,
+    "carbs": 1,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 7
+  }
+}

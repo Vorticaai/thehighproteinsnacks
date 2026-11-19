@@ -1,0 +1,75 @@
+{
+  "id": "core-power-high-protein-milk-shake-coffee",
+  "name": "Core Power High Protein Shake, Coffee",
+  "brand": "Core Power",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Core+Power+High+Protein+Shake%2C+Coffee",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "11.5 OZA / 340 ml",
+    "servingSizeG": null,
+    "protein": 26,
+    "calories": 210,
+    "carbs": 21,
+    "fiber": 0,
+    "sugar": 19,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "856312002245",
+    "fdcId": 2369918
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2369918",
+        "url": "https://fdc.nal.usda.gov/food-details/2369918/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 26,
+          "calories": 211,
+          "carbs": 21,
+          "fiber": 0,
+          "sugar": 19,
+          "fat": 3.5
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0856312002245",
+        "url": "https://world.openfoodfacts.org/product/0856312002245",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 26,
+          "calories": 211,
+          "carbs": 21,
+          "fiber": 0,
+          "sugar": 19,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

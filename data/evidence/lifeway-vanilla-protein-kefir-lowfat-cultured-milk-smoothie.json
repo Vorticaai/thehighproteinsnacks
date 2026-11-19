@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Lifeway Vanilla Protein Kefir Lowfat Cultured Milk Smoothie",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2472903,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2472903,
+    "description": "VANILLA PROTEIN KEFIR LOWFAT CULTURED MILK SMOOTHIE, VANILLA",
+    "brandOwner": "Lifeway Foods Inc.",
+    "brandName": "LIFEWAY",
+    "gtinUpc": "017077151160",
+    "servingSize": 240,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "1 cup",
+    "dataSource": "LI",
+    "modifiedDate": "10/8/2021",
+    "ingredients": "PASTEURIZED NONFAT MILK, WHEY PROTEIN CONCENTRATE, CANE SUGAR, NATURAL VANILLA FLAVOR, NATURAL FLAVORS, VITAMIN A PALMITATE, VITAMIN D3, LIVE AND ACTIVE CULTURES.",
+    "perServing": {
+      "protein": 21,
+      "calories": 170,
+      "carbs": 18,
+      "fiber": 0,
+      "sugar": 18,
+      "fat": 1.49,
+      "servingSize": "1 cup / 240 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 170,
+      "carbs": 18,
+      "fiber": 0,
+      "sugar": 18,
+      "fat": 1.5,
+      "servingSize": "1 cup / 240 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 cup / 240 ml",
+    "servingSizeG": null,
+    "protein": 21,
+    "calories": 170,
+    "carbs": 18,
+    "fiber": 0,
+    "sugar": 18,
+    "fat": 1.5
+  }
+}

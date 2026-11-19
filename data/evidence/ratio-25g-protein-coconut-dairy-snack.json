@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Ratio Protein Coconut Dairy Snack",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2755893,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2755893,
+    "description": ":ratio 25g Protein Coconut Dairy Snack",
+    "brandOwner": "",
+    "brandName": "Ratio",
+    "gtinUpc": "00070470164977",
+    "servingSize": 150,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "",
+    "dataSource": "Euromonitor",
+    "ingredients": "Cultured Pasteurized Ultra- Filtered Nonfat Milk, Cultured Pasteurized Milk, Whey Protein Concentrate, Nonfat Milk. Contains 2% or Less of: Sunflower Oil, Carrageenan, Sucralose, Natural Flavor ( Coconut).",
+    "perServing": {
+      "protein": 25,
+      "calories": 170,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 4,
+      "servingSize": "150 g",
+      "servingSizeG": 150
+    }
+  },
+  "openFoodFacts": {
+    "code": "0070470164977",
+    "product_name": "Protein",
+    "brands": "ratio",
+    "serving_size": "1 container (150 g)",
+    "perServing": {
+      "protein": 25,
+      "calories": 180,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3.5,
+      "servingSize": "1 container (150 g)",
+      "servingSizeG": 150
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/007/047/016/4977/front_en.81.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 25,
+      "calories": 170,
+      "carbs": 9,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 4,
+      "servingSize": "150 g",
+      "servingSizeG": 150
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "150 g",
+    "servingSizeG": 150,
+    "protein": 25,
+    "calories": 170,
+    "carbs": 9,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 4
+  }
+}

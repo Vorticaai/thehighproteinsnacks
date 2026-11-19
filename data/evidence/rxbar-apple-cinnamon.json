@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Apple Cinnamon",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2599585,
+      "description": "APPLE CINNAMON OATS, APPLE; CINNAMON",
+      "brandOwner": "Chicago Bar Company ",
+      "brandName": "RXBAR",
+      "gtinUpc": "0193908110015",
+      "publishedDate": "2023-07-13",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2599585,
+        "description": "APPLE CINNAMON OATS, APPLE; CINNAMON",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "0193908110015",
+        "publishedDate": "2023-07-13",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2599585,
+    "description": "APPLE CINNAMON OATS, APPLE; CINNAMON",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "0193908110015",
+    "servingSize": 62,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 cup (62g)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "OATS, ALMONDS, DATES, EGG WHITES, APPLES, NATURAL FLAVORS, CINNAMON",
+    "perServing": {
+      "protein": 12,
+      "calories": 260,
+      "carbs": 36,
+      "fiber": 6.01,
+      "sugar": 9,
+      "fat": 8,
+      "servingSize": "1 cup (62g) / 62 g",
+      "servingSizeG": 62
+    }
+  },
+  "openFoodFacts": {
+    "code": "0193908110015",
+    "product_name": "A m apple cinnamon oats",
+    "serving_size": "1 cup (62 g)",
+    "perServing": {
+      "protein": 12,
+      "calories": 250,
+      "carbs": 35,
+      "fiber": 6.01,
+      "sugar": 9,
+      "fat": 8,
+      "servingSize": "1 cup (62 g)",
+      "servingSizeG": 62
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/019/390/811/0015/front_en.9.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 260,
+      "carbs": 36,
+      "fiber": 6,
+      "sugar": 9,
+      "fat": 8,
+      "servingSize": "1 cup (62g) / 62 g",
+      "servingSizeG": 62
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 200,
+    "carbs": 23,
+    "fiber": 6,
+    "sugar": 14,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": "1 cup (62g) / 62 g",
+    "servingSizeG": 62,
+    "protein": 12,
+    "calories": 260,
+    "carbs": 36,
+    "fiber": 6,
+    "sugar": 9,
+    "fat": 8
+  }
+}

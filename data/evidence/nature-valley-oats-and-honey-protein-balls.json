@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Nature Valley Oats & Honey Protein Balls",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2772893,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2772893,
+    "description": "Nature Valley Oats & Honey Protein Balls",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Nature Valley",
+    "gtinUpc": "00016000234888",
+    "servingSize": 45,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "2 Balls",
+    "dataSource": "GDSN",
+    "modifiedDate": "7/1/2026",
+    "ingredients": "Whole Grain Oats, Pea Protein, Almond Butter (almonds), Almonds, Tapioca Syrup, Invert Syrup, Glycerin, Palm Oil, Peanut Butter (peanuts, sea salt), Pea Starch, Peanut Flour, Almond Meal, Honey, Sea Salt. Vitamin E (mixed tocopherols) Added to Preserve Freshness. ",
+    "perServing": {
+      "protein": 10,
+      "calories": 210,
+      "carbs": 19,
+      "fiber": 3.02,
+      "sugar": 6,
+      "fat": 11,
+      "servingSize": "2 Balls / 45 g",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 210,
+      "carbs": 19,
+      "fiber": 3,
+      "sugar": 6,
+      "fat": 11,
+      "servingSize": "2 Balls / 45 g",
+      "servingSizeG": 45
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "2 Balls / 45 g",
+    "servingSizeG": 45,
+    "protein": 10,
+    "calories": 210,
+    "carbs": 19,
+    "fiber": 3,
+    "sugar": 6,
+    "fat": 11
+  }
+}

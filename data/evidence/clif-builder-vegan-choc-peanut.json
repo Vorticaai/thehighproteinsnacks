@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Clif Builder’s Vegan Protein Bar – Chocolate Peanut Butter",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2660067,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2660067,
+    "description": "CHOCOLATE PEANUT BUTTER PROTEIN BAR, CHOCOLATE PEANUT BUTTER",
+    "brandOwner": "Clif Bar and Company",
+    "brandName": "CLIF",
+    "gtinUpc": "722252168504",
+    "servingSize": 68,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "9/8/2023",
+    "ingredients": "SOY PROTEIN ISOLATE, CANE SYRUP*, CANE SUGAR*, BROWN RICE SYRUP*, PALM KERNEL OIL, VEGETABLE GLYCERIN, SOY FLOUR*, RICE FLOUR*, CHICORY FIBER SYRUP, PEANUTS*, NATURAL FLAVORS, PEANUT BUTTER*, COCOA BUTTER, COCOA, SOY PROTEIN CONCENTRATE*, SUNFLOWER AND/OR SOYBEAN OIL, SALT, RICE STARCH, SOY LECITHIN, MIXED TOCOPHEROLS (ANTIOXIDANT).",
+    "perServing": {
+      "protein": 20,
+      "calories": 290,
+      "carbs": 29,
+      "fiber": 1.97,
+      "sugar": 17,
+      "fat": 11,
+      "servingSize": "1 bar / 68 g",
+      "servingSizeG": 68
+    }
+  },
+  "openFoodFacts": {
+    "code": "0722252168504",
+    "product_name": "Chocolatey Peanut Butter",
+    "brands": "Clif Builders",
+    "serving_size": "1 bar (68 g)",
+    "perServing": {
+      "protein": 20,
+      "calories": 290,
+      "carbs": 29,
+      "fiber": 2,
+      "sugar": 17,
+      "fat": 11,
+      "servingSize": "1 bar (68 g)",
+      "servingSizeG": 68
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/072/225/216/8504/front_en.23.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 290,
+      "carbs": 29,
+      "fiber": 2,
+      "sugar": 17,
+      "fat": 11,
+      "servingSize": "1 bar / 68 g",
+      "servingSizeG": 68
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 280,
+    "carbs": 29,
+    "fiber": 4,
+    "sugar": 17,
+    "fat": 11
+  },
+  "after": {
+    "servingSize": "1 bar / 68 g",
+    "servingSizeG": 68,
+    "protein": 20,
+    "calories": 290,
+    "carbs": 29,
+    "fiber": 2,
+    "sugar": 17,
+    "fat": 11
+  }
+}

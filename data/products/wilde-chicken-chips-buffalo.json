@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "30 g",
+    "servingSizeG": 30,
     "protein": 10,
     "calories": 170,
-    "carbs": 6,
-    "fiber": 1,
+    "carbs": 8,
+    "fiber": 2,
     "sugar": 1,
-    "fat": 8
+    "fat": 10
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B0BFKCLNYQ",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "856802008818",
+    "fdcId": 2652405
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2652405",
+        "url": "https://fdc.nal.usda.gov/food-details/2652405/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 170,
+          "carbs": 8,
+          "fiber": 2,
+          "sugar": 1,
+          "fat": 10
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

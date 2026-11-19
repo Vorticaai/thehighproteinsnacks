@@ -1,0 +1,61 @@
+{
+  "id": "protein-one-peanut-butter-chocolate-protein-bars",
+  "name": "Protein One Peanut Butter Chocolate Protein Bars",
+  "brand": "Protein One",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Protein+One+Peanut+Butter+Chocolate+Protein+Bars",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 27 g",
+    "servingSizeG": 27,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 9,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00016000140912",
+    "fdcId": 2758654
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2758654",
+        "url": "https://fdc.nal.usda.gov/food-details/2758654/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 99.9,
+          "carbs": 9,
+          "fiber": 3,
+          "sugar": 1,
+          "fat": 4
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

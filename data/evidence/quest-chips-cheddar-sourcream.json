@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Chips – Cheddar & Sour Cream",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669751,
+      "description": "CHEDDAR & SOUR CREAM ORIGINAL STYLE PROTEIN CHIPS, CHEDDAR & SOUR CREAM",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849000296",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669751,
+        "description": "CHEDDAR & SOUR CREAM ORIGINAL STYLE PROTEIN CHIPS, CHEDDAR & SOUR CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000296",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653053,
+        "description": "CHEDDAR & SOUR CREAM ORIGINAL STYLE PROTEIN CHIPS, CHEDDAR & SOUR CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010349",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2285627,
+        "description": "PROTEIN CHIPS, CHEDDAR & SOUR CREAM",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849000302",
+        "publishedDate": "2022-05-23",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1046277,
+        "description": "CHEDDAR & SOUR CREAM FLAVORED ORIGINAL STYLE PROTEIN CHIPS, CHEDDAR & SOUR CREAM",
+        "brandOwner": "QUEST",
+        "gtinUpc": "20888849000290",
+        "publishedDate": "2020-06-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669751,
+    "description": "CHEDDAR & SOUR CREAM ORIGINAL STYLE PROTEIN CHIPS, CHEDDAR & SOUR CREAM",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849000296",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bag",
+    "dataSource": "LI",
+    "modifiedDate": "2/21/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, SOLUBLE CORN FIBER, SALT, PSYLLIUM HUSK. CONTAINS LESS THAN 2% OF THE FOLLOWING: NATURAL FLAVORS, CHEDDAR CHEESE POWDER (CULTURED MILK, SALT, ENZYMES), SOUR CREAM (CREAM, NONFAT MILK, CULTURES), BUTTERMILK POWDER, ONION POWDER, GARLIC POWDER, WHEY POWDER, CALCIUM CARBONATE, PAPRIKA EXTRACT (COLOR), TURMERIC OLEORESIN (COLOR), SUGAR++, YEAST EXTRACT, STEVIA SWEETENER, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN).",
+    "perServing": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  },
+  "after": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  }
+}

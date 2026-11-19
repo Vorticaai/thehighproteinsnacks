@@ -10,7 +10,7 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "1 carton / 330 ml",
     "servingSizeG": null,
     "protein": 30,
     "calories": 150,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B0791Y2LMB",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "070074681689",
+    "fdcId": 2381365
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2381365",
+        "url": "https://fdc.nal.usda.gov/food-details/2381365/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 30,
+          "calories": 148,
+          "carbs": 6,
+          "fiber": 2,
+          "sugar": 1,
+          "fat": 1.5
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

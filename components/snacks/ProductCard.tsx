@@ -43,15 +43,21 @@ export default function ProductCard({ product }: Props) {
 
       {/* Nutrition & value badges */}
       <div className="mb-2 flex flex-wrap gap-2 text-[11px] font-semibold">
-        <span className="rounded-full bg-gray-100 px-2 py-1 text-gray-700">
-          ~${product.pricePerServing.toFixed(2)} / serving
-        </span>
+        {product.pricePerServing > 0 && (
+          <span className="rounded-full bg-gray-100 px-2 py-1 text-gray-700">
+            ~${product.pricePerServing.toFixed(2)} / serving
+          </span>
+        )}
         <span className="rounded-full bg-gray-100 px-2 py-1 text-gray-700">
           {product.proteinPerServing}g protein
         </span>
-        <span className={`rounded-full px-2 py-1 ${valueClass(product.proteinPerDollar)}`}>
-          {product.proteinPerDollar.toFixed(1)}g per $
-        </span>
+        {product.pricePerServing > 0 ? (
+          <span className={`rounded-full px-2 py-1 ${valueClass(product.proteinPerDollar)}`}>
+            {product.proteinPerDollar.toFixed(1)}g per $
+          </span>
+        ) : (
+          <span className="rounded-full bg-gray-100 px-2 py-1 text-gray-700">{product.sugarPerServing}g sugar</span>
+        )}
       </div>
 
       {/* tiny calories line */}
@@ -66,9 +72,18 @@ export default function ProductCard({ product }: Props) {
         productId={product.id}
         className="mt-auto inline-flex w-full items-center justify-center rounded-full bg-[#C6FF47] px-3 py-2 text-xs font-bold text-black transition hover:bg-[#b8e840]"
       >
-        Check price on Amazon →
+        {buyLabel(product)} →
       </BuyLink>
-      <p className="mt-1 text-center text-[10px] text-gray-500">Price is an estimate; affiliate link</p>
+      <p className="mt-1 text-center text-[10px] text-gray-500">
+        {[product.pricePerServing > 0 && "Price is an estimate", /[?&]tag=/.test(product.buyUrl) && "affiliate link"]
+          .filter(Boolean)
+          .join("; ") || "\u00a0"}
+      </p>
     </div>
   );
+}
+
+/** Amazon search and product links say Amazon; brand-store links name the brand. */
+export function buyLabel(product: { buyUrl: string; brand: string }) {
+  return /amazon\./.test(product.buyUrl) ? "Check price on Amazon" : `Buy from ${product.brand}`
 }

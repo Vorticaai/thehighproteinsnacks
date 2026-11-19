@@ -1,0 +1,61 @@
+{
+  "id": "brooklyn-biltong-peri-peri-chili-grass-fed-air-dried-beef",
+  "name": "Brooklyn Biltong Peri Peri Chili Grass Fed Air Dried Beef",
+  "brand": "Brooklyn Biltong",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Brooklyn+Biltong+Peri+Peri+Chili+Grass+Fed+Air+Dried+Beef",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 14,
+    "calories": 90,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "850015093036",
+    "fdcId": 2385764
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2385764",
+        "url": "https://fdc.nal.usda.gov/food-details/2385764/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 89.9,
+          "carbs": 2,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 3
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

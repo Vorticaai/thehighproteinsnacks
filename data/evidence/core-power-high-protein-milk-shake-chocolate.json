@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Core Power High Protein Shake, Chocolate",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2663965,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2663965,
+    "description": "HIGH PROTEIN MILK SHAKE, CHOCOLATE",
+    "brandOwner": "Fair Oaks Farms Brands, Inc.",
+    "brandName": "CORE POWER",
+    "gtinUpc": "811620020602",
+    "servingSize": 240,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 BOTTLE",
+    "dataSource": "LI",
+    "modifiedDate": "5/20/2021",
+    "ingredients": "FILTERED LOWFAT GRADE A MILK, CANE SUGAR, HONEY, CANE SUGAR, HONEY, ALKALIZED COCOA, CONTAINS LESS THAN 1% OF NATURAL FLAVORS, LACTASE ENZYME, CARRAGEENAN, VITAMIN A PALMITATE, VITAMIN D3",
+    "perServing": {
+      "protein": 18,
+      "calories": 170,
+      "carbs": 20,
+      "fiber": 0.96,
+      "sugar": 18,
+      "fat": 2.5,
+      "servingSize": "1 BOTTLE / 240 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 18,
+      "calories": 170,
+      "carbs": 20,
+      "fiber": 1,
+      "sugar": 18,
+      "fat": 2.5,
+      "servingSize": "1 BOTTLE / 240 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BOTTLE / 240 ml",
+    "servingSizeG": null,
+    "protein": 18,
+    "calories": 170,
+    "carbs": 20,
+    "fiber": 1,
+    "sugar": 18,
+    "fat": 2.5
+  }
+}

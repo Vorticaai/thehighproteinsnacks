@@ -1,0 +1,61 @@
+{
+  "id": "lifeway-banana-protein-kefir-nonfat-cultured-milk-smoothie",
+  "name": "Lifeway Banana Protein Kefir Nonfat Cultured Milk Smoothie",
+  "brand": "Lifeway",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Lifeway+Banana+Protein+Kefir+Nonfat+Cultured+Milk+Smoothie",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 cup / 240 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 160,
+    "carbs": 20,
+    "fiber": 0,
+    "sugar": 20,
+    "fat": 0
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "017077141161",
+    "fdcId": 2406105
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2406105",
+        "url": "https://fdc.nal.usda.gov/food-details/2406105/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 161,
+          "carbs": 20,
+          "fiber": 0,
+          "sugar": 20,
+          "fat": 0
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

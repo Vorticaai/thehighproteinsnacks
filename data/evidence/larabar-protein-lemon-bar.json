@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Larabar Protein Lemon Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2772248,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2772248,
+    "description": "Larabar Protein Lemon Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Larabar",
+    "gtinUpc": "00021908266442",
+    "servingSize": 45,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/25/2026",
+    "ingredients": "ALMONDS, TAPIOCA SYRUP, SOY PROTEIN ISOLATE, DATES, PALM AND PALM KERNEL OIL, ROASTED PEANUTS, UNSWEETENED COCONUT, LEMON JUICE CONCENTRATE, PEANUT FLOUR, VANILLA EXTRACT, SEA SALT, LEMON OIL. ",
+    "perServing": {
+      "protein": 10,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3.02,
+      "sugar": 10,
+      "fat": 13,
+      "servingSize": "1 bar / 45 g",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3,
+      "sugar": 10,
+      "fat": 13,
+      "servingSize": "1 bar / 45 g",
+      "servingSizeG": 45
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 45 g",
+    "servingSizeG": 45,
+    "protein": 10,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 10,
+    "fat": 13
+  }
+}

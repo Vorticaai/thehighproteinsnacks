@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Perky Jerky Sweet & Snappy Beef Jerky",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2625903,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2625903,
+    "description": "PERKY JERKY BEEF SWEET & SNAPPY BEEF SNACK, 2.2 OZ, BEEF",
+    "brandOwner": "Perky Jerky LLC",
+    "brandName": "PERKY JERKY",
+    "gtinUpc": "0852709002256",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 oz (28g)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "WHOLE SLICES OF GRASS-FED BEEF, REDUCED SODIUM GLUTEN-FREE SOY SAUCE (WATER, SOYBEANS, SALT, ALCOHOL), BROWN SUGAR, HOT SAUCE (AGED CAYENNE RED PEPPERS, VINEGAR, WATER, SALT, AND GARLIC POWDER), LEMON JUICE, JALAPEO POWDER (DICED JALAPEO PEPPERS), GARLIC POWDER, BLACK PEPPER",
+    "perServing": {
+      "protein": 10,
+      "calories": 80.1,
+      "carbs": 8,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 1,
+      "servingSize": "1 oz (28g) / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 80,
+      "carbs": 8,
+      "fiber": 0,
+      "sugar": 7,
+      "fat": 1,
+      "servingSize": "1 oz (28g) / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 oz (28g) / 28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 80,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 7,
+    "fat": 1
+  }
+}

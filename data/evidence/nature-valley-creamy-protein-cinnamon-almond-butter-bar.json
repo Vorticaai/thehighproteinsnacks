@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Nature Valley Creamy Protein Cinnamon Almond Butter Creamy Crispy Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2758454,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2758454,
+    "description": "Nature Valley Creamy Protein Cinnamon Almond Butter Creamy Crispy Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Nature Valley",
+    "gtinUpc": "00016000351776",
+    "servingSize": 42,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "3/24/2026",
+    "ingredients": "Almond Butter (almonds), Soy Protein Isolate, Almonds, Corn Syrup, Chicory Root Extract, Whole Grain Oats, Cinnamon Flavored Bits (sugar, palm and palm kernel oil, spices, soy lecithin, wheat flour, soybean oil, corn starch), Partially Defatted Peanut Flour, Vegetable Oils (palm, palm kernel, canola), Honey, Calcium Caseinate, Vegetable Glycerin, Sugar, Whey Protein Isolate, Gum Arabic, Spices, Salt, Molasses, Baking Soda, Soy Lecithin, Peanut Butter (peanuts).",
+    "perServing": {
+      "protein": 10,
+      "calories": 200,
+      "carbs": 16,
+      "fiber": 5,
+      "sugar": 6,
+      "fat": 12,
+      "servingSize": "1 bar / 42 g",
+      "servingSizeG": 42
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 200,
+      "carbs": 16,
+      "fiber": 5,
+      "sugar": 6,
+      "fat": 12,
+      "servingSize": "1 bar / 42 g",
+      "servingSizeG": 42
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 42 g",
+    "servingSizeG": 42,
+    "protein": 10,
+    "calories": 200,
+    "carbs": 16,
+    "fiber": 5,
+    "sugar": 6,
+    "fat": 12
+  }
+}

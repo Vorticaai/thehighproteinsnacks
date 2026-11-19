@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Chomps Turkey Jalapeño Stick",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2396313,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2396313,
+    "description": "MEDIUM JALAPENO TURKEY STICK, MEDIUM JALAPENO TURKEY",
+    "brandOwner": "We Are The Chompians LLC",
+    "brandName": "CHOMPS",
+    "gtinUpc": "856584004350",
+    "servingSize": 32,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1.15 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "4/8/2020",
+    "ingredients": "FREE RANGE TURKEY, WATER, SEA SALT, ENCAPSULATED LACTIC ACID, JALAPENO PEPPERS, CULTURED CELERY POWDER (CELERY POWDER, SEA SALT), BLACK PEPPER, RED PEPPER, GARLIC POWDER, CORIANDER, STUFFED IN A BEEF COLLAGEN CASING",
+    "perServing": {
+      "protein": 10,
+      "calories": 60.2,
+      "carbs": 0.499,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 2.5,
+      "servingSize": "1.15 ONZ / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": {
+    "code": "0856584004350",
+    "product_name": "Chomps jalapeño turkey stick",
+    "brands": "Chomps",
+    "serving_size": "1 portion (32 g)",
+    "perServing": {
+      "protein": 12,
+      "calories": 80,
+      "carbs": 0,
+      "fat": 3.5,
+      "servingSize": "1 portion (32 g)",
+      "servingSizeG": 32
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/658/400/4350/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 10 vs 12; calories: 60 vs 80)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 80,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 3.5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 80,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 3.5
+  }
+}

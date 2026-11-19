@@ -10,13 +10,13 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
+    "servingSize": "1 Carton / 330 ml",
     "servingSizeG": null,
     "protein": 20,
     "calories": 130,
     "carbs": 11,
     "fiber": 2,
-    "sugar": 4,
+    "sugar": 3,
     "fat": 2
   },
   "claims": {
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B01CI57V2O",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "851770006118",
+    "fdcId": 2665207
   },
-  "image": null,
+  "image": {
+    "src": "/products/orgain-clean-protein-shake.jpg",
+    "alt": "Orgain Orgain Clean Protein Shake – Chocolate package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0851770006118"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2665207",
+        "url": "https://fdc.nal.usda.gov/food-details/2665207/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 129,
+          "carbs": 11,
+          "fiber": 2,
+          "sugar": 3,
+          "fat": 2
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0851770006118",
+        "url": "https://world.openfoodfacts.org/product/0851770006118",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 66,
+          "calories": 429,
+          "carbs": 36.3,
+          "fiber": 3,
+          "sugar": 9.9,
+          "fat": 6.6
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (protein: 20 vs 66; calories: 130 vs 430; carbs: 11 vs 36; sugar: 3 vs 10; fat: 2 vs 7); a reviewer accepted the USDA label data: Open Food Facts lists 66 g protein / 430 kcal, which is a whole multi-serving container, not one 11 fl oz bottle; USDA holds Orgain's own label data."
     ]
   }
 }

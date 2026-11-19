@@ -1,0 +1,61 @@
+{
+  "id": "nature-valley-protein-salted-caramel-chewy-bars",
+  "name": "Nature Valley Protein Salted Caramel Chewy Bars",
+  "brand": "Nature Valley",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Protein+Salted+Caramel+Chewy+Bars",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 50 g",
+    "servingSizeG": 50,
+    "protein": 16,
+    "calories": 230,
+    "carbs": 18,
+    "fiber": 4,
+    "sugar": 7,
+    "fat": 10
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00016000238435",
+    "fdcId": 2774902
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2774902",
+        "url": "https://fdc.nal.usda.gov/food-details/2774902/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 16,
+          "calories": 230,
+          "carbs": 18,
+          "fiber": 4,
+          "sugar": 7,
+          "fat": 10
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

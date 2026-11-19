@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Justin’s Almond Butter Protein Bar",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2165449,
+      "description": "ALMOND BUTTER PLANT-BASED PROTEIN BAR, ALMOND BUTTER",
+      "brandOwner": "Justin's, LLC",
+      "brandName": "JUSTIN'S",
+      "gtinUpc": "840379102147",
+      "publishedDate": "2021-10-28",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2165449,
+        "description": "ALMOND BUTTER PLANT-BASED PROTEIN BAR, ALMOND BUTTER",
+        "brandOwner": "Justin's, LLC",
+        "brandName": "JUSTIN'S",
+        "gtinUpc": "840379102147",
+        "publishedDate": "2021-10-28",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2757036,
+        "description": "Justin's Organic Dark Chocolate Peanut Butter Cups",
+        "brandOwner": "",
+        "brandName": "Justin's",
+        "gtinUpc": "894455000254",
+        "publishedDate": "2026-04-23",
+        "score": 0.5,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2165449,
+    "description": "ALMOND BUTTER PLANT-BASED PROTEIN BAR, ALMOND BUTTER",
+    "brandOwner": "Justin's, LLC",
+    "brandName": "JUSTIN'S",
+    "gtinUpc": "840379102147",
+    "servingSize": 40,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "12/3/2020",
+    "ingredients": "DRY ROASTED ALMONDS, ORGANIC BLUE AGAVE NECTAR, PEA PROTEIN, ORGANIC MAPLE SYRUP, ORGANIC COCONUT OIL, PEA PROTEIN ISOLATE, PALM OIL, PEA PROTEIN CONCENTRATE, TAPIOCA STARCH, ORGANIC SUNFLOWER LECITHIN, SEA SALT.",
+    "perServing": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 8,
+      "fiber": 2,
+      "sugar": 7,
+      "fat": 17,
+      "servingSize": "1 Bar / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 8,
+      "fiber": 2,
+      "sugar": 7,
+      "fat": 17,
+      "servingSize": "1 Bar / 40 g",
+      "servingSizeG": 40
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 180,
+    "carbs": 21,
+    "fiber": 3,
+    "sugar": 5,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": "1 Bar / 40 g",
+    "servingSizeG": 40,
+    "protein": 10,
+    "calories": 230,
+    "carbs": 8,
+    "fiber": 2,
+    "sugar": 7,
+    "fat": 17
+  }
+}

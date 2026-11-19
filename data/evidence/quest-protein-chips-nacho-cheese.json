@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Chips Nacho Cheese",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669730,
+      "description": "NACHO CHEESE TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849010547",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669730,
+        "description": "NACHO CHEESE TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010547",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2669724,
+        "description": "NACHO CHEESE FLAVOR TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849006632",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653056,
+        "description": "NACHO CHEESE TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849008759",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511714,
+        "description": "NACHO CHEESE TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010295",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1046297,
+        "description": "NACHO CHEESE FLAVOR TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+        "brandOwner": "QUEST",
+        "gtinUpc": "30888849006633",
+        "publishedDate": "2020-06-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669730,
+    "description": "NACHO CHEESE TORTILLA STYLE PROTEIN CHIPS, NACHO CHEESE",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849010547",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bag",
+    "dataSource": "LI",
+    "modifiedDate": "1/18/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, NATURAL FLAVORS, SOLUBLE CORN FIBER, PSYLLIUM HUSK. CONTAINS LESS THAN 2% OF THE FOLLOWING: SALT, CHEDDAR CHEESE POWDER (CULTURED MILK, SALT, ENZYMES), ROMANO CHEESE (MILK, CULTURES, SALT, ENZYMES), BUTTERMILK POWDER, BUTTER (CREAM, ANNATTO), TOMATO POWDER, ONION POWDER, GARLIC POWDER, SPICE, NONFAT DRY MILK, WHEY POWDER, CHIA SEED, PAPRIKA EXTRACT (COLOR), TURMERIC OLEORESIN (COLOR), LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), CALCIUM CARBONATE, YEAST EXTRACT, STEVIA SWEETENER.",
+    "perServing": {
+      "protein": 18,
+      "calories": 150,
+      "carbs": 5,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 6,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 18,
+      "calories": 150,
+      "carbs": 5,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 6,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 18,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  },
+  "after": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 18,
+    "calories": 150,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 6
+  }
+}

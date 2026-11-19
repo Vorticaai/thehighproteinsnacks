@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "IQBAR Blueberry Lemon",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2421865,
+      "description": "LEMON BLUEBERRY BAR, LEMON BLUEBERRY",
+      "brandOwner": "IQ BAR, Inc.",
+      "brandName": "IQBAR",
+      "gtinUpc": "850004554036",
+      "publishedDate": "2022-12-22",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2421865,
+        "description": "LEMON BLUEBERRY BAR, LEMON BLUEBERRY",
+        "brandOwner": "IQ BAR, Inc.",
+        "brandName": "IQBAR",
+        "gtinUpc": "850004554036",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2421865,
+    "description": "LEMON BLUEBERRY BAR, LEMON BLUEBERRY",
+    "brandOwner": "IQ BAR, Inc.",
+    "brandName": "IQBAR",
+    "gtinUpc": "850004554036",
+    "servingSize": 45,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "45 GRM",
+    "dataSource": "LI",
+    "modifiedDate": "1/28/2022",
+    "ingredients": "ALMONDS, TAPIOCA FIBER, FLAXSEEDS, PLANT-BASED PROTEIN CRISPS (PEA PROTEIN, TAPIOCA STARCH), NATURAL FLAVORS, PEA PROTEIN, BLUEBERRIES, COCONUT OIL, WATER, SUNFLOWER LECITHIN, SEA SALT, LEMON JUICE, LEMON, NON-GMO STEVIOL GLYCOSIDES, LION'S MANE, VITAMIN E",
+    "perServing": {
+      "protein": 12,
+      "calories": 180,
+      "carbs": 11,
+      "fiber": 8.01,
+      "sugar": 2,
+      "fat": 15,
+      "servingSize": "45 GRM / 45 g",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850004554036",
+    "product_name": "Lemon Blueberry",
+    "brands": "IQ BAR",
+    "serving_size": "1 bar (45 g)",
+    "perServing": {
+      "protein": 12,
+      "calories": 180,
+      "carbs": 16,
+      "fiber": 8,
+      "sugar": 2,
+      "fat": 10,
+      "servingSize": "1 bar (45 g)",
+      "servingSizeG": 45
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/455/4036/front_en.47.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (carbs: 11 vs 16; fat: 15 vs 10)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 10,
+    "fiber": 7,
+    "sugar": 2,
+    "fat": 12
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 10,
+    "fiber": 7,
+    "sugar": 2,
+    "fat": 12
+  }
+}

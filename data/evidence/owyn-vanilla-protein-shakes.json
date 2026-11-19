@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "OWYN Vanilla Protein Shakes",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2607300,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2607300,
+    "description": "VANILLA PROTEIN SHAKES, VANILLA",
+    "brandOwner": "Only What You Need, Inc.",
+    "brandName": "OWYN",
+    "gtinUpc": "0856461008822",
+    "servingSize": 355,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "12 fl oz (355mL)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "WATER, OWYN PROTEIN BLEND (PEA PROTEIN, ORGANIC PUMPKIN SEED PROTEIN, FLAXSEED OIL), SOLUBLE FIBER, SUNFLOWER OIL, SUNFLOWER LECITHIN, GELLAN GUM / ACACIA GUM BLEND, GUAR GUM, NATURAL VANILLA FLAVOR, NATURAL FLAVOR, MONK FRUIT EXTRACT, HIMALAYAN PINK SEA SALT, GREENS BLEND (SPINACH, KALE, BROCCOLI)",
+    "perServing": {
+      "protein": 35,
+      "calories": 231,
+      "carbs": 6.99,
+      "fiber": 7.1,
+      "sugar": 0,
+      "fat": 6.99,
+      "servingSize": "12 fl oz (355mL) / 355 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0856461008822",
+    "product_name": "Pro Elite Vanilla Protein Shake",
+    "brands": "OWYN",
+    "serving_size": "355 ml",
+    "perServing": {
+      "protein": 32,
+      "calories": 200,
+      "carbs": 3,
+      "fiber": 3,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "355 ml",
+      "servingSizeG": 355
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/646/100/8822/front_en.58.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (calories: 230 vs 200; carbs: 7 vs 3; fiber: 7 vs 3)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

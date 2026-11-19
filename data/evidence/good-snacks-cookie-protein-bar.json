@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Good! Snacks Cookie Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2136728,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2136728,
+    "description": "COOKIE PROTEIN BAR, COOKIE",
+    "brandOwner": "Sundia Corporation",
+    "brandName": "GOOD! SNACKS",
+    "gtinUpc": "840609111406",
+    "servingSize": 60,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "8/29/2020",
+    "ingredients": "GOOD GREENS PROTEIN BLEND (FAVA BEAN PROTEIN, BROWN RICE PROTEIN), ISOMALTO-OLIGOSACCHARIDES**, CANE SUGAR, TAPIOCA SYRUP, PALM KERNEL OIL, ALMOND BUTTER, COCOA NIBS, NATURAL FLAVORS, COCOA POWDER, CHOCOLATE LIQUOR, VEGETABLE GLYCERIN, SUNFLOWER LECITHIN, HIGH OLEIC SUNFLOWER OIL, SALT, PEANUT BUTTER, COCOA BUTTER, VANILLA EXTRACT.",
+    "perServing": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 29,
+      "fiber": 11,
+      "sugar": 10,
+      "fat": 7,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 29,
+      "fiber": 11,
+      "sugar": 10,
+      "fat": 7,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 29,
+    "fiber": 11,
+    "sugar": 10,
+    "fat": 7
+  }
+}

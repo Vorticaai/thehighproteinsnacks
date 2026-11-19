@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Bar Birthday Cake",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669717,
+      "description": "BIRTHDAY CAKE PROTEIN BAR, BIRTHDAY CAKE",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849005956",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669717,
+        "description": "BIRTHDAY CAKE PROTEIN BAR, BIRTHDAY CAKE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849005956",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2669726,
+        "description": "BIRTHDAY CAKE PROTEIN BARS, BIRTHDAY CAKE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849006687",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511711,
+        "description": "BIRTHDAY CAKE PROTEIN BARS, BIRTHDAY CAKE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010189",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511723,
+        "description": "BIRTHDAY CAKE PROTEIN BARS, BIRTHDAY CAKE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011148",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511699,
+        "description": "BIRTHDAY CAKE PROTEIN BARS, BIRTHDAY CAKE",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849005963",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669717,
+    "description": "BIRTHDAY CAKE PROTEIN BAR, BIRTHDAY CAKE",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849005956",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "3/7/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), POLYDEXTROSE (PREBIOTIC FIBER), WATER, ERYTHRITOL, ALMONDS, PALM KERNEL OIL, GLYCERIN, SODIUM CASEINATE, NATURAL FLAVORS. CONTAINS LESS THAN 2% OF THE FOLLOWING: SEA SALT, GUM ARABIC, SPIRULINA EXTRACT (COLOR), RED CABBAGE EXTRACT (COLOR), TURMERIC EXTRACT (COLOR), RADISH EXTRACT (COLOR), SUCRALOSE, LECITHIN (SUNFLOWER AND/OR SOY LECITHIN).",
+    "perServing": {
+      "protein": 20,
+      "calories": 180,
+      "carbs": 25,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 180,
+      "carbs": 25,
+      "fiber": 12,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 4,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 20,
+    "calories": 180,
+    "carbs": 25,
+    "fiber": 12,
+    "sugar": 1,
+    "fat": 7
+  }
+}

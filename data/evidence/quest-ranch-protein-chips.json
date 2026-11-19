@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Chips Ranch",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669733,
+      "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849011025",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669733,
+        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011025",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2629234,
+        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849006649",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2373917,
+        "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849010301",
+        "publishedDate": "2022-12-07",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1092257,
+        "description": "RANCH FLAVOR TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "QUEST",
+        "gtinUpc": "30888849006640",
+        "publishedDate": "2020-09-29",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1092363,
+        "description": "RANCH FLAVOR TORTILLA STYLE PROTEIN CHIPS, RANCH",
+        "brandOwner": "QUEST",
+        "gtinUpc": "10888849006646",
+        "publishedDate": "2020-09-29",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669733,
+    "description": "RANCH TORTILLA STYLE PROTEIN CHIPS, RANCH",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849011025",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bag",
+    "dataSource": "LI",
+    "modifiedDate": "2/24/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, NATURAL FLAVORS, BUTTERMILK POWDER, NONFAT DRY MILK, PSYLLIUM HUSK. CONTAINS LESS THAN 2% OF THE FOLLOWING: CHEDDAR CHEESE POWDER (CULTURED MILK, SALT, ENZYMES), TOMATO POWDER, ONION POWDER, GARLIC POWDER, SPICE, SALT, SOLUBLE CORN FIBER, WHEY POWDER, CHIA SEED, TURMERIC OLEORESIN (COLOR), MALIC ACID, SUGAR++, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), CALCIUM CARBONATE, YEAST EXTRACT, ACACIA GUM, STEVIA SWEETENER.",
+    "perServing": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  },
+  "after": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  }
+}

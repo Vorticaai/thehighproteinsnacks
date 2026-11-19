@@ -1,0 +1,61 @@
+{
+  "id": "muscle-milk-pro-cookies-n-crme-protein-shake",
+  "name": "Muscle Milk Pro Advanced Nutrition 32g Shake, Cookies 'n Creme",
+  "brand": "Muscle Milk",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Advanced+Nutrition+32g+Shake%2C+Cookies+%27n+Creme",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bottle (330 mL) / 330 ml",
+    "servingSizeG": null,
+    "protein": 32,
+    "calories": 180,
+    "carbs": 10,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 2
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "0052000053678",
+    "fdcId": 2615906
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2615906",
+        "url": "https://fdc.nal.usda.gov/food-details/2615906/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 32,
+          "calories": 182,
+          "carbs": 10,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 2
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

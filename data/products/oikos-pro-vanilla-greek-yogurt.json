@@ -1,0 +1,61 @@
+{
+  "id": "oikos-pro-vanilla-greek-yogurt",
+  "name": "Oikos Pro Vanilla Greek Yogurt",
+  "brand": "Oikos",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Oikos+Pro+Vanilla+Greek+Yogurt",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "240 g",
+    "servingSizeG": 240,
+    "protein": 20,
+    "calories": 140,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00036632042552",
+    "fdcId": 2755594
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2755594",
+        "url": "https://fdc.nal.usda.gov/food-details/2755594/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 140,
+          "carbs": 8,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 3
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

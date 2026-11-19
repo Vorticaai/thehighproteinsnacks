@@ -1,0 +1,61 @@
+{
+  "id": "owyn-elite-pro-chocolate-shakes",
+  "name": "OWYN Elite Pro Chocolate Shakes",
+  "brand": "OWYN",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=OWYN+Elite+Pro+Chocolate+Shakes",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "11.15 fl oz (330mL) / 330 ml",
+    "servingSizeG": null,
+    "protein": 32,
+    "calories": 200,
+    "carbs": 6,
+    "fiber": 6,
+    "sugar": 0,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "0856461008945",
+    "fdcId": 2607302
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2607302",
+        "url": "https://fdc.nal.usda.gov/food-details/2607302/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 32,
+          "calories": 201,
+          "carbs": 6,
+          "fiber": 5.9,
+          "sugar": 0,
+          "fat": 6
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

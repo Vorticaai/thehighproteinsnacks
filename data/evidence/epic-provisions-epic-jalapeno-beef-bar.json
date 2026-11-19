@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Epic Jalapeno Beef Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2770135,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2770135,
+    "description": "EPIC Jalapeno Beef Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "EPIC Provisions",
+    "gtinUpc": "00732153241190",
+    "servingSize": 37,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "5/6/2026",
+    "ingredients": "Beef, Jalapeno Pepper, Sea Salt, **Encapsulated Lactic Acid, Vinegar, Garlic Powder, Onion Powder. Contains 2% or less of: Cultured Celery Powder, Cilantro.**Not from Milk ",
+    "perServing": {
+      "protein": 9,
+      "calories": 110,
+      "carbs": 3,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    }
+  },
+  "openFoodFacts": {
+    "code": "0732153241190",
+    "product_name": "Beef Jalapeno Bar",
+    "brands": "Epic",
+    "serving_size": "1 bar (37 g)",
+    "perServing": {
+      "protein": 9,
+      "calories": 110,
+      "carbs": 3,
+      "fiber": 2,
+      "sugar": 1,
+      "fat": 7,
+      "servingSize": "1 bar (37 g)",
+      "servingSizeG": 37
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/073/215/324/1190/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 9,
+      "calories": 110,
+      "carbs": 3,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 bar / 37 g",
+      "servingSizeG": 37
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 37 g",
+    "servingSizeG": 37,
+    "protein": 9,
+    "calories": 110,
+    "carbs": 3,
+    "fiber": 2,
+    "sugar": 0,
+    "fat": 7
+  }
+}

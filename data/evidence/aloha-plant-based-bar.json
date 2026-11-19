@@ -1,0 +1,106 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "ALOHA Plant-Based Protein Bar – Chocolate Chip Cookie Dough",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2631109,
+      "description": "CHOCOLATE CHIP COOKIE DOUGH ORGANIC PLANT-BASED PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+      "brandOwner": "Project healthy Living Inc.",
+      "brandName": "ALOHA",
+      "gtinUpc": "842096152221",
+      "publishedDate": "2023-08-31",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2631109,
+        "description": "CHOCOLATE CHIP COOKIE DOUGH ORGANIC PLANT-BASED PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+        "brandOwner": "Project healthy Living Inc.",
+        "brandName": "ALOHA",
+        "gtinUpc": "842096152221",
+        "publishedDate": "2023-08-31",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2631109,
+    "description": "CHOCOLATE CHIP COOKIE DOUGH ORGANIC PLANT-BASED PROTEIN BARS, CHOCOLATE CHIP COOKIE DOUGH",
+    "brandOwner": "Project healthy Living Inc.",
+    "brandName": "ALOHA",
+    "gtinUpc": "842096152221",
+    "servingSize": 56,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "7/12/2023",
+    "ingredients": "PROTEIN BLEND* (BROWN RICE PROTEIN*, PUMPKIN SEED PROTEIN*), SUNFLOWER SEED BUTTER* (ROASTED SUNFLOWER SEEDS*, SUNFLOWER OIL*), TAPIOCA FIBER*, TAPIOCA SYRUP*, CHOCOLATE CHIPS* (CANE SUGAR*, CHOCOLATE*, COCOA BUTTER*, VANILLA POWDER*), VEGETABLE GLYCERIN*, BROWN SUGAR*, COCOA NIBS*, BROWN RICE CRISPS* (BROWN RICE*, BROWN RICE SYRUP*, SALT), NATURAL FLAVOR*, VANILLA EXTRACT*, SEA SALT, SUNFLOWER LECITHIN*",
+    "perServing": {
+      "protein": 14,
+      "calories": 240,
+      "carbs": 25,
+      "fiber": 10,
+      "sugar": 5,
+      "fat": 11,
+      "servingSize": "1 Bar / 56 g",
+      "servingSizeG": 56
+    }
+  },
+  "openFoodFacts": {
+    "code": "0842096152221",
+    "product_name": "Chocolate Chip Cookie Dough Organic Protein Bars",
+    "brands": "ALOHA",
+    "serving_size": "1 bar (56 g)",
+    "perServing": {
+      "protein": 14,
+      "calories": 240,
+      "carbs": 25,
+      "fiber": 10,
+      "sugar": 5,
+      "fat": 11,
+      "servingSize": "1 bar (56 g)",
+      "servingSizeG": 56
+    }
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 14,
+      "calories": 240,
+      "carbs": 25,
+      "fiber": 10,
+      "sugar": 5,
+      "fat": 11,
+      "servingSize": "1 Bar / 56 g",
+      "servingSizeG": 56
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 220,
+    "carbs": 24,
+    "fiber": 10,
+    "sugar": 5,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": "1 Bar / 56 g",
+    "servingSizeG": 56,
+    "protein": 14,
+    "calories": 240,
+    "carbs": 25,
+    "fiber": 10,
+    "sugar": 5,
+    "fat": 11
+  }
+}

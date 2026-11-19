@@ -1,0 +1,61 @@
+{
+  "id": "nature-valley-vanilla-protein-granola",
+  "name": "Nature Valley Vanilla Protein Granola",
+  "brand": "Nature Valley",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Vanilla+Protein+Granola",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "65 / 65 g",
+    "servingSizeG": 65,
+    "protein": 13,
+    "calories": 270,
+    "carbs": 40,
+    "fiber": 4,
+    "sugar": 16,
+    "fat": 7
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00016000219854",
+    "fdcId": 2755080
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2755080",
+        "url": "https://fdc.nal.usda.gov/food-details/2755080/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 13,
+          "calories": 270,
+          "carbs": 40,
+          "fiber": 4,
+          "sugar": 16,
+          "fat": 7
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

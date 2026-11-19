@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Tillamook Country Smoker Beef Stick",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2062925,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2062925,
+    "description": "BEEF STICK",
+    "brandOwner": "Tillamook Country Smoker Inc",
+    "brandName": "TILLAMOOK COUNTRY SMOKER",
+    "gtinUpc": "051943242316",
+    "servingSize": 35,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 PIECE",
+    "dataSource": "LI",
+    "modifiedDate": "4/15/2020",
+    "ingredients": "BEEF, WATER, CONTAINS LESS THAN 2% OF THE FOLLOWING: DEXTROSE, NATURAL FLAVORINGS, SEA SALT, SUGAR, YEAST EXTRACT.",
+    "perServing": {
+      "protein": 9,
+      "calories": 150,
+      "carbs": 3,
+      "fiber": 1.02,
+      "sugar": 0,
+      "fat": 12,
+      "servingSize": "1 PIECE / 35 g",
+      "servingSizeG": 35
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 9,
+      "calories": 150,
+      "carbs": 3,
+      "fiber": 1,
+      "sugar": 0,
+      "fat": 12,
+      "servingSize": "1 PIECE / 35 g",
+      "servingSizeG": 35
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 PIECE / 35 g",
+    "servingSizeG": 35,
+    "protein": 9,
+    "calories": 150,
+    "carbs": 3,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 12
+  }
+}

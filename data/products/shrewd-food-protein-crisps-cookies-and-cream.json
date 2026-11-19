@@ -1,0 +1,68 @@
+{
+  "id": "shrewd-food-protein-crisps-cookies-and-cream",
+  "name": "Shrewd Food Protein Crisps, Cookies & Cream",
+  "brand": "Shrewd Food",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Shrewd+Food+Protein+Crisps%2C+Cookies+%26+Cream",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "0.74 ONZ / 21 g",
+    "servingSizeG": 21,
+    "protein": 13,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "811307024121",
+    "fdcId": 2149521
+  },
+  "image": {
+    "src": "/products/shrewd-food-protein-crisps-cookies-and-cream.jpg",
+    "alt": "Shrewd Food Shrewd Food Protein Crisps, Cookies & Cream package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0811307024121"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2149521",
+        "url": "https://fdc.nal.usda.gov/food-details/2149521/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 13,
+          "calories": 90.1,
+          "carbs": 3,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

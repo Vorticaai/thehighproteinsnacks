@@ -1,0 +1,79 @@
+{
+  "id": "midamar-halal-beef-jerky-original",
+  "name": "Midamar Halal Beef Jerky, Original",
+  "brand": "Midamar",
+  "productType": null,
+  "buyUrl": "https://www.midamarhalal.com/products/beef-jerky-original",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 oz (28 g)",
+    "servingSizeG": 28,
+    "protein": 13,
+    "calories": 90,
+    "carbs": 4,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 1
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": true,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "087919010443",
+    "fdcId": null
+  },
+  "image": null,
+  "halal": {
+    "status": "brand-claim",
+    "certifier": null,
+    "checkedAt": "2026-11-19",
+    "evidence": [
+      {
+        "label": "Midamar sells it as zabiha halal beef jerky.",
+        "url": "https://shop.zabihah.com/products/beef-jerky-original",
+        "kind": "brand"
+      },
+      {
+        "label": "Midamar says it works with several certifiers, most often Islamic Services of America, and publishes its certificate.",
+        "url": "https://www.midamarhalal.com/en-ar/pages/halal-certificate",
+        "kind": "brand"
+      }
+    ],
+    "summary": "Midamar is a long-standing halal brand and publishes a certificate, but we haven't matched this jerky to a named certifier yet."
+  },
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "Manufacturer website",
+        "id": "https://www.midamarhalal.com/products/beef-jerky-original",
+        "url": "https://www.midamarhalal.com/cdn/shop/files/NFP_MBJOG01_1_2x-100_300x.jpg",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 13,
+          "calories": 90,
+          "carbs": 4,
+          "fiber": 0,
+          "sugar": 4,
+          "fat": 1
+        }
+      }
+    ],
+    "notes": [
+      "No candidate from the same brand.",
+      "USDA: No USDA label record found for this product.",
+      "Values from the brand's own Nutrition Facts panel.",
+      "Reviewer: values transcribed from Midamar's Nutrition Facts panel on its product page."
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Premier Protein Clear Protein Drink, Tropical Punch",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 1955652,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 1955652,
+    "description": "CLEAR PROTEIN DRINK, TROPICAL PUNCH",
+    "brandOwner": "Premier Nutrition Corporation",
+    "brandName": "PREMIER PROTEIN",
+    "gtinUpc": "643843715542",
+    "servingSize": 500,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "16.9 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2021",
+    "ingredients": "FILTERED WATER, WHEY PROTEIN ISOLATE, NATURAL FLAVORS, SALT, SUCRALOSE, RED 40, BLUE 1, PHOSPHORIC ACID.",
+    "perServing": {
+      "protein": 20,
+      "calories": 90,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 0,
+      "servingSize": "16.9 OZA / 500 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 90,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 0,
+      "servingSize": "16.9 OZA / 500 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "16.9 OZA / 500 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "45 g",
+    "servingSizeG": 45,
     "protein": 12,
-    "calories": 170,
-    "carbs": 2,
+    "calories": 180,
+    "carbs": 11,
     "fiber": 8,
     "sugar": 1,
-    "fat": 12
+    "fat": 14
   },
   "claims": {
     "vegan": true,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B0876LNH8Y",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "850004554029",
+    "fdcId": 2663640
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2663640",
+        "url": "https://fdc.nal.usda.gov/food-details/2663640/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 12,
+          "calories": 180,
+          "carbs": 11,
+          "fiber": 8,
+          "sugar": 1,
+          "fat": 14
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

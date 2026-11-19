@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Orange Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 1067103,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 1067103,
+    "description": "ORANGE PROTEIN BAR, ORANGE",
+    "brandOwner": "RXBAR",
+    "gtinUpc": "193908002813",
+    "servingSize": 52,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "6/19/2020",
+    "ingredients": "DATES, EGG WHITES, CASHEWS, ALMONDS, ORANGES, NATURAL FLAVORS, SEA SALT.",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 24,
+      "fiber": 3.02,
+      "sugar": 18,
+      "fat": 8,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 24,
+      "fiber": 3,
+      "sugar": 18,
+      "fat": 8,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 52 g",
+    "servingSizeG": 52,
+    "protein": 12,
+    "calories": 210,
+    "carbs": 24,
+    "fiber": 3,
+    "sugar": 18,
+    "fat": 8
+  }
+}

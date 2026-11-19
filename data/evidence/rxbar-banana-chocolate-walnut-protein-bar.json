@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Banana Chocolate Walnut Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2393727,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2393727,
+    "description": "BANANA CHOCOLATE WALNUT PROTEIN BAR, BANANA CHOCOLATE WALNUT",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "858030008363",
+    "servingSize": 52,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "9/21/2020",
+    "ingredients": "DATES, EGG WHITES, CASHEWS, WALNUTS, BANANAS, CHOCOLATE, CINNAMON, NATURAL FLAVORS.",
+    "perServing": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 25,
+      "fiber": 3.02,
+      "sugar": 17,
+      "fat": 9,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 210,
+      "carbs": 25,
+      "fiber": 3,
+      "sugar": 17,
+      "fat": 9,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 52 g",
+    "servingSizeG": 52,
+    "protein": 12,
+    "calories": 210,
+    "carbs": 25,
+    "fiber": 3,
+    "sugar": 17,
+    "fat": 9
+  }
+}

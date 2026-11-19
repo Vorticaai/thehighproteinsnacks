@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "FITCRUNCH chocolate peanut butter baked bar",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2587180,
+      "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BAR, CHOCOLATE PEANUT BUTTER",
+      "brandOwner": "Pervine Foods LLC ",
+      "brandName": "FITCRUNCH",
+      "gtinUpc": "839138003023",
+      "publishedDate": "2023-06-29",
+      "score": 0.5,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2587180,
+        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BAR, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Pervine Foods LLC ",
+        "brandName": "FITCRUNCH",
+        "gtinUpc": "839138003023",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2586911,
+        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Pervine Foods LLC ",
+        "brandName": "FITCRUNCH",
+        "gtinUpc": "817719021758",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2586890,
+        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Pervine Foods LLC ",
+        "brandName": "FITCRUNCH",
+        "gtinUpc": "817719020478",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2586894,
+        "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Pervine Foods LLC ",
+        "brandName": "FITCRUNCH",
+        "gtinUpc": "817719020614",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2586880,
+        "description": "CHOCOLATE PEANUT BUTTER WHEY PROTEIN BAKED BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Pervine Foods LLC ",
+        "brandName": "FITCRUNCH",
+        "gtinUpc": "817719020355",
+        "publishedDate": "2023-06-29",
+        "score": 0.5,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2587180,
+    "description": "CHOCOLATE PEANUT BUTTER HIGH PROTEIN BAKED BAR, CHOCOLATE PEANUT BUTTER",
+    "brandOwner": "Pervine Foods LLC ",
+    "brandName": "FITCRUNCH",
+    "gtinUpc": "839138003023",
+    "servingSize": 46,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "6/5/2023",
+    "ingredients": "PROTEIN BLEND (WHEY PROTEIN ISOLATE, WHEY PROTEIN CONCENTRATE), SOY PROTEIN ISOLATE, VEGETABLE OILS (PALM KERNEL AND PALM), VEGETABLE GLYCERIN, PEANUT BUTTER (DRY ROASTED PEANUTS, PALM OIL, DEXTROSE, SALT), SORBITOL, PEANUTS, SUGAR, MALTITOL, GELATIN [BOVINE], PEANUT FLOUR, COCOA (PROCESSED WITH ALKALI), BROWN RICE FLOUR AND WATER. CONTAINS 2% OR LESS OF THE FOLLOWING: GLUCOSE SYRUP, SUNFLOWER OIL, TAPIOCA STARCH, SALT, NATURAL FLAVOR, SOYBEAN OIL, SUCRALOSE, MALTODEXTRIN, SODIUM CASEINATE, SUNFLOWER LECITHIN, PROPYLENE GLYCOL MONO ESTERS, BAKING SODA, MONO & DIGLYCERIDES, POTASSIUM SORBATE (PRESERVATIVE), ACETYLATED MONOGLYCERIDES, WHEY, WHEY POWDER, SOY LECITHIN, BETA-CAROTENE (FOR COLOR), VITAMIN A PALMITATE, SILICON DIOXIDE, NATURAL TOCOPHEROLS (TO PRESERVE FRESHNESS), AND ALMOND.",
+    "perServing": {
+      "protein": 16,
+      "calories": 190,
+      "carbs": 14,
+      "fiber": 1.01,
+      "sugar": 3,
+      "fat": 8,
+      "servingSize": "1 bar / 46 g",
+      "servingSizeG": 46
+    }
+  },
+  "openFoodFacts": {
+    "code": "0839138003023",
+    "product_name": "Fit Crunch Chocolate Peanut Butter",
+    "brands": "Chef Robert Irvine's, Rite Traynch, Worldwide Sport Nutritional Supplements Inc.",
+    "serving_size": "1 bar (46 g)",
+    "perServing": {
+      "protein": 16,
+      "calories": 190,
+      "carbs": 14,
+      "fiber": 1,
+      "sugar": 3,
+      "fat": 8,
+      "servingSize": "1 bar (46 g)",
+      "servingSizeG": 46
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/083/913/800/3023/front_en.860.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 14,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 8
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 14,
+    "fiber": 2,
+    "sugar": 3,
+    "fat": 8
+  }
+}

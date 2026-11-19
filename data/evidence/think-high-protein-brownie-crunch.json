@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Think! High Protein Bar – Brownie Crunch",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2666608,
+      "description": "BROWNIE CRUNCH HIGH PROTEIN BARS, BROWNIE CRUNCH",
+      "brandOwner": "ThinkThin, LLC",
+      "brandName": "THINK!",
+      "gtinUpc": "753656709529",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2666608,
+        "description": "BROWNIE CRUNCH HIGH PROTEIN BARS, BROWNIE CRUNCH",
+        "brandOwner": "ThinkThin, LLC",
+        "brandName": "THINK!",
+        "gtinUpc": "753656709529",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2608367,
+        "description": "BROWNIE CRUNCH HIGH PROTEIN BAR, BROWNIE CRUNCH",
+        "brandOwner": "ThinkThin, LLC",
+        "brandName": "THINK!",
+        "gtinUpc": "753656701271",
+        "publishedDate": "2023-07-13",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2424529,
+        "description": "BROWNIE CRUNCH HIGH PROTEIN BARS, BROWNIE CRUNCH",
+        "brandOwner": "ThinkThin, LLC",
+        "brandName": "THINK!",
+        "gtinUpc": "753656719368",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2666608,
+    "description": "BROWNIE CRUNCH HIGH PROTEIN BARS, BROWNIE CRUNCH",
+    "brandOwner": "ThinkThin, LLC",
+    "brandName": "THINK!",
+    "gtinUpc": "753656709529",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "2/13/2023",
+    "ingredients": "PROTEIN BLEND (SOY PROTEIN ISOLATE, CALCIUM CASEINATE, WHEY PROTEIN ISOLATE), MALTITOL SYRUP, VEGETABLE GLYCERIN, WATER, ALMOND BUTTER, COCOA BUTTER, ALKALIZED COCOA, CHOCOLATE, SUNFLOWER OIL, LECITHIN, SODIUM CASEINATE, NATURAL FLAVOR,TAPIOCA STARCH, MILK FAT, SALT.",
+    "perServing": {
+      "protein": 20,
+      "calories": 230,
+      "carbs": 23,
+      "fiber": 1.02,
+      "sugar": 0,
+      "fat": 8,
+      "servingSize": "1 Bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 230,
+      "carbs": 23,
+      "fiber": 1,
+      "sugar": 0,
+      "fat": 8,
+      "servingSize": "1 Bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 230,
+    "carbs": 24,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": "1 Bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 20,
+    "calories": 230,
+    "carbs": 23,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 8
+  }
+}

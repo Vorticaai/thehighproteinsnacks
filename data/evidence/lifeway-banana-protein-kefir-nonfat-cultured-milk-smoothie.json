@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Lifeway Banana Protein Kefir Nonfat Cultured Milk Smoothie",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2406105,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2406105,
+    "description": "BANANA PROTEIN KEFIR NONFAT CULTURED MILK SMOOTHIE, BANANA",
+    "brandOwner": "Lifeway Foods Inc.",
+    "brandName": "LIFEWAY",
+    "gtinUpc": "017077141161",
+    "servingSize": 240,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "1 cup",
+    "dataSource": "LI",
+    "modifiedDate": "10/8/2021",
+    "ingredients": "PASTEURIZED CULTURED NONFAT MILK, CANE SUGAR, WHEY PROTEIN CONCENTRATE, PECTIN, NATURAL BANANA FLAVOR, NATURAL FLAVORS, VITAMIN A PALMITATE, VITAMIN D3.",
+    "perServing": {
+      "protein": 20,
+      "calories": 161,
+      "carbs": 20,
+      "fiber": 0,
+      "sugar": 20,
+      "fat": 0,
+      "servingSize": "1 cup / 240 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 160,
+      "carbs": 20,
+      "fiber": 0,
+      "sugar": 20,
+      "fat": 0,
+      "servingSize": "1 cup / 240 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 cup / 240 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 160,
+    "carbs": 20,
+    "fiber": 0,
+    "sugar": 20,
+    "fat": 0
+  }
+}

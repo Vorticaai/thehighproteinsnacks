@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR peanut butter protein bar",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2677666,
+      "description": "PEANUT BUTTER PROTEIN BAR, PEANUT BUTTER",
+      "brandOwner": "Chicago Bar Company ",
+      "brandName": "RXBAR",
+      "gtinUpc": "193908005045",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2677666,
+        "description": "PEANUT BUTTER PROTEIN BAR, PEANUT BUTTER",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "193908005045",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2670059,
+        "description": "PEANUT BUTTER PROTEIN BAR, PEANUT BUTTER",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004201",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2670033,
+        "description": "PEANUT BUTTER PROTEIN BARS, PEANUT BUTTER",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004508",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2659058,
+        "description": "PEANUT BUTTER PROTEIN BAR, PEANUT BUTTER",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "0857777004270",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2658447,
+        "description": "PLANT BASED PROTEIN PEANUT BUTTER PROTEIN BAR, PEANUT BUTTER",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "0193908001306",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2677666,
+    "description": "PEANUT BUTTER PROTEIN BAR, PEANUT BUTTER",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "193908005045",
+    "servingSize": 52,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "5/17/2022",
+    "ingredients": "DATES, PEANUTS, EGG WHITES, NATURAL FLAVORS, SEA SALT.",
+    "perServing": {
+      "protein": 12,
+      "calories": 200,
+      "carbs": 25,
+      "fiber": 4.99,
+      "sugar": 15,
+      "fat": 7,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 200,
+      "carbs": 25,
+      "fiber": 5,
+      "sugar": 15,
+      "fat": 7,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 190,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 17,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": "1 bar / 52 g",
+    "servingSizeG": 52,
+    "protein": 12,
+    "calories": 200,
+    "carbs": 25,
+    "fiber": 5,
+    "sugar": 15,
+    "fat": 7
+  }
+}

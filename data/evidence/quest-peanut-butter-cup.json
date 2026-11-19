@@ -1,0 +1,137 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest peanut butter cups",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2669736,
+      "description": "PEANUT BUTTER CUPS, PEANUT BUTTER",
+      "brandOwner": "Quest Nutrition, LLC",
+      "brandName": "QUEST",
+      "gtinUpc": "888849011315",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2669736,
+        "description": "PEANUT BUTTER CUPS, PEANUT BUTTER",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011315",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653050,
+        "description": "PEANUT BUTTER CUPS, PEANUT BUTTER",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011308",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2511725,
+        "description": "PEANUT BUTTER CUPS, PEANUT BUTTER",
+        "brandOwner": "Quest Nutrition, LLC",
+        "brandName": "QUEST",
+        "gtinUpc": "888849011452",
+        "publishedDate": "2023-03-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2503880,
+        "description": "SEA QUEST EGG HUNT, SEA QUEST",
+        "brandOwner": "Bee International, Inc.",
+        "brandName": "BEE",
+        "gtinUpc": "073563004792",
+        "publishedDate": "2023-03-16",
+        "score": 0,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2669736,
+    "description": "PEANUT BUTTER CUPS, PEANUT BUTTER",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849011315",
+    "servingSize": 42,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "2 cup",
+    "dataSource": "LI",
+    "modifiedDate": "2/27/2023",
+    "ingredients": "WHEY PROTEIN ISOLATE, ERYTHRITOL, UNSWEETENED CHOCOLATE, COCOA BUTTER, PEANUTS, PALM KERNEL OIL, SOLUBLE CORN FIBER, SODIUM CASEINATE. CONTAINS LESS THAN 2% OF THE FOLLOWING: LECITHIN (SUNFLOWER AND/OR SOY LECITHIN), SEA SALT, BUTTERFAT, NATURAL FLAVOR, PEANUT OIL, SUCRALOSE.",
+    "perServing": {
+      "protein": 11,
+      "calories": 200,
+      "carbs": 13,
+      "fiber": 3.99,
+      "sugar": 1,
+      "fat": 15,
+      "servingSize": "2 cup / 42 g",
+      "servingSizeG": 42
+    }
+  },
+  "openFoodFacts": {
+    "code": "0888849011315",
+    "product_name": "Peanut Butter Cups",
+    "brands": "QUEST",
+    "serving_size": "1 serving (42 g)",
+    "perServing": {
+      "protein": 11,
+      "calories": 200,
+      "carbs": 13,
+      "fiber": 4,
+      "sugar": 1,
+      "fat": 15,
+      "servingSize": "1 serving (42 g)",
+      "servingSizeG": 42
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/088/884/901/1315/front_en.30.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 11,
+      "calories": 200,
+      "carbs": 13,
+      "fiber": 4,
+      "sugar": 1,
+      "fat": 15,
+      "servingSize": "2 cup / 42 g",
+      "servingSizeG": 42
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 10,
+    "calories": 190,
+    "carbs": 3,
+    "fiber": 4,
+    "sugar": 1,
+    "fat": 12
+  },
+  "after": {
+    "servingSize": "2 cup / 42 g",
+    "servingSizeG": 42,
+    "protein": 11,
+    "calories": 200,
+    "carbs": 13,
+    "fiber": 4,
+    "sugar": 1,
+    "fat": 15
+  }
+}

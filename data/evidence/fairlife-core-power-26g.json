@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Core Power 26g protein shake chocolate",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 26,
+    "calories": 170,
+    "carbs": 6,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 4.5
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 26,
+    "calories": 170,
+    "carbs": 6,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 4.5
+  }
+}

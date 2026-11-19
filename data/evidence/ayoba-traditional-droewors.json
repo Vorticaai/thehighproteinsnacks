@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Ayoba Traditional Droewors",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2652759,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2652759,
+    "description": "TRADITIONAL DROEWORS, TRADITIONAL",
+    "brandOwner": "Ayoba, Inc.",
+    "brandName": "AYOBA",
+    "gtinUpc": "850000827028",
+    "servingSize": 57,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Package",
+    "dataSource": "LI",
+    "modifiedDate": "9/22/2023",
+    "ingredients": "GRASS FED BEEF, SEA SALT, VINEGAR, CORIANDER, WATER, PEPPER, ROSEMARY, CLOVES",
+    "perServing": {
+      "protein": 31,
+      "calories": 180,
+      "carbs": 0.998,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 5,
+      "servingSize": "1 Package / 57 g",
+      "servingSizeG": 57
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850000827028",
+    "product_name": "Droëwors",
+    "brands": "Ayoba Traditional",
+    "serving_size": "1 PACKAGE (57 g)",
+    "perServing": {
+      "protein": 31,
+      "calories": 180,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 5,
+      "servingSize": "1 PACKAGE (57 g)",
+      "servingSizeG": 57
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/082/7028/front_en.4.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 31,
+      "calories": 180,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 5,
+      "servingSize": "1 Package / 57 g",
+      "servingSizeG": 57
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Package / 57 g",
+    "servingSizeG": 57,
+    "protein": 31,
+    "calories": 180,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 5
+  }
+}

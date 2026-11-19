@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Oikos Pro Shake, Vanilla",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2744949,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2744949,
+    "description": "OIKOS RTD SHAKE VAN 12OZ SS",
+    "brandOwner": "Dannon Company",
+    "brandName": "Oikos",
+    "gtinUpc": "00036632024268",
+    "servingSize": 355,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "355mL",
+    "dataSource": "GDSN",
+    "modifiedDate": "9/26/2025",
+    "ingredients": "FILTERED WATER, MILK PROTEIN CONCENTRATE, MICELLAR CASEIN ISOLATE, INULIN, LESS THAN 1%: COCONUT OIL AND HIGH OLEIC SUNFLOWER OIL, NATURAL FLAVORS, POTASSIUM CITRATE, SEA SALT, GELLAN GUM, STEVIA EXTRACT, SUNFLOWER LECITHIN, VITAMIN A PALMITATE, VITAMIN D3.",
+    "perServing": {
+      "protein": 30,
+      "calories": 170,
+      "carbs": 7.99,
+      "fiber": 4.97,
+      "sugar": 0.994,
+      "fat": 3.51,
+      "servingSize": "355mL / 355 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0036632024268",
+    "product_name": "Protein Shake",
+    "brands": "Oikos",
+    "serving_size": "1 bottle (355 ml)",
+    "perServing": {
+      "protein": 30,
+      "calories": 170,
+      "carbs": 8,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 3.5,
+      "servingSize": "1 bottle (355 ml)",
+      "servingSizeG": 355
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/003/663/202/4268/front_en.1425.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 30,
+      "calories": 170,
+      "carbs": 8,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 3.5,
+      "servingSize": "355mL / 355 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "355mL / 355 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 170,
+    "carbs": 8,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 3.5
+  }
+}

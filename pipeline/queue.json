@@ -2,67 +2,109 @@
   "products": [
     {
       "id": "boxed-halal-Premium-orignal-beef-jerky",
-      "note": "Halal batch: check nutrition against label data.",
-      "query": "Boxed Halal beef jerky original"
+      "manufacturer": {
+        "url": "https://boxedhalal.com/products/beef-jerky-original-sampler-pack",
+        "transcribedAt": "2026-11-19",
+        "values": {
+          "servingSize": "1 oz (28 g)",
+          "servingSizeG": 28,
+          "protein": 18,
+          "calories": 80,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 1,
+          "fat": 1
+        },
+        "panelUrl": "https://cdn.shopify.com/s/files/1/0474/4262/4666/files/25.png"
+      },
+      "note": "Reviewer: values transcribed from the Nutrition Facts panel on Boxed Halal's own product photo."
     },
     {
       "id": "boxed-halal-Premium-bbq-beef-jerky",
-      "note": "Halal batch: check nutrition against label data.",
-      "query": "Boxed Halal beef jerky BBQ"
+      "manufacturer": {
+        "url": "https://boxedhalal.com/products/beef-jerky-bbq-sampler-pack",
+        "transcribedAt": "2026-11-19",
+        "values": {
+          "servingSize": "1 oz (28 g)",
+          "servingSizeG": 28,
+          "protein": 9,
+          "calories": 100,
+          "carbs": 10,
+          "fiber": 0,
+          "sugar": 9,
+          "fat": 3
+        },
+        "panelUrl": "https://cdn.shopify.com/s/files/1/0474/4262/4666/files/24.png"
+      },
+      "note": "Reviewer: values transcribed from the Nutrition Facts panel on Boxed Halal's own product photo."
     },
     {
-      "id": "halal-grassfed-beef-stick",
-      "note": "Halal batch: check nutrition against label data.",
-      "query": "Sharifa halal beef stick"
-    },
-    {
-      "id": "aufschnitt-grassfed-halal-jerky",
-      "note": "Halal batch: check nutrition against label data."
-    },
-    {
-      "id": "aufschnitt-halal-teriyaki-jerky",
-      "note": "Halal batch: check nutrition against label data."
-    },
-    {
-      "id": "aufschnitt-halal-beef-bar",
-      "note": "Halal batch: check nutrition against label data."
-    },
-    {
-      "id": "supreme-halal-beef-jerky-jalapeno-garlic",
-      "query": "Supreme Beef Jerky",
+      "id": "boxed-halal-teriyaki-beef-jerky",
+      "manufacturer": {
+        "url": "https://boxedhalal.com/products/beef-jerky-teriyaki-sampler-pack",
+        "transcribedAt": "2026-11-19",
+        "values": {
+          "servingSize": "1 oz (28 g)",
+          "servingSizeG": 28,
+          "protein": 13,
+          "calories": 110,
+          "carbs": 8,
+          "fiber": 0,
+          "sugar": 7,
+          "fat": 4
+        },
+        "panelUrl": "https://cdn.shopify.com/s/files/1/0474/4262/4666/files/23_d867b963-1761-4c62-99ef-cb6479def51c.png"
+      },
+      "note": "Reviewer: values transcribed from the Nutrition Facts panel on Boxed Halal's own product photo.",
       "add": {
-        "name": "Supreme Halal Beef Jerky, Jalape\u00f1o Garlic",
-        "brand": "Supreme Beef Jerky",
+        "name": "Boxed Halal Teriyaki Beef Jerky",
+        "brand": "Boxed Halal",
         "productType": null,
-        "buyUrl": "https://www.supremebeefjerky.com",
+        "buyUrl": "https://boxedhalal.com/products/beef-jerky-teriyaki-sampler-pack",
         "halal": {
           "status": "certifier-named",
           "certifier": "Halal Food Standards Alliance of America (HFSAA)",
           "checkedAt": "2026-11-19",
           "evidence": [
             {
-              "label": "Jerky review site Jerky Ingredients reports the company's facilities are HFSAA-certified and the beef is zabiha halal.",
-              "url": "https://jerkyingredients.com/2025/06/23/supreme-beef-jerky-jalapeno-garlic-halal-beef-jerky/",
-              "kind": "press"
+              "label": "Halal directory HalalX lists Boxed Halal as certified by HFSAA.",
+              "url": "https://halalx.org/?p=11620",
+              "kind": "directory"
             },
             {
-              "label": "Trade press reports the brand uses 100% certified halal beef.",
-              "url": "https://www.snackandbakery.com/articles/108375-supreme-beef-jerky-debuts-new-packaging",
-              "kind": "press"
+              "label": "Retail listings for Boxed Halal beef jerky state HFSAA certification.",
+              "url": "https://www.desertcart.ma/products/547742022",
+              "kind": "retailer"
             }
           ],
-          "summary": "HFSAA is named as the certifier in a 2025 review. Not yet confirmed on HFSAA's own list."
+          "summary": "HFSAA is named as the certifier by a halal directory and retailers. We have not yet confirmed the jerky on HFSAA's own list."
         }
       }
     },
     {
       "id": "midamar-halal-beef-jerky-original",
-      "query": "Midamar beef jerky",
+      "manufacturer": {
+        "url": "https://www.midamarhalal.com/products/beef-jerky-original",
+        "transcribedAt": "2026-11-19",
+        "values": {
+          "servingSize": "1 oz (28 g)",
+          "servingSizeG": 28,
+          "protein": 13,
+          "calories": 90,
+          "carbs": 4,
+          "fiber": 0,
+          "sugar": 4,
+          "fat": 1
+        },
+        "panelUrl": "https://www.midamarhalal.com/cdn/shop/files/NFP_MBJOG01_1_2x-100_300x.jpg",
+        "gtin": "087919010443"
+      },
+      "note": "Reviewer: values transcribed from Midamar's Nutrition Facts panel on its product page.",
       "add": {
         "name": "Midamar Halal Beef Jerky, Original",
         "brand": "Midamar",
         "productType": null,
-        "buyUrl": "https://shop.zabihah.com/products/beef-jerky-original",
+        "buyUrl": "https://www.midamarhalal.com/products/beef-jerky-original",
         "halal": {
           "status": "brand-claim",
           "certifier": null,
@@ -84,72 +126,1246 @@
       }
     },
     {
-      "id": "pacific-gold-halal-beef-jerky-original",
-      "query": "Pacific Gold halal beef jerky",
+      "id": "midamar-halal-beef-jerky-teriyaki",
+      "manufacturer": {
+        "url": "https://www.midamarhalal.com/products/halal-beef-jerky-teriyaki",
+        "transcribedAt": "2026-11-19",
+        "values": {
+          "servingSize": "1 oz (28 g)",
+          "servingSizeG": 28,
+          "protein": 9,
+          "calories": 80,
+          "carbs": 9,
+          "fiber": 0,
+          "sugar": 9,
+          "fat": 1
+        },
+        "panelUrl": "https://www.midamarhalal.com/cdn/shop/files/MBJTERI02_2x-100_1200x.jpg",
+        "gtin": "087919010436"
+      },
+      "note": "Reviewer: values transcribed from Midamar's Nutrition Facts panel on its product page.",
       "add": {
-        "name": "Pacific Gold Halal Beef Jerky, Original",
-        "brand": "Pacific Gold",
+        "name": "Midamar Halal Beef Jerky, Teriyaki",
+        "brand": "Midamar",
         "productType": null,
-        "buyUrl": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
+        "buyUrl": "https://www.midamarhalal.com/products/halal-beef-jerky-teriyaki",
         "halal": {
           "status": "brand-claim",
           "certifier": null,
           "checkedAt": "2026-11-19",
           "evidence": [
             {
-              "label": "Costco lists \"Halal\" under the product's certifications; no certifier is named.",
-              "url": "https://www.costcobusinessdelivery.com/p/-/pacific-gold-halal-beef-jerky-original-12-oz/4201050198",
-              "kind": "retailer"
+              "label": "Midamar sells it as zabiha halal beef jerky.",
+              "url": "https://shop.zabihah.com/products/beef-jerky-original",
+              "kind": "brand"
+            },
+            {
+              "label": "Midamar says it works with several certifiers, most often Islamic Services of America, and publishes its certificate.",
+              "url": "https://www.midamarhalal.com/en-ar/pages/halal-certificate",
+              "kind": "brand"
             }
           ],
-          "summary": "Pacific Gold's halal-labelled jerky. The retailer lists it as halal-certified but doesn't name the certifier."
+          "summary": "Midamar is a long-standing halal brand and publishes a certificate, but we haven't matched this jerky to a named certifier yet."
         }
       }
     },
     {
-      "id": "mummified-halal-beef-jerky-original",
-      "query": "Mummified halal beef jerky",
+      "id": "alani-nu-protein-shake-cookies-and-cream",
+      "fdcId": 2582067,
+      "note": "Added from the discovery run (USDA label data).",
       "add": {
-        "name": "Halal Mummified Jerky, Original Silver Nile",
-        "brand": "Mummified Jerky",
+        "name": "Alani Nu Protein Shake, Cookies & Cream",
+        "brand": "Alani Nu",
         "productType": null,
-        "buyUrl": "https://www.mummifiedjerky.com",
-        "halal": {
-          "status": "certifier-named",
-          "certifier": "Halal Transactions of Omaha",
-          "checkedAt": "2026-11-19",
-          "evidence": [
-            {
-              "label": "Jerky Ingredients reports the beef is certified halal by Halal Transactions of Omaha and the bag carries a halal mark (2018 review).",
-              "url": "https://jerkyingredients.com/?p=19055",
-              "kind": "press"
-            }
-          ],
-          "summary": "Halal Transactions of Omaha is named as the certifier, but our source is from 2018, so check the current bag."
-        }
+        "buyUrl": "https://www.amazon.com/s?k=Alani+Nu+Protein+Shake%2C+Cookies+%26+Cream"
       }
     },
     {
-      "id": "sharifa-halal-beef-jerky-black-pepper",
-      "query": "Sharifa halal beef jerky",
+      "id": "alani-nu-munchies-protein-shake",
+      "fdcId": 2582064,
+      "note": "Added from the discovery run (USDA label data).",
       "add": {
-        "name": "Sharifa Halal Beef Jerky, Black Pepper",
-        "brand": "Sharifa Halal",
+        "name": "Alani Nu Protein Shake, Munchies",
+        "brand": "Alani Nu",
         "productType": null,
-        "buyUrl": "https://halalworlddepot.com/products/sharifa-halal-black-pepper-beef-jerky",
-        "halal": {
-          "status": "brand-claim",
-          "certifier": null,
-          "checkedAt": "2026-11-19",
-          "evidence": [
-            {
-              "label": "Halal World Depot, a retailer, lists it among \"100% Halal Certified\" products; no certifier is named.",
-              "url": "https://halalworlddepot.com/products/sharifa-halal-black-pepper-beef-jerky",
-              "kind": "retailer"
-            }
-          ],
-          "summary": "Sold as halal-certified, but we could not find which body certifies it."
-        }
+        "buyUrl": "https://www.amazon.com/s?k=Alani+Nu+Protein+Shake%2C+Munchies"
+      }
+    },
+    {
+      "id": "alani-nu-butter-crisp-fit-snacks-protein-bar",
+      "fdcId": 2538850,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Alani Nu Fit Snacks Protein Bar, Butter Crisp",
+        "brand": "Alani Nu",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Alani+Nu+Fit+Snacks+Protein+Bar%2C+Butter+Crisp"
+      }
+    },
+    {
+      "id": "atkins-lift-protein-drink-orange",
+      "fdcId": 2545289,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Atkins Lift Protein Drink, Orange",
+        "brand": "Atkins",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Atkins+Lift+Protein+Drink%2C+Orange"
+      }
+    },
+    {
+      "id": "atkins-milk-chocolate-protein-rich-shake",
+      "fdcId": 2506908,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Atkins Protein-Rich Shake, Milk Chocolate",
+        "brand": "Atkins",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Atkins+Protein-Rich+Shake%2C+Milk+Chocolate"
+      }
+    },
+    {
+      "id": "ayoba-spicy-biltong",
+      "fdcId": 2652760,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ayoba Spicy Biltong",
+        "brand": "Ayoba",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ayoba+Spicy+Biltong"
+      }
+    },
+    {
+      "id": "ayoba-traditional-biltong",
+      "fdcId": 2663838,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ayoba Traditional Biltong",
+        "brand": "Ayoba",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ayoba+Traditional+Biltong"
+      }
+    },
+    {
+      "id": "ayoba-traditional-droewors",
+      "fdcId": 2652759,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ayoba Traditional Droewors",
+        "brand": "Ayoba",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ayoba+Traditional+Droewors"
+      }
+    },
+    {
+      "id": "better-jerky-co-jerky-crisps-beef-jerky",
+      "fdcId": 2593353,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Better Jerky Co. Beef Jerky Crisps",
+        "brand": "Better Jerky Co.",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Better+Jerky+Co.+Beef+Jerky+Crisps"
+      }
+    },
+    {
+      "id": "brooklyn-biltong-lemon-pepper-grass-fed-air-dried-beef",
+      "fdcId": 2385717,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Brooklyn Biltong Lemon Pepper Grass Fed Air Dried Beef",
+        "brand": "Brooklyn Biltong",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Brooklyn+Biltong+Lemon+Pepper+Grass+Fed+Air+Dried+Beef"
+      }
+    },
+    {
+      "id": "brooklyn-biltong-peri-peri-chili-grass-fed-air-dried-beef",
+      "fdcId": 2385764,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Brooklyn Biltong Peri Peri Chili Grass Fed Air Dried Beef",
+        "brand": "Brooklyn Biltong",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Brooklyn+Biltong+Peri+Peri+Chili+Grass+Fed+Air+Dried+Beef"
+      }
+    },
+    {
+      "id": "built-coconut-puff-protein-bars",
+      "fdcId": 2509968,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Built Coconut Puff Protein Bars",
+        "brand": "Built",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Built+Coconut+Puff+Protein+Bars"
+      }
+    },
+    {
+      "id": "chefs-cut-original-biltong",
+      "fdcId": 2401522,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Chef\u2019s Cut Original Biltong Air Dried Beef",
+        "brand": "Chef's Cut",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Chef%E2%80%99s+Cut+Original+Biltong+Air+Dried+Beef"
+      }
+    },
+    {
+      "id": "chefs-cut-spicy-chili-biltong",
+      "fdcId": 2401530,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Chef\u2019s Cut Spicy Chili Biltong Air Dried Beef",
+        "brand": "Chef's Cut",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Chef%E2%80%99s+Cut+Spicy+Chili+Biltong+Air+Dried+Beef"
+      }
+    },
+    {
+      "id": "clif-chocolate-chip-protein-bars",
+      "fdcId": 2508153,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Clif Chocolate Chip Protein Bars",
+        "brand": "Clif",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Clif+Chocolate+Chip+Protein+Bars"
+      }
+    },
+    {
+      "id": "core-power-high-protein-milk-shake-coffee",
+      "fdcId": 2369918,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Core Power High Protein Shake, Coffee",
+        "brand": "Core Power",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Core+Power+High+Protein+Shake%2C+Coffee"
+      }
+    },
+    {
+      "id": "core-power-high-protein-milk-shake-banana",
+      "fdcId": 1935189,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Core Power High Protein Shake, Banana",
+        "brand": "Core Power",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Core+Power+High+Protein+Shake%2C+Banana"
+      }
+    },
+    {
+      "id": "core-power-high-protein-milk-shake-vanilla",
+      "fdcId": 1872220,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Core Power High Protein Shake, Vanilla",
+        "brand": "Core Power",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Core+Power+High+Protein+Shake%2C+Vanilla"
+      }
+    },
+    {
+      "id": "core-power-high-protein-milk-shake-chocolate",
+      "fdcId": 2663965,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Core Power High Protein Shake, Chocolate",
+        "brand": "Core Power",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Core+Power+High+Protein+Shake%2C+Chocolate"
+      }
+    },
+    {
+      "id": "epic-provisions-epic-sea-salt-pepper-venison-bar",
+      "fdcId": 2770150,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Epic Sea Salt Pepper Venison Bar",
+        "brand": "Epic Provisions",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Epic+Sea+Salt+Pepper+Venison+Bar"
+      }
+    },
+    {
+      "id": "epic-provisions-epic-bbq-seasoned-chicken-bar",
+      "fdcId": 2770152,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Epic BBQ Seasoned Chicken Bar",
+        "brand": "Epic Provisions",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Epic+BBQ+Seasoned+Chicken+Bar"
+      }
+    },
+    {
+      "id": "epic-provisions-epic-beef-barbacoa-inspired-bar",
+      "fdcId": 2770137,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Epic Beef Barbacoa-inspired Bar",
+        "brand": "Epic Provisions",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Epic+Beef+Barbacoa-inspired+Bar"
+      }
+    },
+    {
+      "id": "epic-provisions-epic-chicken-sriracha-bar",
+      "fdcId": 2770151,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Epic Chicken Sriracha Bar",
+        "brand": "Epic Provisions",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Epic+Chicken+Sriracha+Bar"
+      }
+    },
+    {
+      "id": "epic-provisions-epic-sea-salt-pepper-beef-bar",
+      "fdcId": 2770136,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Epic Sea Salt Pepper Beef Bar",
+        "brand": "Epic Provisions",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Epic+Sea+Salt+Pepper+Beef+Bar"
+      }
+    },
+    {
+      "id": "epic-provisions-epic-jalapeno-beef-bar",
+      "fdcId": 2770135,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Epic Jalapeno Beef Bar",
+        "brand": "Epic Provisions",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Epic+Jalapeno+Beef+Bar"
+      }
+    },
+    {
+      "id": "fitcrunch-barbecue-high-protein-puffs",
+      "fdcId": 2586898,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "FitCrunch Barbecue High Protein Puffs",
+        "brand": "FitCrunch",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=FitCrunch+Barbecue+High+Protein+Puffs"
+      }
+    },
+    {
+      "id": "fitcrunch-cheddar-cheese-high-protein-puffs",
+      "fdcId": 2586897,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "FitCrunch Cheddar Cheese High Protein Puffs",
+        "brand": "FitCrunch",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=FitCrunch+Cheddar+Cheese+High+Protein+Puffs"
+      }
+    },
+    {
+      "id": "good-snacks-cookie-protein-bar",
+      "fdcId": 2136728,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Good! Snacks Cookie Protein Bar",
+        "brand": "Good! Snacks",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Good%21+Snacks+Cookie+Protein+Bar"
+      }
+    },
+    {
+      "id": "good-snacks-protein-bars",
+      "fdcId": 2509995,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Good! Snacks Protein Bars",
+        "brand": "Good! Snacks",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Good%21+Snacks+Protein+Bars"
+      }
+    },
+    {
+      "id": "iwon-organics-caramelized-onion-protein-puffs",
+      "fdcId": 2630622,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "IWON Organics Caramelized Onion Protein Puffs",
+        "brand": "IWON Organics",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=IWON+Organics+Caramelized+Onion+Protein+Puffs"
+      }
+    },
+    {
+      "id": "iwon-organics-cheddar-cheese-protein-puffs",
+      "fdcId": 2177957,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "IWON Organics Cheddar Cheese Protein Puffs",
+        "brand": "IWON Organics",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=IWON+Organics+Cheddar+Cheese+Protein+Puffs"
+      }
+    },
+    {
+      "id": "jack-links-beef-stick-pepper-jack-large",
+      "fdcId": 2675671,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Jack Link's Beef Stick & Pepper Jack Cheese, Large Pack",
+        "brand": "Jack Link's",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Jack+Link%27s+Beef+Stick+%26+Pepper+Jack+Cheese%2C+Large+Pack"
+      }
+    },
+    {
+      "id": "jack-links-small-batch-teriyaki-no-17",
+      "fdcId": 2617456,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Jack Link's Small Batch Teriyaki No. 17 Beef Jerky",
+        "brand": "Jack Link's",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Jack+Link%27s+Small+Batch+Teriyaki+No.+17+Beef+Jerky"
+      }
+    },
+    {
+      "id": "jack-links-beef-stick-colby-jack",
+      "fdcId": 2675788,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Jack Link's Beef Stick & Colby Jack Cheese",
+        "brand": "Jack Link's",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Jack+Link%27s+Beef+Stick+%26+Colby+Jack+Cheese"
+      }
+    },
+    {
+      "id": "kalahari-biltong-garlic-air-dried-thinly-sliced-beef",
+      "fdcId": 2471071,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Kalahari Biltong Garlic Air Dried, Thinly Sliced Beef",
+        "brand": "Kalahari Biltong",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Kalahari+Biltong+Garlic+Air+Dried%2C+Thinly+Sliced+Beef"
+      }
+    },
+    {
+      "id": "kalahari-biltong-original-air-dried-thinly-sliced-beef",
+      "fdcId": 2653433,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Kalahari Biltong Original Air Dried, Thinly Sliced Beef",
+        "brand": "Kalahari Biltong",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Kalahari+Biltong+Original+Air+Dried%2C+Thinly+Sliced+Beef"
+      }
+    },
+    {
+      "id": "kalahari-biltong-rosemary-truffle-air-dried-thinly-sliced-beef",
+      "fdcId": 2368492,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Kalahari Biltong Rosemary Truffle Air Dried, Thinly Sliced Beef",
+        "brand": "Kalahari Biltong",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Kalahari+Biltong+Rosemary+Truffle+Air+Dried%2C+Thinly+Sliced+Beef"
+      }
+    },
+    {
+      "id": "kalahari-biltong-spicy-peri-peri-air-dried-thinly-sliced-beef",
+      "fdcId": 2653432,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Kalahari Biltong Spicy Peri Peri Air Dried, Thinly Sliced Beef",
+        "brand": "Kalahari Biltong",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Kalahari+Biltong+Spicy+Peri+Peri+Air+Dried%2C+Thinly+Sliced+Beef"
+      }
+    },
+    {
+      "id": "larabar-protein-peanut-butter-chocolate-bar",
+      "fdcId": 2769209,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Larabar Protein Peanut Butter Chocolate Bar",
+        "brand": "Larabar",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Larabar+Protein+Peanut+Butter+Chocolate+Bar"
+      }
+    },
+    {
+      "id": "larabar-protein-cinnamon-nut-bar",
+      "fdcId": 2772249,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Larabar Protein Cinnamon Nut Bar",
+        "brand": "Larabar",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Larabar+Protein+Cinnamon+Nut+Bar"
+      }
+    },
+    {
+      "id": "larabar-protein-lemon-bar",
+      "fdcId": 2772248,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Larabar Protein Lemon Bar",
+        "brand": "Larabar",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Larabar+Protein+Lemon+Bar"
+      }
+    },
+    {
+      "id": "legendary-foods-wild-berry-protein-sweet-roll",
+      "fdcId": 2664095,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Legendary Foods Wild Berry Protein Sweet Roll",
+        "brand": "Legendary Foods",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Legendary+Foods+Wild+Berry+Protein+Sweet+Roll"
+      }
+    },
+    {
+      "id": "lifeway-vanilla-protein-kefir-lowfat-cultured-milk-smoothie",
+      "fdcId": 2472903,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Lifeway Vanilla Protein Kefir Lowfat Cultured Milk Smoothie",
+        "brand": "Lifeway",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Lifeway+Vanilla+Protein+Kefir+Lowfat+Cultured+Milk+Smoothie"
+      }
+    },
+    {
+      "id": "lifeway-banana-protein-kefir-nonfat-cultured-milk-smoothie",
+      "fdcId": 2406105,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Lifeway Banana Protein Kefir Nonfat Cultured Milk Smoothie",
+        "brand": "Lifeway",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Lifeway+Banana+Protein+Kefir+Nonfat+Cultured+Milk+Smoothie"
+      }
+    },
+    {
+      "id": "luna-chocolate-high-protein-bars",
+      "fdcId": 2507999,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Luna Protein Bar, Chocolate",
+        "brand": "Luna",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Luna+Protein+Bar%2C+Chocolate"
+      }
+    },
+    {
+      "id": "luna-protein-bar-chocolate-coconut-almond",
+      "fdcId": 2507861,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Luna Protein Bar, Chocolate Coconut Almond",
+        "brand": "Luna",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Luna+Protein+Bar%2C+Chocolate+Coconut+Almond"
+      }
+    },
+    {
+      "id": "muscle-milk-go-bananas-pro-series-non-dairy-protein-shake",
+      "fdcId": 2339728,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Muscle Milk Go Bananas Pro Series Non-dairy Protein Shake",
+        "brand": "Muscle Milk",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Go+Bananas+Pro+Series+Non-dairy+Protein+Shake"
+      }
+    },
+    {
+      "id": "muscle-milk-pro-40g-intense-vanilla",
+      "fdcId": 2669537,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Muscle Milk Pro Advanced Nutrition 40g Protein Shake, Intense Vanilla",
+        "brand": "Muscle Milk",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Advanced+Nutrition+40g+Protein+Shake%2C+Intense+Vanilla"
+      }
+    },
+    {
+      "id": "muscle-milk-pro-40g-slammin-strawberry",
+      "fdcId": 2669541,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Muscle Milk Pro Advanced Nutrition Protein 40g Shake, Slammin' Strawberry",
+        "brand": "Muscle Milk",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Advanced+Nutrition+Protein+40g+Shake%2C+Slammin%27+Strawberry"
+      }
+    },
+    {
+      "id": "muscle-milk-non-dairy-protein-shake-crushing-cookies-n-creme",
+      "fdcId": 2338793,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Muscle Milk Pro Series 40g Shake, Crushing Cookies 'n Creme",
+        "brand": "Muscle Milk",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Series+40g+Shake%2C+Crushing+Cookies+%27n+Creme"
+      }
+    },
+    {
+      "id": "muscle-milk-pro-32g-knockout-chocolate",
+      "fdcId": 2502081,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Muscle Milk Pro Advanced Nutrition 32g Protein Shake, Knockout Chocolate",
+        "brand": "Muscle Milk",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Advanced+Nutrition+32g+Protein+Shake%2C+Knockout+Chocolate"
+      }
+    },
+    {
+      "id": "muscle-milk-pro-cookies-n-crme-protein-shake",
+      "fdcId": 2615906,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Muscle Milk Pro Advanced Nutrition 32g Shake, Cookies 'n Creme",
+        "brand": "Muscle Milk",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Pro+Advanced+Nutrition+32g+Shake%2C+Cookies+%27n+Creme"
+      }
+    },
+    {
+      "id": "nature-valley-protein-peanut-butter-dark-chocolate-chewy-bar",
+      "fdcId": 2774910,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Protein Peanut Butter Dark Chocolate Chewy Bar",
+        "brand": "Nature Valley",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Protein+Peanut+Butter+Dark+Chocolate+Chewy+Bar"
+      }
+    },
+    {
+      "id": "nature-valley-protein-salted-caramel-chewy-bars",
+      "fdcId": 2774902,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Protein Salted Caramel Chewy Bars",
+        "brand": "Nature Valley",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Protein+Salted+Caramel+Chewy+Bars"
+      }
+    },
+    {
+      "id": "nature-valley-protein-cinnamon-roll-granola",
+      "fdcId": 2772890,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Protein Cinnamon Roll Granola",
+        "brand": "Nature Valley",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Protein+Cinnamon+Roll+Granola"
+      }
+    },
+    {
+      "id": "nature-valley-vanilla-protein-granola",
+      "fdcId": 2755080,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Vanilla Protein Granola",
+        "brand": "Nature Valley",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Vanilla+Protein+Granola"
+      }
+    },
+    {
+      "id": "nature-valley-creamy-protein-cinnamon-almond-butter-bar",
+      "fdcId": 2758454,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Creamy Protein Cinnamon Almond Butter Creamy Crispy Bar",
+        "brand": "Nature Valley",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Creamy+Protein+Cinnamon+Almond+Butter+Creamy+Crispy+Bar"
+      }
+    },
+    {
+      "id": "nature-valley-creamy-protein-peanut-butter-chocolate-bar",
+      "fdcId": 2758453,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Creamy Protein Peanut Butter Chocolate Creamy Crispy Bar",
+        "brand": "Nature Valley",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Creamy+Protein+Peanut+Butter+Chocolate+Creamy+Crispy+Bar"
+      }
+    },
+    {
+      "id": "nature-valley-oats-and-honey-protein-balls",
+      "fdcId": 2772893,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Nature Valley Oats & Honey Protein Balls",
+        "brand": "Nature Valley",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Nature+Valley+Oats+%26+Honey+Protein+Balls"
+      }
+    },
+    {
+      "id": "oikos-pro-shake-vanilla",
+      "fdcId": 2744949,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Oikos Pro Shake, Vanilla",
+        "brand": "Oikos",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Oikos+Pro+Shake%2C+Vanilla"
+      }
+    },
+    {
+      "id": "oikos-pro-plain-yogurt",
+      "fdcId": 2769968,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Oikos Pro Plain Yogurt",
+        "brand": "Oikos",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Oikos+Pro+Plain+Yogurt"
+      }
+    },
+    {
+      "id": "oikos-pro-vanilla-greek-yogurt",
+      "fdcId": 2755594,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Oikos Pro Vanilla Greek Yogurt",
+        "brand": "Oikos",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Oikos+Pro+Vanilla+Greek+Yogurt"
+      }
+    },
+    {
+      "id": "orgain-organic-protein-shake-creamy-chocolate-fudge",
+      "fdcId": 2339251,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Orgain Organic Protein Shake, Creamy Chocolate Fudge",
+        "brand": "Orgain",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Orgain+Organic+Protein+Shake%2C+Creamy+Chocolate+Fudge"
+      }
+    },
+    {
+      "id": "orgain-protein-bar",
+      "fdcId": 2095255,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Orgain Protein Bar",
+        "brand": "Orgain",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Orgain+Protein+Bar"
+      }
+    },
+    {
+      "id": "owyn-vanilla-protein-shakes",
+      "fdcId": 2607300,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "OWYN Vanilla Protein Shakes",
+        "brand": "OWYN",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=OWYN+Vanilla+Protein+Shakes"
+      }
+    },
+    {
+      "id": "owyn-elite-pro-chocolate-shakes",
+      "fdcId": 2607302,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "OWYN Elite Pro Chocolate Shakes",
+        "brand": "OWYN",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=OWYN+Elite+Pro+Chocolate+Shakes"
+      }
+    },
+    {
+      "id": "perfect-bar-mocha-chip-protein-bar",
+      "fdcId": 2467504,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Perfect Bar Mocha Chip Protein Bar",
+        "brand": "Perfect Bar",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Perfect+Bar+Mocha+Chip+Protein+Bar"
+      }
+    },
+    {
+      "id": "perfect-bar-chocolate-hazelnut-crisp-protein-bar",
+      "fdcId": 2664734,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Perfect Bar Chocolate Hazelnut Crisp Protein Bar",
+        "brand": "Perfect Bar",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Perfect+Bar+Chocolate+Hazelnut+Crisp+Protein+Bar"
+      }
+    },
+    {
+      "id": "perky-jerky-sweet-and-snappy-beef",
+      "fdcId": 2625903,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Perky Jerky Sweet & Snappy Beef Jerky",
+        "brand": "Perky Jerky",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Perky+Jerky+Sweet+%26+Snappy+Beef+Jerky"
+      }
+    },
+    {
+      "id": "perky-jerky-tasty-teriyaki-turkey",
+      "fdcId": 1927392,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Perky Jerky Tasty Teriyaki Turkey Jerky",
+        "brand": "Perky Jerky",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Perky+Jerky+Tasty+Teriyaki+Turkey+Jerky"
+      }
+    },
+    {
+      "id": "popcorners-protein-crisps-barbecue",
+      "fdcId": 2604063,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "PopCorners Protein Crisps, Barbecue",
+        "brand": "Popcorners",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=PopCorners+Protein+Crisps%2C+Barbecue"
+      }
+    },
+    {
+      "id": "popcorners-ranch-protein-crisps",
+      "fdcId": 2582208,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "PopCorners Protein Crisps, Ranch",
+        "brand": "Popcorners",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=PopCorners+Protein+Crisps%2C+Ranch"
+      }
+    },
+    {
+      "id": "premier-protein-high-protein-shake-caramel",
+      "fdcId": 2488868,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Premier Protein Shake, Caramel",
+        "brand": "Premier Protein",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Premier+Protein+Shake%2C+Caramel"
+      }
+    },
+    {
+      "id": "premier-protein-clear-protein-drink-orange-mango",
+      "fdcId": 1934544,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Premier Protein Clear Protein Drink, Orange Mango",
+        "brand": "Premier Protein",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Premier+Protein+Clear+Protein+Drink%2C+Orange+Mango"
+      }
+    },
+    {
+      "id": "premier-protein-clear-protein-drink-tropical-punch",
+      "fdcId": 1955652,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Premier Protein Clear Protein Drink, Tropical Punch",
+        "brand": "Premier Protein",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Premier+Protein+Clear+Protein+Drink%2C+Tropical+Punch"
+      }
+    },
+    {
+      "id": "protein-one-90-calorie-peanut-butter-chocolate-bar",
+      "fdcId": 2716146,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Protein One 90 Calorie Peanut Butter Chocolate Bar",
+        "brand": "Protein One",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Protein+One+90+Calorie+Peanut+Butter+Chocolate+Bar"
+      }
+    },
+    {
+      "id": "protein-one-90-calorie-chocolate-chip-bar",
+      "fdcId": 2758656,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Protein One 90 Calorie Chocolate Chip Bar",
+        "brand": "Protein One",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Protein+One+90+Calorie+Chocolate+Chip+Bar"
+      }
+    },
+    {
+      "id": "protein-one-90-calorie-chocolate-fudge-bar",
+      "fdcId": 2741342,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Protein One 90 Calorie Chocolate Fudge Bar",
+        "brand": "Protein One",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Protein+One+90+Calorie+Chocolate+Fudge+Bar"
+      }
+    },
+    {
+      "id": "protein-one-peanut-butter-chocolate-protein-bars",
+      "fdcId": 2758654,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Protein One Peanut Butter Chocolate Protein Bars",
+        "brand": "Protein One",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Protein+One+Peanut+Butter+Chocolate+Protein+Bars"
+      }
+    },
+    {
+      "id": "pure-protein-cookie-dough-protein-bar",
+      "fdcId": 2153971,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Pure Protein Cookie Dough Protein Bar",
+        "brand": "Pure Protein",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=Pure+Protein+Cookie+Dough+Protein+Bar"
+      }
+    },
+    {
+      "id": "pure-protein-nacho-cheese-18g-protein-puffs",
+      "fdcId": 2603306,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Pure Protein Nacho Cheese 18g Protein Puffs",
+        "brand": "Pure Protein",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Pure+Protein+Nacho+Cheese+18g+Protein+Puffs"
+      }
+    },
+    {
+      "id": "quest-chocolate-protein-shake",
+      "fdcId": 2340184,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Quest Chocolate Protein Shake",
+        "brand": "Quest",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Quest+Chocolate+Protein+Shake"
+      }
+    },
+    {
+      "id": "quest-protein-chips-bbq",
+      "fdcId": 2669750,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Quest Protein Chips, BBQ",
+        "brand": "Quest",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Quest+Protein+Chips%2C+BBQ"
+      }
+    },
+    {
+      "id": "quest-hot-and-spicy-tortilla-style-protein-chips",
+      "fdcId": 2669759,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Quest Hot & Spicy Tortilla Style Protein Chips",
+        "brand": "Quest",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Quest+Hot+%26+Spicy+Tortilla+Style+Protein+Chips"
+      }
+    },
+    {
+      "id": "quest-loaded-taco-tortilla-style-protein-chips",
+      "fdcId": 2511712,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Quest Loaded Taco Tortilla Style Protein Chips",
+        "brand": "Quest",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Quest+Loaded+Taco+Tortilla+Style+Protein+Chips"
+      }
+    },
+    {
+      "id": "ratio-protein-strawberry-dairy-drink",
+      "fdcId": 2737547,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ratio Protein Strawberry Dairy Drink",
+        "brand": "Ratio",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ratio+Protein+Strawberry+Dairy+Drink"
+      }
+    },
+    {
+      "id": "ratio-25g-protein-coconut-dairy-snack",
+      "fdcId": 2755893,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ratio Protein Coconut Dairy Snack",
+        "brand": "Ratio",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ratio+Protein+Coconut+Dairy+Snack"
+      }
+    },
+    {
+      "id": "ratio-protein-banana-cream-dairy-snack",
+      "fdcId": 2737553,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ratio Protein Banana Cream Dairy Snack",
+        "brand": "Ratio",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ratio+Protein+Banana+Cream+Dairy+Snack"
+      }
+    },
+    {
+      "id": "ratio-protein-blueberry-dairy-snack",
+      "fdcId": 2771856,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Ratio Protein Blueberry Dairy Snack",
+        "brand": "Ratio",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Ratio+Protein+Blueberry+Dairy+Snack"
+      }
+    },
+    {
+      "id": "rxbar-banana-chocolate-walnut-protein-bar",
+      "fdcId": 2393727,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "RXBAR Banana Chocolate Walnut Protein Bar",
+        "brand": "RXBAR",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=RXBAR+Banana+Chocolate+Walnut+Protein+Bar"
+      }
+    },
+    {
+      "id": "rxbar-chocolate-chip-protein-bar",
+      "fdcId": 2609152,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "RXBAR Chocolate Chip Protein Bar",
+        "brand": "RXBAR",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=RXBAR+Chocolate+Chip+Protein+Bar"
+      }
+    },
+    {
+      "id": "rxbar-orange-protein-bar",
+      "fdcId": 1067103,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "RXBAR Orange Protein Bar",
+        "brand": "RXBAR",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=RXBAR+Orange+Protein+Bar"
+      }
+    },
+    {
+      "id": "rxbar-a-m-chocolate-protein-bar",
+      "fdcId": 2599578,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "RXBAR A.M. Protein Bar, Chocolate",
+        "brand": "RXBAR",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=RXBAR+A.M.+Protein+Bar%2C+Chocolate"
+      }
+    },
+    {
+      "id": "rxbar-am-honey-cinnamon-peanut-butter",
+      "fdcId": 2599580,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "RXBAR A.M. Protein Bar, Honey Cinnamon Peanut Butter",
+        "brand": "RXBAR",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=RXBAR+A.M.+Protein+Bar%2C+Honey+Cinnamon+Peanut+Butter"
+      }
+    },
+    {
+      "id": "shrewd-food-baked-cheddar-flavored-protein-puffs",
+      "fdcId": 2481625,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Shrewd Food Baked Cheddar Flavored Protein Puffs",
+        "brand": "Shrewd Food",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Shrewd+Food+Baked+Cheddar+Flavored+Protein+Puffs"
+      }
+    },
+    {
+      "id": "shrewd-food-buffalo-ranch-flavored-protein-puffs",
+      "fdcId": 2478185,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Shrewd Food Buffalo Ranch Flavored Protein Puffs",
+        "brand": "Shrewd Food",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Shrewd+Food+Buffalo+Ranch+Flavored+Protein+Puffs"
+      }
+    },
+    {
+      "id": "shrewd-food-protein-crisps-cookies-and-cream",
+      "fdcId": 2149521,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Shrewd Food Protein Crisps, Cookies & Cream",
+        "brand": "Shrewd Food",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Shrewd+Food+Protein+Crisps%2C+Cookies+%26+Cream"
+      }
+    },
+    {
+      "id": "shrewd-food-protein-crisps-strawberries-and-cream",
+      "fdcId": 2175145,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Shrewd Food Protein Crisps, Strawberries & Cream",
+        "brand": "Shrewd Food",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Shrewd+Food+Protein+Crisps%2C+Strawberries+%26+Cream"
+      }
+    },
+    {
+      "id": "stryve-beef-biltong-sliced-snacks",
+      "fdcId": 1967001,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Stryve Beef Biltong Sliced Snacks",
+        "brand": "Stryve",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Stryve+Beef+Biltong+Sliced+Snacks"
+      }
+    },
+    {
+      "id": "stryve-hickory-seasoned-beef-biltong",
+      "fdcId": 2670209,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Stryve Hickory Seasoned Beef Biltong",
+        "brand": "Stryve",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Stryve+Hickory+Seasoned+Beef+Biltong"
+      }
+    },
+    {
+      "id": "stryve-original-beef-biltong",
+      "fdcId": 2670208,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Stryve Original Beef Biltong",
+        "brand": "Stryve",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Stryve+Original+Beef+Biltong"
+      }
+    },
+    {
+      "id": "stryve-original-air-dried-beef-steak-bite-protein-snacks",
+      "fdcId": 2652026,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Stryve Original Air-dried Beef Steak Bite Protein Snacks",
+        "brand": "Stryve",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Stryve+Original+Air-dried+Beef+Steak+Bite+Protein+Snacks"
+      }
+    },
+    {
+      "id": "stryve-spicy-peri-peri-biltong-sticks",
+      "fdcId": 2390812,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Stryve Spicy Peri Peri Biltong Sticks",
+        "brand": "Stryve",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Stryve+Spicy+Peri+Peri+Biltong+Sticks"
+      }
+    },
+    {
+      "id": "think-sweet-treat-high-protein-bar",
+      "fdcId": 2630923,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "think! Sweet Treat High Protein Bar",
+        "brand": "think!",
+        "productType": "bar",
+        "buyUrl": "https://www.amazon.com/s?k=think%21+Sweet+Treat+High+Protein+Bar"
+      }
+    },
+    {
+      "id": "tillamook-country-smoker-beef-jerky",
+      "fdcId": 2023754,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Tillamook Country Smoker Beef Jerky",
+        "brand": "Tillamook Country Smoker",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Tillamook+Country+Smoker+Beef+Jerky"
+      }
+    },
+    {
+      "id": "tillamook-country-smoker-beef-stick",
+      "fdcId": 2062925,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Tillamook Country Smoker Beef Stick",
+        "brand": "Tillamook Country Smoker",
+        "productType": null,
+        "buyUrl": "https://www.amazon.com/s?k=Tillamook+Country+Smoker+Beef+Stick"
+      }
+    },
+    {
+      "id": "twin-peaks-ingredients-garlic-parmesan-protein-puffs",
+      "fdcId": 2154721,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Twin Peaks Ingredients Garlic Parmesan Protein Puffs",
+        "brand": "Twin Peaks Ingredients",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Twin+Peaks+Ingredients+Garlic+Parmesan+Protein+Puffs"
+      }
+    },
+    {
+      "id": "twin-peaks-ingredients-jalapeno-cheddar-protein-puffs",
+      "fdcId": 2154720,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Twin Peaks Ingredients Jalapeno Cheddar Protein Puffs",
+        "brand": "Twin Peaks Ingredients",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Twin+Peaks+Ingredients+Jalapeno+Cheddar+Protein+Puffs"
+      }
+    },
+    {
+      "id": "twin-peaks-ingredients-nacho-cheese-protein-puffs",
+      "fdcId": 2154713,
+      "note": "Added from the discovery run (USDA label data).",
+      "add": {
+        "name": "Twin Peaks Ingredients Nacho Cheese Protein Puffs",
+        "brand": "Twin Peaks Ingredients",
+        "productType": "chips",
+        "buyUrl": "https://www.amazon.com/s?k=Twin+Peaks+Ingredients+Nacho+Cheese+Protein+Puffs"
       }
     }
   ]

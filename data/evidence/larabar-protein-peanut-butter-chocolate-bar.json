@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Larabar Protein Peanut Butter Chocolate Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2769209,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2769209,
+    "description": "Larabar Protein Peanut Butter Chocolate Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Larabar",
+    "gtinUpc": "00021908266015",
+    "servingSize": 45,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "4/24/2026",
+    "ingredients": "ROASTED PEANUTS, TAPIOCA SYRUP, SOY PROTEIN ISOLATE, SEMISWEET CHOCOLATE* (UNSWEETENED CHOCOLATE, SUGAR, COCOA BUTTER, VANILLA EXTRACT), DATES, PEANUT FLOUR, PALM AND PALM KERNEL OIL, ALMONDS, UNSWEETENED COCONUT, SEA SALT, VANILLA EXTRACT. ",
+    "perServing": {
+      "protein": 12,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3.02,
+      "sugar": 11,
+      "fat": 12,
+      "servingSize": "1 bar / 45 g",
+      "servingSizeG": 45
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 220,
+      "carbs": 17,
+      "fiber": 3,
+      "sugar": 11,
+      "fat": 12,
+      "servingSize": "1 bar / 45 g",
+      "servingSizeG": 45
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 45 g",
+    "servingSizeG": 45,
+    "protein": 12,
+    "calories": 220,
+    "carbs": 17,
+    "fiber": 3,
+    "sugar": 11,
+    "fat": 12
+  }
+}

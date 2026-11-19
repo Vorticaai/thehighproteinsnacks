@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 6,
-    "calories": 170,
-    "carbs": 8,
-    "fiber": 2,
-    "sugar": 4,
-    "fat": 13
+    "servingSize": "1/3 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 3,
+    "calories": 130,
+    "carbs": 19,
+    "fiber": 3,
+    "sugar": 6,
+    "fat": 5
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B07RB7KM5S",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "855140002991",
+    "fdcId": 2152461
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2152461",
+        "url": "https://fdc.nal.usda.gov/food-details/2152461/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 3,
+          "calories": 130,
+          "carbs": 19,
+          "fiber": 3,
+          "sugar": 6,
+          "fat": 5
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

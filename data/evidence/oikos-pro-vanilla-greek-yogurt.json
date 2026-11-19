@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Oikos Pro Vanilla Greek Yogurt",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2755594,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2755594,
+    "description": "Oikos Pro Vanilla Greek Yogurt",
+    "brandOwner": "",
+    "brandName": "Oikos",
+    "gtinUpc": "00036632042552",
+    "servingSize": 240,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "",
+    "dataSource": "Euromonitor",
+    "ingredients": "Ingredients: Cultured Grade A Ultra-filtered Non Fat Milk, Water, Whey Protein Concentrate, Natural Flavors, Cream, Contains Less Tahn 1% of: Tapioca Starch, Lemon Juice Concentrate, Stevia Leaf Reb M, Potassium Sorbate ( To Maintain Freshness), Vitamin D3, Yogurt Cultures S. Thermophilus & L. Bulgercus.",
+    "perServing": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 8,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3,
+      "servingSize": "240 g",
+      "servingSizeG": 240
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 140,
+      "carbs": 8,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3,
+      "servingSize": "240 g",
+      "servingSizeG": 240
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "240 g",
+    "servingSizeG": 240,
+    "protein": 20,
+    "calories": 140,
+    "carbs": 8,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3
+  }
+}

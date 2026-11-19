@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Magic Spoon Protein Cereal Frosted",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2554390,
+      "description": "FROSTED GRAIN-FREE CEREAL, FROSTED",
+      "brandOwner": "Magic Spoon Inc.",
+      "brandName": "MAGIC SPOON",
+      "gtinUpc": "850002887457",
+      "publishedDate": "2023-05-25",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2554390,
+        "description": "FROSTED GRAIN-FREE CEREAL, FROSTED",
+        "brandOwner": "Magic Spoon Inc.",
+        "brandName": "MAGIC SPOON",
+        "gtinUpc": "850002887457",
+        "publishedDate": "2023-05-25",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2524473,
+        "description": "MAGIC TREASURES MARSHMALLOWS FROSTED WHOLE GRAIN OAT CEREAL WITH MARSHMALLOWS, MAGIC TREASURES MARSHMALLOWS",
+        "brandOwner": "Wal-Mart Stores, Inc.",
+        "brandName": "GREAT VALUE",
+        "gtinUpc": "078742181561",
+        "publishedDate": "2023-04-27",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2483613,
+        "description": "MAGIC MARSHMALLOWS FROSTED WHOLE GRAIN OAT CEREAL WITH MARSHMALLOWS, MAGIC MARSHMALLOWS",
+        "brandOwner": "Associated Wholesale Grocers, Inc.",
+        "brandName": "BEST CHOICE",
+        "gtinUpc": "070038618454",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2488206,
+        "description": "FROSTED WHOLE GRAIN OAT CEREAL WITH MARSHMALLOWS, MARSHMALLOW MAGIC",
+        "brandOwner": "Safeway, Inc.",
+        "brandName": "SIGNATURE SELECT",
+        "gtinUpc": "021130287703",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2463133,
+        "description": "MAHOMES MAGIC CRUNCH SUGAR FROSTED FLAKES CEREAL, SUGAR",
+        "brandOwner": "Heartland Fish Cooperative",
+        "brandName": "HY-VEE",
+        "gtinUpc": "850016127174",
+        "publishedDate": "2023-02-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2554390,
+    "description": "FROSTED GRAIN-FREE CEREAL, FROSTED",
+    "brandOwner": "Magic Spoon Inc.",
+    "brandName": "MAGIC SPOON",
+    "gtinUpc": "850002887457",
+    "servingSize": 37,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 cup",
+    "dataSource": "LI",
+    "modifiedDate": "3/30/2023",
+    "ingredients": "MILK PROTEIN BLEND (CASEIN*, WHEY PROTEIN CONCENTRATE*), SWEETENER BLEND (ALLULOSE, MONK FRUIT EXTRACT*, STEVIA EXTRACT), OIL BLEND (HIGH OLEIC SUNFLOWER OIL, AVOCADO OIL), TAPIOCA STARCH, INULIN* (FROM CHICORY ROOT AND/OR AGAVE), NATURAL FLAVOR*, SALT.",
+    "perServing": {
+      "protein": 13,
+      "calories": 140,
+      "carbs": 14,
+      "fiber": 0.999,
+      "sugar": 0,
+      "fat": 7,
+      "servingSize": "1 cup / 37 g",
+      "servingSizeG": 37
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA label data failed a check: calories (140) don't match the macros (about 171)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 7
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 140,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 7
+  }
+}

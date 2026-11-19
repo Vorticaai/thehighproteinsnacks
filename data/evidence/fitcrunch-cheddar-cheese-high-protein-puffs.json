@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "FitCrunch Cheddar Cheese High Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2586897,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2586897,
+    "description": "CHEDDAR CHEESE HIGH PROTEIN PUFFS, CHEDDAR CHEESE",
+    "brandOwner": "Pervine Foods LLC ",
+    "brandName": "FITCRUNCH",
+    "gtinUpc": "817719020850",
+    "servingSize": 30,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bag",
+    "dataSource": "LI",
+    "modifiedDate": "6/5/2023",
+    "ingredients": "MILK PROTEIN ISOLATE, SUNFLOWER OIL, WHEY SOLIDS (MILK), CHEDDAR CHEESE (MILK, SALT, CULTURES, AND ENZYMES), NONFAT DRY MILK, SALT, LACTIC ACID, NATURAL FLAVORS, SILICON DIOXIDE, YEAST EXTRACT, AND PAPRIKA EXTRACT.",
+    "perServing": {
+      "protein": 20,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 2,
+      "fat": 4.5,
+      "servingSize": "1 Bag / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 2,
+      "fat": 4.5,
+      "servingSize": "1 Bag / 30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bag / 30 g",
+    "servingSizeG": 30,
+    "protein": 20,
+    "calories": 130,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 4.5
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "ONE Protein Bar – Birthday Cake",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2666692,
+      "description": "BIRTHDAY CAKE FLAVORED PROTEIN BAR, BIRTHDAY CAKE",
+      "brandOwner": "ONE Brands, LLC",
+      "brandName": "ONE",
+      "gtinUpc": "788434108089",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2666692,
+        "description": "BIRTHDAY CAKE FLAVORED PROTEIN BAR, BIRTHDAY CAKE",
+        "brandOwner": "ONE Brands, LLC",
+        "brandName": "ONE",
+        "gtinUpc": "788434108089",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666693,
+        "description": "BIRTHDAY CAKE FLAVORED PROTEIN BARS, BIRTHDAY CAKE",
+        "brandOwner": "ONE Brands, LLC",
+        "brandName": "ONE",
+        "gtinUpc": "788434108096",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666687,
+        "description": "BIRTHDAY CAKE FLAVORED PROTEIN BARS, BIRTHDAY CAKE",
+        "brandOwner": "ONE Brands, LLC",
+        "brandName": "ONE",
+        "gtinUpc": "788434106252",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2666692,
+    "description": "BIRTHDAY CAKE FLAVORED PROTEIN BAR, BIRTHDAY CAKE",
+    "brandOwner": "ONE Brands, LLC",
+    "brandName": "ONE",
+    "gtinUpc": "788434108089",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2022",
+    "ingredients": "INGREDIENTS: PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), ISOMALTO-OLIGOSACCHARIDES (VEGETABLE SOURCE), MALTITOL, VEGETABLE OIL BLEND (PALM KERNEL OIL, PALM OIL), VEGETABLE GLYCERIN, POLYDEXTROSE, SUNFLOWER SEED BUTTER, NATURAL FLAVORS, SOY LECITHIN (AN EMULSIFIER), WHEY PROTEIN CONCENTRATE, CORN STARCH, SEA SALT, NONFAT DRY MILK, TAPIOCA STARCH, SUNFLOWER OIL, DISTILLED MONOGLYCERIDES, SUGAR, SUCRALOSE, CALCIUM CARBONATE, FRUIT AND VEGETABLE CONCENTRATES (FOR COLOR), DEXTRIN, SPIRULINA EXTRACT (FOR COLOR), CONFECTIONER'S GLAZE, ANNATTO EXTRACT (FOR COLOR), TURMERIC EXTRACT (FOR COLOR), CARNUBA WAX AND SODIUM BICARBONATE.",
+    "perServing": {
+      "protein": 20,
+      "calories": 220,
+      "carbs": 23,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 8,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 20,
+      "calories": 220,
+      "carbs": 23,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 8,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 220,
+    "carbs": 23,
+    "fiber": 8,
+    "sugar": 1,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": "1 bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 20,
+    "calories": 220,
+    "carbs": 23,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 8
+  }
+}

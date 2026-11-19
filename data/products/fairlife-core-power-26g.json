@@ -33,11 +33,12 @@
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "No candidate from the same brand.",
+      "No USDA label record found for this product."
     ]
   }
 }

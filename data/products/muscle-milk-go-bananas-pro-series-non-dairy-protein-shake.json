@@ -1,0 +1,61 @@
+{
+  "id": "muscle-milk-go-bananas-pro-series-non-dairy-protein-shake",
+  "name": "Muscle Milk Go Bananas Pro Series Non-dairy Protein Shake",
+  "brand": "Muscle Milk",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Muscle+Milk+Go+Bananas+Pro+Series+Non-dairy+Protein+Shake",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bottle / 414 ml",
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 220,
+    "carbs": 10,
+    "fiber": 5,
+    "sugar": 2,
+    "fat": 3
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "876063002844",
+    "fdcId": 2339728
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2339728",
+        "url": "https://fdc.nal.usda.gov/food-details/2339728/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 40,
+          "calories": 219,
+          "carbs": 10,
+          "fiber": 5,
+          "sugar": 2,
+          "fat": 3
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

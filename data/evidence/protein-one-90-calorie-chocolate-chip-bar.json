@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Protein One 90 Calorie Chocolate Chip Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2758656,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2758656,
+    "description": "Protein One 90 Calorie Chocolate Chip Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Protein One",
+    "gtinUpc": "00016000141193",
+    "servingSize": 27,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "3/20/2026",
+    "ingredients": "Calcium Caseinate, Vegetable Glycerin, Whey Protein Concentrate, Whey Protein Isolate, Polydextrose, Collagen, Palm and Palm Kernel Oil, Chicory Root Extract, Canola Oil, Allulose, Semisweet Chocolate Chips (sugar, unsweetened chocolate, cocoa butter, soy lecithin, vanillin), Cocoa Powder, Dutch Cocoa (processed with alkali), Soy Lecithin, Salt, Natural Flavor, Stevia Extract, Sucralose.",
+    "perServing": {
+      "protein": 10,
+      "calories": 99.9,
+      "carbs": 10,
+      "fiber": 3,
+      "sugar": 0.999,
+      "fat": 3.5,
+      "servingSize": "1 bar / 27 g",
+      "servingSizeG": 27
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 100,
+      "carbs": 10,
+      "fiber": 3,
+      "sugar": 1,
+      "fat": 3.5,
+      "servingSize": "1 bar / 27 g",
+      "servingSizeG": 27
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 27 g",
+    "servingSizeG": 27,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 10,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 3.5
+  }
+}

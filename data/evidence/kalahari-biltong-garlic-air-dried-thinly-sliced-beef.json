@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Kalahari Biltong Garlic Air Dried, Thinly Sliced Beef",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2471071,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2471071,
+    "description": "GARLIC AIR DRIED, THINLY SLICED BEEF, GARLIC",
+    "brandOwner": "Kalahari Foods LLC",
+    "brandName": "KALAHARI BILTONG",
+    "gtinUpc": "852487008020",
+    "servingSize": 56,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 PACKAGE",
+    "dataSource": "LI",
+    "modifiedDate": "4/8/2020",
+    "ingredients": "BEEF, SALT, VINEGAR, CORIANDER, BLACK PEPPER, GARLIC",
+    "perServing": {
+      "protein": 32,
+      "calories": 160,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 4,
+      "servingSize": "1 PACKAGE / 56 g",
+      "servingSizeG": 56
+    }
+  },
+  "openFoodFacts": {
+    "code": "0852487008020",
+    "product_name": "Garlic Biltong",
+    "brands": "Kalahari Biltong",
+    "serving_size": "1 PACKAGE (56 g)",
+    "perServing": {
+      "protein": 32,
+      "calories": 160,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 4,
+      "servingSize": "1 PACKAGE (56 g)",
+      "servingSizeG": 56
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/248/700/8020/front_en.5.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 32,
+      "calories": 160,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 4,
+      "servingSize": "1 PACKAGE / 56 g",
+      "servingSizeG": 56
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 PACKAGE / 56 g",
+    "servingSizeG": 56,
+    "protein": 32,
+    "calories": 160,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 4
+  }
+}

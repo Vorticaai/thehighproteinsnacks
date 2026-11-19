@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Built Brands cookies and cream protein bar",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "No candidate from the same brand.",
+    "chosen": null,
+    "topCandidates": []
+  },
+  "usda": null,
+  "openFoodFacts": null,
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 17,
+    "calories": 140,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 2
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 17,
+    "calories": 140,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 7,
+    "fat": 2
+  }
+}

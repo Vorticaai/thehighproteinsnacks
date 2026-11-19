@@ -33,3 +33,10 @@ test("barcode variants cover UPC-12 and EAN-13 forms", () => {
   assert.ok(v.includes("888849000425"))
   assert.ok(v.includes("0888849000425"))
 })
+
+import { cleanQuery } from "../pipeline/sources/fdc"
+test("cleanQuery strips characters USDA search rejects", () => {
+  assert.equal(cleanQuery("Magic Spoon Peanut Butter Cereal (per serving)"), "Magic Spoon Peanut Butter Cereal per serving")
+  assert.equal(cleanQuery("Justin’s Almond Butter – Bar"), "Justins Almond Butter Bar")
+  assert.equal(cleanQuery("Chomps Turkey Jalapeño Stick"), "Chomps Turkey Jalapeno Stick")
+})

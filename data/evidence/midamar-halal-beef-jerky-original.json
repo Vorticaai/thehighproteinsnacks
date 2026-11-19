@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-18",
-  "query": "Midamar beef jerky",
+  "checkedAt": "2026-11-19",
+  "query": "Midamar Halal Beef Jerky, Original",
   "match": {
     "pinned": false,
     "confident": false,
@@ -11,9 +11,20 @@
   "usda": null,
   "openFoodFacts": null,
   "decision": {
-    "status": "needs-review",
+    "status": "verified",
+    "values": {
+      "servingSize": "1 oz (28 g)",
+      "servingSizeG": 28,
+      "protein": 13,
+      "calories": 90,
+      "carbs": 4,
+      "fiber": 0,
+      "sugar": 4,
+      "fat": 1
+    },
     "notes": [
-      "No USDA label record found for this product."
+      "USDA: No USDA label record found for this product.",
+      "Values from the brand's own Nutrition Facts panel."
     ]
   },
   "before": {
@@ -27,13 +38,13 @@
     "fat": 0
   },
   "after": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 0,
-    "calories": 0,
-    "carbs": 0,
+    "servingSize": "1 oz (28 g)",
+    "servingSizeG": 28,
+    "protein": 13,
+    "calories": 90,
+    "carbs": 4,
     "fiber": 0,
-    "sugar": 0,
-    "fat": 0
+    "sugar": 4,
+    "fat": 1
   }
 }

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Muscle Milk Pro Series 40g Shake, Crushing Cookies 'n Creme",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2338793,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2338793,
+    "description": "MUSCLE MILK, NON DAIRY PROTEIN SHAKE, CRUSHING COOKIES 'N CREME, CRUSHING COOKIES 'N CREME",
+    "brandOwner": "PepsiCo, Inc. (CytoSport)",
+    "brandName": "MUSCLE MILK",
+    "gtinUpc": "876063002837",
+    "servingSize": 414,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "14 OZA",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2021",
+    "ingredients": "WATER, MILK PROTEIN ISOLATE, CALCIUM CASEINATE (MILK), SODIUM CASEINATE (MILK), LESS THAN 1% OF: SOLUBLE VEGETABLE FIBER, NATURAL AND ARTIFICIAL FLAVORS, INULIN, CANOLA OIL, CELLULOSE GUM AND GEL, MALTODEXTRIN, SUNFLOWER OIL, DIPOTASSIUM PHOSPHATE, MAGNESIUM PHOSPHATE, SODIUM HEXAMETAPHOSPHATE, POTASSIUM CHLORIDE, SODIUM PHOSPHATE, ACESULFAME POTASSIUM, POTASSIUM CITRATE, ASCORBIC ACID, CARRAGEENAN, FERRIC PYROPHOSPHATE, CALCIUM PHOSPHATE, SUCRALOSE, DL-ALPHA TOCOPHERYL ACETATE, D-CALCIUM PANTOTHENATE, NIACINAMIDE, ZINC OXIDE, COPPER GLUCONATE, VITAMIN A PALMITATE, PYRIDOXINE HYDROCHLORIDE, THIAMINE MONONITRATE, RIBOFLAVIN, CHROMIUM CHLORIDE, FOLIC ACID, BIOTIN, POTASSIUM IODIDE, CHOLECALCIFEROL, CYANOCOBALAMIN.",
+    "perServing": {
+      "protein": 40,
+      "calories": 199,
+      "carbs": 8.98,
+      "fiber": 4.97,
+      "sugar": 0.994,
+      "fat": 2.48,
+      "servingSize": "14 OZA / 414 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 40,
+      "calories": 200,
+      "carbs": 9,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 2.5,
+      "servingSize": "14 OZA / 414 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "14 OZA / 414 ml",
+    "servingSizeG": null,
+    "protein": 40,
+    "calories": 200,
+    "carbs": 9,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 2.5
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Shrewd Food Protein Crisps, Cookies & Cream",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2149521,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2149521,
+    "description": "PROTEIN CRISPS, COOKIES & CREAM",
+    "brandOwner": "Shrewd Food LLC",
+    "brandName": "SHREWD FOOD",
+    "gtinUpc": "811307024121",
+    "servingSize": 21,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "0.74 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "3/14/2020",
+    "ingredients": "MILK PROTEIN ISOLATE, COOKIES & CREAM COATING(CANE SUGAR, ORGANIC NATURAL COCOA POWDER, CREAM SOLIDS, DEHYDRATED BUTTER, SALT, NON-FAT DRY MILK, CONTAINS 2% OR LESS OF: NATURAL FLAVORS, SODIUM CASEINATE, SODIUM PHOSPHATE, SILICON DIOXIDE TO REDUCE CAKING, SAFFLOWER OIL), SUNFLOWER OIL.",
+    "perServing": {
+      "protein": 13,
+      "calories": 90.1,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3.5,
+      "servingSize": "0.74 ONZ / 21 g",
+      "servingSizeG": 21
+    }
+  },
+  "openFoodFacts": {
+    "code": "0811307024121",
+    "product_name": "Protein Puffs Cookies & Cream",
+    "perServing": null,
+    "image_front_url": "https://images.openfoodfacts.org/images/products/081/130/702/4121/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 13,
+      "calories": 90,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 3,
+      "fat": 3.5,
+      "servingSize": "0.74 ONZ / 21 g",
+      "servingSizeG": 21
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "0.74 ONZ / 21 g",
+    "servingSizeG": 21,
+    "protein": 13,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 3.5
+  }
+}

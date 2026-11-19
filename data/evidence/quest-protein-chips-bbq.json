@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Protein Chips, BBQ",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2669750,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2669750,
+    "description": "PROTEIN CHIPS, BBQ",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849000289",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 BAG",
+    "dataSource": "LI",
+    "modifiedDate": "10/24/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), HIGH OLEIC SUNFLOWER OIL, CORN STARCH, PSYLLIUM HUSK, SALT. CONTAINS LESS THAN 2% OF THE FOLLOWING: TOMATO POWDER, ONION POWDER, PAPRIKA, GARLIC POWDER, SPICES, PAPRIKA EXTRACT (COLOR), YEAST EXTRACT, CALCIUM CARBONATE, NATURAL FLAVORS.",
+    "perServing": {
+      "protein": 22,
+      "calories": 130,
+      "carbs": 4,
+      "fiber": 1.98,
+      "sugar": 0,
+      "fat": 3.5,
+      "servingSize": "1 BAG / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 22,
+      "calories": 130,
+      "carbs": 4,
+      "fiber": 2,
+      "sugar": 0,
+      "fat": 3.5,
+      "servingSize": "1 BAG / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 BAG / 32 g",
+    "servingSizeG": 32,
+    "protein": 22,
+    "calories": 130,
+    "carbs": 4,
+    "fiber": 2,
+    "sugar": 0,
+    "fat": 3.5
+  }
+}

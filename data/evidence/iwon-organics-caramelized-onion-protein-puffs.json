@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "IWON Organics Caramelized Onion Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2630622,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2630622,
+    "description": "CARAMELIZED ONION PROTEIN PUFFS, ONION",
+    "brandOwner": "i won nutrition, co.",
+    "brandName": "IWON ORGANICS",
+    "gtinUpc": "0854646006342",
+    "servingSize": 42,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "",
+    "dataSource": "LI",
+    "modifiedDate": "7/3/2023",
+    "ingredients": "IWON ORGANIC PROTEIN BLEND (GREEN PEAS*, BROWN RICE FLOUR*, PEA PROTEIN*), SUNFLOWER OIL* AND/OR SAFFLOWER OIL*, CARAMELIZED ONION SEASONING* (TAPIOCA MALTODEXTRIN*, CANE SUGAR*, SEA SALT, ONION POWDER*, YEAST EXTRACT*, LACTIC ACID, CAYENNE CHILI PEPPER*, CITRIC ACID, AND NOT MORE THAN 2% SUNFLOWER OIL* ADDED AS A PROCESSING AID), *ORGANIC CERTIFIED",
+    "perServing": {
+      "protein": 10,
+      "calories": 180,
+      "carbs": 21,
+      "fiber": 5,
+      "sugar": 2,
+      "fat": 7,
+      "servingSize": "42 g",
+      "servingSizeG": 42
+    }
+  },
+  "openFoodFacts": {
+    "code": "0854646006342",
+    "product_name": "Caramelized onion",
+    "brands": "Iwon",
+    "serving_size": "1 bag (42 g)",
+    "perServing": {
+      "protein": 4.2,
+      "calories": 75.6,
+      "carbs": 8.82,
+      "fiber": 4,
+      "sugar": 0.84,
+      "fat": 2.94,
+      "servingSize": "1 bag (42 g)",
+      "servingSizeG": 42
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/464/600/6342/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 10 vs 4; calories: 180 vs 80; carbs: 21 vs 9; fat: 7 vs 3)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

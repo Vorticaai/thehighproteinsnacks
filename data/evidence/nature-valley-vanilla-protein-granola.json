@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Nature Valley Vanilla Protein Granola",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2755080,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2755080,
+    "description": "Nature Valley Vanilla Protein Granola",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Nature Valley",
+    "gtinUpc": "00016000219854",
+    "servingSize": 65,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "65",
+    "dataSource": "GDSN",
+    "modifiedDate": "2/23/2026",
+    "ingredients": "Whole Grain Oats, Sugar, Soy Protein Isolate, Canola and/or Sunflower Oil, Tapioca Syrup, Molasses, Rice Starch, Soy Lecithin, Baking Soda, Salt, Natural Flavor. Vitamin E (mixed tocopherols) Added to Preserve Freshness.",
+    "perServing": {
+      "protein": 13,
+      "calories": 270,
+      "carbs": 40,
+      "fiber": 4.03,
+      "sugar": 16,
+      "fat": 7,
+      "servingSize": "65 / 65 g",
+      "servingSizeG": 65
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 13,
+      "calories": 270,
+      "carbs": 40,
+      "fiber": 4,
+      "sugar": 16,
+      "fat": 7,
+      "servingSize": "65 / 65 g",
+      "servingSizeG": 65
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "65 / 65 g",
+    "servingSizeG": 65,
+    "protein": 13,
+    "calories": 270,
+    "carbs": 40,
+    "fiber": 4,
+    "sugar": 16,
+    "fat": 7
+  }
+}

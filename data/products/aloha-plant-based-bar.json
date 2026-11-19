@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 Bar / 56 g",
+    "servingSizeG": 56,
     "protein": 14,
-    "calories": 220,
-    "carbs": 24,
+    "calories": 240,
+    "carbs": 25,
     "fiber": 10,
     "sugar": 5,
-    "fat": 9
+    "fat": 11
   },
   "claims": {
     "vegan": true,
@@ -28,16 +28,46 @@
   },
   "identifiers": {
     "asin": "B07RZM418G",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "842096152221",
+    "fdcId": 2631109
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2631109",
+        "url": "https://fdc.nal.usda.gov/food-details/2631109/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 240,
+          "carbs": 25,
+          "fiber": 10,
+          "sugar": 5,
+          "fat": 11
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0842096152221",
+        "url": "https://world.openfoodfacts.org/product/0842096152221",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 240,
+          "carbs": 25,
+          "fiber": 10,
+          "sugar": 5,
+          "fat": 11
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

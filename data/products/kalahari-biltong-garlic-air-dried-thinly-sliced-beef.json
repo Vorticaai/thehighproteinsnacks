@@ -1,0 +1,82 @@
+{
+  "id": "kalahari-biltong-garlic-air-dried-thinly-sliced-beef",
+  "name": "Kalahari Biltong Garlic Air Dried, Thinly Sliced Beef",
+  "brand": "Kalahari Biltong",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Kalahari+Biltong+Garlic+Air+Dried%2C+Thinly+Sliced+Beef",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 PACKAGE / 56 g",
+    "servingSizeG": 56,
+    "protein": 32,
+    "calories": 160,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "852487008020",
+    "fdcId": 2471071
+  },
+  "image": {
+    "src": "/products/kalahari-biltong-garlic-air-dried-thinly-sliced-beef.jpg",
+    "alt": "Kalahari Biltong Kalahari Biltong Garlic Air Dried, Thinly Sliced Beef package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0852487008020"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2471071",
+        "url": "https://fdc.nal.usda.gov/food-details/2471071/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 32,
+          "calories": 160,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 4
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0852487008020",
+        "url": "https://world.openfoodfacts.org/product/0852487008020",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 32,
+          "calories": 160,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 4
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

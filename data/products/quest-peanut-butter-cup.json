@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 10,
-    "calories": 190,
-    "carbs": 3,
+    "servingSize": "2 cup / 42 g",
+    "servingSizeG": 42,
+    "protein": 11,
+    "calories": 200,
+    "carbs": 13,
     "fiber": 4,
     "sugar": 1,
-    "fat": 12
+    "fat": 15
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B0D65KFHH7",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "888849011315",
+    "fdcId": 2669736
   },
-  "image": null,
+  "image": {
+    "src": "/products/quest-peanut-butter-cup.jpg",
+    "alt": "Quest Nutrition Quest Peanut Butter Cups (2 cups) package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0888849011315"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669736",
+        "url": "https://fdc.nal.usda.gov/food-details/2669736/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 11,
+          "calories": 200,
+          "carbs": 13,
+          "fiber": 4,
+          "sugar": 1,
+          "fat": 15
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0888849011315",
+        "url": "https://world.openfoodfacts.org/product/0888849011315",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 11,
+          "calories": 200,
+          "carbs": 13,
+          "fiber": 4,
+          "sugar": 1,
+          "fat": 15
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

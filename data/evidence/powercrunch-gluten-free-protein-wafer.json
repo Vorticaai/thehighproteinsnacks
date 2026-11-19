@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Power Crunch Protein Wafer – Triple Chocolate",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2665580,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2665580,
+    "description": "TRIPLE CHOCOLATE PROTEIN ENERGY BAR, TRIPLE CHOCOLATE",
+    "brandOwner": "Bionutritional Research Group, Inc.",
+    "brandName": "POWER CRUNCH",
+    "gtinUpc": "644225727832",
+    "servingSize": 40,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Cookie",
+    "dataSource": "LI",
+    "modifiedDate": "8/25/2021",
+    "ingredients": "PROTO WHEY PROTEIN BLEND (MICRO PEPTIDES FROM HIGH-DH HYDROLYZED WHEY PROTEIN [40% DI AND TRIPEPTIDES], WHEY PROTEIN ISOLATE, MILK PROTEIN ISOLATE), PALM OIL, ENRICHED FLOUR (WHEAT FLOUR, MALTED BARLEY FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), PALM KERNEL OIL, SUGAR, COCOA PROCESSED WITH ALKALI, CANOLA OIL, FRUCTOSE, SOY LECITHIN, NATURAL FLAVORS, MALTODEXTRIN, SALT, STEVIA LEAF EXTRACT, BAKING SODA, AMMONIUM BICARBONATE, MONK FRUIT.",
+    "perServing": {
+      "protein": 13,
+      "calories": 220,
+      "carbs": 11,
+      "fiber": 1,
+      "sugar": 5,
+      "fat": 13,
+      "servingSize": "1 Cookie / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": {
+    "code": "0644225727832",
+    "product_name": "Protein Bar",
+    "brands": "Power crunch",
+    "serving_size": "1 Bar (40 g)",
+    "perServing": {
+      "protein": 5.2,
+      "calories": 220,
+      "carbs": 4.4,
+      "fiber": 0.4,
+      "sugar": 2,
+      "fat": 5.2,
+      "servingSize": "1 Bar (40 g)",
+      "servingSizeG": 40
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/064/422/572/7832/front_en.49.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 13 vs 5; carbs: 11 vs 4; sugar: 5 vs 2; fat: 13 vs 5)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 215,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 5,
+    "fat": 13
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 13,
+    "calories": 215,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 5,
+    "fat": 13
+  }
+}

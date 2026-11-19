@@ -1,0 +1,61 @@
+{
+  "id": "orgain-protein-bar",
+  "name": "Orgain Protein Bar",
+  "brand": "Orgain",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Orgain+Protein+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 BAR / 40 g",
+    "servingSizeG": 40,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 18,
+    "fiber": 6,
+    "sugar": 5,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "851770006521",
+    "fdcId": 2095255
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2095255",
+        "url": "https://fdc.nal.usda.gov/food-details/2095255/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 150,
+          "carbs": 18,
+          "fiber": 6,
+          "sugar": 5,
+          "fat": 6
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

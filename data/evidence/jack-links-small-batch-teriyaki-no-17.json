@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Jack Link's Small Batch Teriyaki No. 17 Beef Jerky",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2617456,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2617456,
+    "description": "JACK LINK'S, SMALL BATCH, TERIYAKI NO 17, HANDCRAFTED BEEF JERKY",
+    "brandOwner": "Link Snacks, Inc.",
+    "brandName": "JACK LINK'S",
+    "gtinUpc": "017082879080",
+    "servingSize": 28,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 oz",
+    "dataSource": "LI",
+    "modifiedDate": "7/11/2023",
+    "ingredients": "BEEF, WATER, BROWN SUGAR, LESS THAN 2% OF SOY SAUCE [(WHEAT, SOYBEANS, SALT), MALTODEXTRIN], SALT, SUGAR, FLAVORINGS, YEAST EXTRACT, SODIUM NITRITE, POTASSIUM SORBATE TO ENSURE FRESHNESS.",
+    "perServing": {
+      "protein": 13,
+      "calories": 89.9,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 2,
+      "fat": 1.5,
+      "servingSize": "1 oz / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 13,
+      "calories": 90,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 2,
+      "fat": 1.5,
+      "servingSize": "1 oz / 28 g",
+      "servingSizeG": 28
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 oz / 28 g",
+    "servingSizeG": 28,
+    "protein": 13,
+    "calories": 90,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 2,
+    "fat": 1.5
+  }
+}

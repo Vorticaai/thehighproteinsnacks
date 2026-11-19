@@ -1,0 +1,526 @@
+{
+  "queries": [
+    {
+      "query": "Quest protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Pure Protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "ONE protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Barebells protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Built bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "RXBAR",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "KIND protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Clif Builders protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "think high protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Atkins protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "FitCrunch protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Power Crunch protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Kirkland Signature protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Grenade protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "No Cow protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "GoMacro protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Aloha protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Perfect Bar protein",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Legendary Foods protein",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Premier Protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Misfits protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "David protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Simply Protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Nature Valley protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Gatorade protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Robert Irvine FortiFX bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Oh Yeah protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Nugo protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Larabar protein",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Orgain protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Kodiak protein bar",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Lenny Larry complete cookie",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Quest protein cookie",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Pure Protein puffs",
+      "type": "bar",
+      "minProtein": 10
+    },
+    {
+      "query": "Quest protein chips",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Wilde protein chips",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Legendary Foods protein chips",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Shrewd Food protein crisps",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Protein puffs",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Lowe protein chips",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Atkins protein chips",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Popcorners protein",
+      "type": null,
+      "minProtein": 10
+    },
+    {
+      "query": "Quest tortilla style protein chips",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Catalina Crunch",
+      "type": null,
+      "minProtein": 10
+    },
+    {
+      "query": "Magic Spoon cereal",
+      "type": null,
+      "minProtein": 10
+    },
+    {
+      "query": "Built puff",
+      "type": "chips",
+      "minProtein": 10
+    },
+    {
+      "query": "Chomps beef stick",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Jack Link's beef jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Jack Link's beef stick",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Epic bar",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Country Archer jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "People's Choice beef jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Archer meat stick",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Old Trapper beef jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Krave jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Stryve biltong",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Kalahari biltong",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Duke's meat sticks",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Tillamook Country Smoker jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Wilde chicken chips",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Mission Meats",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "The New Primal meat stick",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Vermont Smoke and Cure meat stick",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Lorissa's Kitchen",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Think Jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Brooklyn Biltong",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Ayoba biltong",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Nick's Sticks",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Perky Jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Righteous Felon jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Pacific Gold beef jerky",
+      "type": null,
+      "minProtein": 8
+    },
+    {
+      "query": "Premier Protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Fairlife Core Power",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Fairlife nutrition plan",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Muscle Milk protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Oikos Pro shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Ratio protein",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Iconic protein drink",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "OWYN protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Orgain protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Slate milk",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Ensure max protein",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Atkins protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Quest protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Pure Protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Kirkland protein shake",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Lifeway kefir protein",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Chobani protein drink",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Koia protein",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Vital Proteins collagen",
+      "type": null,
+      "minProtein": 15
+    },
+    {
+      "query": "Saffron Road",
+      "type": null,
+      "minProtein": 6,
+      "halalLead": true
+    },
+    {
+      "query": "Midamar",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "Sharifa",
+      "type": null,
+      "minProtein": 5,
+      "halalLead": true
+    },
+    {
+      "query": "Boxed Halal",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "Supreme Beef Jerky",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "Halal's Best",
+      "type": null,
+      "minProtein": 5,
+      "halalLead": true
+    },
+    {
+      "query": "Crescent halal",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "halal beef jerky",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "halal beef sticks",
+      "type": null,
+      "minProtein": 5,
+      "halalLead": true
+    },
+    {
+      "query": "zabiha halal",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "Ziyad",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    },
+    {
+      "query": "Al Safa",
+      "type": null,
+      "minProtein": 8,
+      "halalLead": true
+    }
+  ]
+}

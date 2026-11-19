@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "IWON Organics Cheddar Cheese Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2177957,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2177957,
+    "description": "CHEDDAR CHEESE PROTEIN PUFFS, CHEDDAR CHEESE",
+    "brandOwner": "i won nutrition, co.",
+    "brandName": "IWON ORGANICS",
+    "gtinUpc": "854646006366",
+    "servingSize": 42,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1.50 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "6/18/2021",
+    "ingredients": "ORGANIC PEA GRITS, ORGANIC RICE FLOUR, ORGANIC PEA PROTEIN, ORGANIC SUNFLOWER OIL AND/OR ORGANIC SAFFLOWER OIL, AND ORGANIC CHEDDAR CHEESE SEASONING (ORGANIC MALTODEXTRIN, ORGANIC CHEDDAR CHEESE [(ORGANIC MILK, CULTURES, SALT, ENZYMES), DISODIUM PHOSPHATE], ORGANIC TAPIOCA SOLIDS, SEA SALT, ORGANIC ANNATTO EXTRACT, NATURAL FLAVOR, YEAST EXTRACT, LACTIC ACID, CITRIC ACID, ORGANIC FLAVOR).",
+    "perServing": {
+      "protein": 10,
+      "calories": 181,
+      "carbs": 20,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "1.50 ONZ / 42 g",
+      "servingSizeG": 42
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 180,
+      "carbs": 20,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "1.50 ONZ / 42 g",
+      "servingSizeG": 42
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1.50 ONZ / 42 g",
+    "servingSizeG": 42,
+    "protein": 10,
+    "calories": 180,
+    "carbs": 20,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 9
+  }
+}

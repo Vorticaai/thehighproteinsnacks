@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Hot & Spicy Tortilla Style Protein Chips",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2669759,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2669759,
+    "description": "HOT & SPICY TORTILLA STYLE PROTEIN CHIPS, HOT & SPICY",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849013548",
+    "servingSize": 32,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bag",
+    "dataSource": "LI",
+    "modifiedDate": "9/11/2023",
+    "ingredients": "PROTEIN BLEND (MILK PROTEIN ISOLATE, WHEY PROTEIN ISOLATE), VEGETABLE OIL (SUNFLOWER, CANOLA, AND/OR SOYBEAN OIL), CALCIUM CASEINATE, CORN STARCH, NATURAL FLAVORS, WHEY POWDER, PSYLLIUM HUSK, SOLUBLE CORN FIBER. CONTAINS LESS THAN 2% OF THE FOLLOWING: SALT, BUTTERMILK POWDER, LECITHIN (SUNFLOWER, CANOLA, AND/OR SOY LECITHIN), CALCIUM CARBONATE, YEAST EXTRACT, CITRIC ACID, TOMATO POWDER, ONION POWDER, RED 40 LAKE, TURMERIC OLEORESIN (COLOR), CHIA SEED, HOT SAUCE (AGED CAYENNE RED PEPPERS, VINEGAR, SALT, GARLIC), CHEDDAR CHEESE POWDER (CULTURED MILK, SALT, ENZYMES), GARLIC POWDER, YELLOW 6 LAKE, YELLOW 5 LAKE, ENZYME MODIFIED CHEDDAR CHEESE, STEVIA SWEETENER.",
+    "perServing": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 0.992,
+      "sugar": 0.998,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 19,
+      "calories": 140,
+      "carbs": 5,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 bag / 32 g",
+      "servingSizeG": 32
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 19,
+    "calories": 140,
+    "carbs": 5,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 5
+  }
+}

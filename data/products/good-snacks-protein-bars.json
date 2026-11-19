@@ -1,0 +1,61 @@
+{
+  "id": "good-snacks-protein-bars",
+  "name": "Good! Snacks Protein Bars",
+  "brand": "Good! Snacks",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Good%21+Snacks+Protein+Bars",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 Bar / 60 g",
+    "servingSizeG": 60,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 30,
+    "fiber": 13,
+    "sugar": 10,
+    "fat": 6
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "840609112311",
+    "fdcId": 2509995
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2509995",
+        "url": "https://fdc.nal.usda.gov/food-details/2509995/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 15,
+          "calories": 220,
+          "carbs": 30,
+          "fiber": 13,
+          "sugar": 10,
+          "fat": 6
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

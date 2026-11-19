@@ -1,0 +1,61 @@
+{
+  "id": "jack-links-beef-stick-colby-jack",
+  "name": "Jack Link's Beef Stick & Colby Jack Cheese",
+  "brand": "Jack Link's",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Jack+Link%27s+Beef+Stick+%26+Colby+Jack+Cheese",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 package / 43 g",
+    "servingSizeG": 43,
+    "protein": 10,
+    "calories": 150,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 12
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "017082888556",
+    "fdcId": 2675788
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2675788",
+        "url": "https://fdc.nal.usda.gov/food-details/2675788/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 150,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 12
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

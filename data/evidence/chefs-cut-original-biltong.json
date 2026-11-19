@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Chef’s Cut Original Biltong Air Dried Beef",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2401522,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2401522,
+    "description": "ORIGINAL BILTONG AIR DRIED BEEF, ORIGINAL",
+    "brandOwner": "RSJ Ventures, LLC ",
+    "brandName": "CHEF'S CUT",
+    "gtinUpc": "854088007969",
+    "servingSize": 48,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 PACKAGE",
+    "dataSource": "LI",
+    "modifiedDate": "4/15/2020",
+    "ingredients": "BEEF, VINEGAR, SALT, SPICES, ROSEMARY, MUSHROOM POWDER, CULTURED CELERY POWDER.",
+    "perServing": {
+      "protein": 26,
+      "calories": 140,
+      "carbs": 0.998,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 2,
+      "servingSize": "1 PACKAGE / 48 g",
+      "servingSizeG": 48
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 26,
+      "calories": 140,
+      "carbs": 1,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 2,
+      "servingSize": "1 PACKAGE / 48 g",
+      "servingSizeG": 48
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 PACKAGE / 48 g",
+    "servingSizeG": 48,
+    "protein": 26,
+    "calories": 140,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 2
+  }
+}

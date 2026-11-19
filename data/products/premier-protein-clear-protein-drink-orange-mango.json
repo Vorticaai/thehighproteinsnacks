@@ -1,0 +1,61 @@
+{
+  "id": "premier-protein-clear-protein-drink-orange-mango",
+  "name": "Premier Protein Clear Protein Drink, Orange Mango",
+  "brand": "Premier Protein",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Premier+Protein+Clear+Protein+Drink%2C+Orange+Mango",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "16.9 OZA / 500 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 90,
+    "carbs": 1,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "643843715504",
+    "fdcId": 1934544
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "1934544",
+        "url": "https://fdc.nal.usda.gov/food-details/1934544/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 90,
+          "carbs": 1,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 0
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

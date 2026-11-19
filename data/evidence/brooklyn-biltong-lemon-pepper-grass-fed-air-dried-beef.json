@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Brooklyn Biltong Lemon Pepper Grass Fed Air Dried Beef",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2385717,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2385717,
+    "description": "LEMON PEPPER GRASS FED AIR DRIED BEEF, LEMON PEPPER",
+    "brandOwner": "Authentic Joy",
+    "brandName": "BROOKLYN BILTONG",
+    "gtinUpc": "850015093043",
+    "servingSize": 28,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "12/17/2020",
+    "ingredients": "GRASS FED BEEF, LEMON JUICE FROM CONCENTRATE (WATER CONCENTRATED LEMON JUICE), LEMON OIL, APPLE CIDER VINEGAR, ONION POWDER, BLACK PEPPER, REALSALT (SEA SALT), CELERY JUICE POWDER",
+    "perServing": {
+      "protein": 14,
+      "calories": 89.9,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 0,
+      "fat": 2.5,
+      "servingSize": "1 ONZ / 28 g",
+      "servingSizeG": 28
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850015093043",
+    "product_name": "Lemon Pepper Air Dried Beef",
+    "brands": "Brooklyn Biltong",
+    "serving_size": "1 bag (57 g)",
+    "perServing": {
+      "protein": 32,
+      "calories": 180,
+      "carbs": 0.5,
+      "fat": 6,
+      "servingSize": "1 bag (57 g)",
+      "servingSizeG": 57
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/001/509/3043/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA and Open Food Facts disagree (protein: 14 vs 32; calories: 90 vs 180; fat: 2.5 vs 6)."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  }
+}

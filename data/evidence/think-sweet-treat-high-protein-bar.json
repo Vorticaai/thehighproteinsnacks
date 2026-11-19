@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "think! Sweet Treat High Protein Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2630923,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2630923,
+    "description": "SWEET TREAT HIGH PROTEIN BAR",
+    "brandOwner": "ThinkThin, LLC",
+    "brandName": "THINK!",
+    "gtinUpc": "753656719849",
+    "servingSize": 57,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "7/10/2023",
+    "ingredients": "PROTEIN BLEND (SOY PROTEIN ISOLATE, WHEY PROTEIN ISOLATE, CALCIUM CASEINATE, MILK PROTEIN CONCENTRATE, WHEY PROTEIN CONCENTRATE), MALTITOL SYRUP, SOLUBLE CORN FIBER, GLYCERINE, COCONUT OIL, PALM KERNEL OIL, NATURAL FLAVOR, ALKALIZED COCOA POWDER, ALKALIZED HIGH FAT COCOA, WATER, PALM OIL, SUNFLOWER AND/OR SOY LECITHIN, DEXTROSE, SALT, MODIFIED BUTTER OIL, DEHYDRATED BUTTER, GUAR GUM, SODIUM BICARBONATE, ANNATTO AND TURMERIC (FOR COLOR), STEVIA LEAF EXTRACT (REBA).",
+    "perServing": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 24,
+      "fiber": 3.99,
+      "sugar": 0.998,
+      "fat": 9,
+      "servingSize": "1 Bar / 57 g",
+      "servingSizeG": 57
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 220,
+      "carbs": 24,
+      "fiber": 4,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "1 Bar / 57 g",
+      "servingSizeG": 57
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bar / 57 g",
+    "servingSizeG": 57,
+    "protein": 15,
+    "calories": 220,
+    "carbs": 24,
+    "fiber": 4,
+    "sugar": 1,
+    "fat": 9
+  }
+}

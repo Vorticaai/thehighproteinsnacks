@@ -1,0 +1,61 @@
+{
+  "id": "protein-one-90-calorie-chocolate-chip-bar",
+  "name": "Protein One 90 Calorie Chocolate Chip Bar",
+  "brand": "Protein One",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Protein+One+90+Calorie+Chocolate+Chip+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 27 g",
+    "servingSizeG": 27,
+    "protein": 10,
+    "calories": 100,
+    "carbs": 10,
+    "fiber": 3,
+    "sugar": 1,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00016000141193",
+    "fdcId": 2758656
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2758656",
+        "url": "https://fdc.nal.usda.gov/food-details/2758656/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 99.9,
+          "carbs": 10,
+          "fiber": 3,
+          "sugar": 1,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

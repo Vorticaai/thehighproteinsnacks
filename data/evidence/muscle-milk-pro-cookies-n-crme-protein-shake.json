@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Muscle Milk Pro Advanced Nutrition 32g Shake, Cookies 'n Creme",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2615906,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2615906,
+    "description": "PRO COOKIES 'N CRME PROTEIN SHAKE, COOKIES 'N CRME",
+    "brandOwner": "The Quaker Oats Co./gatorade-Van Camp",
+    "brandName": "MUSCLE MILK",
+    "gtinUpc": "0052000053678",
+    "servingSize": 330,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 bottle (330 mL)",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "WATER, MILK PROTEIN ISOLATE, CALCIUM CASEINATE, CONTAINS LESS THAN 2% OF SODIUM CASEINATE, NATURAL AND ARTIFICIAL FLAVOR, SOLUBLE CORN FIBER, HIGH OLEIC SUNFLOWER OIL, INULIN, CELLULOSE GEL, TRIPOTASSIUM PHOSPHATE, POTASSIUM CHLORIDE, POTASSIUM PHOSPHATE, SODIUM POLYPHOSPHATES, CELLULOSE GUM, CARRAGEENAN, SALT, SUCRALOSE, ACESULFAME POTASSIUM, ASCORBIC ACID (PRESERVES FRESHNESS), SODIUM CITRATE, FERRIC PYROPHOSPHATE, CALCIUM PHOSPHATE, VITAMIN E ACETATE, NIACINAMIDE, ZINC OXIDE, COPPER GLUCONATE, CALCIUM PANTOTHENATE, VITAMIN A PALMITATE, PYRIDOXINE HYDROCHLORIDE (VITAMIN B6), VITAMIN D3, THIAMIN MONONITRATE (VITAMIN B1), RIBOFLAVIN, FOLIC ACID, POTASSIUM IODIDE, CHROMIUM CHLORIDE, BIOTIN, CYANOCOBALAMIN (VITAMIN B12)",
+    "perServing": {
+      "protein": 32,
+      "calories": 182,
+      "carbs": 10,
+      "fiber": 4.95,
+      "sugar": 0.99,
+      "fat": 2.01,
+      "servingSize": "1 bottle (330 mL) / 330 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 32,
+      "calories": 180,
+      "carbs": 10,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 2,
+      "servingSize": "1 bottle (330 mL) / 330 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bottle (330 mL) / 330 ml",
+    "servingSizeG": null,
+    "protein": 32,
+    "calories": 180,
+    "carbs": 10,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 2
+  }
+}

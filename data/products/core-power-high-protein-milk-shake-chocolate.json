@@ -1,0 +1,61 @@
+{
+  "id": "core-power-high-protein-milk-shake-chocolate",
+  "name": "Core Power High Protein Shake, Chocolate",
+  "brand": "Core Power",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Core+Power+High+Protein+Shake%2C+Chocolate",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 BOTTLE / 240 ml",
+    "servingSizeG": null,
+    "protein": 18,
+    "calories": 170,
+    "carbs": 20,
+    "fiber": 1,
+    "sugar": 18,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "811620020602",
+    "fdcId": 2663965
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2663965",
+        "url": "https://fdc.nal.usda.gov/food-details/2663965/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 18,
+          "calories": 170,
+          "carbs": 20,
+          "fiber": 1,
+          "sugar": 18,
+          "fat": 2.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Atkins Protein-Rich Shake, Milk Chocolate",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2506908,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2506908,
+    "description": "MILK CHOCOLATE PROTEIN-RICH SHAKE, MILK CHOCOLATE",
+    "brandOwner": "Atkins Nutritionals, Inc.",
+    "brandName": "ATKINS",
+    "gtinUpc": "637480065023",
+    "servingSize": 325,
+    "servingSizeUnit": "MLT",
+    "householdServingFullText": "1 shake",
+    "dataSource": "LI",
+    "modifiedDate": "12/23/2022",
+    "ingredients": "WATER, MILK PROTEIN CONCENTRATE, SOY PROTEIN ISOLATE, SUNFLOWER OIL, CREAM, COCOA (PROCESSED WITH ALKALI). CONTAINS LESS THAN 1% OF PREBIOTIC SOLUBLE CORN FIBER, CELLULOSE GEL, NATURAL AND ARTIFICIAL FLAVORS, TRICALCIUM PHOSPHATE, DIPOTASSIUM PHOSPHATE, POTASSIUM CITRATE, SALT, CELLULOSE GUM, SUCRALOSE, SOY LECITHIN, CARRAGEENAN, ACESULFAME POTASSIUM, SODIUM ASCORBATE (VITAMIN C), ZINC GLUCONATE, DL-ALPHA-TOCOPHERYL ACETATE (VITAMIN E), MANGANESE GLUCONATE, NIACINAMIDE (VITAMIN B3), PHYTONADIONE (VITAMIN K), CHOLECALCIFEROL (VITAMIN D3), D-CALCIUM PANTOTHENATE (VITAMIN B5), SODIUM SELENITE, SODIUM MOLYBDATE, CHROMIUM CHLORIDE, BIOTIN (VITAMIN B7), CYANOCOBALAMIN (VITAMIN B12), FOLIC ACID (VITAMIN B9), PYRIDOXINE HYDROCHLORIDE (VITAMIN B6), POTASSIUM IODIDE, THIAMIN HYDROCHLORIDE (VITAMIN B), RIBOFLAVIN (VITAMIN B).",
+    "perServing": {
+      "protein": 15,
+      "calories": 159,
+      "carbs": 6.99,
+      "fiber": 4.88,
+      "sugar": 1.01,
+      "fat": 9,
+      "servingSize": "1 shake / 325 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": {
+    "code": "0637480065023",
+    "product_name": "Delight Shake",
+    "serving_size": "11 OZA (325 ml)",
+    "perServing": {
+      "protein": 15,
+      "calories": 160,
+      "carbs": 7,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "11 OZA (325 ml)",
+      "servingSizeG": 325
+    }
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 15,
+      "calories": 160,
+      "carbs": 7,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 9,
+      "servingSize": "1 shake / 325 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 shake / 325 ml",
+    "servingSizeG": null,
+    "protein": 15,
+    "calories": 160,
+    "carbs": 7,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 9
+  }
+}

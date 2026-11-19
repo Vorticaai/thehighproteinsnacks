@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Maple Sea Salt",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2670058,
+      "description": "MAPLE SEA SALT PROTEIN BAR, MAPLE SEA SALT",
+      "brandOwner": "Chicago Bar Company ",
+      "brandName": "RXBAR",
+      "gtinUpc": "857777004416",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2670058,
+        "description": "MAPLE SEA SALT PROTEIN BAR, MAPLE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004416",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2607365,
+        "description": "MAPLE SEA SALT PROTEIN BAR, MAPLE; SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "0857777004409",
+        "publishedDate": "2023-07-13",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2434347,
+        "description": "PROTEIN BAR, MAPLE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004546",
+        "publishedDate": "2022-12-22",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2276550,
+        "description": "MAPLE SEA SALT PROTEIN BARS, MAPLE SEA SALT",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "193908001764",
+        "publishedDate": "2022-05-23",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2670058,
+    "description": "MAPLE SEA SALT PROTEIN BAR, MAPLE SEA SALT",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "857777004416",
+    "servingSize": 52,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "8/21/2020",
+    "ingredients": "DATES, EGG WHITES, CASHEWS, PECANS, NATURAL FLAVORS, MAPLE WATER, SEA SALT.",
+    "perServing": {
+      "protein": 12,
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 4,
+      "sugar": 14,
+      "fat": 9,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 220,
+      "carbs": 22,
+      "fiber": 4,
+      "sugar": 14,
+      "fat": 9,
+      "servingSize": "1 bar / 52 g",
+      "servingSizeG": 52
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 4,
+    "sugar": 14,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": "1 bar / 52 g",
+    "servingSizeG": 52,
+    "protein": 12,
+    "calories": 220,
+    "carbs": 22,
+    "fiber": 4,
+    "sugar": 14,
+    "fat": 9
+  }
+}

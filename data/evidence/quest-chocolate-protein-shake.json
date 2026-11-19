@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Quest Chocolate Protein Shake",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2340184,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2340184,
+    "description": "CHOCOLATE PROTEIN SHAKE, CHOCOLATE",
+    "brandOwner": "Quest Nutrition, LLC",
+    "brandName": "QUEST",
+    "gtinUpc": "888849010035",
+    "servingSize": 325,
+    "servingSizeUnit": "ml",
+    "householdServingFullText": "1 shake",
+    "dataSource": "LI",
+    "modifiedDate": "5/5/2021",
+    "ingredients": "WATER, MILK PROTEIN CONCENTRATE. CONTAINS LESS THAN 1% OF THE FOLLOWING: COCOA PROCESSED WITH ALKALI, SUNFLOWER OIL, NATURAL FLAVORS, SUNFLOWER LECITHIN, SALT, SODIUM POLYPHOSPHATE, TRISODIUM PHOSPHATE, GELLAN GUM, SUCRALOSE.",
+    "perServing": {
+      "protein": 30,
+      "calories": 159,
+      "carbs": 4,
+      "fiber": 0.975,
+      "sugar": 1.01,
+      "fat": 3.51,
+      "servingSize": "1 shake / 325 ml",
+      "servingSizeG": null
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 30,
+      "calories": 160,
+      "carbs": 4,
+      "fiber": 1,
+      "sugar": 1,
+      "fat": 3.5,
+      "servingSize": "1 shake / 325 ml",
+      "servingSizeG": null
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 shake / 325 ml",
+    "servingSizeG": null,
+    "protein": 30,
+    "calories": 160,
+    "carbs": 4,
+    "fiber": 1,
+    "sugar": 1,
+    "fat": 3.5
+  }
+}

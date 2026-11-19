@@ -10,14 +10,14 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
-    "protein": 21,
+    "servingSize": "1 bag / 32 g",
+    "servingSizeG": 32,
+    "protein": 20,
     "calories": 140,
     "carbs": 4,
     "fiber": 1,
     "sugar": 1,
-    "fat": 6
+    "fat": 4.5
   },
   "claims": {
     "vegan": false,
@@ -28,16 +28,32 @@
   },
   "identifiers": {
     "asin": "B07RWP9HW5",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "888849010530",
+    "fdcId": 2669729
   },
   "image": null,
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2669729",
+        "url": "https://fdc.nal.usda.gov/food-details/2669729/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 140,
+          "carbs": 4,
+          "fiber": 1,
+          "sugar": 1,
+          "fat": 4.5
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "No Open Food Facts record to cross-check."
     ]
   }
 }

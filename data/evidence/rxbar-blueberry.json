@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "RXBAR Blueberry Bar",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2677665,
+      "description": "BLUEBERRY PROTEIN BAR, BLUEBERRY",
+      "brandOwner": "Chicago Bar Company ",
+      "brandName": "RXBAR",
+      "gtinUpc": "193908005113",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2677665,
+        "description": "BLUEBERRY PROTEIN BAR, BLUEBERRY",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "193908005113",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2670031,
+        "description": "BLUEBERRY PROTEIN BARS, BLUEBERRY",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "857777004478",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2659057,
+        "description": "BLUEBERRY PROTEIN BAR, BLUEBERRY",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "0857777004263",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2653553,
+        "description": "BLUEBERRY PROTEIN BAR, BLUEBERRY",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "858030008400",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2660235,
+        "description": "BLUEBERRY PROTEIN BARS, BLUEBERRY",
+        "brandOwner": "Chicago Bar Company ",
+        "brandName": "RXBAR",
+        "gtinUpc": "193908002730",
+        "publishedDate": "2023-10-26",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2677665,
+    "description": "BLUEBERRY PROTEIN BAR, BLUEBERRY",
+    "brandOwner": "Chicago Bar Company ",
+    "brandName": "RXBAR",
+    "gtinUpc": "193908005113",
+    "servingSize": 55,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bar",
+    "dataSource": "LI",
+    "modifiedDate": "4/4/2022",
+    "ingredients": "OATS, HONEY, EGG WHITES, CASHEW BUTTER (CASHEWS), ALMONDS, BLUEBERRIES, PUMPKIN SEEDS, BROWN RICE, HIGH OLEIC SUNFLOWER OIL, COCONUT SUGAR, OAT FIBER, SEA SALT, NATURAL FLAVORS, LEMON.",
+    "perServing": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 29,
+      "fiber": 4.02,
+      "sugar": 14,
+      "fat": 9,
+      "servingSize": "1 Bar / 55 g",
+      "servingSizeG": 55
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 230,
+      "carbs": 29,
+      "fiber": 4,
+      "sugar": 14,
+      "fat": 9,
+      "servingSize": "1 Bar / 55 g",
+      "servingSizeG": 55
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 12,
+    "calories": 180,
+    "carbs": 23,
+    "fiber": 6,
+    "sugar": 15,
+    "fat": 6
+  },
+  "after": {
+    "servingSize": "1 Bar / 55 g",
+    "servingSizeG": 55,
+    "protein": 10,
+    "calories": 230,
+    "carbs": 29,
+    "fiber": 4,
+    "sugar": 14,
+    "fat": 9
+  }
+}

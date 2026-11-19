@@ -1,0 +1,61 @@
+{
+  "id": "popcorners-ranch-protein-crisps",
+  "name": "PopCorners Protein Crisps, Ranch",
+  "brand": "Popcorners",
+  "productType": "chips",
+  "buyUrl": "https://www.amazon.com/s?k=PopCorners+Protein+Crisps%2C+Ranch",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 120,
+    "carbs": 12,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "0810607020772",
+    "fdcId": 2582208
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2582208",
+        "url": "https://fdc.nal.usda.gov/food-details/2582208/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 120,
+          "carbs": 12,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 4
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "protein-one-90-calorie-chocolate-fudge-bar",
+  "name": "Protein One 90 Calorie Chocolate Fudge Bar",
+  "brand": "Protein One",
+  "productType": "bar",
+  "buyUrl": "https://www.amazon.com/s?k=Protein+One+90+Calorie+Chocolate+Fudge+Bar",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 bar / 27 g",
+    "servingSizeG": 27,
+    "protein": 10,
+    "calories": 90,
+    "carbs": 10,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 2.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00016000141711",
+    "fdcId": 2741342
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2741342",
+        "url": "https://fdc.nal.usda.gov/food-details/2741342/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 89.9,
+          "carbs": 10,
+          "fiber": 5,
+          "sugar": 1,
+          "fat": 2.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

@@ -31,13 +31,22 @@
     "gtin": null,
     "fdcId": null
   },
-  "image": null,
+  "image": {
+    "src": "/products/chomps-turkey-jalapeno-stick.jpg",
+    "alt": "Chomps Chomps Turkey Jalapeño Stick package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0856584004350"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
+    "status": "needs-review",
+    "checkedAt": "2026-11-19",
     "sources": [],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Pinned by a person after review.",
+      "USDA and Open Food Facts disagree (protein: 10 vs 12; calories: 60 vs 80).",
+      "Reviewer: Chomps' own 'Medium Jalapeño Turkey Stick' record."
     ]
   }
 }

@@ -1,0 +1,68 @@
+{
+  "id": "alani-nu-protein-shake-cookies-and-cream",
+  "name": "Alani Nu Protein Shake, Cookies & Cream",
+  "brand": "Alani Nu",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Alani+Nu+Protein+Shake%2C+Cookies+%26+Cream",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "12 fl oz (355 mL) / 355 ml",
+    "servingSizeG": null,
+    "protein": 20,
+    "calories": 140,
+    "carbs": 10,
+    "fiber": 3,
+    "sugar": 6,
+    "fat": 3.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "0810030513018",
+    "fdcId": 2582067
+  },
+  "image": {
+    "src": "/products/alani-nu-protein-shake-cookies-and-cream.jpg",
+    "alt": "Alani Nu Alani Nu Protein Shake, Cookies & Cream package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0810030513018"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2582067",
+        "url": "https://fdc.nal.usda.gov/food-details/2582067/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 20,
+          "calories": 138,
+          "carbs": 10,
+          "fiber": 2.8,
+          "sugar": 6,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

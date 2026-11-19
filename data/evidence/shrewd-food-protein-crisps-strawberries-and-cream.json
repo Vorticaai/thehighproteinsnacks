@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Shrewd Food Protein Crisps, Strawberries & Cream",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2175145,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2175145,
+    "description": "PROTEIN CRISPS, STRAWBERRIES & CREAM",
+    "brandOwner": "Shrewd Food LLC",
+    "brandName": "SHREWD FOOD",
+    "gtinUpc": "811307024633",
+    "servingSize": 21,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "0.74 ONZ",
+    "dataSource": "LI",
+    "modifiedDate": "4/27/2021",
+    "ingredients": "MILK PROTEIN ISOLATE, STRAWBERRIES & CREAM COATING(CANE SUGAR, CREAM SOLIDS, BUTTER, STRAWBERRY POWDER [STRAWBERRY, MALTODEXTRIN, CORN STARCH], SALT, NON-FAT DRY MILK, CONTAINS 2% OR LESS OF: NATURAL FLAVORS, BEET POWER FOR COLOR, SAFFLOWER OIL, CITRIC ACID, SODIUM CASEINATE, SODIUM PHOSPHATE, SILICON DIOXIDE TO REDUCE CAKING.), SUNFLOWER OIL.",
+    "perServing": {
+      "protein": 12,
+      "calories": 90.1,
+      "carbs": 4,
+      "fiber": 0,
+      "sugar": 4,
+      "fat": 3,
+      "servingSize": "0.74 ONZ / 21 g",
+      "servingSizeG": 21
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 12,
+      "calories": 90,
+      "carbs": 4,
+      "fiber": 0,
+      "sugar": 4,
+      "fat": 3,
+      "servingSize": "0.74 ONZ / 21 g",
+      "servingSizeG": 21
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "0.74 ONZ / 21 g",
+    "servingSizeG": 21,
+    "protein": 12,
+    "calories": 90,
+    "carbs": 4,
+    "fiber": 0,
+    "sugar": 4,
+    "fat": 3
+  }
+}

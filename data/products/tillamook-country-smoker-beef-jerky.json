@@ -1,0 +1,61 @@
+{
+  "id": "tillamook-country-smoker-beef-jerky",
+  "name": "Tillamook Country Smoker Beef Jerky",
+  "brand": "Tillamook Country Smoker",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Tillamook+Country+Smoker+Beef+Jerky",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 80,
+    "carbs": 7,
+    "fiber": 0,
+    "sugar": 7,
+    "fat": 1.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "051943334011",
+    "fdcId": 2023754
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2023754",
+        "url": "https://fdc.nal.usda.gov/food-details/2023754/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 80.1,
+          "carbs": 7,
+          "fiber": 0,
+          "sugar": 7,
+          "fat": 1.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

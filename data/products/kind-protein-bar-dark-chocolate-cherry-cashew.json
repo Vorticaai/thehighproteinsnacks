@@ -10,8 +10,8 @@
     "note": "Estimated when the product was added (2025). Not a live price."
   },
   "nutrition": {
-    "servingSize": null,
-    "servingSizeG": null,
+    "servingSize": "1 bar / 40 g",
+    "servingSizeG": 40,
     "protein": 4,
     "calories": 170,
     "carbs": 22,
@@ -28,16 +28,53 @@
   },
   "identifiers": {
     "asin": "B087ZJLJC8",
-    "gtin": null,
-    "fdcId": null
+    "gtin": "602652271427",
+    "fdcId": 2666113
   },
-  "image": null,
+  "image": {
+    "src": "/products/kind-protein-bar-dark-chocolate-cherry-cashew.jpg",
+    "alt": "KIND KIND Protein Bar Dark Chocolate Cherry Cashew package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0602652271427"
+  },
   "verification": {
-    "status": "unverified",
-    "checkedAt": null,
-    "sources": [],
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2666113",
+        "url": "https://fdc.nal.usda.gov/food-details/2666113/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 4,
+          "calories": 170,
+          "carbs": 22,
+          "fiber": 6,
+          "sugar": 10,
+          "fat": 10
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0602652271427",
+        "url": "https://world.openfoodfacts.org/product/0602652271427",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 4,
+          "calories": 160,
+          "carbs": 22,
+          "fiber": 6,
+          "sugar": 11,
+          "fat": 10
+        }
+      }
+    ],
     "notes": [
-      "Imported from the 2025 spreadsheet. Values not yet checked against a label."
+      "Brand matches and 100% of product words found.",
+      "Open Food Facts agrees with the USDA label data."
     ]
   }
 }

@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Pure Protein Nacho Cheese 18g Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2603306,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2603306,
+    "description": "NACHO CHEESE 18G PROTEIN PUFFS, CHEESE",
+    "brandOwner": "Rexall Sundown, Inc.",
+    "brandName": "PURE PROTEIN",
+    "gtinUpc": "0749826002613",
+    "servingSize": 28.5,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 Bag",
+    "dataSource": "LI",
+    "modifiedDate": "6/23/2023",
+    "ingredients": "MILK PROTEIN ISOLATE, NACHO CHEESE SEASONING (CHEDDAR CHEESE [CULTURED MILK, SALT, ENZYMES], BUTTERMILK, MALTODEXTRIN, SALT, TOMATO POWDER, ONION POWDER, NATURAL FLAVORS, SUGAR, GARLIC POWDER, TORULA YEAST, SPICES, CITRIC ACID, PAPRIKA EXTRACT, CANOLA OIL, SODIUM PHOSPHATES, SILICON DIOXIDE, LACTIC ACID, GRILL FLAVOR [FROM SUNFLOWER OIL]), SUNFLOWER OIL",
+    "perServing": {
+      "protein": 18,
+      "calories": 130,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 Bag / 28.5 g",
+      "servingSizeG": 28.5
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 18,
+      "calories": 130,
+      "carbs": 3,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 5,
+      "servingSize": "1 Bag / 28.5 g",
+      "servingSizeG": 28.5
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 Bag / 28.5 g",
+    "servingSizeG": 28.5,
+    "protein": 18,
+    "calories": 130,
+    "carbs": 3,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 5
+  }
+}

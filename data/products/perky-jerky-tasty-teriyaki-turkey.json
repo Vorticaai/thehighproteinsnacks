@@ -1,0 +1,61 @@
+{
+  "id": "perky-jerky-tasty-teriyaki-turkey",
+  "name": "Perky Jerky Tasty Teriyaki Turkey Jerky",
+  "brand": "Perky Jerky",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Perky+Jerky+Tasty+Teriyaki+Turkey+Jerky",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 10,
+    "calories": 70,
+    "carbs": 7,
+    "fiber": 0,
+    "sugar": 6,
+    "fat": 0.5
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "852709002782",
+    "fdcId": 1927392
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "1927392",
+        "url": "https://fdc.nal.usda.gov/food-details/1927392/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 10,
+          "calories": 70,
+          "carbs": 7,
+          "fiber": 0,
+          "sugar": 6,
+          "fat": 0.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

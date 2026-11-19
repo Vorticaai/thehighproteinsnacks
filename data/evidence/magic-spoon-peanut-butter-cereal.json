@@ -1,0 +1,126 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Magic Spoon peanut butter cereal",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 50% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2013976,
+      "description": "BIG SPOON ROASTERS, PEANUT BUTTER",
+      "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+      "brandName": "BIG SPOON ROASTERS",
+      "gtinUpc": "793573184238",
+      "publishedDate": "2021-10-28",
+      "score": 0.5,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2013976,
+        "description": "BIG SPOON ROASTERS, PEANUT BUTTER",
+        "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+        "brandName": "BIG SPOON ROASTERS",
+        "gtinUpc": "793573184238",
+        "publishedDate": "2021-10-28",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1854274,
+        "description": "BIG SPOON ROASTERS, NUT BUTTERS, PEANUT ALMOND, PEANUT ALMOND",
+        "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+        "brandName": "BIG SPOON ROASTERS",
+        "gtinUpc": "793573184245",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1854275,
+        "description": "BIG SPOON ROASTERS, NUT BUTTERS, PEANUT CASHEW, PEANUT CASHEW",
+        "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+        "brandName": "BIG SPOON ROASTERS",
+        "gtinUpc": "793573184252",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1860502,
+        "description": "BIG SPOON ROASTERS, NUT BUTTERS, PEANUT PECAN, PEANUT PECAN",
+        "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+        "brandName": "BIG SPOON ROASTERS",
+        "gtinUpc": "793573184276",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      },
+      {
+        "fdcId": 1854276,
+        "description": "BIG SPOON ROASTERS, HANDCRAFTED NUT BUTTERS, PEANUT COCOA, PEANUT COCOA",
+        "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+        "brandName": "BIG SPOON ROASTERS",
+        "gtinUpc": "793573184269",
+        "publishedDate": "2021-07-29",
+        "score": 0.5,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2013976,
+    "description": "BIG SPOON ROASTERS, PEANUT BUTTER",
+    "brandOwner": "Mr. Beverages Old Time Cocktail Mixes",
+    "brandName": "BIG SPOON ROASTERS",
+    "gtinUpc": "793573184238",
+    "servingSizeUnit": "g",
+    "householdServingFullText": "2 Tbsp",
+    "dataSource": "LI",
+    "modifiedDate": "7/6/2018",
+    "ingredients": "PEANUTS RAW WILDFLOWER HONEY ORGANIC COCONUT OIL SEA SALT.",
+    "perServing": null
+  },
+  "openFoodFacts": {
+    "code": "0793573184238",
+    "product_name": "Big spoon roasters, peanut butter",
+    "brands": "Big Spoon Roasters",
+    "serving_size": "2 Tbsp (29.06 g)",
+    "perServing": {
+      "protein": 7,
+      "calories": 170,
+      "carbs": 7,
+      "fiber": 2.01,
+      "sugar": 2,
+      "fat": 14,
+      "servingSize": "2 Tbsp (29.06 g)",
+      "servingSizeG": 29.06
+    }
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "No USDA label record found for this product."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 170,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 9
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 14,
+    "calories": 170,
+    "carbs": 10,
+    "fiber": 1,
+    "sugar": 0,
+    "fat": 9
+  }
+}

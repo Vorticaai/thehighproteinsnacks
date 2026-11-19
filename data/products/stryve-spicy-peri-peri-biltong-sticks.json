@@ -1,0 +1,61 @@
+{
+  "id": "stryve-spicy-peri-peri-biltong-sticks",
+  "name": "Stryve Spicy Peri Peri Biltong Sticks",
+  "brand": "Stryve",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Stryve+Spicy+Peri+Peri+Biltong+Sticks",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "1 ONZ / 28 g",
+    "servingSizeG": 28,
+    "protein": 14,
+    "calories": 130,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 8
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "856926008374",
+    "fdcId": 2390812
+  },
+  "image": null,
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2390812",
+        "url": "https://fdc.nal.usda.gov/food-details/2390812/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 14,
+          "calories": 125,
+          "carbs": 0,
+          "fiber": 0,
+          "sugar": 0,
+          "fat": 8
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "No Open Food Facts record to cross-check.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

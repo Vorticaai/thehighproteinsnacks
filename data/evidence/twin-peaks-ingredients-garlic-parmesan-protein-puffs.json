@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Twin Peaks Ingredients Garlic Parmesan Protein Puffs",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2154721,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2154721,
+    "description": "GARLIC PARMESAN PROTEIN PUFFS, GARLIC PARMESAN",
+    "brandOwner": "TPI Marketing, LLC",
+    "brandName": "TWIN PEAKS INGREDIENTS",
+    "gtinUpc": "850000796003",
+    "servingSize": 30,
+    "servingSizeUnit": "g",
+    "householdServingFullText": "1 cup",
+    "dataSource": "LI",
+    "modifiedDate": "4/8/2020",
+    "ingredients": "MILK PROTEIN ISOLATE, SUNFLOWER OIL, ROMANO CHEESE (PASTEURIZED MILK, CHEESE CULTURES, SALT AND ENZYMES), GARLIC POWDER, SALT, DEXTROSE, YEAST EXTRACT, DISODIUM PHOSPHATE, SILICON DIOXIDE, LACTIC ACID, NATURAL FLAVORS, PAPRIKA EXTRACT.",
+    "perServing": {
+      "protein": 21,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 0.999,
+      "fat": 4,
+      "servingSize": "1 cup / 30 g",
+      "servingSizeG": 30
+    }
+  },
+  "openFoodFacts": {
+    "code": "0850000796003",
+    "product_name": "Garlic Parmesan Protein Puffs, Garlic Parmesan",
+    "brands": "Twin peaks ingredients",
+    "serving_size": "1 cup (30 g)",
+    "perServing": {
+      "protein": 21,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 0.999,
+      "fat": 3.99,
+      "servingSize": "1 cup (30 g)",
+      "servingSizeG": 30
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/085/000/079/6003/front_en.3.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 21,
+      "calories": 130,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 4,
+      "servingSize": "1 cup / 30 g",
+      "servingSizeG": 30
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 cup / 30 g",
+    "servingSizeG": 30,
+    "protein": 21,
+    "calories": 130,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 4
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Atkins chocolate peanut butter protein meal bar",
+  "match": {
+    "pinned": false,
+    "confident": false,
+    "reason": "Only 67% of product words found; needs a person to confirm.",
+    "chosen": {
+      "fdcId": 2668067,
+      "description": "CHOCOLATE PEANUT BUTTER PROTEIN MEAL BAR, CHOCOLATE PEANUT BUTTER",
+      "brandOwner": "Atkins Nutritionals, Inc.",
+      "brandName": "ATKINS",
+      "gtinUpc": "637480004305",
+      "publishedDate": "2023-11-16",
+      "score": 0.6666666666666666,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2668067,
+        "description": "CHOCOLATE PEANUT BUTTER PROTEIN MEAL BAR, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480004305",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666255,
+        "description": "CHOCOLATE PEANUT BUTTER FLAVORED PROTEIN MEAL BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480025027",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666288,
+        "description": "CHOCOLATE PEANUT BUTTER PROTEIN-RICH MEAL BAR, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480020848",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666287,
+        "description": "CHOCOLATE PEANUT BUTTER FLAVORED PROTEIN MEAL PRETZEL BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480022774",
+        "publishedDate": "2023-11-16",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2541572,
+        "description": "CHOCOLATE PEANUT BUTTER PROTEIN-RICH MEAL BARS, CHOCOLATE PEANUT BUTTER",
+        "brandOwner": "Atkins Nutritionals, Inc.",
+        "brandName": "ATKINS",
+        "gtinUpc": "637480021647",
+        "publishedDate": "2023-05-25",
+        "score": 0.6666666666666666,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2668067,
+    "description": "CHOCOLATE PEANUT BUTTER PROTEIN MEAL BAR, CHOCOLATE PEANUT BUTTER",
+    "brandOwner": "Atkins Nutritionals, Inc.",
+    "brandName": "ATKINS",
+    "gtinUpc": "637480004305",
+    "servingSize": 60,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "10/28/2023",
+    "ingredients": "PROTEIN BLEND (SOY PROTEIN ISOLATE, COLLAGEN, WHEY PROTEIN ISOLATE, WHEY PROTEIN CONCENTRATE), POLYDEXTROSE, PEANUTS, VEGETABLE GLYCERIN, PALM KERNEL AND PALM OIL, WATER, CELLULOSE POWDER, NATURAL FLAVORS, COCOA (PROCESSED WITH ALKALI). CONTAINS LESS THAN 2% OF PEANUT OIL, MILK, BUTTERFAT, SOY LECITHIN, GUAR GUM, SALT, SUCRALOSE.",
+    "perServing": {
+      "protein": 16,
+      "calories": 240,
+      "carbs": 23,
+      "fiber": 12,
+      "sugar": 2,
+      "fat": 15,
+      "servingSize": "1 bar / 60 g",
+      "servingSizeG": 60
+    }
+  },
+  "openFoodFacts": {
+    "code": "0637480004305",
+    "product_name": "High Protein Bar Chocolate Peanut Butter",
+    "brands": "Atkins",
+    "serving_size": "60.0g",
+    "perServing": {
+      "protein": 9.6,
+      "calories": 144,
+      "carbs": 13.8,
+      "fiber": 7.2,
+      "fat": 9,
+      "servingSize": "60.0g",
+      "servingSizeG": 60
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/063/748/000/4305/front_en.6.400.jpg"
+  },
+  "decision": {
+    "status": "needs-review",
+    "notes": [
+      "USDA match is uncertain; a person should confirm the right product in the evidence file."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 19,
+    "fiber": 7,
+    "sugar": 1,
+    "fat": 11
+  },
+  "after": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 16,
+    "calories": 190,
+    "carbs": 19,
+    "fiber": 7,
+    "sugar": 1,
+    "fat": 11
+  }
+}

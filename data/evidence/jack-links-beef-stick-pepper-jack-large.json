@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Jack Link's Beef Stick & Pepper Jack Cheese, Large Pack",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2675671,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2675671,
+    "description": "BEEF & PEPPER JACK SMOKED BEEF STICKS & MONTEREY JACK CHEESE WITH JALAPENO PEPPERS, BEEF & PEPPER JACK",
+    "brandOwner": "Link Snacks, Inc.",
+    "brandName": "JACK LINK'S",
+    "gtinUpc": "017082008657",
+    "servingSize": 85,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 package",
+    "dataSource": "LI",
+    "modifiedDate": "4/11/2022",
+    "ingredients": "BEEF STICK: BEEF, WATER, CONTAINS 2% OR LESS OF SEA SALT, SALT, FLAVORS, SUGAR, CULTURED DEXTROSE, YEAST EXTRACT, CULTURED CELERY EXTRACT. MONTEREY JACK CHEESE WITH JALAPENO PEPPERS: PASTEURIZED MILK, JALAPENO PEPPERS, CHEESE CULTURES, SALT, ENZYMES",
+    "perServing": {
+      "protein": 19,
+      "calories": 280,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 22,
+      "servingSize": "1 package / 85 g",
+      "servingSizeG": 85
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 19,
+      "calories": 280,
+      "carbs": 2,
+      "fiber": 0,
+      "sugar": 1,
+      "fat": 22,
+      "servingSize": "1 package / 85 g",
+      "servingSizeG": 85
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 package / 85 g",
+    "servingSizeG": 85,
+    "protein": 19,
+    "calories": 280,
+    "carbs": 2,
+    "fiber": 0,
+    "sugar": 1,
+    "fat": 22
+  }
+}

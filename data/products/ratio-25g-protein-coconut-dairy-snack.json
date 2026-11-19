@@ -1,0 +1,82 @@
+{
+  "id": "ratio-25g-protein-coconut-dairy-snack",
+  "name": "Ratio Protein Coconut Dairy Snack",
+  "brand": "Ratio",
+  "productType": null,
+  "buyUrl": "https://www.amazon.com/s?k=Ratio+Protein+Coconut+Dairy+Snack",
+  "price": {
+    "perServing": 0,
+    "status": "estimate",
+    "note": "No price recorded yet."
+  },
+  "nutrition": {
+    "servingSize": "150 g",
+    "servingSizeG": 150,
+    "protein": 25,
+    "calories": 170,
+    "carbs": 9,
+    "fiber": 0,
+    "sugar": 3,
+    "fat": 4
+  },
+  "claims": {
+    "vegan": false,
+    "plantBased": false,
+    "glutenFree": false,
+    "halal": false,
+    "status": "as-listed"
+  },
+  "identifiers": {
+    "asin": null,
+    "gtin": "00070470164977",
+    "fdcId": 2755893
+  },
+  "image": {
+    "src": "/products/ratio-25g-protein-coconut-dairy-snack.jpg",
+    "alt": "Ratio Ratio Protein Coconut Dairy Snack package",
+    "credit": "Open Food Facts contributors",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://world.openfoodfacts.org/product/0070470164977"
+  },
+  "halal": null,
+  "verification": {
+    "status": "verified",
+    "checkedAt": "2026-11-19",
+    "sources": [
+      {
+        "name": "USDA FoodData Central",
+        "id": "2755893",
+        "url": "https://fdc.nal.usda.gov/food-details/2755893/nutrients",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 25,
+          "calories": 170,
+          "carbs": 9,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 4
+        }
+      },
+      {
+        "name": "Open Food Facts",
+        "id": "0070470164977",
+        "url": "https://world.openfoodfacts.org/product/0070470164977",
+        "checkedAt": "2026-11-19",
+        "values": {
+          "protein": 25,
+          "calories": 180,
+          "carbs": 9,
+          "fiber": 0,
+          "sugar": 3,
+          "fat": 3.5
+        }
+      }
+    ],
+    "notes": [
+      "Pinned by a person after review.",
+      "Open Food Facts agrees with the USDA label data.",
+      "Added from the discovery run (USDA label data)."
+    ]
+  }
+}

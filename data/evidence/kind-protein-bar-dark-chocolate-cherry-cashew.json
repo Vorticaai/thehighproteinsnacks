@@ -1,0 +1,147 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "KIND Protein Bar Dark Chocolate Cherry Cashew",
+  "match": {
+    "pinned": false,
+    "confident": true,
+    "reason": "Brand matches and 100% of product words found.",
+    "chosen": {
+      "fdcId": 2666113,
+      "description": "DARK CHOCOLATE CHERRY CASHEW BARS, DARK CHOCOLATE CHERRY CASHEW",
+      "brandOwner": "KIND Inc.",
+      "brandName": "KIND",
+      "gtinUpc": "602652271427",
+      "publishedDate": "2023-11-16",
+      "score": 1,
+      "brandOk": true
+    },
+    "topCandidates": [
+      {
+        "fdcId": 2666113,
+        "description": "DARK CHOCOLATE CHERRY CASHEW BARS, DARK CHOCOLATE CHERRY CASHEW",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652271427",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666123,
+        "description": "DARK CHOCOLATE CHERRY CASHEW MINIS BARS, DARK CHOCOLATE CHERRY CASHEW",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652279553",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2665940,
+        "description": "DARK CHOCOLATE CHERRY CASHEW THINS BARS, DARK CHOCOLATE CHERRY CASHEW",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652418839",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2666143,
+        "description": "DARK CHOCOLATE CHERRY CASHEW + ANTIOXIDANTS PLUS BAR, DARK CHOCOLATE CHERRY CASHEW ANTIOXIDANTS",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "602652170508",
+        "publishedDate": "2023-11-16",
+        "score": 1,
+        "brandOk": true
+      },
+      {
+        "fdcId": 2601859,
+        "description": "DARK CHOCOLATE CHERRY CASHEW BARS, DARK CHOCOLATE; CHERRY; CASHEW",
+        "brandOwner": "KIND Inc.",
+        "brandName": "KIND",
+        "gtinUpc": "0602652249686",
+        "publishedDate": "2023-07-13",
+        "score": 1,
+        "brandOk": true
+      }
+    ]
+  },
+  "usda": {
+    "fdcId": 2666113,
+    "description": "DARK CHOCOLATE CHERRY CASHEW BARS, DARK CHOCOLATE CHERRY CASHEW",
+    "brandOwner": "KIND Inc.",
+    "brandName": "KIND",
+    "gtinUpc": "602652271427",
+    "servingSize": 40,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "LI",
+    "modifiedDate": "4/22/2023",
+    "ingredients": "CASHEWS, PEANUTS, CHICORY ROOT FIBER, SUGAR, ALMONDS, CHERRIES, CRANBERRIES, HONEY, PALM KERNEL OIL, GLUCOSE SYRUP, RICE FLOUR, UNSWEETENED CHOCOLATE, RAISINS, ALKALIZED COCOA, SOY LECITHIN, SEA SALT, NATURAL FLAVOR, COCOA BUTTER.",
+    "perServing": {
+      "protein": 4,
+      "calories": 170,
+      "carbs": 22,
+      "fiber": 6,
+      "sugar": 10,
+      "fat": 10,
+      "servingSize": "1 bar / 40 g",
+      "servingSizeG": 40
+    }
+  },
+  "openFoodFacts": {
+    "code": "0602652271427",
+    "product_name": "Kind Dark Chocolate Cherry Cashew",
+    "brands": "Kind",
+    "serving_size": "1 bar (40 g)",
+    "perServing": {
+      "protein": 4,
+      "calories": 160,
+      "carbs": 22,
+      "fiber": 6,
+      "sugar": 11,
+      "fat": 10,
+      "servingSize": "1 bar (40 g)",
+      "servingSizeG": 40
+    },
+    "image_front_url": "https://images.openfoodfacts.org/images/products/060/265/227/1427/front_en.9.400.jpg"
+  },
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 4,
+      "calories": 170,
+      "carbs": 22,
+      "fiber": 6,
+      "sugar": 10,
+      "fat": 10,
+      "servingSize": "1 bar / 40 g",
+      "servingSizeG": 40
+    },
+    "notes": [
+      "Open Food Facts agrees with the USDA label data."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 4,
+    "calories": 170,
+    "carbs": 22,
+    "fiber": 6,
+    "sugar": 10,
+    "fat": 10
+  },
+  "after": {
+    "servingSize": "1 bar / 40 g",
+    "servingSizeG": 40,
+    "protein": 4,
+    "calories": 170,
+    "carbs": 22,
+    "fiber": 6,
+    "sugar": 10,
+    "fat": 10
+  }
+}

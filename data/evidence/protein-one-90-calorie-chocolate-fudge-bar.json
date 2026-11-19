@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-19",
+  "query": "Protein One 90 Calorie Chocolate Fudge Bar",
+  "match": {
+    "pinned": true,
+    "confident": true,
+    "reason": "Pinned by a person after review.",
+    "chosen": {
+      "fdcId": 2741342,
+      "description": "(pinned)"
+    },
+    "topCandidates": []
+  },
+  "usda": {
+    "fdcId": 2741342,
+    "description": "Protein One 90 Calorie Chocolate Fudge Bar",
+    "brandOwner": "GENERAL MILLS SALES INC.",
+    "brandName": "Protein One",
+    "gtinUpc": "00016000141711",
+    "servingSize": 27,
+    "servingSizeUnit": "GRM",
+    "householdServingFullText": "1 bar",
+    "dataSource": "GDSN",
+    "modifiedDate": "7/10/2025",
+    "ingredients": "Soy Protein Isolate, Chicory Root Extract, Whey Protein Isolate, Vegetable Glycerin, Palm and Palm Kernel Oil, Whey Protein Concentrate, Maltitol Syrup, Allulose, Dutch Cocoa (processed with alkali), Calcium Caseinate, Soy Lecithin, Cocoa Powder, Collagen, Salt, Stevia Extract, Natural and Artificial Flavor, Canola Oil.",
+    "perServing": {
+      "protein": 10,
+      "calories": 89.9,
+      "carbs": 10,
+      "fiber": 5,
+      "sugar": 0.999,
+      "fat": 2.5,
+      "servingSize": "1 bar / 27 g",
+      "servingSizeG": 27
+    }
+  },
+  "openFoodFacts": null,
+  "decision": {
+    "status": "verified",
+    "values": {
+      "protein": 10,
+      "calories": 90,
+      "carbs": 10,
+      "fiber": 5,
+      "sugar": 1,
+      "fat": 2.5,
+      "servingSize": "1 bar / 27 g",
+      "servingSizeG": 27
+    },
+    "notes": [
+      "No Open Food Facts record to cross-check."
+    ]
+  },
+  "before": {
+    "servingSize": null,
+    "servingSizeG": null,
+    "protein": 0,
+    "calories": 0,
+    "carbs": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "fat": 0
+  },
+  "after": {
+    "servingSize": "1 bar / 27 g",
+    "servingSizeG": 27,
+    "protein": 10,
+    "calories": 90,
+    "carbs": 10,
+    "fiber": 5,
+    "sugar": 1,
+    "fat": 2.5
+  }
+}
