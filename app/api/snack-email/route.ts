@@ -7,13 +7,11 @@ import {
   type MatchCriteria,
   type MatchGoal,
 } from "@/lib/snackMatch"
-import { sendSnackReport, addToNewsletterAudience, isEmailConfigured } from "@/lib/email"
+import { sendSnackReport, addToNewsletterAudience, isEmailConfigured, isValidEmail } from "@/lib/email"
 import { renderMatchEmail, renderUpgradeEmail } from "@/lib/emailTemplates"
 import { absoluteUrl } from "@/lib/seo"
 
 export const runtime = "nodejs"
-
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 /**
  * Sends a visitor's Find My Match / Upgrade My Snack result to their inbox.
@@ -34,7 +32,7 @@ export async function POST(req: NextRequest) {
   }
 
   const { email, mode, newsletterOptIn } = body as Record<string, unknown>
-  if (typeof email !== "string" || !EMAIL_RE.test(email.trim())) {
+  if (typeof email !== "string" || !isValidEmail(email)) {
     return NextResponse.json({ error: "Enter a valid email address." }, { status: 400 })
   }
   if (mode !== "match" && mode !== "upgrade") {

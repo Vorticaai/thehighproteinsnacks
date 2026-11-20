@@ -59,3 +59,20 @@ export function trackSnackEmailSignup(params: {
     newsletter_opt_in: params.newsletterOptIn,
   });
 }
+
+/** Snack Match Notify subscription (lib/snackNotify.ts) — the standing "tell me later" opt-in, distinct from the one-off snack_email_signup above. */
+export function trackNotifySignup(params: {
+  mode: "match" | "upgrade";
+  goal: string;
+  dietTags: string[];
+}) {
+  if (typeof window === "undefined" || !window.gtag) return;
+
+  window.gtag("event", "snack_notify_signup", {
+    event_category: "SnackFinder",
+    event_label: params.mode,
+    mode: params.mode,
+    goal: params.goal,
+    diet_tags: params.dietTags.join(",") || undefined,
+  });
+}

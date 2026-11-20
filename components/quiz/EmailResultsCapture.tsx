@@ -31,9 +31,9 @@ export default function EmailResultsCapture({ ctaLabel, payload, onSent }: Email
     return (
       <button
         onClick={() => setStatus("open")}
-        className="inline-flex items-center gap-2 rounded-full border-2 border-[#006F6D] px-6 py-3 font-bold text-[#006F6D] transition-colors hover:bg-[#006F6D] hover:text-white"
+        className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 underline-offset-2 transition-colors hover:text-[#006F6D] hover:underline"
       >
-        <Mail className="h-4 w-4" />
+        <Mail className="h-3.5 w-3.5" />
         {ctaLabel}
       </button>
     )

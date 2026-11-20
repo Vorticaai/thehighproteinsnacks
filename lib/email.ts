@@ -14,6 +14,12 @@ import { Resend } from "resend"
  */
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
+/** Shared validation for every snack-email/snack-notify API route. */
+export const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+export function isValidEmail(email: string): boolean {
+  return EMAIL_RE.test(email.trim())
+}
+
 export function isEmailConfigured(): boolean {
   return resend !== null
 }
@@ -50,4 +56,74 @@ export async function addToNewsletterAudience(email: string): Promise<void> {
   const segmentId = process.env.RESEND_SEGMENT_ID
   if (!segmentId) return
   await resend.contacts.create({ email, segments: [{ id: segmentId }] })
+}
+
+/**
+ * The Snack Match Notify subscription (lib/snackNotify.ts) is a completely
+ * separate Resend segment from the newsletter above — so unsubscribing from
+ * one never silently touches the other. This is also the project's only
+ * "database": each subscriber's preferences live in that contact's own
+ * `properties` bag, read back by getNotifyContact().
+ */
+export function isNotifyConfigured(): boolean {
+  return resend !== null && Boolean(process.env.RESEND_NOTIFY_SEGMENT_ID)
+}
+
+export type NotifyContact = {
+  id: string
+  email: string
+  properties: Record<string, { type: "string" | "number"; value: string | number }>
+}
+
+export async function getNotifyContact(email: string): Promise<NotifyContact | null> {
+  if (!resend) throw new Error("RESEND_API_KEY is not configured")
+  const { data } = await resend.contacts.get({ email })
+  if (!data) return null
+  return { id: data.id, email: data.email, properties: data.properties }
+}
+
+/**
+ * Creates the contact if it doesn't exist yet (adding it to the Notify
+ * segment at the same time), or updates its properties and makes sure it's
+ * in the segment if it already existed for some other reason (e.g. it was
+ * previously only a newsletter contact). Never touches the contact's global
+ * `unsubscribed` flag — Notify's own on/off state is the `notifyActive`
+ * property instead, so it can't cross-affect an unrelated subscription on
+ * the same email address.
+ */
+export async function upsertNotifyContact(
+  email: string,
+  properties: Record<string, string | number | null>,
+): Promise<void> {
+  if (!resend) throw new Error("RESEND_API_KEY is not configured")
+  const segmentId = process.env.RESEND_NOTIFY_SEGMENT_ID
+  if (!segmentId) throw new Error("RESEND_NOTIFY_SEGMENT_ID is not configured")
+
+  const existing = await resend.contacts.get({ email })
+  if (existing.data) {
+    await resend.contacts.update({ email, properties })
+    await resend.contacts.segments.add({ email, segmentId }).catch(() => {
+      // Already in the segment, or the add is otherwise a no-op — fine either way.
+    })
+  } else {
+    await resend.contacts.create({ email, properties, segments: [{ id: segmentId }] })
+  }
+}
+
+/** Lists every contact in the Notify segment, paging through all of them. */
+export async function listNotifySubscriberEmails(): Promise<string[]> {
+  if (!resend) throw new Error("RESEND_API_KEY is not configured")
+  const segmentId = process.env.RESEND_NOTIFY_SEGMENT_ID
+  if (!segmentId) throw new Error("RESEND_NOTIFY_SEGMENT_ID is not configured")
+
+  const emails: string[] = []
+  let after: string | undefined
+  for (let page = 0; page < 50; page++) {
+    const { data, error } = await resend.contacts.list({ segmentId, limit: 100, ...(after ? { after } : {}) })
+    if (error || !data) break
+    emails.push(...data.data.map((c) => c.email))
+    if (!data.has_more || data.data.length === 0) break
+    after = data.data[data.data.length - 1].id
+  }
+  return emails
 }

@@ -1,0 +1,30 @@
+# Weekly Snack Match Notify run: emails subscribers only when a new or
+# updated product is a genuine, meaningful improvement on their saved
+# preferences. Sends nothing on a normal week. See pipeline/notify.ts.
+name: Snack Match Notify
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "42 14 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Run weekly notify check
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_NOTIFY_SEGMENT_ID: ${{ secrets.RESEND_NOTIFY_SEGMENT_ID }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+        run: npx tsx pipeline/notify.ts
