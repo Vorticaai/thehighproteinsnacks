@@ -97,6 +97,7 @@ async function main() {
       const html = renderNotifyAlertEmail({
         mode: sub.mode,
         goal: sub.goal,
+        dietTags: sub.dietTags,
         pick,
         baseline,
         manageUrl: manageUrl(email, sub.manageToken),
