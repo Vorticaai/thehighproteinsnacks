@@ -8,7 +8,8 @@ import ProductVisual from "@/components/snacks/ProductVisual"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import EmailResultsCapture from "@/components/quiz/EmailResultsCapture"
-import { trackSnackFinderCompleted, trackSnackEmailSignup } from "@/lib/analytics"
+import NotifyMeCapture from "@/components/quiz/NotifyMeCapture"
+import { trackSnackFinderCompleted, trackSnackEmailSignup, trackNotifySignup } from "@/lib/analytics"
 import { searchProducts, findUpgrades, type MatchGoal, type Upgrade } from "@/lib/snackMatch"
 
 type UpgradeMySnackProps = {
@@ -188,7 +189,11 @@ export default function UpgradeMySnack({ products, initialProductId, initialGoal
             ))}
           </div>
 
-          <div className="flex flex-col items-center gap-3 pt-2 text-center">
+          <div className="flex flex-col items-center gap-4 pt-2 text-center">
+            <NotifyMeCapture
+              payload={{ mode: "upgrade", goal, productId: current.id }}
+              onSubscribed={(dietTags) => trackNotifySignup({ mode: "upgrade", goal, dietTags })}
+            />
             <EmailResultsCapture
               ctaLabel="Email My Snack Upgrade"
               payload={{ mode: "upgrade", productId: current.id, goal }}

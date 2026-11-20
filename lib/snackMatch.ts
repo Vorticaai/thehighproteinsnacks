@@ -68,7 +68,7 @@ function matchesCalorieBand(product: Product, band: CalorieBand): boolean {
   }
 }
 
-function matchesDietTags(product: Product, tags: DietTag[]): boolean {
+export function matchesDietTags(product: Product, tags: DietTag[]): boolean {
   return tags.every((tag) => categoryFilters[tag]?.(product) === true)
 }
 
@@ -155,7 +155,7 @@ export type Upgrade = {
   deltas: UpgradeDeltas
 }
 
-function deltasFrom(current: Product, candidate: Product): UpgradeDeltas {
+export function deltasFrom(current: Product, candidate: Product): UpgradeDeltas {
   return {
     protein: candidate.proteinPerServing - current.proteinPerServing,
     calories: candidate.caloriesPerServing - current.caloriesPerServing,
@@ -171,10 +171,21 @@ function deltasFrom(current: Product, candidate: Product): UpgradeDeltas {
  * Alternatives that genuinely score higher for this goal than the visitor's
  * current snack. Empty when their current pick is already at or near the top
  * — callers should treat that as a real, positive result, not an error.
+ * `dietTags` (optional) narrows candidates to ones meeting those dietary
+ * requirements first — same reused categoryFilters-backed check findMatches
+ * uses, so an "Upgrade My Snack" subscriber who only wants vegan upgrades
+ * never gets a non-vegan one.
  */
-export function findUpgrades(current: Product, products: Product[], goal: MatchGoal, limit = 3): Upgrade[] {
+export function findUpgrades(
+  current: Product,
+  products: Product[],
+  goal: MatchGoal,
+  limit = 3,
+  dietTags: DietTag[] = [],
+): Upgrade[] {
   const currentScore = goalScore(current, goal)
-  return products
+  const candidates = dietTags.length > 0 ? products.filter((p) => matchesDietTags(p, dietTags)) : products
+  return candidates
     .filter((p) => p.id !== current.id)
     .map((p) => ({ product: p, score: goalScore(p, goal) }))
     .filter((entry) => entry.score > currentScore)

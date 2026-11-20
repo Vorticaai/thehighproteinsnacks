@@ -7,7 +7,8 @@ import { SnackCard } from "@/components/snacks/snack-card"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import EmailResultsCapture from "@/components/quiz/EmailResultsCapture"
-import { trackSnackFinderCompleted, trackSnackEmailSignup } from "@/lib/analytics"
+import NotifyMeCapture from "@/components/quiz/NotifyMeCapture"
+import { trackSnackFinderCompleted, trackSnackEmailSignup, trackNotifySignup } from "@/lib/analytics"
 import {
   findMatches,
   explainMatch,
@@ -225,7 +226,18 @@ export default function FindMyMatch({ products, initialCriteria }: FindMyMatchPr
             ))}
           </div>
 
-          <div className="flex flex-col items-center gap-3 pt-2 text-center">
+          <div className="flex flex-col items-center gap-4 pt-2 text-center">
+            <NotifyMeCapture
+              payload={{
+                mode: "match",
+                goal: criteria.goal,
+                minProtein: criteria.minProtein,
+                calorieBand: criteria.calorieBand,
+                budgetBand: criteria.budgetBand,
+              }}
+              initialDietTags={criteria.dietTags}
+              onSubscribed={(dietTags) => trackNotifySignup({ mode: "match", goal: criteria.goal, dietTags })}
+            />
             <EmailResultsCapture
               ctaLabel="Email My Snack Matches"
               payload={{ mode: "match", criteria }}
