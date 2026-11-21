@@ -89,6 +89,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   });
 
+  // Branded head-to-head comparison pages (app/compare/<slug>): real,
+  // data-driven content pages that were missing from the sitemap entirely —
+  // same orphan-page issue already fixed for the standalone guide pages below.
+  entries.push({
+    url: absoluteUrl("/compare/quest-bars-vs-rxbars"),
+    lastModified: today,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  });
+
   products.forEach((product) => {
     entries.push({
       url: absoluteUrl(`/snacks/${product.id}`),

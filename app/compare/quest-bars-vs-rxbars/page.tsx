@@ -1,20 +1,29 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { getAllProducts, type Product } from "@/lib/products"
 import { SnackCard } from "@/components/snacks/snack-card"
 import { Badge } from "@/components/ui/badge"
 import CalculatorCTA from "@/components/shared/calculator-cta"
 import { Breadcrumbs } from "@/components/layout/breadcrumbs"
+import { JsonLd } from "@/components/seo/jsonld"
+import { absoluteUrl } from "@/lib/seo"
+
+const PATH = "/compare/quest-bars-vs-rxbars"
+const TITLE = "Quest Bars vs RXBAR: Which High-Protein Snack Is Better?"
+const DESCRIPTION =
+  "Detailed comparison of Quest Nutrition protein bars versus RXBAR. We compare protein, calories, sugar, fiber, price per bar, and best use cases so you can pick the right snack for your goals."
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/compare/quest-bars-vs-rxbars" },
-  title: "Quest Bars vs RXBAR: Which High-Protein Snack Is Better?",
-  description:
-    "Detailed comparison of Quest Nutrition protein bars versus RXBAR. We compare protein, calories, sugar, fiber, price per bar, and best use cases so you can pick the right snack for your goals.",
+  alternates: { canonical: absoluteUrl(PATH) },
+  title: TITLE,
+  description: DESCRIPTION,
   openGraph: {
-    title: "Quest Bars vs RXBAR: Which High-Protein Snack Is Better?",
+    title: TITLE,
     description:
       "Compare macros, ingredients, taste, and price of Quest bars versus RXBAR using real product data from our high-protein snack database.",
-    url: "https://thehighproteinsnacks.com/compare/quest-bars-vs-rxbars",
+    url: absoluteUrl(PATH),
+    type: "article",
+    images: [{ url: absoluteUrl("/og-default.jpg") }],
   },
 }
 
@@ -128,23 +137,35 @@ export default function CompareQuestVsRxbarPage() {
       ? "Quest Nutrition"
       : "RXBAR"
 
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Protein Bars", href: "/snacks/protein-bars" },
+    { label: "Quest vs RXBAR" },
+  ]
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbItems.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.label,
+      item: item.href ? absoluteUrl(item.href) : absoluteUrl(PATH),
+    })),
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <JsonLd data={breadcrumbJsonLd} />
 
       <div className="container mx-auto px-4 py-12">
         {/* Breadcrumb */}
-        <Breadcrumbs 
-          items={[
-            { label: "Home", href: "/" },
-            { label: "Comparisons", href: "/" },
-            { label: "Quest vs RXBAR" }
-          ]} 
-        />
-        
+        <Breadcrumbs items={breadcrumbItems} />
+
         {/* Hero Section */}
         <div className="mb-12 max-w-3xl">
           <Badge className="mb-4" variant="secondary">
@@ -354,6 +375,29 @@ export default function CompareQuestVsRxbarPage() {
               based on your specific dietary goals.
             </p>
           </div>
+        </section>
+
+        {/* Related */}
+        <section className="mt-12">
+          <h2 className="mb-3 text-xl font-bold text-gray-900">Related reading</h2>
+          <ul className="list-disc space-y-1 pl-5 text-gray-700">
+            <li>
+              <Link href="/snacks/protein-bars" className="underline">
+                All protein bars in our directory
+              </Link>
+            </li>
+            <li>
+              <Link href="/snacks/halal-protein-bars" className="underline">
+                Which protein bars are halal-certified?
+              </Link>{" "}
+              — includes both Quest and RXBAR
+            </li>
+            <li>
+              <Link href="/protein-value-index" className="underline">
+                See every snack ranked by protein per dollar
+              </Link>
+            </li>
+          </ul>
         </section>
 
         {/* Calculator CTA */}

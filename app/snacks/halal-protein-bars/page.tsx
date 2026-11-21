@@ -33,6 +33,29 @@ export default function HalalProteinBarsPage() {
   const catalogueBars = getAllProducts().filter((p) => p.flags.bars)
   const catalogueHalalBars = catalogueBars.filter((p) => p.flags.halal)
 
+  const certifiedBrandList = withCertification.map((b) => b.brand).join(", ")
+  const uncertifiedBrandList = without
+    .map((b) => (b.brand === "Barebells" ? "Barebells' US bars" : b.brand))
+    .join(", ")
+
+  const faqs = [
+    {
+      question: "Are Quest, RXBAR, or Barebells protein bars halal in the US?",
+      answer: `We can't say either way with confidence. Of the big US brands we checked (${uncertifiedBrandList}), none documents or claims halal certification for the bars sold in the US — but that's different from confirming the ingredients aren't halal. It may mean the product is sold as "halal friendly" without a certificate, or certified only in other countries. Treat these as unconfirmed rather than ruled out, and check with the brand directly if certification matters to you.`,
+    },
+    {
+      question: "Which protein bars are actually halal-certified in the US?",
+      answer: certifiedBrandList
+        ? `${certifiedBrandList}, sold online rather than on US supermarket shelves. See the table above for who certifies each one.`
+        : "None of the bars we've checked so far carry a documented US halal certification. Check back — we update this page as we verify new brands.",
+    },
+    {
+      question: "Why is halal certification for protein bars so hard to find?",
+      answer:
+        "Many bars use collagen or gelatin, which is only halal if it comes from a halal source, plus flavourings that can carry alcohol. A bar can also be certified in one country and not another, because certificates cover specific factories.",
+    },
+  ]
+
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Snacks", href: "/snacks" },
@@ -62,6 +85,17 @@ export default function HalalProteinBarsPage() {
             position: i + 1,
             name: item.name,
             item: item.href ? absoluteUrl(item.href) : absoluteUrl(PATH),
+          })),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
           })),
         }}
       />
@@ -178,6 +212,42 @@ export default function HalalProteinBarsPage() {
         <section className="mb-12 max-w-3xl">
           <h2 className="mb-3 text-xl font-bold text-gray-900">How to check a bar yourself</h2>
           <HowToCheckHalal />
+        </section>
+
+        <section className="mb-12 max-w-3xl">
+          <h2 className="mb-3 text-xl font-bold text-gray-900">Quick answers</h2>
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="rounded-2xl border border-gray-100 bg-gray-50 p-4">
+                <summary className="cursor-pointer text-sm font-semibold text-gray-900">{faq.question}</summary>
+                <p className="mt-2 text-sm text-gray-600">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-12 max-w-3xl">
+          <h2 className="mb-3 text-xl font-bold text-gray-900">Related reading</h2>
+          <ul className="list-disc space-y-1 pl-5 text-gray-700">
+            <li>
+              <Link href="/snacks/halal" className="underline">
+                All halal snacks we've checked
+              </Link>{" "}
+              — certified options tend to be jerky and meat sticks rather than bars; see the full list if certification is a
+              requirement for you.
+            </li>
+            <li>
+              <Link href="/compare/quest-bars-vs-rxbars" className="underline">
+                Quest Bars vs RXBAR: full comparison
+              </Link>{" "}
+              — if an uncertified bar is acceptable to you, this compares two of the brands above on macros and price.
+            </li>
+            <li>
+              <Link href="/snacks/protein-bars" className="underline">
+                All protein bars in our directory
+              </Link>
+            </li>
+          </ul>
         </section>
 
         <p className="max-w-3xl text-sm text-gray-500">
