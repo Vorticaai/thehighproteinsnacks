@@ -542,7 +542,7 @@ export const guides: Guide[] = [
     description:
       "The highest raw-protein snacks in our directory — mostly protein shakes, which pack more protein per serving than any bar we carry — ranked using the same scoring our Snack Finder uses for a muscle-building goal.",
     metaDescription:
-      "Best high-protein snacks for muscle building, ranked by protein per serving. Compare Muscle Milk, Fairlife Core Power, OWYN, Premier Protein, Oikos Pro and a high-protein jerky pick.",
+      "Best high-protein snacks for muscle building, ranked by our Snack Finder's build-muscle scoring. Compare Muscle Milk, Fairlife Core Power, OWYN, Premier Protein, Oikos Pro and a high-protein jerky pick.",
     keywords: [
       "high protein snacks for muscle building",
       "best protein snacks to build muscle",
@@ -578,7 +578,7 @@ export const guides: Guide[] = [
 
     content: {
       introduction:
-        "Building muscle comes down to total daily protein and consistent resistance training, not any single snack — but when a snack is the delivery method, more protein per serving means fewer snacks needed to hit your daily number. Ranked by raw protein per serving among everything in our directory with 20g or more, the highest scorers are almost all ready-to-drink protein shakes rather than bars: picks here run 30–42g of protein per serving, well above what any bar in our catalogue reaches.",
+        "Building muscle comes down to total daily protein and consistent resistance training, not any single snack — but when a snack is the delivery method, more protein per serving means fewer snacks needed to hit your daily number. We ranked everything in our directory with 20g of protein or more (the same floor /snacks/high-protein uses) with our Snack Finder's build-muscle scoring, which weighs protein per serving most heavily and uses value and sugar as tie-breakers — so this isn't a plain protein-per-serving list. The highest scorers are almost all ready-to-drink protein shakes rather than bars: picks here run 30–42g of protein per serving, well above what any bar in our catalogue reaches.",
         sections: [
         {
           heading: "Why Shakes Dominate This List",
@@ -589,7 +589,7 @@ export const guides: Guide[] = [
           heading: "This Guide's Picks",
           type: "comparison",
           content:
-            "Ranked by protein per serving among the high-protein (20g+) products in our directory, using the same scoring our Snack Finder tool uses for a \"build muscle\" goal. Every number in the table is the same verified nutrition and price data shown on each product's own page.",
+            "These seven are selected and ordered by our Snack Finder's build-muscle scoring among the high-protein (20g+) products in our directory — weighted mainly by protein per serving, with protein-per-dollar value and sugar as tie-breakers, so the order below isn't a plain protein-per-serving ranking. The table's own \"Score\" column is the same protein-to-sugar ratio shown on every guide's comparison table, a quick-reference figure rather than the formula used to build this list. Nutrition figures are the same verified data shown on each product's own page; prices are estimates, not live prices — see each product's page for its sourcing note.",
         },
         {
           heading: "Protein Timing and Totals Matter More Than Any One Snack",
@@ -599,7 +599,7 @@ export const guides: Guide[] = [
         {
           heading: "Common Mistakes",
           content:
-            "A few patterns worth avoiding: treating a high-protein shake as a full meal replacement when it's missing the carbohydrates and micronutrients a real meal provides; assuming more protein in one sitting always helps, since your body can only use so much at once and the rest is just extra calories; and ignoring price per gram of protein — the picks in this guide range from under $5 to over $7 per serving, which adds up if you're eating one daily.",
+            "A few patterns worth avoiding: treating a high-protein shake as a full meal replacement when it's missing the carbohydrates and micronutrients a real meal provides; assuming a single oversized shake always beats spreading the same total protein across a few smaller servings — how your body responds to a very large single dose varies by individual, training and body size, so there's no one \"right-sized\" serving that applies to everyone; and ignoring price per gram of protein — the picks in this guide range from roughly $1.80 to $7.40 per estimated serving price, which adds up if you're eating one daily.",
         },
       ],
     },
@@ -618,12 +618,12 @@ export const guides: Guide[] = [
       {
         question: "Why is a beef jerky pick on an otherwise shake-heavy list?",
         answer:
-          "Better Jerky Co.'s Beef Jerky Crisps have 36g of protein per serving — more than every bar in our directory and most shakes too — so on raw protein per serving it genuinely earns its place, even though it's priced well above the other picks here.",
+          "Better Jerky Co.'s Beef Jerky Crisps have 36g of protein per serving (verified against USDA data for a 56g package) — more than every bar in our directory and most shakes too — which is enough to score well in our build-muscle formula despite being the most expensive pick here. Its weaker protein-per-dollar value is also why the formula still ranks one lower-protein shake (OWYN's 32g pick) ahead of it, rather than putting it near the top.",
       },
       {
         question: "Are these the same snacks recommended for weight loss?",
         answer:
-          "Mostly not. These are ranked for maximum protein per serving, and several run 200–230 calories per serving. Our weight-loss guide ranks snacks by protein per calorie instead, which favors a different, lower-calorie set of products.",
+          "Mostly not. These are ranked by our build-muscle scoring, which weighs protein per serving most heavily, and several run 200–230 calories per serving. Our weight-loss guide ranks snacks by protein per calorie instead, which favors a different, lower-calorie set of products.",
       },
       {
         question: "Is sugar a concern in these high-protein shakes?",
