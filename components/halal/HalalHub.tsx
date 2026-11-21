@@ -258,8 +258,8 @@ export default function HalalHub({ title, description }: { title: string; descri
 
         <p className="max-w-3xl text-sm text-gray-500">
           Brands: if your snack is halal-certified and we&apos;ve missed it or got it wrong, email the certificate to{" "}
-          <a href="mailto:support@thehighproteinsnacks.com" className="underline">
-            support@thehighproteinsnacks.com
+          <a href="mailto:hello@thehighproteinsnacks.com" className="underline">
+            hello@thehighproteinsnacks.com
           </a>{" "}
           and we&apos;ll update the page. See <Link href="/how-we-review" className="underline">how we review</Link>.
         </p>

@@ -253,8 +253,8 @@ export default function HalalProteinBarsPage() {
         <p className="max-w-3xl text-sm text-gray-500">
           We don&apos;t earn anything from the brand links on this page. Brands: if your bar is halal-certified for the
           US, email the certificate to{" "}
-          <a href="mailto:support@thehighproteinsnacks.com" className="underline">
-            support@thehighproteinsnacks.com
+          <a href="mailto:hello@thehighproteinsnacks.com" className="underline">
+            hello@thehighproteinsnacks.com
           </a>
           .
         </p>
