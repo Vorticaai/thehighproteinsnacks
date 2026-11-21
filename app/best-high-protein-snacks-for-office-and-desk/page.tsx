@@ -78,7 +78,7 @@ const getOfficeNote = (snack: Product): string => {
       "quest-protein-bar-cookies-cream":
         "High protein (21g) with only 1g sugar means no 3pm energy crash. Keep a box in your desk—they won't go bad and you'll always have a satisfying option when the vending machine tempts you with candy bars.",
       "rxbar-chocolate-sea-salt":
-        "Clean ingredients make this perfect for health-conscious professionals. The 12g protein from egg whites digests easily, and the date-based sweetness provides steady energy. Plus, the flat package fits perfectly in any desk drawer or laptop bag.",
+        "The 12g protein from egg whites digests easily, and the date-based sweetness provides steady energy. Plus, the flat package fits perfectly in any desk drawer or laptop bag.",
       "iqbar-peanut-butter-chip":
         "Brain-boosting nutrients (MCTs, omega-3s) plus 12g protein make this ideal for focus-heavy work. Perfect for that mid-afternoon slump when you need both mental clarity and sustained energy. Low sugar means no jitters or crashes.",
       "built-bar-mint-brownie":
