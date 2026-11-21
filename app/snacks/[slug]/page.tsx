@@ -574,15 +574,22 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
   );
 }
 
-// Deep-content guide for this category, where one exists. These pages
-// used to have no link to or from the matching /snacks/<category> filter
-// page — two pages on the same topic with nothing connecting them.
-const CATEGORY_GUIDE_LINKS: Partial<Record<CategorySlug, { href: string; label: string }>> = {
-  "weight-loss": { href: "/best-high-protein-snacks-for-weight-loss", label: "Read our full weight-loss snack guide" },
-  "keto": { href: "/best-high-protein-snacks-for-keto", label: "Read our full keto snack guide" },
-  "low-sugar": { href: "/guides/best-low-sugar-high-protein-snacks", label: "Read our full low-sugar snack guide" },
-  "best-value": { href: "/guides/best-budget-snacks", label: "Read our full best-value snack guide" },
-  "vegan": { href: "/guides/best-vegan-high-protein-snacks", label: "Read our full vegan snack guide" },
+// Deep-content guide (or guides) for this category, where one exists. These
+// pages used to have no link to or from the matching /snacks/<category>
+// filter page — two pages on the same topic with nothing connecting them.
+// "protein-bars" carries two: the halal-protein-bars check (Quest and RXBAR,
+// two of its biggest brands, are discussed there) and the Quest vs RXBAR
+// comparison (same two brands, same category).
+const CATEGORY_GUIDE_LINKS: Partial<Record<CategorySlug, Array<{ href: string; label: string }>>> = {
+  "weight-loss": [{ href: "/best-high-protein-snacks-for-weight-loss", label: "Read our full weight-loss snack guide" }],
+  "keto": [{ href: "/best-high-protein-snacks-for-keto", label: "Read our full keto snack guide" }],
+  "low-sugar": [{ href: "/guides/best-low-sugar-high-protein-snacks", label: "Read our full low-sugar snack guide" }],
+  "best-value": [{ href: "/guides/best-budget-snacks", label: "Read our full best-value snack guide" }],
+  "vegan": [{ href: "/guides/best-vegan-high-protein-snacks", label: "Read our full vegan snack guide" }],
+  "protein-bars": [
+    { href: "/snacks/halal-protein-bars", label: "Which protein bars are halal-certified?" },
+    { href: "/compare/quest-bars-vs-rxbars", label: "Quest Bars vs RXBAR: full comparison" },
+  ],
 };
 
 function CategoryListing({ slug }: { slug: CategorySlug }) {
@@ -593,7 +600,7 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
   }
 
   const products = getProductsByCategory(slug);
-  const guideLink = CATEGORY_GUIDE_LINKS[slug];
+  const guideLinks = CATEGORY_GUIDE_LINKS[slug] ?? [];
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Snacks", href: "/snacks" },
@@ -648,14 +655,15 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
           </h1>
           <p className="text-lg text-gray-600">{details.description}</p>
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
-            {guideLink && (
+            {guideLinks.map((link) => (
               <Link
-                href={guideLink.href}
+                key={link.href}
+                href={link.href}
                 className="inline-flex items-center font-semibold text-[#006F6D] hover:underline"
               >
-                {guideLink.label} →
+                {link.label} →
               </Link>
-            )}
+            ))}
             {slug === "best-value" && (
               <Link
                 href="/protein-value-index"
