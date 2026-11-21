@@ -109,7 +109,11 @@ export default function PrivacyPage() {
         <section>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">8. Contact</h2>
           <p>If you have any questions about this Privacy Policy, you can contact us at:</p>
-          <p className="mt-3 font-medium">support@thehighproteinsnacks.com</p>
+          <p className="mt-3 font-medium">
+            <a href="mailto:hello@thehighproteinsnacks.com" className="underline">
+              hello@thehighproteinsnacks.com
+            </a>
+          </p>
         </section>
       </div>
     </main>
