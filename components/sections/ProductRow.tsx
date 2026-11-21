@@ -39,9 +39,12 @@ export default function ProductRow({
         </Link>
       </div>
 
+      {/* Horizontal scroll + "View all" keeps every product reachable;
+          the card width is sized so roughly 4 fit in view on desktop
+          (lg+) before scrolling, rather than 6-7. */}
       <div className="flex gap-4 overflow-x-auto pb-2">
         {products.slice(0, 10).map((product) => (
-          <div key={product.id} className="w-[160px] flex-shrink-0">
+          <div key={product.id} className="w-[160px] flex-shrink-0 lg:w-[280px]">
             <ProductCard product={product} />
           </div>
         ))}

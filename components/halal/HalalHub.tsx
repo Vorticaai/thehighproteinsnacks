@@ -91,15 +91,47 @@ export default function HalalHub({ title, description }: { title: string; descri
           {lastChecked && <p className="mt-2 text-sm text-gray-500">Certifications last checked {lastChecked}.</p>}
         </header>
 
+        <nav aria-label="Jump to a section of this page" className="mb-10 flex flex-wrap gap-2">
+          <a
+            href="#table-heading"
+            className="inline-flex items-center rounded-full border border-[#006F6D]/30 bg-[#006F6D]/5 px-4 py-2 text-sm font-semibold text-[#006F6D] hover:bg-[#006F6D]/10"
+          >
+            Certification comparisons
+          </a>
+          <a
+            href="#snacks-heading"
+            className="inline-flex items-center rounded-full border border-[#006F6D]/30 bg-[#006F6D]/5 px-4 py-2 text-sm font-semibold text-[#006F6D] hover:bg-[#006F6D]/10"
+          >
+            Product cards
+          </a>
+          <Link
+            href="/snacks/halal-protein-bars"
+            className="inline-flex items-center rounded-full border border-[#006F6D]/30 bg-[#006F6D]/5 px-4 py-2 text-sm font-semibold text-[#006F6D] hover:bg-[#006F6D]/10"
+          >
+            Halal protein bars →
+          </Link>
+        </nav>
+
         <section aria-labelledby="table-heading" className="mb-12">
           <h2 id="table-heading" className="mb-3 text-xl font-bold text-gray-900">
             Halal protein snacks compared
           </h2>
+          <p className="mb-3 max-w-3xl text-sm text-gray-600">
+            This comparison currently has {listed.length} verified products — mainly jerky, meat sticks and chickpeas.
+            Other formats, including protein bars, are still being researched and aren&apos;t represented here yet; see{" "}
+            <Link href="/snacks/halal-protein-bars" className="underline">
+              our halal protein bars page
+            </Link>{" "}
+            for where that stands.
+          </p>
+          <p className="mb-2 text-xs text-gray-500 sm:hidden" aria-hidden="true">
+            Swipe left to see certifier, nutrition and sources →
+          </p>
           <div className="overflow-x-auto rounded-2xl border border-gray-200">
             <table className="min-w-full divide-y divide-gray-200 text-sm">
               <thead className="bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
                 <tr>
-                  <th className="px-4 py-3">Snack</th>
+                  <th className="sticky left-0 z-10 bg-gray-50 px-4 py-3">Snack</th>
                   <th className="px-4 py-3">Halal status</th>
                   <th className="px-4 py-3">Certifier</th>
                   <th className="px-4 py-3 text-right">Protein</th>
@@ -111,7 +143,7 @@ export default function HalalHub({ title, description }: { title: string; descri
               <tbody className="divide-y divide-gray-100 bg-white">
                 {listed.map((p) => (
                   <tr key={p.id}>
-                    <td className="px-4 py-3">
+                    <td className="sticky left-0 z-10 bg-white px-4 py-3">
                       <Link href={`/snacks/${p.id}`} className="font-semibold text-gray-900 underline-offset-2 hover:underline">
                         {p.name}
                       </Link>
@@ -162,8 +194,8 @@ export default function HalalHub({ title, description }: { title: string; descri
         </section>
 
         {allListed.length > 0 && (
-          <section className="mb-12">
-            <h2 className="mb-4 text-xl font-bold text-gray-900">The snacks</h2>
+          <section aria-labelledby="snacks-heading" className="mb-12">
+            <h2 id="snacks-heading" className="mb-4 text-xl font-bold text-gray-900">The snacks</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {allListed.map((p) => (
                 <ProductCard key={p.id} product={p} />
@@ -237,39 +269,44 @@ export default function HalalHub({ title, description }: { title: string; descri
 
 function BrandNotesTable({ notes }: { notes: HalalBrandNote[] }) {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-gray-200">
-      <table className="min-w-full divide-y divide-gray-200 text-sm">
-        <thead className="bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
-          <tr>
-            <th className="px-4 py-3">Snack</th>
-            <th className="px-4 py-3">Halal status</th>
-            <th className="px-4 py-3">Certifier</th>
-            <th className="px-4 py-3">What we found</th>
-            <th className="px-4 py-3">Sources</th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-gray-100 bg-white align-top">
-          {notes.map((b) => (
-            <tr key={b.brand + b.product}>
-              <td className="px-4 py-3">
-                <a href={b.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 underline-offset-2 hover:underline">
-                  {b.brand} {b.product}
-                </a>
-                <div className="mt-1 text-xs text-gray-500">{b.usAvailability}</div>
-                {b.proteinNote && <div className="mt-1 text-xs text-gray-500">{b.proteinNote}</div>}
-              </td>
-              <td className="px-4 py-3">
-                <HalalStatusPill status={b.halal.status} />
-              </td>
-              <td className="px-4 py-3 text-gray-700">{b.halal.certifier ?? "Not named"}</td>
-              <td className="px-4 py-3 text-gray-700">{b.halal.summary}</td>
-              <td className="px-4 py-3">
-                <HalalEvidenceLinks check={b.halal} />
-              </td>
+    <div>
+      <p className="mb-2 text-xs text-gray-500 sm:hidden" aria-hidden="true">
+        Swipe left to see certifier and sources →
+      </p>
+      <div className="overflow-x-auto rounded-2xl border border-gray-200">
+        <table className="min-w-full divide-y divide-gray-200 text-sm">
+          <thead className="bg-gray-50 text-left text-xs font-semibold uppercase tracking-wide text-gray-600">
+            <tr>
+              <th className="sticky left-0 z-10 bg-gray-50 px-4 py-3">Snack</th>
+              <th className="px-4 py-3">Halal status</th>
+              <th className="px-4 py-3">Certifier</th>
+              <th className="px-4 py-3">What we found</th>
+              <th className="px-4 py-3">Sources</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody className="divide-y divide-gray-100 bg-white align-top">
+            {notes.map((b) => (
+              <tr key={b.brand + b.product}>
+                <td className="sticky left-0 z-10 bg-white px-4 py-3">
+                  <a href={b.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 underline-offset-2 hover:underline">
+                    {b.brand} {b.product}
+                  </a>
+                  <div className="mt-1 text-xs text-gray-500">{b.usAvailability}</div>
+                  {b.proteinNote && <div className="mt-1 text-xs text-gray-500">{b.proteinNote}</div>}
+                </td>
+                <td className="px-4 py-3">
+                  <HalalStatusPill status={b.halal.status} />
+                </td>
+                <td className="px-4 py-3 text-gray-700">{b.halal.certifier ?? "Not named"}</td>
+                <td className="px-4 py-3 text-gray-700">{b.halal.summary}</td>
+                <td className="px-4 py-3">
+                  <HalalEvidenceLinks check={b.halal} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   )
 }
