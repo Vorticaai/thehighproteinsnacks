@@ -41,7 +41,7 @@ export default function HalalProteinBarsPage() {
   const faqs = [
     {
       question: "Are Quest, RXBAR, or Barebells protein bars halal in the US?",
-      answer: `No. Of the big US brands we checked (${uncertifiedBrandList}), none claims halal certification for the bars sold in the US.`,
+      answer: `We can't say either way with confidence. Of the big US brands we checked (${uncertifiedBrandList}), none documents or claims halal certification for the bars sold in the US — but that's different from confirming the ingredients aren't halal. It may mean the product is sold as "halal friendly" without a certificate, or certified only in other countries. Treat these as unconfirmed rather than ruled out, and check with the brand directly if certification matters to you.`,
     },
     {
       question: "Which protein bars are actually halal-certified in the US?",
@@ -230,19 +230,21 @@ export default function HalalProteinBarsPage() {
           <h2 className="mb-3 text-xl font-bold text-gray-900">Related reading</h2>
           <ul className="list-disc space-y-1 pl-5 text-gray-700">
             <li>
-              <Link href="/snacks/protein-bars" className="underline">
-                All protein bars in our directory
-              </Link>
+              <Link href="/snacks/halal" className="underline">
+                All halal snacks we've checked
+              </Link>{" "}
+              — certified options tend to be jerky and meat sticks rather than bars; see the full list if certification is a
+              requirement for you.
             </li>
             <li>
               <Link href="/compare/quest-bars-vs-rxbars" className="underline">
                 Quest Bars vs RXBAR: full comparison
               </Link>{" "}
-              — two of the uncertified brands above, compared on macros and price
+              — if an uncertified bar is acceptable to you, this compares two of the brands above on macros and price.
             </li>
             <li>
-              <Link href="/snacks/halal" className="underline">
-                All halal snacks we've checked
+              <Link href="/snacks/protein-bars" className="underline">
+                All protein bars in our directory
               </Link>
             </li>
           </ul>
