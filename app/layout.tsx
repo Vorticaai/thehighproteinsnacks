@@ -115,6 +115,9 @@ export default function RootLayout({
                 <a href="/how-we-review" className="hover:text-[#C6FF47] transition-colors">Data Accuracy</a>
                 <a href="/privacy" className="hover:text-[#C6FF47] transition-colors">Privacy</a>
                 <a href="/terms" className="hover:text-[#C6FF47] transition-colors">Terms</a>
+                <a href="mailto:hello@thehighproteinsnacks.com" className="hover:text-[#C6FF47] transition-colors">
+                  hello@thehighproteinsnacks.com
+                </a>
               </nav>
             </div>
 

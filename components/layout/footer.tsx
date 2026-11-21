@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-white py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-6 md:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3">
           <div>
             <h3 className="text-sm font-semibold text-gray-900">The High Protein Snacks</h3>
             <p className="mt-2 text-sm text-gray-600">
@@ -28,19 +28,6 @@ export function Footer() {
               <li><Link href="/how-we-review" className="text-gray-600 hover:text-[#006F6D]">Data Accuracy & Methodology</Link></li>
               <li><Link href="/privacy" className="text-gray-600 hover:text-[#006F6D]">Privacy Policy</Link></li>
             </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900">Get in Touch</h3>
-            <p className="mt-2 text-sm text-gray-600">
-              Questions, feedback, product suggestions or partnership enquiries?
-            </p>
-            <a
-              href="mailto:hello@thehighproteinsnacks.com"
-              className="mt-2 inline-block text-sm text-gray-600 hover:text-[#006F6D]"
-            >
-              hello@thehighproteinsnacks.com
-            </a>
           </div>
         </div>
 
