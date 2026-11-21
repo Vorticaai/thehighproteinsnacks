@@ -30,6 +30,7 @@ const HERO_CHIPS = [
   { label: "Low Sugar", href: "/snacks/low-sugar" },
   { label: "Best Value", href: "/snacks/best-value" },
   { label: "Weight Loss", href: "/snacks/weight-loss" },
+  { label: "Halal", href: "/snacks/halal" },
 ] as const;
 
 const websiteJsonLd = {
@@ -125,8 +126,15 @@ export default async function HomePage() {
   const weightLossTop3 = weightLossProducts.slice(0, 3);
   const weightLossRow = weightLossProducts.slice(0, 6);
 
+  // Was filtered but never sorted, so this row showed catalogue order
+  // rather than an actual value ranking. Sort first (same method as
+  // /snacks/best-value and the Protein Value Index) so uniqueByBrand
+  // keeps each brand's best-value product and the row is genuinely
+  // ranked, matching its "Best Value" title.
   const bestValue = uniqueByBrand(
-    products.filter((p) => p.proteinPerDollar >= 12)
+    products
+      .filter((p) => p.proteinPerDollar >= 12)
+      .sort((a, b) => b.proteinPerDollar - a.proteinPerDollar)
   );
   
   const lowSugar = uniqueByBrand(selectProducts("low-sugar", products));
@@ -281,7 +289,8 @@ export default async function HomePage() {
                   Find My Perfect Snack
                 </Link>
               </div>
-              {/* 2x2 — all four visible at once, no horizontal scroll */}
+              {/* 2 columns, no horizontal scroll — 5 chips means the last
+                  one sits alone in its own row, which is fine. */}
               <div className="mt-5 grid grid-cols-2 gap-2">
                 {HERO_CHIPS.map((chip) => (
                   <Link
@@ -345,7 +354,8 @@ export default async function HomePage() {
         />
       )}
       <TopRankingsToday />
-      <WeightLossTop3 products={weightLossTop3} /> 
+      <ExploreCategoryRow />
+      <WeightLossTop3 products={weightLossTop3} />
 
       {/* JSON-LD: Best Value list (only once) */}
       <script
@@ -403,8 +413,6 @@ export default async function HomePage() {
 
         {/* Nutrition Guides (authority + internal links) */}
         <GuidesRow />
-
-        <ExploreCategoryRow />
 
         {/* Tools */}
         <section className="my-20 rounded-3xl bg-[#0B1F1E] p-10 text-white">

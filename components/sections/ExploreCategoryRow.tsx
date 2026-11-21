@@ -19,6 +19,15 @@ const exploreCategories: ExploreCategory[] = [
     icon: "💸",
     href: "/snacks/best-value",
   },
+  // Kept in the first row (grid is 3-up on desktop) for visibility — this
+  // is our top-performing SEO niche per the Search Console baseline.
+  {
+    slug: "halal",
+    title: "Halal Snacks",
+    desc: "Certifier named where we could find it",
+    icon: "🕌",
+    href: "/snacks/halal",
+  },
   {
     slug: "low-sugar",
     title: "Low Sugar",
@@ -47,15 +56,6 @@ const exploreCategories: ExploreCategory[] = [
     icon: "💪",
     href: "/snacks/high-protein",
   },
-
-  // ⭐ NEW — Halal category
-  {
-    slug: "halal",
-    title: "Halal Snacks",
-    desc: "Certifier named where we could find it",
-    icon: "🕌",
-    href: "/snacks/halal",
-  },
 ]
 
 
@@ -63,7 +63,10 @@ export default function ExploreCategoryRow() {
   const products = getAllProducts()
 
   return (
-    <section className="my-20">
+    // Self-contained width/padding (matching TopRankingsToday/WeightLossTop3)
+    // rather than relying on a parent wrapper — this section now renders
+    // directly below Top Rankings Today, outside the page's <main>.
+    <section className="mx-auto my-20 max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 className="mb-10 text-center text-3xl font-black text-gray-900">
         Explore by Category
       </h2>
