@@ -5,9 +5,9 @@
   "productType": "chips",
   "buyUrl": "https://www.amazon.com/Allergy-Friendly-Protein-Mesquite-Barbecue/dp/B07KMKFHX2/ref=sr_1_2?tag=thehighprotei-20",
   "price": {
-    "perServing": 26,
+    "perServing": 2.7,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Corrected 2026-11-21: the original $26.00 was the full-bag price entered by mistake, not a per-serving price. Recomputed from the matching 10.6oz (300g) bag at $26.99 (consistent across Target and Vitacost) divided by 10 servings per bag (300g bag / 30g serving)."
   },
   "nutrition": {
     "servingSize": "1 cup / 30 g",

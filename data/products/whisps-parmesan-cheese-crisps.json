@@ -5,9 +5,9 @@
   "productType": "chips",
   "buyUrl": "https://www.amazon.com/Whisps-FAMILY-Parmesan-Cheddar-Protein/dp/B08LN3F13D/ref=sr_1_1?tag=thehighprotei-20",
   "price": {
-    "perServing": 11.5,
+    "perServing": 0.99,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Corrected 2026-11-21: the original $11.50 was a multi-pack box price entered by mistake, not a per-serving price. Recomputed from Walmart's 6-count box of 0.63oz (~18g) single-serve packs at $5.94, divided by 6 servings."
   },
   "nutrition": {
     "servingSize": "1 Pack / 18 g",

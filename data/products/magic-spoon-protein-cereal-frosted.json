@@ -5,9 +5,9 @@
   "productType": null,
   "buyUrl": "https://www.amazon.com/Magic-Spoon-Cereal-Frosted-1-Pack/dp/B09DMPMN4R/ref=sr_1_1?tag=thehighprotei-20",
   "price": {
-    "perServing": 14,
+    "perServing": 1.8,
     "status": "estimate",
-    "note": "Estimated when the product was added (2025). Not a live price."
+    "note": "Corrected 2026-11-21: the original $14.00 was a full-box price entered by mistake, not a per-serving price. Recomputed from retail pricing for the matching 7oz box (SKU 850002887457 at Vitacost, $6.83-$10.23; Food Network reports $8-$10 per 7oz box) divided by 5 servings per box, per Magic Spoon's own serving-count FAQ. ~$9.00/box / 5 servings."
   },
   "nutrition": {
     "servingSize": "1 cup / 37 g",
