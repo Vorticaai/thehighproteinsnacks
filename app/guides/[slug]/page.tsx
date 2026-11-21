@@ -19,6 +19,7 @@ const GUIDE_CATEGORY_LINKS: Partial<Record<string, { href: string; label: string
   "best-low-sugar-high-protein-snacks": { href: "/snacks/low-sugar", label: "Browse & filter all low-sugar snacks" },
   "best-budget-snacks": { href: "/snacks/best-value", label: "Browse & filter all best-value snacks" },
   "best-vegan-high-protein-snacks": { href: "/snacks/vegan", label: "Browse & filter all vegan snacks" },
+  "best-high-protein-snacks-for-muscle-building": { href: "/snacks/high-protein", label: "Browse & filter all high-protein snacks" },
 };
 
 interface GuidePageProps {

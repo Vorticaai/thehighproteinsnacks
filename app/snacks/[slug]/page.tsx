@@ -583,6 +583,7 @@ const CATEGORY_GUIDE_LINKS: Partial<Record<CategorySlug, { href: string; label: 
   "low-sugar": { href: "/guides/best-low-sugar-high-protein-snacks", label: "Read our full low-sugar snack guide" },
   "best-value": { href: "/guides/best-budget-snacks", label: "Read our full best-value snack guide" },
   "vegan": { href: "/guides/best-vegan-high-protein-snacks", label: "Read our full vegan snack guide" },
+  "high-protein": { href: "/guides/best-high-protein-snacks-for-muscle-building", label: "Read our full muscle-building snack guide" },
 };
 
 function CategoryListing({ slug }: { slug: CategorySlug }) {

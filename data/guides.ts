@@ -536,6 +536,107 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: "best-high-protein-snacks-for-muscle-building",
+    title: "Best High-Protein Snacks for Muscle Building",
+    description:
+      "The highest raw-protein snacks in our directory — mostly protein shakes, which pack more protein per serving than any bar we carry — ranked using the same scoring our Snack Finder uses for a muscle-building goal.",
+    metaDescription:
+      "Best high-protein snacks for muscle building, ranked by protein per serving. Compare Muscle Milk, Fairlife Core Power, OWYN, Premier Protein, Oikos Pro and a high-protein jerky pick.",
+    keywords: [
+      "high protein snacks for muscle building",
+      "best protein snacks to build muscle",
+      "muscle building protein shakes",
+      "high protein snacks for the gym",
+      "protein shakes for muscle gain",
+    ],
+    author: "The High-Protein Snacks Team",
+    publishedDate: "2026-11-21",
+    updatedDate: "2026-11-21",
+    readingTimeMinutes: 8,
+
+    // Selected the same way the "build muscle" goal works in our Snack
+    // Finder (lib/snackMatch.ts goalScore): every product in our directory
+    // with 20g+ protein (the same threshold /snacks/high-protein uses),
+    // ranked by that scoring function, picking the top result per
+    // formulation so this isn't five flavors of the same shake. Every id
+    // below is checked by tests/guides.test.ts against the live catalogue's
+    // protein data, so a renamed, removed or edited-down product can't
+    // silently sit in this list.
+    recommendedSnackIds: [
+      "muscle-milk-pro-series-40",
+      "fairlife-core-power-elite-42g",
+      "muscle-milk-non-dairy-protein-shake-crushing-cookies-n-creme",
+      "owyn-elite-pro-chocolate-shakes",
+      "better-jerky-co-jerky-crisps-beef-jerky",
+      "premier-protein-chocolate",
+      "oikos-pro-shake-vanilla",
+    ],
+
+    relatedGuideIds: ["best-budget-snacks", "best-high-protein-snacks-for-weight-loss"],
+    relatedCategoryIds: ["high-protein"],
+
+    content: {
+      introduction:
+        "Building muscle comes down to total daily protein and consistent resistance training, not any single snack — but when a snack is the delivery method, more protein per serving means fewer snacks needed to hit your daily number. Ranked by raw protein per serving among everything in our directory with 20g or more, the highest scorers are almost all ready-to-drink protein shakes rather than bars: picks here run 30–42g of protein per serving, well above what any bar in our catalogue reaches.",
+        sections: [
+        {
+          heading: "Why Shakes Dominate This List",
+          content:
+            "Protein bars are built around a certain size and chewability, which caps how much protein a manufacturer can pack in before the bar gets dense or dry — the highest-protein bar in our directory tops out well under 25g per serving. A ready-to-drink shake doesn't have that constraint, so the same single serving can carry 30g, 40g or more. That's the main reason this list leans toward shakes rather than the bars that dominate our other guides: for raw protein per serving, they're simply ahead.",
+        },
+        {
+          heading: "This Guide's Picks",
+          type: "comparison",
+          content:
+            "Ranked by protein per serving among the high-protein (20g+) products in our directory, using the same scoring our Snack Finder tool uses for a \"build muscle\" goal. Every number in the table is the same verified nutrition and price data shown on each product's own page.",
+        },
+        {
+          heading: "Protein Timing and Totals Matter More Than Any One Snack",
+          content:
+            "Muscle growth depends on your total daily protein intake and a consistent training program — not on any single snack or shake. Research on muscle protein synthesis generally points to spreading protein across the day in moderate amounts per sitting rather than one huge dose, which is part of why a snack-sized shake fits well between meals. None of this replaces a structured training program, and how much protein you personally need depends on your body weight, training volume and goals — a doctor or dietitian can help you land on a number that fits you. This guide is general information, not personalized nutrition or medical advice.",
+        },
+        {
+          heading: "Common Mistakes",
+          content:
+            "A few patterns worth avoiding: treating a high-protein shake as a full meal replacement when it's missing the carbohydrates and micronutrients a real meal provides; assuming more protein in one sitting always helps, since your body can only use so much at once and the rest is just extra calories; and ignoring price per gram of protein — the picks in this guide range from under $5 to over $7 per serving, which adds up if you're eating one daily.",
+        },
+      ],
+    },
+
+    faqs: [
+      {
+        question: "Do protein shakes build muscle faster than protein bars?",
+        answer:
+          "No — muscle growth depends on total daily protein and resistance training, not the snack format. A shake simply packs more protein into one serving than a bar can, which helps if you're trying to hit a high daily number in fewer snacks, not because it's used by your body any differently.",
+      },
+      {
+        question: "How much protein do I actually need to build muscle?",
+        answer:
+          "This depends on your body weight, training volume and goals, so there's no single number that fits everyone. Ask a doctor or dietitian for a target that fits you specifically — this guide is general information, not personalized nutrition advice.",
+      },
+      {
+        question: "Why is a beef jerky pick on an otherwise shake-heavy list?",
+        answer:
+          "Better Jerky Co.'s Beef Jerky Crisps have 36g of protein per serving — more than every bar in our directory and most shakes too — so on raw protein per serving it genuinely earns its place, even though it's priced well above the other picks here.",
+      },
+      {
+        question: "Are these the same snacks recommended for weight loss?",
+        answer:
+          "Mostly not. These are ranked for maximum protein per serving, and several run 200–230 calories per serving. Our weight-loss guide ranks snacks by protein per calorie instead, which favors a different, lower-calorie set of products.",
+      },
+      {
+        question: "Is sugar a concern in these high-protein shakes?",
+        answer:
+          "Not for most of them — six of the seven picks here have 3g of sugar or less per serving. Fairlife Core Power Elite is the outlier at 7g, so check the label if you're also watching sugar closely.",
+      },
+      {
+        question: "Can I replace meals with these shakes?",
+        answer:
+          "We'd treat them as a convenient top-up between meals rather than a meal replacement. They're missing the carbohydrates, fat variety and micronutrients a full meal provides, and muscle building depends on your overall diet, not just hitting a protein-gram target with shakes.",
+      },
+    ],
+  },
 ]
 
 // Helper to get guide by slug
