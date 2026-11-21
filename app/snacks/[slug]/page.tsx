@@ -586,6 +586,7 @@ const CATEGORY_GUIDE_LINKS: Partial<Record<CategorySlug, Array<{ href: string; l
   "low-sugar": [{ href: "/guides/best-low-sugar-high-protein-snacks", label: "Read our full low-sugar snack guide" }],
   "best-value": [{ href: "/guides/best-budget-snacks", label: "Read our full best-value snack guide" }],
   "vegan": [{ href: "/guides/best-vegan-high-protein-snacks", label: "Read our full vegan snack guide" }],
+  "high-protein": [{ href: "/guides/best-high-protein-snacks-for-muscle-building", label: "Read our full muscle-building snack guide" }],
   "protein-bars": [
     { href: "/snacks/halal-protein-bars", label: "Which protein bars are halal-certified?" },
     { href: "/compare/quest-bars-vs-rxbars", label: "Quest Bars vs RXBAR: full comparison" },

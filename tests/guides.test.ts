@@ -47,6 +47,18 @@ test("the vegan guide only recommends products flagged vegan", () => {
   }
 })
 
+test("the muscle-building guide only recommends products within the high-protein threshold", () => {
+  const guide = guides.find((g) => g.slug === "best-high-protein-snacks-for-muscle-building")
+  assert.ok(guide, "best-high-protein-snacks-for-muscle-building guide not found")
+  for (const id of guide!.recommendedSnackIds) {
+    const product = byId.get(id)
+    assert.ok(
+      product && product.proteinPerServing >= T.highProteinMinProteinG,
+      `${id} has ${product?.proteinPerServing}g protein, under the ${T.highProteinMinProteinG}g high-protein threshold`,
+    )
+  }
+})
+
 test("the low-sugar guide only recommends products within the low-sugar threshold", () => {
   const guide = guides.find((g) => g.slug === "best-low-sugar-high-protein-snacks")
   assert.ok(guide, "best-low-sugar-high-protein-snacks guide not found")
