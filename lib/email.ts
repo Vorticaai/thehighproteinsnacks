@@ -102,9 +102,15 @@ export async function upsertNotifyContact(
   const existing = await resend.contacts.get({ email })
   if (existing.data) {
     await resend.contacts.update({ email, properties })
-    await resend.contacts.segments.add({ email, segmentId }).catch(() => {
-      // Already in the segment, or the add is otherwise a no-op — fine either way.
-    })
+    const { error } = await resend.contacts.segments.add({ email, segmentId })
+    if (error) {
+      // Resend treats "already in the segment" as a success, not an error, so
+      // anything landing here is a genuine failure (bad segment ID, API issue,
+      // etc.) — log it instead of swallowing it, so it shows up in Vercel's
+      // function logs rather than silently leaving the contact out of the
+      // segment the weekly job reads from.
+      console.error("snack-notify: segments.add failed", { email, segmentId, error })
+    }
   } else {
     await resend.contacts.create({ email, properties, segments: [{ id: segmentId }] })
   }
