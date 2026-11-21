@@ -92,6 +92,15 @@ export default function TopRankingsToday() {
           </Link>
         ))}
       </div>
+
+      <div className="mt-8 text-center">
+        <Link
+          href="/protein-value-index"
+          className="text-sm font-semibold text-[#006F6D] hover:underline"
+        >
+          See every snack ranked by protein per dollar in our Protein Value Index →
+        </Link>
+      </div>
     </section>
   );
 }

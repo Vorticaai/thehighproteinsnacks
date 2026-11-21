@@ -305,14 +305,24 @@ export default function GuidePage({ params }: GuidePageProps) {
           <section className="mb-12">
             <div className="mb-6 flex flex-wrap items-end justify-between gap-2 border-b-2 border-[#C6FF47] pb-2">
               <h2 className="text-2xl font-bold">Recommended Snacks</h2>
-              {GUIDE_CATEGORY_LINKS[guide.slug] && (
-                <Link
-                  href={GUIDE_CATEGORY_LINKS[guide.slug]!.href}
-                  className="text-sm font-semibold text-[#0B1F1E] hover:underline"
-                >
-                  {GUIDE_CATEGORY_LINKS[guide.slug]!.label} →
-                </Link>
-              )}
+              <div className="flex flex-wrap gap-x-4 gap-y-1">
+                {GUIDE_CATEGORY_LINKS[guide.slug] && (
+                  <Link
+                    href={GUIDE_CATEGORY_LINKS[guide.slug]!.href}
+                    className="text-sm font-semibold text-[#0B1F1E] hover:underline"
+                  >
+                    {GUIDE_CATEGORY_LINKS[guide.slug]!.label} →
+                  </Link>
+                )}
+                {guide.slug === "best-budget-snacks" && (
+                  <Link
+                    href="/protein-value-index"
+                    className="text-sm font-semibold text-[#0B1F1E] hover:underline"
+                  >
+                    See the full Protein Value Index →
+                  </Link>
+                )}
+              </div>
             </div>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {recommendedProducts.map((product) => (

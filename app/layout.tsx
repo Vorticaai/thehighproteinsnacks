@@ -111,6 +111,7 @@ export default function RootLayout({
               </div>
 
               <nav className="flex flex-col gap-3 text-sm md:flex-row md:gap-6">
+                <a href="/protein-value-index" className="hover:text-[#C6FF47] transition-colors">Protein Value Index</a>
                 <a href="/how-we-review" className="hover:text-[#C6FF47] transition-colors">Data Accuracy</a>
                 <a href="/privacy" className="hover:text-[#C6FF47] transition-colors">Privacy</a>
                 <a href="/terms" className="hover:text-[#C6FF47] transition-colors">Terms</a>
