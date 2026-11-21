@@ -647,14 +647,24 @@ function CategoryListing({ slug }: { slug: CategorySlug }) {
             {details.title}
           </h1>
           <p className="text-lg text-gray-600">{details.description}</p>
-          {guideLink && (
-            <Link
-              href={guideLink.href}
-              className="mt-4 inline-flex items-center font-semibold text-[#006F6D] hover:underline"
-            >
-              {guideLink.label} →
-            </Link>
-          )}
+          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">
+            {guideLink && (
+              <Link
+                href={guideLink.href}
+                className="inline-flex items-center font-semibold text-[#006F6D] hover:underline"
+              >
+                {guideLink.label} →
+              </Link>
+            )}
+            {slug === "best-value" && (
+              <Link
+                href="/protein-value-index"
+                className="inline-flex items-center font-semibold text-[#006F6D] hover:underline"
+              >
+                See the full Protein Value Index →
+              </Link>
+            )}
+          </div>
         </header>
 
         {products.length > 0 ? (
