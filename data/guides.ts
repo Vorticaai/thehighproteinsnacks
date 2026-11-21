@@ -277,7 +277,7 @@ export const guides: Guide[] = [
 
     content: {
       introduction:
-        "Budget-friendly high-protein snacks exist—you just need to know where to look. The best budget options deliver 12-21g protein for under $2 per serving, with protein-per-dollar ratios between 7-13g/$1. Quest Bars lead the pack at $1.60 per serving with 20-21g protein, while RXBARs and KIND Bars offer clean ingredients at competitive prices. This guide ranks the top 7 by value so you can hit protein goals without breaking the bank.",
+        "Budget-friendly high-protein snacks exist—you just need to know where to look. The best budget options deliver 12-21g protein for under $2 per serving, with protein-per-dollar ratios between 7-13g/$1. Quest Bars lead the pack at $1.60 per serving with 20-21g protein, while RXBARs and KIND Bars round out the lineup at competitive prices. This guide ranks the top 7 by value so you can hit protein goals without breaking the bank.",
       sections: [
         {
           heading: "What 'Budget' Really Means for Protein Snacks",
@@ -292,7 +292,7 @@ export const guides: Guide[] = [
         {
           heading: "Top 7 Products Ranked by Value",
           content:
-            "Quest Protein Bars dominate the budget category with 13.1g protein per dollar and $1.60 pricing. Chocolate Chip Cookie Dough and Cookies & Cream tie for #1 (21g protein, $1.60). Birthday Cake ranks #3 (20g protein, $1.60, 12.5g/$). KIND Protein Bar Dark Chocolate Nut comes in #4 with whole nuts and 8g/$ at $1.50. RXBARs round out the list with clean ingredients: Maple Sea Salt and Coconut Chocolate both deliver 7.59g/$ at $1.58, while Peanut Butter Chocolate provides 7.06g/$ at $1.70. All options maintain quality ingredients while keeping costs reasonable.",
+            "Quest Protein Bars dominate the budget category with 13.1g protein per dollar and $1.60 pricing. Chocolate Chip Cookie Dough and Cookies & Cream tie for #1 (21g protein, $1.60). Birthday Cake ranks #3 (20g protein, $1.60, 12.5g/$). KIND Protein Bar Dark Chocolate Nut comes in #4 with whole nuts and 8g/$ at $1.50. RXBARs round out the list: Maple Sea Salt and Coconut Chocolate both deliver 7.59g/$ at $1.58, while Peanut Butter Chocolate provides 7.06g/$ at $1.70. All seven options stay under $1.70 per serving while delivering at least 7g of protein per dollar.",
         },
         {
           heading: "Budget Comparison Chart",

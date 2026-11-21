@@ -117,12 +117,13 @@ export default function HalalHub({ title, description }: { title: string; descri
             Halal protein snacks compared
           </h2>
           <p className="mb-3 max-w-3xl text-sm text-gray-600">
-            This comparison currently has {listed.length} verified products — mainly jerky, meat sticks and chickpeas.
-            Other formats, including protein bars, are still being researched and aren&apos;t represented here yet; see{" "}
+            Our comparison currently covers 8 snacks — 6 jerky or meat-stick products and 2 chickpea snacks. The
+            supporting halal evidence varies by product: some identify a certifier, while others rely on
+            manufacturer claims. We&apos;re continuing to research additional snack types, including{" "}
             <Link href="/snacks/halal-protein-bars" className="underline">
-              our halal protein bars page
-            </Link>{" "}
-            for where that stands.
+              protein bars
+            </Link>
+            .
           </p>
           <p className="mb-2 text-xs text-gray-500 sm:hidden" aria-hidden="true">
             Swipe left to see certifier, nutrition and sources →
