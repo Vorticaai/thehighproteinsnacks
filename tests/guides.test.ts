@@ -70,3 +70,34 @@ test("the low-sugar guide only recommends products within the low-sugar threshol
     )
   }
 })
+
+test("the budget guide only recommends products meeting its own stated criteria", () => {
+  // No shared "budget" category threshold exists in lib/categoryFilters.ts;
+  // these are the guide's own documented selection criteria (see its "How
+  // We Picked These Budget Snacks" section) — max $2.00/serving, min 12g
+  // protein, 120-260 calories, at least 7g of protein per dollar. Guards
+  // against the same silent drift fixed on 2026-11-23 (stale picks that no
+  // longer matched the live Protein Value Index ranking).
+  const guide = guides.find((g) => g.slug === "best-budget-snacks")
+  assert.ok(guide, "best-budget-snacks guide not found")
+  for (const id of guide!.recommendedSnackIds) {
+    const product = byId.get(id)
+    assert.ok(product, `${id} is recommended in the budget guide but is not a real product`)
+    assert.ok(
+      product!.pricePerServing > 0 && product!.pricePerServing <= 2.0,
+      `${id} costs $${product!.pricePerServing}, over the guide's $2.00 budget ceiling`,
+    )
+    assert.ok(
+      product!.proteinPerServing >= 12,
+      `${id} has ${product!.proteinPerServing}g protein, under the guide's 12g minimum`,
+    )
+    assert.ok(
+      product!.caloriesPerServing >= 120 && product!.caloriesPerServing <= 260,
+      `${id} has ${product!.caloriesPerServing} calories, outside the guide's 120-260 range`,
+    )
+    assert.ok(
+      product!.proteinPerDollar >= 7,
+      `${id} delivers ${product!.proteinPerDollar}g of protein per dollar, under the guide's 7g/$1 floor`,
+    )
+  }
+})

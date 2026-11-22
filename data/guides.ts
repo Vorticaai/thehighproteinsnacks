@@ -256,17 +256,21 @@ export const guides: Guide[] = [
     ],
     author: "The High-Protein Snacks Team",
     publishedDate: "2025-01-20",
-    updatedDate: "2026-11-19",
-    readingTimeMinutes: 9,
+    updatedDate: "2026-11-23",
+    readingTimeMinutes: 10,
 
+    // Ranked by protein-per-dollar against the live catalogue (see
+    // lib/proteinValueIndex.ts / the Protein Value Index page) as of
+    // 2026-11-23, not a fixed list — re-check this ranking periodically,
+    // since prices and the catalogue both change.
     recommendedSnackIds: [
+      "oikos-pro-plain-yogurt",
+      "pure-protein-chocolate-deluxe",
+      "premier-protein-chocolate",
+      "ratio-25g-protein-coconut-dairy-snack",
+      "think-high-protein-brownie-crunch",
+      "lifeway-vanilla-protein-kefir-lowfat-cultured-milk-smoothie",
       "quest-choc-chip-cookie-dough",
-      "quest-cookies-cream",
-      "quest-birthday-cake",
-      "kind-protein-bar-dark-chocolate-nut",
-      "rxbar-maple-sea-salt",
-      "rxbar-coconut-chocolate",
-      "rxbar-peanut-butter-chocolate",
     ],
 
     relatedGuideIds: [
@@ -277,38 +281,43 @@ export const guides: Guide[] = [
 
     content: {
       introduction:
-        "Budget-friendly high-protein snacks exist—you just need to know where to look. The best budget options deliver 12-21g protein for under $2 per serving, with protein-per-dollar ratios between 7-13g/$1. Quest Bars lead the pack at $1.60 per serving with 20-21g protein, while RXBARs and KIND Bars round out the lineup at competitive prices. This guide ranks the top 7 by value so you can hit protein goals without breaking the bank.",
+        "Budget-friendly high-protein snacks exist—you just need to know where to look, and to rank them the right way. The best budget options in our directory deliver 20-30g protein for $1.18-$1.83 per serving, with protein-per-dollar ratios between 13-19g/$1. Oikos Pro Plain Yogurt and Pure Protein's Chocolate Deluxe bar lead the pack on value, not on the lowest sticker price — this guide ranks the top 7 by protein-per-dollar, cross-checked against our full Protein Value Index, so you can hit your protein goals without overpaying for them.",
       sections: [
         {
           heading: "What 'Budget' Really Means for Protein Snacks",
           content:
-            "High-protein products cost more than regular snacks because protein is expensive to source and process. Where a regular granola bar might cost $0.50-$0.75, protein bars typically run $2-$4 per serving. Budget protein snacks hit the sweet spot: $1.50-$2.00 per serving with at least 12g protein. The key metric is protein per dollar—how many grams of protein you get for each dollar spent. A $1.60 bar with 21g protein (13.1g/$) offers better value than a $2.50 bar with 17g protein (6.8g/$), even though the cheaper option costs less total.",
+            "High-protein products cost more than regular snacks because protein is expensive to source and process. Where a regular granola bar might cost $0.50-$0.75, protein bars and shakes typically run $1.50-$2.50 per serving. The key metric is protein per dollar—how many grams of protein you get for each dollar spent—and that's a different question from which snack has the lowest price tag. The single cheapest snack in our whole directory, Nature Valley's Creamy Protein Bar, runs $0.79 a serving but carries only 10g of protein: 12.66g of protein per dollar. Oikos Pro Plain Yogurt costs 66% more per serving ($1.31) but packs 25g of protein, for 19.08g per dollar—meaningfully better value despite the higher price tag. Low price and high value aren't the same thing; this guide ranks by the second one.",
+        },
+        {
+          heading: "Where Packaged Snacks Fit Next to Everyday Cheap Protein",
+          content:
+            "Searching for cheap high-protein snacks turns up two different kinds of results: lists of everyday whole foods—eggs, canned tuna, cottage cheese, chicken thighs—and lists of packaged, ready-to-eat snacks like the ones below. Whole foods usually win on raw cost per gram of protein, since you're not paying for packaging, shelf stability, or portability. Packaged snacks win on convenience: no prep, no fridge required for most of them, and a fixed serving size every time. This guide stays on the packaged side of that comparison—treat the picks below as the grab-and-go half of a budget protein plan, not a replacement for cheap whole foods in your cart.",
         },
         {
           heading: "How We Picked These Budget Snacks",
           content:
-            "Selection criteria: (1) Maximum price $2.00 per serving. (2) Minimum 12g protein per serving. (3) Calories between 120-260 to ensure reasonable portion sizes. (4) Protein per dollar ratio of at least 7g/$1. (5) Recognizable protein sources (whey, egg white, pea) over ultra-processed ingredient lists, where a product at that price point offered a choice. We don't use star ratings or reviews anywhere on this site — every number above comes from the same label-sourced nutrition and price data shown in the comparison below.",
+            "Selection criteria: (1) Maximum price $2.00 per serving. (2) Minimum 12g protein per serving. (3) Calories between 120-260 to ensure reasonable portion sizes. (4) Protein per dollar ratio of at least 7g/$1. (5) Recognizable protein sources (whey, egg white, pea) over ultra-processed ingredient lists, where a product at that price point offered a choice. We don't use star ratings or reviews anywhere on this site — every number above comes from the same label-sourced nutrition and price data shown in the comparison below. We re-run these criteria against our full [Protein Value Index](/protein-value-index)—a live, sortable ranking of every priced product in our directory by protein-per-dollar—rather than keeping a fixed list that quietly goes stale as prices and the catalogue change.",
         },
         {
           heading: "Top 7 Products Ranked by Value",
           content:
-            "Quest Protein Bars dominate the budget category with 13.1g protein per dollar and $1.60 pricing. Chocolate Chip Cookie Dough and Cookies & Cream tie for #1 (21g protein, $1.60). Birthday Cake ranks #3 (20g protein, $1.60, 12.5g/$). KIND Protein Bar Dark Chocolate Nut comes in #4 with whole nuts and 8g/$ at $1.50. RXBARs round out the list: Maple Sea Salt and Coconut Chocolate both deliver 7.59g/$ at $1.58, while Peanut Butter Chocolate provides 7.06g/$ at $1.70. All seven options stay under $1.70 per serving while delivering at least 7g of protein per dollar.",
+            "Oikos Pro Plain Yogurt tops this list at 19.08g of protein per dollar ($1.31, 25g protein)—it's also the single best-value product in our entire 174-product directory, not just among budget picks. Pure Protein's Chocolate Deluxe bar is the runner-up at 17.8g/$ and the cheapest per-serving pick here ($1.18, 21g protein). Premier Protein's Chocolate shake delivers the most raw protein of the group (30g) at $1.83, for 16.39g/$. Ratio's Coconut Dairy Snack ($1.66, 25g protein, 15.06g/$) and think!'s High Protein Bar Brownie Crunch ($1.50, 20g protein, 13.33g/$) round out the middle of the pack. Lifeway's Vanilla Protein Kefir Smoothie ($1.59, 21g protein, 13.21g/$) is the one drinkable pick—note it carries 18g of sugar per serving from the cultured milk itself, so check our low-sugar guide instead if that matters more to you than price. Quest's Chocolate Chip Cookie Dough bar closes out the list at $1.60 (21g protein, 13.13g/$)—still a solid, widely available pick, just no longer the top performer it once was now that better-value options have entered the catalogue.",
         },
         {
           heading: "Budget Comparison Chart",
           type: "comparison",
           content:
-            "Quest Chocolate Chip Cookie Dough: 21g protein, 200 cal, $1.60, 13.1g/$. Quest Cookies & Cream: 21g protein, 190 cal, $1.60, 13.1g/$. Quest Birthday Cake: 20g protein, 180 cal, $1.60, 12.5g/$. KIND Dark Chocolate Nut: 12g protein, 250 cal, $1.50, 8g/$. RXBAR Maple Sea Salt: 12g protein, 220 cal, $1.58, 7.59g/$. RXBAR Coconut Chocolate: 12g protein, 200 cal, $1.58, 7.59g/$. RXBAR Peanut Butter Chocolate: 12g protein, 210 cal, $1.70, 7.06g/$.",
+            "Oikos Pro Plain Yogurt: 25g protein, 160 cal, $1.31, 19.08g/$. Pure Protein Bar Chocolate Deluxe: 21g protein, 180 cal, $1.18, 17.8g/$. Premier Protein Shake Chocolate: 30g protein, 160 cal, $1.83, 16.39g/$. Ratio Protein Coconut Dairy Snack: 25g protein, 170 cal, $1.66, 15.06g/$. Think! High Protein Bar Brownie Crunch: 20g protein, 230 cal, $1.50, 13.33g/$. Lifeway Vanilla Protein Kefir Lowfat Cultured Milk Smoothie: 21g protein, 170 cal, $1.59, 13.21g/$. Quest Chocolate Chip Cookie Dough: 21g protein, 190 cal, $1.60, 13.13g/$.",
         },
         {
           heading: "Common Budget Mistakes to Avoid",
           content:
-            "Mistake 1: Choosing the absolute cheapest option—bars under $1.00 often have tiny servings (30-40g), minimal protein (5-8g), or junk ingredients that don't satisfy hunger. You end up eating two bars instead of one, negating the savings. Mistake 2: Ignoring protein per dollar—a $2.00 bar with 10g protein (5g/$) is worse value than a $1.60 bar with 20g protein (12.5g/$). Always divide grams by price. Mistake 3: Forgetting total daily calories—budget snacks can still derail weight loss if you overeat them. Track them toward your daily calorie target. Mistake 4: Buying bulk before testing—a 24-pack of untested bars seems like savings until you realize you hate the taste and waste $30-$40.",
+            "Mistake 1: Choosing the absolute cheapest option—bars under $1.00 often have tiny servings (30-40g), minimal protein (5-10g), or junk ingredients that don't satisfy hunger. You end up eating two bars instead of one, negating the savings. Mistake 2: Ignoring protein per dollar—a $2.00 shake with 10g protein (5g/$) is worse value than our top pick, Oikos Pro Plain Yogurt, at $1.31 for 25g protein (19.08g/$). Always divide grams by price before comparing two snacks, not just the sticker price. Mistake 3: Forgetting total daily calories—budget snacks can still derail weight loss if you overeat them. Track them toward your daily calorie target. Mistake 4: Buying bulk before testing—a 24-pack of untested bars seems like savings until you realize you hate the taste and waste $30-$40.",
         },
         {
           heading: "Practical Budget Strategy",
           content:
-            "Hit 150g daily protein on a budget by mixing whole foods with strategic snacking: Breakfast: 3 eggs + oatmeal (18g protein, $1.50). Mid-morning: Quest Bar (21g protein, $1.60). Lunch: Chicken breast + rice + veggies (45g protein, $4.00). Afternoon: Greek yogurt (15g protein, $1.00). Dinner: Ground turkey + pasta + sauce (50g protein, $5.00). Total: 149g protein, approximately $13.10 per day. The $1.60 Quest bar delivers 21g protein—equivalent to eating 3.5 eggs or 3oz chicken breast, but infinitely more convenient for work or commuting. Budget swap example: Replacing a $2.50 premium bar with a $1.60 Quest bar saves $0.90 per day = $27 per month = $324 per year, with zero compromise on protein content.",
+            "Hit 150g daily protein on a budget by mixing whole foods with strategic snacking: Breakfast: 3 eggs + oatmeal (18g protein, $1.50). Mid-morning: Pure Protein Bar - Chocolate Deluxe (21g protein, $1.18). Lunch: Chicken breast + rice + veggies (45g protein, $4.00). Afternoon: Greek yogurt (15g protein, $1.00). Dinner: Ground turkey + pasta + sauce (50g protein, $5.00). Total: 149g protein, approximately $12.68 per day. The $1.18 Pure Protein bar delivers 21g protein—equivalent to eating 3.5 eggs or 3oz chicken breast, but infinitely more convenient for work or commuting. Budget swap example: Replacing a $2.50 premium bar with a $1.18 Pure Protein bar saves $1.32 per day = about $40 per month = about $482 per year, with zero compromise on protein content.",
         },
       ],
     },
@@ -318,7 +327,7 @@ export const guides: Guide[] = [
         question:
           "How cheap can high-protein snacks really be without sacrificing quality?",
         answer:
-          "Most quality high-protein snacks cost $1.20–$2.00 per serving. Below $1.00 per serving usually means smaller portions, lower protein, or highly processed ingredients. The products in this guide balance cost, protein per dollar, and ingredient quality so you're not just buying the cheapest option—you're buying the best value.",
+          "Most quality high-protein snacks cost $1.15–$2.00 per serving. Below $1.00 per serving usually means smaller portions, lower protein, or highly processed ingredients. The products in this guide balance cost, protein per dollar, and ingredient quality so you're not just buying the cheapest option—you're buying the best value.",
       },
       {
         question:
