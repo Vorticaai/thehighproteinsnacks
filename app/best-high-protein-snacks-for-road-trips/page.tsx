@@ -59,14 +59,13 @@ export default function BestRoadTripSnacksPage() {
     name: "Best high-protein snacks for road trips and travel",
     description:
       "A ranked list of high-protein snacks that travel well for road trips, flights, and long commutes.",
+    // Flat ListItem (name/url), not a nested "@type": "Product" — see the
+    // same fix and rationale in app/best-high-protein-snacks-for-office-and-desk/page.tsx.
     itemListElement: travelCandidates.map((entry, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      item: {
-        "@type": "Product",
-        name: entry.snack.name,
-        url: `https://www.thehighproteinsnacks.com/snacks/${entry.snack.id}`,
-      },
+      name: entry.snack.name,
+      url: `https://www.thehighproteinsnacks.com/snacks/${entry.snack.id}`,
     })),
   }
 

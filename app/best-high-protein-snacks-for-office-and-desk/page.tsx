@@ -59,14 +59,18 @@ export default function BestOfficeSnacksPage() {
     name: "Best high-protein snacks for office and desk jobs",
     description:
       "A ranked list of high-protein snacks that are ideal for office workers and desk jobs, optimised for satiety and low sugar crashes.",
+    // Flat ListItem (name/url), not a nested "@type": "Product" — a bare
+    // Product entity with no offers/review/aggregateRating is exactly the
+    // defect that caused the Search Console "Missing offers, review or
+    // aggregateRating" error on the product detail pages (22 Nov 2026);
+    // this list isn't a product carousel and doesn't need the Product
+    // type at all. Matches the pattern already used by the category
+    // listing's own ItemList in app/snacks/[slug]/page.tsx.
     itemListElement: officeCandidates.map((entry, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      item: {
-        "@type": "Product",
-        name: entry.snack.name,
-        url: `https://www.thehighproteinsnacks.com/snacks/${entry.snack.id}`,
-      },
+      name: entry.snack.name,
+      url: `https://www.thehighproteinsnacks.com/snacks/${entry.snack.id}`,
     })),
   }
 
