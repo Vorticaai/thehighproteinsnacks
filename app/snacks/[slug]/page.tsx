@@ -301,31 +301,21 @@ export default function SnackDetailPage({ params }: SnackPageProps) {
     })),
   };
 
-  // No ratings, reviews or offers: we have none of our own, and invented
-  // ones break Google's structured-data policies.
-  const productJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    description: whyWeLoveIt,
-    brand: { "@type": "Brand", name: product.brand },
-    ...(product.image ? { image: absoluteUrl(product.image.src) } : {}),
-    ...(product.gtin && product.verification.status === "verified" ? { gtin: product.gtin } : {}),
-    url: absoluteUrl(`/snacks/${product.id}`),
-    nutrition: {
-      "@type": "NutritionInformation",
-      proteinContent: `${product.proteinPerServing} g`,
-      calories: `${product.caloriesPerServing} calories`,
-      sugarContent: `${product.sugarPerServing} g`,
-      carbohydrateContent: `${product.carbsPerServing} g`,
-      fatContent: `${product.fatsPerServing} g`,
-      fiberContent: `${product.fiberPerServing} g`,
-    },
-  };
+  // Google requires a Product entity to carry at least one of offers,
+  // review or aggregateRating to be eligible for Product rich results
+  // (Search Console flags its absence as an error, e.g. the
+  // lifeway-banana-protein-kefir and clif-chocolate-chip-protein-bars
+  // pages, 22 Nov 2026). We have none of our own — prices here are
+  // estimates, not verified live retailer offers, and there are no
+  // ratings/reviews — so emitting "@type": "Product" at all is the
+  // actual defect: there is no honest way to satisfy that requirement
+  // without inventing data, which Google's structured-data policies
+  // (and this project's own rules) forbid. Dropped the Product JSON-LD
+  // entirely rather than fabricate an offer/rating; the page's visible
+  // nutrition facts, breadcrumbs and other metadata are unaffected.
 
   return (
     <>
-      <JsonLd data={productJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
 
       <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
